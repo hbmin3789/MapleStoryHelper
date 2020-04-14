@@ -1,0 +1,5 @@
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.deps.json
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csprojAssemblyReference.cache
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.AssemblyInfo.cs
