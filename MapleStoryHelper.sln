@@ -11,6 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryCodeSearcher", "MapleStoryCodeSearcher\MapleStoryCodeSearcher.csproj", "{9C9E52ED-A88D-405B-B84E-17F63522D380}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{559725E3-E27A-4396-8712-DDB727724A6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{0BDCAAAC-DAEC-442C-9656-0F2A06D8BE22}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Design\메이플스탯계산 화면구성.png = Resources\Design\메이플스탯계산 화면구성.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.Character", "MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj", "{8746CB0E-6404-4595-AF83-270D25A0F163}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,9 +120,32 @@ Global
 		{9C9E52ED-A88D-405B-B84E-17F63522D380}.Release|x64.Build.0 = Release|Any CPU
 		{9C9E52ED-A88D-405B-B84E-17F63522D380}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C9E52ED-A88D-405B-B84E-17F63522D380}.Release|x86.Build.0 = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|ARM.Build.0 = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|x64.Build.0 = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Debug|x86.Build.0 = Debug|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|ARM.Build.0 = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|ARM64.Build.0 = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x64.ActiveCfg = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x64.Build.0 = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x86.ActiveCfg = Release|Any CPU
+		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0BDCAAAC-DAEC-442C-9656-0F2A06D8BE22} = {559725E3-E27A-4396-8712-DDB727724A6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A0FE4C0-D67D-4E3E-80E5-DA82DC22CE3E}

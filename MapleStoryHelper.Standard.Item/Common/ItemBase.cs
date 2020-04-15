@@ -16,18 +16,18 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _itemCategory, value);
         }
 
-        private string _itemName = "";
-        public string ItemName
+        private string _name = "";
+        public string Name
         {
-            get => _itemName;
-            set => SetProperty(ref _itemName, value);
+            get => _name;
+            set => SetProperty(ref _name, value);
         }
 
-        private string _itemImgSrc = "";
-        public string ItemImgSrc
+        private string _imgSrc = "";
+        public string ImgSrc
         {
-            get => _itemImgSrc;
-            set => SetProperty(ref _itemImgSrc, value);
+            get => _imgSrc;
+            set => SetProperty(ref _imgSrc, value);
         }
 
         #endregion
@@ -41,7 +41,7 @@ namespace MapleStoryHelper.Standard.Item
 
         public ItemBase(string itemname)
         {
-            ItemName = itemname;
+            Name = itemname;
         }
 
         public ItemBase(EItemCategory category)
@@ -51,15 +51,15 @@ namespace MapleStoryHelper.Standard.Item
 
         public ItemBase(string itemname, EItemCategory category)
         {
-            ItemName = itemname;
+            Name = itemname;
             ItemCategory = category;
         }
 
         public ItemBase(string itemname, EItemCategory category, string imgSrc)
         {
-            ItemName = itemname;
+            Name = itemname;
             ItemCategory = category;
-            ItemImgSrc = imgSrc;
+            ImgSrc = imgSrc;
         }
 
         #endregion

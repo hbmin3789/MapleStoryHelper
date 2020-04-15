@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Equipment\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj" />
+    <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj" />
+  </ItemGroup>
+
+</Project>

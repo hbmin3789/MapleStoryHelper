@@ -9,7 +9,9 @@
     ".NETStandard,Version=v2.0/": {
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.3"
+          "MapleStoryHelper.Standard": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "Prism.Core": "7.2.0.1422"
         },
         "runtime": {
           "MapleStoryHelper.Standard.Item.dll": {}
@@ -19,6 +21,22 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "7.2.0.1422",
+            "fileVersion": "7.2.0.1422"
+          }
+        }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.dll": {}
         }
       }
     }
@@ -42,6 +60,18 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Prism.Core/7.2.0.1422": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U6tZ4Iq+ELyK5PedRC6E20caZXXTmTYiw5evpv0M3WcfKgih9H5G5LDBlDl+65eC5Vb4lnOaUCAtckdEl2MRxA==",
+      "path": "prism.core/7.2.0.1422",
+      "hashPath": "prism.core.7.2.0.1422.nupkg.sha512"
+    },
+    "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

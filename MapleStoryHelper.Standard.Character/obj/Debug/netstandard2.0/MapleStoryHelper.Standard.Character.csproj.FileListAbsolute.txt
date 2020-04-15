@@ -1,0 +1,4 @@
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.AssemblyInfo.cs

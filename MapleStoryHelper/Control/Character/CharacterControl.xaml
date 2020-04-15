@@ -5,11 +5,22 @@
     xmlns:local="using:MapleStoryHelper.Control.Character"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:control="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-
+    <UserControl.Resources>
+        <Style x:Key="CharacterListStyle" TargetType="ListView">
+            
+        </Style>
+    </UserControl.Resources>
     <Grid Background="White">
-
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <control:WrapPanel/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>
