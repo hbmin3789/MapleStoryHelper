@@ -94,3 +94,8 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\resou
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.Standard.Item.dll
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.Standard.Item.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\CharacterAddPage.xbf
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\View\CharacterAddPage.g.i.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\View\CharacterAddPage.g.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\View\CharacterAddPage.xaml
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\View\CharacterAddPage.xbf

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MapleStoryHelper.Control;
+using MapleStoryHelper.View;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,6 +13,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 namespace MapleStoryHelper
@@ -24,6 +27,11 @@ namespace MapleStoryHelper
         {
             this.InitializeComponent();
             this.DataContext = App.mapleStoryHelperViewModel;
+        }
+
+        private void btnAddCharacter_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
         }
     }
 }

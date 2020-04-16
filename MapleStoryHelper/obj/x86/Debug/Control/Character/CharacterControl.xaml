@@ -17,7 +17,8 @@
             <Setter Property="ItemTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <Grid MinHeight="200" MinWidth="140">
+                        <Grid MinHeight="200" MinWidth="150"
+                              Background="#fafafa">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="2*"/>
                                 <RowDefinition Height="*"/>

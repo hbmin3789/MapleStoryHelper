@@ -127,6 +127,9 @@
     </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
+    <Compile Include="View\CharacterAddPage.xaml.cs">
+      <DependentUpon>CharacterAddPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -157,6 +160,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Character\CharacterSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CharacterAddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
