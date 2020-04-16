@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0670bfc8-b854-4655-a85d-8015448096b6</PackageIdentityName>
     <PackageIdentityPublisher>CN=user</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C14C427624EF28AB7A4B64AEC164BA89DC55377231E165B9D57F2E4CE6AFFB8D</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>D5C290963149DA69E1DC965CBDED3513F8A8E0C30C2B8FA046E30F0E2B322332</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0670bfc8-b854-4655-a85d-8015448096b6_1.0.0.0_x86__yzekw4x8qxe1g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0670bfc8-b854-4655-a85d-8015448096b6_yzekw4x8qxe1g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0670bfc8-b854-4655-a85d-8015448096b6</RegisteredPackageID>
@@ -27,86 +27,166 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-14T10:09:52.334</Modified>
+      <Modified>2020-04-16T18:34:43.626</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.exe">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.exe">
       <PackagePath>entrypoint\MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-04-14T10:09:49.877</Modified>
+      <Modified>2020-04-16T18:34:40.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+      <Modified>2018-10-05T14:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+      <Modified>2018-10-05T14:30:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+      <Modified>2019-11-12T17:36:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.parsers\6.0.0\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+      <Modified>2019-11-12T17:36:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.uwp\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+      <Modified>2019-11-12T17:36:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.uwp.ui\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+      <Modified>2019-11-12T17:36:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.uwp.ui.animations\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+      <Modified>2019-11-12T17:36:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+      <Modified>2019-11-12T17:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-02-22T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-02-22T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2017-06-18T04:57:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\prism.core\7.2.0.1422\lib\netstandard2.0\Prism.dll">
+      <PackagePath>Prism.dll</PackagePath>
+      <Modified>2019-11-21T07:58:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T05:01:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\win2d.uwp\1.24.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2019-10-25T14:27:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll">
+      <PackagePath>MapleStoryHelper.Standard.Character.dll</PackagePath>
+      <Modified>2020-04-16T16:53:29.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll">
+      <PackagePath>MapleStoryHelper.Standard.dll</PackagePath>
+      <Modified>2020-04-16T16:53:28.676</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll">
+      <PackagePath>MapleStoryHelper.Standard.Item.dll</PackagePath>
+      <Modified>2020-04-16T16:53:29.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\win2d.uwp\1.24.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2019-10-25T14:27:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T09:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.toolkit.uwp.ui.controls\6.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
+      <Modified>2019-11-12T17:32:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-04-03T12:00:12.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-04-03T06:23:57.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.xr.xml">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.xr.xml">
       <PackagePath>MapleStoryHelper.xr.xml</PackagePath>
-      <Modified>2020-04-12T05:21:18.345</Modified>
+      <Modified>2020-04-16T18:34:40.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-14T10:09:49.593</Modified>
+      <Modified>2020-04-16T17:32:11.515</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Control\Character\CharacterControl.xbf">
+      <PackagePath>Control\Character\CharacterControl.xbf</PackagePath>
+      <Modified>2020-04-16T18:34:40.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Control\Character\CharacterSettingControl.xbf">
+      <PackagePath>Control\Character\CharacterSettingControl.xbf</PackagePath>
+      <Modified>2020-04-16T17:32:11.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-04-14T10:09:49.594</Modified>
+      <Modified>2020-04-16T17:32:11.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T08:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-14T10:09:50.759</Modified>
+      <Modified>2020-04-16T16:59:51.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\MapleStoryHelper.exe">
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\MapleStoryHelper.exe">
       <PackagePath>MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-04-14T10:09:52.244</Modified>
+      <Modified>2020-04-16T18:34:43.614</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

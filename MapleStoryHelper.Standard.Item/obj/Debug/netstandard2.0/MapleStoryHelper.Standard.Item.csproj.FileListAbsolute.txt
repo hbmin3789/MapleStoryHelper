@@ -10,3 +10,4 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\D
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csproj.CopyComplete
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper", "MapleStoryHelper\MapleStoryHelper.csproj", "{9715D93E-842C-47A2-81DF-46034561899C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44} = {33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Item", "MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj", "{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}"
 EndProject
@@ -18,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{0BDCAA
 		Resources\Design\메이플스탯계산 화면구성.png = Resources\Design\메이플스탯계산 화면구성.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.Character", "MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj", "{8746CB0E-6404-4595-AF83-270D25A0F163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Character", "MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj", "{8746CB0E-6404-4595-AF83-270D25A0F163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +38,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|Any CPU.Build.0 = Debug|x86
+		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|ARM.ActiveCfg = Debug|ARM
 		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|ARM.Build.0 = Debug|ARM
 		{9715D93E-842C-47A2-81DF-46034561899C}.Debug|ARM.Deploy.0 = Debug|ARM

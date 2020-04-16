@@ -384,6 +384,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1081,6 +1090,47 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -1465,6 +1515,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -2535,6 +2594,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
@@ -2919,6 +3019,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -4020,6 +4129,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -4404,6 +4554,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -5505,6 +5664,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -5889,6 +6089,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -6959,6 +7168,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
@@ -7343,6 +7593,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -8444,6 +8703,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -8828,6 +9128,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -9898,6 +10207,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
@@ -10282,6 +10632,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -11383,6 +11742,47 @@
         "build": {
           "build/win10/_._": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     }
   },
@@ -12174,6 +12574,26 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Prism.Core/7.2.0.1422": {
+      "sha512": "U6tZ4Iq+ELyK5PedRC6E20caZXXTmTYiw5evpv0M3WcfKgih9H5G5LDBlDl+65eC5Vb4lnOaUCAtckdEl2MRxA==",
+      "type": "package",
+      "path": "prism.core/7.2.0.1422",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netcoreapp3.0/Prism.dll",
+        "lib/netcoreapp3.0/Prism.pdb",
+        "lib/netcoreapp3.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "prism.core.7.2.0.1422.nupkg.sha512",
+        "prism.core.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -19009,12 +19429,31 @@
         "win2d.uwp.1.24.0.nupkg.sha512",
         "win2d.uwp.nuspec"
       ]
+    },
+    "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
+    },
+    "MapleStoryHelper.Standard.Character/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj"
+    },
+    "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
+      "MapleStoryHelper.Standard >= 1.0.0",
+      "MapleStoryHelper.Standard.Character >= 1.0.0",
+      "MapleStoryHelper.Standard.Item >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
-      "Microsoft.Toolkit.Uwp.UI.Controls >= 6.0.0"
+      "Microsoft.Toolkit.Uwp.UI.Controls >= 6.0.0",
+      "Prism.Core >= 7.2.0.1422"
     ]
   },
   "packageFolders": {
@@ -19047,7 +19486,17 @@
       },
       "frameworks": {
         "uap10.0.17763": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
+            },
+            "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+            },
+            "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+            }
+          }
         }
       }
     },
@@ -19061,6 +19510,10 @@
           "Microsoft.Toolkit.Uwp.UI.Controls": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "Prism.Core": {
+            "target": "Package",
+            "version": "[7.2.0.1422, )"
           }
         },
         "imports": [

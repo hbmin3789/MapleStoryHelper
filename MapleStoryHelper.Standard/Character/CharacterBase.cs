@@ -70,18 +70,11 @@ namespace MapleStoryHelper.Standard.Character
                 물리 공격력 : (주스탯 × 4 + 부스탯) × 총공격력 × 무기상수 × 직업상수 × (1 + 공격력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
         뒷스공
                 마법 공격력 : (주스탯 × 4 + 부스탯) × 총  마력 × 무기상수 × 직업상수 × (1 + 마력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
-
-        뒷스공(제논)	         (STR + DEX + LUK) × 4 × 0.01 × 총 공격력 × 무기상수(1.5) × 직업상수(0.875) × (1 + 공격력%) × 1 + 데미지%) × (1 + 최종데미지%)
         데벤져                HP(AP투자) 14당 주스탯 환산값 1, 아이템HP 17.5당 주스탯 환산값 1, 힘이 부스탯
         */
 
-        /// <summary>
-        /// 데벤져나 제논,아크같은 경우는 따로 클래스를 만들어 처리가 필요함
-        /// </summary>
-        /// <param name="status"></param>
-        /// <param name="main"></param>
-        /// <param name="sub"></param>
-        /// <returns></returns>
+        #region StatusCalcMethod
+
         public int GetMaxStatusAttack(EStatus main, EStatus sub)
         {
             int retval = 0;
@@ -180,5 +173,7 @@ namespace MapleStoryHelper.Standard.Character
 
             return retval;
         }
+
+        #endregion
     }
 }

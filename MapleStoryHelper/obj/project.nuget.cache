@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RAEiSPYV3cfFWKfswimioAEPeXGs/kyV5xXjSaWBbmgVzpPkKZbXk3JZDwNpdrBpVqeqCGANTIDvNYRWTACVGw==",
+  "dgSpecHash": "/KRMocThVe/FbXnSKT3UFQSJcDoXUL74bCYnUXvokjwpeob8EXcmYYFUoZwBFuqViUlLO+lPFNqjR/sdy9yldg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\1.1.0\\microsoft.xaml.behaviors.uwp.managed.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.globalization\\4.3.0\\runtime.any.system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.any.system.io\\4.3.0\\runtime.any.system.io.4.3.0.nupkg.sha512",

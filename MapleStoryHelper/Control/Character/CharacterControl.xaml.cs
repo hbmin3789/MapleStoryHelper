@@ -12,14 +12,16 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using MapleStoryHelper.Standard.Converter;
 
-namespace MapleStoryHelper.Control.Character
+namespace MapleStoryHelper.Control
 {
     public sealed partial class CharacterControl : UserControl
     {
         public CharacterControl()
         {
             this.InitializeComponent();
+            this.DataContext = App.mapleStoryHelperViewModel;
         }
     }
 }
