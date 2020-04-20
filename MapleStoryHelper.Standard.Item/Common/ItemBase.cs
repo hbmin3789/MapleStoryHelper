@@ -1,6 +1,7 @@
 ﻿using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace MapleStoryHelper.Standard.Item
@@ -10,6 +11,7 @@ namespace MapleStoryHelper.Standard.Item
         #region Property
 
         private EItemCategory _itemCategory = EItemCategory.Etc;
+        [Column("item_category")]
         public EItemCategory ItemCategory 
         {
             get => _itemCategory;
@@ -17,6 +19,7 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _name = "";
+        [Column("name")]
         public string Name
         {
             get => _name;
@@ -24,10 +27,27 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _imgSrc = "";
+        [Column("image_source")]
         public string ImgSrc
         {
             get => _imgSrc;
             set => SetProperty(ref _imgSrc, value);
+        }
+
+        private string _imgCode = "";
+        [Column("image_code")]
+        public string ImgCode
+        {
+            get => _imgCode;
+            set => SetProperty(ref _imgCode, value);
+        }
+
+        private bool _isCash;
+        [Column("is_cash")]
+        public bool IsCash
+        {
+            get => _isCash;
+            set => SetProperty(ref _isCash, value);
         }
 
         #endregion

@@ -9,3 +9,5 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CopyComplete
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
