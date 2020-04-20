@@ -26,7 +26,7 @@ namespace MapleStoryResourceSavier
     public partial class MainWindow : Window
     {
         private ItemBase Item;
-        private EquipmentItem EquipItem;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,7 +38,6 @@ namespace MapleStoryResourceSavier
         private void InitVariables()
         {
             Item = new ItemBase();
-            EquipItem = new EquipmentItem();
         }
 
         private void InitItemCategoryCombobox()
@@ -54,12 +53,9 @@ namespace MapleStoryResourceSavier
 
             if(values.Length > 0)
             {
-                cbItemCategory.SelectedIndex = 0;
+
             }
         }
-
-
-
 
         private void btnImageSelect_Click(object sender, RoutedEventArgs e)
         {
@@ -71,6 +67,11 @@ namespace MapleStoryResourceSavier
 
             Item.ImgSrc = FullDir;
             Item.Name = FileName.Split(new char[] { '.' }).First();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

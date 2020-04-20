@@ -4,9 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapleStoryResourceSavier"
+        xmlns:converter="clr-namespace:MapleStoryResourceSavier.Converter"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
+        <converter:StringToEItemCategoryConverter x:Key="StringToEItemCategoryConverter"/>
+
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="Height" Value="30"/>
@@ -38,11 +41,12 @@
 
         <Grid Grid.Column="1">
             <ComboBox x:Name="cbItemCategory" Margin="10" Width="100"
-                      HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                      HorizontalAlignment="Left" VerticalAlignment="Top"
+                      SelectedItem="{Binding ItemCategory,Converter={StaticResource StringToEItemCategoryConverter}}"/>
         </Grid>
 
         <Grid Grid.Column="2">
-            <Grid>
+            <Grid VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -50,6 +54,7 @@
                 <StackPanel>
                     <TextBlock Text="아이템코드"/>
                     <TextBlock Text="아이템이름"/>
+                    <TextBlock Text="레벨"/>
                     <TextBlock Text="STR"/>
                     <TextBlock Text="DEX"/>
                     <TextBlock Text="INT"/>
@@ -63,18 +68,23 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
-                    <TextBox/>
+                    <TextBox Text="{Binding ItemCode}"/>
+                    <TextBox Text="{Binding Name}"/>
+                    <TextBox Text="{Binding RequiredLevel}"/>
+                    <TextBox Text="{Binding Status.Str}"/>
+                    <TextBox Text="{Binding Status.Dex}"/>
+                    <TextBox Text="{Binding Status.Int}"/>
+                    <TextBox Text="{Binding Status.Luk}"/>
+                    <TextBox Text="{Binding Status.HP}"/>
+                    <TextBox Text="{Binding Status.MP}"/>
+                    <TextBox Text="{Binding Status.AttackPower}"/>
+                    <TextBox Text="{Binding Status.MagicAttack}"/>
                 </StackPanel>
             </Grid>
+            <Button x:Name="btnSave" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                    Margin="10" Width="70" Height="30"
+                    Content="저장"
+                    Click="btnSave_Click"/>
         </Grid>
         
     </Grid>

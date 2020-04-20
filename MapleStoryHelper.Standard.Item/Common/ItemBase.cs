@@ -34,15 +34,15 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _imgSrc, value);
         }
 
-        private string _imgCode = "";
-        [Column("image_code")]
-        public string ImgCode
+        private string _itemCode = "";
+        [Column("item_code")]
+        public string ItemCode
         {
-            get => _imgCode;
-            set => SetProperty(ref _imgCode, value);
+            get => _itemCode;
+            set => SetProperty(ref _itemCode, value);
         }
 
-        private bool _isCash;
+        private bool _isCash = false;
         [Column("is_cash")]
         public bool IsCash
         {

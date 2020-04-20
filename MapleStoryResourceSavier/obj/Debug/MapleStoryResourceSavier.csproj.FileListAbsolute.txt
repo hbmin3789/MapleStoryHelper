@@ -26,3 +26,4 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\bin\Debug\S
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\bin\Debug\Prism.pdb
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\bin\Debug\Prism.xml
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\obj\Debug\GeneratedInternalTypeHelper.g.cs
