@@ -1,6 +1,7 @@
 ﻿using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -35,6 +36,7 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _itemCode = "";
+        [Key]
         [Column("item_code")]
         public string ItemCode
         {

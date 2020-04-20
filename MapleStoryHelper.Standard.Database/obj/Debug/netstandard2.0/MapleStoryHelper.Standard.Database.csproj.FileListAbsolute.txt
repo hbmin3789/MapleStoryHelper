@@ -3,3 +3,13 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\b
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.AssemblyInfoInputs.cache
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.AssemblyInfo.cs
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.csproj.CopyComplete
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.pdb

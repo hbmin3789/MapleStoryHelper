@@ -9,8 +9,11 @@
     ".NETStandard,Version=v2.0/": {
       "MapleStoryHelper.Standard.Database/1.0.0": {
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Microsoft.Data.Sqlite.Core": "3.1.3",
           "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -47,6 +50,14 @@
           }
         }
       },
+      "Microsoft.DotNet.PlatformAbstractions/3.1.3": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12801"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/3.1.3": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -76,6 +87,37 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.3": {},
+      "Microsoft.EntityFrameworkCore.Relational/3.1.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite/3.1.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "3.1.3",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.0.2"
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.3": {
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.3",
+          "Microsoft.Extensions.DependencyModel": "3.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12804"
+          }
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.3": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.3"
@@ -154,6 +196,17 @@
           }
         }
       },
+      "Microsoft.Extensions.DependencyModel/3.1.3": {
+        "dependencies": {
+          "System.Text.Json": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "3.1.3.0",
+            "fileVersion": "3.100.320.12801"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/3.1.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "3.1.3",
@@ -207,6 +260,27 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Prism.Core/7.2.0.1422": {
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {
+            "assemblyVersion": "7.2.0.1422",
+            "fileVersion": "7.2.0.1422"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.0.2",
+          "SQLitePCLRaw.lib.e_sqlite3": "2.0.2",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "2.0.2.669",
+            "fileVersion": "2.0.2.669"
+          }
+        }
+      },
       "SQLitePCLRaw.core/2.0.2": {
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -218,11 +292,23 @@
           }
         }
       },
-      "System.Buffers/4.4.0": {
+      "SQLitePCLRaw.lib.e_sqlite3/2.0.2": {},
+      "SQLitePCLRaw.provider.e_sqlite3/2.0.2": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
+            "assemblyVersion": "2.0.2.669",
+            "fileVersion": "2.0.2.669"
+          }
+        }
+      },
+      "System.Buffers/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -258,8 +344,8 @@
       },
       "System.Memory/4.5.3": {
         "dependencies": {
-          "System.Buffers": "4.4.0",
-          "System.Numerics.Vectors": "4.4.0",
+          "System.Buffers": "4.5.0",
+          "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "runtime": {
@@ -269,11 +355,11 @@
           }
         }
       },
-      "System.Numerics.Vectors/4.4.0": {
+      "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
-            "assemblyVersion": "4.1.3.0",
-            "fileVersion": "4.6.25519.3"
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -285,6 +371,34 @@
           }
         }
       },
+      "System.Text.Encodings.Web/4.7.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Text.Json/4.7.1": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1",
+          "System.Text.Encodings.Web": "4.7.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        }
+      },
       "System.Threading.Tasks.Extensions/4.5.2": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.7.1"
@@ -293,6 +407,31 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
             "assemblyVersion": "4.2.0.0",
             "fileVersion": "4.6.27129.4"
+          }
+        }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "Windows.Foundation.UniversalApiContract/8.0.0.0": {
+        "runtime": {
+          "Windows.Foundation.UniversalApiContract.winmd": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "10.0.18362.1"
           }
         }
       }
@@ -325,6 +464,13 @@
       "path": "microsoft.data.sqlite.core/3.1.3",
       "hashPath": "microsoft.data.sqlite.core.3.1.3.nupkg.sha512"
     },
+    "Microsoft.DotNet.PlatformAbstractions/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bwD01wYeN+g+Yib7XXahbRdvh5lj6PJ0si6TO6kP7n+fQsBxGy18ewJLjTZUxCwWJqX39WfQHM6idtE4QuVaiw==",
+      "path": "microsoft.dotnet.platformabstractions/3.1.3",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.1.3.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore/3.1.3": {
       "type": "package",
       "serviceable": true,
@@ -345,6 +491,27 @@
       "sha512": "sha512-FrGD6Os1wCM7dq7kCvFMR1ixEo0VsceqYBpKm6DuF8nDlyHGCYRnaeagMjTraWCtZz0jpqGu83qD880E/NgSBA==",
       "path": "microsoft.entityframeworkcore.analyzers/3.1.3",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uL8nPKSGtWkqi613tGj2fbFGskm4k6KKE7rRcWFEQx0tbrOyMiowL4gErFLa0izmoSE1uWhEdqxq1iE1C3yCmw==",
+      "path": "microsoft.entityframeworkcore.relational/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xRggLUP5O68OcpvdMorga429G9tYVb0JZOX/w779kLKbNPbCLxvr8e39xdY4EivLSBtedXr/HY2GEkKhBRilkA==",
+      "path": "microsoft.entityframeworkcore.sqlite/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RI9rlHZvx5zXuY9zUrQ2yN7oKrFbgn+AA2pL/sWionvlN3sbGXr1PWt8t1vG5yDE3YqctS/ypA8gmE8LGwzOsQ==",
+      "path": "microsoft.entityframeworkcore.sqlite.core/3.1.3",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.core.3.1.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.3": {
       "type": "package",
@@ -395,6 +562,13 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.3",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512"
     },
+    "Microsoft.Extensions.DependencyModel/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NrcgRhryflmjz16bwr2krbQyhMstOhRi6dD39KEhUGRKVdXEKOppVVOOelxchIFVfNUGs5SEvcAm+binU09S3g==",
+      "path": "microsoft.extensions.dependencymodel/3.1.3",
+      "hashPath": "microsoft.extensions.dependencymodel.3.1.3.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/3.1.3": {
       "type": "package",
       "serviceable": true,
@@ -437,6 +611,20 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Prism.Core/7.2.0.1422": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U6tZ4Iq+ELyK5PedRC6E20caZXXTmTYiw5evpv0M3WcfKgih9H5G5LDBlDl+65eC5Vb4lnOaUCAtckdEl2MRxA==",
+      "path": "prism.core/7.2.0.1422",
+      "hashPath": "prism.core.7.2.0.1422.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OVPI/nh5AqfLCIKhAYqjCa6AHhc7oKApGcGM3UhMRSerFiBx58nSpGwxVFdMgjOCWZR+fA49nzsnKlWp5hFo8w==",
+      "path": "sqlitepclraw.bundle_e_sqlite3/2.0.2",
+      "hashPath": "sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512"
+    },
     "SQLitePCLRaw.core/2.0.2": {
       "type": "package",
       "serviceable": true,
@@ -444,12 +632,26 @@
       "path": "sqlitepclraw.core/2.0.2",
       "hashPath": "sqlitepclraw.core.2.0.2.nupkg.sha512"
     },
-    "System.Buffers/4.4.0": {
+    "SQLitePCLRaw.lib.e_sqlite3/2.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
-      "path": "system.buffers/4.4.0",
-      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+      "sha512": "sha512-S+Tsqe/M7wsc+9HeediI6UHtBKf2X586aRwhi1aBVLGe0WxkAo52O9ZxwEy/v8XMLefcrEMupd2e9CDlIT6QCw==",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.0.2",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i85nt+PE5q+85jDDKos+32MyCyPIBjW09DHhTJm8Tr2lXjRza+zBB3/1ovBbHgZP8o/fXzqNwB8bZsRzEtzk4Q==",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.0.2",
+      "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512"
+    },
+    "System.Buffers/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "path": "system.buffers/4.5.0",
+      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
     "System.Collections.Immutable/1.7.0": {
       "type": "package",
@@ -479,12 +681,12 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "System.Numerics.Vectors/4.4.0": {
+    "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
-      "path": "system.numerics.vectors/4.4.0",
-      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/4.7.1": {
       "type": "package",
@@ -493,12 +695,41 @@
       "path": "system.runtime.compilerservices.unsafe/4.7.1",
       "hashPath": "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
     },
+    "System.Text.Encodings.Web/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IJanJWPQvya2sbGStt3Fkdy4IaomUBSadAfYWeJDQw0zclMk9ixSvMeei6cSmTTQ6ZkGIIAbhHZVCoLR7GgX7Q==",
+      "path": "system.text.encodings.web/4.7.0",
+      "hashPath": "system.text.encodings.web.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Json/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XwzMbct3iNepJaFylN1+l8weWlFburEzXidqleSsLvSXdHSIJHEKtRVKHPlpWcFmJX6k3goPFfVgUfp40RR+bg==",
+      "path": "system.text.json/4.7.1",
+      "hashPath": "system.text.json.4.7.1.nupkg.sha512"
+    },
     "System.Threading.Tasks.Extensions/4.5.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
       "path": "system.threading.tasks.extensions/4.5.2",
       "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    },
+    "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Windows.Foundation.UniversalApiContract/8.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

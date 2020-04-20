@@ -18,12 +18,9 @@ namespace MapleStoryHelper.Standard.Database.Context
             options.UseSqlite("Data Source=" + DATABASE_NAME);
         }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<FingerPrintData>()
-        //        .HasOne(f => f.studentFingerData)
-        //        .WithMany(s => s.FingerDatas)
-        //        .HasForeignKey(f => f.StudentId);
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MHResource>();
+        }
     }
 }
