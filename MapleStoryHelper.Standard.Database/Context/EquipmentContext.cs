@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Equipment;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace MapleStoryHelper.Standard.Database.Context
     {
         private string DATABASE_NAME = "Equipment.db";
 
-        public DbSet<StatusBase> Status { get; set; }
+        public DbSet<EquipmentStatus> Status { get; set; }
         public DbSet<EquipmentItem> Equipment { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
@@ -21,8 +22,16 @@ namespace MapleStoryHelper.Standard.Database.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StatusBase>().HasOne<EquipmentItem>();
+            modelBuilder.Entity<EquipmentItem>()
+                        .HasOne(e => e.Status)
+                        .WithOne(s => s.Equipment)
+                        .HasForeignKey<EquipmentItem>(e => e.PrimaryKey);
         }
 
+        internal void AddItem(EquipmentItem item)
+        {
+            Equipment.Add(item);
+            Status.Add(item.Status);
+        }
     }
 }

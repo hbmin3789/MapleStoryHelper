@@ -10,7 +10,7 @@ namespace MapleStoryHelper.Standard.Database.Context
     {
         private string DATABASE_NAME = "Resources.db";
 
-        public DbSet<MHResource> ReourceDatas { get;set; }
+        public DbSet<MHResource> ResourceDatas { get;set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -21,6 +21,11 @@ namespace MapleStoryHelper.Standard.Database.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MHResource>();
+        }
+
+        internal void AddResource(MHResource res)
+        {
+            ResourceDatas.Add(res);
         }
     }
 }

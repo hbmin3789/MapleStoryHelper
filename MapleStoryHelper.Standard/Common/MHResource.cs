@@ -10,12 +10,9 @@ namespace MapleStoryHelper.Standard.Common
     [Table("mh_resource")]
     public class MHResource : BindableBase
     {
-        [Column("name")]
-        public string Name { get; set; }
-
         [Key]
         [Column("code")]
-        public int Code { get; set; }
+        public string Code { get; set; }
 
         [Column("image_data")]
         public byte[] ImageData { get; set; }

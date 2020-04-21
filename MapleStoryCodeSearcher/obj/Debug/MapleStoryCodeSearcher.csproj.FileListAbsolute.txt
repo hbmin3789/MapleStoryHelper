@@ -17,3 +17,4 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryCodeSearcher\bin\Debug\Ass
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryCodeSearcher\bin\Debug\Assets\Eqp.img.xml
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryCodeSearcher\bin\Debug\Assets\Etc.img.xml
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryCodeSearcher\bin\Debug\Assets\Skill.img.xml
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryCodeSearcher\obj\Debug\MapleStoryCodeSearcher.csprojAssemblyReference.cache

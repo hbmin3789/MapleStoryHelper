@@ -12,9 +12,14 @@ namespace MapleStoryHelper.Standard
     [Table("status")]
     public class StatusBase : BindableBase
     {
+        private string _primaryKey;
         [Key]
         [Column("key")]
-        public string Key;
+        public string PrimaryKey
+        {
+            get => _primaryKey;
+            set => SetProperty(ref _primaryKey, value);
+        }
 
 
         #region Properties

@@ -47,6 +47,7 @@ namespace MapleStoryHelper.Standard.Character
         Ark,
         Zero,
         Hoyoung,
-        Kinesis
+        Kinesis,
+        All
     }
 }

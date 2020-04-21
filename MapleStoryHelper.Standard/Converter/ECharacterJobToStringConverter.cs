@@ -144,7 +144,7 @@ namespace MapleStoryHelper.Standard.Converter
                     break;
 
                 default:
-                    retval = job.ToString();
+                    retval = "전체";
                     break;
             }
 

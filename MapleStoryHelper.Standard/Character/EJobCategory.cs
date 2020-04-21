@@ -10,6 +10,8 @@ namespace MapleStoryHelper.Standard.Character
         Magician,
         Archer,
         Thief,
-        Pirate
+        Pirate,
+        Xenon,
+        All
     }
 }

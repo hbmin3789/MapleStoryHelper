@@ -9,6 +9,17 @@ namespace MapleStoryHelper.Standard.Item
 {
     public class ItemBase : BindableBase
     {
+        private string _primaryKey;
+        [Key]
+        [Column("key")]
+        public string PrimaryKey
+        {
+            get => _primaryKey;
+            set => SetPriaryKey(value);
+        }
+
+        
+
         #region Property
 
         private EItemCategory _itemCategory = EItemCategory.Etc;
@@ -36,7 +47,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _itemCode = "";
-        [Key]
         [Column("item_code")]
         public string ItemCode
         {
@@ -84,6 +94,22 @@ namespace MapleStoryHelper.Standard.Item
             ImgSrc = imgSrc;
         }
 
+        public ItemBase(ItemBase item)
+        {
+            PrimaryKey = item.PrimaryKey;
+            ItemCategory = item.ItemCategory;
+            Name = item.Name;
+            ImgSrc = item.ImgSrc;
+            ItemCode = item.ItemCode;
+            IsCash = item.IsCash;
+        }
+
         #endregion
+        
+        
+        protected virtual void SetPriaryKey(string value)
+        {
+            SetProperty(ref _primaryKey, value);
+        }
     }
 }
