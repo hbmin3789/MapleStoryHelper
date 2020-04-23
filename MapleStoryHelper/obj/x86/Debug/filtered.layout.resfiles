@@ -10,6 +10,7 @@ App.xbf
 Control\Character\CharacterControl.xbf
 Control\Character\CharacterSettingControl.xbf
 MapleStoryHelper.xr.xml
+Theme\FontSize.xbf
 View\CharacterAddPage.xbf
 View\MainPage.xbf
 Properties\Default.rd.xml

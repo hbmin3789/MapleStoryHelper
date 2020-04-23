@@ -125,6 +125,9 @@
     <Compile Include="Control\Character\CharacterSettingControl.xaml.cs">
       <DependentUpon>CharacterSettingControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Status\StatusDisplayControl.xaml.cs">
+      <DependentUpon>StatusDisplayControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
     <Compile Include="View\CharacterAddPage.xaml.cs">
@@ -163,6 +166,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Control\Status\StatusDisplayControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\FontSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CharacterAddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -190,7 +201,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Items\" />
+    <Folder Include="Assets\Items\Scroll\" />
     <Folder Include="Assets\JobIcons\" />
     <Folder Include="Assets\Skills\" />
     <Folder Include="Model\" />

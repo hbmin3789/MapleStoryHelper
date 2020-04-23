@@ -90,6 +90,14 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _jobConst, value);
         }
 
+        private EJobLevel _jobLevel;
+        [Column("job_level")]
+        public EJobLevel JobLevel
+        {
+            get => _jobLevel;
+            set => SetProperty(ref _jobLevel, value);
+        }
+
         /*
         앞스공	숙련도% × 뒷스공
 

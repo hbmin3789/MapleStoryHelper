@@ -11,6 +11,13 @@ namespace MapleStoryHelper.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        private Character _newCharacterItem;
+        public Character NewCharacterItem
+        {
+            get => _newCharacterItem;
+            set => SetProperty(ref _newCharacterItem, value);
+        }
+
         private ObservableCollection<Character> _characterItems;
         public ObservableCollection<Character> CharacterItems
         {

@@ -8,7 +8,7 @@ namespace MapleStoryHelper.Standard.Database.Context
 {
     public class CharacterContext : DbContext
     {
-        public DbSet<CharacterBase>
+        
 
     }
 }
