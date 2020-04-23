@@ -2,13 +2,24 @@
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
 {
+    [Table("character")]
     public class CharacterBase : BindableBase
     {
+        private string _primaryKey;
+        [Column("primarykey")]
+        public string PrimaryKey
+        {
+            get => _primaryKey;
+            set => SetProperty(ref _primaryKey, value);
+        }
+
         private string _imageSrc;
+        [Column("image_source")]
         public string ImageSrc
         {
             get=>_imageSrc;
@@ -16,6 +27,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private string _characterName;
+        [Column("character_name")]
         public string CharacterName
         {
             get => _characterName;
@@ -23,6 +35,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private int _level;
+        [Column("level")]
         public int Level
         {
             get => _level;
@@ -30,13 +43,23 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private ECharacterJob _characterJob;
+        [Column("character_job")]
         public ECharacterJob CharacterJob
         {
             get => _characterJob;
             set => SetProperty(ref _characterJob, value);
         }
 
+        private EJobCategory _jobCategory;
+        [Column("job_category")]
+        public EJobCategory JobCategory
+        {
+            get => _jobCategory;
+            set => SetProperty(ref _jobCategory, value);
+        }
+
         private StatusBase _status;
+        [Column("status")]
         public StatusBase Status
         {
             get => _status;
@@ -44,6 +67,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private bool _isUseAttackPower;
+        [Column("is_use_attackpower")]
         public bool IsUseAttackPower
         {
             get => _isUseAttackPower;
@@ -51,6 +75,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private double _weaponConst;
+        [Column("weapon_const")]
         public double WeaponConst
         {
             get => _weaponConst;
@@ -58,6 +83,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private double _jobConst;
+        [Column("job_const")]
         public double JobConst
         {
             get => _jobConst;
