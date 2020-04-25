@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Database;
+using Prism.Commands;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -29,26 +30,52 @@ namespace MapleStoryHelper.ViewModel
         }
 
 
+        public DelegateCommand<bool?> AddCharacterCommand { get; set; }
+
+
         public MapleStoryHelperViewModel()
         {
             InitVariables();
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논" ,Level= 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
-            CharacterItems.Add(new Character() { CharacterName = "최애캐제논", Level = 12, CharacterJob = ECharacterJob.Xenon });
+            InitCommands();
         }
+
+        #region Initialize
 
         private void InitVariables()
         {
             _newCharacterItem = new Character();
             _characterItems = new ObservableCollection<Character>();
-            //dbmanager = new MHDBManager();
+            dbmanager = new MHDBManager();
+        }
+
+        private void InitCommands()
+        {
+            AddCharacterCommand = new DelegateCommand<bool?>(AddCharacter);
+        }
+
+        #endregion
+
+        #region Command
+
+        private void AddCharacter(bool? result)
+        {
+            if(result == true)
+            {
+                SaveCharacter();
+                LoadCharacter();
+            }
+        }
+
+        #endregion
+
+        private void SaveCharacter()
+        {
+            dbmanager.SaveCharacter(NewCharacterItem);
+        }
+
+        private void LoadCharacter()
+        {
+            CharacterItems = new ObservableCollection<Character>(dbmanager.GetCharacterItems());
         }
     }
 }

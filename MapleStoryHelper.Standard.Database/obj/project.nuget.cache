@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2ZbNUPTPR58L3Wg3AvJrQHAgoon3Ed/Hq53TVT+4tLMaGFVm9dZDbRQuqUe9fiJ4mMN5ECxDceUWd7C4JlED+w==",
+  "dgSpecHash": "fc/9qggScjlx9yqao8+FoOVCn9hdwua+T+OR1sexSrrleOBi59L7BMaDJddHZZnHQkhI4wP7PQKJ8cNLsh5ozA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

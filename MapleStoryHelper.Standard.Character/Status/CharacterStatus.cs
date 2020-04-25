@@ -8,6 +8,7 @@ namespace MapleStoryHelper.Standard.Character.Status
     //장비템에는 레벨 스테이터스가 없으나, 캐릭터에게는 레벨에따른 스테이터스가 있으므로 만들 필요가 있음.
     public class CharacterStatus : StatusBase
     {
+        //Status와 Character의 테이블이 나뉘어져있음
         public Character Character = new Character();
 
         #region Property

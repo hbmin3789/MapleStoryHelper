@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
+using Microsoft.Xaml.Interactions.Core;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,7 +29,19 @@ namespace MapleStoryHelper.View
         public CharacterAddPage()
         {
             this.InitializeComponent();
+            OnLoaded();
+        }
+
+        private void OnLoaded()
+        {
+            InitControl();
             InitComboBox();
+        }
+
+        private void InitControl()
+        {
+            //캐릭터 수정때 DataContext를 설정해주기 위해 함수로 뺐음.
+            SetCharacter(App.mapleStoryHelperViewModel.NewCharacterItem);
         }
 
         private void InitComboBox()
@@ -42,6 +56,37 @@ namespace MapleStoryHelper.View
                 newItem.Content = converter.Convert(items.GetValue(i), null, null, null).ToString();
 
                 cbCharacterJob.Items.Add(newItem);
+            }
+        }
+
+        public void SetCharacter(Character character)
+        {
+            this.DataContext = character;
+            ctrlStatusDisplay.DataContext = character;
+        }
+
+        private async void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            bool result = false;
+
+            var messageDialog = new MessageDialog("이대로 저장할까요?");
+
+            messageDialog.Commands.Add(new UICommand("저장", new UICommandInvokedHandler(c=> 
+            {
+                result = true;
+            })));
+            messageDialog.Commands.Add(new UICommand("취소", new UICommandInvokedHandler(c => 
+            {
+                result = false;
+            })));
+            messageDialog.DefaultCommandIndex = 0;
+            messageDialog.CancelCommandIndex = 1;
+            await messageDialog.ShowAsync();
+
+            if(result == true)
+            {
+                App.mapleStoryHelperViewModel.AddCharacterCommand.Execute(result);
+                this.Visibility = Visibility.Collapsed;
             }
         }
     }

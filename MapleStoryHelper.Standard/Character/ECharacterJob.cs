@@ -6,7 +6,7 @@ namespace MapleStoryHelper.Standard.Character
 {
     public enum ECharacterJob
     {
-        Hero,
+        Hero = 0,
         Paladin,
         DarkKnight,
         Bishop,

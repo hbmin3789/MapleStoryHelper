@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B2e/e1qo1h+C0c+LA/p+8BCMykeXLgJ4Id8j3/vB2Hve0CaGvPdh874v1YQKEoorEcqkcb/BlBKud9NpjQKdbw==",
+  "dgSpecHash": "LVM58AJrnymweXULpmOlA9hgOXaFKjcR5SUt2m+XNQyJF2cEL1ZT88QctfyEg3UCPuNRON+iOdCqm6YWqoLgUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\colorcode.core\\2.0.6\\colorcode.core.2.0.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\colorcode.uwp\\2.0.6\\colorcode.uwp.2.0.6.nupkg.sha512",

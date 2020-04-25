@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Standard.Common;
+﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Database.Context;
 using MapleStoryHelper.Standard.Item;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
@@ -21,7 +23,7 @@ namespace MapleStoryHelper.Standard.Database
         public MHDBManager()
         {
             InitVariables();
-            InitTables();
+            //InitTables();
         }
 
         #region Initialize
@@ -76,6 +78,12 @@ namespace MapleStoryHelper.Standard.Database
             SaveChanges();
         }
 
+        public void SaveCharacter(Character.Character character)
+        {
+            CharacterContext.Add(character);
+            CharacterContext.SaveChanges();
+        }
+
         #endregion
 
         #region Load
@@ -88,6 +96,11 @@ namespace MapleStoryHelper.Standard.Database
         public List<EquipmentItem> GetEquipmentItems()
         {
             return EquipmentContext.EquipmentData.ToList();
+        }
+
+        public List<Character.Character> GetCharacterItems()
+        {
+            return CharacterContext.CharacterData.ToList();
         }
 
         #endregion
