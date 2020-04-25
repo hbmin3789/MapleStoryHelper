@@ -9,7 +9,9 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Control\Character\CharacterControl.xbf
 Control\Character\CharacterSettingControl.xbf
+Control\Status\StatusDisplayControl.xbf
 MapleStoryHelper.xr.xml
+Theme\FontSize.xbf
 View\CharacterAddPage.xbf
 View\MainPage.xbf
 Properties\Default.rd.xml

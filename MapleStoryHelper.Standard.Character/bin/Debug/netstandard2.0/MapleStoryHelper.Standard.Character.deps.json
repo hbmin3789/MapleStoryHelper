@@ -11,7 +11,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "MapleStoryHelper.Standard.Item": "1.0.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "System.ComponentModel.Annotations": "4.2.1.0"
         },
         "runtime": {
           "MapleStoryHelper.Standard.Character.dll": {}

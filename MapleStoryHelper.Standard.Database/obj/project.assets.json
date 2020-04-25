@@ -530,6 +530,20 @@
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1496,6 +1510,11 @@
       "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
     },
+    "MapleStoryHelper.Standard.Character/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj"
+    },
     "MapleStoryHelper.Standard.Item/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
@@ -1505,6 +1524,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "MapleStoryHelper.Standard >= 1.0.0",
+      "MapleStoryHelper.Standard.Character >= 1.0.0",
       "MapleStoryHelper.Standard.Item >= 1.0.0",
       "Microsoft.Data.Sqlite.Core >= 3.1.3",
       "Microsoft.EntityFrameworkCore >= 3.1.3",
@@ -1542,6 +1562,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
+            },
             "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
               "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
             },

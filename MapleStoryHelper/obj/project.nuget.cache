@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j2pykvkiNjIaIIPJFaMCQnd0n7YQOYsatBOSOKI3beDHypPFmZp6sVP3coYhSnGc4nmSTo2xFjhHiOJIlg1/MA==",
+  "dgSpecHash": "B2e/e1qo1h+C0c+LA/p+8BCMykeXLgJ4Id8j3/vB2Hve0CaGvPdh874v1YQKEoorEcqkcb/BlBKud9NpjQKdbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
   "expectedPackageFiles": [
@@ -96,6 +96,7 @@
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.2\\sqlitepclraw.provider.e_sqlite3.2.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3.uwp10\\1.1.14\\sqlitepclraw.provider.e_sqlite3.uwp10.1.1.14.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",

@@ -1,13 +1,18 @@
 ﻿<UserControl
-    x:Class="MapleStoryHelper.Control.Status.StatusDisplayControl"
+    x:Class="MapleStoryHelper.Control.StatusDisplayControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MapleStoryHelper.Control"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300"
+    d:DesignHeight="420"
     d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="{StaticResource TextBoxBigDescriptionFontSize}"/>
+        </Style>
+    </UserControl.Resources>
 
     <Grid Background="White">
         <Grid>
@@ -16,30 +21,34 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <StackPanel>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
+                <TextBlock Text="STR"/>
+                <TextBlock Text="DEX"/>
+                <TextBlock Text="INT"/>
+                <TextBlock Text="LUK"/>
+                <TextBlock Text="HP"/>
+                <TextBlock Text="MP"/>
+                <TextBlock Text="공격력"/>
+                <TextBlock Text="마력"/>
+                <TextBlock Text="데미지"/>
+                <TextBlock Text="보스 공격력"/>
+                <TextBlock Text="방어율 무시"/>
+                <TextBlock Text="크리티컬 확률"/>
+                <TextBlock Text="크리티컬 데미지"/>
             </StackPanel>
             <StackPanel Grid.Column="1">
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
+                <TextBlock Text="{Binding Str}"/>
+                <TextBlock Text="{Binding Dex}"/>
+                <TextBlock Text="{Binding Int}"/>
+                <TextBlock Text="{Binding Luk}"/>
+                <TextBlock Text="{Binding HP}"/>
+                <TextBlock Text="{Binding MP}"/>
+                <TextBlock Text="{Binding AttackPower}"/>
+                <TextBlock Text="{Binding MagicAttack}"/>
+                <TextBlock Text="{Binding Damage}"/>
+                <TextBlock Text="{Binding BossDamage}"/>
+                <TextBlock Text="{Binding IgnoreDef}"/>
+                <TextBlock Text="{Binding Critical}"/>
+                <TextBlock Text="{Binding CriticalDamage}"/>
             </StackPanel>
         </Grid>
         

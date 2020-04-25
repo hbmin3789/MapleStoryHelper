@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Database;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace MapleStoryHelper.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        private MHDBManager dbmanager;
+
         private Character _newCharacterItem;
         public Character NewCharacterItem
         {
@@ -43,7 +46,9 @@ namespace MapleStoryHelper.ViewModel
 
         private void InitVariables()
         {
+            _newCharacterItem = new Character();
             _characterItems = new ObservableCollection<Character>();
+            //dbmanager = new MHDBManager();
         }
     }
 }

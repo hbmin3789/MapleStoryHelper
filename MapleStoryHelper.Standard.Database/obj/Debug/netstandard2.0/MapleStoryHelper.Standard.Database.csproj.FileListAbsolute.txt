@@ -13,3 +13,5 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\o
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.pdb
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.pdb

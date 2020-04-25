@@ -190,6 +190,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite">
       <Version>3.1.3</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core">
+      <Version>3.1.3</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.9</Version>
     </PackageReference>
@@ -198,6 +201,12 @@
     </PackageReference>
     <PackageReference Include="Prism.Core">
       <Version>7.2.0.1422</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.core">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.uwp10">
+      <Version>1.1.14</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +219,10 @@
     <ProjectReference Include="..\MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj">
       <Project>{8746CB0E-6404-4595-AF83-270D25A0F163}</Project>
       <Name>MapleStoryHelper.Standard.Character</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Database\MapleStoryHelper.Standard.Database.csproj">
+      <Project>{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}</Project>
+      <Name>MapleStoryHelper.Standard.Database</Name>
     </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33bc35e0-b1c4-4a35-8a32-ee4439ee3e44}</Project>

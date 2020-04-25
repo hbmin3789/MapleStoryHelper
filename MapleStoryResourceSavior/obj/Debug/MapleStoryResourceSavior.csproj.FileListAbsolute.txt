@@ -101,3 +101,5 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\M
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior.csproj.CopyComplete
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior.exe
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavior\bin\Debug\MapleStoryHelper.Standard.Character.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavior\bin\Debug\MapleStoryHelper.Standard.Character.pdb

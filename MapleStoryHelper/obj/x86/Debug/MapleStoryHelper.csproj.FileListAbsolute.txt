@@ -149,3 +149,10 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\resou
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Theme\FontSize.xbf
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Theme\FontSize.xaml
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Theme\FontSize.xbf
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Control\Status\StatusDisplayControl.xbf
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.Standard.Database.dll
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.Standard.Database.pdb
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.g.i.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.g.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.xaml
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.xbf

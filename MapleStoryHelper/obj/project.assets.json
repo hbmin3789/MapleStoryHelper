@@ -864,6 +864,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1583,6 +1596,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -2759,6 +2790,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -3491,6 +3535,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -4698,6 +4760,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -5430,6 +5505,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -6637,6 +6730,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -7369,6 +7475,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -8545,6 +8669,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -9277,6 +9414,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -10484,6 +10639,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -11216,6 +11384,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -12392,6 +12578,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -13124,6 +13323,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -14331,6 +14548,19 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.14"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Buffers/4.3.0": {
         "type": "package",
         "compile": {
@@ -15063,6 +15293,24 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Microsoft.Data.Sqlite.Core": "3.1.3",
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -20875,6 +21123,18 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
+    "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.14": {
+      "sha512": "TBtd6DWXbW1f5CqwW+IEmgU8sgKoc65Z1ogeFqYab+y+7DwhEj3wZbbL8tXv84FRJMdbsFg9EUTRR0TScQluXA==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.uwp10/1.1.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.1.1.14.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.nuspec"
+      ]
+    },
     "System.Buffers/4.3.0": {
       "sha512": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
       "type": "package",
@@ -23423,6 +23683,11 @@
       "path": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj"
     },
+    "MapleStoryHelper.Standard.Database/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Database/MapleStoryHelper.Standard.Database.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Database/MapleStoryHelper.Standard.Database.csproj"
+    },
     "MapleStoryHelper.Standard.Item/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
@@ -23433,12 +23698,16 @@
     "UAP,Version=v10.0.17763": [
       "MapleStoryHelper.Standard >= 1.0.0",
       "MapleStoryHelper.Standard.Character >= 1.0.0",
+      "MapleStoryHelper.Standard.Database >= 1.0.0",
       "MapleStoryHelper.Standard.Item >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.3",
+      "Microsoft.EntityFrameworkCore.Sqlite.Core >= 3.1.3",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 6.0.0",
-      "Prism.Core >= 7.2.0.1422"
+      "Prism.Core >= 7.2.0.1422",
+      "SQLitePCLRaw.core >= 2.0.2",
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10 >= 1.1.14"
     ]
   },
   "packageFolders": {
@@ -23475,6 +23744,9 @@
             "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
               "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
             },
+            "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
+              "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj"
+            },
             "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
               "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
             },
@@ -23496,6 +23768,10 @@
             "target": "Package",
             "version": "[3.1.3, )"
           },
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "target": "Package",
+            "version": "[3.1.3, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.9, )"
@@ -23507,6 +23783,14 @@
           "Prism.Core": {
             "target": "Package",
             "version": "[7.2.0.1422, )"
+          },
+          "SQLitePCLRaw.core": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": {
+            "target": "Package",
+            "version": "[1.1.14, )"
           }
         },
         "imports": [

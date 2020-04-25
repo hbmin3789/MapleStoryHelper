@@ -270,7 +270,7 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _lastDamage;
-        [Column("lastdamage")]
+        [Column("last_damage")]
         public double LastDamage
         {
             get => _lastDamage;
@@ -278,11 +278,27 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _bossDamage;
-        [Column("bossdamage")]
+        [Column("boss_damage")]
         public double BossDamage
         {
             get => _bossDamage;
             set => SetProperty(ref _bossDamage, value);
+        }
+
+        private int _critical;
+        [Column("critical")]
+        public int Critical
+        {
+            get => _critical;
+            set => SetProperty(ref _critical, value);
+        }
+
+        private double _criticalDamage;
+        [Column("critical_damage")]
+        public double CriticalDamage
+        {
+            get => _criticalDamage;
+            set => SetProperty(ref _criticalDamage, value);
         }
 
         private List<double> _ignoreDef;

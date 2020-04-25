@@ -16,6 +16,7 @@ namespace MapleStoryHelper.Standard.Database
     {
         public ResourceContext ResourceContext { get; set; }
         public EquipmentContext EquipmentContext { get; set; }
+        public CharacterContext CharacterContext { get; set; }
 
         public MHDBManager()
         {
@@ -29,6 +30,7 @@ namespace MapleStoryHelper.Standard.Database
         {
             ResourceContext = new ResourceContext();
             EquipmentContext = new EquipmentContext();
+            CharacterContext = new CharacterContext();
         }
 
         private void InitTables()
@@ -42,6 +44,13 @@ namespace MapleStoryHelper.Standard.Database
             }
 
             databaseCreator = (RelationalDatabaseCreator)EquipmentContext.Database.GetService<IDatabaseCreator>();
+            if (!databaseCreator.Exists())
+            {
+                databaseCreator.Create();
+                databaseCreator.CreateTables();
+            }
+
+            databaseCreator = (RelationalDatabaseCreator)CharacterContext.Database.GetService<IDatabaseCreator>();
             if (!databaseCreator.Exists())
             {
                 databaseCreator.Create();
@@ -78,7 +87,7 @@ namespace MapleStoryHelper.Standard.Database
 
         public List<EquipmentItem> GetEquipmentItems()
         {
-            return EquipmentContext.Equipment.ToList();
+            return EquipmentContext.EquipmentData.ToList();
         }
 
         #endregion
@@ -89,6 +98,7 @@ namespace MapleStoryHelper.Standard.Database
         {
             ResourceContext.SaveChanges();
             EquipmentContext.SaveChanges();
+            CharacterContext.SaveChanges();
         }
     }
 }

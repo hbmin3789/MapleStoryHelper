@@ -11,8 +11,8 @@ namespace MapleStoryHelper.Standard.Database.Context
     {
         private string DATABASE_NAME = "Equipment.db";
 
-        public DbSet<EquipmentStatus> Status { get; set; }
-        public DbSet<EquipmentItem> Equipment { get; set; }
+        public DbSet<EquipmentStatus> StatusData { get; set; }
+        public DbSet<EquipmentItem> EquipmentData { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -30,8 +30,8 @@ namespace MapleStoryHelper.Standard.Database.Context
 
         internal void AddItem(EquipmentItem item)
         {
-            Equipment.Add(item);
-            Status.Add(item.Status);
+            EquipmentData.Add(item);
+            StatusData.Add(item.Status);
         }
     }
 }
