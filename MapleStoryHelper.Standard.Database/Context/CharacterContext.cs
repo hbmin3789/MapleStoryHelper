@@ -15,17 +15,17 @@ namespace MapleStoryHelper.Standard.Database.Context
         public DbSet<CharacterStatus> CharacterStatusData { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            var CurDir = Environment.CurrentDirectory;
+        { 
             options.UseSqlite("Data Source=" + DATABASE_NAME);
+            base.OnConfiguring(options);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Character.Character>()
-                        .HasOne(e => e.CharacterStatus)
+                        .HasOne(c => c.CharacterStatus)
                         .WithOne(s => s.Character)
-                        .HasForeignKey<Character.Character>(e => e.PrimaryKey);
+                        .HasForeignKey<Character.Character>(c => c.PrimaryKey);
         }
 
         internal void AddItem(Character.Character item)

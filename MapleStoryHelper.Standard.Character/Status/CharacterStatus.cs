@@ -9,7 +9,7 @@ namespace MapleStoryHelper.Standard.Character.Status
     public class CharacterStatus : StatusBase
     {
         //Status와 Character의 테이블이 나뉘어져있음
-        public Character Character = new Character();
+        public Character Character { get; set; }
 
         #region Property
 
@@ -61,7 +61,5 @@ namespace MapleStoryHelper.Standard.Character.Status
             set => SetProperty(ref _levelMP, value);
         }
         #endregion
-
-
     }
 }

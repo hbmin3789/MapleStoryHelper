@@ -120,8 +120,8 @@
   <data name="ScopedResolvedFromRootException" xml:space="preserve">
     <value>Cannot resolve '{0}' from root provider because it requires {2} service '{1}'.</value>
   </data>
-  <data name="AmbiguousConstructorException" xml:space="preserve">
-    <value>Unable to activate type '{0}'. The following constructors are ambiguous:</value>
+  <data name="AmbigiousConstructorException" xml:space="preserve">
+    <value>Unable to activate type '{0}'. The following constructors are ambigious:</value>
   </data>
   <data name="UnableToActivateTypeException" xml:space="preserve">
     <value>No constructor for type '{0}' can be instantiated using services from the service container and default values.</value>
@@ -132,20 +132,11 @@
   <data name="DirectScopedResolvedFromRootException" xml:space="preserve">
     <value>Cannot resolve {1} service '{0}' from root provider.</value>
   </data>
-  <data name="ImplementationTypeCantBeConvertedToServiceType" xml:space="preserve">
-    <value>Implementation type '{0}' can't be converted to service type '{1}'</value>
-  </data>
-  <data name="AsyncDisposableServiceDispose" xml:space="preserve">
-    <value>'{0}' type only implements IAsyncDisposable. Use DisposeAsync to dispose the container.</value>
-  </data>
   <data name="OpenGenericServiceRequiresOpenGenericImplementation" xml:space="preserve">
     <value>Open generic service type '{0}' requires registering an open generic implementation type.</value>
   </data>
   <data name="ScopedInSingletonException" xml:space="preserve">
     <value>Cannot consume {2} service '{0}' from {3} '{1}'.</value>
-  </data>
-  <data name="ConstantCantBeConvertedToServiceType" xml:space="preserve">
-    <value>Constant value of type '{0}' can't be converted to service type '{1}'</value>
   </data>
   <data name="NoConstructorMatch" xml:space="preserve">
     <value>A suitable constructor for type '{0}' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.</value>

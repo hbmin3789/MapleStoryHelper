@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Database;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -29,10 +30,6 @@ namespace MapleStoryHelper.ViewModel
             set => SetProperty(ref _characterItems, value);
         }
 
-
-        public DelegateCommand<bool?> AddCharacterCommand { get; set; }
-
-
         public MapleStoryHelperViewModel()
         {
             InitVariables();
@@ -50,30 +47,32 @@ namespace MapleStoryHelper.ViewModel
 
         private void InitCommands()
         {
-            AddCharacterCommand = new DelegateCommand<bool?>(AddCharacter);
+
         }
 
         #endregion
 
         #region Command
 
-        private void AddCharacter(bool? result)
+        public void AddCharacter(bool result)
         {
             if(result == true)
             {
-                SaveCharacter();
-                LoadCharacter();
+                DBAddCharacter();
+                DBLoadCharacter();
             }
         }
 
         #endregion
 
-        private void SaveCharacter()
+        private void DBAddCharacter()
         {
+            NewCharacterItem.PrimaryKey = Guid.NewGuid().ToString();
+            dbmanager.SaveResource(NewCharacterItem.CharacterImage);
             dbmanager.SaveCharacter(NewCharacterItem);
         }
 
-        private void LoadCharacter()
+        private void DBLoadCharacter()
         {
             CharacterItems = new ObservableCollection<Character>(dbmanager.GetCharacterItems());
         }

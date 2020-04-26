@@ -156,3 +156,6 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Contr
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.g.cs
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.xaml
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Control\Status\StatusDisplayControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x86\Debug\Microsoft.EntityFrameworkCore.Design\en-US\Microsoft.EntityFrameworkCore.Properties.DesignStrings.resw
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.exe.config

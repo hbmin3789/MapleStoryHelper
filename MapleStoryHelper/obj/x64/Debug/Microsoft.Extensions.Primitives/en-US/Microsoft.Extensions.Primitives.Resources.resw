@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Argument_InvalidOffsetLengthStringSegment" xml:space="preserve">
-    <value>Offset and length are out of bounds for this StringSegment or length is greater than the number of characters to the end of this StringSegment.</value>
-  </data>
-  <data name="Capacity_CannotChangeAfterWriteStarted" xml:space="preserve">
-    <value>Cannot change capacity after write started.</value>
-  </data>
-  <data name="Capacity_NotUsedEntirely" xml:space="preserve">
-    <value>Entire reserved capacity was not used. Capacity: '{0}', written '{1}'.</value>
-  </data>
-  <data name="Capacity_NotEnough" xml:space="preserve">
-    <value>Not enough capacity to write '{0}' characters, only '{1}' left.</value>
-  </data>
   <data name="Argument_InvalidOffsetLength" xml:space="preserve">
     <value>Offset and length are out of bounds for the string or length is greater than the number of characters from index to the end of the string.</value>
   </data>

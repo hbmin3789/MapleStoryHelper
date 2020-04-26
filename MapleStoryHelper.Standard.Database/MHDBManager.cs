@@ -3,7 +3,6 @@ using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Database.Context;
 using MapleStoryHelper.Standard.Item;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
@@ -14,7 +13,7 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Database
 {
-    public class MHDBManager
+    public partial class MHDBManager
     {
         public ResourceContext ResourceContext { get; set; }
         public EquipmentContext EquipmentContext { get; set; }
@@ -23,7 +22,7 @@ namespace MapleStoryHelper.Standard.Database
         public MHDBManager()
         {
             InitVariables();
-            //InitTables();
+            InitTables();
         }
 
         #region Initialize
@@ -35,10 +34,13 @@ namespace MapleStoryHelper.Standard.Database
             CharacterContext = new CharacterContext();
         }
 
+        #warning 릴리즈 하기 전에 꼭 데이터베이스 지우는코드 지워야함
         private void InitTables()
         {
             RelationalDatabaseCreator databaseCreator;
             databaseCreator = (RelationalDatabaseCreator)ResourceContext.Database.GetService<IDatabaseCreator>();
+
+            databaseCreator.Delete();
             if (!databaseCreator.Exists())
             {
                 databaseCreator.Create();
@@ -46,6 +48,8 @@ namespace MapleStoryHelper.Standard.Database
             }
 
             databaseCreator = (RelationalDatabaseCreator)EquipmentContext.Database.GetService<IDatabaseCreator>();
+
+            databaseCreator.Delete();
             if (!databaseCreator.Exists())
             {
                 databaseCreator.Create();
@@ -53,6 +57,8 @@ namespace MapleStoryHelper.Standard.Database
             }
 
             databaseCreator = (RelationalDatabaseCreator)CharacterContext.Database.GetService<IDatabaseCreator>();
+
+            databaseCreator.Delete();
             if (!databaseCreator.Exists())
             {
                 databaseCreator.Create();
@@ -80,7 +86,7 @@ namespace MapleStoryHelper.Standard.Database
 
         public void SaveCharacter(Character.Character character)
         {
-            CharacterContext.Add(character);
+            CharacterContext.AddItem(character);
             CharacterContext.SaveChanges();
         }
 

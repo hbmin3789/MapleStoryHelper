@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -11,6 +12,7 @@ namespace MapleStoryHelper.Standard.Character
     public class CharacterBase : BindableBase
     {
         private string _primaryKey;
+        [Key]
         [Column("primarykey")]
         public string PrimaryKey
         {
@@ -98,6 +100,34 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _jobLevel, value);
         }
 
+        public CharacterBase()
+        {
+            InitVariables();
+        }
+
+        private void InitVariables()
+        {
+            Status = new StatusBase();
+            _jobLevel = EJobLevel.First;
+            _level = 1;
+        }
+
+        public void SetCharacterJob(ECharacterJob characterJob)
+        {
+            CharacterJob = characterJob;
+            SetJobConst(characterJob);
+        }
+
+        #warning 직업상수 설정하기
+        private void SetJobConst(ECharacterJob characterJob)
+        {
+            
+        }
+
+
+
+        #region StatusCalcMethod
+
         /*
         앞스공	숙련도% × 뒷스공
 
@@ -106,8 +136,6 @@ namespace MapleStoryHelper.Standard.Character
                 마법 공격력 : (주스탯 × 4 + 부스탯) × 총  마력 × 무기상수 × 직업상수 × (1 + 마력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
         데벤져                HP(AP투자) 14당 주스탯 환산값 1, 아이템HP 17.5당 주스탯 환산값 1, 힘이 부스탯
         */
-
-        #region StatusCalcMethod
 
         public int GetMaxStatusAttack(EStatus main, EStatus sub)
         {

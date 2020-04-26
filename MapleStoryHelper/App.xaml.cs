@@ -1,4 +1,6 @@
-﻿using MapleStoryHelper.ViewModel;
+﻿using MapleStoryHelper.Standard.Database.Context;
+using MapleStoryHelper.ViewModel;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,6 +30,19 @@ namespace MapleStoryHelper
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            DatabaseMigrate();
+        }
+
+        private void DatabaseMigrate()
+        {
+            var ResourceContext = new ResourceContext();
+            var CharacterContext = new CharacterContext();
+            var EquipmentContext = new EquipmentContext();
+
+            ResourceContext.Database.Migrate();
+            CharacterContext.Database.Migrate();
+            EquipmentContext.Database.Migrate();
         }
 
         /// <summary>

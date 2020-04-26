@@ -14,8 +14,8 @@ namespace MapleStoryHelper.Standard.Database.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var CurDir = Environment.CurrentDirectory;
             options.UseSqlite("Data Source=" + DATABASE_NAME);
+            base.OnConfiguring(options);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
