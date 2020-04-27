@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/z3qyiYxd7YQAAaNzWyXaFwTek580Iuu1pX8ekYQwBlBpll7mmz53tg7h/0c2s3YdNi+JzGhnJxNW6wQY5hcrg==",
+  "dgSpecHash": "hIXi8OKkZHoJIRbN9TcvCQ4mJ0xnj57YV6k5h87A4BpUHImzSRQrjjIH8T2sfqxdIthCBN0BlM+v7Uzr4wRFfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

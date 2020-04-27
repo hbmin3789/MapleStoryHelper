@@ -31,15 +31,15 @@
                     <RowDefinition Height="Auto" MinHeight="500"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <ComboBox x:ConnectionId='5' x:Name="cbCharacterJob" Grid.Row="0" HorizontalAlignment="Stretch"
+                <ComboBox x:ConnectionId='7' x:Name="cbCharacterJob" Grid.Row="0" HorizontalAlignment="Stretch"
                           VerticalAlignment="Stretch"
                           SelectedIndex="{Binding CharacterJob}"/>
                 <Grid Grid.Row="1">
-                    <Button x:ConnectionId='6' x:Name="btnSetImagePath" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    <Button x:ConnectionId='8' x:Name="btnSetImagePath" HorizontalAlignment="Right" VerticalAlignment="Top"
                             Width="100" Height="30" Margin="0,10,20,0"
                             Content="이미지 찾기"
                                                          />
-                    <Image x:ConnectionId='7' x:Name="imgCharacter"/>
+                    <Image x:ConnectionId='9' x:Name="imgCharacter"/>
                 </Grid>
                 <StackPanel Grid.Row="2">
                     <StackPanel Orientation="Horizontal">
@@ -65,7 +65,7 @@
 
         <!-- 캐릭터 스펙 -->
         <Grid Grid.Column="1">
-            <control:StatusDisplayControl x:ConnectionId='4' x:Name="ctrlStatusDisplay"/>
+            <control:StatusDisplayControl x:ConnectionId='6' x:Name="ctrlStatusDisplay"/>
         </Grid>
 
         <!-- 세팅 버튼 -->
@@ -73,7 +73,8 @@
             <StackPanel HorizontalAlignment="Center"
                         VerticalAlignment="Top"
                         Margin="0,10,0,0">
-                <Button Content="아이템 세팅"/>
+                <Button x:ConnectionId='5' x:Name="btnItemSetting" Content="아이템 세팅"
+                                                    />
                 <Button Content="스킬 세팅"/>
                 <Button Content="심볼 세팅"/>
             </StackPanel>
@@ -81,16 +82,24 @@
             <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom"
                         Orientation="Horizontal"
                         Margin="10">
-                <Button x:ConnectionId='2' Width="100" Height="30" Margin="10"
+                <Button x:ConnectionId='3' Width="100" Height="30" Margin="10"
                         Content="저장"
                                              />
-                <Button x:ConnectionId='3' Width="100" Height="30" Margin="10"
+                <Button x:ConnectionId='4' Width="100" Height="30" Margin="10"
                         Content="취소"
                                              />
             </StackPanel>
             
         </Grid>
-        
+
+        <Frame x:ConnectionId='2' x:Name="ContentFrame" Grid.ColumnSpan="3">
+            <Frame.ContentTransitions>
+                <TransitionCollection>
+                    <NavigationThemeTransition/>
+                </TransitionCollection>
+            </Frame.ContentTransitions>
+        </Frame>
+
     </Grid>
 </Page>
 

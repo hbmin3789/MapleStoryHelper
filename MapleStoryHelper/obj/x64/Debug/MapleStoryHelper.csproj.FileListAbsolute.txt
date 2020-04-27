@@ -136,3 +136,8 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\resou
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637076104640000000.json
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636884986160000000.json
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\ItemSettingPage.xbf
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.g.i.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.g.cs
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.xaml
+C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.xbf

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KkYP6ztc8qDsFM/zJZIzfaf+nALdOuIm8xjoKqswPfKgiNFyJSXiSMRzvS3JfULRC/1qsjSd5DdBnERa1hpOvA==",
+  "dgSpecHash": "h8/NMS/SIL/mo0QWJpTa7CLdQuFXCJge3ldaGrXLfcFWDMr42Quqhd4i+jM9oQpuNMsKZzkClHxVP9E7fep2Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlite\\1.1.0\\microsoft.data.sqlite.1.1.0.nupkg.sha512",

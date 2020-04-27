@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -138,6 +139,9 @@ namespace MapleStoryHelper.View
             return image;
         }
 
-
+        private void btnItemSetting_Click(object sender, RoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(ItemSettingPage), null, new DrillInNavigationTransitionInfo());
+        }
     }
 }
