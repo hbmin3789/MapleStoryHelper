@@ -193,6 +193,9 @@
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\CharacterAddPage.xbf">
       <PackagePath>View\CharacterAddPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\EquipmentSettingPage.xbf">
+      <PackagePath>View\EquipmentSettingPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\ItemSettingPage.xbf">
       <PackagePath>View\ItemSettingPage.xbf</PackagePath>
     </AppxPackagedFile>

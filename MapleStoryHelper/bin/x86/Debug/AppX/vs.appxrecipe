@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-27T04:54:54.163</Modified>
+      <Modified>2020-04-27T10:32:11.392</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.exe">
       <PackagePath>entrypoint\MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-04-27T04:54:51.185</Modified>
+      <Modified>2020-04-27T10:32:07.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.exe.config">
       <PackagePath>MapleStoryHelper.exe.config</PackagePath>
@@ -160,11 +160,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll">
       <PackagePath>MapleStoryHelper.Standard.Character.dll</PackagePath>
-      <Modified>2020-04-26T12:31:25.168</Modified>
+      <Modified>2020-04-27T10:31:57.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.dll">
       <PackagePath>MapleStoryHelper.Standard.Database.dll</PackagePath>
-      <Modified>2020-04-26T13:21:09.174</Modified>
+      <Modified>2020-04-27T10:31:58.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll">
       <PackagePath>MapleStoryHelper.Standard.dll</PackagePath>
@@ -172,7 +172,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll">
       <PackagePath>MapleStoryHelper.Standard.Item.dll</PackagePath>
-      <Modified>2020-04-26T12:04:24.490</Modified>
+      <Modified>2020-04-27T10:31:57.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\win2d.uwp\1.24.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -230,7 +230,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\MapleStoryHelper.xr.xml">
       <PackagePath>MapleStoryHelper.xr.xml</PackagePath>
-      <Modified>2020-04-27T04:54:50.554</Modified>
+      <Modified>2020-04-27T10:32:07.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -250,15 +250,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Theme\FontSize.xbf">
       <PackagePath>Theme\FontSize.xbf</PackagePath>
-      <Modified>2020-04-27T04:54:50.629</Modified>
+      <Modified>2020-04-27T10:32:07.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\CharacterAddPage.xbf">
       <PackagePath>View\CharacterAddPage.xbf</PackagePath>
-      <Modified>2020-04-27T04:54:50.631</Modified>
+      <Modified>2020-04-27T10:32:07.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\ItemSettingPage.xbf">
       <PackagePath>View\ItemSettingPage.xbf</PackagePath>
-      <Modified>2020-04-27T04:54:50.631</Modified>
+      <Modified>2020-04-27T10:32:07.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
@@ -274,7 +274,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\bin\x86\Debug\Core\MapleStoryHelper.exe">
       <PackagePath>MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-04-27T04:54:54.136</Modified>
+      <Modified>2020-04-27T10:32:11.367</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

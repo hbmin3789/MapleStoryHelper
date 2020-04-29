@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SkipAllSigValidation" xml:space="preserve">
+    <value>StrongName signature validation is skipped on all manifests.</value>
+  </data>
+  <data name="Ex_DepenedentOSSupportUrlNotSupportedUriScheme" xml:space="preserve">
+    <value>Not a supported scheme for the dependent operating system support url. Only file, http and https schemes are supported.</value>
+  </data>
+  <data name="Ex_TooManyFilesInManifest" xml:space="preserve">
+    <value>There are too many files in the application manifest.</value>
+  </data>
+  <data name="Ex_StoreOperationFailed" xml:space="preserve">
+    <value>Exception occurred during store operation.</value>
+  </data>
+  <data name="Ex_ImageVersionCLRNotSupported" xml:space="preserve">
+    <value>The image CLR version "{0}" in file "{1}" is not supported.</value>
+  </data>
+  <data name="Ex_DepProcArchNotSupported" xml:space="preserve">
+    <value>Deployment manifest identity contains missing or unsupported processor architecture.</value>
+  </data>
+  <data name="LogFile_TransactionSetDeploymentMetadataFailure" xml:space="preserve">
+    <value>Setting one or more of the deployment metadata did not succeed.</value>
+  </data>
+  <data name="ActivateManifestException" xml:space="preserve">
+    <value>Activation of {0} resulted in exception.</value>
+  </data>
+  <data name="Ex_FileAssociationNoDpUrl" xml:space="preserve">
+    <value>Unable to start the associated application {0}. The application could not be found or a remote URL could not be located.</value>
+  </data>
+  <data name="Ex_DeployAppZoneMismatch" xml:space="preserve">
+    <value>Deployment and application do not have matching security zones.</value>
+  </data>
+  <data name="LogFile_SourceDeploymentProviderUrl" xml:space="preserve">
+    <value>	Deployment Provider url		: {0}
+</value>
+  </data>
+  <data name="Ex_DepInvalidSupportedRuntime" xml:space="preserve">
+    <value>The supportedRuntime is not a valid version string: {0}.</value>
+  </data>
+  <data name="PhaseLog_StartOfActivation" xml:space="preserve">
+    <value>Activation of {0} has started.</value>
+  </data>
+  <data name="PhaseLog_ProcessingDeploymentManifestComplete" xml:space="preserve">
+    <value>Processing of deployment manifest has successfully completed.</value>
+  </data>
+  <data name="Maintain_FailedMsg" xml:space="preserve">
+    <value>Application could not be maintained. Try again later.</value>
+  </data>
+  <data name="Ex_SemanticallyInvalidDeploymentManifest" xml:space="preserve">
+    <value>Deployment manifest is not semantically valid.</value>
+  </data>
+  <data name="Ex_FilePathNotRelative" xml:space="preserve">
+    <value>File element {0} must have a relative path.</value>
+  </data>
+  <data name="Upd_Consumed" xml:space="preserve">
+    <value>Updated application {0} from source {1} has been accepted.</value>
+  </data>
+  <data name="Ex_DeploymentException" xml:space="preserve">
+    <value>Deployment exception.</value>
+  </data>
+  <data name="Ex_InvalidRelativePath" xml:space="preserve">
+    <value>Invalid relative file path.</value>
+  </data>
+  <data name="LogFile_IdentityApplicationIdentity" xml:space="preserve">
+    <value>	Application Identity		: {0}
+</value>
+  </data>
+  <data name="Ex_ComArgSubIdentityNull" xml:space="preserve">
+    <value>Subscription identity argument cannot be null.</value>
+  </data>
+  <data name="Ex_IdentityTooLong" xml:space="preserve">
+    <value>Manifest identity is too long.</value>
+  </data>
+  <data name="LogFile_WarningStatusNoWarning" xml:space="preserve">
+    <value>	There were no warnings during this operation.
+</value>
+  </data>
+  <data name="LogFile_HeaderSystemDeploymentVersion" xml:space="preserve">
+    <value>	System.Deployment.dll 		: {0}
+</value>
+  </data>
+  <data name="Ex_CustomHostSpecifiedAppNotSupported" xml:space="preserve">
+    <value>The customHostSpecified attribute is not supported for Windows Forms applications.</value>
+  </data>
+  <data name="Ex_DifferentHashes" xml:space="preserve">
+    <value>File, {0}, has a different computed hash than specified in manifest.</value>
+  </data>
+  <data name="Ex_InvalidSequence" xml:space="preserve">
+    <value>The requested operation was out of sequence.</value>
+  </data>
+  <data name="SupportUrlFormatter" xml:space="preserve">
+    <value>{0} online support</value>
+  </data>
+  <data name="Ex_IdentityWithInvalidChars" xml:space="preserve">
+    <value>Manifest identity has one or more invalid characters: {0}.</value>
+  </data>
+  <data name="Ex_ShortcutRemovalFailure" xml:space="preserve">
+    <value>Shortcuts could not be removed. Try again later.</value>
+  </data>
+  <data name="Ex_DepUnsupportedFrameworkProfile" xml:space="preserve">
+    <value>The profile {0} is not supported for .NET Framework version {1}.</value>
+  </data>
+  <data name="Ex_DepAppRefPrereqOrOptionalOrResourceFallback" xml:space="preserve">
+    <value>Application reference in deployment manifest must not be optional or pre-requisite or must not have resource fallback culture.</value>
+  </data>
+  <data name="Ex_DepApplicationDependencyRequired" xml:space="preserve">
+    <value>Deployment manifest must specify an application dependency.</value>
+  </data>
+  <data name="LogFile_TransactionFailureSummaryBullets" xml:space="preserve">
+    <value>		- {0}
+</value>
+  </data>
+  <data name="ErrorMessage_GenericActivationFailure" xml:space="preserve">
+    <value>Application cannot be started. Contact the application vendor.</value>
+  </data>
+  <data name="Ex_TransactDirectoryNotFoundException" xml:space="preserve">
+    <value>Transaction did not complete. The file name may be too long. Shorten the file name, and try again.</value>
+  </data>
+  <data name="Ex_FileExtensionTooLong" xml:space="preserve">
+    <value>File association extension "{0}" is longer than maximum limit.</value>
+  </data>
+  <data name="Ex_NotSupportedUriScheme" xml:space="preserve">
+    <value>Uri scheme is not supported. Only file, HTTP, and HTTPS schemes are supported.</value>
+  </data>
+  <data name="Ex_DeploymentIdentityNotInSubscription" xml:space="preserve">
+    <value>The deployment identity does not match the subscription.</value>
+  </data>
+  <data name="LogFile_SummaryBrowserHostedApp" xml:space="preserve">
+    <value>	* Browser-hosted application.
+</value>
+  </data>
+  <data name="Ex_AppManInvalidHash" xml:space="preserve">
+    <value>Application manifest has either a different computed hash than the one specified or no hash specified at all. </value>
+  </data>
+  <data name="UI_RollbackCompletedTitle" xml:space="preserve">
+    <value>Application Restored</value>
+  </data>
+  <data name="ErrorMessage_PlatformGACDetectionFailed" xml:space="preserve">
+    <value>Unable to install or run the application. The application requires that assembly {0} be installed in the Global Assembly Cache (GAC) first. </value>
+  </data>
+  <data name="Ex_DepProviderNotSupportedUriScheme" xml:space="preserve">
+    <value>Uri scheme for the deployment provider is not supported. Only file, HTTP and HTTPS schemes are supported.</value>
+  </data>
+  <data name="Ex_AlreadyUpdateable" xml:space="preserve">
+    <value>Cannot disable updates for this application. To install this application uninstall the previous version first.</value>
+  </data>
+  <data name="ErrorMessage_Forbidden" xml:space="preserve">
+    <value>Application installation did not succeed. Cannot locate application files on the server. Contact the application vendor or your administrator for assistance.</value>
+  </data>
+  <data name="PhaseLog_ProcessingApplicationManifestComplete" xml:space="preserve">
+    <value>Processing of application manifest has successfully completed.</value>
+  </data>
+  <data name="LogFile_TransactionUninstallDeploymentFailure" xml:space="preserve">
+    <value>Un-installation of deployment ({0}) did not succeed.</value>
+  </data>
+  <data name="Activation_DisallowUrlActivationMessageAfterInstall" xml:space="preserve">
+    <value>Application is successfully installed. You can activate the application from the Start Menu.</value>
+  </data>
+  <data name="LogFile_ErrorSummaryStatusNoError" xml:space="preserve">
+    <value>	No errors were detected during this operation.
+</value>
+  </data>
+  <data name="Ex_InvalidPEFormat" xml:space="preserve">
+    <value>File stream is not of valid Portable Executable (PE) format.</value>
+  </data>
+  <data name="Ex_ComArgSubIdentityWithVersion" xml:space="preserve">
+    <value>Subscription identity argument cannot have version attribute.</value>
+  </data>
+  <data name="LogFile_TransactionBullets" xml:space="preserve">
+    <value>		+ {0}
+</value>
+  </data>
+  <data name="Ex_DeploymentUriDifferentExText" xml:space="preserve">
+    <value>You cannot start application {0} from location {1} it is already installed from location {2}. You can start it from location {2} or you can uninstall it and reinstall it from location {1}. If you reinstall the application, be aware that you might lose any customizations that you made to the application.</value>
+  </data>
+  <data name="Ex_DeploymentManifestNoVersion" xml:space="preserve">
+    <value>Deployment manifest identity has no version.</value>
+  </data>
+  <data name="Ex_DescriptionSupportUrlNotSupportedUriScheme" xml:space="preserve">
+    <value>Not a supported scheme for the application support url. Only file, http and https schemes are supported.</value>
+  </data>
+  <data name="UI_ProgressBytesIn100GB" xml:space="preserve">
+    <value>{0:f0} GB</value>
+  </data>
+  <data name="UI_ProgressBytesIn100MB" xml:space="preserve">
+    <value>{0:f0} MB</value>
+  </data>
+  <data name="UI_ProgressBytesIn100KB" xml:space="preserve">
+    <value>{0:f0} KB</value>
+  </data>
+  <data name="ErrorMessage_CompatiblePlatformDetectionFailed" xml:space="preserve">
+    <value>Unable to install or run this application. This application requires {0} or other compatible .NET Framework.</value>
+  </data>
+  <data name="ErrorMessage_TrustFailDependentPlatformMissing" xml:space="preserve">
+    <value>Unable to to grant required permissions to the application. {0}</value>
+  </data>
+  <data name="Ex_PatchSourceOpenFailed" xml:space="preserve">
+    <value>File {0} cannot be opened for patching.</value>
+  </data>
+  <data name="Ex_DepAppRefInvalidIdentityName" xml:space="preserve">
+    <value>The name of the application reference identity has invalid characters: {0}.</value>
+  </data>
+  <data name="Ex_DecreasingMinimumRequiredVersion" xml:space="preserve">
+    <value>Minimum required version specified in the deployment manifest cannot be lower than the previous minimum required version.</value>
+  </data>
+  <data name="Ex_DownloadCancelledException" xml:space="preserve">
+    <value>Download cancelled exception.</value>
+  </data>
+  <data name="Ex_AppNoCompatibleFrameworksAllowed" xml:space="preserve">
+    <value>Application manifest does not accept specification of &lt;compatibleFrameworks&gt;.</value>
+  </data>
+  <data name="Ex_DependencyResourceWithCodebase" xml:space="preserve">
+    <value>Resource dependency cannot have codebase: {0}.</value>
+  </data>
+  <data name="Ex_MinimumRequiredVersionExceedDeployment" xml:space="preserve">
+    <value>Minimum required version specified in the deployment manifest cannot exceed the version of this deployment.</value>
+  </data>
+  <data name="UI_ProgressText" xml:space="preserve">
+    <value>Downloading: {0} of {1}</value>
+  </data>
+  <data name="UI_ProgressDone" xml:space="preserve">
+    <value>Preparing Application...</value>
+  </data>
+  <data name="Ex_NotInstalledOrNotVisible" xml:space="preserve">
+    <value>Deployment is not installed or is not visible in the shell. </value>
+  </data>
+  <data name="Ex_DeploymentDownloadException" xml:space="preserve">
+    <value>Deployment download exception.</value>
+  </data>
+  <data name="Ex_SimplyNamedAsmWithStrongNameComplib" xml:space="preserve">
+    <value>Simply named mixed mode assembly {0} embeds strong name complib metadata.</value>
+  </data>
+  <data name="LogFile_ErrorStatusError" xml:space="preserve">
+    <value>	Following errors were detected during this operation.
+</value>
+  </data>
+  <data name="LogFile_IndividualErrorSummaryBullets" xml:space="preserve">
+    <value>		+ {0}
+</value>
+  </data>
+  <data name="UI_ProgressBytesInBytes" xml:space="preserve">
+    <value>{0} Bytes</value>
+  </data>
+  <data name="Ex_AppOneEntryPoint" xml:space="preserve">
+    <value>Application manifests must specify exactly one &lt;entryPoint&gt; section.</value>
+  </data>
+  <data name="Upd_DeployUpdateSkipping" xml:space="preserve">
+    <value>User has decided to skip the update.</value>
+  </data>
+  <data name="Ex_ManifestFromDocument" xml:space="preserve">
+    <value>Exception reading manifest from {0}: the manifest may not be valid or the file could not be opened.</value>
+  </data>
+  <data name="Ex_SignedManifestUnhashedComponent" xml:space="preserve">
+    <value>The manifest is missing required hashes for some application components. The manifest signature is regarded as not valid.</value>
+  </data>
+  <data name="Ex_SingleOperation" xml:space="preserve">
+    <value>Update or check-for-update operation is already in progress.</value>
+  </data>
+  <data name="Ex_DepMissingCompatibleFrameworks" xml:space="preserve">
+    <value>Deployment manifest is missing &lt;compatibleFrameworks&gt;.</value>
+  </data>
+  <data name="Ex_StronglyNamedAssemblyNotVerifiable" xml:space="preserve">
+    <value>Cannot verify strongly named assembly {0}.</value>
+  </data>
+  <data name="Ex_FileBeingDownloadedTooLarge" xml:space="preserve">
+    <value>File being downloaded from {0} has exceeded its acceptable size (The limit for this file was {1} bytes).</value>
+  </data>
+  <data name="Ex_SatelliteResourcesNotSupported" xml:space="preserve">
+    <value>Satellite resources are not supported.</value>
+  </data>
+  <data name="SkipAllSemanticValidation" xml:space="preserve">
+    <value>Semantic validation is skipped on all manifests.</value>
+  </data>
+  <data name="Ex_DepSignedAppUnsigned" xml:space="preserve">
+    <value>The deployment manifest is signed, but the application manifest is unsigned. Both manifests must be either signed or unsigned.</value>
+  </data>
+  <data name="Ex_SyncNullOnce" xml:space="preserve">
+    <value>Synchronize(null) cannot be called more than once.</value>
+  </data>
+  <data name="Ex_FileOptionalButNoGroup" xml:space="preserve">
+    <value>File {0} is optional but is not assigned to a file group.</value>
+  </data>
+  <data name="Rollback_Exception" xml:space="preserve">
+    <value>Exception occurred during restoration of application {0}.</value>
+  </data>
+  <data name="PhaseLog_DeploymentUpdateCheck" xml:space="preserve">
+    <value>Performing necessary update check as specified by the deployment.</value>
+  </data>
+  <data name="LogFile_Error" xml:space="preserve">
+    <value>ERROR DETAILS
+</value>
+  </data>
+  <data name="PlatformDependentAssemblyVersion" xml:space="preserve">
+    <value>{0} Version {1}</value>
+  </data>
+  <data name="Ex_DepWithUseManifestForTrust" xml:space="preserve">
+    <value>The deployment manifest does not support the &lt;useManifestForTrust&gt; element.</value>
+  </data>
+  <data name="Ex_InvalidCopyRequest" xml:space="preserve">
+    <value>Copy or read request has some arguments that are not valid.</value>
+  </data>
+  <data name="ErrorMessage_GenericLinkUrlMessage" xml:space="preserve">
+    <value>Click here to send this error to the deployment server and check for known solutions to this problem.</value>
+  </data>
+  <data name="Ex_PEImageTypeNotSupported" xml:space="preserve">
+    <value>Portable executable (PE) image is not supported. Only 32 bit or 64 bit images are supported. </value>
+  </data>
+  <data name="LogFile_PhaseInformationStatusNoPhaseInformation" xml:space="preserve">
+    <value>	No phase information is available.
+</value>
+  </data>
+  <data name="SkippedSKUDetection" xml:space="preserve">
+    <value>.NET Framework 3.5 SP1 SKU detection is turned off.</value>
+  </data>
+  <data name="Ex_DependencyInvalidHash" xml:space="preserve">
+    <value>Hash is not properly formatted: {0}.</value>
+  </data>
+  <data name="Life_OperationsInProgress" xml:space="preserve">
+    <value>Service ended while there are still {0} operations in progress.</value>
+  </data>
+  <data name="Ex_FileAssociationInvalid" xml:space="preserve">
+    <value>The following file association extension is not valid for this computer: "{0}"</value>
+  </data>
+  <data name="PlatformMicrosoftCommonLanguageRuntime" xml:space="preserve">
+    <value>Microsoft Common Language Runtime Version {0}</value>
+  </data>
+  <data name="Ex_MultipleId1Manifest" xml:space="preserve">
+    <value>Multiple embedded manifests (with id=1, possibly with different language ids) are found which is not supported.</value>
+  </data>
+  <data name="CleanOnlineCache_Completed" xml:space="preserve">
+    <value>Cleaning up of online application cache successfully completed.</value>
+  </data>
+  <data name="Ex_SyncNullFirst" xml:space="preserve">
+    <value>Synchronize(null) must be called first.</value>
+  </data>
+  <data name="Ex_ManifestReadException" xml:space="preserve">
+    <value>An exception occurred while reading the manifest.</value>
+  </data>
+  <data name="Ex_SemanticallyInvalidApplicationManifest" xml:space="preserve">
+    <value>Application manifest is not semantically valid.</value>
+  </data>
+  <data name="Ex_AppNoPublisherProductAllowed" xml:space="preserve">
+    <value>If you do not specify &lt;useManifestForTrust&gt; in the application manifest, you should not specify a publisher or a product name.</value>
+  </data>
+  <data name="Ex_CleanOnlineAppCache" xml:space="preserve">
+    <value>Cleaning up online application cache did not succeed.</value>
+  </data>
+  <data name="Ex_InvalidPEImage" xml:space="preserve">
+    <value>File {0} is not a valid Portable Executable (PE) file.</value>
+  </data>
+  <data name="Ex_ManifestParseCMSErrorMessage" xml:space="preserve">
+    <value>
+			-HRESULT: 	0x{0:x}
+			 Start line: 	{1}
+			 Start column: 	{2}
+			 Host file: 	{3}</value>
+  </data>
+  <data name="Ex_TooManyFileAssociationsInManifest" xml:space="preserve">
+    <value>You cannot have more than {0} file associations for an application.</value>
+  </data>
+  <data name="Ex_DownloadGroupAfterUpdate" xml:space="preserve">
+    <value>Cannot download file group after the application has been updated. Restart the application before attempting the download.</value>
+  </data>
+  <data name="LogFile_TransactionStageComponentFileFailure" xml:space="preserve">
+    <value>Staging of a component file ({0}) did not succeed.</value>
+  </data>
+  <data name="ErrorMessage_ManifestExecutionLevelNotSupported" xml:space="preserve">
+    <value>This Application cannot be installed  because it requires an unsupported feature. Contact your application vendor for assistance.</value>
+  </data>
+  <data name="ActivateManifestSucceeded" xml:space="preserve">
+    <value>Activation of {0} succeeded.</value>
+  </data>
+  <data name="Ex_CompatibleFrameworksSupportUrlNotValid" xml:space="preserve">
+    <value>Support url for &lt;compatibleFrameworks&gt; is not a valid url.</value>
+  </data>
+  <data name="Msg_StoreFormatChangeCaption" xml:space="preserve">
+    <value>Store format upgrade.</value>
+  </data>
+  <data name="Ex_TransformAlgorithmNotSupported" xml:space="preserve">
+    <value>Transform algorithm {0} is not supported.</value>
+  </data>
+  <data name="Upd_UpdateCheckDownloadFailed" xml:space="preserve">
+    <value>Download exception occurred while performing an update check for application {0}.</value>
+  </data>
+  <data name="LogFile_SummaryTrustUrlParameterSet" xml:space="preserve">
+    <value>	* Trust url parameter is set.</value>
+  </data>
+  <data name="Ex_FileAssociationExtensionNoDot" xml:space="preserve">
+    <value>File association extension must start with dot. Offending file association "{0}".</value>
+  </data>
+  <data name="Ex_ActivationInProgressException" xml:space="preserve">
+    <value>Activation in progress exception.</value>
+  </data>
+  <data name="Ex_SubNotInstalled" xml:space="preserve">
+    <value>Application is not installed.</value>
+  </data>
+  <data name="Ex_DependencySupportUrlNoAbsolute" xml:space="preserve">
+    <value>Support url is not absolute for dependency: {0}.</value>
+  </data>
+  <data name="Ex_CannotCallUninstallCustomAddIn" xml:space="preserve">
+    <value>You cannot call UninstallCustomAddin for a ClickOnce application that has not specified a custom host.</value>
+  </data>
+  <data name="Ex_DepenedentOSSupportUrlNotAbsolute" xml:space="preserve">
+    <value>Support url length for dependent operating system is not absolute.</value>
+  </data>
+  <data name="Ex_CannotCommitTrustFailed" xml:space="preserve">
+    <value>The AssertApplicationRequirements method failed. The application cannot be committed.</value>
+  </data>
+  <data name="Ex_CustomUXAlready" xml:space="preserve">
+    <value>An earlier version of this application is already installed and marked as a customUX type. To install this application, either use the customUX element to mark this application as a customUX type or uninstall the earlier version.</value>
+  </data>
+  <data name="Ex_FileExtensionNotSupported" xml:space="preserve">
+    <value>File associations are only supported for Full Trust applications.</value>
+  </data>
+  <data name="LogFile_TransactionFailureSummary" xml:space="preserve">
+    <value>COMPONENT STORE TRANSACTION FAILURE SUMMARY
+</value>
+  </data>
+  <data name="Ex_RequiresXPOrHigher" xml:space="preserve">
+    <value>Requires XP or higher.</value>
+  </data>
+  <data name="Ex_FileExtensionInfoMissing" xml:space="preserve">
+    <value>One of the &lt;fileAssociation&gt; elements is missing an extension, description, progID, or defaultIcon attribute.</value>
+  </data>
+  <data name="Maintain_Failed" xml:space="preserve">
+    <value>Maintenance of application {0} did not succeed.</value>
+  </data>
+  <data name="Ex_CannotLoadInternalManifest" xml:space="preserve">
+    <value>Cannot load internal manifest from component file.</value>
+  </data>
+  <data name="Rollback_Failed" xml:space="preserve">
+    <value>Restoration of application {0} did not succeed.</value>
+  </data>
+  <data name="Ex_DeterminePlatformRequirementsFailed" xml:space="preserve">
+    <value>An exception occurred while determining platform requirements.</value>
+  </data>
+  <data name="LogFile_ErrorSummary" xml:space="preserve">
+    <value>ERROR SUMMARY
+</value>
+  </data>
+  <data name="LogFile_WarningStatusIndivualWarning" xml:space="preserve">
+    <value>	* {0}
+</value>
+  </data>
+  <data name="Ex_DependentPlatformMissingException" xml:space="preserve">
+    <value>Dependent platform missing exception.</value>
+  </data>
+  <data name="LogFile_TransactionFailureSummaryNoFailure" xml:space="preserve">
+    <value>		There were no detectable failures during this transaction.
+</value>
+  </data>
+  <data name="Ex_SubNotShellVisible" xml:space="preserve">
+    <value>This is not an installed application.</value>
+  </data>
+  <data name="Ex_InplaceUpdateOfApplicationAttempted" xml:space="preserve">
+    <value>In-place update of an application is not possible, please revise its version.</value>
+  </data>
+  <data name="Ex_DepPublisherProductRequired" xml:space="preserve">
+    <value>Deployment manifest requires that you specify a publisher and a product.</value>
+  </data>
+  <data name="LogFile_TransactionNoTransaction" xml:space="preserve">
+    <value>	No transaction information is available.
+</value>
+  </data>
+  <data name="Ex_ManifestLoadFromFile" xml:space="preserve">
+    <value>Exception occurred loading manifest from file {0}: the manifest may not be valid or the file could not be opened. </value>
+  </data>
+  <data name="SkippingSentinalDependentAssembly" xml:space="preserve">
+    <value>Skipping detection of dependent assembly {0}.</value>
+  </data>
+  <data name="LogFile_TransactionUnknownOperation" xml:space="preserve">
+    <value>{0} ({1})
+			- HRESULT: 0x{2:x}</value>
+  </data>
+  <data name="UI_SplashTitle" xml:space="preserve">
+    <value>Launching Application</value>
+  </data>
+  <data name="ErrorMessage_StoreError" xml:space="preserve">
+    <value>Cannot start the application. Contact the application vendor for assistance.</value>
+  </data>
+  <data name="Ex_DepAppRefNotStrongNamed" xml:space="preserve">
+    <value>Application reference identity must be strongly named.</value>
+  </data>
+  <data name="Ex_CompatibleFrameworksSupportUrlNotSupportedUriScheme" xml:space="preserve">
+    <value>Not a supported scheme for the &lt;compatibleFrameworks&gt; support url. Only file, http and https schemes are supported.</value>
+  </data>
+  <data name="ErrorMessage_ConcurrentActivationLimitExceeded" xml:space="preserve">
+    <value>Too many deployed activations are attempting to load at once.</value>
+  </data>
+  <data name="Ex_FileOptionalAndData" xml:space="preserve">
+    <value>File {0} is marked as a data file. It cannot be optional.</value>
+  </data>
+  <data name="LogFile_IdentityDeploymentIdentity" xml:space="preserve">
+    <value>	Deployment Identity		: {0}
+</value>
+  </data>
+  <data name="Ex_Win32ResourceLoadException" xml:space="preserve">
+    <value>Cannot load resource from {0}. The component may not be valid. Win32 error code was 0x{1}.</value>
+  </data>
+  <data name="Ex_InvalidMatchTrust" xml:space="preserve">
+    <value>Not a valid number of matching trusts were given an application version.</value>
+  </data>
+  <data name="LogFile_Source" xml:space="preserve">
+    <value>SOURCES
+</value>
+  </data>
+  <data name="PhaseLog_InstallApplication" xml:space="preserve">
+    <value>Installation of the application has started.</value>
+  </data>
+  <data name="LogFile_IndividualErrorSummary" xml:space="preserve">
+    <value>	* {0} Following failure messages were detected:
+</value>
+  </data>
+  <data name="LogFile_HeaderOSVersion" xml:space="preserve">
+    <value>	Windows 			: {1} ({0})
+</value>
+  </data>
+  <data name="ErrorMessage_InvalidManifest" xml:space="preserve">
+    <value>Cannot continue. The application is improperly formatted. Contact the application vendor for assistance. </value>
+  </data>
+  <data name="SkipDeploymentProvider" xml:space="preserve">
+    <value>Following Deployment Provider is skipped on all manifests.</value>
+  </data>
+  <data name="Ex_AppIdTooLong" xml:space="preserve">
+    <value>Application identity is too long.</value>
+  </data>
+  <data name="Ex_CannotHaveCustomUXFlag" xml:space="preserve">
+    <value>You cannot specify a &lt;customUX&gt; element for a browser-hosted application.</value>
+  </data>
+  <data name="Activation_DisallowUrlActivationCaptionAfterInstall" xml:space="preserve">
+    <value>Installation succeeded</value>
+  </data>
+  <data name="SkippedFileAssoc" xml:space="preserve">
+    <value>File association for "{0}" skipped, since another application is using it.</value>
+  </data>
+  <data name="LogFile_IndividualErrorInnerException" xml:space="preserve">
+    <value>		--- Inner Exception ---
+		{0}
+		- {1}
+		- Source: {2}
+		- Stack trace:
+{3}
+</value>
+  </data>
+  <data name="Ex_InvalidFileHash" xml:space="preserve">
+    <value>Hash is not properly formatted: {0}.</value>
+  </data>
+  <data name="Ex_ComArgSubIdentityNotValid" xml:space="preserve">
+    <value>Subscription identity argument is not valid : {0}.</value>
+  </data>
+  <data name="Ex_DepAtLeastOneFramework" xml:space="preserve">
+    <value>You must specify at least one &lt;framework&gt; element in &lt;compatibleFrameworks&gt; section.</value>
+  </data>
+  <data name="Ex_InvalidStoreMetaData" xml:space="preserve">
+    <value>Store metadata "{0}" is not valid.</value>
+  </data>
+  <data name="Ex_DepTrustUrlAndDisallowUrlActivation" xml:space="preserve">
+    <value>trustUrlParameters and disallowUrlActivation cannot both be true at the same time.</value>
+  </data>
+  <data name="Ex_DepFileNotAllowed" xml:space="preserve">
+    <value>Deployment manifest does not accept specification of &lt;file&gt;.</value>
+  </data>
+  <data name="Ex_NoCurrentBind" xml:space="preserve">
+    <value>No current application is available for the given subscription. The installation may be corrupted.</value>
+  </data>
+  <data name="LogFile_Header" xml:space="preserve">
+    <value>PLATFORM VERSION INFO
+</value>
+  </data>
+  <data name="Uninstall_Exception" xml:space="preserve">
+    <value>Exception occurred during uninstall of application {0}.</value>
+  </data>
+  <data name="ShellExposure_DisplayStringNoIndex" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="Ex_SyncGroupOnce" xml:space="preserve">
+    <value>Synchronize of group {0} cannot be called more than once at any given time.</value>
+  </data>
+  <data name="Ex_DepAppRefHashInvalid" xml:space="preserve">
+    <value>Application reference identity has invalid hash element.</value>
+  </data>
+  <data name="LogFile_TransactionInstallDeploymentFailure" xml:space="preserve">
+    <value>Installation of deployment ({0}) did not succeed.</value>
+  </data>
+  <data name="UI_UpdateTitle" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="Ex_GroupMultipleMatch" xml:space="preserve">
+    <value>Application {0} is already installed from another location. Please uninstall {0}.</value>
+  </data>
+  <data name="LogFile_ExceptionTypeUnknown" xml:space="preserve">
+    <value>{0} (Unknown subtype)</value>
+  </data>
+  <data name="Ex_OnlyStreamTypeSupported" xml:space="preserve">
+    <value>Only System.IO.Stream type is supported.</value>
+  </data>
+  <data name="Ex_DeploymentBelowMinimumRequiredVersion" xml:space="preserve">
+    <value>Cannot activate a deployment with earlier version than the current minimum required version of the application.</value>
+  </data>
+  <data name="Ex_DetermineTrustFailed" xml:space="preserve">
+    <value>An exception occurred while determining trust.</value>
+  </data>
+  <data name="Ex_OnlineAppExtensionUnsupported" xml:space="preserve">
+    <value>Online applications cannot be started from a file association.</value>
+  </data>
+  <data name="LogFile_SourceApplicationUrl" xml:space="preserve">
+    <value>	Application url			: {0}
+</value>
+  </data>
+  <data name="Ex_CannotCommitNoTrustDecision" xml:space="preserve">
+    <value>The AssertApplicationRequirements method either did not get called or timed out. There is no trust decision before the commit.</value>
+  </data>
+  <data name="CompatibleRuntimeFound" xml:space="preserve">
+    <value>Found compatible runtime version {0}.</value>
+  </data>
+  <data name="Ex_IdentityIsNotValid" xml:space="preserve">
+    <value>Manifest identity is not valid.</value>
+  </data>
+  <data name="NoHashFile" xml:space="preserve">
+    <value>The file named {0} does not have a hash specified in the manifest. Hash validation will be ignored.</value>
+  </data>
+  <data name="Ex_MaxAgeTooLarge" xml:space="preserve">
+    <value>Maximum age value for updates in the deployment manifest cannot be larger than 365 days.</value>
+  </data>
+  <data name="LogFile_HeaderClrDllVersion" xml:space="preserve">
+    <value>	clr.dll 			: {0}
+</value>
+  </data>
+  <data name="LogFile_TransactionStageComponentFile" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- File: {3}</value>
+  </data>
+  <data name="Msg_StoreFormatChange" xml:space="preserve">
+    <value>Due to a format change ClickOnce applications and store has been cleaned up. Please reinstall your applications.</value>
+  </data>
+  <data name="Ex_SubAppIdNotValid" xml:space="preserve">
+    <value>Application identity is not valid : {0}.</value>
+  </data>
+  <data name="UI_ProgressTitleRequiredUpdate" xml:space="preserve">
+    <value>Required update for {0}</value>
+  </data>
+  <data name="Ex_PublisherProductNameTooLong" xml:space="preserve">
+    <value>Publisher and/or Product name in the deployment manifest must be less than 260 characters.</value>
+  </data>
+  <data name="LogFile_ServerInformationPoweredBy" xml:space="preserve">
+    <value>						X-Powered-By	: {0}
+</value>
+  </data>
+  <data name="Ex_ShortcutRemovalFailureDueToInvalidPublisherProduct" xml:space="preserve">
+    <value>Shortcut removal could not be completed. Publisher or product value is not valid. </value>
+  </data>
+  <data name="Ex_CannotCommitPlatformRequirementsFailed" xml:space="preserve">
+    <value>The DeterminePlatformRequirements method failed. The application cannot be committed.</value>
+  </data>
+  <data name="UI_ProgressTitleInstall" xml:space="preserve">
+    <value>Installing {0}</value>
+  </data>
+  <data name="Ex_IsoNullCmsCreated" xml:space="preserve">
+    <value>Null Cms object created by manifest parser.</value>
+  </data>
+  <data name="LogFile_SourceDeploymentUrl" xml:space="preserve">
+    <value>	Deployment url			: {0}
+</value>
+  </data>
+  <data name="Ex_DescriptionSupportUrlTooLong" xml:space="preserve">
+    <value>Support url length for the application exceeds the limit.</value>
+  </data>
+  <data name="Ex_FileAssociationRefOnline" xml:space="preserve">
+    <value>File associations are not supported for online applications.</value>
+  </data>
+  <data name="Ex_CompatibleFrameworksSupportUrlNoAbsolute" xml:space="preserve">
+    <value>Support url is not absolute for &lt;compatibleFrameworks&gt;.</value>
+  </data>
+  <data name="SuppressLimitOnNumberOfActivations" xml:space="preserve">
+    <value>Limitation on the number simultaneous activations is suppressed.</value>
+  </data>
+  <data name="Upd_Completed" xml:space="preserve">
+    <value>Update check completed for application.</value>
+  </data>
+  <data name="Ex_DepEntryPointNotAllowed" xml:space="preserve">
+    <value>Deployment manifest does not accept specification of &lt;entryPoint&gt;.</value>
+  </data>
+  <data name="Ex_AppNoOverridePublisherProduct" xml:space="preserve">
+    <value>If you specify &lt;useManifestForTrust&gt; in the application manifest, you must also specify a publisher and product name.</value>
+  </data>
+  <data name="Ex_TempPathRandomStringInvalid" xml:space="preserve">
+    <value>Temporary path string is not valid.</value>
+  </data>
+  <data name="Ex_ClrDependencyNonZeroRevision" xml:space="preserve">
+    <value>The Revision number (4th part) in Version field of Microsoft Common Language Runtime dependency section must be zero: {0}.</value>
+  </data>
+  <data name="Upd_Failed" xml:space="preserve">
+    <value>Update check for application did not succeed.</value>
+  </data>
+  <data name="Ex_DownloadAppFileAsmRedirected" xml:space="preserve">
+    <value>HTTP redirect is not allowed for application files and assemblies. Cannot download {0}.</value>
+  </data>
+  <data name="Ex_DepOnlineOnlyAndDisallowUrlActivation" xml:space="preserve">
+    <value>Online only application cannot specify disallowUrlActivation.</value>
+  </data>
+  <data name="Ex_BindFirst" xml:space="preserve">
+    <value>Bind must be called first.</value>
+  </data>
+  <data name="Ex_DependencyResourceWithHash" xml:space="preserve">
+    <value>Resource dependency cannot have hash elements: {0}.</value>
+  </data>
+  <data name="ErrorMessage_ValidationFailed" xml:space="preserve">
+    <value>Application validation did not succeed. Unable to continue.</value>
+  </data>
+  <data name="UnsignedManifest" xml:space="preserve">
+    <value>The manifest for this application does not have a signature. Signature validation will be ignored.</value>
+  </data>
+  <data name="Upd_FoundUpdate" xml:space="preserve">
+    <value>Found update to application {0} - version {1} found at {2}</value>
+  </data>
+  <data name="Ex_FileAssocCLSIDDeleteFailed" xml:space="preserve">
+    <value>Error encountered while deleting the file association CLSID {1} from the registry for application {0}.</value>
+  </data>
+  <data name="Ex_NotSupportedHashAlgorithm" xml:space="preserve">
+    <value>Not supported hash algorithm.</value>
+  </data>
+  <data name="Rollback_Completed" xml:space="preserve">
+    <value>Completed restoration of application {0}.</value>
+  </data>
+  <data name="Ex_AppNoDeploymentAllowed" xml:space="preserve">
+    <value>Application manifest does not accept specification of the &lt;deployment&gt; section. </value>
+  </data>
+  <data name="Ex_GenericActivationFailure" xml:space="preserve">
+    <value>Activation failed.</value>
+  </data>
+  <data name="ErrorMessage_AuthenticationError" xml:space="preserve">
+    <value>Cannot retrieve application. Authentication error.</value>
+  </data>
+  <data name="Ex_CannotHaveDeploymentProvider" xml:space="preserve">
+    <value>You must not specify a deployment provider for a ClickOnce application that specifies a custom host.</value>
+  </data>
+  <data name="Ex_IdentitiesDoNotMatchForMixedModeAssembly" xml:space="preserve">
+    <value>Identities in strong name signature and id_1 manifest do not match.</value>
+  </data>
+  <data name="LogFile_TransactionFailureSummaryItem" xml:space="preserve">
+    <value>	* Transaction at [{0}]
+</value>
+  </data>
+  <data name="Ex_DependencySupportUrlTooLong" xml:space="preserve">
+    <value>Support url is too long for dependency: {0}.</value>
+  </data>
+  <data name="Ex_DepenedentOSSupportUrlTooLong" xml:space="preserve">
+    <value>Support url length for dependent operating system exceeds the limit.</value>
+  </data>
+  <data name="Ex_InvalidTrustInfo" xml:space="preserve">
+    <value>An exception occurred during trust request. Trust information in the application manifest may not be valid.</value>
+  </data>
+  <data name="ErrorMessage_NetworkError" xml:space="preserve">
+    <value>Application download did not succeed. Check your network connection, or contact your system administrator or network service provider.</value>
+  </data>
+  <data name="Ex_HostInBrowserFlagMustBeTrue" xml:space="preserve">
+    <value>To use an InPlaceHostingManager object created with the launchInHostProcess parameter set to true, the application must be browser-hosted or custom-hosted.</value>
+  </data>
+  <data name="Ex_EmptyIdentityInternalManifest" xml:space="preserve">
+    <value>Internal manifest for a dll has an empty identity.</value>
+  </data>
+  <data name="SkipApplicationDependencyHashCheck" xml:space="preserve">
+    <value>Application dependency hash check is skipped on all deployment manifests.</value>
+  </data>
+  <data name="LogFile_TransactionStageComponentFailure" xml:space="preserve">
+    <value>Staging of a component ({0}) did not succeed.</value>
+  </data>
+  <data name="Ex_SimplyNamedAsmWithPKT" xml:space="preserve">
+    <value>Simply named assembly {0} has identity with non-null public key token.</value>
+  </data>
+  <data name="Ex_ManifestFileTooLarge" xml:space="preserve">
+    <value>The manifest file size too large.</value>
+  </data>
+  <data name="Ex_DependencyNoCodebase" xml:space="preserve">
+    <value>No codebase found for dependency: {0}.</value>
+  </data>
+  <data name="Uninstall_FailedMsg" xml:space="preserve">
+    <value>Uninstall of application did not succeed. See details for more information.</value>
+  </data>
+  <data name="LogFile_TransactionUnPinDeployment" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- AppId: {3}</value>
+  </data>
+  <data name="Ex_AppInvalidEntryPointParameters" xml:space="preserve">
+    <value>Parameters attribute is not supported in &lt;entryPoint&gt; command line.</value>
+  </data>
+  <data name="LogFile_PhaseInformation" xml:space="preserve">
+    <value>OPERATION PROGRESS STATUS
+</value>
+  </data>
+  <data name="LogFile_TransactionInstallDeployment" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- AppId: {3}</value>
+  </data>
+  <data name="LogFile_TransactionStageComponent" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- Manifest: {3}</value>
+  </data>
+  <data name="RTL" xml:space="preserve">
+    <value>RTL_False</value>
+  </data>
+  <data name="Ex_RefDefMismatch" xml:space="preserve">
+    <value>Reference in the deployment does not match the identity defined in the application manifest. </value>
+  </data>
+  <data name="Ex_HashValidationException" xml:space="preserve">
+    <value>An exception occurred during hash validation.</value>
+  </data>
+  <data name="LogFile_TransactionPinDeployment" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- AppId: {3}</value>
+  </data>
+  <data name="Ex_FileAssocProgIdDeleteFailed" xml:space="preserve">
+    <value>Error encountered while deleting the file association ProgID {1} from the registry for application {0}.</value>
+  </data>
+  <data name="Rollback_FailedMsg" xml:space="preserve">
+    <value>Restoring the application did not succeed.</value>
+  </data>
+  <data name="Ex_TooManyAssembliesInManifest" xml:space="preserve">
+    <value>There are too many assemblies in the application manifest.</value>
+  </data>
+  <data name="FrameworkNameNoProfile" xml:space="preserve">
+    <value>Version {0}</value>
+  </data>
+  <data name="LogFile_Identity" xml:space="preserve">
+    <value>IDENTITIES
+</value>
+  </data>
+  <data name="LogFile_TransactionPinDeploymentFailure" xml:space="preserve">
+    <value>Pinning of deployment ({0}) did not succeed.</value>
+  </data>
+  <data name="UI_ProgressTitleDownload" xml:space="preserve">
+    <value>Downloading {0}</value>
+  </data>
+  <data name="LogFile_PhaseInformationStatusIndivualPhaseInformation" xml:space="preserve">
+    <value>	* [{0}] : {1}
+</value>
+  </data>
+  <data name="Ex_FileAssociationNotSupportedForCustomHost" xml:space="preserve">
+    <value>File associations are not supported for custom-hosted applications.</value>
+  </data>
+  <data name="Upd_Exception" xml:space="preserve">
+    <value>Exception occurred while performing update check for application.</value>
+  </data>
+  <data name="Ex_NoAppInDeploymentManifest" xml:space="preserve">
+    <value>Deployment manifest has no valid application specified.</value>
+  </data>
+  <data name="Ex_HostInBrowserAppNotSupported" xml:space="preserve">
+    <value>Application manifest specifies the hostInBrowser attribute. This is not supported for Windows Forms applications.</value>
+  </data>
+  <data name="FrameworkNameWithProfile" xml:space="preserve">
+    <value>Version {0} {1}</value>
+  </data>
+  <data name="Ex_HashNullDigestValue" xml:space="preserve">
+    <value>Digest value for hash is null.</value>
+  </data>
+  <data name="Ex_ActivationFailureDueToSxSError" xml:space="preserve">
+    <value>Activation failed due to a Windows Side-by-Side error. System Event Log may contain some more information about this failure.</value>
+  </data>
+  <data name="MaintainLogMsg_FailedStoreLookup" xml:space="preserve">
+    <value>Error occurred during store lookup, component store may have been corrupted.</value>
+  </data>
+  <data name="ErrorMessage_DeploymentUriDifferent" xml:space="preserve">
+    <value>You cannot start application {0} from this location because it is already installed from a different location.</value>
+  </data>
+  <data name="ErrorMessage_FileMissing" xml:space="preserve">
+    <value>Cannot download the application. The application is missing required files. Contact application vendor for assistance. </value>
+  </data>
+  <data name="Ex_InvalidCLRVersionInFile" xml:space="preserve">
+    <value>CLR version string "{0}" in file "{1}" is not valid.</value>
+  </data>
+  <data name="PhaseLog_PlatformDetectAndTrustGrantComplete" xml:space="preserve">
+    <value>Request of trust and detection of platform is complete.</value>
+  </data>
+  <data name="Activation_DisallowUrlActivationMessage" xml:space="preserve">
+    <value>Click on the application desktop icon or select it from the Start Menu.</value>
+  </data>
+  <data name="Ex_NotEnoughDataInFile" xml:space="preserve">
+    <value>PE file does not have enough data.</value>
+  </data>
+  <data name="Ex_StrongNameSignatureInvalid" xml:space="preserve">
+    <value>Strong name signature not valid for this assembly {0}.</value>
+  </data>
+  <data name="Ex_DepNoMinVerForOnlineApps" xml:space="preserve">
+    <value>Deployment manifest cannot specify minimumRequiredVersion for online applications.</value>
+  </data>
+  <data name="Ex_ManifestCMSParsingException" xml:space="preserve">
+    <value>Parsing and DOM creation of the manifest resulted in error. Following parsing errors were noticed: {0}</value>
+  </data>
+  <data name="Ex_DepUnsupportedFrameworkTargetVersion" xml:space="preserve">
+    <value>The .NET Framework version {0} is not supported.</value>
+  </data>
+  <data name="Ex_DependencyNotRelativePath" xml:space="preserve">
+    <value>The codebase specified for a dependency element in the application manifest must be a relative path: {0}.</value>
+  </data>
+  <data name="ShellExposure_DisplayStringWithIndex" xml:space="preserve">
+    <value>{0} - {1} </value>
+  </data>
+  <data name="Ex_BindOnce" xml:space="preserve">
+    <value>Bind cannot be called more than once.</value>
+  </data>
+  <data name="Ex_DependencyGACNoPKT" xml:space="preserve">
+    <value>GAC pre-requisite dependency must be strongly named: {0}.</value>
+  </data>
+  <data name="UI_MaintenanceTitle" xml:space="preserve">
+    <value>{0} Maintenance</value>
+  </data>
+  <data name="LogFile_HeaderCLRVersion" xml:space="preserve">
+    <value>	Common Language Runtime 	: {0}
+</value>
+  </data>
+  <data name="LogFile_SummaryInstallableApp" xml:space="preserve">
+    <value>	* Installable application.
+</value>
+  </data>
+  <data name="Ex_DepFrameworkProfileRequired" xml:space="preserve">
+    <value>You must specify profile for .NET Framework version {0}.</value>
+  </data>
+  <data name="LogFile_ErrorSummaryStatusError" xml:space="preserve">
+    <value>	Below is a summary of the errors, details of these errors are listed later in the log.
+</value>
+  </data>
+  <data name="UI_ProgressTitle" xml:space="preserve">
+    <value>({0}%) {1}</value>
+  </data>
+  <data name="Ex_FailedToDownloadManifest" xml:space="preserve">
+    <value>An exception occurred while downloading the manifest.</value>
+  </data>
+  <data name="CLRMissingForFoundFramework" xml:space="preserve">
+    <value>Common Language Runtime version {0} not found for .NET Framework {1}.</value>
+  </data>
+  <data name="Ex_AppInvalidEntryPoint" xml:space="preserve">
+    <value>Specified &lt;entryPoint&gt; is not valid. Check that the path to the entrypoint is well-formed and the entrypoint exists in the deployment.</value>
+  </data>
+  <data name="Ex_DepFileAssocNotAllowed" xml:space="preserve">
+    <value>File associations are not allowed in deployment manifest.</value>
+  </data>
+  <data name="Ex_UpdateNotAvailable" xml:space="preserve">
+    <value>Update not available.</value>
+  </data>
+  <data name="LogFile_TransactionUninstallDeployment" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}
+			- AppId: {3}</value>
+  </data>
+  <data name="LogFile_Summary" xml:space="preserve">
+    <value>APPLICATION SUMMARY
+</value>
+  </data>
+  <data name="LogFile_Transaction" xml:space="preserve">
+    <value>COMPONENT STORE TRANSACTION DETAILS
+</value>
+  </data>
+  <data name="LogFile_TransactionFailureSummaryNoError" xml:space="preserve">
+    <value>	No transaction error was detected.
+</value>
+  </data>
+  <data name="Ex_CannotCallUninstallCustomUXApplication" xml:space="preserve">
+    <value>You cannot call the UninstallCustomUXApplication method for a ClickOnce application that is not marked as a customUX type.</value>
+  </data>
+  <data name="UI_RollbackCompletedMsg" xml:space="preserve">
+    <value>Previous version of the application is now available. On the Windows taskbar, click Start, and select All Programs.</value>
+  </data>
+  <data name="Ex_AppAtLeastOneDependency" xml:space="preserve">
+    <value>Application manifests must specify at least one dependency.</value>
+  </data>
+  <data name="Ex_CustomUXAppNotSupported" xml:space="preserve">
+    <value>The customUX element is not supported for Windows Forms applications.</value>
+  </data>
+  <data name="Ex_InvalidDeploymentManifest" xml:space="preserve">
+    <value>Deployment manifest is not valid.</value>
+  </data>
+  <data name="UI_PlatformContactAdmin" xml:space="preserve">
+    <value>Please contact your system administrator.</value>
+  </data>
+  <data name="Ex_InstallFlagMustBeFalse" xml:space="preserve">
+    <value>The method you call cannot work on installed applications.</value>
+  </data>
+  <data name="Ex_DepProviderRequiredForInstalled" xml:space="preserve">
+    <value>You must specify an absolute URI for the deployment provider for installed applications that check for updates.</value>
+  </data>
+  <data name="Ex_DepNotStronglyNamed" xml:space="preserve">
+    <value>Deployment manifest identity must be strongly named.</value>
+  </data>
+  <data name="Ex_CodeLimitExceeded" xml:space="preserve">
+    <value>Code limit exceeded for hash transforms or digest method.</value>
+  </data>
+  <data name="LogFile_HeaderDfdllVersion" xml:space="preserve">
+    <value>	dfdll.dll 			: {0}
+</value>
+  </data>
+  <data name="UI_ProgressTitleUpdate" xml:space="preserve">
+    <value>Updating {0}</value>
+  </data>
+  <data name="Ex_ManifestExecutionLevelNotSupported" xml:space="preserve">
+    <value>The Execution level requested by this application is not supported.</value>
+  </data>
+  <data name="LogFile_Warning" xml:space="preserve">
+    <value>WARNINGS
+</value>
+  </data>
+  <data name="Ex_DepAppRefProcArchMismatched" xml:space="preserve">
+    <value>Application reference identity processor architecture, {0}, does not match the processor architecture of the deployment: {1}.</value>
+  </data>
+  <data name="UI_ProgressBytesIn10GB" xml:space="preserve">
+    <value>{0:f1} GB</value>
+  </data>
+  <data name="UI_ProgressBytesIn10MB" xml:space="preserve">
+    <value>{0:f1} MB</value>
+  </data>
+  <data name="UI_ProgressBytesIn10KB" xml:space="preserve">
+    <value>{0:f1} KB</value>
+  </data>
+  <data name="Ex_TrustNotGrantedException" xml:space="preserve">
+    <value>Trust not granted exception.</value>
+  </data>
+  <data name="Ex_IsoEnumFetchNotEqualToCount" xml:space="preserve">
+    <value>Number of items fetched from enumerator is not equal to the item count.</value>
+  </data>
+  <data name="LogFile_ExceptionType" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="CleanOnlineCache_Failed" xml:space="preserve">
+    <value>Cleaning up of online application cache could not be successfully completed.</value>
+  </data>
+  <data name="LogFile_SummaryOnlineOnlyApp" xml:space="preserve">
+    <value>	* Online only application.
+</value>
+  </data>
+  <data name="Ex_InvalidProviderManifest" xml:space="preserve">
+    <value>The Deployment Provider specified in the manifest cannot be reached. Maybe due to network error and/or the deployment provider is not responding correctly.</value>
+  </data>
+  <data name="LogFile_TransactionSetDeploymentMetadata" xml:space="preserve">
+    <value>{0}
+			- Status: {1}
+			- HRESULT: 0x{2:x}</value>
+  </data>
+  <data name="UI_PlatformDetectionFailedTitle" xml:space="preserve">
+    <value>System Update Required</value>
+  </data>
+  <data name="Ex_LifetimeEnded" xml:space="preserve">
+    <value>Lifetime has already ended.</value>
+  </data>
+  <data name="Ex_AppNoCLRDependency" xml:space="preserve">
+    <value>Application manifest must specify the CLR dependency.</value>
+  </data>
+  <data name="DisableGenericExceptionHandler" xml:space="preserve">
+    <value>Generic exception handler is disabled.</value>
+  </data>
+  <data name="Ex_DependencySupportUrlNotValid" xml:space="preserve">
+    <value>Support url for dependency is not a valid url: {0}.</value>
+  </data>
+  <data name="Ex_OnlineSemiTrustAppSizeLimitExceeded" xml:space="preserve">
+    <value>Application size exceeds the size limit for online semi-trust applications({0} bytes).</value>
+  </data>
+  <data name="Uninstall_Failed" xml:space="preserve">
+    <value>Uninstall of application {0} did not succeed.</value>
+  </data>
+  <data name="Ex_TooManyLiveActivation" xml:space="preserve">
+    <value>Too many deployed activations are attempting to load at once.</value>
+  </data>
+  <data name="LogFile_ServerInformationServer" xml:space="preserve">
+    <value>						Server		: {0}
+</value>
+  </data>
+  <data name="LogFile_ErrorStatusNoError" xml:space="preserve">
+    <value>	No errors were detected during this operation.
+</value>
+  </data>
+  <data name="Ex_FileAssociationIconFileNotFound" xml:space="preserve">
+    <value>File association default icon "{0}" must be listed as a non-optional &lt;file&gt; element.</value>
+  </data>
+  <data name="UI_ProgressBytesIn1GB" xml:space="preserve">
+    <value>{0:f2} GB</value>
+  </data>
+  <data name="UI_ProgressBytesIn1MB" xml:space="preserve">
+    <value>{0:f2} MB</value>
+  </data>
+  <data name="UI_ProgressBytesIn1KB" xml:space="preserve">
+    <value>{0:f2} KB</value>
+  </data>
+  <data name="UI_UpdateSubHeader" xml:space="preserve">
+    <value>A new version of {0} is available. Do you want to download it now?</value>
+  </data>
+  <data name="Ex_FileAssocExtDeleteFailed" xml:space="preserve">
+    <value>Error encountered while deleting the {1} file association from the registry for application {0}.</value>
+  </data>
+  <data name="Ex_DescriptionErrorReportUrlNotValid" xml:space="preserve">
+    <value>The following application error report URL is not valid: {0}</value>
+  </data>
+  <data name="Ex_ArpEntryRemovalFailure" xml:space="preserve">
+    <value>ARP entry {0} does not exist.</value>
+  </data>
+  <data name="PhaseLog_InstallationComplete" xml:space="preserve">
+    <value>Installation of application has successfully completed.</value>
+  </data>
+  <data name="Ex_DepSameDeploymentAndApplicationIdentity" xml:space="preserve">
+    <value>Application manifest identity is same as deployment manifest identity: {0}.</value>
+  </data>
+  <data name="SkipSchemaValidation" xml:space="preserve">
+    <value>Schema validation is skipped on all manifests.</value>
+  </data>
+  <data name="Ex_BindAppIdNotInstalled" xml:space="preserve">
+    <value>Cannot bind to a deployment that is not installed.</value>
+  </data>
+  <data name="ForceCor" xml:space="preserve">
+    <value>Forcing /COR for all activations.</value>
+  </data>
+  <data name="Ex_NotCustomUXAlready" xml:space="preserve">
+    <value>An earlier version of this application is already installed and not marked as a customUX type. To install this application, either remove the customUX element or uninstall the earlier version.</value>
+  </data>
+  <data name="PhaseLog_StoreQueryForMaintenanceInfo" xml:space="preserve">
+    <value>Looking up information from component store.</value>
+  </data>
+  <data name="ErrorMessage_PlatformDetectionFailed" xml:space="preserve">
+    <value>Unable to install or run this application. This application requires your system to be updated to {0}.</value>
+  </data>
+  <data name="Ex_DownloadApplicationFailed" xml:space="preserve">
+    <value>An exception occurred while downloading the application.</value>
+  </data>
+  <data name="Ex_DependentOSSupportUrlNotValid" xml:space="preserve">
+    <value>Support url for dependent operating system is not a valid url: {0}.</value>
+  </data>
+  <data name="Ex_NoFurtherOperations" xml:space="preserve">
+    <value>No further operations are possible with this instance.</value>
+  </data>
+  <data name="UI_PlatformClickHere" xml:space="preserve">
+    <value>More information on this system update can be found by visiting the site here.</value>
+  </data>
+  <data name="UI_ErrorClickHereHere" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="Ex_ApplicationInplaceUpdate" xml:space="preserve">
+    <value>Unable to install this application because an application with the same identity is already installed. To install this application, either modify the manifest version for this application or uninstall the preexisting application.</value>
+  </data>
+  <data name="Ex_Win32LoadException" xml:space="preserve">
+    <value>Cannot load {0}. The component may not be valid. Win32 error code was 0x{1}.</value>
+  </data>
+  <data name="Ex_FailedWhileDownloading" xml:space="preserve">
+    <value>Downloading {0} did not succeed.</value>
+  </data>
+  <data name="Ex_DepBeforeStartupMaxAgeBothPresent" xml:space="preserve">
+    <value>Deployment manifest cannot contain both &lt;beforeApplicationStartup&gt; and &lt;maximumAge&gt;.</value>
+  </data>
+  <data name="Ex_DependencySupportUrlNotSupportedUriScheme" xml:space="preserve">
+    <value>Not a supported scheme for the dependency support url. Only file, http and https schemes are supported: {0}.</value>
+  </data>
+  <data name="Ex_InvalidDeployment" xml:space="preserve">
+    <value>Deployment does not exist or it is not valid.</value>
+  </data>
+  <data name="Ex_AppSignedDepUnsigned" xml:space="preserve">
+    <value>The application manifest is signed, but the deployment manifest is unsigned. Both manifests must be either signed or unsigned.</value>
+  </data>
+  <data name="Ex_InvalidShortcutFormat" xml:space="preserve">
+    <value>Shortcut format is not valid.</value>
+  </data>
+  <data name="Ex_SubNoRollbackDeployment" xml:space="preserve">
+    <value>Application cannot restore. There are no previous versions installed.</value>
+  </data>
+  <data name="Ex_DependencyResourceWithFallback" xml:space="preserve">
+    <value>This dependency cannot have ResourceFallbackCulture: {0}.</value>
+  </data>
+  <data name="Ex_DepProviderTooLong" xml:space="preserve">
+    <value>Specified deployment provider length exceeds the limit.</value>
+  </data>
+  <data name="Ex_DigestMethodNotSupported" xml:space="preserve">
+    <value>Digest method {0} is not supported.</value>
+  </data>
+  <data name="Ex_AppInvalidIconFile" xml:space="preserve">
+    <value>Icon file specified in the application manifest is not valid.</value>
+  </data>
+  <data name="Ex_CannotCallAssertApplicationRequirements" xml:space="preserve">
+    <value>You cannot call AssertApplicationRequirements when installing a ClickOnce application that specifies a custom host.</value>
+  </data>
+  <data name="Ex_AppIdNotMatchInstalled" xml:space="preserve">
+    <value>Application identity does not match the application already installed.</value>
+  </data>
+  <data name="Ex_IllegalApplicationId" xml:space="preserve">
+    <value>An application for this deployment is already installed with a different application identity.</value>
+  </data>
+  <data name="Ex_DepIconFileNotAllowed" xml:space="preserve">
+    <value>Deployment manifest does not accept specification of icon file.</value>
+  </data>
+  <data name="Ex_InvalidProductOrPublisherName" xml:space="preserve">
+    <value>Product or publisher name is not valid. All characters in the name are not valid or the name is null.</value>
+  </data>
+  <data name="LogFile_HeaderDfshimVersion" xml:space="preserve">
+    <value>	dfshim.dll 			: {0}
+</value>
+  </data>
+  <data name="Ex_DepMissingDeploymentSection" xml:space="preserve">
+    <value>Deployment manifest requires &lt;deployment&gt; section.</value>
+  </data>
+  <data name="LogFile_TransactionItem" xml:space="preserve">
+    <value>	* Transaction at [{0}]
+</value>
+  </data>
+  <data name="UI_ErrorTitle" xml:space="preserve">
+    <value>Cannot Start Application</value>
+  </data>
+  <data name="PhaseLog_DownloadDependenciesComplete" xml:space="preserve">
+    <value>Downloading of subscription dependencies is complete.</value>
+  </data>
+  <data name="DetectingDependentAssembly" xml:space="preserve">
+    <value>Detecting dependent assembly {0} using {1}.</value>
+  </data>
+  <data name="ErrorMessage_ManifestCannotBeLoaded" xml:space="preserve">
+    <value>Unable to retrieve application files. Files corrupt in deployment.</value>
+  </data>
+  <data name="Ex_AppPrivAsmIdSameAsDeployOrApp" xml:space="preserve">
+    <value>Application contains an assembly with the same identity as the application or deployment: {0}.</value>
+  </data>
+  <data name="Ex_DescriptionSupportUrlNotAbsolute" xml:space="preserve">
+    <value>Support url length for the application is not absolute.</value>
+  </data>
+  <data name="Ex_DependencyOptionalButNoGroup" xml:space="preserve">
+    <value>Dependency is optional but is not assigned to a group: Dependency identity: {0}.</value>
+  </data>
+  <data name="Ex_InvalidXmlSignature" xml:space="preserve">
+    <value>Manifest XML signature is not valid.</value>
+  </data>
+  <data name="LogFile_ServerInformationAspNetVersion" xml:space="preserve">
+    <value>						X-AspNet-Version: {0}
+</value>
+  </data>
+  <data name="Ex_CannotHaveUseManifestForTrustFlag" xml:space="preserve">
+    <value>You cannot specify a &lt;useManifestForTrust&gt; element for a ClickOnce application that specifies a custom host.</value>
+  </data>
+  <data name="Ex_SupportedRuntimeMissingException" xml:space="preserve">
+    <value>Supported runtime missing exception.</value>
+  </data>
+  <data name="ForceAppLaunch" xml:space="preserve">
+    <value>Forcing AppLaunch.exe for all activations.</value>
+  </data>
+  <data name="PhaseLog_ConsumeUpdatedDeployment" xml:space="preserve">
+    <value>Consuming new update.</value>
+  </data>
+  <data name="Ex_CompatibleFrameworkMissingException" xml:space="preserve">
+    <value>Compatible framework missing exception.</value>
+  </data>
+  <data name="MaintainLogMsg_UninstallFailed" xml:space="preserve">
+    <value>Error occurred during uninstall of the application.</value>
+  </data>
+  <data name="ErrorMessage_SizeLimitForPartialTrustOnlineAppExceeded" xml:space="preserve">
+    <value>The application is too large to run online in partial trust.</value>
+  </data>
+  <data name="Ex_CompatibleFrameworksSupportUrlTooLong" xml:space="preserve">
+    <value>Support url is too long for &lt;compatibleFrameworks&gt;.</value>
+  </data>
+  <data name="Ex_OnlineAlreadyShellVisible" xml:space="preserve">
+    <value>Cannot make this application an online application because the previous version is installed. To install this application uninstall the previous version, or mark this application as installed.</value>
+  </data>
+  <data name="Ex_FileAssociationNotSupportedForHostInBrowser" xml:space="preserve">
+    <value>File associations are not supported for browser-hosted applications.</value>
+  </data>
+  <data name="Ex_DepProviderNotAbsolute" xml:space="preserve">
+    <value>Deployment provider is not an absolute uri.</value>
+  </data>
+  <data name="Ex_StrongNameAsmWithNoPKT" xml:space="preserve">
+    <value>Strong name assembly {0} identity does not have any public key token.</value>
+  </data>
+  <data name="Ex_ShortcutTooLarge" xml:space="preserve">
+    <value>The shortcut file is too large.</value>
+  </data>
+  <data name="Ex_MultipleInstanceFileExtension" xml:space="preserve">
+    <value>You cannot include the file extension {0} more than one time in the application manifest.</value>
+  </data>
+  <data name="Ex_OnlineAppWithFileAssociation" xml:space="preserve">
+    <value>Online applications cannot have file associations.</value>
+  </data>
+  <data name="Ex_ShortcutRefOnlineOnly" xml:space="preserve">
+    <value>Shortcut cannot reference an online-only deployment.</value>
+  </data>
+  <data name="PhaseLog_CommitApplication" xml:space="preserve">
+    <value>Commit of the downloaded application has started.</value>
+  </data>
+  <data name="Ex_AppIdNotSet" xml:space="preserve">
+    <value>Application identity is not set.</value>
+  </data>
+  <data name="Ex_TempPathRandomStringTooShort" xml:space="preserve">
+    <value>Temporary path string is too short.</value>
+  </data>
+  <data name="Maintain_Exception" xml:space="preserve">
+    <value>Exception occurred during maintenance of application {0}.</value>
+  </data>
+  <data name="Ex_DescriptionSupportUrlNotValid" xml:space="preserve">
+    <value>Application support url is not a valid url: {0}.</value>
+  </data>
+  <data name="LogVerbosityLevelSet" xml:space="preserve">
+    <value>Log verbosity level in the Registry is set to {0}.</value>
+  </data>
+  <data name="UI_PlatformClickHereHere" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="Ex_DownloadRefDefMismatch" xml:space="preserve">
+    <value>Reference in the manifest does not match the identity of the downloaded assembly {0}.</value>
+  </data>
+  <data name="Ex_BindAppIdNotCurrrent" xml:space="preserve">
+    <value>Cannot bind to a deployment that is not the current version.</value>
+  </data>
+  <data name="Ex_LockTimeoutException" xml:space="preserve">
+    <value>Lock timeout exception.</value>
+  </data>
+  <data name="Ex_DepInvalidTargetVersion" xml:space="preserve">
+    <value>The targetVersion is not a valid version string: {0}.</value>
+  </data>
+  <data name="Ex_DepAppRefInvalidCodebaseUri" xml:space="preserve">
+    <value>The deployment manifest codebase reference to the application manifest is not valid.</value>
+  </data>
+  <data name="Ex_NotDeploymentOrShortcut" xml:space="preserve">
+    <value>Manifest is not a valid deployment manifest or shortcut.</value>
+  </data>
+  <data name="Uninstall_Completed" xml:space="preserve">
+    <value>Completed uninstall of application {0}.</value>
+  </data>
+  <data name="Activation_DisallowUrlActivationCaption" xml:space="preserve">
+    <value>Application activation is not possible.</value>
+  </data>
+  <data name="Ex_NoSuchDownloadGroup" xml:space="preserve">
+    <value>There is no download group named "{0}".</value>
+  </data>
+  <data name="Ex_RuntimeVersionCLRNotSupported" xml:space="preserve">
+    <value>The runtime CLR version "{0}" requested by file "{1}" is not supported.</value>
+  </data>
+  <data name="Ex_HashNotSpecified" xml:space="preserve">
+    <value>No hash specified in manifest for file {0}.</value>
+  </data>
+  <data name="Ex_NotUpdateableApp" xml:space="preserve">
+    <value>Application cannot be updated programmatically unless the deployment manifest includes the &lt;deploymentProvider&gt; element.</value>
+  </data>
+  <data name="PlatformMicrosoftWindowsOperatingSystem" xml:space="preserve">
+    <value>Microsoft Windows Operating System Version {0}</value>
+  </data>
+  <data name="Ex_ProviderNotInSubscription" xml:space="preserve">
+    <value>The deployment identity at the deployment provider is not the same as the original deployment identity.</value>
+  </data>
+  <data name="Ex_ShortFileNameNotSupported" xml:space="preserve">
+    <value>File system does not support short 8.3 file names.</value>
+  </data>
+  <data name="ErrorMessage_DownloadIOError" xml:space="preserve">
+    <value>An error has occurred writing to the hard disk. Check if there is enough available space on the disk. Contact the application vendor.</value>
+  </data>
+  <data name="Ex_PatchDependencyFailed" xml:space="preserve">
+    <value>Dependency {0} cannot be processed for patching.</value>
+  </data>
+  <data name="LogFile_TransactionUnPinDeploymentFailure" xml:space="preserve">
+    <value>Unpinning of deployment ({0}) did not succeed.</value>
+  </data>
+  <data name="UI_MaintenceErrorTitle" xml:space="preserve">
+    <value>Maintenance Issue</value>
+  </data>
+  <data name="Ex_NoTrust" xml:space="preserve">
+    <value>User has refused to grant required permissions to the application.</value>
+  </data>
+  <data name="Ex_SignedManifestDisallow" xml:space="preserve">
+    <value>Your Web browser settings do not allow you to run signed applications.</value>
+  </data>
+  <data name="Ex_UrlTooLong" xml:space="preserve">
+    <value>The given activation url is too long.</value>
+  </data>
+  <data name="Ex_UnSignedManifestDisallow" xml:space="preserve">
+    <value>Your Web browser settings do not allow you to run unsigned applications.</value>
+  </data>
+  <data name="ErrorMessage_DiskIsFull" xml:space="preserve">
+    <value>Cannot start the application. There is not enough available space on the disk.</value>
+  </data>
+  <data name="LogFile_IndividualErrorOutermostException" xml:space="preserve">
+    <value>	* [{0}] {1}
+		- {2}
+		- Source: {3}
+		- Stack trace:
+{4}
+</value>
+  </data>
+  <data name="Ex_InvalidDeploymentException" xml:space="preserve">
+    <value>Deployment exception is not valid.</value>
+  </data>
+  <data name="Ex_DepProviderNotValid" xml:space="preserve">
+    <value>Deployment provider is not a valid url: {0}.</value>
+  </data>
+  <data name="Maintain_Completed" xml:space="preserve">
+    <value>Completed maintenance of application {0}.</value>
+  </data>
+  <data name="Ex_NoMatchingAssemblyForEntryPoint" xml:space="preserve">
+    <value>Assembly matching the entry point cannot be found.</value>
+  </data>
+</root>

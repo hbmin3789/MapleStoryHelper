@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.Item.Equipment.Converter;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // 빈 페이지 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=234238에 나와 있습니다.
@@ -25,6 +27,48 @@ namespace MapleStoryHelper.View
         public ItemSettingPage()
         {
             this.InitializeComponent();
+            SetEquipButtonClickEvents();
+        }
+
+        private void SetEquipButtonClickEvents()
+        {
+            var elements = gdEquipButtons.Children.ToList();
+            EquipCategoryStringToEEquipmentCategoryConverter converter = new EquipCategoryStringToEEquipmentCategoryConverter();
+
+            for (int i = 0; i < elements.Count; i++)
+            {
+                if(elements[i] is Button)
+                {
+                    var btn = elements[i] as Button;
+                    btn.Click += SetEquipment_Click;
+                    btn.CommandParameter = converter.Convert(btn.Content, null, null, null);
+                }
+            }
+        }
+
+        
+
+        public void Navigate_EquipmentSettingPage(object parameter)
+        {
+            ContentFrame.Navigate(typeof(EquipmentSettingPage), parameter, new DrillInNavigationTransitionInfo());
+        }
+
+
+
+        private void SetEquipment_Click(object sender, RoutedEventArgs e)
+        {
+            var btn = sender as Button;
+            Navigate_EquipmentSettingPage(btn.CommandParameter);
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
         }
     }
 }

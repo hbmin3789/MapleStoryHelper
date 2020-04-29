@@ -38,16 +38,15 @@ namespace MapleStoryHelper.View
             OnLoaded();
         }
 
-        private void OnLoaded()
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            InitControl();
-            InitComboBox();
+            var character = (Character)e.Parameter;
+            this.DataContext = character;
         }
 
-        private void InitControl()
+        private void OnLoaded()
         {
-            //캐릭터 수정때 DataContext를 설정해주기 위해 함수로 뺐음.
-            SetCharacter(App.mapleStoryHelperViewModel.NewCharacterItem);
+            InitComboBox();
         }
 
         private void InitComboBox()

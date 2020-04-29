@@ -82,6 +82,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
@@ -96,6 +97,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Converter" />
@@ -119,7 +121,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="MapleStoryHelper.Control.StatusDisplayControl" />
+    <RootType FullName="MapleStoryHelper.Control.StatusDisplayControl">
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
@@ -131,6 +135,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="ContentTransitions" />
@@ -150,6 +156,18 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
+    <RootType FullName="MapleStoryHelper.View.EquipmentSettingPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Columns" />
+      <RootProperty Name="Rows" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border" />
     <RootType FullName="MapleStoryHelper.View.ItemSettingPage" />
     <RootType FullName="MapleStoryHelper.MainPage" />
   </Roots.RootTypes>

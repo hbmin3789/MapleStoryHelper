@@ -133,6 +133,9 @@
     <Compile Include="View\CharacterAddPage.xaml.cs">
       <DependentUpon>CharacterAddPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\EquipmentSettingPage.xaml.cs">
+      <DependentUpon>EquipmentSettingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ItemSettingPage.xaml.cs">
       <DependentUpon>ItemSettingPage.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\EquipBackground.PNG" />
+    <Content Include="Assets\XML\Ring\01114311.img.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -182,6 +186,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\EquipmentSettingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ItemSettingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -209,6 +217,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Items\Equipment\Ring\" />
     <Folder Include="Assets\Items\Scroll\" />
     <Folder Include="Assets\JobIcons\" />
     <Folder Include="Assets\Skills\" />

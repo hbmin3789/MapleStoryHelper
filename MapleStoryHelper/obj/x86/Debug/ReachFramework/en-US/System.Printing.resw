@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormatException.RootInvalidAttribute" xml:space="preserve">
+    <value>'{1}' value not valid for root element attribute '{0}'.</value>
+  </data>
+  <data name="XPSWriter.BatchDoneWriting" xml:space="preserve">
+    <value>Batch Writer is done writing and cannot process any more batch write requests.</value>
+  </data>
+  <data name="PrintSystemUNCPathResolver.Attribute" xml:space="preserve">
+    <value>Attribute type is not valid.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Commit" xml:space="preserve">
+    <value>An exception occurred while committing the properties for the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemSecurity.AccessLevel" xml:space="preserve">
+    <value>SecurityElement does not have a valid "AccessLevel" attribute.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.InstallPrintQueue" xml:space="preserve">
+    <value>An exception occurred while installing a print queue. Win32 error: {0}</value>
+  </data>
+  <data name="PrintConfig.Provider.PTStreamContentFail" xml:space="preserve">
+    <value>{0} stream content reading failed.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Populate" xml:space="preserve">
+    <value>An exception occurred while populating the properties for the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemUNCPathResolver.Entries" xml:space="preserve">
+    <value>IDictionaryEnumerator does not have valid entries.</value>
+  </data>
+  <data name="FormatException.AddXmlnsFailAtRootElement" xml:space="preserve">
+    <value>Cannot add standard namespace declaration at root element.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.SubSystemVersionCannotChange" xml:space="preserve">
+    <value>The OS version of a PrintServer object cannot be changed.</value>
+  </data>
+  <data name="XPSWriter.InvalidState" xml:space="preserve">
+    <value>Writer state not valid.</value>
+  </data>
+  <data name="PrintSystemJobInfo_disableXPSOMPrinting_RegValue" xml:space="preserve">
+    <value>DisableXPSOMPrinting</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Resume" xml:space="preserve">
+    <value>An exception occurred while the queue was resumed. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.NameCannotChange" xml:space="preserve">
+    <value>The name of a PrintServer object cannot be changed. </value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Refresh" xml:space="preserve">
+    <value>An exception occurred while refreshing the properties for the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.XpsDocumentEvent" xml:space="preserve">
+    <value>An exception occurred while calling XpsDocumentEvent.</value>
+  </data>
+  <data name="PrintSystemException.UnknownWin32Error" xml:space="preserve">
+    <value>Unknown Win32 error</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.MinorVersionCannotChange" xml:space="preserve">
+    <value>The minor version of a PrintServer object cannot be changed.</value>
+  </data>
+  <data name="FormatException.XMLNotWellFormed" xml:space="preserve">
+    <value>XML is not well-formed.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Generic" xml:space="preserve">
+    <value>An exception occurred while creating the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.Refresh" xml:space="preserve">
+    <value>An exception occurred while refreshing print job information. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemSecurity.Type" xml:space="preserve">
+    <value>IPermission type is not valid.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.SetDefaultPrinter" xml:space="preserve">
+    <value>An exception occurred while setting the default printer. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.AddConnection" xml:space="preserve">
+    <value>An exception occurred while creating the printer connection. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.XpsDeviceQuery" xml:space="preserve">
+    <value>An exception occurred while querying the identity of the device.</value>
+  </data>
+  <data name="XPSWriter.DoneWriting" xml:space="preserve">
+    <value>Document Writer is done writing and cannot process any more write requests.</value>
+  </data>
+  <data name="PrintSystemException.CommitPrintSystemAttributesException" xml:space="preserve">
+    <value>An exception occurred while committing the properties.</value>
+  </data>
+  <data name="XPSWriter.Cancelled" xml:space="preserve">
+    <value>Write has already been canceled.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueueStream.Write" xml:space="preserve">
+    <value>An exception occurred while trying to write to the print queue stream. Win32 error: {0}</value>
+  </data>
+  <data name="FormatException.RootInvalidChildElement" xml:space="preserve">
+    <value>'{0}' is not a valid child element of root element.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueueStream.Flush" xml:space="preserve">
+    <value>An exception occurred while trying to flush the print queue stream. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.GetDefaultPrinter" xml:space="preserve">
+    <value>An exception occurred while getting the default printer. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemUNCPathResolver.Server" xml:space="preserve">
+    <value>UNC server name is not valid.</value>
+  </data>
+  <data name="XpsPrintJobStream.CommitTimeout_RegValue" xml:space="preserve">
+    <value>CommitXpsPrintJobStreamTimeout</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.DeletePrintQueue" xml:space="preserve">
+    <value>An exception occurred while deleting a print queue. Win32 error: {0}</value>
+  </data>
+  <data name="FormatException.RootChildMissingAttribute" xml:space="preserve">
+    <value>'{0}' child element of root element is missing the required '{1}' attribute.</value>
+  </data>
+  <data name="FormatException.InvalidXMLIntValue" xml:space="preserve">
+    <value>'{0}' integer value at line number '{1}' line position '{2}' is not valid.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.Generic" xml:space="preserve">
+    <value>An exception occurred while creating the PrintServer object. Win32 error: {0}</value>
+  </data>
+  <data name="XpsWriter.WriteNotCalledEndBatchWrite" xml:space="preserve">
+    <value>Must call Write before calling EndBatchWrite.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueues.Enumerate" xml:space="preserve">
+    <value>An exception occurred while enumerating PrintQueue objects. Win32 error: {0}</value>
+  </data>
+  <data name="PrintConfig.Provider.BindFail" xml:space="preserve">
+    <value>PrintTicket provider failed to bind to printer. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.Generic" xml:space="preserve">
+    <value>An exception occurred while setting the print job. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.AddJob" xml:space="preserve">
+    <value>An exception occurred while adding a job. Win32 error: {0}</value>
+  </data>
+  <data name="FormatException.MissingRequiredChildElement" xml:space="preserve">
+    <value>Must have '{0}' child element at line number '{1}' line position '{2}'.</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.Create" xml:space="preserve">
+    <value>An exception occurred while creating print job information. Check inner exception for details.</value>
+  </data>
+  <data name="PrintSystemSecurity.Class" xml:space="preserve">
+    <value>SecurityElement does not have a valid "class" attribute.</value>
+  </data>
+  <data name="PrintSystemSecurity.State" xml:space="preserve">
+    <value>PermissionState value is not valid.</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemAttributeValueDictionary.IsReadOnly" xml:space="preserve">
+    <value>The collection is read-only.</value>
+  </data>
+  <data name="FormatException.PrivateXMLTextValue" xml:space="preserve">
+    <value>Private text value '{0}' found at line number '{1}' line position '{2}'.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.AddPrinter" xml:space="preserve">
+    <value>An exception occurred while installing a print queue. Win32 error: {0}</value>
+  </data>
+  <data name="PrintConfig.Provider.PT2DevModeFail" xml:space="preserve">
+    <value>PrintTicket provider failed to convert PrintTicket to DEVMODE. Win32 error: {0}</value>
+  </data>
+  <data name="PrintConfig.Provider.MergeValidateFail" xml:space="preserve">
+    <value>PrintTicket provider failed to merge and validate PrintTicket. Win32 error: {0}</value>
+  </data>
+  <data name="ArgumentException.PositiveValue" xml:space="preserve">
+    <value>Value must be positive.</value>
+  </data>
+  <data name="PrintSystemException.PrintingCancelled.Generic" xml:space="preserve">
+    <value>Printing was canceled. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.Commit" xml:space="preserve">
+    <value>An exception occurred while committing the properties for the PrintServer object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.Refresh" xml:space="preserve">
+    <value>An exception occurred while refreshing the properties for the PrintServer object. Win32 error: {0}</value>
+  </data>
+  <data name="IndexOutOfRangeException.InvalidSize" xml:space="preserve">
+    <value>'{0}' array should be the same size as array '{1}'.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.GetUninitializedProperty" xml:space="preserve">
+    <value>An exception occurred while initializing an attribute of the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="XPSWriter.BatchAsync" xml:space="preserve">
+    <value>Batch Writer is using asynchronous writes and cannot process synchronous writes.</value>
+  </data>
+  <data name="ArgumentException.InvalidHandle" xml:space="preserve">
+    <value>Handle value is not valid.</value>
+  </data>
+  <data name="RegKeyBasePath" xml:space="preserve">
+    <value>HKEY_CURRENT_USER\Software\Microsoft\.NETFramework\Windows Presentation Foundation\Printing</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.MajorVersionCannotChange" xml:space="preserve">
+    <value>The major version of a PrintServer object cannot be changed. </value>
+  </data>
+  <data name="PrintSystemException.PrintJob.PopulateJobProperties" xml:space="preserve">
+    <value>An exception occurred while populating the object. Win32 error: {0}</value>
+  </data>
+  <data name="FormatException.RootMissingAttribute" xml:space="preserve">
+    <value>Root element is missing required attribute '{0}'.</value>
+  </data>
+  <data name="ArgumentException.InvalidValue" xml:space="preserve">
+    <value>Value is not valid.</value>
+  </data>
+  <data name="FormatException.ParameterDefMissOrInvalid" xml:space="preserve">
+    <value>Referenced {0} {1} is either missing or not valid.</value>
+  </data>
+  <data name="PrintConfig.Provider.GetPrintCapFail" xml:space="preserve">
+    <value>PrintTicket provider failed to retrieve PrintCapabilities. Win32 error: {0}</value>
+  </data>
+  <data name="XpsWriter.InvalidXps" xml:space="preserve">
+    <value>The XpsDocument has no FixedDocumentSequence.</value>
+  </data>
+  <data name="PrintSystemException.PrintServer.AddPrinter" xml:space="preserve">
+    <value>An exception occurred while installing the print queue. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.Generic" xml:space="preserve">
+    <value>Print System exception.</value>
+  </data>
+  <data name="PrintSystemException.PrintSystemJobInfo.Deleted" xml:space="preserve">
+    <value>The print job was deleted.</value>
+  </data>
+  <data name="XPSWriter.WriteNotCalled" xml:space="preserve">
+    <value>Must call Write before calling cancel.</value>
+  </data>
+  <data name="PrintSystemException.PropertyIsReadOnly" xml:space="preserve">
+    <value>Property is read-only.</value>
+  </data>
+  <data name="PrintSystemUNCPathResolver.Printer" xml:space="preserve">
+    <value>UNC printer name is not valid.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.GetUninitializedProperty" xml:space="preserve">
+    <value>An exception occurred while initializing an attribute of the PrintQueue object. Win32 error: {0}</value>
+  </data>
+  <data name="PrintConfig.Provider.DevMode2PTFail" xml:space="preserve">
+    <value>PrintTicket provider failed to convert DEVMODE to PrintTicket. Win32 error: {0}</value>
+  </data>
+  <data name="XPSWriter.BatchSync" xml:space="preserve">
+    <value>Batch Writer is using synchronous writes and cannot process asynchronous writes.</value>
+  </data>
+  <data name="XPSWriter.BatchMode" xml:space="preserve">
+    <value>Document Writer is in batch mode and cannot process non-batch write requests.</value>
+  </data>
+  <data name="FormatException.VersionNotSupported" xml:space="preserve">
+    <value>'{0}' version number is not supported.</value>
+  </data>
+  <data name="PrintSystemUNCPathResolver.UNC" xml:space="preserve">
+    <value>UNC name is not valid.</value>
+  </data>
+  <data name="FormatException.InvalidRootElement" xml:space="preserve">
+    <value>Root element is not valid: NamespaceURI='{0}', LocalName='{1}'.</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Purge" xml:space="preserve">
+    <value>An exception occurred while the queue was purged. Win32 error: {0}</value>
+  </data>
+  <data name="PrintSystemException.PrintQueue.Pause" xml:space="preserve">
+    <value>An exception occurred while the queue was paused. Win32 error: {0}</value>
+  </data>
+  <data name="ArgumentException.NonNegativeValue" xml:space="preserve">
+    <value>Value must be non-negative.</value>
+  </data>
+</root>
