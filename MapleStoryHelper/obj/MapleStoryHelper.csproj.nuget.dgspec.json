@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj": {}
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
         "projectName": "MapleStoryHelper.Standard.Character",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
         "projectName": "MapleStoryHelper.Standard.Database",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -95,14 +95,14 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
         "projectName": "MapleStoryHelper.Standard.Item",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -171,8 +171,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -211,14 +211,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
         "projectName": "MapleStoryHelper.Standard",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -273,14 +273,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj": {
+    "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
         "projectName": "MapleStoryHelper",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -300,17 +300,17 @@
         "frameworks": {
           "uap10.0.17763": {
             "projectReferences": {
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
               },
-              "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\user\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }

@@ -31,8 +31,7 @@ namespace MapleStoryHelper
 
         private void btnAddCharacter_Click(object sender, RoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(CharacterAddPage), App.mapleStoryHelperViewModel.NewCharacterItem,
-                                                            new DrillInNavigationTransitionInfo());
+            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
         }
     }
 }

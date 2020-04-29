@@ -26,7 +26,7 @@
 
         <!-- 아이템세팅이 완료된 장비는 색으로 표시하는 기능이 필요할듯 -->
         <Grid>
-            <controls:UniformGrid x:ConnectionId='5' x:Name="gdEquipButtons" Margin="10" Columns="5" Rows="6"
+            <controls:UniformGrid Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
                 <Button Content="반지"/>
                 <Button Content="반지"/>
@@ -74,25 +74,7 @@
 
         <Grid Grid.Column="1">
             <control:StatusDisplayControl Margin="20"/>
-            <StackPanel Orientation="Horizontal"
-                        HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                        Margin="10">
-                <Button x:ConnectionId='3' x:Name="btnSave" Width="100" Height="30" Margin="10"
-                        Content="저장" FontSize="15"
-                                             />
-                <Button x:ConnectionId='4' x:Name="btnCancel" Width="100" Height="30" Margin="10"
-                        Content="취소" FontSize="15"
-                                               />
-            </StackPanel>
         </Grid>
-
-        <Frame x:ConnectionId='2' x:Name="ContentFrame" Grid.ColumnSpan="2">
-            <Frame.ContentTransitions>
-                <TransitionCollection>
-                    <NavigationThemeTransition/>
-                </TransitionCollection>
-            </Frame.ContentTransitions>
-        </Frame>
     </Grid>
 </Page>
 
