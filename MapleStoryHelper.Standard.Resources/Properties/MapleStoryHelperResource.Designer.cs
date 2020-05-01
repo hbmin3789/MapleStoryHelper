@@ -22,7 +22,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MapleStoryHelperResource {
+    public class MapleStoryHelperResource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         ///   이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MapleStoryHelper.Standard.Resources.Properties.MapleStoryHelperResource", typeof(MapleStoryHelperResource).Assembly);
@@ -51,7 +51,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         ///   재정의합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 결속의_반지 {
+        public static byte[] Item_SynergyRing {
             get {
                 object obj = ResourceManager.GetObject("결속의_반지", resourceCulture);
                 return ((byte[])(obj));
@@ -73,7 +73,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 마이스터링 {
+        public static byte[] Item_MeisterRing {
             get {
                 object obj = ResourceManager.GetObject("마이스터링", resourceCulture);
                 return ((byte[])(obj));
@@ -83,7 +83,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 벤전스링 {
+        public static byte[] ITem_VengeanceRing {
             get {
                 object obj = ResourceManager.GetObject("벤전스링", resourceCulture);
                 return ((byte[])(obj));
@@ -93,7 +93,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 오닉스링 {
+        public static byte[] ITem_OnyxRing {
             get {
                 object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
                 return ((byte[])(obj));
@@ -103,7 +103,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 카오스링 {
+        public static byte[] Item_ChaosRing {
             get {
                 object obj = ResourceManager.GetObject("카오스링", resourceCulture);
                 return ((byte[])(obj));
@@ -113,7 +113,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 코스모스링 {
+        public static byte[] Item_CosmosRing {
             get {
                 object obj = ResourceManager.GetObject("코스모스링", resourceCulture);
                 return ((byte[])(obj));
@@ -123,7 +123,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static byte[] 테네브리스_원정대_반지 {
+        public static byte[] Item_TenebrisRing {
             get {
                 object obj = ResourceManager.GetObject("테네브리스_원정대_반지", resourceCulture);
                 return ((byte[])(obj));

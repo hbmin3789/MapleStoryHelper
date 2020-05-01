@@ -28,7 +28,8 @@
         <Grid>
             <controls:UniformGrid Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
-                <Button Content="반지"/>
+                <Button x:ConnectionId='3' Content="반지"
+                                                        />
                 <Button Content="반지"/>
                 <Button Content="반지"/>
                 <Button Content="반지"/>
@@ -74,6 +75,16 @@
 
         <Grid Grid.Column="1">
             <control:StatusDisplayControl Margin="20"/>
+        </Grid>
+
+        <Grid Grid.ColumnSpan="2">
+            <Frame x:ConnectionId='2' x:Name="ContentFrame">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition  />
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
         </Grid>
     </Grid>
 </Page>

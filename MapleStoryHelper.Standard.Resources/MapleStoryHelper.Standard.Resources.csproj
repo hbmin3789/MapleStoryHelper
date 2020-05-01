@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Properties\MapleStoryHelperResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MapleStoryHelperResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

@@ -143,3 +143,8 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.xbf
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Resources.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Resources.pdb
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\EquipmentAddPage.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.g.i.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.xaml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.xbf

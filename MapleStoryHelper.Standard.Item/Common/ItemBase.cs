@@ -54,6 +54,14 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _itemCode, value);
         }
 
+        private object _imgBitmapSource;
+        [NotMapped]
+        public object ImgBitmapSource
+        {
+            get => _imgBitmapSource;
+            set => SetProperty(ref _imgBitmapSource, value);
+        }
+
         private bool _isCash = false;
         [Column("is_cash")]
         public bool IsCash
