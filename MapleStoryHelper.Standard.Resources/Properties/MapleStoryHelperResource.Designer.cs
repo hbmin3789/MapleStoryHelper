@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace MapleStoryHelper.Standard.Resources.Properties {
+    using MapleStoryHelper.Standard.Resources.Attributes;
     using System;
     
     
@@ -63,66 +64,73 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("결속의 반지")]
         public static byte[] Item_SynergyRing {
             get {
                 object obj = ResourceManager.GetObject("결속의_반지", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("마이스터링")]
         public static byte[] Item_MeisterRing {
             get {
                 object obj = ResourceManager.GetObject("마이스터링", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("벤전스링")]
         public static byte[] ITem_VengeanceRing {
             get {
                 object obj = ResourceManager.GetObject("벤전스링", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("오닉스링")]
         public static byte[] ITem_OnyxRing {
             get {
                 object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("카오스링")]
         public static byte[] Item_ChaosRing {
             get {
                 object obj = ResourceManager.GetObject("카오스링", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("코스모스링")]
         public static byte[] Item_CosmosRing {
             get {
                 object obj = ResourceManager.GetObject("코스모스링", resourceCulture);
                 return ((byte[])(obj));
             }
         }
-        
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        [ResourceName("테네브리스 원정대 반지")]
         public static byte[] Item_TenebrisRing {
             get {
                 object obj = ResourceManager.GetObject("테네브리스_원정대_반지", resourceCulture);

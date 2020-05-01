@@ -41,6 +41,7 @@ namespace MapleStoryHelper.View
                 EquipmentItem newItem = new EquipmentItem();
 
                 newItem.ImgBitmapSource = await list[i].ImageData.LoadImage();
+                items.Add(newItem);
             }
 
             cbItems.ItemsSource = items;
