@@ -350,6 +350,10 @@
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj">
+      <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
+      <Name>MapleStoryHelper.Standard.Resources</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
       <Project>{cb0c667c-9461-46f3-ab27-73fdf15aea57}</Project>
       <Name>MapleStoryHelper.Standard</Name>

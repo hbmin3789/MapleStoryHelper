@@ -5,6 +5,7 @@ using MapleStoryHelper.Standard.Converter;
 using MapleStoryHelper.Standard.Database;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using MapleStoryHelper.Standard.Resources;
 using Microsoft.Win32;
 using Prism.Mvvm;
 using System;

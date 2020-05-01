@@ -6,3 +6,11 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\obj\Debug\M
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\obj\Debug\MapleStoryResourceSavior_MarkupCompile.cache
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryResourceSavier\obj\Debug\MapleStoryResourceSavior_MarkupCompile.lref
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior.csprojAssemblyReference.cache
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior.exe.config
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MainWindow.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\App.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior_Content.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior_MarkupCompile.cache
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryResourceSavior\obj\Debug\MapleStoryResourceSavior_MarkupCompile.lref

@@ -2,6 +2,7 @@
 using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Database.Context;
 using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Resources;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;

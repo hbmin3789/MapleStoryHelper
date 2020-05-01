@@ -15,3 +15,5 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\o
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.csproj.CopyComplete
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.pdb
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.dll
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.pdb

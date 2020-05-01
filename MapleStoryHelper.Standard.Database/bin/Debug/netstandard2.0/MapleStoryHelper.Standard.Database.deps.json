@@ -12,6 +12,7 @@
           "MapleStoryHelper.Standard": "1.0.0",
           "MapleStoryHelper.Standard.Character": "1.0.0",
           "MapleStoryHelper.Standard.Item": "1.0.0",
+          "MapleStoryHelper.Standard.Resources": "1.0.0",
           "Microsoft.EntityFrameworkCore": "1.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0",
           "NETStandard.Library": "2.0.3"
@@ -661,7 +662,8 @@
       "MapleStoryHelper.Standard.Character/1.0.0": {
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0"
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "MapleStoryHelper.Standard.Resources": "1.0.0"
         },
         "runtime": {
           "MapleStoryHelper.Standard.Character.dll": {}
@@ -674,6 +676,14 @@
         },
         "runtime": {
           "MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Resources/1.0.0": {
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.Resources.dll": {}
         }
       },
       "Windows.Foundation.UniversalApiContract/8.0.0.0": {
@@ -1067,6 +1077,11 @@
       "sha512": ""
     },
     "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MapleStoryHelper.Standard.Resources/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

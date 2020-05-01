@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Converter;
+﻿using MapleStoryHelper.Common;
+using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Database;
@@ -114,7 +115,7 @@ namespace MapleStoryHelper.View
                 character.ImageSrc = file.Path;
                 character.CharacterImage = MHDBManager.GetResource(character);
 
-                var imageData = await LoadImage(character.CharacterImage.ImageData);
+                var imageData = await character.CharacterImage.ImageData.LoadImage();
                 imgCharacter.Source = imageData;
             }
             else
@@ -125,19 +126,7 @@ namespace MapleStoryHelper.View
             btnSetImagePath.IsEnabled = true;
         }
 
-        private async Task<BitmapImage> LoadImage(byte[] imageData)
-        {
-            InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream();
-
-            DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0));
-
-            writer.WriteBytes(imageData);
-            await writer.StoreAsync();
-
-            var image = new BitmapImage();
-            await image.SetSourceAsync(stream);
-            return image;
-        }
+        
 
         private void btnItemSetting_Click(object sender, RoutedEventArgs e)
         {

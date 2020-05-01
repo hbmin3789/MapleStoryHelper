@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Common;
+using MapleStoryHelper.Standard.Resources;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

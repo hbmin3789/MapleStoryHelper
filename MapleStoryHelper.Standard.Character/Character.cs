@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Standard.Character.Status;
 using MapleStoryHelper.Standard.Common;
+using MapleStoryHelper.Standard.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;

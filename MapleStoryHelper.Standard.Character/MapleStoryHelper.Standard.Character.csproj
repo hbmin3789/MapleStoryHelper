@@ -5,11 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Equipment\" />
+    <Compile Remove="Equipment\**" />
+    <EmbeddedResource Remove="Equipment\**" />
+    <None Remove="Equipment\**" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj" />
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj" />
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj" />
   </ItemGroup>
 

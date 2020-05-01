@@ -141,3 +141,5 @@ C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.g.cs
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.xaml
 C:\Users\user\Source\Repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\ItemSettingPage.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Resources.dll
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Resources.pdb
