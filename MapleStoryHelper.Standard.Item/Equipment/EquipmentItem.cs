@@ -89,5 +89,25 @@ namespace MapleStoryHelper.Standard.Item
             base.SetPriaryKey(value);
             Status.PrimaryKey = value;
         }
+
+        /// <summary>
+        /// Status 객체의 Clone()메서드 미구현
+        /// </summary>
+        /// <returns></returns>
+        public override object Clone()
+        {
+            EquipmentItem retval = new EquipmentItem(base.Clone() as ItemBase);
+
+            retval.CharacterCategory = this.CharacterCategory;
+            retval.EquipmentCategory = this.EquipmentCategory;
+            retval.ItemCategory = this.ItemCategory;
+            retval.JobCategory = this.JobCategory;
+            retval.MaxScroll = this.MaxScroll;
+            retval.RequiredLevel = this.RequiredLevel;
+            retval.MaxStarForce = this.MaxStarForce;
+            retval.Status = this.Status;
+
+            return retval;
+        }
     }
 }

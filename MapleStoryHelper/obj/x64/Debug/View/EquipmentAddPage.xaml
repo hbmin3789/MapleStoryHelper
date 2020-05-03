@@ -23,7 +23,7 @@
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="{Binding ImgBitmapSource}"/>
-                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock Text="{Binding Name, Mode=TwoWay}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Item
 {
-    public class ItemBase : BindableBase
+    public class ItemBase : BindableBase , ICloneable
     {
         private string _primaryKey;
         [Key]
@@ -54,6 +54,9 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _itemCode, value);
         }
 
+        /// <summary>
+        /// byte[] Or BitmapImage
+        /// </summary>
         private object _imgBitmapSource;
         [NotMapped]
         public object ImgBitmapSource
@@ -110,6 +113,7 @@ namespace MapleStoryHelper.Standard.Item
             ImgSrc = item.ImgSrc;
             ItemCode = item.ItemCode;
             IsCash = item.IsCash;
+            ImgBitmapSource = item.ImgBitmapSource;
         }
 
         #endregion
@@ -118,6 +122,25 @@ namespace MapleStoryHelper.Standard.Item
         protected virtual void SetPriaryKey(string value)
         {
             SetProperty(ref _primaryKey, value);
+        }
+
+        /// <summary>
+        /// PrimaryKey가 새로 부여됩니다.
+        /// </summary>
+        /// <returns></returns>
+        public virtual object Clone()
+        {
+            ItemBase retval = new ItemBase();
+
+            retval.ImgBitmapSource = this.ImgBitmapSource;
+            retval.ImgSrc = this.ImgSrc;
+            retval.IsCash = this.IsCash;
+            retval.ItemCategory = this.ItemCategory;
+            retval.ItemCode = this.ItemCode;
+            retval.Name = this.Name;
+            retval.PrimaryKey = new Guid().ToString();
+
+            return retval;
         }
     }
 }

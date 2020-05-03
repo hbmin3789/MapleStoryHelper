@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Common;
 using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources;
 using System;
 using System.Collections.Generic;
@@ -35,12 +36,15 @@ namespace MapleStoryHelper.View
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 
-            var list = MHResourceManager.GetRingList();
+            var list = MHResourceManager.GetEquipmentList(EEquipmentCategory.Ring);
+
             for(int i = 0; i < list.Count; i++)
             {
                 EquipmentItem newItem = new EquipmentItem();
 
-                newItem.ImgBitmapSource = await list[i].ImageData.LoadImage();
+                newItem = list[i].Clone() as EquipmentItem;
+                newItem.ImgBitmapSource = await newItem.ImgBitmapSource.LoadImage();
+
                 items.Add(newItem);
             }
 

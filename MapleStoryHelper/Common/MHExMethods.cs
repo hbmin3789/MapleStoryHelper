@@ -10,18 +10,29 @@ namespace MapleStoryHelper.Common
 {
     public static class MHExMethods
     {
-        public static async Task<BitmapImage> LoadImage(this byte[] imageData)
+        public static async Task<BitmapImage> LoadImage(this object data)
         {
-            InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream();
+            if(data is byte[])
+            {
+                var imageData = data as byte[];
+                InMemoryRandomAccessStream stream = new InMemoryRandomAccessStream();
 
-            DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0));
+                DataWriter writer = new DataWriter(stream.GetOutputStreamAt(0));
 
-            writer.WriteBytes(imageData);
-            await writer.StoreAsync();
+                writer.WriteBytes(imageData);
+                await writer.StoreAsync();
 
-            var image = new BitmapImage();
-            await image.SetSourceAsync(stream);
-            return image;
+                var image = new BitmapImage();
+                await image.SetSourceAsync(stream);
+                return image;
+            }
+
+            if(data is BitmapImage)
+            {
+                return data as BitmapImage;
+            }
+
+            return null;
         }
     }
 }

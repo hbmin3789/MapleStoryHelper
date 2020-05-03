@@ -34,6 +34,33 @@
         "runtime": {
           "lib/netstandard2.0/Prism.dll": {}
         }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
       }
     }
   },
@@ -200,10 +227,21 @@
         "prism.core.7.2.0.1422.nupkg.sha512",
         "prism.core.nuspec"
       ]
+    },
+    "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
+    },
+    "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MapleStoryHelper.Standard.Item >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Prism.Core >= 7.2.0.1422"
     ]
@@ -237,7 +275,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

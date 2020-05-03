@@ -1486,6 +1486,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -3326,6 +3327,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -5197,6 +5199,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -7065,6 +7068,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -8905,6 +8909,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -10776,6 +10781,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -12616,6 +12622,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
@@ -14487,6 +14494,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422"
         },
         "compile": {
