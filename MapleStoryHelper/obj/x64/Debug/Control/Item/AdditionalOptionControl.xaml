@@ -1,0 +1,65 @@
+﻿<UserControl
+    x:Class="MapleStoryHelper.Control.Item.AdditionalOptionControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapleStoryHelper.Control.Item"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="{StaticResource TextBoxMiddleDescriptionFontSize}"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="White">
+        <Viewbox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <TextBox Text="STR"/>
+                    <TextBox Text="DEX"/>
+                    <TextBox Text="INT"/>
+                    <TextBox Text="LUK"/>
+                    <TextBox Text="HP"/>
+                    <TextBox Text="MP"/>
+                    <TextBox Text="공격력"/>
+                    <TextBox Text="마력"/>
+                    <TextBox Text="데미지"/>
+                    <TextBox Text="보스 공격력"/>
+                    <TextBox Text="방어율 무시"/>
+                    <TextBox Text="착용레벨 감소"/>
+                    <TextBox Text="이동속도"/>
+                    <TextBox Text="점프력"/>
+                    <TextBox Text="방어력"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBox Text="{Binding Str}"/>
+                    <TextBox Text="{Binding Dex}"/>
+                    <TextBox Text="{Binding Int}"/>
+                    <TextBox Text="{Binding Luk}"/>
+                    <TextBox Text="{Binding HP}"/>
+                    <TextBox Text="{Binding MP}"/>
+                    <TextBox Text="{Binding AttackPower}"/>
+                    <TextBox Text="{Binding MagicAttack}"/>
+                    <TextBox Text="{Binding Damage}"/>
+                    <TextBox Text="{Binding BossDamage}"/>
+                    <TextBox Text="{Binding IgnoreDefBinding}"/>
+                    <TextBox Text="{Binding Critical}"/>
+                    <TextBox Text="{Binding CriticalDamage}"/>
+                </StackPanel>
+            </Grid>
+        </Viewbox>
+        
+        
+    </Grid>
+</UserControl>
+

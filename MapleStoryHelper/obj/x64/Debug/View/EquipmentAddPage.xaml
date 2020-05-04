@@ -5,20 +5,22 @@
     xmlns:local="using:MapleStoryHelper.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:control="using:MapleStoryHelper.Control"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
             <StackPanel>
-                <ComboBox x:ConnectionId='2' x:Name="cbItems"
+                <ComboBox x:ConnectionId='3' x:Name="cbItems"
                           HorizontalAlignment="Stretch"
-                          Height="60">
+                          Height="60"
+                                                                     >
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -28,17 +30,19 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <Grid>
-                    <Image x:ConnectionId='3' x:Name="imgItem"
-                           HorizontalAlignment="Left" VerticalAlignment="Top"
-                           Width="100" Height="100"/>
-                    <TextBlock/>
-                </Grid>
+                
+                <StackPanel>
+                    <Image x:ConnectionId='5' x:Name="imgItem" Width="100" Height="100"
+                           Source="{Binding ImgBitmapSource}"/>
+                    <TextBlock Text="{Binding Name}" HorizontalAlignment="Center"/>
+                </StackPanel>
+                
+                <control:StatusDisplayControl x:ConnectionId='4' x:Name="ctrlStatusDisplay" VerticalAlignment="Bottom"/>
             </StackPanel>
         </Grid>
 
         <Grid Grid.Column="1">
-
+            <control:EquipmentReinforceControl x:ConnectionId='2' x:Name="ctrlEquipmentReinforce"/>
         </Grid>
         
     </Grid>

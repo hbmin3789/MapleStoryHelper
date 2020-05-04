@@ -88,7 +88,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         [ResourceInfo("벤전스링", "", EEquipmentCategory.Ring)]
-        public static byte[] ITem_VengeanceRing {
+        public static byte[] Item_VengeanceRing {
             get {
                 object obj = ResourceManager.GetObject("벤전스링", resourceCulture);
                 return ((byte[])(obj));
@@ -99,7 +99,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         [ResourceInfo("오닉스링", "", EEquipmentCategory.Ring)]
-        public static byte[] ITem_OnyxRing {
+        public static byte[] Item_OnyxRing {
             get {
                 object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
                 return ((byte[])(obj));
@@ -150,5 +150,18 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
                 return ((byte[])(obj));
             }
         }
+
+        [ResourceInfo("실버블라썸 링", "01113149", EEquipmentCategory.Ring)]
+        public static object Xml_SilverBlossomRing
+        {
+            get => ResourceManager.GetObject("01113149", resourceCulture);
+        }
+
+        [ResourceInfo("테네브리스 원정대 반지", "01114311", EEquipmentCategory.Ring)]
+        public static object Xml_TenebrisRing
+        {
+            get => ResourceManager.GetObject("01114311", resourceCulture);
+        }
+
     }
 }

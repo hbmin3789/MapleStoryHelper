@@ -29,14 +29,13 @@ namespace MapleStoryHelper.View
         public EquipmentAddPage()
         {
             this.InitializeComponent();
-            InitComboBox();
         }
 
-        private async void InitComboBox()
+        private async void InitComboBox(EEquipmentCategory category)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 
-            var list = MHResourceManager.GetEquipmentList(EEquipmentCategory.Ring);
+            var list = MHResourceManager.GetEquipmentList(category);
 
             for(int i = 0; i < list.Count; i++)
             {
@@ -49,6 +48,19 @@ namespace MapleStoryHelper.View
             }
 
             cbItems.ItemsSource = items;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var category = (EEquipmentCategory)e.Parameter;
+            InitComboBox(category);
+        }
+
+        private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.DataContext = (EquipmentItem)cbItems.SelectedItem;
+            ctrlStatusDisplay.DataContext = ((EquipmentItem)cbItems.SelectedItem).Status;
+            ctrlEquipmentReinforce.DataContext = ((EquipmentItem)cbItems.SelectedItem);
         }
     }
 }

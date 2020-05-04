@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Net.NetworkInformation;
@@ -38,7 +39,10 @@ namespace MapleStoryHelper.Standard
         [Column("str")]
         public double Str
         {
-            get => _str;
+            get 
+            {
+                return GetSTR();
+            }
             set => SetProperty(ref _str, value);
         }
 
@@ -301,12 +305,20 @@ namespace MapleStoryHelper.Standard
             set => SetProperty(ref _criticalDamage, value);
         }
 
-        private List<double> _ignoreDef;
+        private List<double> _ignoreDef = new List<double>();
         [NotMapped]
         public List<double> IgnoreDef
         {
             get => _ignoreDef;
-            set => SetProperty(ref _ignoreDef, value);
+            set
+            {
+                SetProperty(ref _ignoreDef, value);
+                OnPropertyChanged(new PropertyChangedEventArgs(nameof(IgnoreDefBinding)));
+            }
+        }
+        public double IgnoreDefBinding
+        {
+            get => GetIgnoreDef();
         }
 
         #endregion
@@ -319,51 +331,69 @@ namespace MapleStoryHelper.Standard
 
         public int GetSTR()
         {
-            return (int)(Str * (1 + (PStr / 100))) + CStr;
+            return (int)(_str * (1 + ((double)PStr / 100))) + CStr;
         }
 
         public int GetDEX()
         {
-            return (int)(Dex * (1 + (PDex / 100))) + CDex;
+            return (int)(_dex * (1 + ((double)PDex / 100))) + CDex;
         }
 
         public int GetINT()
         {
-            return (int)(Int * (1 + (PInt / 100))) + CInt;
+            return (int)(_int * (1 + ((double)PInt / 100))) + CInt;
         }
 
         public int GetLUK()
         {
-            return (int)(Luk * (1 + (PLuk / 100))) + CLuk;
+            return (int)(_luk * (1 + ((double)PLuk / 100))) + CLuk;
         }
 
         public int GetHP()
         {
-            return (int)(HP * (1 + (PHP / 100))) + CHP;
+            return (int)(_hp * (1 + ((double)PHP / 100))) + CHP;
         }
 
         public int GetMP()
         {
-            return (int)(MP * (1 + (PMP / 100))) + CMP;
+            return (int)(_mp * (1 + ((double)PMP / 100))) + CMP;
         }
 
         public int GetAttackPower()
         {
-            return (int)(AttackPower * (1 + (PAttackPower / 100))) + CAttackPower;
+            return (int)(_attackPower * (1 + ((double)PAttackPower / 100))) + CAttackPower;
         }
 
         public int GetMagicAttack()
         {
-            return (int)(MagicAttack * (1 + (PMagicAttack / 100))) + CMagicAttack;
+            return (int)(_magicAttack * (1 + ((double)PMagicAttack / 100))) + CMagicAttack;
         }
 
         #endregion
 
         #region GetStatusAttack Method
 
-        
+
 
         #endregion
+
+        private double GetIgnoreDef()
+        {
+            //1 - (1 - %) - (1 - %) ...
+            double retval = 1.0;
+
+            if(IgnoreDef.Count == 0)
+            {
+                return 0;
+            }
+
+            for(int i = 0; i < IgnoreDef.Count; i++)
+            {
+                retval -= ((100.0 - IgnoreDef[i]) / 100.0);
+            }
+
+            return retval;
+        }
 
         #endregion
 

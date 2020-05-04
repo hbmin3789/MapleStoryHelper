@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelper.Converter.Equipment;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -28,7 +29,12 @@ namespace MapleStoryHelper.View
 
         private void ItemSetting_Button_Click(object sender, RoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(EquipmentAddPage), null, new DrillInNavigationTransitionInfo());
+            
+            var btn = sender as Button;
+            var converter = new StringToEEquipmentCategoryConverter();
+            var result = converter.Convert(btn.Content, null, null, null);
+
+            ContentFrame.Navigate(typeof(EquipmentAddPage), result, new DrillInNavigationTransitionInfo());
         }
     }
 }

@@ -148,3 +148,13 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.g.cs
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.xaml
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\EquipmentAddPage.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\EquipmentReinforceControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentReinforceControl.g.i.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentReinforceControl.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentReinforceControl.xaml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentReinforceControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\AdditionalOptionControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.g.i.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.xaml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.xbf

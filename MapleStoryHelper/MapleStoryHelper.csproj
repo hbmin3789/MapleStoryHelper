@@ -126,10 +126,17 @@
     <Compile Include="Control\Character\CharacterSettingControl.xaml.cs">
       <DependentUpon>CharacterSettingControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Item\AdditionalOptionControl.xaml.cs">
+      <DependentUpon>AdditionalOptionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Item\EquipmentReinforceControl.xaml.cs">
+      <DependentUpon>EquipmentReinforceControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Status\StatusDisplayControl.xaml.cs">
       <DependentUpon>StatusDisplayControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
+    <Compile Include="Converter\Equipment\StringToEEquipmentCategoryConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
     <Compile Include="View\CharacterAddPage.xaml.cs">
       <DependentUpon>CharacterAddPage.xaml</DependentUpon>
@@ -171,6 +178,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Character\CharacterSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Item\AdditionalOptionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Item\EquipmentReinforceControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

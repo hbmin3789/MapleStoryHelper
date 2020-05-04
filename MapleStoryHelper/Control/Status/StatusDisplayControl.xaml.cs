@@ -18,7 +18,8 @@ using Windows.UI.Xaml.Navigation;
 namespace MapleStoryHelper.Control
 {
     public sealed partial class StatusDisplayControl : UserControl
-    {
+    {        
+
         public StatusDisplayControl()
         {
             this.InitializeComponent();
