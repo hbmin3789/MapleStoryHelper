@@ -22,6 +22,7 @@
     <RootPropertyPathName Name="Int" />
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
+    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
@@ -43,6 +44,7 @@
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemTemplate" />
@@ -124,8 +126,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="IsReadOnly" />
       <RootProperty Name="Text" />
-      <RootProperty Name="BorderThickness" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="BorderThickness" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Height" />
@@ -145,10 +147,20 @@
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.EquipmentReinforceControl" />
     <RootType FullName="MapleStoryHelper.Control.StatusDisplayControl">

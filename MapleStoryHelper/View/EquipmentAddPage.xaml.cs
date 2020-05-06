@@ -31,7 +31,7 @@ namespace MapleStoryHelper.View
             this.InitializeComponent();
         }
 
-        private async void InitComboBox(EEquipmentCategory category)
+        private async void InitEquipComboBox(EEquipmentCategory category)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 
@@ -53,8 +53,10 @@ namespace MapleStoryHelper.View
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var category = (EEquipmentCategory)e.Parameter;
-            InitComboBox(category);
+            InitEquipComboBox(category);
         }
+
+        
 
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

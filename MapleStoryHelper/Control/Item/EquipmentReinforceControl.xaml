@@ -5,31 +5,133 @@
     xmlns:local="using:MapleStoryHelper.Control"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    d:DesignHeight="300"
-    d:DesignWidth="400">
+    mc:Ignorable="d">
     <UserControl.Resources>
         <Style TargetType="CheckBox">
             <Setter Property="Margin" Value="0, 4.5, 0, 0"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="{StaticResource TextBoxMiddleDescriptionFontSize}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Height" Value="auto"/>
         </Style>
     </UserControl.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0">
-            <StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="스타포스 : "/>
-                    <TextBox BorderThickness="1" Margin="10,0,0,0"/>
+        <!-- 스타포스,추옵 -->
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <!-- 스타포스 -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="스타포스 : "/>
+                <TextBox BorderThickness="1" Margin="10,0,0,0"/>
+            </StackPanel>
+            
+            <!-- 추옵 -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <StackPanel>
+                    <TextBox Text="STR" IsReadOnly="True" Margin="0,19,0,0"/>
+                    <TextBox Text="DEX" IsReadOnly="True"/>
+                    <TextBox Text="INT" IsReadOnly="True"/>
+                    <TextBox Text="LUK" IsReadOnly="True"/>
+                    <TextBox Text="HP" IsReadOnly="True"/>
+                    <TextBox Text="MP" IsReadOnly="True"/>
+                    <TextBox Text="공격력" IsReadOnly="True"/>
+                    <TextBox Text="마력" IsReadOnly="True"/>
+                    <TextBox Text="올스텟" IsReadOnly="True"/>
+                    <TextBox Text="데미지" IsReadOnly="True"/>
+                    <TextBox Text="보스 공격력" IsReadOnly="True"/>
                 </StackPanel>
-                
+                <StackPanel>
+                    <TextBlock Text="단일 추옵"/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="이중 추옵"/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                    <TextBox Text=""/>
+                </StackPanel>
             </StackPanel>
         </Grid>
-        
-        <Grid Grid.Column="1">
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            
+        </Grid>
+
+        <!-- 잠재능력 -->
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- 윗잠 -->
+            <StackPanel>
+                <TextBlock Text="윗잠재"/>
+                <ListView x:Name="lvPotential">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ToggleButton Content="{Binding Display}" Background="Transparent"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+            
+            <!-- 에잠 -->
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="에디셔널 잠재"/>
+                <ListView x:Name="lvAdditionalPotential">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ToggleButton Content="{Binding Display}" Background="Transparent"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Grid>
+
+        <!-- 주문서 -->
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox Grid.Column="0" Margin="10"/>
+
+            <StackPanel Grid.Column="1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Button Content="추가하기"/>
+                <Button Content="삭제하기" Margin="0,20,0,0"/>
+            </StackPanel>
+            
+            <ListBox Grid.Column="2" Margin="10"/>
 
         </Grid>
     </Grid>
