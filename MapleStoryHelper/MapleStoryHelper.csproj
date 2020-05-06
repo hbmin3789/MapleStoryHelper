@@ -137,6 +137,8 @@
     </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="Converter\Equipment\StringToEEquipmentCategoryConverter.cs" />
+    <Compile Include="Model\Potential.cs" />
+    <Compile Include="Model\Scroll.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
     <Compile Include="View\CharacterAddPage.xaml.cs">
       <DependentUpon>CharacterAddPage.xaml</DependentUpon>
@@ -159,6 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\EquipBackground.PNG" />
+    <Content Include="Assets\Items\Scroll\Chaos.png" />
+    <Content Include="Assets\Items\Scroll\Magical.png" />
+    <Content Include="Assets\Items\Scroll\Premium.png" />
+    <Content Include="Assets\Items\Scroll\Trace.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -232,10 +238,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Items\Scroll\" />
     <Folder Include="Assets\JobIcons\" />
     <Folder Include="Assets\Skills\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj">

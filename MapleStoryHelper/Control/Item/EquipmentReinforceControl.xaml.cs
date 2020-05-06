@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Standard.Item.Equipment;
+﻿using MapleStoryHelper.Model;
+using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -21,60 +22,78 @@ namespace MapleStoryHelper.Control
 {
     public sealed partial class EquipmentReinforceControl : UserControl
     {
-        ObservableCollection<PotentialItem> PotentialItems = new ObservableCollection<PotentialItem>();
-        ObservableCollection<PotentialItem> AdditionalItems = new ObservableCollection<PotentialItem>();
-
-        private class PotentialItem
-        {
-            public string Display { get; set; }
-            public PotentialItem(string s)
-            {
-                Display = s;
-            }
-        }
+        ObservableCollection<PotentialPower> PotentialItems;
+        ObservableCollection<PotentialPower> AdditionalItems;
+        ObservableCollection<Scroll> ScrollItems;
 
         public EquipmentReinforceControl()
         {
             this.InitializeComponent();
+            InitView();
+        }
+
+        private void InitView()
+        {
+            InitVariables();
             InitPotentialListView();
+            InitScrollListBox();
+        }
+
+        private void InitVariables()
+        {
+            PotentialItems = new ObservableCollection<PotentialPower>();
+            AdditionalItems = new ObservableCollection<PotentialPower>();
+            ScrollItems = new ObservableCollection<Scroll>();
         }
 
         private void InitPotentialListView()
         {
             lvPotential.ItemsSource = PotentialItems;
             lvAdditionalPotential.ItemsSource = AdditionalItems;
-            InitBasePotential();
+            AddBasePotential();
         }
 
-
-
-        private void InitBasePotential()
+        private void InitScrollListBox()
         {
-            PotentialItems.Add(new PotentialItem("STR%"));
-            PotentialItems.Add(new PotentialItem("DEX%"));
-            PotentialItems.Add(new PotentialItem("INT%"));
-            PotentialItems.Add(new PotentialItem("LUK%"));
-            PotentialItems.Add(new PotentialItem("HP%"));
-            PotentialItems.Add(new PotentialItem("MP%"));
-            PotentialItems.Add(new PotentialItem("STR"));
-            PotentialItems.Add(new PotentialItem("DEX"));
-            PotentialItems.Add(new PotentialItem("INT"));
-            PotentialItems.Add(new PotentialItem("LUK"));
-            PotentialItems.Add(new PotentialItem("HP"));
-            PotentialItems.Add(new PotentialItem("MP"));
+            lbScroll.ItemsSource = ScrollItems;
+            AddBaseScroll();
+        }
 
-            AdditionalItems.Add(new PotentialItem("STR%"));
-            AdditionalItems.Add(new PotentialItem("DEX%"));
-            AdditionalItems.Add(new PotentialItem("INT%"));
-            AdditionalItems.Add(new PotentialItem("LUK%"));
-            AdditionalItems.Add(new PotentialItem("HP%"));
-            AdditionalItems.Add(new PotentialItem("MP%"));
-            AdditionalItems.Add(new PotentialItem("STR"));
-            AdditionalItems.Add(new PotentialItem("DEX"));
-            AdditionalItems.Add(new PotentialItem("INT"));
-            AdditionalItems.Add(new PotentialItem("LUK"));
-            AdditionalItems.Add(new PotentialItem("HP"));
-            AdditionalItems.Add(new PotentialItem("MP"));
+        private void AddBasePotential()
+        {
+            PotentialItems.Add(new PotentialPower("STR%"));
+            PotentialItems.Add(new PotentialPower("DEX%"));
+            PotentialItems.Add(new PotentialPower("INT%"));
+            PotentialItems.Add(new PotentialPower("LUK%"));
+            PotentialItems.Add(new PotentialPower("HP%"));
+            PotentialItems.Add(new PotentialPower("MP%"));
+            PotentialItems.Add(new PotentialPower("STR"));
+            PotentialItems.Add(new PotentialPower("DEX"));
+            PotentialItems.Add(new PotentialPower("INT"));
+            PotentialItems.Add(new PotentialPower("LUK"));
+            PotentialItems.Add(new PotentialPower("HP"));
+            PotentialItems.Add(new PotentialPower("MP"));
+
+            AdditionalItems.Add(new PotentialPower("STR%"));
+            AdditionalItems.Add(new PotentialPower("DEX%"));
+            AdditionalItems.Add(new PotentialPower("INT%"));
+            AdditionalItems.Add(new PotentialPower("LUK%"));
+            AdditionalItems.Add(new PotentialPower("HP%"));
+            AdditionalItems.Add(new PotentialPower("MP%"));
+            AdditionalItems.Add(new PotentialPower("STR"));
+            AdditionalItems.Add(new PotentialPower("DEX"));
+            AdditionalItems.Add(new PotentialPower("INT"));
+            AdditionalItems.Add(new PotentialPower("LUK"));
+            AdditionalItems.Add(new PotentialPower("HP"));
+            AdditionalItems.Add(new PotentialPower("MP"));
+        }
+
+        private void AddBaseScroll()
+        {
+            ScrollItems.Add(new Scroll() { Name = "주문의 흔적", ImageSource = "/Assets/Items/Scroll/Trace.png" });
+            ScrollItems.Add(new Scroll() { Name = "혼돈의 주문서", ImageSource = "/Assets/Items/Scroll/Chaos.png" });
+            ScrollItems.Add(new Scroll() { Name = "매지컬 주문서", ImageSource = "/Assets/Items/Scroll/Magical.png" });
+            ScrollItems.Add(new Scroll() { Name = "프리미엄 스크롤", ImageSource = "/Assets/Items/Scroll/Premium.png" });
         }
     }
 }

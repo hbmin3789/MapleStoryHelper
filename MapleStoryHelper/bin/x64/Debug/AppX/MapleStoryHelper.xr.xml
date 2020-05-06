@@ -22,8 +22,9 @@
     <RootPropertyPathName Name="Int" />
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
-    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -90,15 +91,16 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -108,6 +110,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
+      <RootProperty Name="MaxWidth" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
@@ -153,10 +156,8 @@
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
-      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
       <RootProperty Name="Content" />

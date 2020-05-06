@@ -145,6 +145,18 @@
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\EquipBackground.PNG">
       <PackagePath>Assets\EquipBackground.PNG</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Items\Scroll\Chaos.png">
+      <PackagePath>Assets\Items\Scroll\Chaos.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Items\Scroll\Magical.png">
+      <PackagePath>Assets\Items\Scroll\Magical.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Items\Scroll\Premium.png">
+      <PackagePath>Assets\Items\Scroll\Premium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\Items\Scroll\Trace.png">
+      <PackagePath>Assets\Items\Scroll\Trace.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
