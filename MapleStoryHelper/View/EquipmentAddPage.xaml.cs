@@ -42,7 +42,7 @@ namespace MapleStoryHelper.View
                 EquipmentItem newItem = new EquipmentItem();
 
                 newItem = list[i].Clone() as EquipmentItem;
-                newItem.ImgBitmapSource = await newItem.ImgBitmapSource.LoadImage();
+                newItem.ImgBitmapSource = await newItem.ImgByte.LoadImage();
 
                 items.Add(newItem);
             }

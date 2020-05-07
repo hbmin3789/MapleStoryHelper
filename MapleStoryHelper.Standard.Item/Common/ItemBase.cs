@@ -54,15 +54,21 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _itemCode, value);
         }
 
-        /// <summary>
-        /// byte[] Or BitmapImage
-        /// </summary>
+        
         private object _imgBitmapSource;
         [NotMapped]
         public object ImgBitmapSource
         {
             get => _imgBitmapSource;
             set => SetProperty(ref _imgBitmapSource, value);
+        }
+
+        private byte[] _imgByte;
+        [NotMapped]
+        public byte[] ImgByte
+        {
+            get => _imgByte;
+            set => SetProperty(ref _imgByte, value);
         }
 
         private bool _isCash = false;
@@ -114,6 +120,7 @@ namespace MapleStoryHelper.Standard.Item
             ItemCode = item.ItemCode;
             IsCash = item.IsCash;
             ImgBitmapSource = item.ImgBitmapSource;
+            ImgByte = item.ImgByte;
         }
 
         #endregion
@@ -139,6 +146,7 @@ namespace MapleStoryHelper.Standard.Item
             retval.ItemCode = this.ItemCode;
             retval.Name = this.Name;
             retval.PrimaryKey = new Guid().ToString();
+            retval.ImgByte = this.ImgByte;
 
             return retval;
         }

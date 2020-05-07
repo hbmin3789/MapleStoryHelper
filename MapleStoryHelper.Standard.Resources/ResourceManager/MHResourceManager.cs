@@ -30,7 +30,6 @@ namespace MapleStoryHelper.Standard.Resources
         private static void AddInfoToList(ref List<EquipmentItem> retval, EEquipmentCategory category)
         {
             var imgList = GetEquipmentImageList(category);
-            AddImageToList(ref retval, imgList);
 
             var resType = typeof(Properties.MapleStoryHelperResource);
             var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
@@ -43,22 +42,16 @@ namespace MapleStoryHelper.Standard.Resources
                 if (properties[i].Name.Contains("Item_") == true &&
                     attributes?[i]?.Category == category)
                 {
-                    retval[idx] = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
-                    retval[idx].EquipmentCategory = category;
-                    retval[idx].Name = attributes[i].ResourceName;
-                    retval[idx].ItemCode = attributes[i].ItemCode;
+                    EquipmentItem newItem = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
+
+                    newItem.ImgByte = imgList[idx];
+                    newItem.EquipmentCategory = category;
+                    newItem.Name = attributes[i].ResourceName;
+                    newItem.ItemCode = attributes[i].ItemCode;
+
+                    retval.Add(newItem);
                     idx++;
                 }
-            }
-        }
-
-        private static void AddImageToList(ref List<EquipmentItem> list, List<byte[]> imgList)
-        {
-            for(int i = 0; i < imgList.Count; i++)
-            {
-                EquipmentItem newItem = new EquipmentItem();
-                newItem.ImgBitmapSource = imgList[i];
-                list.Add(newItem);
             }
         }
 

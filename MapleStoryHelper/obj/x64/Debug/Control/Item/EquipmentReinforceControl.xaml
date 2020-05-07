@@ -29,6 +29,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <Style x:Key="lvPotentionStyle" TargetType="ListView">
+            <Setter Property="SelectionMode" Value="None"/>
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <ToggleButton Content="{Binding Display}"
+                                      MinWidth="200" MinHeight="50"
+                                      Background="Transparent"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         
     </UserControl.Resources>
     <Grid Background="White">
@@ -105,28 +118,33 @@
             </Grid.ColumnDefinitions>
             
             <!-- 윗잠 -->
-            <StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 <TextBlock Text="윗잠재"/>
-                <ListView x:ConnectionId='7' x:Name="lvPotential">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ToggleButton Content="{Binding Display}" Background="Transparent"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackPanel>
-            
+                <ComboBox x:ConnectionId='8' x:Name="cbPotentialRank"/>
+                <ListView x:ConnectionId='9' x:Name="lvPotential" Grid.Row="2"
+                          Style="{StaticResource lvPotentionStyle}"/>
+            </Grid>
+
             <!-- 에잠 -->
-            <StackPanel Grid.Column="1">
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 <TextBlock Text="에디셔널 잠재"/>
-                <ListView x:ConnectionId='5' x:Name="lvAdditionalPotential">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ToggleButton Content="{Binding Display}" Background="Transparent"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackPanel>
+                <ComboBox x:ConnectionId='6' x:Name="cbAdditionalPotentialRank"/>
+                <ListView x:ConnectionId='7' x:Name="lvAdditionalPotential" Grid.Row="2"
+                          Style="{StaticResource lvPotentionStyle}"/>
+            </Grid>
+
+
         </Grid>
 
         <!-- 주문서 -->
@@ -137,7 +155,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <ListBox x:ConnectionId='3' x:Name="lbScroll" Grid.Column="0" Margin="10"
+            <ListBox x:ConnectionId='4' x:Name="lbScroll" Grid.Column="0" Margin="10"
                      Style="{StaticResource lbScrollStyle}"/>
 
             <StackPanel Grid.Column="1"
@@ -147,7 +165,7 @@
                 <Button Content="삭제하기" Margin="0,10,0,0"/>
             </StackPanel>
             
-            <ListBox x:ConnectionId='4' x:Name ="lbAppliedScroll" Grid.Column="2" Margin="10"
+            <ListBox x:ConnectionId='5' x:Name ="lbAppliedScroll" Grid.Column="2" Margin="10"
                      Style="{StaticResource lbScrollStyle}"/>
 
         </Grid>

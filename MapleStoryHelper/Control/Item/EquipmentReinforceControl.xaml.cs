@@ -24,6 +24,7 @@ namespace MapleStoryHelper.Control
     {
         ObservableCollection<PotentialPower> PotentialItems;
         ObservableCollection<PotentialPower> AdditionalItems;
+        ObservableCollection<string> PotentialRankList;
         ObservableCollection<Scroll> ScrollItems;
 
         public EquipmentReinforceControl()
@@ -44,13 +45,26 @@ namespace MapleStoryHelper.Control
             PotentialItems = new ObservableCollection<PotentialPower>();
             AdditionalItems = new ObservableCollection<PotentialPower>();
             ScrollItems = new ObservableCollection<Scroll>();
+            PotentialRankList = new ObservableCollection<string>();
         }
 
         private void InitPotentialListView()
         {
             lvPotential.ItemsSource = PotentialItems;
             lvAdditionalPotential.ItemsSource = AdditionalItems;
+            cbAdditionalPotentialRank.ItemsSource = PotentialRankList;
+            cbPotentialRank.ItemsSource = PotentialRankList;
+
             AddBasePotential();
+            AddPotentialRank();
+        }
+
+        private void AddPotentialRank()
+        {
+            PotentialRankList.Add("레어");
+            PotentialRankList.Add("에픽");
+            PotentialRankList.Add("유니크");
+            PotentialRankList.Add("레전더리");
         }
 
         private void InitScrollListBox()

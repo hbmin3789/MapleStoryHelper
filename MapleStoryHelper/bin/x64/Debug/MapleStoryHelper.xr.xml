@@ -22,9 +22,9 @@
     <RootPropertyPathName Name="Int" />
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
+    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ImageSource" />
-    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -45,7 +45,6 @@
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemsPanel" />
-      <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
       <RootProperty Name="ItemTemplate" />
@@ -159,9 +158,22 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
+      <RootProperty Name="SelectionMode" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
       <RootProperty Name="Content" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
       <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.EquipmentReinforceControl" />
     <RootType FullName="MapleStoryHelper.Control.StatusDisplayControl">
@@ -180,14 +192,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="SelectedIndex" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="SelectionChanged" />
-    </RootType>
     <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
     <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid">
