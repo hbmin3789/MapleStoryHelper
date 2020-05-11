@@ -56,8 +56,6 @@ namespace MapleStoryHelper.View
             InitEquipComboBox(category);
         }
 
-        
-
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.DataContext = (EquipmentItem)cbItems.SelectedItem;

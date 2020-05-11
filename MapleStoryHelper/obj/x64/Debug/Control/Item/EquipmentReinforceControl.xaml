@@ -125,7 +125,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="윗잠재"/>
-                <ComboBox x:ConnectionId='8' x:Name="cbPotentialRank"/>
+                <ComboBox x:ConnectionId='8' x:Name="cbPotentialRank" Grid.Row="1"/>
                 <ListView x:ConnectionId='9' x:Name="lvPotential" Grid.Row="2"
                           Style="{StaticResource lvPotentionStyle}"/>
             </Grid>
@@ -139,7 +139,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="에디셔널 잠재"/>
-                <ComboBox x:ConnectionId='6' x:Name="cbAdditionalPotentialRank"/>
+                <ComboBox x:ConnectionId='6' x:Name="cbAdditionalPotentialRank" Grid.Row="1"/>
                 <ListView x:ConnectionId='7' x:Name="lvAdditionalPotential" Grid.Row="2"
                           Style="{StaticResource lvPotentionStyle}"/>
             </Grid>

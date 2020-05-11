@@ -33,6 +33,8 @@ namespace MapleStoryHelper.Control
             InitView();
         }
 
+        #region Initialize
+
         private void InitView()
         {
             InitVariables();
@@ -109,5 +111,8 @@ namespace MapleStoryHelper.Control
             ScrollItems.Add(new Scroll() { Name = "매지컬 주문서", ImageSource = "/Assets/Items/Scroll/Magical.png" });
             ScrollItems.Add(new Scroll() { Name = "프리미엄 스크롤", ImageSource = "/Assets/Items/Scroll/Premium.png" });
         }
+
+        #endregion
+
     }
 }

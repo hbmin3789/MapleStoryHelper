@@ -12,6 +12,7 @@ namespace MapleStoryHelper.Standard.Item
     public class EquipmentItem : ItemBase
     {
         #region Property
+
         private int _requiredLevel = 10;
         [Column("required_level")]
         public int RequiredLevel
@@ -26,6 +27,13 @@ namespace MapleStoryHelper.Standard.Item
         {
             get => _maxStarForce;
             set => SetProperty(ref _maxStarForce, value);
+        }
+
+        private int _starForce;
+        public int StarForce
+        {
+            get => _starForce;
+            set => SetProperty(ref _starForce, value);
         }
 
         private int _maxScroll;
@@ -68,6 +76,13 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _status, value);
         }
 
+        private Potential _potential;
+        public Potential Potential
+        {
+            get => _potential;
+            set => SetProperty(ref _potential, value);
+        }
+
         #endregion
 
         #region Constructor
@@ -106,6 +121,7 @@ namespace MapleStoryHelper.Standard.Item
             retval.RequiredLevel = this.RequiredLevel;
             retval.MaxStarForce = this.MaxStarForce;
             retval.Status = this.Status;
+            retval.Potential = this.Potential;
 
             return retval;
         }
