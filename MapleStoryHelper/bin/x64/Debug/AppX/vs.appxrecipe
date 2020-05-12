@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>96E60966A5FFD284841D7709D44B5D79E359DABBF0E1B259D08144911090A95D</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1CB3381AC111ED205D079CC83EEEDBAEC7666CA2FB76D5F6FCC236691B125E3E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0670bfc8-b854-4655-a85d-8015448096b6_1.0.0.0_x64__yzekw4x8qxe1g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0670bfc8-b854-4655-a85d-8015448096b6_yzekw4x8qxe1g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0670bfc8-b854-4655-a85d-8015448096b6</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-11T02:36:16.291</Modified>
+      <Modified>2020-05-12T04:04:44.213</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.exe">
       <PackagePath>entrypoint\MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-05-11T02:36:12.684</Modified>
+      <Modified>2020-05-12T04:04:40.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.exe.config">
       <PackagePath>MapleStoryHelper.exe.config</PackagePath>
@@ -160,11 +160,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll">
       <PackagePath>MapleStoryHelper.Standard.Character.dll</PackagePath>
-      <Modified>2020-05-07T01:04:22.637</Modified>
+      <Modified>2020-05-11T11:33:40.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Database\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Database.dll">
       <PackagePath>MapleStoryHelper.Standard.Database.dll</PackagePath>
-      <Modified>2020-05-07T01:04:23.288</Modified>
+      <Modified>2020-05-11T11:33:40.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll">
       <PackagePath>MapleStoryHelper.Standard.dll</PackagePath>
@@ -172,11 +172,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll">
       <PackagePath>MapleStoryHelper.Standard.Item.dll</PackagePath>
-      <Modified>2020-05-06T23:33:46.122</Modified>
+      <Modified>2020-05-11T11:33:38.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.dll">
       <PackagePath>MapleStoryHelper.Standard.Resources.dll</PackagePath>
-      <Modified>2020-05-07T01:04:21.828</Modified>
+      <Modified>2020-05-11T11:33:39.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\win2d.uwp\1.24.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -250,66 +250,123 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.xr.xml">
       <PackagePath>MapleStoryHelper.xr.xml</PackagePath>
-      <Modified>2020-05-07T05:09:27.596</Modified>
+      <Modified>2020-05-12T04:04:40.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.642</Modified>
+      <Modified>2020-05-12T04:04:40.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Character\CharacterControl.xbf">
       <PackagePath>Control\Character\CharacterControl.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.642</Modified>
+      <Modified>2020-05-12T04:04:40.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Character\CharacterSettingControl.xbf">
       <PackagePath>Control\Character\CharacterSettingControl.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.642</Modified>
+      <Modified>2020-05-12T04:04:40.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\AdditionalOptionControl.xbf">
       <PackagePath>Control\Item\AdditionalOptionControl.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.643</Modified>
+      <Modified>2020-05-12T04:04:40.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\EquipmentReinforceControl.xbf">
       <PackagePath>Control\Item\EquipmentReinforceControl.xbf</PackagePath>
-      <Modified>2020-05-11T02:36:12.340</Modified>
+      <Modified>2020-05-12T04:04:40.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\PotentialControl.xbf">
+      <PackagePath>Control\Item\PotentialControl.xbf</PackagePath>
+      <Modified>2020-05-12T04:04:40.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Status\StatusDisplayControl.xbf">
       <PackagePath>Control\Status\StatusDisplayControl.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.643</Modified>
+      <Modified>2020-05-12T04:04:40.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Theme\FontSize.xbf">
       <PackagePath>Theme\FontSize.xbf</PackagePath>
-      <Modified>2020-05-11T02:36:12.339</Modified>
+      <Modified>2020-05-12T04:04:40.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\CharacterAddPage.xbf">
       <PackagePath>View\CharacterAddPage.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.643</Modified>
+      <Modified>2020-05-12T04:04:40.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\EquipmentAddPage.xbf">
       <PackagePath>View\EquipmentAddPage.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.643</Modified>
+      <Modified>2020-05-12T04:04:40.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\ItemSettingPage.xbf">
       <PackagePath>View\ItemSettingPage.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.644</Modified>
+      <Modified>2020-05-12T04:04:40.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-05-07T05:09:27.644</Modified>
+      <Modified>2020-05-12T04:04:40.166</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\X64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2019-03-18T10:50:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T08:33:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
+      <Modified>2020-05-01T09:18:20.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-06T10:51:53.605</Modified>
+      <Modified>2020-05-11T23:14:19.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Core\MapleStoryHelper.exe">
       <PackagePath>MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-05-11T02:36:16.262</Modified>
+      <Modified>2020-05-12T04:04:44.206</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42005.1001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42005.1001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42005.1001.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42005.1001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42005.1001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42005.1001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42005.1001.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42005.1001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+      <Name>Microsoft.UI.Xaml.2.4</Name>
+      <Version>2.42005.1001.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42005.1001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\user\.nuget\packages\microsoft.ui.xaml\2.4.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>

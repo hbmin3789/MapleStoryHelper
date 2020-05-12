@@ -14,7 +14,6 @@ namespace MapleStoryHelper.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
-        private MHDBManager dbmanager;
 
         private Character _newCharacterItem;
         public Character NewCharacterItem
@@ -42,7 +41,6 @@ namespace MapleStoryHelper.ViewModel
         {
             _newCharacterItem = new Character();
             _characterItems = new ObservableCollection<Character>();
-            dbmanager = new MHDBManager();
         }
 
         private void InitCommands()
@@ -50,31 +48,17 @@ namespace MapleStoryHelper.ViewModel
 
         }
 
+
+
         #endregion
 
         #region Command
 
         public void AddCharacter(bool result)
         {
-            if(result == true)
-            {
-                DBAddCharacter();
-                DBLoadCharacter();
-            }
+            
         }
 
         #endregion
-
-        private void DBAddCharacter()
-        {
-            NewCharacterItem.PrimaryKey = Guid.NewGuid().ToString();
-            dbmanager.SaveResource(NewCharacterItem.CharacterImage);
-            dbmanager.SaveCharacter(NewCharacterItem);
-        }
-
-        private void DBLoadCharacter()
-        {
-            CharacterItems = new ObservableCollection<Character>(dbmanager.GetCharacterItems());
-        }
     }
 }

@@ -1,8 +1,8 @@
 ﻿<UserControl
-    x:Class="MapleStoryHelper.Control.Item.AdditionalOptionControl"
+    x:Class="MapleStoryHelper.Control.AdditionalOptionControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:MapleStoryHelper.Control.Item"
+    xmlns:local="using:MapleStoryHelper.Control"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -18,48 +18,59 @@
     </UserControl.Resources>
 
     <Grid Background="White">
-        <Viewbox>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel>
-                    <TextBox Text="STR"/>
-                    <TextBox Text="DEX"/>
-                    <TextBox Text="INT"/>
-                    <TextBox Text="LUK"/>
-                    <TextBox Text="HP"/>
-                    <TextBox Text="MP"/>
-                    <TextBox Text="공격력"/>
-                    <TextBox Text="마력"/>
-                    <TextBox Text="데미지"/>
-                    <TextBox Text="보스 공격력"/>
-                    <TextBox Text="방어율 무시"/>
-                    <TextBox Text="착용레벨 감소"/>
-                    <TextBox Text="이동속도"/>
-                    <TextBox Text="점프력"/>
-                    <TextBox Text="방어력"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <TextBox Text="{Binding Str}"/>
-                    <TextBox Text="{Binding Dex}"/>
-                    <TextBox Text="{Binding Int}"/>
-                    <TextBox Text="{Binding Luk}"/>
-                    <TextBox Text="{Binding HP}"/>
-                    <TextBox Text="{Binding MP}"/>
-                    <TextBox Text="{Binding AttackPower}"/>
-                    <TextBox Text="{Binding MagicAttack}"/>
-                    <TextBox Text="{Binding Damage}"/>
-                    <TextBox Text="{Binding BossDamage}"/>
-                    <TextBox Text="{Binding IgnoreDefBinding}"/>
-                    <TextBox Text="{Binding Critical}"/>
-                    <TextBox Text="{Binding CriticalDamage}"/>
-                </StackPanel>
-            </Grid>
-        </Viewbox>
-        
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- 스타포스 -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <TextBlock Text="스타포스 : " VerticalAlignment="Center"/>
+            <TextBox x:ConnectionId='7' x:Name="tbStarForce" BorderThickness="1" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <!-- 추옵 -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <StackPanel>
+                <TextBox Text="STR" IsReadOnly="True" Margin="0,19,0,0"/>
+                <TextBox Text="DEX" IsReadOnly="True"/>
+                <TextBox Text="INT" IsReadOnly="True"/>
+                <TextBox Text="LUK" IsReadOnly="True"/>
+                <TextBox Text="HP" IsReadOnly="True"/>
+                <TextBox Text="MP" IsReadOnly="True"/>
+                <TextBox Text="공격력" IsReadOnly="True"/>
+                <TextBox Text="마력" IsReadOnly="True"/>
+                <TextBox Text="올스텟" IsReadOnly="True"/>
+                <TextBox Text="데미지" IsReadOnly="True"/>
+                <TextBox Text="보스 공격력" IsReadOnly="True"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="단일 추옵"/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+                <TextBox Text=""/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="이중 추옵"/>
+                <CheckBox x:ConnectionId='2' x:Name="cbSTR"                                  />
+                <CheckBox x:ConnectionId='3' x:Name="cbDEX"                                  />
+                <CheckBox x:ConnectionId='4' x:Name="cbINT"                                  />
+                <CheckBox x:ConnectionId='5' x:Name="cbLUK"                                  />
+                <TextBlock Text="추옵 등급을 입력해주세요(1~7)"/>
+                <TextBox/>
+
+                <Button x:ConnectionId='6' Content="초기화"                                      />
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </UserControl>
 

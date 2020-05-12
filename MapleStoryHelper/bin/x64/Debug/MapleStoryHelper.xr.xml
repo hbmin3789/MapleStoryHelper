@@ -9,6 +9,11 @@
     <RootPropertyPathName Name="CharacterJob" />
     <RootPropertyPathName Name="ImageSrc" />
     <RootPropertyPathName Name="CharacterItems" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="Display" />
+    <RootPropertyPathName Name="PotentialItems" />
+    <RootPropertyPathName Name="PotentialRankList" />
     <RootPropertyPathName Name="CriticalDamage" />
     <RootPropertyPathName Name="Critical" />
     <RootPropertyPathName Name="IgnoreDefBinding" />
@@ -22,9 +27,6 @@
     <RootPropertyPathName Name="Int" />
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
-    <RootPropertyPathName Name="Display" />
-    <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="ImageSource" />
     <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -97,8 +99,8 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextWrapping" />
     </RootType>
@@ -139,14 +141,11 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="BorderThickness" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
-      <RootProperty Name="Child" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="MapleStoryHelper.Control.Item.AdditionalOptionControl" />
-    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox" />
+    <RootType FullName="MapleStoryHelper.Control.AdditionalOptionControl" />
+    <RootType FullName="MapleStoryHelper.Model.ListResources" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
@@ -158,6 +157,11 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="MapleStoryHelper.Control.PotentialControl" />
+    <RootType FullName="MapleStoryHelper.Control.EquipmentReinforceControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
       <RootProperty Name="SelectionMode" />
     </RootType>
@@ -168,6 +172,7 @@
       <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="ItemsSource" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="SelectedIndex" />
@@ -175,7 +180,17 @@
       <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="MapleStoryHelper.Control.EquipmentReinforceControl" />
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.TabView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Child" />
+    </RootType>
     <RootType FullName="MapleStoryHelper.Control.StatusDisplayControl">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />

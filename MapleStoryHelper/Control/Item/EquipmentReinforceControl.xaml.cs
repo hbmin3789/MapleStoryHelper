@@ -3,6 +3,7 @@ using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,86 +23,18 @@ namespace MapleStoryHelper.Control
 {
     public sealed partial class EquipmentReinforceControl : UserControl
     {
-        ObservableCollection<PotentialPower> PotentialItems;
-        ObservableCollection<PotentialPower> AdditionalItems;
-        ObservableCollection<string> PotentialRankList;
-        ObservableCollection<Scroll> ScrollItems;
+        public ObservableCollection<Scroll> ScrollItems = new ObservableCollection<Scroll>();
 
         public EquipmentReinforceControl()
         {
             this.InitializeComponent();
-            InitView();
-        }
 
-        #region Initialize
-
-        private void InitView()
-        {
-            InitVariables();
-            InitPotentialListView();
             InitScrollListBox();
-        }
-
-        private void InitVariables()
-        {
-            PotentialItems = new ObservableCollection<PotentialPower>();
-            AdditionalItems = new ObservableCollection<PotentialPower>();
-            ScrollItems = new ObservableCollection<Scroll>();
-            PotentialRankList = new ObservableCollection<string>();
-        }
-
-        private void InitPotentialListView()
-        {
-            lvPotential.ItemsSource = PotentialItems;
-            lvAdditionalPotential.ItemsSource = AdditionalItems;
-            cbAdditionalPotentialRank.ItemsSource = PotentialRankList;
-            cbPotentialRank.ItemsSource = PotentialRankList;
-
-            AddBasePotential();
-            AddPotentialRank();
-        }
-
-        private void AddPotentialRank()
-        {
-            PotentialRankList.Add("레어");
-            PotentialRankList.Add("에픽");
-            PotentialRankList.Add("유니크");
-            PotentialRankList.Add("레전더리");
         }
 
         private void InitScrollListBox()
         {
-            lbScroll.ItemsSource = ScrollItems;
             AddBaseScroll();
-        }
-
-        private void AddBasePotential()
-        {
-            PotentialItems.Add(new PotentialPower("STR%"));
-            PotentialItems.Add(new PotentialPower("DEX%"));
-            PotentialItems.Add(new PotentialPower("INT%"));
-            PotentialItems.Add(new PotentialPower("LUK%"));
-            PotentialItems.Add(new PotentialPower("HP%"));
-            PotentialItems.Add(new PotentialPower("MP%"));
-            PotentialItems.Add(new PotentialPower("STR"));
-            PotentialItems.Add(new PotentialPower("DEX"));
-            PotentialItems.Add(new PotentialPower("INT"));
-            PotentialItems.Add(new PotentialPower("LUK"));
-            PotentialItems.Add(new PotentialPower("HP"));
-            PotentialItems.Add(new PotentialPower("MP"));
-
-            AdditionalItems.Add(new PotentialPower("STR%"));
-            AdditionalItems.Add(new PotentialPower("DEX%"));
-            AdditionalItems.Add(new PotentialPower("INT%"));
-            AdditionalItems.Add(new PotentialPower("LUK%"));
-            AdditionalItems.Add(new PotentialPower("HP%"));
-            AdditionalItems.Add(new PotentialPower("MP%"));
-            AdditionalItems.Add(new PotentialPower("STR"));
-            AdditionalItems.Add(new PotentialPower("DEX"));
-            AdditionalItems.Add(new PotentialPower("INT"));
-            AdditionalItems.Add(new PotentialPower("LUK"));
-            AdditionalItems.Add(new PotentialPower("HP"));
-            AdditionalItems.Add(new PotentialPower("MP"));
         }
 
         private void AddBaseScroll()
@@ -112,7 +45,6 @@ namespace MapleStoryHelper.Control
             ScrollItems.Add(new Scroll() { Name = "프리미엄 스크롤", ImageSource = "/Assets/Items/Scroll/Premium.png" });
         }
 
-        #endregion
-
+        
     }
 }

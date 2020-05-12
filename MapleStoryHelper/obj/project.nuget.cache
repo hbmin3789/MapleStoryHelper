@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7oYbLhF74xxhVd+qHXS4mOIcI2zDxb/qo9Qq0IdgEL6adjdwG9/RAC61IfYJMhcFIJLb17eaZJjH8Z1f5VaBFw==",
+  "dgSpecHash": "QgVvE/vGRvnVaj7q6Qv7zUF2nz4p16yeQmLIBLFfvnQ5qblbzsBPAVwKoqAyzcqsp5+CcESRazQA1Jqp9xde6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper\\MapleStoryHelper.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.toolkit.uwp.ui\\6.0.0\\microsoft.toolkit.uwp.ui.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.toolkit.uwp.ui.animations\\6.0.0\\microsoft.toolkit.uwp.ui.animations.6.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.toolkit.uwp.ui.controls\\6.0.0\\microsoft.toolkit.uwp.ui.controls.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.ui.xaml\\2.4.0\\microsoft.ui.xaml.2.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\1.1.0\\microsoft.xaml.behaviors.uwp.managed.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",

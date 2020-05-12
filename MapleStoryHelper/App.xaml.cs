@@ -30,19 +30,6 @@ namespace MapleStoryHelper
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-
-            DatabaseMigrate();
-        }
-
-        private void DatabaseMigrate()
-        {
-            var ResourceContext = new ResourceContext();
-            var CharacterContext = new CharacterContext();
-            var EquipmentContext = new EquipmentContext();
-
-            ResourceContext.Database.Migrate();
-            CharacterContext.Database.Migrate();
-            EquipmentContext.Database.Migrate();
         }
 
         /// <summary>

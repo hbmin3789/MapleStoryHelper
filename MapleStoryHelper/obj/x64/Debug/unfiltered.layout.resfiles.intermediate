@@ -16,6 +16,7 @@ Control\Character\CharacterControl.xbf
 Control\Character\CharacterSettingControl.xbf
 Control\Item\AdditionalOptionControl.xbf
 Control\Item\EquipmentReinforceControl.xbf
+Control\Item\PotentialControl.xbf
 Control\Status\StatusDisplayControl.xbf
 MapleStoryHelper.xr.xml
 Theme\FontSize.xbf

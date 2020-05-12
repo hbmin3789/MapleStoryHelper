@@ -158,3 +158,9 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Contr
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.g.cs
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.xaml
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\AdditionalOptionControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Microsoft.UI.Xaml.pri.xml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\PotentialControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\PotentialControl.g.i.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\PotentialControl.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\PotentialControl.xaml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\PotentialControl.xbf

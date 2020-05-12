@@ -513,6 +513,18 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
         "type": "package",
         "compile": {
@@ -2008,6 +2020,18 @@
         },
         "runtime": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
@@ -3849,6 +3873,18 @@
         },
         "runtime": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
@@ -5723,6 +5759,18 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
         "type": "package",
         "compile": {
@@ -7592,6 +7640,18 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
         "type": "package",
         "compile": {
@@ -9431,6 +9491,18 @@
         },
         "runtime": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
@@ -11305,6 +11377,18 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
         "type": "package",
         "compile": {
@@ -13144,6 +13228,18 @@
         },
         "runtime": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
+        }
+      },
+      "Microsoft.UI.Xaml/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.UI.Xaml.winmd": {}
+        },
+        "build": {
+          "buildTransitive/Microsoft.UI.Xaml.props": {}
         }
       },
       "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
@@ -15281,6 +15377,37 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml",
         "microsoft.toolkit.uwp.ui.controls.6.0.0.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.controls.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Microsoft.UI.Xaml/2.4.0": {
+      "sha512": "MmbE2AGQAPMjuJuGL6n6KKsS7+tQ7Jmd+nu1yd3gaPHipAnyVVD358XwNELmzv1RQY3SoSOI/xeYuOVEFA4OzQ==",
+      "type": "package",
+      "path": "microsoft.ui.xaml/2.4.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Common.targets",
+        "build/Microsoft.UI.Xaml.props",
+        "build/MicrosoftUIXamlVersion.props",
+        "build/native/Microsoft.UI.Xaml.targets",
+        "buildTransitive/Common.targets",
+        "buildTransitive/Microsoft.UI.Xaml.props",
+        "buildTransitive/MicrosoftUIXamlVersion.props",
+        "lib/uap10.0/Design/Microsoft.UI.Xaml.Design.dll",
+        "lib/uap10.0/Microsoft.UI.Xaml.pri",
+        "lib/uap10.0/Microsoft.UI.Xaml.winmd",
+        "lib/uap10.0/Microsoft.UI.Xaml.xml",
+        "lib/uap10.0/Microsoft.UI.Xaml/Themes/Generic.xaml",
+        "license.txt",
+        "microsoft.ui.xaml.2.4.0.nupkg.sha512",
+        "microsoft.ui.xaml.nuspec",
+        "readme.txt",
+        "tools/AppX/arm/Release/Microsoft.UI.Xaml.2.4.appx",
+        "tools/AppX/arm64/Release/Microsoft.UI.Xaml.2.4.appx",
+        "tools/AppX/x64/Release/Microsoft.UI.Xaml.2.4.appx",
+        "tools/AppX/x86/Release/Microsoft.UI.Xaml.2.4.appx",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
@@ -22711,6 +22838,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 1.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 6.0.0",
+      "Microsoft.UI.Xaml >= 2.4.0",
       "Prism.Core >= 7.2.0.1422"
     ]
   },
@@ -22782,6 +22910,10 @@
           "Microsoft.Toolkit.Uwp.UI.Controls": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "Microsoft.UI.Xaml": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           },
           "Prism.Core": {
             "target": "Package",

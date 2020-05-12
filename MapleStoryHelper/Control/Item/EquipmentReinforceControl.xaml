@@ -5,8 +5,14 @@
     xmlns:local="using:MapleStoryHelper.Control"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:src="using:MapleStoryHelper.Model"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:control="using:MapleStoryHelper.Control"
     mc:Ignorable="d">
     <UserControl.Resources>
+
+        <src:ListResources x:Key="ListResources"/>
+        
         <Style TargetType="CheckBox">
             <Setter Property="Margin" Value="0, 4.5, 0, 0"/>
         </Style>
@@ -29,20 +35,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-        <Style x:Key="lvPotentionStyle" TargetType="ListView">
-            <Setter Property="SelectionMode" Value="None"/>
-            <Setter Property="ItemTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <ToggleButton Content="{Binding Display}"
-                                      MinWidth="200" MinHeight="50"
-                                      Background="Transparent"/>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        
     </UserControl.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
@@ -56,54 +48,7 @@
 
         <!-- 스타포스,추옵 -->
         <Grid Grid.Column="0" Grid.Row="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            
-            <!-- 스타포스 -->
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                <TextBlock Text="스타포스 : " VerticalAlignment="Center"/>
-                <TextBox BorderThickness="1" Margin="10,0,0,0"/>
-            </StackPanel>
-            
-            <!-- 추옵 -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <StackPanel>
-                    <TextBox Text="STR" IsReadOnly="True" Margin="0,19,0,0"/>
-                    <TextBox Text="DEX" IsReadOnly="True"/>
-                    <TextBox Text="INT" IsReadOnly="True"/>
-                    <TextBox Text="LUK" IsReadOnly="True"/>
-                    <TextBox Text="HP" IsReadOnly="True"/>
-                    <TextBox Text="MP" IsReadOnly="True"/>
-                    <TextBox Text="공격력" IsReadOnly="True"/>
-                    <TextBox Text="마력" IsReadOnly="True"/>
-                    <TextBox Text="올스텟" IsReadOnly="True"/>
-                    <TextBox Text="데미지" IsReadOnly="True"/>
-                    <TextBox Text="보스 공격력" IsReadOnly="True"/>
-                </StackPanel>
-                <StackPanel>
-                    <TextBlock Text="단일 추옵"/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                </StackPanel>
-                <StackPanel>
-                    <TextBlock Text="이중 추옵"/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                    <TextBox Text=""/>
-                </StackPanel>
-            </StackPanel>
+            <control:AdditionalOptionControl/>
         </Grid>
 
         <Grid Grid.Column="0" Grid.Row="1">
@@ -112,39 +57,7 @@
 
         <!-- 잠재능력 -->
         <Grid Grid.Column="1" Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            
-            <!-- 윗잠 -->
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="윗잠재"/>
-                <ComboBox x:Name="cbPotentialRank" Grid.Row="1"/>
-                <ListView x:Name="lvPotential" Grid.Row="2"
-                          Style="{StaticResource lvPotentionStyle}"/>
-            </Grid>
-
-            <!-- 에잠 -->
-
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="에디셔널 잠재"/>
-                <ComboBox x:Name="cbAdditionalPotentialRank" Grid.Row="1"/>
-                <ListView x:Name="lvAdditionalPotential" Grid.Row="2"
-                          Style="{StaticResource lvPotentionStyle}"/>
-            </Grid>
-
-
+            <local:PotentialControl/>
         </Grid>
 
         <!-- 주문서 -->
