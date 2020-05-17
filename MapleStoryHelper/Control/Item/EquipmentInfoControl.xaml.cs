@@ -1,4 +1,8 @@
-﻿using System;
+﻿using MapleStoryHelper.Common;
+using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Equipment;
+using MapleStoryHelper.Standard.Resources;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +26,32 @@ namespace MapleStoryHelper.Control.Item
         public EquipmentInfoControl()
         {
             this.InitializeComponent();
+            InitEquipComboBox(EEquipmentCategory.Ring);
+        }
+
+        private async void InitEquipComboBox(EEquipmentCategory category)
+        {
+            List<EquipmentItem> items = new List<EquipmentItem>();
+
+            var list = MHResourceManager.GetEquipmentList(category);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                EquipmentItem newItem = new EquipmentItem();
+
+                newItem = list[i].Clone() as EquipmentItem;
+                newItem.ImgBitmapSource = await newItem.ImgByte.LoadImage();
+
+                items.Add(newItem);
+            }
+
+            cbItems.ItemsSource = items;
+        }
+
+        private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var item = cbItems.SelectedItem as EquipmentItem;
+            this.DataContext = item;
         }
     }
 }

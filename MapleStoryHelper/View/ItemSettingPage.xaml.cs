@@ -1,11 +1,15 @@
-﻿using MapleStoryHelper.Converter.Equipment;
+﻿using MapleStoryHelper.Control.Item;
+using MapleStoryHelper.Converter.Equipment;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,14 +31,35 @@ namespace MapleStoryHelper.View
             this.InitializeComponent();
         }
 
-        private void ItemSetting_Button_Click(object sender, RoutedEventArgs e)
+        private async void ItemSetting_Button_Click(object sender, RoutedEventArgs e)
         {
             
             var btn = sender as Button;
             var converter = new StringToEEquipmentCategoryConverter();
             var result = converter.Convert(btn.Content, null, null, null);
 
-            ContentFrame.Navigate(typeof(EquipmentAddPage), result, new DrillInNavigationTransitionInfo());
+            //CoreApplicationView newView = CoreApplication.CreateNewView();
+            //int newViewId = 0;
+
+            //await newView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,() => 
+            //{
+            //    Window.Current.Content = new EquipmentInfoControl();
+
+            //    Window.Current.Activate();
+
+            //    newViewId = ApplicationView.GetForCurrentView().Id;
+
+            //});
+
+            ContentDialog noWifiDialog = new ContentDialog
+            {
+                Content = new EquipmentInfoControl(),
+                CloseButtonText = "Ok"
+            };
+
+            ContentDialogResult res = await noWifiDialog.ShowAsync();
+
+            //ContentFrame.Navigate(typeof(EquipmentAddPage), result, new DrillInNavigationTransitionInfo());
         }
     }
 }

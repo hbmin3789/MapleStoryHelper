@@ -9,6 +9,30 @@
     <RootPropertyPathName Name="CharacterJob" />
     <RootPropertyPathName Name="ImageSrc" />
     <RootPropertyPathName Name="CharacterItems" />
+    <RootPropertyPathName Name="Status" />
+    <RootPropertyPathName Name="ScAllStatus" />
+    <RootPropertyPathName Name="ScMagic" />
+    <RootPropertyPathName Name="ScAttack" />
+    <RootPropertyPathName Name="ScMP" />
+    <RootPropertyPathName Name="ScHP" />
+    <RootPropertyPathName Name="ScLuk" />
+    <RootPropertyPathName Name="ScInt" />
+    <RootPropertyPathName Name="ScDex" />
+    <RootPropertyPathName Name="ScStr" />
+    <RootPropertyPathName Name="AdCriticalDamage" />
+    <RootPropertyPathName Name="AdCritical" />
+    <RootPropertyPathName Name="AdIgnoreDefBinding" />
+    <RootPropertyPathName Name="AdBossDamage" />
+    <RootPropertyPathName Name="AdDamage" />
+    <RootPropertyPathName Name="AdPAllStatus" />
+    <RootPropertyPathName Name="AdMagic" />
+    <RootPropertyPathName Name="AdAttack" />
+    <RootPropertyPathName Name="AdMP" />
+    <RootPropertyPathName Name="AdHP" />
+    <RootPropertyPathName Name="AdLuk" />
+    <RootPropertyPathName Name="AdInt" />
+    <RootPropertyPathName Name="AdDex" />
+    <RootPropertyPathName Name="AdStr" />
     <RootPropertyPathName Name="CriticalDamage" />
     <RootPropertyPathName Name="Critical" />
     <RootPropertyPathName Name="IgnoreDefBinding" />
@@ -24,11 +48,11 @@
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ImgBitmapSource" />
     <RootPropertyPathName Name="ImageSource" />
     <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="PotentialItems" />
     <RootPropertyPathName Name="PotentialRankList" />
-    <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -112,6 +136,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
+      <RootProperty Name="MaxHeight" />
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
@@ -133,6 +158,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Style" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Height" />
@@ -146,16 +172,19 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.AdditionalOptionControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedIndex" />
       <RootProperty Name="Height" />
-      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.Item.EquipmentInfoControl" />

@@ -6,7 +6,6 @@ using Windows.UI.Xaml.Data;
 
 namespace MapleStoryHelper.Standard.Converter
 {
-    #warning 아니 이게 왜 다른 어셈블리 참조가 안되냐? 내 실력 레알 실화냐? 진짜 레전드다...
     public class ECharacterJobToStringConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)

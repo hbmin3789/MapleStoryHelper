@@ -22,12 +22,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{0BDCAA
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Character", "MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj", "{8746CB0E-6404-4595-AF83-270D25A0F163}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44} = {33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Database", "MapleStoryHelper.Standard.Database\MapleStoryHelper.Standard.Database.csproj", "{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryResourceSavior", "MapleStoryResourceSavior\MapleStoryResourceSavior.csproj", "{D7EA6A14-497B-4378-BAEA-3D9E7EFFFFBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.Resources", "MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj", "{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Resources", "MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj", "{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
