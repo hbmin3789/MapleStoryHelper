@@ -9,16 +9,12 @@
     <RootPropertyPathName Name="CharacterJob" />
     <RootPropertyPathName Name="ImageSrc" />
     <RootPropertyPathName Name="CharacterItems" />
-    <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="ImageSource" />
-    <RootPropertyPathName Name="Display" />
-    <RootPropertyPathName Name="PotentialItems" />
-    <RootPropertyPathName Name="PotentialRankList" />
     <RootPropertyPathName Name="CriticalDamage" />
     <RootPropertyPathName Name="Critical" />
     <RootPropertyPathName Name="IgnoreDefBinding" />
     <RootPropertyPathName Name="BossDamage" />
     <RootPropertyPathName Name="Damage" />
+    <RootPropertyPathName Name="PAllStatus" />
     <RootPropertyPathName Name="MagicAttack" />
     <RootPropertyPathName Name="AttackPower" />
     <RootPropertyPathName Name="MP" />
@@ -27,6 +23,11 @@
     <RootPropertyPathName Name="Int" />
     <RootPropertyPathName Name="Dex" />
     <RootPropertyPathName Name="Str" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ImageSource" />
+    <RootPropertyPathName Name="Display" />
+    <RootPropertyPathName Name="PotentialItems" />
+    <RootPropertyPathName Name="PotentialRankList" />
     <RootPropertyPathName Name="ImgBitmapSource" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -145,6 +146,19 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.AdditionalOptionControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="MapleStoryHelper.Control.Item.EquipmentInfoControl" />
     <RootType FullName="MapleStoryHelper.Model.ListResources" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -157,9 +171,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="MapleStoryHelper.Control.PotentialControl" />
     <RootType FullName="MapleStoryHelper.Control.EquipmentReinforceControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
@@ -170,15 +181,6 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />
       <RootProperty Name="Background" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="SelectedIndex" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="ItemTemplate" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.TabView">
       <RootProperty Name="HorizontalAlignment" />

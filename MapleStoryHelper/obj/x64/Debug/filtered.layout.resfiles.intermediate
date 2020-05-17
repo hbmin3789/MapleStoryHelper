@@ -15,6 +15,7 @@ App.xbf
 Control\Character\CharacterControl.xbf
 Control\Character\CharacterSettingControl.xbf
 Control\Item\AdditionalOptionControl.xbf
+Control\Item\EquipmentInfoControl.xbf
 Control\Item\EquipmentReinforceControl.xbf
 Control\Item\PotentialControl.xbf
 Control\Status\StatusDisplayControl.xbf

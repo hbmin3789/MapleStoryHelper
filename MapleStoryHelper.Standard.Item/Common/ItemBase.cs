@@ -18,8 +18,6 @@ namespace MapleStoryHelper.Standard.Item
             set => SetPriaryKey(value);
         }
 
-        
-
         #region Property
 
         private EItemCategory _itemCategory = EItemCategory.Etc;
@@ -124,7 +122,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         #endregion
-        
         
         protected virtual void SetPriaryKey(string value)
         {

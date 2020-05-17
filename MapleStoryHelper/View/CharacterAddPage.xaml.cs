@@ -132,5 +132,10 @@ namespace MapleStoryHelper.View
         {
             ContentFrame.Navigate(typeof(ItemSettingPage), null, new DrillInNavigationTransitionInfo());
         }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

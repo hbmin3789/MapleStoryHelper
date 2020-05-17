@@ -129,6 +129,9 @@
     <Compile Include="Control\Item\AdditionalOptionControl.xaml.cs">
       <DependentUpon>AdditionalOptionControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Item\EquipmentInfoControl.xaml.cs">
+      <DependentUpon>EquipmentInfoControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Item\EquipmentReinforceControl.xaml.cs">
       <DependentUpon>EquipmentReinforceControl.xaml</DependentUpon>
     </Compile>
@@ -192,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Item\AdditionalOptionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Item\EquipmentInfoControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
