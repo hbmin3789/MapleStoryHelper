@@ -35,17 +35,6 @@ namespace MapleStoryHelper.Control
             }
         }
 
-        private ObservableCollection<PotentialPower> _additionalPotentialItems;
-        public ObservableCollection<PotentialPower> AdditionalItems
-        {
-            get => _additionalPotentialItems;
-            set
-            {
-                _additionalPotentialItems = value;
-                NotifyPropertyChanged(nameof(AdditionalItems));
-            }
-        }
-        public ObservableCollection<string> PotentialRankList { get; set; }
 
         #endregion
 
@@ -68,32 +57,15 @@ namespace MapleStoryHelper.Control
         private void InitVariables()
         {
             PotentialItems = new ObservableCollection<PotentialPower>();
-            AdditionalItems = new ObservableCollection<PotentialPower>();
-            PotentialRankList = new ObservableCollection<string>();
         }
 
         private void InitPotentialListView()
         {
             AddBasePotential();
-            AddPotentialRank();
-        }
-
-        private void AddPotentialRank()
-        {
-            PotentialRankList.Add("레어");
-            PotentialRankList.Add("에픽");
-            PotentialRankList.Add("유니크");
-            PotentialRankList.Add("레전더리");
         }
 
         private void AddBasePotential()
         {
-            PotentialItems.Add(new PotentialPower("STR%"));
-            PotentialItems.Add(new PotentialPower("DEX%"));
-            PotentialItems.Add(new PotentialPower("INT%"));
-            PotentialItems.Add(new PotentialPower("LUK%"));
-            PotentialItems.Add(new PotentialPower("HP%"));
-            PotentialItems.Add(new PotentialPower("MP%"));
             PotentialItems.Add(new PotentialPower("STR"));
             PotentialItems.Add(new PotentialPower("DEX"));
             PotentialItems.Add(new PotentialPower("INT"));
@@ -101,18 +73,18 @@ namespace MapleStoryHelper.Control
             PotentialItems.Add(new PotentialPower("HP"));
             PotentialItems.Add(new PotentialPower("MP"));
 
-            AdditionalItems.Add(new PotentialPower("STR%"));
-            AdditionalItems.Add(new PotentialPower("DEX%"));
-            AdditionalItems.Add(new PotentialPower("INT%"));
-            AdditionalItems.Add(new PotentialPower("LUK%"));
-            AdditionalItems.Add(new PotentialPower("HP%"));
-            AdditionalItems.Add(new PotentialPower("MP%"));
-            AdditionalItems.Add(new PotentialPower("STR"));
-            AdditionalItems.Add(new PotentialPower("DEX"));
-            AdditionalItems.Add(new PotentialPower("INT"));
-            AdditionalItems.Add(new PotentialPower("LUK"));
-            AdditionalItems.Add(new PotentialPower("HP"));
-            AdditionalItems.Add(new PotentialPower("MP"));
+            PotentialItems.Add(new PotentialPower("STR%"));
+            PotentialItems.Add(new PotentialPower("DEX%"));
+            PotentialItems.Add(new PotentialPower("INT%"));
+            PotentialItems.Add(new PotentialPower("LUK%"));
+            PotentialItems.Add(new PotentialPower("HP%"));
+            PotentialItems.Add(new PotentialPower("MP%"));
+
+            PotentialItems.Add(new PotentialPower("공격력"));
+            PotentialItems.Add(new PotentialPower("마력"));
+
+            PotentialItems.Add(new PotentialPower("공격력%"));
+            PotentialItems.Add(new PotentialPower("마력%"));
         }
 
         #endregion

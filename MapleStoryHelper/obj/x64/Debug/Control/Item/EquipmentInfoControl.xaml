@@ -6,10 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:control="using:MapleStoryHelper.Control"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="1200"
     d:DesignWidth="400">
     <UserControl.Resources>
+        <CollectionViewSource x:ConnectionId='2' x:Name="cvsPotential" x:Key="cvsPotential"/>
+        
         <Style TargetType="TextBox">
             <Setter Property="FontSize" Value="{StaticResource TextBoxMiddleDescriptionFontSize}"/>
             <Setter Property="BorderThickness" Value="1"/>
@@ -19,6 +22,7 @@
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="IsReadOnly" Value="True"/>
         </Style>
+        
     </UserControl.Resources>
 
     <Grid Background="White">
@@ -31,7 +35,7 @@
 
         <!-- 아이템 리스트 -->
         <Grid Grid.Row="0">
-            <ComboBox x:ConnectionId='2' x:Name="cbItems" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+            <ComboBox x:ConnectionId='3' x:Name="cbItems" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                                                                  >
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
@@ -134,7 +138,7 @@
 
 
                 <Grid Grid.Row="1">
-
+                    <control:PotentialControl/>
                 </Grid>
 
             </Grid>

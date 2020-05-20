@@ -68,6 +68,13 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _characterCategory, value);
         }
 
+        private ECharacterEquipmentCategory _characterEquipmentCategory;
+        public ECharacterEquipmentCategory CharacterEquipmentCategory
+        {
+            get => _characterEquipmentCategory;
+            set => SetProperty(ref _characterEquipmentCategory, value);
+        }
+
         private EquipmentStatus _status = new EquipmentStatus();
         [Column("status")]
         public EquipmentStatus Status
