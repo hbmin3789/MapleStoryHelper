@@ -1,4 +1,6 @@
 ﻿using MapleStoryHelper.Model;
+using MapleStoryHelper.Standard.Character.Status;
+using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -44,6 +46,7 @@ namespace MapleStoryHelper.Control
             InitView();
         }
 
+        #region Initialize
 
         private void InitView()
         {
@@ -51,8 +54,6 @@ namespace MapleStoryHelper.Control
             InitPotentialListView();
             this.DataContext = this;
         }
-
-        #region Initialize
 
         private void InitVariables()
         {
@@ -88,6 +89,8 @@ namespace MapleStoryHelper.Control
         }
 
         #endregion
+
+        public EquipmentStatus
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(string propertyName)

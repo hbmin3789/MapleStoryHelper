@@ -138,7 +138,7 @@
 
 
                 <Grid Grid.Row="1">
-                    <control:PotentialControl/>
+                    <control:PotentialControl x:Name="ctrlPotential"/>
                 </Grid>
 
             </Grid>

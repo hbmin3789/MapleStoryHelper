@@ -84,7 +84,6 @@ namespace MapleStoryHelper.Standard.Item.Equipment
 
         #endregion
 
-
         #region Scroll
 
         private int _scStr;
@@ -152,6 +151,153 @@ namespace MapleStoryHelper.Standard.Item.Equipment
 
         #endregion
 
+        #region Potential
+
+        private int _poStr;
+        public int PoStr
+        {
+            get => _poStr;
+            set => SetProperty(ref _poStr, value);
+        }
+
+        private int _poDex;
+        public int PoDex
+        {
+            get => _poDex;
+            set => SetProperty(ref _poDex, value);
+        }
+
+        private int _poInt;
+        public int PoInt
+        {
+            get => _poInt;
+            set => SetProperty(ref _poInt, value);
+        }
+
+        private int _poLuk;
+        public int PoLuk
+        {
+            get => _poLuk;
+            set => SetProperty(ref _poLuk, value);
+        }
+
+        private int _poHP;
+        public int PoHP
+        {
+            get => _poInt;
+            set => SetProperty(ref _poInt, value);
+        }
+
+        private int _poMP;
+        public int PoMP
+        {
+            get => _poMP;
+            set => SetProperty(ref _poMP, value);
+        }
+
+        private int _poPAllStatus;
+        public int PoPAllStatus
+        {
+            get => _poPAllStatus;
+            set => SetProperty(ref _poPAllStatus, value);
+        }
+
+        private int _poAttack;
+        public int PoAttack
+        {
+            get => _poAttack;
+            set => SetProperty(ref _poAttack, value);
+        }
+
+        private int _poMagic;
+        public int PoMagic
+        {
+            get => _poMagic;
+            set => SetProperty(ref _poMagic, value);
+        }
+
+        private int _poBossDamage;
+        public int PoBossDamage
+        {
+            get => _poBossDamage;
+            set => SetProperty(ref _poBossDamage, value);
+        }
+
+        #endregion
+
+        #region AdditionalPotential
+
+        private int _adPoStr;
+        public int AdPoStr
+        {
+            get => _adPoStr;
+            set => SetProperty(ref _adPoStr, value);
+        }
+
+        private int _adPoDex;
+        public int AdPoDex
+        {
+            get => _adPoDex;
+            set => SetProperty(ref _adPoDex, value);
+        }
+
+        private int _adPoInt;
+        public int AdPoInt
+        {
+            get => _adPoInt;
+            set => SetProperty(ref _adPoInt, value);
+        }
+
+        private int _adPoLuk;
+        public int AdPoLuk
+        {
+            get => _adPoLuk;
+            set => SetProperty(ref _adPoLuk, value);
+        }
+
+        private int _adPoHP;
+        public int AdPoHP
+        {
+            get => _adPoInt;
+            set => SetProperty(ref _adPoInt, value);
+        }
+
+        private int _adPoMP;
+        public int AdPoMP
+        {
+            get => _adPoMP;
+            set => SetProperty(ref _adPoMP, value);
+        }
+
+        private int _adPoPAllStatus;
+        public int AdPoPAllStatus
+        {
+            get => _adPoPAllStatus;
+            set => SetProperty(ref _adPoPAllStatus, value);
+        }
+
+        private int _adPoAttack;
+        public int AdPoAttack
+        {
+            get => _adPoAttack;
+            set => SetProperty(ref _adPoAttack, value);
+        }
+
+        private int _adPoMagic;
+        public int AdPoMagic
+        {
+            get => _adPoMagic;
+            set => SetProperty(ref _adPoMagic, value);
+        }
+
+        private int _adPoBossDamage;
+        public int AdPoBossDamage
+        {
+            get => _adPoBossDamage;
+            set => SetProperty(ref _adPoBossDamage, value);
+        }
+
+        #endregion
 
         #endregion
     }
