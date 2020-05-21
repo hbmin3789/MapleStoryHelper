@@ -34,7 +34,7 @@ namespace MapleStoryHelper.Standard.Resources
         {
             for (int j = 0; j < item.ChildNodes.Count; j++)
             {
-                switch (item.ChildNodes[j].Attributes["name"].Value.ToString())
+                switch (item?.ChildNodes[j]?.Attributes["name"]?.Value?.ToString())
                 {
                     case "islot":
                         //retval.EquipmentCategory = (EEquipmentCategory)item.ChildNodes[j].Value;

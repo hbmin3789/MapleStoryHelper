@@ -1,5 +1,7 @@
 ﻿using MapleStoryHelper.Control.Item;
 using MapleStoryHelper.Converter.Equipment;
+using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,28 +40,41 @@ namespace MapleStoryHelper.View
             var converter = new StringToEEquipmentCategoryConverter();
             var result = converter.Convert(btn.Content, null, null, null);
 
-            //CoreApplicationView newView = CoreApplication.CreateNewView();
-            //int newViewId = 0;
+            var control = new EquipmentInfoControl();
+            EEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
 
-            //await newView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal,() => 
-            //{
-            //    Window.Current.Content = new EquipmentInfoControl();
-
-            //    Window.Current.Activate();
-
-            //    newViewId = ApplicationView.GetForCurrentView().Id;
-
-            //});
+            await control.InitEquipComboBox(category);
 
             ContentDialog noWifiDialog = new ContentDialog
             {
-                Content = new EquipmentInfoControl(),
+                Content = control,
                 CloseButtonText = "Ok"
             };
 
             ContentDialogResult res = await noWifiDialog.ShowAsync();
 
-            //ContentFrame.Navigate(typeof(EquipmentAddPage), result, new DrillInNavigationTransitionInfo());
+            
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var datacontext = (Character)e.Parameter;
+            this.DataContext = datacontext;
+        }
+
+        private EEquipmentCategory GetCategory(string CommandParameter)
+        {
+            var values = Enum.GetValues(typeof(EEquipmentCategory));
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (values.GetValue(i).ToString().Equals(CommandParameter))
+                {
+                    return (EEquipmentCategory)values.GetValue(i);
+                }
+            }
+
+            return EEquipmentCategory.Ring;
         }
     }
 }

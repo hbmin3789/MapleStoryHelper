@@ -29,46 +29,91 @@
             <controls:UniformGrid Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
                 <Button Content="반지"
+                        CommandParameter="Ring"
                         Click="ItemSetting_Button_Click"/>
-                <Button Content="반지"/>
-                <Button Content="반지"/>
-                <Button Content="반지"/>
-                <Button Content="포켓"/>
+                <Button Content="반지"
+                        CommandParameter="Ring"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="반지"
+                        CommandParameter="Ring"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="반지"
+                        CommandParameter="Ring"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="포켓"
+                        CommandParameter="Pocket"
+                        Click="ItemSetting_Button_Click"/>
                 
                 <Border/>
                 <Border/>
                 
-                <Button Content="펜던트"/>
-                <Button Content="펜던트"/>
-                <Button Content="무기"/>
-                <Button Content="벨트"/>
+                <Button Content="펜던트"
+                        CommandParameter="Pendant"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="펜던트"
+                        CommandParameter="Pendant"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="무기"
+                        CommandParameter="Weapon"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="벨트"
+                        CommandParameter="Belt"
+                        Click="ItemSetting_Button_Click"/>
 
                 <Border/>
                 
-                <Button Content="모자"/>
-                <Button Content="얼장"/>
-                <Button Content="눈장"/>
-                <Button Content="상의"/>
-                <Button Content="하의"/>
-                <Button Content="신발"/>
+                <Button Content="모자"
+                        CommandParameter="Cap"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="얼장"
+                        CommandParameter="Face"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="눈장"
+                        CommandParameter="Eye"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="상의"
+                        CommandParameter="Clothes"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="하의"
+                        CommandParameter="Pants"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="신발"
+                        CommandParameter="Shoes"
+                        Click="ItemSetting_Button_Click"/>
 
                 <Border/>
                 <Border/>
 
-                <Button Content="귀고리"/>
-                <Button>
+                <Button Content="귀고리"
+                        CommandParameter="Ear"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Shoulder"
+                        Click="ItemSetting_Button_Click">
                     <TextBlock TextWrapping="Wrap" Text="어깨 장식"/>
                 </Button>
-                <Button Content="장갑"/>
-                <Button Content="안드"/>
-                <Button Content="엠블럼"/>
-                <Button Content="뱃지"/>
-                <Button Content="칭호"/>
-                <Button>
+                <Button Content="장갑"
+                        CommandParameter="Gloves"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="안드"
+                        CommandParameter="Android"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="엠블럼"
+                        CommandParameter="Emblem"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="뱃지"
+                        CommandParameter="Badge"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="칭호"
+                        CommandParameter="Medal"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="SubWeapon"
+                        Click="ItemSetting_Button_Click">
                     <TextBlock TextWrapping="Wrap" Text="보조 무기"/>
                 </Button>
-                <Button Content="망토"/>
-                <Button Content="하트"/>
+                <Button Content="망토" CommandParameter="Cape"
+                        Click="ItemSetting_Button_Click"/>
+                <Button Content="하트" CommandParameter="Heart"
+                        Click="ItemSetting_Button_Click"/>
                 
             </controls:UniformGrid>
         </Grid>

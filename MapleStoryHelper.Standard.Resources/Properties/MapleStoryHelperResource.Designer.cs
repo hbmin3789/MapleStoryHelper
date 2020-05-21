@@ -61,7 +61,9 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
                 resourceCulture = value;
             }
         }
-        
+
+        #region Ring
+
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
@@ -163,5 +165,71 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             get => ResourceManager.GetObject("01114311", resourceCulture);
         }
 
+        #endregion
+
+        #region Pocket
+
+
+        [ResourceInfo("저주받은 적의 마도서", "1162080", EEquipmentCategory.Pocket)]
+        public static byte[] Item_RedMagicBook
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("저주받은 적의 마도서", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("저주받은 청의 마도서", "1162081", EEquipmentCategory.Pocket)]
+        public static byte[] Item_BlueMagicBook
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("저주받은 청의 마도서", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("저주받은 녹의 마도서", "1162082", EEquipmentCategory.Pocket)]
+        public static byte[] Item_GreenMagicBook
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("저주받은 녹의 마도서", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("저주받은 황의 마도서", "1162083", EEquipmentCategory.Pocket)]
+        public static byte[] Item_YellowMagicBook
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("저주받은 황의 마도서", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        #endregion
+
+        #region Pendant
+
+        [ResourceInfo("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant)]
+        public static byte[] Item_DominatorPendant
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("도미네이터 펜던트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant)]
+        public static object Xml_DominatorPendant
+        {
+            get => ResourceManager.GetObject("01122377", resourceCulture);
+        }
+
+        #endregion
     }
 }

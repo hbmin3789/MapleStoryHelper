@@ -35,7 +35,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-        <controls:UniformGrid Grid.Column="0" Columns="1">
+        <controls:UniformGrid x:Name="ufgPotential" Grid.Column="0" Columns="1">
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
@@ -43,7 +43,7 @@
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
         </controls:UniformGrid>
-        <controls:UniformGrid Grid.Column="1" Columns="1">
+        <controls:UniformGrid x:Name="ufgPotentialTextBox" Grid.Column="1" Columns="1">
             <TextBox Text=""/>
             <TextBox Text=""/>
             <TextBox Text=""/>

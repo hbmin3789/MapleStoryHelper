@@ -43,8 +43,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         private int _adHP;
         public int AdHP
         {
-            get => _adInt;
-            set => SetProperty(ref _adInt, value);
+            get => _adHP;
+            set => SetProperty(ref _adHP, value);
         }
 
         private int _adMP;
@@ -82,6 +82,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adBossDamage, value);
         }
 
+
+
         #endregion
 
         #region Scroll
@@ -117,8 +119,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         private int _scHP;
         public int ScHP
         {
-            get => _scInt;
-            set => SetProperty(ref _scInt, value);
+            get => _scHP;
+            set => SetProperty(ref _scHP, value);
         }
 
         private int _scMP;
@@ -181,11 +183,39 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _poLuk, value);
         }
 
+        private int _poPStr;
+        public int PoPStr
+        {
+            get => _poPStr;
+            set => SetProperty(ref _poPStr, value);
+        }
+
+        private int _poPDex;
+        public int PoPDex
+        {
+            get => _poPDex;
+            set => SetProperty(ref _poPDex, value);
+        }
+
+        private int _poPInt;
+        public int PoPInt
+        {
+            get => _poPInt;
+            set => SetProperty(ref _poPInt, value);
+        }
+
+        private int _poPLuk;
+        public int PoPLuk
+        {
+            get => _poPLuk;
+            set => SetProperty(ref _poPLuk, value);
+        }
+
         private int _poHP;
         public int PoHP
         {
-            get => _poInt;
-            set => SetProperty(ref _poInt, value);
+            get => _poHP;
+            set => SetProperty(ref _poHP, value);
         }
 
         private int _poMP;
@@ -193,6 +223,27 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         {
             get => _poMP;
             set => SetProperty(ref _poMP, value);
+        }
+
+        private int _poPHP;
+        public int PoPHP
+        {
+            get => _poPHP;
+            set => SetProperty(ref _poPHP, value);
+        }
+
+        private int _poPMP;
+        public int PoPMP
+        {
+            get => _poPMP;
+            set => SetProperty(ref _poPMP, value);
+        }
+
+        private int _poAllStatus;
+        public int PoAllStatus
+        {
+            get => _poAllStatus;
+            set => SetProperty(ref _poAllStatus, value);
         }
 
         private int _poPAllStatus;
@@ -216,11 +267,46 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _poMagic, value);
         }
 
+        private int _poPAttack;
+        public int PoPAttack
+        {
+            get => _poPAttack;
+            set => SetProperty(ref _poPAttack, value);
+        }
+
+        private int _poPMagic;
+        public int PoPMagic
+        {
+            get => _poPMagic;
+            set => SetProperty(ref _poPMagic, value);
+        }
+
         private int _poBossDamage;
         public int PoBossDamage
         {
             get => _poBossDamage;
             set => SetProperty(ref _poBossDamage, value);
+        }
+
+        private int _poDamage;
+        public int PoDamage
+        {
+            get => _poDamage;
+            set => SetProperty(ref _poDamage, value);
+        }
+
+        private List<int> _poIgnoreDef;
+        public List<int> PoIgnoreDef
+        {
+            get => _poIgnoreDef;
+            set => SetProperty(ref _poIgnoreDef, value);
+        }
+
+        private int _poCritDamage;
+        public int PoCritDamage
+        {
+            get => _poCritDamage;
+            set => SetProperty(ref _poCritDamage, value);
         }
 
         #endregion
@@ -258,8 +344,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         private int _adPoHP;
         public int AdPoHP
         {
-            get => _adPoInt;
-            set => SetProperty(ref _adPoInt, value);
+            get => _adPoHP;
+            set => SetProperty(ref _adPoHP, value);
         }
 
         private int _adPoMP;
@@ -295,6 +381,27 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         {
             get => _adPoBossDamage;
             set => SetProperty(ref _adPoBossDamage, value);
+        }
+
+        private int _adPoDamage;
+        public int AdPoDamage
+        {
+            get => _adPoDamage;
+            set => SetProperty(ref _adPoDamage, value);
+        }
+
+        private List<int> _adPoIgnoreDef;
+        public List<int> AdPoIgnoreDef
+        {
+            get => _adPoIgnoreDef;
+            set => SetProperty(ref _adPoIgnoreDef, value);
+        }
+
+        private int _adPoCritDamage;
+        public int AdPoCritDamage
+        {
+            get => _adPoCritDamage;
+            set => SetProperty(ref _adPoCritDamage, value);
         }
 
         #endregion

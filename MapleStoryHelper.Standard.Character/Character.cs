@@ -27,7 +27,7 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _characterStatus, value);
         }
 
-        
+
 
         public Character() : base()
         {

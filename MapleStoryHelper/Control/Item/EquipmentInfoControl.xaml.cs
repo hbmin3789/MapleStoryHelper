@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -27,10 +28,9 @@ namespace MapleStoryHelper.Control.Item
         public EquipmentInfoControl()
         {
             this.InitializeComponent();
-            InitEquipComboBox(EEquipmentCategory.Ring);
         }
 
-        private async void InitEquipComboBox(EEquipmentCategory category)
+        public async Task InitEquipComboBox(EEquipmentCategory category)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 

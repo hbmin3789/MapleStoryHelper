@@ -124,11 +124,23 @@
   <data name="01114311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01114311.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01122377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01122377.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="결속의_반지" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\결속의 반지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="고통의 근원" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\고통의 근원.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="도미네이터 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\도미네이터 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="마이스터링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\마이스터링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="매커네이터 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\매커네이터 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="벤전스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\벤전스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -139,13 +151,40 @@
   <data name="오닉스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\오닉스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="저주받은 녹의 마도서" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\저주받은 녹의 마도서.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="저주받은 적의 마도서" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\저주받은 적의 마도서.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="저주받은 청의 마도서" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\저주받은 청의 마도서.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="저주받은 황의 마도서" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\저주받은 황의 마도서.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="카오스 혼테일의 목걸이" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\카오스 혼테일의 목걸이.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="카오스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\카오스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="코스모스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\코스모스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="타임리스 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\타임리스 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="테네브리스_원정대_반지" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\테네브리스 원정대 반지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="피콕스 퍼플 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\피콕스 퍼플 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="핑크빛 성배" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\핑크빛 성배.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="혼테일의 목걸이" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\혼테일의 목걸이.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
