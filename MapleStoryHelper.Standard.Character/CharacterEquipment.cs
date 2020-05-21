@@ -16,6 +16,16 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _equipList, value);
         }
 
+        public EquipmentItem Ring1
+        {
+            get => EquipList[ECharacterEquipmentCategory.Ring1];
+            set
+            {
+                var equip = _equipList[ECharacterEquipmentCategory.Ring1];
+                SetProperty(ref equip, value);
+            }
+        }
+
 
         public CharacterEquipment()
         {

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
@@ -116,6 +117,7 @@ namespace MapleStoryHelper.Standard.Character
         private void InitVariables()
         {
             Status = new StatusBase();
+            CharacterEquipment = new CharacterEquipment();
             _jobLevel = EJobLevel.First;
             _level = 1;
         }

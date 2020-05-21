@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Standard.Item;
+﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources.Attributes;
 using System;
@@ -23,6 +24,29 @@ namespace MapleStoryHelper.Standard.Resources
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             AddInfoToList(ref retval, category);
+
+            return retval;
+        }
+
+        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category)
+        {
+            List<EquipmentItem> retval = new List<EquipmentItem>();
+
+            string StringTemp = category.ToString().Replace("1", "").Replace("2", "").Replace("3", "").Replace("4", "");
+
+            var values = Enum.GetValues(typeof(EEquipmentCategory));
+            EEquipmentCategory categoryTemp = EEquipmentCategory.Ring;
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                if(values.GetValue(i).ToString() == StringTemp)
+                {
+                    categoryTemp = (EEquipmentCategory)values.GetValue(i);
+                    break;
+                }
+            }
+
+            AddInfoToList(ref retval, categoryTemp);
 
             return retval;
         }

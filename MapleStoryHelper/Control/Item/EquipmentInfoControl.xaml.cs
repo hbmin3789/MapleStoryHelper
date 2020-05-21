@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Common;
+using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources;
@@ -25,12 +26,35 @@ namespace MapleStoryHelper.Control.Item
 {
     public sealed partial class EquipmentInfoControl : UserControl
     {
+        private ECharacterEquipmentCategory _category;
+        public ECharacterEquipmentCategory Category 
+        {
+            get
+            {
+                return _category;
+            }
+            set
+            {
+                _category = value;
+            }
+        }
+
+        
+        public EquipmentItem EquipmentItem 
+        {
+            get
+            {
+                var temp = this.DataContext as EquipmentItem;
+                return temp;
+            }
+        }
+
         public EquipmentInfoControl()
         {
             this.InitializeComponent();
         }
 
-        public async Task InitEquipComboBox(EEquipmentCategory category)
+        public async Task InitEquipComboBox(ECharacterEquipmentCategory category)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 

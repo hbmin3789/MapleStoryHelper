@@ -28,21 +28,41 @@
         <Grid>
             <controls:UniformGrid Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
-                <Button Content="반지"
-                        CommandParameter="Ring"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="반지"
-                        CommandParameter="Ring"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="반지"
-                        CommandParameter="Ring"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="반지"
-                        CommandParameter="Ring"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="포켓"
-                        CommandParameter="Pocket"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Ring1"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:Name="imgRing1"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Ring2"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:Name="imgRing2"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Ring3"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:Name="imgRing3"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Ring4"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:Name="imgRing4"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Pocket"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:Name="imgPocket"/>
+                    </Grid>
+                </Button>
                 
                 <Border/>
                 <Border/>

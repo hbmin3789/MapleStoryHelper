@@ -28,21 +28,41 @@
         <Grid>
             <controls:UniformGrid Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
-                <Button x:ConnectionId='3' Content="반지"
-                        CommandParameter="Ring"
-                                                        />
-                <Button x:ConnectionId='4' Content="반지"
-                        CommandParameter="Ring"
-                                                        />
-                <Button x:ConnectionId='5' Content="반지"
-                        CommandParameter="Ring"
-                                                        />
-                <Button x:ConnectionId='6' Content="반지"
-                        CommandParameter="Ring"
-                                                        />
-                <Button x:ConnectionId='7' Content="포켓"
-                        CommandParameter="Pocket"
-                                                        />
+                <Button x:ConnectionId='3' CommandParameter="Ring1"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:ConnectionId='32' x:Name="imgRing1"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='4' CommandParameter="Ring2"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:ConnectionId='31' x:Name="imgRing2"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='5' CommandParameter="Ring3"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:ConnectionId='30' x:Name="imgRing3"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='6' CommandParameter="Ring4"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:ConnectionId='29' x:Name="imgRing4"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='7' CommandParameter="Pocket"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="반지"/>
+                        <Image x:ConnectionId='28' x:Name="imgPocket"/>
+                    </Grid>
+                </Button>
                 
                 <Border/>
                 <Border/>
