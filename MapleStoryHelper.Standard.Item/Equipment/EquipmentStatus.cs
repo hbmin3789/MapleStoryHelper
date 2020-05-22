@@ -302,6 +302,13 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _poIgnoreDef, value);
         }
 
+        private int _poCritical;
+        public int PoCritical
+        {
+            get => _poCritical;
+            set => SetProperty(ref _poCritical, value);
+        }
+
         private int _poCritDamage;
         public int PoCritDamage
         {
@@ -355,6 +362,27 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adPoMP, value);
         }
 
+        private int _adPoPHP;
+        public int AdPoPHP
+        {
+            get => _adPoPHP;
+            set => SetProperty(ref _adPoPHP, value);
+        }
+
+        private int _adPoPMP;
+        public int AdPoPMP
+        {
+            get => _adPoPMP;
+            set => SetProperty(ref _adPoPMP, value);
+        }
+
+        private int _adPoAllStatus;
+        public int AdPoAllStatus
+        {
+            get => _adPoAllStatus;
+            set => SetProperty(ref _adPoAllStatus, value);
+        }
+
         private int _adPoPAllStatus;
         public int AdPoPAllStatus
         {
@@ -374,6 +402,20 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         {
             get => _adPoMagic;
             set => SetProperty(ref _adPoMagic, value);
+        }
+
+        private int _adPoPAttack;
+        public int AdPoPAttack
+        {
+            get => _adPoPAttack;
+            set => SetProperty(ref _adPoPAttack, value);
+        }
+
+        private int _adPoPMagic;
+        public int AdPoPMagic
+        {
+            get => _adPoPMagic;
+            set => SetProperty(ref _adPoPMagic, value);
         }
 
         private int _adPoBossDamage;
@@ -397,6 +439,16 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adPoIgnoreDef, value);
         }
 
+
+        private int _adPoCritical;
+        public int AdPoCritical
+        {
+            get => _adPoCritical;
+            set => SetProperty(ref _adPoCritical, value);
+        }
+
+        
+
         private int _adPoCritDamage;
         public int AdPoCritDamage
         {
@@ -407,5 +459,69 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         #endregion
 
         #endregion
+
+        public EquipmentStatus() : base()
+        {
+            InitVariables();
+        }
+
+        private void InitVariables()
+        {
+            PoIgnoreDef = new List<int>();
+            AdPoIgnoreDef = new List<int>();
+        }
+
+        public StatusBase GetStatus<T>() where T : StatusBase , new()
+        {
+            StatusBase retval = new T()
+            {
+                AllStatus = this.AllStatus + this.PoAllStatus + this.AdPoAllStatus,
+                CAllStatus = this.CAllStatus + this.PoAllStatus + this.AdPoAllStatus,
+                PAllStatus = this.PAllStatus + this.PoPAllStatus + this.AdPoPAllStatus,
+                AttackPower = this.AttackPower + this.PoAttack + this.AdPoAttack,
+                PAttackPower = this.PAttackPower + this.PoPAttack + this.AdPoPAttack,
+                CAttackPower = this.CAttackPower,
+                MagicAttack = this.MagicAttack + this.PoMagic + this.AdPoMagic,
+                CMagicAttack = this.CMagicAttack,
+                PMagicAttack = this.PMagicAttack + this.PoPMagic + this.AdPoPMagic,
+                Str = this.Str + this.PoStr + this.AdPoStr,
+                Dex = this.Dex + this.PoDex + this.AdPoDex,
+                Int = this.Int + this.PoInt + this.AdPoInt,
+                Luk = this.Luk + this.PoLuk + this.AdPoLuk,
+                CStr = this.CStr,
+                CDex = this.CDex,
+                CInt = this.CInt,
+                CLuk = this.CLuk,
+                PStr = this.PStr + this.PoPStr + this.AdPoStr,
+                PDex = this.PDex + this.PoPDex + this.AdPoDex,
+                PInt = this.PInt + this.PoPInt + this.AdPoInt,
+                PLuk = this.PLuk + this.PoPLuk + this.AdPoLuk,
+                HP = this.HP + this.PoPHP + this.AdPoHP,
+                CHP = this.CHP,
+                PHP = this.PHP + this.PoPHP + this.AdPoPHP,
+                MP = this.MP + this.PoMP + this.AdPoMP,
+                CMP = this.CMP,
+                PMP = this.PMP + this.PoPMP + this.AdPoPMP,
+                BossDamage = this.BossDamage + this.PoBossDamage + this.AdPoBossDamage,
+                Critical = this.Critical + this.PoCritical + this.AdPoCritical,
+                Damage = this.Damage + this.PoDamage + this.AdPoDamage,
+                CriticalDamage = this.CriticalDamage + this.PoCritDamage + this.AdPoCritDamage,
+                LastDamage = this.LastDamage,
+            };
+
+            retval.IgnoreDef = new List<double>(this.IgnoreDef);
+
+            for(int i = 0; i < this.PoIgnoreDef.Count; i++)
+            {
+                retval.IgnoreDef.Add(PoIgnoreDef[i]);
+            }
+            for (int i = 0; i < this.AdPoIgnoreDef.Count; i++)
+            {
+                retval.IgnoreDef.Add(AdPoIgnoreDef[i]);
+            }
+
+
+            return retval;
+        }
     }
 }

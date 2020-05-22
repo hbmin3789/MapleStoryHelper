@@ -13,6 +13,54 @@ namespace MapleStoryHelper.Standard
     [Table("status")]
     public class StatusBase : BindableBase
     {
+        public static StatusBase operator +(StatusBase a, StatusBase b)
+        {
+            StatusBase retval = new StatusBase()
+            {
+                AllStatus = a.AllStatus + b.AllStatus,
+                CAllStatus = a.CAllStatus + b.CAllStatus,
+                PAllStatus = a.PAllStatus + b.PAllStatus,
+                AttackPower = a.AttackPower + b.AttackPower,
+                PAttackPower = a.PAttackPower + b.PAttackPower,
+                CAttackPower = a.CAttackPower + b.CAttackPower,
+                MagicAttack = a.MagicAttack + b.MagicAttack,
+                CMagicAttack = a.CMagicAttack + b.CMagicAttack,
+                PMagicAttack = a.PMagicAttack + b.PMagicAttack,
+                Str = a.Str + b.Str,
+                Dex = a.Dex + b.Dex,
+                Int = a.Int + b.Int,
+                Luk = a.Luk + b.Luk,
+                CStr = a.CStr + b.CStr,
+                CDex = a.CDex + b.CDex,
+                CInt = a.CInt + b.CInt,
+                CLuk = a.CLuk + b.CLuk,
+                PStr = a.PStr + b.PStr,
+                PDex = a.PDex + b.PDex,
+                PInt = a.PInt + b.PInt,
+                PLuk = a.PLuk + b.PLuk,
+                HP = a.HP + b.HP,
+                CHP = a.CHP + b.CHP,
+                PHP = a.PHP + b.PHP,
+                MP = a.MP + b.MP,
+                CMP = a.CMP + b.CMP,
+                PMP = a.PMP + b.PMP,
+                BossDamage = a.BossDamage + b.BossDamage,
+                Critical = a.Critical + b.Critical,
+                Damage = a.Damage + b.Damage,
+                CriticalDamage = a.CriticalDamage + b.CriticalDamage,
+                LastDamage = a.LastDamage + b.LastDamage,
+            };
+
+            retval.IgnoreDef = new List<double>(a.IgnoreDef);
+
+            for(int i = 0; i < b.IgnoreDef.Count; i++)
+            {
+                retval.IgnoreDef.Add(b.IgnoreDef[i]);
+            }
+
+            return retval;
+        }
+
         private string _primaryKey;
         [Key]
         [Column("key")]
@@ -368,6 +416,8 @@ namespace MapleStoryHelper.Standard
         {
             return (int)(_magicAttack * (1 + ((double)PMagicAttack / 100))) + CMagicAttack;
         }
+
+
 
         #endregion
 

@@ -4,6 +4,7 @@ using MapleStoryHelper.Standard.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
@@ -23,10 +24,25 @@ namespace MapleStoryHelper.Standard.Character
         [NotMapped]
         public CharacterStatus CharacterStatus
         {
-            get => _characterStatus;
+            get
+            {
+                _characterStatus = GetCharacterStatus();
+                return _characterStatus;
+            }
             set => SetProperty(ref _characterStatus, value);
         }
 
+        public CharacterStatus GetCharacterStatus()
+        {
+            CharacterStatus retval = new CharacterStatus();
+
+            for(int i=0;i< CharacterEquipment.EquipList.Count; i++)
+            {
+                var temp = retval + (CharacterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
+            }
+
+            return retval;
+        }
 
 
         public Character() : base()

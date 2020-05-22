@@ -59,7 +59,7 @@
                 <Button CommandParameter="Pocket"
                         Click="ItemSetting_Button_Click">
                     <Grid>
-                        <TextBlock Text="반지"/>
+                        <TextBlock Text="포켓"/>
                         <Image x:Name="imgPocket"/>
                     </Grid>
                 </Button>
@@ -139,7 +139,7 @@
         </Grid>
 
         <Grid Grid.Column="1">
-            <control:StatusDisplayControl Margin="20"/>
+            <control:StatusDisplayControl x:Name="ctrlStatusDisplay" Margin="20"/>
         </Grid>
 
         <Grid Grid.ColumnSpan="2">

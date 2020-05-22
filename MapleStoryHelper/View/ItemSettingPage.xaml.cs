@@ -68,6 +68,7 @@ namespace MapleStoryHelper.View
         {
             var datacontext = (Character)e.Parameter;
             this.DataContext = datacontext;
+            ctrlStatusDisplay.DataContext = datacontext.CharacterStatus;
         }
 
         private void OnItemSave(EquipmentInfoControl control)

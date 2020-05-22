@@ -18,42 +18,65 @@
 
     <Grid Background="White">
         <Viewbox>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <StackPanel>
-                    <TextBox Text="STR"/>
-                    <TextBox Text="DEX"/>
-                    <TextBox Text="INT"/>
-                    <TextBox Text="LUK"/>
-                    <TextBox Text="HP"/>
-                    <TextBox Text="MP"/>
-                    <TextBox Text="공격력"/>
-                    <TextBox Text="마력"/>
-                    <TextBox Text="데미지"/>
-                    <TextBox Text="보스 공격력"/>
-                    <TextBox Text="방어율 무시"/>
-                    <TextBox Text="크리티컬 확률"/>
-                    <TextBox Text="크리티컬 데미지"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <TextBox Text="{Binding Str}"/>
-                    <TextBox Text="{Binding Dex}"/>
-                    <TextBox Text="{Binding Int}"/>
-                    <TextBox Text="{Binding Luk}"/>
-                    <TextBox Text="{Binding HP}"/>
-                    <TextBox Text="{Binding MP}"/>
-                    <TextBox Text="{Binding AttackPower}"/>
-                    <TextBox Text="{Binding MagicAttack}"/>
-                    <TextBox Text="{Binding Damage}"/>
-                    <TextBox Text="{Binding BossDamage}"/>
-                    <TextBox Text="{Binding IgnoreDefBinding}"/>
-                    <TextBox Text="{Binding Critical}"/>
-                    <TextBox Text="{Binding CriticalDamage}"/>
-                </StackPanel>
-            </Grid>
+            <StackPanel>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0"/>
+                    <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
+                    <TextBox Grid.Column="2"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBox Text="공격력"/>
+                        <TextBox Text="마력"/>
+                        <TextBox Text="데미지"/>
+                        <TextBox Text="보스 공격력"/>
+                        <TextBox Text="방어율 무시"/>
+                        <TextBox Text="크리티컬 확률"/>
+                        <TextBox Text="크리티컬 데미지"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBox Text="{Binding AttackPower}"/>
+                        <TextBox Text="{Binding MagicAttack}"/>
+                        <TextBox Text="{Binding Damage}"/>
+                        <TextBox Text="{Binding BossDamage}"/>
+                        <TextBox Text="{Binding IgnoreDefBinding}"/>
+                        <TextBox Text="{Binding Critical}"/>
+                        <TextBox Text="{Binding CriticalDamage}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBox Text="STR"/>
+                        <TextBox Text="DEX"/>
+                        <TextBox Text="INT"/>
+                        <TextBox Text="LUK"/>
+                        <TextBox Text="HP"/>
+                        <TextBox Text="MP"/>
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="3">
+                        <TextBox Text="{Binding Str}"/>
+                        <TextBox Text="{Binding Dex}"/>
+                        <TextBox Text="{Binding Int}"/>
+                        <TextBox Text="{Binding Luk}"/>
+                        <TextBox Text="{Binding HP}"/>
+                        <TextBox Text="{Binding MP}"/>
+
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+            
         </Viewbox>
     </Grid>
 </UserControl>

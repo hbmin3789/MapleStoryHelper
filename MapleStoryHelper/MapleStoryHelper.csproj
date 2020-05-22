@@ -172,6 +172,8 @@
     <Content Include="Assets\Items\Scroll\Magical.png" />
     <Content Include="Assets\Items\Scroll\Premium.png" />
     <Content Include="Assets\Items\Scroll\Trace.png" />
+    <Content Include="Assets\UI\StatusDetail.png" />
+    <Content Include="Assets\UI\StatusMain.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
