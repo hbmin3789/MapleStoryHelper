@@ -25,9 +25,9 @@
                         <ColumnDefinition Width="0.4*"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0"/>
+                    <TextBox Grid.Column="0" Text="{Binding MinStatusAttackBinding}"/>
                     <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
-                    <TextBox Grid.Column="2"/>
+                    <TextBox Grid.Column="2" Text="{Binding MaxStatusAttackBinding}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -48,13 +48,15 @@
                         <TextBox Text="크리티컬 데미지"/>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
-                        <TextBox Text="{Binding AttackPower}"/>
-                        <TextBox Text="{Binding MagicAttack}"/>
-                        <TextBox Text="{Binding Damage}"/>
-                        <TextBox Text="{Binding BossDamage}"/>
-                        <TextBox Text="{Binding IgnoreDefBinding}"/>
-                        <TextBox Text="{Binding Critical}"/>
-                        <TextBox Text="{Binding CriticalDamage}"/>
+                        <TextBox Text="{Binding CharacterStatus.AttackPower}"/>
+                        <TextBox Text="{Binding CharacterStatus.MagicAttack}"/>
+                        <TextBox Text="{Binding CharacterStatus.PAttackBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PMagicBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.Damage}"/>
+                        <TextBox Text="{Binding CharacterStatus.BossDamage}"/>
+                        <TextBox Text="{Binding CharacterStatus.IgnoreDefBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.Critical}"/>
+                        <TextBox Text="{Binding CharacterStatus.CriticalDamage}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Column="2">
@@ -73,18 +75,18 @@
 
                     </StackPanel>
                     <StackPanel Grid.Column="3">
-                        <TextBox Text="{Binding StrBinding}"/>
-                        <TextBox Text="{Binding DexBinding}"/>
-                        <TextBox Text="{Binding IntBinding}"/>
-                        <TextBox Text="{Binding LukBinding}"/>
-                        <TextBox Text="{Binding HPBinding}"/>
-                        <TextBox Text="{Binding MPBinding}"/>
-                        <TextBox Text="{Binding StrPBinding}"/>
-                        <TextBox Text="{Binding DexPBinding}"/>
-                        <TextBox Text="{Binding IntPBinding}"/>
-                        <TextBox Text="{Binding LukPBinding}"/>
-                        <TextBox Text="{Binding HPPBinding}"/>
-                        <TextBox Text="{Binding MPPBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.StrBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.DexBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.IntBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.LukBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.HPBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.MPBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PStrBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PDexBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PIntBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PLukBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PHPBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PMPBinding}"/>
 
                     </StackPanel>
 

@@ -31,15 +31,5 @@
         <Grid Grid.Row="1">
             <controls:CharacterControl/>
         </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <Frame x:Name="ContentFrame">
-                <Frame.ContentTransitions>
-                    <TransitionCollection>
-                        <NavigationThemeTransition  />
-                    </TransitionCollection>
-                </Frame.ContentTransitions>
-            </Frame>
-        </Grid>
     </Grid>
 </Page>

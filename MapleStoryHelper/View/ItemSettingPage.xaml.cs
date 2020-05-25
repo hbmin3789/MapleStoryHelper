@@ -77,7 +77,7 @@ namespace MapleStoryHelper.View
             var character = (Character)this.DataContext;
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
             UpdateView();
-            ctrlStatusDisplay.DataContext = character.CharacterStatus;
+            ctrlStatusDisplay.DataContext = character;
             //imgRing1.Source = control.EquipmentItem.ImgBitmapSource as BitmapImage;
         }
 

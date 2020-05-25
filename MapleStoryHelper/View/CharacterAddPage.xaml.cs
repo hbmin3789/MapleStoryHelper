@@ -43,6 +43,7 @@ namespace MapleStoryHelper.View
         {
             InitControl();
             InitComboBox();
+            
         }
 
         private void InitControl()
@@ -130,12 +131,25 @@ namespace MapleStoryHelper.View
 
         private void btnItemSetting_Click(object sender, RoutedEventArgs e)
         {
+            var ContentFrame = Window.Current.Content as Frame;
             ContentFrame.Navigate(typeof(ItemSettingPage), this.DataContext, new DrillInNavigationTransitionInfo());
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void cbCharacterJob_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(cbCharacterJob.SelectedItem != null)
+            {
+                gdSpecSetting.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                gdSpecSetting.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

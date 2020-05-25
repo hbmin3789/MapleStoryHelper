@@ -20,9 +20,9 @@ namespace MapleStoryHelper.Standard.Character
             int MainStatus = 0;
             int SubStatus = 0;
             double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(Status);
+            double Percent = GetCharacterPercent(CharacterStatus);
 
-            var temp = ((Status.GetSTR() + Status.GetDEX() + Status.GetLUK()) * 4) * Constant * Percent;
+            var temp = ((CharacterStatus.GetSTR() + CharacterStatus.GetDEX() + CharacterStatus.GetLUK()) * 4) * Constant * Percent;
             retval = (int)temp;
 
             return retval;
@@ -36,18 +36,13 @@ namespace MapleStoryHelper.Standard.Character
             return retval;
         }
 
-        #warning 공격력 %를 붙여줄지 붙이지 않을지에 대한 실험이 필요함
+
         private double GetCharacterPercent(StatusBase status)
         {
             double retval = 0;
-            if (IsUseAttackPower == true)
-            {
-                retval += status.GetAttackPower();
-            }
-            else
-            {
-                retval += status.GetMagicAttack();
-            }
+
+            retval += status.GetAttackPower();
+            retval *= (1 + ((status.GetPAttackPower()) / 100));
 
             retval *= (1 + (status.Damage / 100));
             retval *= (1 + (status.LastDamage / 100));

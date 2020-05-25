@@ -73,12 +73,14 @@ namespace MapleStoryHelper.Standard
 
         #region Properties
 
+        #region Binding
+
         public int AttackBinding
         {
             get => GetAttackPower();
         }
 
-        public int AttackPBinding
+        public int PAttackBinding
         {
             get => GetAttackPower();
         }
@@ -88,7 +90,7 @@ namespace MapleStoryHelper.Standard
             get => GetMagicAttack();
         }
 
-        public int MagicPBinding
+        public int PMagicBinding
         {
             get => GetMagicAttack();
         }
@@ -123,35 +125,37 @@ namespace MapleStoryHelper.Standard
             get => GetMP();
         }
 
-        public int StrPBinding
+        public int PStrBinding
         {
             get => GetPSTR();
         }
 
-        public int DexPBinding
+        public int PDexBinding
         {
             get => GetPDEX();
         }
 
-        public int IntPBinding
+        public int PIntBinding
         {
             get => GetPINT();
         }
 
-        public int LukPBinding
+        public int PLukBinding
         {
             get => GetPLUK();
         }
 
-        public int HPPBinding
+        public int PHPBinding
         {
             get => GetPHP();
         }
 
-        public int MPPBinding
+        public int PMPBinding
         {
             get => GetPMP();
         }
+
+        #endregion
 
         #region Percentable Status
 
@@ -167,10 +171,7 @@ namespace MapleStoryHelper.Standard
         [Column("str")]
         public double Str
         {
-            get 
-            {
-                return GetSTR();
-            }
+            get => _str;
             set => SetProperty(ref _str, value);
         }
 
@@ -459,22 +460,22 @@ namespace MapleStoryHelper.Standard
 
         public int GetSTR()
         {
-            return (int)(_str * (1 + ((double)PStr / 100))) + CStr;
+            return (int)(Str + AllStatus * (1 + ((double)(PStr + PAllStatus) / 100))) + CStr + CAllStatus;
         }
 
         public int GetDEX()
         {
-            return (int)(_dex * (1 + ((double)PDex / 100))) + CDex;
+            return (int)(_dex * (1 + ((double)(PDex + PAllStatus) / 100))) + CDex + CAllStatus;
         }
 
         public int GetINT()
         {
-            return (int)(_int * (1 + ((double)PInt / 100))) + CInt;
+            return (int)(_int * (1 + ((double)(PInt + PAllStatus) / 100))) + CInt + CAllStatus;
         }
 
         public int GetLUK()
         {
-            return (int)(_luk * (1 + ((double)PLuk / 100))) + CLuk;
+            return (int)(_luk * (1 + ((double)(PLuk + PAllStatus) / 100))) + CLuk + CAllStatus;
         }
 
         public int GetHP()
@@ -489,12 +490,12 @@ namespace MapleStoryHelper.Standard
 
         public int GetAttackPower()
         {
-            return (int)(_attackPower * (1 + ((double)PAttackPower / 100))) + CAttackPower;
+            return (int)(AttackPower + CAttackPower);
         }
 
         public int GetMagicAttack()
         {
-            return (int)(_magicAttack * (1 + ((double)PMagicAttack / 100))) + CMagicAttack;
+            return (int)(MagicAttack + CMagicAttack);
         }
 
 
@@ -541,12 +542,6 @@ namespace MapleStoryHelper.Standard
 
         #endregion
 
-        #region GetStatusAttack Method
-
-
-
-        #endregion
-
         private double GetIgnoreDef()
         {
             //1 - (1 - %) - (1 - %) ...
@@ -557,10 +552,17 @@ namespace MapleStoryHelper.Standard
                 return 0;
             }
 
+            double temp = 1;
+
             for(int i = 0; i < IgnoreDef.Count; i++)
             {
-                retval -= ((100.0 - IgnoreDef[i]) / 100.0);
+                temp *= ((100.0 - IgnoreDef[i]) / 100.0);
             }
+
+            temp *= 100;
+            retval *= 100;
+
+            retval -= temp;
 
             return retval;
         }

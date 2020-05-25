@@ -108,10 +108,22 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             };
 
             retval.IgnoreDef = new List<double>(a.IgnoreDef);
+            retval.PoIgnoreDef = new List<int>(a.PoIgnoreDef);
+            retval.AdPoIgnoreDef = new List<int>(a.AdPoIgnoreDef);
 
             for (int i = 0; i < b.IgnoreDef.Count; i++)
             {
                 retval.IgnoreDef.Add(b.IgnoreDef[i]);
+            }
+
+            for (int i = 0; i < b.PoIgnoreDef.Count; i++)
+            {
+                retval.PoIgnoreDef.Add(b.PoIgnoreDef[i]);
+            }
+
+            for (int i = 0; i < b.AdPoIgnoreDef.Count; i++)
+            {
+                retval.AdPoIgnoreDef.Add(b.AdPoIgnoreDef[i]);
             }
 
             return retval;

@@ -1,9 +1,12 @@
-﻿using MapleStoryHelper.Standard.Common;
+﻿using MapleStoryHelper.Standard.Character.Status;
+using MapleStoryHelper.Standard.Common;
+using MapleStoryHelper.Standard.Resources;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -21,6 +24,11 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _primaryKey, value);
         }
 
+        #region Property
+
+        public EStatus MainStatus { get; set; }
+        public EStatus SubStatus { get; set; }
+
         private string _imageSrc;
         [Column("image_source")]
         public string ImageSrc
@@ -35,6 +43,14 @@ namespace MapleStoryHelper.Standard.Character
         {
             get => _characterName;
             set => SetProperty(ref _characterName, value);
+        }
+
+        //숙련도
+        private int _ripenPoint;
+        public int RipenPoint
+        {
+            get => _ripenPoint;
+            set => SetProperty(ref _ripenPoint, value);
         }
 
         private int _level;
@@ -61,12 +77,16 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _jobCategory, value);
         }
 
-        private StatusBase _status;
-        [Column("status")]
-        public StatusBase Status
+        private CharacterStatus _characterStatus;
+        [NotMapped]
+        public CharacterStatus CharacterStatus
         {
-            get => _status;
-            set => SetProperty(ref _status, value);
+            get
+            {
+                _characterStatus = GetCharacterStatus();
+                return _characterStatus;
+            }
+            set => SetProperty(ref _characterStatus, value);
         }
 
         private bool _isUseAttackPower;
@@ -109,6 +129,26 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _characterEquipment, value);
         }
 
+        private MHResource _characterImage;
+        [NotMapped]
+        public MHResource CharacterImage
+        {
+            get => _characterImage;
+            set => SetProperty(ref _characterImage, value);
+        }
+
+        public int MinStatusAttackBinding
+        {
+            get => GetMinStatusAttack(MainStatus, SubStatus);
+        }
+
+        public int MaxStatusAttackBinding
+        {
+            get => GetMaxStatusAttack(MainStatus, SubStatus);
+        }
+
+        #endregion
+
         public CharacterBase()
         {
             InitVariables();
@@ -116,8 +156,8 @@ namespace MapleStoryHelper.Standard.Character
 
         private void InitVariables()
         {
-            Status = new StatusBase();
             CharacterEquipment = new CharacterEquipment();
+            _characterImage = new MHResource();
             _jobLevel = EJobLevel.First;
             _level = 1;
         }
@@ -128,10 +168,23 @@ namespace MapleStoryHelper.Standard.Character
             SetJobConst(characterJob);
         }
 
-        #warning 직업상수 설정하기
         private void SetJobConst(ECharacterJob characterJob)
         {
-            
+            switch (characterJob)
+            {
+                case ECharacterJob.ArchMage_FirePoison:
+                case ECharacterJob.ArchMage_IceLightning:
+                case ECharacterJob.Bishop:
+                case ECharacterJob.BlazeWizard:
+                    JobConst = 1.2;
+                    break;
+                case ECharacterJob.Xenon:
+                    JobConst = 0.875;
+                    break;
+                default:
+                    JobConst = 1;
+                    break;
+            }
         }
 
 
@@ -153,80 +206,65 @@ namespace MapleStoryHelper.Standard.Character
             int MainStatus = 0;
             int SubStatus = 0;
             double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(Status);
+            double Percent = GetCharacterPercent(CharacterStatus);
 
-            #region Switch
+            GetCharacterMainStatus(ref MainStatus, main);
+            GetCharacterMainStatus(ref SubStatus, sub);
+
+            retval = (int)(((MainStatus * 4) + SubStatus) * Constant * Percent);
+
+            return retval;
+        }
+
+        private void GetCharacterMainStatus(ref int MainStatus, EStatus main)
+        {
             switch (main)
             {
                 case EStatus.STR:
-                    MainStatus = Status.GetSTR();
+                    MainStatus = CharacterStatus.GetSTR();
                     break;
                 case EStatus.DEX:
-                    MainStatus = Status.GetDEX();
+                    MainStatus = CharacterStatus.GetDEX();
                     break;
                 case EStatus.INT:
-                    MainStatus = Status.GetINT();
+                    MainStatus = CharacterStatus.GetINT();
                     break;
                 case EStatus.LUK:
-                    MainStatus = Status.GetLUK();
+                    MainStatus = CharacterStatus.GetLUK();
                     break;
                 case EStatus.HP:
-                    MainStatus = Status.GetHP();
+                    MainStatus = CharacterStatus.GetHP();
                     break;
                 case EStatus.MP:
-                    MainStatus = Status.GetMP();
+                    MainStatus = CharacterStatus.GetMP();
                     break;
             }
-
-            switch (sub)
-            {
-                case EStatus.STR:
-                    SubStatus = Status.GetSTR();
-                    break;
-                case EStatus.DEX:
-                    SubStatus = Status.GetDEX();
-                    break;
-                case EStatus.INT:
-                    SubStatus = Status.GetINT();
-                    break;
-                case EStatus.LUK:
-                    SubStatus = Status.GetLUK();
-                    break;
-                case EStatus.HP:
-                    SubStatus = Status.GetHP();
-                    break;
-                case EStatus.MP:
-                    SubStatus = Status.GetMP();
-                    break;
-            }
-
-            #endregion
-
-            var temp = ((MainStatus * 4) + SubStatus) * Constant * Percent;
-            retval = (int)temp;
-
-            return retval;
         }
 
         public int GetMinStatusAttack(EStatus main, EStatus sub)
         {
             int retval = 0;
             int MaxStatus = GetMaxStatusAttack(main, sub);
+            double temp = MaxStatus * ((double)RipenPoint / 100);
+            retval = (int)temp;
 
             return retval;
         }
 
-        #warning 공격력 %를 붙여줄지 붙이지 않을지에 대한 실험이 필요함
+
         private double GetCharacterPercent(StatusBase status)
         {
             double retval = 0;
+
             if(IsUseAttackPower == true)
             {
                 retval += status.GetAttackPower();
+                retval *= (1 + (status.PAttackPower) / 100);
             }
             else
             {
                 retval += status.GetMagicAttack();
+                retval *= (1 + (status.PMagicAttack) / 100);
             }
 
             retval *= (1 + (status.Damage / 100));
@@ -242,6 +280,18 @@ namespace MapleStoryHelper.Standard.Character
             retval += WeaponConst;
             retval *= JobConst;
             retval *= 0.01;
+
+            return retval;
+        }
+
+        public CharacterStatus GetCharacterStatus()
+        {
+            CharacterStatus retval = new CharacterStatus();
+
+            for (int i = 0; i < CharacterEquipment.EquipList.Count; i++)
+            {
+                retval = retval + (CharacterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
+            }
 
             return retval;
         }

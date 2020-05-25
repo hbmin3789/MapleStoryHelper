@@ -52,18 +52,23 @@
     <RootPropertyPathName Name="ImageSource" />
     <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="PotentialItems" />
-    <RootPropertyPathName Name="MPPBinding" />
-    <RootPropertyPathName Name="HPPBinding" />
-    <RootPropertyPathName Name="LukPBinding" />
-    <RootPropertyPathName Name="IntPBinding" />
-    <RootPropertyPathName Name="DexPBinding" />
-    <RootPropertyPathName Name="StrPBinding" />
+    <RootPropertyPathName Name="CharacterStatus" />
+    <RootPropertyPathName Name="PMPBinding" />
+    <RootPropertyPathName Name="PHPBinding" />
+    <RootPropertyPathName Name="PLukBinding" />
+    <RootPropertyPathName Name="PIntBinding" />
+    <RootPropertyPathName Name="PDexBinding" />
+    <RootPropertyPathName Name="PStrBinding" />
     <RootPropertyPathName Name="MPBinding" />
     <RootPropertyPathName Name="HPBinding" />
     <RootPropertyPathName Name="LukBinding" />
     <RootPropertyPathName Name="IntBinding" />
     <RootPropertyPathName Name="DexBinding" />
     <RootPropertyPathName Name="StrBinding" />
+    <RootPropertyPathName Name="PMagicBinding" />
+    <RootPropertyPathName Name="PAttackBinding" />
+    <RootPropertyPathName Name="MaxStatusAttackBinding" />
+    <RootPropertyPathName Name="MinStatusAttackBinding" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -102,6 +107,7 @@
       <RootProperty Name="Children" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -236,13 +242,13 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
+    <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
       <RootProperty Name="ContentTransitions" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
-    <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
-    <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border" />
     <RootType FullName="MapleStoryHelper.View.ItemSettingPage" />
     <RootType FullName="MapleStoryHelper.MainPage" />
