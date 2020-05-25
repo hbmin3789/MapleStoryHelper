@@ -6,6 +6,117 @@ namespace MapleStoryHelper.Standard.Item.Equipment
 {
     public class EquipmentStatus : StatusBase
     {
+        public static EquipmentStatus operator +(EquipmentStatus a, EquipmentStatus b)
+        {
+            EquipmentStatus retval = new EquipmentStatus()
+            {
+                AllStatus = a.AllStatus + b.AllStatus,
+                CAllStatus = a.CAllStatus + b.CAllStatus,
+                PAllStatus = a.PAllStatus + b.PAllStatus,
+                AttackPower = a.AttackPower + b.AttackPower,
+                PAttackPower = a.PAttackPower + b.PAttackPower,
+                CAttackPower = a.CAttackPower + b.CAttackPower,
+                MagicAttack = a.MagicAttack + b.MagicAttack,
+                CMagicAttack = a.CMagicAttack + b.CMagicAttack,
+                PMagicAttack = a.PMagicAttack + b.PMagicAttack,
+                Str = a.Str + b.Str,
+                Dex = a.Dex + b.Dex,
+                Int = a.Int + b.Int,
+                Luk = a.Luk + b.Luk,
+                CStr = a.CStr + b.CStr,
+                CDex = a.CDex + b.CDex,
+                CInt = a.CInt + b.CInt,
+                CLuk = a.CLuk + b.CLuk,
+                PStr = a.PStr + b.PStr,
+                PDex = a.PDex + b.PDex,
+                PInt = a.PInt + b.PInt,
+                PLuk = a.PLuk + b.PLuk,
+                HP = a.HP + b.HP,
+                CHP = a.CHP + b.CHP,
+                PHP = a.PHP + b.PHP,
+                MP = a.MP + b.MP,
+                CMP = a.CMP + b.CMP,
+                PMP = a.PMP + b.PMP,
+                BossDamage = a.BossDamage + b.BossDamage,
+                Critical = a.Critical + b.Critical,
+                Damage = a.Damage + b.Damage,
+                CriticalDamage = a.CriticalDamage + b.CriticalDamage,
+                LastDamage = a.LastDamage + b.LastDamage,
+                AdStr = a.AdStr + b.AdStr,
+                AdDex = a.AdDex + b.AdDex,
+                AdInt = a.AdInt + b.AdInt,
+                AdLuk = a.AdLuk + b.AdLuk,
+                AdHP = a.AdHP + b.AdHP,
+                AdMP = a.AdMP + b.AdMP,
+                AdPAllStatus = a.AdPAllStatus + b.AdPAllStatus,
+                AdAttack = a.AdAttack + b.AdAttack,
+                AdMagic = a.AdMagic + b.AdMagic,
+                AdBossDamage = a.AdBossDamage + b.AdBossDamage,
+                PoStr = a.PoStr + b.PoStr,
+                PoDex = a.PoDex + b.PoDex,
+                PoInt = a.PoInt + b.PoInt,
+                PoLuk = a.PoLuk + b.PoLuk,
+                PoHP = a.PoHP + b.PoHP,
+                PoMP = a.PoMP + b.PoMP,
+                PoAttack = a.PoAttack + b.PoAttack,
+                PoMagic = a.PoMagic + b.PoMagic,
+                PoPStr = a.PoPStr + b.PoPStr,
+                PoPDex = a.PoPDex + b.PoPDex,
+                PoPInt = a.PoPInt + b.PoPInt,
+                PoPLuk = a.PoPLuk + b.PoPLuk,
+                PoPHP = a.PoPHP + b.PoPHP,
+                PoPMP = a.PoPMP + b.PoPMP,
+                PoPAttack = a.PoPAttack + b.PoPAttack,
+                PoPMagic = a.PoPMagic + b.PoPMagic,
+                PoAllStatus = a.PoAllStatus + b.PoAllStatus,
+                PoBossDamage = a.PoBossDamage + b.PoBossDamage,
+                PoCritDamage = a.PoCritDamage + b.PoCritDamage,
+                PoCritical = a.PoCritical + b.PoCritical,
+                PoDamage = a.PoDamage + b.PoDamage,
+                PoPAllStatus = a.PoPAllStatus + b.PoPAllStatus,
+                AdPoStr = a.AdPoStr + b.AdPoStr,
+                AdPoDex = a.AdPoDex + b.AdPoDex,
+                AdPoInt = a.AdPoInt + b.AdPoInt,
+                AdPoLuk = a.AdPoLuk + b.AdPoLuk,
+                AdPoAttack = a.AdPoAttack + b.AdPoAttack,
+                AdPoMagic = a.AdPoMagic + b.AdPoMagic,
+                AdPoPStr = a.AdPoPStr + b.AdPoPStr,
+                AdPoPDex = a.AdPoPDex + b.AdPoPDex,
+                AdPoPInt = a.AdPoPInt + b.AdPoPInt,
+                AdPoPLuk = a.AdPoPLuk + b.AdPoPLuk,
+                AdPoPHP = a.PoPHP + b.PoPHP,
+                AdPoPMP = a.PoPMP + b.PoPMP,
+                AdPoPAttack = a.PoPAttack + b.PoPAttack,
+                AdPoPMagic = a.PoPMagic + b.PoPMagic,
+                AdPoAllStatus = a.AdPoAllStatus + b.AdPoAllStatus,
+                AdPoBossDamage = a.AdPoBossDamage + b.AdPoBossDamage,
+                AdPoCritDamage = a.AdPoCritDamage + b.AdPoCritDamage,
+                AdPoCritical = a.AdPoCritical + b.AdPoCritical,
+                AdPoDamage = a.AdPoDamage + b.AdPoDamage,
+                AdPoHP = a.AdPoHP + b.AdPoHP,
+                AdPoMP = a.AdPoMP + b.AdPoMP,
+                AdPoPAllStatus = a.AdPoPAllStatus + b.AdPoPAllStatus,
+                ScAllStatus = a.ScAllStatus + b.ScAllStatus,
+                ScAttack = a.ScAttack + b.ScAttack,
+                ScDex = a.ScDex + b.ScDex,
+                ScHP = a.ScHP + b.ScHP,
+                ScInt = a.ScInt + b.ScInt,
+                ScLuk = a.ScLuk + b.ScLuk,
+                ScMagic = a.ScMagic + b.ScMagic,
+                ScMP = a.ScMP + b.ScMP,
+                ScStr = a.ScStr + b.ScStr,
+            };
+
+            retval.IgnoreDef = new List<double>(a.IgnoreDef);
+
+            for (int i = 0; i < b.IgnoreDef.Count; i++)
+            {
+                retval.IgnoreDef.Add(b.IgnoreDef[i]);
+            }
+
+            return retval;
+        }
+
         public EquipmentItem Equipment { get; set; }
 
         #region Property
@@ -346,6 +457,34 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         {
             get => _adPoLuk;
             set => SetProperty(ref _adPoLuk, value);
+        }
+
+        private int _adPoPStr;
+        public int AdPoPStr
+        {
+            get => _adPoPStr;
+            set => SetProperty(ref _adPoPStr, value);
+        }
+
+        private int _adPoPDex;
+        public int AdPoPDex
+        {
+            get => _adPoPDex;
+            set => SetProperty(ref _adPoPDex, value);
+        }
+
+        private int _adPoPInt;
+        public int AdPoPInt
+        {
+            get => _adPoPInt;
+            set => SetProperty(ref _adPoPInt, value);
+        }
+
+        private int _adPoPLuk;
+        public int AdPoPLuk
+        {
+            get => _adPoPLuk;
+            set => SetProperty(ref _adPoPLuk, value);
         }
 
         private int _adPoHP;

@@ -39,6 +39,8 @@
                     <StackPanel Grid.Column="0">
                         <TextBox Text="공격력"/>
                         <TextBox Text="마력"/>
+                        <TextBox Text="공격력%"/>
+                        <TextBox Text="마력%"/>
                         <TextBox Text="데미지"/>
                         <TextBox Text="보스 공격력"/>
                         <TextBox Text="방어율 무시"/>
@@ -62,15 +64,27 @@
                         <TextBox Text="LUK"/>
                         <TextBox Text="HP"/>
                         <TextBox Text="MP"/>
+                        <TextBox Text="STR%"/>
+                        <TextBox Text="DEX%"/>
+                        <TextBox Text="INT%"/>
+                        <TextBox Text="LUK%"/>
+                        <TextBox Text="HP%"/>
+                        <TextBox Text="MP%"/>
 
                     </StackPanel>
                     <StackPanel Grid.Column="3">
-                        <TextBox Text="{Binding Str}"/>
-                        <TextBox Text="{Binding Dex}"/>
-                        <TextBox Text="{Binding Int}"/>
-                        <TextBox Text="{Binding Luk}"/>
-                        <TextBox Text="{Binding HP}"/>
-                        <TextBox Text="{Binding MP}"/>
+                        <TextBox Text="{Binding StrBinding}"/>
+                        <TextBox Text="{Binding DexBinding}"/>
+                        <TextBox Text="{Binding IntBinding}"/>
+                        <TextBox Text="{Binding LukBinding}"/>
+                        <TextBox Text="{Binding HPBinding}"/>
+                        <TextBox Text="{Binding MPBinding}"/>
+                        <TextBox Text="{Binding StrPBinding}"/>
+                        <TextBox Text="{Binding DexPBinding}"/>
+                        <TextBox Text="{Binding IntPBinding}"/>
+                        <TextBox Text="{Binding LukPBinding}"/>
+                        <TextBox Text="{Binding HPPBinding}"/>
+                        <TextBox Text="{Binding MPPBinding}"/>
 
                     </StackPanel>
 

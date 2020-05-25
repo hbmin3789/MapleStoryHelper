@@ -38,7 +38,7 @@ namespace MapleStoryHelper.Standard.Character
 
             for(int i=0;i< CharacterEquipment.EquipList.Count; i++)
             {
-                var temp = retval + (CharacterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
+                retval = retval + (CharacterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
             }
 
             return retval;

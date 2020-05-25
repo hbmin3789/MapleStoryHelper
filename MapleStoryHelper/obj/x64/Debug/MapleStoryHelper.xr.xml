@@ -52,6 +52,18 @@
     <RootPropertyPathName Name="ImageSource" />
     <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="PotentialItems" />
+    <RootPropertyPathName Name="MPPBinding" />
+    <RootPropertyPathName Name="HPPBinding" />
+    <RootPropertyPathName Name="LukPBinding" />
+    <RootPropertyPathName Name="IntPBinding" />
+    <RootPropertyPathName Name="DexPBinding" />
+    <RootPropertyPathName Name="StrPBinding" />
+    <RootPropertyPathName Name="MPBinding" />
+    <RootPropertyPathName Name="HPBinding" />
+    <RootPropertyPathName Name="LukBinding" />
+    <RootPropertyPathName Name="IntBinding" />
+    <RootPropertyPathName Name="DexBinding" />
+    <RootPropertyPathName Name="StrBinding" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">

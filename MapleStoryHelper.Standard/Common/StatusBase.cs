@@ -73,6 +73,86 @@ namespace MapleStoryHelper.Standard
 
         #region Properties
 
+        public int AttackBinding
+        {
+            get => GetAttackPower();
+        }
+
+        public int AttackPBinding
+        {
+            get => GetAttackPower();
+        }
+
+        public int MagicBinding
+        {
+            get => GetMagicAttack();
+        }
+
+        public int MagicPBinding
+        {
+            get => GetMagicAttack();
+        }
+
+        public int StrBinding
+        {
+            get => GetSTR();
+        }
+
+        public int DexBinding
+        {
+            get => GetDEX();
+        }
+
+        public int IntBinding
+        {
+            get => GetINT();
+        }
+
+        public int LukBinding
+        {
+            get => GetLUK();
+        }
+
+        public int HPBinding
+        {
+            get => GetHP();
+        }
+
+        public int MPBinding
+        {
+            get => GetMP();
+        }
+
+        public int StrPBinding
+        {
+            get => GetPSTR();
+        }
+
+        public int DexPBinding
+        {
+            get => GetPDEX();
+        }
+
+        public int IntPBinding
+        {
+            get => GetPINT();
+        }
+
+        public int LukPBinding
+        {
+            get => GetPLUK();
+        }
+
+        public int HPPBinding
+        {
+            get => GetPHP();
+        }
+
+        public int MPPBinding
+        {
+            get => GetPMP();
+        }
+
         #region Percentable Status
 
         private int _allStatus;
@@ -417,6 +497,46 @@ namespace MapleStoryHelper.Standard
             return (int)(_magicAttack * (1 + ((double)PMagicAttack / 100))) + CMagicAttack;
         }
 
+
+        public int GetPSTR()
+        {
+            return PStr + PAllStatus;
+        }
+
+        public int GetPDEX()
+        {
+            return PDex + PAllStatus;
+        }
+
+        public int GetPINT()
+        {
+            return PInt + PAllStatus;
+        }
+
+        public int GetPLUK()
+        {
+            return PLuk + PAllStatus;
+        }
+
+        public int GetPHP()
+        {
+            return PHP;
+        }
+
+        public int GetPMP()
+        {
+            return PMP;
+        }
+
+        public int GetPAttackPower()
+        {
+            return PAttackPower;
+        }
+
+        public int GetPMagicAttack()
+        {
+            return PMagicAttack;
+        }
 
 
         #endregion

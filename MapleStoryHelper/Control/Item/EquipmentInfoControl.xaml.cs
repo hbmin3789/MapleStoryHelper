@@ -26,6 +26,8 @@ namespace MapleStoryHelper.Control.Item
 {
     public sealed partial class EquipmentInfoControl : UserControl
     {
+        public EventHandler OnSaved;
+
         private ECharacterEquipmentCategory _category;
         public ECharacterEquipmentCategory Category 
         {
@@ -39,19 +41,25 @@ namespace MapleStoryHelper.Control.Item
             }
         }
 
-        
+        private EquipmentItem _equipmentItem;
         public EquipmentItem EquipmentItem 
         {
-            get
+            get => this.DataContext as EquipmentItem;
+            set
             {
-                var temp = this.DataContext as EquipmentItem;
-                return temp;
+                this.DataContext = value;
             }
         }
 
         public EquipmentInfoControl()
         {
             this.InitializeComponent();
+            OnSaved += OnSavedItem;
+        }
+
+        private void OnSavedItem(object sender, EventArgs e)
+        {
+            EquipmentItem.Status = EquipmentItem.Status + GetPotentialStatus();
         }
 
         public async Task InitEquipComboBox(ECharacterEquipmentCategory category)
@@ -71,6 +79,15 @@ namespace MapleStoryHelper.Control.Item
             }
 
             cbItems.ItemsSource = items;
+            if(items.Count != 0)
+            {
+                cbItems.SelectedIndex = 0;
+            }
+        }
+
+        public EquipmentStatus GetPotentialStatus()
+        {
+            return ctrlPotential.GetStatus();
         }
 
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)

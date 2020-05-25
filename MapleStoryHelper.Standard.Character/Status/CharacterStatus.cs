@@ -115,6 +115,9 @@ namespace MapleStoryHelper.Standard.Character.Status
             get => _levelMP;
             set => SetProperty(ref _levelMP, value);
         }
+
         #endregion
+
+
     }
 }

@@ -73,10 +73,11 @@ namespace MapleStoryHelper.View
 
         private void OnItemSave(EquipmentInfoControl control)
         {
+            control.OnSaved?.Invoke(this, null);
             var character = (Character)this.DataContext;
-            
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
             UpdateView();
+            ctrlStatusDisplay.DataContext = character.CharacterStatus;
             //imgRing1.Source = control.EquipmentItem.ImgBitmapSource as BitmapImage;
         }
 
