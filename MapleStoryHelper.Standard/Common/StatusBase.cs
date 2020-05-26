@@ -199,9 +199,9 @@ namespace MapleStoryHelper.Standard
             set => SetProperty(ref _luk, value);
         }
 
-        private int _hp;
+        private long _hp;
         [Column("hp")]
-        public int HP
+        public long HP
         {
             get => _hp;
             set => SetProperty(ref _hp, value);
