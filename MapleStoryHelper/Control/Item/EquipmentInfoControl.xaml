@@ -9,7 +9,7 @@
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="1200"
-    d:DesignWidth="400">
+    d:DesignWidth="450">
     <UserControl.Resources>
         <CollectionViewSource x:Name="cvsPotential" x:Key="cvsPotential"/>
         
@@ -65,74 +65,79 @@
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
                     <StackPanel>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text=""/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="올스텟%"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="데미지"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="보스 공격력"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방어율 무시"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 확률"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 데미지"/>
-                    </StackPanel>
-                    <StackPanel Grid.Column="1">
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기본"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Str}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Dex}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Int}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Luk}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.HP}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MP}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.AttackPower}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MagicAttack}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.PAllStatus}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Damage}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.BossDamage}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.IgnoreDefBinding}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Critical}"/>
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.CriticalDamage}"/>
-                    </StackPanel>
-                    <StackPanel Grid.Column="2">
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="추옵"/>
-                        <TextBox Text="{Binding Status.AdStr}"/>
-                        <TextBox Text="{Binding Status.AdDex}"/>
-                        <TextBox Text="{Binding Status.AdInt}"/>
-                        <TextBox Text="{Binding Status.AdLuk}"/>
-                        <TextBox Text="{Binding Status.AdHP}"/>
-                        <TextBox Text="{Binding Status.AdMP}"/>
-                        <TextBox Text="{Binding Status.AdAttack}"/>
-                        <TextBox Text="{Binding Status.AdMagic}"/>
-                        <TextBox Text="{Binding Status.AdPAllStatus}"/>
-                        <TextBox Text="{Binding Status.AdDamage}"/>
-                        <TextBox Text="{Binding Status.AdBossDamage}"/>
-                        <TextBox Text="{Binding Status.AdIgnoreDefBinding}"/>
-                        <TextBox Text="{Binding Status.AdCritical}"/>
-                        <TextBox Text="{Binding Status.AdCriticalDamage}"/>
-                    </StackPanel>
-                    <StackPanel Grid.Column="3">
-                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="주문서"/>
-                        <TextBox Text="{Binding Status.ScStr}"/>
-                        <TextBox Text="{Binding Status.ScDex}"/>
-                        <TextBox Text="{Binding Status.ScInt}"/>
-                        <TextBox Text="{Binding Status.ScLuk}"/>
-                        <TextBox Text="{Binding Status.ScHP}"/>
-                        <TextBox Text="{Binding Status.ScMP}"/>
-                        <TextBox Text="{Binding Status.ScAttack}"/>
-                        <TextBox Text="{Binding Status.ScMagic}"/>
-                        <TextBox Text="{Binding Status.ScAllStatus}"/>
+                        <TextBlock Text="기타칸에 추옵, 스타포스(놀장강) 등의 스탯을 합산해 넣어주세요"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text=""/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="올스텟%"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="데미지"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="보스 공격력"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방어율 무시"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 확률"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 데미지"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기본"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Str}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Dex}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Int}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Luk}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.HP}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MP}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.AttackPower}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MagicAttack}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.PAllStatus}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Damage}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.BossDamage}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.IgnoreDefBinding}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Critical}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.CriticalDamage}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="주문서"/>
+                                <TextBox Text="{Binding Status.AdStr}"/>
+                                <TextBox Text="{Binding Status.AdDex}"/>
+                                <TextBox Text="{Binding Status.AdInt}"/>
+                                <TextBox Text="{Binding Status.AdLuk}"/>
+                                <TextBox Text="{Binding Status.AdHP}"/>
+                                <TextBox Text="{Binding Status.AdMP}"/>
+                                <TextBox Text="{Binding Status.AdAttack}"/>
+                                <TextBox Text="{Binding Status.AdMagic}"/>
+                                <TextBox Text="{Binding Status.AdPAllStatus}"/>
+                                <TextBox Text="{Binding Status.AdDamage}"/>
+                                <TextBox Text="{Binding Status.AdBossDamage}"/>
+                                <TextBox Text="{Binding Status.AdIgnoreDefBinding}"/>
+                                <TextBox Text="{Binding Status.AdCritical}"/>
+                                <TextBox Text="{Binding Status.AdCriticalDamage}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="3">
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기타"/>
+                                <TextBox Text="{Binding Status.ScStr}"/>
+                                <TextBox Text="{Binding Status.ScDex}"/>
+                                <TextBox Text="{Binding Status.ScInt}"/>
+                                <TextBox Text="{Binding Status.ScLuk}"/>
+                                <TextBox Text="{Binding Status.ScHP}"/>
+                                <TextBox Text="{Binding Status.ScMP}"/>
+                                <TextBox Text="{Binding Status.ScAttack}"/>
+                                <TextBox Text="{Binding Status.ScMagic}"/>
+                                <TextBox Text="{Binding Status.ScAllStatus}"/>
+                            </StackPanel>
+                        </Grid>
                     </StackPanel>
                 </Grid>
 

@@ -121,6 +121,12 @@
   <data name="01113149" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01113149.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01114301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01114301.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01114306" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01114306.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="01114311" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01114311.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
@@ -147,6 +153,9 @@
   </data>
   <data name="실버블라썸_링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\실버블라썸 링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 에너지소드" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 에너지소드.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="오닉스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\오닉스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

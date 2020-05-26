@@ -89,7 +89,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("벤전스링", "", EEquipmentCategory.Ring)]
+        [ResourceInfo("벤전스링", "01114301", EEquipmentCategory.Ring)]
         public static byte[] Item_VengeanceRing {
             get {
                 object obj = ResourceManager.GetObject("벤전스링", resourceCulture);
@@ -100,18 +100,18 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("오닉스링", "", EEquipmentCategory.Ring)]
-        public static byte[] Item_OnyxRing {
-            get {
-                object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[ResourceInfo("오닉스링", "", EEquipmentCategory.Ring)]
+        //public static byte[] Item_OnyxRing {
+        //    get {
+        //        object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("카오스링", "", EEquipmentCategory.Ring)]
+        [ResourceInfo("카오스링", "01114306", EEquipmentCategory.Ring)]
         public static byte[] Item_ChaosRing {
             get {
                 object obj = ResourceManager.GetObject("카오스링", resourceCulture);
@@ -165,6 +165,18 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             get => ResourceManager.GetObject("01114311", resourceCulture);
         }
 
+        [ResourceInfo("벤전스링", "01114301", EEquipmentCategory.Ring)]
+        public static object Xml_VengeanceRing
+        {
+            get => ResourceManager.GetObject("01114301", resourceCulture);
+        }
+
+        [ResourceInfo("카오스 링", "01114306", EEquipmentCategory.Ring)]
+        public static object Xml_ChaosRing
+        {
+            get => ResourceManager.GetObject("01114306", resourceCulture);
+        }
+
         #endregion
 
         #region Pocket
@@ -214,6 +226,26 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Pendant
 
+        [ResourceInfo("고통의 근원", "01122430", EEquipmentCategory.Pendant)]
+        public static byte[] Item_SourceOfSuffering
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("고통의 근원", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("매커네이터 펜던트", "01122254", EEquipmentCategory.Pendant)]
+        public static byte[] Item_MechanatorPendant
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("매커네이터 펜던트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
         [ResourceInfo("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant)]
         public static byte[] Item_DominatorPendant
         {
@@ -229,6 +261,12 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         {
             get => ResourceManager.GetObject("01122377", resourceCulture);
         }
+
+        #endregion
+
+        #region Weapon
+
+
 
         #endregion
     }
