@@ -23,6 +23,7 @@ Control\Item\PotentialControl.xbf
 Control\Status\StatusDisplayControl.xbf
 MapleStoryHelper.xr.xml
 Theme\FontSize.xbf
+View\BossDamageCalcPage.xbf
 View\CharacterAddPage.xbf
 View\EquipmentAddPage.xbf
 View\ItemSettingPage.xbf

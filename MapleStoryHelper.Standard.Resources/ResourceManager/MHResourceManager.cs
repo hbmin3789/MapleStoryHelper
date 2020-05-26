@@ -51,6 +51,36 @@ namespace MapleStoryHelper.Standard.Resources
             return retval;
         }
 
+        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, ECharacterJob characterJob)
+        {
+            List<EquipmentItem> retval = new List<EquipmentItem>();
+
+            string StringTemp = category.ToString().Replace("1", "").Replace("2", "").Replace("3", "").Replace("4", "");
+
+            var values = Enum.GetValues(typeof(EEquipmentCategory));
+            EEquipmentCategory categoryTemp = EEquipmentCategory.Ring;
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (values.GetValue(i).ToString() == StringTemp)
+                {
+                    categoryTemp = (EEquipmentCategory)values.GetValue(i);
+                    break;
+                }
+            }
+
+            AddInfoToList(ref retval, categoryTemp);
+
+            var temp = retval.Where(x => x.CharacterCategory != characterJob).ToList();
+
+            for(int i = 0; i < temp.Count; i++)
+            {
+                retval.Remove(temp[i]);
+            }
+
+            return retval;
+        }
+
         private static void AddInfoToList(ref List<EquipmentItem> retval, EEquipmentCategory category)
         {
             var imgList = GetEquipmentImageList(category);

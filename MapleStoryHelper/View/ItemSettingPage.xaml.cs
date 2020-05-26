@@ -48,7 +48,7 @@ namespace MapleStoryHelper.View
             var control = new EquipmentInfoControl();
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
 
-            await control.InitEquipComboBox(category);
+            await control.InitEquipComboBox(category, this.DataContext as Character);
             control.Category = category;
 
             ContentDialog noWifiDialog = new ContentDialog

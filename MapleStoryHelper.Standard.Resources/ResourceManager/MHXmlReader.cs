@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Standard.Item;
+﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources.Attributes;
 using System;
@@ -36,23 +37,14 @@ namespace MapleStoryHelper.Standard.Resources
             {
                 switch (item?.ChildNodes[j]?.Attributes["name"]?.Value?.ToString())
                 {
+                    case "reqJob":
+                        retval.CharacterCategory = (ECharacterJob)Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);
+                        break;
                     case "islot":
                         //retval.EquipmentCategory = (EEquipmentCategory)item.ChildNodes[j].Value;
                         break;
                     case "reqLevel":
                         retval.RequiredLevel = Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);
-                        break;
-                    case "reqSTR":
-                        //retval = Convert.ToInt32(item.ChildNodes[j].Value);
-                        break;
-                    case "reqDEX":
-                        //retval.RequiredLevel = Convert.ToInt32(item.ChildNodes[j].Value);
-                        break;
-                    case "reqINT":
-                        //retval.RequiredLevel = Convert.ToInt32(item.ChildNodes[j].Value);
-                        break;
-                    case "reqLUK":
-                        //retval.RequiredLevel = Convert.ToInt32(item.ChildNodes[j].Value);
                         break;
                     case "incSTR":
                         retval.Status.Str = Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);

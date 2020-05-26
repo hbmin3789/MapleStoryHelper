@@ -6,14 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:control="using:MapleStoryHelper.Control"
+    xmlns:converter="using:MapleStoryHelper.Converter"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
+        <converter:IntToECharacterJobConverter x:Key="IntToECharacterJobConverter"/>
         <Style TargetType="Button">
             <Setter Property="Width" Value="300"/>
             <Setter Property="Height" Value="100"/>
             <Setter Property="Margin" Value="10"/>
         </Style>
+        
+        
     </Page.Resources>
 
     <Grid>
@@ -33,7 +37,7 @@
                 </Grid.RowDefinitions>
                 <ComboBox x:ConnectionId='7' x:Name="cbCharacterJob" Grid.Row="0" 
                           HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                          SelectedIndex="{Binding CharacterJob}"
+                          SelectedIndex="{Binding CharacterJob, Converter={StaticResource IntToECharacterJobConverter},Mode=TwoWay}"
                                                                             />
                 <Grid Grid.Row="1">
                     <Button x:ConnectionId='8' x:Name="btnSetImagePath" HorizontalAlignment="Right" VerticalAlignment="Top"

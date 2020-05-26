@@ -133,6 +133,12 @@
   <data name="01122377" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01122377.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01242123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01242123.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01242124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01242124.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="결속의_반지" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\결속의 반지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

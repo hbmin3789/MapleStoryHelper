@@ -112,8 +112,6 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
-      <RootMethod Name="GetColumnSpan" />
-      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -236,17 +234,14 @@
     <RootType FullName="System.Double" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
-      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="MapleStoryHelper.View.BossDamageCalcPage" />
+    <RootType FullName="MapleStoryHelper.Converter.IntToECharacterJobConverter" />
     <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
     <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
-      <RootProperty Name="ContentTransitions" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border" />
     <RootType FullName="MapleStoryHelper.View.ItemSettingPage" />
     <RootType FullName="MapleStoryHelper.MainPage" />

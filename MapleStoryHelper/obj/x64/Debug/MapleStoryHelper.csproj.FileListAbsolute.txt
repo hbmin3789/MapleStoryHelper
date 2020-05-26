@@ -169,3 +169,8 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Contr
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentInfoControl.xaml
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Item\EquipmentInfoControl.xbf
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\EquipmentInfoControl.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\BossDamageCalcPage.xbf
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\BossDamageCalcPage.g.i.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\BossDamageCalcPage.g.cs
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\BossDamageCalcPage.xaml
+C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\BossDamageCalcPage.xbf

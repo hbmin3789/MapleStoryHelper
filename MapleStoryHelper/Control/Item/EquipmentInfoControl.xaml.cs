@@ -62,11 +62,11 @@ namespace MapleStoryHelper.Control.Item
             EquipmentItem.Status = EquipmentItem.Status + GetPotentialStatus();
         }
 
-        public async Task InitEquipComboBox(ECharacterEquipmentCategory category)
+        public async Task InitEquipComboBox(ECharacterEquipmentCategory category,Character character)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 
-            var list = MHResourceManager.GetEquipmentList(category);
+            var list = MHResourceManager.GetEquipmentList(category, character.CharacterJob);
 
             for (int i = 0; i < list.Count; i++)
             {

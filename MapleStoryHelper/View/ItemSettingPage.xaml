@@ -141,15 +141,5 @@
         <Grid Grid.Column="1">
             <control:StatusDisplayControl x:Name="ctrlStatusDisplay" Margin="20"/>
         </Grid>
-
-        <Grid Grid.ColumnSpan="2">
-            <Frame x:Name="ContentFrame">
-                <Frame.ContentTransitions>
-                    <TransitionCollection>
-                        <NavigationThemeTransition  />
-                    </TransitionCollection>
-                </Frame.ContentTransitions>
-            </Frame>
-        </Grid>
     </Grid>
 </Page>

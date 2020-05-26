@@ -266,7 +266,37 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Weapon
 
+        [ResourceInfo("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon)]
+        public static byte[] Item_Absolabs_EnergySword_Thief
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 에너지소드", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
 
+        [ResourceInfo("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon)]
+        public static byte[] Item_Absolabs_EnergySword_Pirate
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 에너지소드", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, 0, 1.5)]
+        public static object Xml_Absolabs_EnergySword_Thief
+        {
+            get => ResourceManager.GetObject("01242124", resourceCulture);
+        }
+
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon, 0 ,1.5)]
+        public static object Xml_Absolabs_EnergySword_Pirate
+        {
+            get => ResourceManager.GetObject("01242123", resourceCulture);
+        }
 
         #endregion
     }

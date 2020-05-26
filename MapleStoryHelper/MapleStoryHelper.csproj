@@ -143,6 +143,7 @@
     </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="Converter\Equipment\StringToEEquipmentCategoryConverter.cs" />
+    <Compile Include="Converter\IntToECharacterJobConverter.cs" />
     <Compile Include="Model\ListResources.cs" />
     <Compile Include="Model\Potential.cs" />
     <Compile Include="Model\Scroll.cs" />
