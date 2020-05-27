@@ -45,6 +45,18 @@ namespace MapleStoryHelper.Standard.Character
             }
         }
 
+        public StatusBase GetEquipStatus()
+        {
+            StatusBase retval = new StatusBase();
+
+            for (int i = 0; i < EquipList.Count; i++)
+            {
+                retval = retval + EquipList.ElementAt(i).Value.Status.GetStatus<StatusBase>();
+            }
+
+            return retval;
+        }
+
         public void AddEquipmentItem(EquipmentItem equip)
         {
             EquipList[equip.CharacterEquipmentCategory] = equip;

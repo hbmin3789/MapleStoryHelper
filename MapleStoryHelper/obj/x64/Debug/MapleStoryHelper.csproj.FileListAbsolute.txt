@@ -55,12 +55,10 @@ C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Syste
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Microsoft.Graphics.Canvas.winmd
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Character.dll
-C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Database.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Item.dll
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Character.pdb
-C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Database.pdb
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.Item.pdb
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.Standard.pdb
 C:\Users\user\source\repos\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\MapleStoryHelper.csprojAssemblyReference.cache

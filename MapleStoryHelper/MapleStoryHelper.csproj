@@ -274,10 +274,6 @@
       <Project>{8746CB0E-6404-4595-AF83-270D25A0F163}</Project>
       <Name>MapleStoryHelper.Standard.Character</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MapleStoryHelper.Standard.Database\MapleStoryHelper.Standard.Database.csproj">
-      <Project>{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}</Project>
-      <Name>MapleStoryHelper.Standard.Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33bc35e0-b1c4-4a35-8a32-ee4439ee3e44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>

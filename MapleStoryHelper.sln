@@ -26,13 +26,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.C
 		{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44} = {33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Database", "MapleStoryHelper.Standard.Database\MapleStoryHelper.Standard.Database.csproj", "{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryResourceSavior", "MapleStoryResourceSavior\MapleStoryResourceSavior.csproj", "{D7EA6A14-497B-4378-BAEA-3D9E7EFFFFBF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Resources", "MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj", "{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.Boss", "MapleStoryHelper.Standard.Boss\MapleStoryHelper.Standard.Boss.csproj", "{74CB7049-4E08-4E48-8D72-89B720CED519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.Boss", "MapleStoryHelper.Standard.Boss\MapleStoryHelper.Standard.Boss.csproj", "{74CB7049-4E08-4E48-8D72-89B720CED519}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -156,26 +154,6 @@ Global
 		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x64.Build.0 = Release|Any CPU
 		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x86.ActiveCfg = Release|Any CPU
 		{8746CB0E-6404-4595-AF83-270D25A0F163}.Release|x86.Build.0 = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|ARM.Build.0 = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|x64.Build.0 = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Debug|x86.Build.0 = Debug|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|ARM.ActiveCfg = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|ARM.Build.0 = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|ARM64.Build.0 = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|x64.ActiveCfg = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|x64.Build.0 = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|x86.ActiveCfg = Release|Any CPU
-		{F8C57A90-C97C-4576-91D4-2FC2DBF3E95C}.Release|x86.Build.0 = Release|Any CPU
 		{D7EA6A14-497B-4378-BAEA-3D9E7EFFFFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7EA6A14-497B-4378-BAEA-3D9E7EFFFFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7EA6A14-497B-4378-BAEA-3D9E7EFFFFBF}.Debug|ARM.ActiveCfg = Debug|Any CPU

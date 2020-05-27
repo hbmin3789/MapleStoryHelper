@@ -1,5 +1,4 @@
-﻿using MapleStoryHelper.Standard.Character.Status;
-using MapleStoryHelper.Standard.Common;
+﻿using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Resources;
 using Prism.Mvvm;
 using System;
@@ -78,16 +77,19 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _jobCategory, value);
         }
 
-        private CharacterStatus _characterStatus;
+        private StatusBase _characterStatus;
         [NotMapped]
-        public CharacterStatus CharacterStatus
+        public StatusBase CharacterStatus
         {
             get
             {
                 _characterStatus = GetCharacterStatus();
                 return _characterStatus;
             }
-            set => SetProperty(ref _characterStatus, value);
+            set
+            {
+                SetProperty(ref _characterStatus, value);
+            }
         }
 
         private bool _isUseAttackPower;
@@ -177,6 +179,7 @@ namespace MapleStoryHelper.Standard.Character
         {
             CharacterEquipment = new CharacterEquipment();
             _characterImage = new MHResource();
+            _characterStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
         }
@@ -319,14 +322,12 @@ namespace MapleStoryHelper.Standard.Character
             return retval;
         }
 
-        public CharacterStatus GetCharacterStatus()
+        public StatusBase GetCharacterStatus()
         {
-            CharacterStatus retval = new CharacterStatus();
+            StatusBase retval = new StatusBase();
+            StatusBase equipStatus = _characterEquipment.GetEquipStatus();
 
-            for (int i = 0; i < _characterEquipment.EquipList.Count; i++)
-            {
-                retval = retval + (_characterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
-            }
+            retval = retval + equipStatus;
 
             return retval;
         }

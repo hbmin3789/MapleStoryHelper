@@ -342,10 +342,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MapleStoryHelper.Standard.Database\MapleStoryHelper.Standard.Database.csproj">
-      <Project>{f8c57a90-c97c-4576-91d4-2fc2dbf3e95c}</Project>
-      <Name>MapleStoryHelper.Standard.Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>

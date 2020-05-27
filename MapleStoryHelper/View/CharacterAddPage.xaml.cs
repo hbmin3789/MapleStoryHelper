@@ -2,7 +2,6 @@
 using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Common;
-using MapleStoryHelper.Standard.Database;
 using Microsoft.Xaml.Interactions.Core;
 using System;
 using System.Collections.Generic;
@@ -114,7 +113,6 @@ namespace MapleStoryHelper.View
                 var character = App.mapleStoryHelperViewModel.NewCharacterItem;
 
                 character.ImageSrc = file.Path;
-                character.CharacterImage = MHDBManager.GetResource(character);
 
                 var imageData = await character.CharacterImage.ImageData.LoadImage();
                 imgCharacter.Source = imageData;

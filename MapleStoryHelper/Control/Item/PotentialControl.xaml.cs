@@ -1,5 +1,4 @@
 ﻿using MapleStoryHelper.Model;
-using MapleStoryHelper.Standard.Character.Status;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Common;
-using MapleStoryHelper.Standard.Database;
 using Prism.Commands;
 using Prism.Mvvm;
 using System;

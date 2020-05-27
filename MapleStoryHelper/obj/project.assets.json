@@ -1462,24 +1462,6 @@
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
         }
       },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        }
-      },
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3313,24 +3295,6 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
-        }
-      },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -5199,24 +5163,6 @@
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
         }
       },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        }
-      },
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -7080,24 +7026,6 @@
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
         }
       },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        }
-      },
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -8931,24 +8859,6 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
-        }
-      },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -10817,24 +10727,6 @@
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
         }
       },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        }
-      },
       "MapleStoryHelper.Standard.Item/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -12668,24 +12560,6 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
-        }
-      },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -14552,24 +14426,6 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
-        }
-      },
-      "MapleStoryHelper.Standard.Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "MapleStoryHelper.Standard": "1.0.0",
-          "MapleStoryHelper.Standard.Character": "1.0.0",
-          "MapleStoryHelper.Standard.Item": "1.0.0",
-          "MapleStoryHelper.Standard.Resources": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.1.0"
-        },
-        "compile": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MapleStoryHelper.Standard.Database.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -22811,11 +22667,6 @@
       "path": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj"
     },
-    "MapleStoryHelper.Standard.Database/1.0.0": {
-      "type": "project",
-      "path": "../MapleStoryHelper.Standard.Database/MapleStoryHelper.Standard.Database.csproj",
-      "msbuildProject": "../MapleStoryHelper.Standard.Database/MapleStoryHelper.Standard.Database.csproj"
-    },
     "MapleStoryHelper.Standard.Item/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
@@ -22831,7 +22682,6 @@
     "UAP,Version=v10.0.17763": [
       "MapleStoryHelper.Standard >= 1.0.0",
       "MapleStoryHelper.Standard.Character >= 1.0.0",
-      "MapleStoryHelper.Standard.Database >= 1.0.0",
       "MapleStoryHelper.Standard.Item >= 1.0.0",
       "MapleStoryHelper.Standard.Resources >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 1.1.0",
@@ -22875,9 +22725,6 @@
           "projectReferences": {
             "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
               "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj"
-            },
-            "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Database\\MapleStoryHelper.Standard.Database.csproj"
             },
             "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
               "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"

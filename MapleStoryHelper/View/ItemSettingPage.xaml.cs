@@ -85,8 +85,10 @@ namespace MapleStoryHelper.View
             }
 
             UpdateView();
+            ctrlStatusDisplay.DataContext = null;
             ctrlStatusDisplay.DataContext = character;
             ctrlStatusDisplay.UpdateLayout();
+            
         }
 
         private void UpdateView()
