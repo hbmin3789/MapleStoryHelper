@@ -133,6 +133,9 @@
   <data name="01122377" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01122377.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01132178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01132178.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="01242123" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\01242123.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
@@ -145,6 +148,9 @@
   <data name="고통의 근원" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\고통의 근원.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="골든 클로버 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\골든 클로버 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="도미네이터 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\도미네이터 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -154,8 +160,14 @@
   <data name="매커네이터 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\매커네이터 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="몽환의 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몽환의 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="벤전스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\벤전스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="분노한 자쿰의 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\분노한 자쿰의 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="실버블라썸_링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\실버블라썸 링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -186,6 +198,9 @@
   </data>
   <data name="코스모스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\코스모스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="타일런트 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\타일런트 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="타임리스 펜던트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\타임리스 펜던트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

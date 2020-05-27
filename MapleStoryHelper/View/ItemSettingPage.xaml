@@ -73,9 +73,13 @@
                 <Button Content="펜던트"
                         CommandParameter="Pendant"
                         Click="ItemSetting_Button_Click"/>
-                <Button Content="무기"
-                        CommandParameter="Weapon"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Weapon"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="무기"/>
+                        <Image x:Name="imgWeapon"/>
+                    </Grid>
+                </Button>
                 <Button Content="벨트"
                         CommandParameter="Belt"
                         Click="ItemSetting_Button_Click"/>

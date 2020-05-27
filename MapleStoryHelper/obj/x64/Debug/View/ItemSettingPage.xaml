@@ -32,35 +32,35 @@
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='32' x:Name="imgRing1"/>
+                        <Image x:ConnectionId='33' x:Name="imgRing1"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='4' CommandParameter="Ring2"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='31' x:Name="imgRing2"/>
+                        <Image x:ConnectionId='32' x:Name="imgRing2"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='5' CommandParameter="Ring3"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='30' x:Name="imgRing3"/>
+                        <Image x:ConnectionId='31' x:Name="imgRing3"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='6' CommandParameter="Ring4"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='29' x:Name="imgRing4"/>
+                        <Image x:ConnectionId='30' x:Name="imgRing4"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='7' CommandParameter="Pocket"
                                                         >
                     <Grid>
                         <TextBlock Text="포켓"/>
-                        <Image x:ConnectionId='28' x:Name="imgPocket"/>
+                        <Image x:ConnectionId='29' x:Name="imgPocket"/>
                     </Grid>
                 </Button>
                 
@@ -73,9 +73,13 @@
                 <Button x:ConnectionId='9' Content="펜던트"
                         CommandParameter="Pendant"
                                                         />
-                <Button x:ConnectionId='10' Content="무기"
-                        CommandParameter="Weapon"
-                                                        />
+                <Button x:ConnectionId='10' CommandParameter="Weapon"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="무기"/>
+                        <Image x:ConnectionId='28' x:Name="imgWeapon"/>
+                    </Grid>
+                </Button>
                 <Button x:ConnectionId='11' Content="벨트"
                         CommandParameter="Belt"
                                                         />

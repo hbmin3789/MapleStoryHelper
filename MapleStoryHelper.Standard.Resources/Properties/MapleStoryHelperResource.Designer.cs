@@ -299,5 +299,55 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         }
 
         #endregion
+
+        #region Belt
+
+        [ResourceInfo("타일런트 벨트", "01132178", EEquipmentCategory.Belt)]
+        public static byte[] Item_TylentBelt
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("타일런트 벨트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("타일런트 벨트", "01132178", EEquipmentCategory.Belt)]
+        public static object Xml_TylentBelt
+        {
+            get => ResourceManager.GetObject("01132178", resourceCulture);
+        }
+
+        [ResourceInfo("몽환의 벨트", "01242123", EEquipmentCategory.Belt)]
+        public static byte[] Item_DreamyBelt
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("몽환의 벨트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("분노한 자쿰의 벨트", "01242123", EEquipmentCategory.Belt)]
+        public static byte[] Item_EnragedZakumBelt
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("분노한 자쿰의 벨트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("골든 클로버 벨트", "01242123", EEquipmentCategory.Belt)]
+        public static byte[] Item_GoldenCloverBelt
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("골든 클로버 벨트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        #endregion
     }
 }

@@ -53,25 +53,13 @@ namespace MapleStoryHelper.Standard.Resources
 
         public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, ECharacterJob characterJob)
         {
+            //EquipmentItem을 Weapon으로 형변환하고 그상태로 어트리뷰트 데이터를 집어넣으면 될듯
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
-            string StringTemp = category.ToString().Replace("1", "").Replace("2", "").Replace("3", "").Replace("4", "");
-
-            var values = Enum.GetValues(typeof(EEquipmentCategory));
-            EEquipmentCategory categoryTemp = EEquipmentCategory.Ring;
-
-            for (int i = 0; i < values.Length; i++)
-            {
-                if (values.GetValue(i).ToString() == StringTemp)
-                {
-                    categoryTemp = (EEquipmentCategory)values.GetValue(i);
-                    break;
-                }
-            }
-
-            AddInfoToList(ref retval, categoryTemp);
+            retval = GetEquipmentList(category);
 
             var temp = retval.Where(x => x.CharacterCategory != characterJob).ToList();
+
 
             for(int i = 0; i < temp.Count; i++)
             {
@@ -96,7 +84,9 @@ namespace MapleStoryHelper.Standard.Resources
                 if (properties[i].Name.Contains("Item_") == true &&
                     attributes?[i]?.Category == category)
                 {
-                    EquipmentItem newItem = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
+                    EquipmentItem newItem = new EquipmentItem();
+
+                    newItem = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
 
                     newItem.ImgByte = imgList[idx];
                     newItem.EquipmentCategory = category;

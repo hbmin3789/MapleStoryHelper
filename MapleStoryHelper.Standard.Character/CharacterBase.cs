@@ -4,6 +4,7 @@ using MapleStoryHelper.Standard.Resources;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -125,7 +126,11 @@ namespace MapleStoryHelper.Standard.Character
         [NotMapped]
         public CharacterEquipment CharacterEquipment
         {
-            get => _characterEquipment;
+            get
+            {
+                CharacterEquipment_OnEquipChanged();
+                return _characterEquipment;
+            }
             set => SetProperty(ref _characterEquipment, value);
         }
 
@@ -137,15 +142,29 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _characterImage, value);
         }
 
+        private int _minStatusAttackBinding;
         public int MinStatusAttackBinding
         {
-            get => GetMinStatusAttack(MainStatus, SubStatus);
+            get
+            {
+                _minStatusAttackBinding = GetMinStatusAttack();
+                return _minStatusAttackBinding;
+            }
+            set => SetProperty(ref _minStatusAttackBinding, value);
         }
 
+        private int _maxStatusAttackBinding;
         public int MaxStatusAttackBinding
         {
-            get => GetMaxStatusAttack(MainStatus, SubStatus);
+            get
+            {
+                _maxStatusAttackBinding = GetMaxStatusAttack();
+                return _maxStatusAttackBinding;
+            }
+            set => SetProperty(ref _maxStatusAttackBinding, value);
         }
+
+        
 
         #endregion
 
@@ -160,6 +179,12 @@ namespace MapleStoryHelper.Standard.Character
             _characterImage = new MHResource();
             _jobLevel = EJobLevel.First;
             _level = 1;
+        }
+
+        private void CharacterEquipment_OnEquipChanged()
+        {
+            MaxStatusAttackBinding = GetMaxStatusAttack();
+            MinStatusAttackBinding = GetMinStatusAttack();
         }
 
         public void SetCharacterJob(ECharacterJob characterJob)
@@ -199,6 +224,16 @@ namespace MapleStoryHelper.Standard.Character
                 마법 공격력 : (주스탯 × 4 + 부스탯) × 총  마력 × 무기상수 × 직업상수 × (1 + 마력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
         데벤져                HP(AP투자) 14당 주스탯 환산값 1, 아이템HP 17.5당 주스탯 환산값 1, 힘이 부스탯
         */
+
+        protected virtual int GetMinStatusAttack()
+        {
+            return GetMinStatusAttack(MainStatus, SubStatus);
+        }
+
+        protected virtual int GetMaxStatusAttack()
+        {
+            return GetMaxStatusAttack(MainStatus, SubStatus);
+        }
 
         public int GetMaxStatusAttack(EStatus main, EStatus sub)
         {
@@ -288,9 +323,9 @@ namespace MapleStoryHelper.Standard.Character
         {
             CharacterStatus retval = new CharacterStatus();
 
-            for (int i = 0; i < CharacterEquipment.EquipList.Count; i++)
+            for (int i = 0; i < _characterEquipment.EquipList.Count; i++)
             {
-                retval = retval + (CharacterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
+                retval = retval + (_characterEquipment.EquipList.ElementAt(i).Value.Status.GetStatus<CharacterStatus>() as CharacterStatus);
             }
 
             return retval;

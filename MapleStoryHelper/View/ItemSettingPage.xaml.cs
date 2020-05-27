@@ -75,10 +75,18 @@ namespace MapleStoryHelper.View
         {
             control.OnSaved?.Invoke(this, null);
             var character = (Character)this.DataContext;
+
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
+
+            if (control.Category == ECharacterEquipmentCategory.Weapon)
+            {
+                var temp = character.CharacterEquipment.EquipList[control.Category];
+                character.WeaponConst = (temp as Weapon).WeaponConst;
+            }
+
             UpdateView();
             ctrlStatusDisplay.DataContext = character;
-            //imgRing1.Source = control.EquipmentItem.ImgBitmapSource as BitmapImage;
+            ctrlStatusDisplay.UpdateLayout();
         }
 
         private void UpdateView()
@@ -89,6 +97,7 @@ namespace MapleStoryHelper.View
             imgRing3.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgBitmapSource as BitmapImage;
             imgRing4.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring4].ImgBitmapSource as BitmapImage;
             imgPocket.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Pocket].ImgBitmapSource as BitmapImage;
+            imgWeapon.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgBitmapSource as BitmapImage;
         }
 
         private ECharacterEquipmentCategory GetCategory(string CommandParameter)

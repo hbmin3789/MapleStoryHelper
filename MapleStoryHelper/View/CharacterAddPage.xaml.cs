@@ -150,6 +150,14 @@ namespace MapleStoryHelper.View
             {
                 gdSpecSetting.Visibility = Visibility.Collapsed;
             }
+
+            if((ECharacterJob)(cbCharacterJob.SelectedIndex) == ECharacterJob.Xenon)
+            {
+                App.mapleStoryHelperViewModel.NewCharacterItem = new Xenon();
+                App.mapleStoryHelperViewModel.NewCharacterItem.CharacterJob = (this.DataContext as Character).CharacterJob;
+
+                SetCharacter(App.mapleStoryHelperViewModel.NewCharacterItem);
+            }
         }
     }
 }

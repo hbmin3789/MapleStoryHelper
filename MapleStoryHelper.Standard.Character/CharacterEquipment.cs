@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -16,17 +17,6 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _equipList, value);
         }
 
-        public EquipmentItem Ring1
-        {
-            get => EquipList[ECharacterEquipmentCategory.Ring1];
-            set
-            {
-                var equip = _equipList[ECharacterEquipmentCategory.Ring1];
-                SetProperty(ref equip, value);
-            }
-        }
-
-
         public CharacterEquipment()
         {
             InitVariables();
@@ -35,7 +25,7 @@ namespace MapleStoryHelper.Standard.Character
 
         private void InitVariables()
         {
-            EquipList = new Dictionary<ECharacterEquipmentCategory, EquipmentItem>();
+            _equipList = new Dictionary<ECharacterEquipmentCategory, EquipmentItem>();
         }
 
         private void InitEquipList()
@@ -43,7 +33,15 @@ namespace MapleStoryHelper.Standard.Character
             var CategoryItems = Enum.GetValues(typeof(ECharacterEquipmentCategory));
             for(int i = 0; i < CategoryItems.Length; i++)
             {
-                EquipList.Add((ECharacterEquipmentCategory)CategoryItems.GetValue(i), new EquipmentItem());
+                var category = (ECharacterEquipmentCategory)CategoryItems.GetValue(i);
+                if(category == ECharacterEquipmentCategory.Weapon)
+                {
+                    _equipList.Add(category, new Weapon());
+                }
+                else
+                {
+                    _equipList.Add(category, new EquipmentItem());
+                }
             }
         }
 

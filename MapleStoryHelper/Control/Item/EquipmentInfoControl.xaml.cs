@@ -62,20 +62,28 @@ namespace MapleStoryHelper.Control.Item
             EquipmentItem.Status = EquipmentItem.Status + GetPotentialStatus();
         }
 
-        public async Task InitEquipComboBox(ECharacterEquipmentCategory category,Character character)
+        public async Task InitEquipComboBox(ECharacterEquipmentCategory category,CharacterBase character)
         {
             List<EquipmentItem> items = new List<EquipmentItem>();
 
-            var list = MHResourceManager.GetEquipmentList(category, character.CharacterJob);
+            var list = new List<EquipmentItem>();
+
+            if (category == ECharacterEquipmentCategory.Weapon)
+            {
+                list = MHResourceManager.GetEquipmentList(category, character.CharacterJob);
+                EquipmentItem = new Weapon();
+            }
+            else
+            {
+                list = MHResourceManager.GetEquipmentList(category);
+            }
+            
 
             for (int i = 0; i < list.Count; i++)
             {
-                EquipmentItem newItem = new EquipmentItem();
+                list[i].ImgBitmapSource = await list[i].ImgByte.LoadImage();
 
-                newItem = list[i].Clone() as EquipmentItem;
-                newItem.ImgBitmapSource = await newItem.ImgByte.LoadImage();
-
-                items.Add(newItem);
+                items.Add(list[i]);
             }
 
             cbItems.ItemsSource = items;
@@ -93,6 +101,12 @@ namespace MapleStoryHelper.Control.Item
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = cbItems.SelectedItem as EquipmentItem;
+
+            if (Category == ECharacterEquipmentCategory.Weapon)
+            {
+                item = cbItems.SelectedItem as Weapon;
+            }
+
             this.DataContext = item;
         }
     }

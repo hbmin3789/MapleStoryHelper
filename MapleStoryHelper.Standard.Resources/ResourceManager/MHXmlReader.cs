@@ -15,8 +15,29 @@ namespace MapleStoryHelper.Standard.Resources
     {
         public static EquipmentItem GetEquipmentInfo(string Code, EEquipmentCategory category)
         {
-            EquipmentItem retval = new EquipmentItem();
+            EquipmentItem retval;
+
+            retval = new EquipmentItem();
+
+            if (category == EEquipmentCategory.Weapon)
+            {
+                retval = new Weapon();
+
+                var resType = typeof(Properties.MapleStoryHelperResource);
+                var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+                for(int i = 0; i < properties.Count(); i++)
+                {
+                    var attribute = GetResourceNameAttribute(properties[i]);
+                    if(attribute is WeaponResourceInfoAttribute &&
+                       attribute.ItemCode == Code)
+                    {
+                        (retval as Weapon).WeaponConst = (attribute as WeaponResourceInfoAttribute).WeaponConst;
+                    }
+                }
+            }
+
             var xmlList = GetEquipmentXmlList(category);
+
 
             for (int i = 0; i < xmlList.Count; i++)
             {
@@ -83,7 +104,7 @@ namespace MapleStoryHelper.Standard.Resources
             }
         }
 
-        private static List<XmlDocument> GetEquipmentXmlList(EEquipmentCategory category)
+        protected static List<XmlDocument> GetEquipmentXmlList(EEquipmentCategory category)
         {
             List<XmlDocument> retval = new List<XmlDocument>();
 
@@ -106,12 +127,17 @@ namespace MapleStoryHelper.Standard.Resources
             return retval;
         }
 
-        private static ResourceInfoAttribute GetResourceNameAttribute(PropertyInfo propertyInfo)
+        protected static ResourceInfoAttribute GetResourceNameAttribute(PropertyInfo propertyInfo)
         {
             var attrs = propertyInfo.GetCustomAttributes().ToList();
 
             for (int i = 0; i < attrs.Count(); i++)
             {
+                if (attrs[i] is WeaponResourceInfoAttribute)
+                {
+                    return attrs[i] as WeaponResourceInfoAttribute;
+                }
+
                 if (attrs[i] is ResourceInfoAttribute)
                 {
                     return attrs[i] as ResourceInfoAttribute;
