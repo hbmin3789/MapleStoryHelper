@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace MapleStoryHelper.Standard.Resources.Properties {
+    using MapleStoryHelper.Standard.Character;
     using MapleStoryHelper.Standard.Item.Equipment;
     using MapleStoryHelper.Standard.Resources.Attributes;
     using System;
@@ -344,6 +345,154 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             get
             {
                 object obj = ResourceManager.GetObject("골든 클로버 벨트", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        #endregion
+
+        #region Cap
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 나이트햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Worrior, 0)]
+        public static byte[] Item_ArcaneShadeCap_Worrior
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 나이트햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 아처햇", "01242123", EEquipmentCategory.Cap, EJobCategory.Archer, 0)]
+        public static byte[] Item_ArcaneShadeCap_Archer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 아처햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("아케인셰이드 메이지햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Magician, 0)]
+        public static byte[] Item_ArcaneShadeCap_Magician
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 메이지햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 시프햇", "01242123", EEquipmentCategory.Cap, EJobCategory.Thief, 0)]
+        public static byte[] Item_ArcaneShadeCap_Thief
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 시프햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("아케인셰이드 파이렛햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Pirate, 0)]
+        public static byte[] Item_ArcaneShadeCap_Pirate
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 파이렛햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 나이트헬름", "01242124", EEquipmentCategory.Cap, EJobCategory.Worrior, 0)]
+        public static byte[] Item_AbsolabsCap_Worrior
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 나이트헬름", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 아처후드", "01242123", EEquipmentCategory.Cap, EJobCategory.Archer, 0)]
+        public static byte[] Item_AbsolabsCap_Archer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 아처후드", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("앱솔랩스 메이지크라운", "01242124", EEquipmentCategory.Cap, EJobCategory.Magician, 0)]
+        public static byte[] Item_AbsolabsCap_Magician
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 메이지크라운", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 시프캡", "01242123", EEquipmentCategory.Cap, EJobCategory.Thief, 0)]
+        public static byte[] Item_AbsolabsCap_Thief
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 시프캡", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("앱솔랩스 파이렛페도라", "01242124", EEquipmentCategory.Cap, EJobCategory.Pirate, 0)]
+        public static byte[] Item_AbsolabsCap_Pirate
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 파이렛페도라", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("하이네스 워리어헬름", "01242124", EEquipmentCategory.Cap, EJobCategory.Worrior, 0)]
+        public static byte[] Item_ChaosRootAbyssCap_Worrior
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("하이네스 워리어헬름", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("하이네스 레인져베레", "01242123", EEquipmentCategory.Cap, EJobCategory.Archer, 0)]
+        public static byte[] Item_ChaosRootAbyssCap_Archer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("하이네스 레인져베레", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("하이네스 던위치햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Magician, 0)]
+        public static byte[] Item_ChaosRootAbyssCap_Magician
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("하이네스 던위치햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("하이네스 어새신보닛", "01242123", EEquipmentCategory.Cap, EJobCategory.Thief, 0)]
+        public static byte[] Item_ChaosRootAbyssCap_Thief
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("하이네스 어새신보닛", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        [EquipmentResourceInfoAttribute("하이네스 원더러햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Pirate, 0)]
+        public static byte[] Item_ChaosRootAbyssCap_Pirate
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("하이네스 원더러햇", resourceCulture);
                 return ((byte[])(obj));
             }
         }

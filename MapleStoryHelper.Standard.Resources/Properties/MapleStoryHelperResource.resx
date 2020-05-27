@@ -172,8 +172,38 @@
   <data name="실버블라썸_링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\실버블라썸 링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="아케인셰이드 나이트햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\아케인셰이드 나이트햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="아케인셰이드 메이지햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\아케인셰이드 메이지햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="아케인셰이드 시프햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\아케인셰이드 시프햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="아케인셰이드 아처햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\아케인셰이드 아처햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="아케인셰이드 파이렛햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\아케인셰이드 파이렛햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 나이트헬름" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 나이트헬름.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 메이지크라운" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 메이지크라운.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 시프캡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 시프캡.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 아처후드" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 아처후드.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="앱솔랩스 에너지소드" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\앱솔랩스 에너지소드.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="앱솔랩스 파이렛페도라" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\앱솔랩스 파이렛페도라.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="오닉스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\오닉스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -213,6 +243,21 @@
   </data>
   <data name="핑크빛 성배" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\핑크빛 성배.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="하이네스 던위치햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\하이네스 던위치햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="하이네스 레인져베레" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\하이네스 레인져베레.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="하이네스 어새신보닛" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\하이네스 어새신보닛.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="하이네스 워리어헬름" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\하이네스 워리어헬름.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="하이네스 원더러햇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\하이네스 원더러햇.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="혼테일의 목걸이" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\혼테일의 목걸이.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
