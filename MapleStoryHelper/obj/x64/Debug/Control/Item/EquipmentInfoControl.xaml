@@ -93,49 +93,49 @@
                             </StackPanel>
                             <StackPanel Grid.Column="1">
                                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기본"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Str}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Dex}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Int}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Luk}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.HP}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MP}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.AttackPower}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MagicAttack}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.PAllStatus}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Damage}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.BossDamage}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.IgnoreDefBinding}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Critical}"/>
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.CriticalDamage}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Str, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Dex, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Int, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Luk, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.HP, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MP, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.AttackPower, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.MagicAttack, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.PAllStatus, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Damage, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.BossDamage, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.IgnoreDefBinding, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.Critical, Mode=TwoWay}"/>
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="{Binding Status.CriticalDamage, Mode=TwoWay}"/>
                             </StackPanel>
                             <StackPanel Grid.Column="2">
                                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="주문서"/>
-                                <TextBox Text="{Binding Status.AdStr}"/>
-                                <TextBox Text="{Binding Status.AdDex}"/>
-                                <TextBox Text="{Binding Status.AdInt}"/>
-                                <TextBox Text="{Binding Status.AdLuk}"/>
-                                <TextBox Text="{Binding Status.AdHP}"/>
-                                <TextBox Text="{Binding Status.AdMP}"/>
-                                <TextBox Text="{Binding Status.AdAttack}"/>
-                                <TextBox Text="{Binding Status.AdMagic}"/>
-                                <TextBox Text="{Binding Status.AdPAllStatus}"/>
-                                <TextBox Text="{Binding Status.AdDamage}"/>
-                                <TextBox Text="{Binding Status.AdBossDamage}"/>
-                                <TextBox Text="{Binding Status.AdIgnoreDefBinding}"/>
-                                <TextBox Text="{Binding Status.AdCritical}"/>
-                                <TextBox Text="{Binding Status.AdCriticalDamage}"/>
+                                <TextBox Text="{Binding Status.ScStr, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScDex, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScInt, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScLuk, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScHP, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScMP, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScAttack, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScMagic, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.ScAllStatus, Mode=TwoWay}"/>
                             </StackPanel>
                             <StackPanel Grid.Column="3">
                                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기타"/>
-                                <TextBox Text="{Binding Status.ScStr}"/>
-                                <TextBox Text="{Binding Status.ScDex}"/>
-                                <TextBox Text="{Binding Status.ScInt}"/>
-                                <TextBox Text="{Binding Status.ScLuk}"/>
-                                <TextBox Text="{Binding Status.ScHP}"/>
-                                <TextBox Text="{Binding Status.ScMP}"/>
-                                <TextBox Text="{Binding Status.ScAttack}"/>
-                                <TextBox Text="{Binding Status.ScMagic}"/>
-                                <TextBox Text="{Binding Status.ScAllStatus}"/>
+                                <TextBox Text="{Binding Status.AdStr, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdDex, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdInt, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdLuk, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdHP, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdMP, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdAttack, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdMagic, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdPAllStatus, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdDamage, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdBossDamage, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdIgnoreDefBinding, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdCritical, Mode=TwoWay}"/>
+                                <TextBox Text="{Binding Status.AdCriticalDamage, Mode=TwoWay}"/>
                             </StackPanel>
                         </Grid>
                     </StackPanel>

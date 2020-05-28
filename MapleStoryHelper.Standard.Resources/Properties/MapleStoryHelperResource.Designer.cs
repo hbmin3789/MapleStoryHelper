@@ -353,7 +353,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Cap
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 나이트햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Worrior, 0)]
+        [EquipmentResourceInfoAttribute("아케인셰이드 나이트햇", "01004808", EEquipmentCategory.Cap, EJobCategory.Worrior, 0)]
         public static byte[] Item_ArcaneShadeCap_Worrior
         {
             get
@@ -363,16 +363,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 아처햇", "01242123", EEquipmentCategory.Cap, EJobCategory.Archer, 0)]
-        public static byte[] Item_ArcaneShadeCap_Archer
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 아처햇", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        [EquipmentResourceInfoAttribute("아케인셰이드 메이지햇", "01242124", EEquipmentCategory.Cap, EJobCategory.Magician, 0)]
+        [EquipmentResourceInfoAttribute("아케인셰이드 메이지햇", "01004809", EEquipmentCategory.Cap, EJobCategory.Magician, 0)]
         public static byte[] Item_ArcaneShadeCap_Magician
         {
             get
@@ -381,6 +372,17 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
                 return ((byte[])(obj));
             }
         }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 아처햇", "01004810", EEquipmentCategory.Cap, EJobCategory.Archer, 0)]
+        public static byte[] Item_ArcaneShadeCap_Archer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 아처햇", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
 
         [EquipmentResourceInfoAttribute("아케인셰이드 시프햇", "01242123", EEquipmentCategory.Cap, EJobCategory.Thief, 0)]
         public static byte[] Item_ArcaneShadeCap_Thief
@@ -495,6 +497,18 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
                 object obj = ResourceManager.GetObject("하이네스 원더러햇", resourceCulture);
                 return ((byte[])(obj));
             }
+        }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 나이트햇", "01004808", EEquipmentCategory.Cap, (EJobCategory)1, 0)]
+        public static object Xml_ArcaneShadeCap_Worrior
+        {
+            get => ResourceManager.GetObject("01242124", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01004809", EEquipmentCategory.Cap, (EJobCategory)2, 0)]
+        public static object Xml_ArcaneShadeCap_Magician
+        {
+            get => ResourceManager.GetObject("01242123", resourceCulture);
         }
 
         #endregion

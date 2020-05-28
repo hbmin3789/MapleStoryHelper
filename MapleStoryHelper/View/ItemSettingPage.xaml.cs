@@ -33,6 +33,21 @@ namespace MapleStoryHelper.View
     public sealed partial class ItemSettingPage : Page
     {
 
+        public object DataContextBinding
+        {
+            get
+            {
+                return this.DataContext;
+            }
+            set
+            {
+                this.DataContext = value;
+                UpdateView();
+                ctrlStatusDisplay.DataContextBinding = new Character();
+                ctrlStatusDisplay.DataContextBinding = value;
+            }
+        }
+
         public ItemSettingPage()
         {
             this.InitializeComponent();
@@ -48,7 +63,7 @@ namespace MapleStoryHelper.View
             var control = new EquipmentInfoControl();
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
 
-            await control.InitEquipComboBox(category, this.DataContext as Character);
+            await control.InitEquipComboBox(category, DataContextBinding as Character);
             control.Category = category;
 
             ContentDialog noWifiDialog = new ContentDialog
@@ -67,14 +82,13 @@ namespace MapleStoryHelper.View
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var datacontext = (Character)e.Parameter;
-            this.DataContext = datacontext;
-            ctrlStatusDisplay.DataContext = datacontext.CharacterStatus;
+            DataContextBinding = datacontext;
         }
 
         private void OnItemSave(EquipmentInfoControl control)
         {
             control.OnSaved?.Invoke(this, null);
-            var character = (Character)this.DataContext;
+            var character = (Character)DataContextBinding;
 
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
 
@@ -85,15 +99,12 @@ namespace MapleStoryHelper.View
             }
 
             UpdateView();
-            ctrlStatusDisplay.DataContext = null;
-            ctrlStatusDisplay.DataContext = character;
-            ctrlStatusDisplay.UpdateLayout();
-            
+            DataContextBinding = character;
         }
 
         private void UpdateView()
         {
-            var character = (Character)this.DataContext;
+            var character = (Character)DataContextBinding;
             imgRing1.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring1].ImgBitmapSource as BitmapImage;
             imgRing2.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring2].ImgBitmapSource as BitmapImage;
             imgRing3.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgBitmapSource as BitmapImage;
@@ -115,6 +126,21 @@ namespace MapleStoryHelper.View
             }
 
             return ECharacterEquipmentCategory.Ring1;
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            var ContentFrame = Window.Current.Content as Frame;
+            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            var character = DataContextBinding as Character;
+            character.InitEquipment();
+
+            var ContentFrame = Window.Current.Content as Frame;
+            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
         }
     }
 }

@@ -56,7 +56,12 @@ namespace MapleStoryHelper.ViewModel
 
         public void AddCharacter(bool result)
         {
-            
+            if(result == true)
+            {
+                CharacterItems.Add(NewCharacterItem);
+            }
+
+            NewCharacterItem = new Character();
         }
 
         #endregion

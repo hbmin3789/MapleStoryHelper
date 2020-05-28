@@ -40,8 +40,7 @@ namespace MapleStoryHelper.Control.Item
                 _category = value;
             }
         }
-
-        private EquipmentItem _equipmentItem;
+        
         public EquipmentItem EquipmentItem 
         {
             get => this.DataContext as EquipmentItem;
@@ -75,7 +74,7 @@ namespace MapleStoryHelper.Control.Item
             }
             else
             {
-                list = MHResourceManager.GetEquipmentList(category);
+                list = MHResourceManager.GetEquipmentList(category, character.JobCategory);
             }
             
 

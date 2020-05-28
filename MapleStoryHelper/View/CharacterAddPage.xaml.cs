@@ -69,7 +69,7 @@ namespace MapleStoryHelper.View
         public void SetCharacter(Character character)
         {
             this.DataContext = character;
-            ctrlStatusDisplay.DataContext = character;
+            ctrlStatusDisplay.DataContextBinding = character;
         }
 
         private async void btnSave_Click(object sender, RoutedEventArgs e)
@@ -93,7 +93,8 @@ namespace MapleStoryHelper.View
             if (result == true)
             {
                 App.mapleStoryHelperViewModel.AddCharacter(result);
-                this.Visibility = Visibility.Collapsed;
+                var ContentFrame = Window.Current.Content as Frame;
+                ContentFrame.Navigate(typeof(MainPage), null, new DrillInNavigationTransitionInfo());
             }
         }
 

@@ -12,12 +12,9 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
 {
-    [Table("character")]
     public class CharacterBase : BindableBase
     {
         private string _primaryKey;
-        [Key]
-        [Column("primarykey")]
         public string PrimaryKey
         {
             get => _primaryKey;
@@ -30,7 +27,6 @@ namespace MapleStoryHelper.Standard.Character
         public EStatus SubStatus { get; set; }
 
         private string _imageSrc;
-        [Column("image_source")]
         public string ImageSrc
         {
             get=>_imageSrc;
@@ -38,7 +34,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private string _characterName;
-        [Column("character_name")]
         public string CharacterName
         {
             get => _characterName;
@@ -54,7 +49,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private int _level;
-        [Column("level")]
         public int Level
         {
             get => _level;
@@ -62,7 +56,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private ECharacterJob _characterJob;
-        [Column("character_job")]
         public ECharacterJob CharacterJob
         {
             get => _characterJob;
@@ -70,7 +63,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private EJobCategory _jobCategory;
-        [Column("job_category")]
         public EJobCategory JobCategory
         {
             get => _jobCategory;
@@ -78,7 +70,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private StatusBase _characterStatus;
-        [NotMapped]
         public StatusBase CharacterStatus
         {
             get
@@ -93,7 +84,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private bool _isUseAttackPower;
-        [Column("is_use_attackpower")]
         public bool IsUseAttackPower
         {
             get => _isUseAttackPower;
@@ -101,7 +91,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private double _weaponConst;
-        [Column("weapon_const")]
         public double WeaponConst
         {
             get => _weaponConst;
@@ -109,7 +98,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private double _jobConst;
-        [Column("job_const")]
         public double JobConst
         {
             get => _jobConst;
@@ -117,7 +105,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private EJobLevel _jobLevel;
-        [Column("job_level")]
         public EJobLevel JobLevel
         {
             get => _jobLevel;
@@ -125,7 +112,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private CharacterEquipment _characterEquipment;
-        [NotMapped]
         public CharacterEquipment CharacterEquipment
         {
             get
@@ -137,7 +123,6 @@ namespace MapleStoryHelper.Standard.Character
         }
 
         private MHResource _characterImage;
-        [NotMapped]
         public MHResource CharacterImage
         {
             get => _characterImage;
@@ -165,8 +150,6 @@ namespace MapleStoryHelper.Standard.Character
             }
             set => SetProperty(ref _maxStatusAttackBinding, value);
         }
-
-        
 
         #endregion
 

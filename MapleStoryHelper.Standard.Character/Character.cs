@@ -16,6 +16,9 @@ namespace MapleStoryHelper.Standard.Character
 
         }
 
-        
+        public void InitEquipment()
+        {
+            this.CharacterEquipment = new CharacterEquipment();
+        }
     }
 }

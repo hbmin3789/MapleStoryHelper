@@ -47,11 +47,11 @@
                         <TextBox Text="크리티컬 확률"/>
                         <TextBox Text="크리티컬 데미지"/>
                     </StackPanel>
-                    <StackPanel Grid.Column="1">
+                    <StackPanel x:ConnectionId='2' x:Name="spStatus1" Grid.Column="1">
                         <TextBox Text="{Binding CharacterStatus.AttackPower}"/>
                         <TextBox Text="{Binding CharacterStatus.MagicAttack}"/>
-                        <TextBox Text="{Binding CharacterStatus.PAttackBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PMagicBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.PAttackPower}"/>
+                        <TextBox Text="{Binding CharacterStatus.PMagicAttack}"/>
                         <TextBox Text="{Binding CharacterStatus.Damage}"/>
                         <TextBox Text="{Binding CharacterStatus.BossDamage}"/>
                         <TextBox Text="{Binding CharacterStatus.IgnoreDefBinding}"/>
@@ -74,7 +74,7 @@
                         <TextBox Text="MP%"/>
 
                     </StackPanel>
-                    <StackPanel Grid.Column="3">
+                    <StackPanel x:ConnectionId='3' x:Name="spStatus2" Grid.Column="3">
                         <TextBox Text="{Binding CharacterStatus.StrBinding}"/>
                         <TextBox Text="{Binding CharacterStatus.DexBinding}"/>
                         <TextBox Text="{Binding CharacterStatus.IntBinding}"/>

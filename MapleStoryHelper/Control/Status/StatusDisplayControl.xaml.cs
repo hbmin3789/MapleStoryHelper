@@ -17,7 +17,15 @@ using Windows.UI.Xaml.Navigation;
 namespace MapleStoryHelper.Control
 {
     public sealed partial class StatusDisplayControl : UserControl
-    {        
+    {
+        public object DataContextBinding
+        {
+            get => this.DataContext;
+            set
+            {
+                this.DataContext = value;
+            }
+        }
 
         public StatusDisplayControl()
         {

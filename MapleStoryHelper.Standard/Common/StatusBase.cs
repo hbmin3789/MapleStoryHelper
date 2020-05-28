@@ -10,7 +10,7 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard
 {
-    [Table("status")]
+
     public class StatusBase : BindableBase
     {
         public static StatusBase operator +(StatusBase a, StatusBase b)
@@ -62,8 +62,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private string _primaryKey;
-        [Key]
-        [Column("key")]
         public string PrimaryKey
         {
             get => _primaryKey;
@@ -155,24 +153,48 @@ namespace MapleStoryHelper.Standard
             get => GetPMP();
         }
 
+        public int CriticalBinding
+        {
+            get => Critical;
+        }
+
+        public double CriticalDamageBinding
+        {
+            get => CriticalDamage;
+        }
+
+        public double DamageBinding
+        {
+            get => Damage;
+        }
+
+        public double BossDamageBinding
+        {
+            get => BossDamage;
+        }
+
         #endregion
 
         #region Percentable Status
 
         private int _allStatus;
-        [Column("allstatus")]
         public int AllStatus
         {
             get => _allStatus;
-            set => SetProperty(ref _allStatus, value);
+            set
+            {
+                SetProperty(ref _allStatus, value);
+            }
         }
 
         private double _str;
-        [Column("str")]
         public double Str
         {
             get => _str;
-            set => SetProperty(ref _str, value);
+            set 
+            {
+                SetProperty(ref _str, value);
+            }
         }
 
         private double _dex;

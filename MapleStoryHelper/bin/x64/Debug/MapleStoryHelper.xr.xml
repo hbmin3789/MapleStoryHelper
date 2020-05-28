@@ -10,15 +10,6 @@
     <RootPropertyPathName Name="ImageSrc" />
     <RootPropertyPathName Name="CharacterItems" />
     <RootPropertyPathName Name="Status" />
-    <RootPropertyPathName Name="ScAllStatus" />
-    <RootPropertyPathName Name="ScMagic" />
-    <RootPropertyPathName Name="ScAttack" />
-    <RootPropertyPathName Name="ScMP" />
-    <RootPropertyPathName Name="ScHP" />
-    <RootPropertyPathName Name="ScLuk" />
-    <RootPropertyPathName Name="ScInt" />
-    <RootPropertyPathName Name="ScDex" />
-    <RootPropertyPathName Name="ScStr" />
     <RootPropertyPathName Name="AdCriticalDamage" />
     <RootPropertyPathName Name="AdCritical" />
     <RootPropertyPathName Name="AdIgnoreDefBinding" />
@@ -33,6 +24,15 @@
     <RootPropertyPathName Name="AdInt" />
     <RootPropertyPathName Name="AdDex" />
     <RootPropertyPathName Name="AdStr" />
+    <RootPropertyPathName Name="ScAllStatus" />
+    <RootPropertyPathName Name="ScMagic" />
+    <RootPropertyPathName Name="ScAttack" />
+    <RootPropertyPathName Name="ScMP" />
+    <RootPropertyPathName Name="ScHP" />
+    <RootPropertyPathName Name="ScLuk" />
+    <RootPropertyPathName Name="ScInt" />
+    <RootPropertyPathName Name="ScDex" />
+    <RootPropertyPathName Name="ScStr" />
     <RootPropertyPathName Name="CriticalDamage" />
     <RootPropertyPathName Name="Critical" />
     <RootPropertyPathName Name="IgnoreDefBinding" />
@@ -65,8 +65,8 @@
     <RootPropertyPathName Name="IntBinding" />
     <RootPropertyPathName Name="DexBinding" />
     <RootPropertyPathName Name="StrBinding" />
-    <RootPropertyPathName Name="PMagicBinding" />
-    <RootPropertyPathName Name="PAttackBinding" />
+    <RootPropertyPathName Name="PMagicAttack" />
+    <RootPropertyPathName Name="PAttackPower" />
     <RootPropertyPathName Name="MaxStatusAttackBinding" />
     <RootPropertyPathName Name="MinStatusAttackBinding" />
   </Roots.PropertyPathNames>

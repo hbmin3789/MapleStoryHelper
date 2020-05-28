@@ -59,7 +59,7 @@ namespace MapleStoryHelper.View
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.DataContext = (EquipmentItem)cbItems.SelectedItem;
-            ctrlStatusDisplay.DataContext = ((EquipmentItem)cbItems.SelectedItem).Status;
+            ctrlStatusDisplay.DataContextBinding = ((EquipmentItem)cbItems.SelectedItem).Status;
             ctrlEquipmentReinforce.DataContext = ((EquipmentItem)cbItems.SelectedItem);
         }
     }

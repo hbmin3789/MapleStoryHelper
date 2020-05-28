@@ -53,7 +53,6 @@ namespace MapleStoryHelper.Standard.Resources
 
         public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, ECharacterJob characterJob)
         {
-            //EquipmentItem을 Weapon으로 형변환하고 그상태로 어트리뷰트 데이터를 집어넣으면 될듯
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             retval = GetEquipmentList(category);
@@ -64,6 +63,26 @@ namespace MapleStoryHelper.Standard.Resources
             for(int i = 0; i < temp.Count; i++)
             {
                 retval.Remove(temp[i]);
+            }
+
+            return retval;
+        }
+
+        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, EJobCategory jobCategory)
+        {
+
+            List<EquipmentItem> retval = new List<EquipmentItem>();
+
+            retval = GetEquipmentList(category);
+
+            if (jobCategory == EJobCategory.Xenon)
+            {
+                retval = retval.Where(x => x.JobCategory == EJobCategory.Pirate || x.JobCategory == EJobCategory.All ||
+                                                     x.JobCategory == EJobCategory.Thief).ToList();
+            }
+            else
+            {
+                retval = retval.Where(x => x.JobCategory == jobCategory || x.JobCategory == EJobCategory.All).ToList();
             }
 
             return retval;
