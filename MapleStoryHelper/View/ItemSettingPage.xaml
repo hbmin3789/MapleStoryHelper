@@ -66,13 +66,21 @@
                 
                 <Border/>
                 <Border/>
-                
-                <Button Content="펜던트"
-                        CommandParameter="Pendant1"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="펜던트"
-                        CommandParameter="Pendant2"
-                        Click="ItemSetting_Button_Click"/>
+
+                <Button CommandParameter="Pendant1"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="펜던트"/>
+                        <Image x:Name="imgPendant1"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Pendant2"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="펜던트"/>
+                        <Image x:Name="imgPendant2"/>
+                    </Grid>
+                </Button>
                 <Button CommandParameter="Weapon"
                         Click="ItemSetting_Button_Click">
                     <Grid>
@@ -80,21 +88,37 @@
                         <Image x:Name="imgWeapon"/>
                     </Grid>
                 </Button>
-                <Button Content="벨트"
-                        CommandParameter="Belt"
-                        Click="ItemSetting_Button_Click"/>
-
-                <Border/>
+                <Button CommandParameter="Belt"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="벨트"/>
+                        <Image x:Name="imgBelt"/>
+                    </Grid>
+                </Button>
                 
-                <Button Content="모자"
-                        CommandParameter="Cap"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="얼장"
-                        CommandParameter="Face"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="눈장"
-                        CommandParameter="Eye"
-                        Click="ItemSetting_Button_Click"/>
+                <Border/>
+
+                <Button CommandParameter="Cap"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="모자"/>
+                        <Image x:Name="imgCap"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Face"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="얼장"/>
+                        <Image x:Name="imgFace"/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Eye"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="눈장"/>
+                        <Image x:Name="imgEye"/>
+                    </Grid>
+                </Button>
                 <Button Content="상의"
                         CommandParameter="Clothes"
                         Click="ItemSetting_Button_Click"/>
@@ -106,6 +130,7 @@
                         Click="ItemSetting_Button_Click"/>
 
                 <Border/>
+                
                 <Border/>
 
                 <Button Content="귀고리"

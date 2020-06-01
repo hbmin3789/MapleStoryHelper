@@ -32,69 +32,93 @@
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='35' x:Name="imgRing1"/>
+                        <Image x:ConnectionId='41' x:Name="imgRing1"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='6' CommandParameter="Ring2"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='34' x:Name="imgRing2"/>
+                        <Image x:ConnectionId='40' x:Name="imgRing2"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='7' CommandParameter="Ring3"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='33' x:Name="imgRing3"/>
+                        <Image x:ConnectionId='39' x:Name="imgRing3"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='8' CommandParameter="Ring4"
                                                         >
                     <Grid>
                         <TextBlock Text="반지"/>
-                        <Image x:ConnectionId='32' x:Name="imgRing4"/>
+                        <Image x:ConnectionId='38' x:Name="imgRing4"/>
                     </Grid>
                 </Button>
                 <Button x:ConnectionId='9' CommandParameter="Pocket"
                                                         >
                     <Grid>
                         <TextBlock Text="포켓"/>
-                        <Image x:ConnectionId='31' x:Name="imgPocket"/>
+                        <Image x:ConnectionId='37' x:Name="imgPocket"/>
                     </Grid>
                 </Button>
                 
                 <Border/>
                 <Border/>
-                
-                <Button x:ConnectionId='10' Content="펜던트"
-                        CommandParameter="Pendant1"
-                                                        />
-                <Button x:ConnectionId='11' Content="펜던트"
-                        CommandParameter="Pendant2"
-                                                        />
+
+                <Button x:ConnectionId='10' CommandParameter="Pendant1"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="펜던트"/>
+                        <Image x:ConnectionId='36' x:Name="imgPendant1"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='11' CommandParameter="Pendant2"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="펜던트"/>
+                        <Image x:ConnectionId='35' x:Name="imgPendant2"/>
+                    </Grid>
+                </Button>
                 <Button x:ConnectionId='12' CommandParameter="Weapon"
                                                         >
                     <Grid>
                         <TextBlock Text="무기"/>
-                        <Image x:ConnectionId='30' x:Name="imgWeapon"/>
+                        <Image x:ConnectionId='34' x:Name="imgWeapon"/>
                     </Grid>
                 </Button>
-                <Button x:ConnectionId='13' Content="벨트"
-                        CommandParameter="Belt"
-                                                        />
-
-                <Border/>
+                <Button x:ConnectionId='13' CommandParameter="Belt"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="벨트"/>
+                        <Image x:ConnectionId='33' x:Name="imgBelt"/>
+                    </Grid>
+                </Button>
                 
-                <Button x:ConnectionId='14' Content="모자"
-                        CommandParameter="Cap"
-                                                        />
-                <Button x:ConnectionId='15' Content="얼장"
-                        CommandParameter="Face"
-                                                        />
-                <Button x:ConnectionId='16' Content="눈장"
-                        CommandParameter="Eye"
-                                                        />
+                <Border/>
+
+                <Button x:ConnectionId='14' CommandParameter="Cap"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="모자"/>
+                        <Image x:ConnectionId='32' x:Name="imgCap"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='15' CommandParameter="Face"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="얼장"/>
+                        <Image x:ConnectionId='31' x:Name="imgFace"/>
+                    </Grid>
+                </Button>
+                <Button x:ConnectionId='16' CommandParameter="Eye"
+                                                        >
+                    <Grid>
+                        <TextBlock Text="눈장"/>
+                        <Image x:ConnectionId='30' x:Name="imgEye"/>
+                    </Grid>
+                </Button>
                 <Button x:ConnectionId='17' Content="상의"
                         CommandParameter="Clothes"
                                                         />
@@ -106,6 +130,7 @@
                                                         />
 
                 <Border/>
+                
                 <Border/>
 
                 <Button x:ConnectionId='20' Content="귀고리"

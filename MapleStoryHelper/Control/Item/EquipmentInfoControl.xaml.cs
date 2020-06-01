@@ -86,9 +86,32 @@ namespace MapleStoryHelper.Control.Item
             }
 
             cbItems.ItemsSource = items;
-            if(items.Count != 0)
+
+            SetSelectedIndex(category, character);
+        }
+
+        private void SetSelectedIndex(ECharacterEquipmentCategory category, CharacterBase character)
+        {
+            if (cbItems.Items.Count != 0)
             {
-                cbItems.SelectedIndex = 0;
+                var item = character.CharacterEquipment.EquipList[category];
+                if (item != null)
+                {
+                    var items = cbItems.ItemsSource as List<EquipmentItem>;
+
+                    int idx = items.IndexOf(items.Where(x => x.ItemCode == item.ItemCode).FirstOrDefault());
+                    cbItems.SelectedIndex = idx;
+
+                    this.DataContext = item;
+                }
+                else
+                {
+                    cbItems.SelectedIndex = 0;
+                }
+            }
+            else
+            {
+
             }
         }
 

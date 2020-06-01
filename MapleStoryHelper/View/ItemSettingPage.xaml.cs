@@ -110,6 +110,9 @@ namespace MapleStoryHelper.View
             imgRing3.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgBitmapSource as BitmapImage;
             imgRing4.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring4].ImgBitmapSource as BitmapImage;
             imgPocket.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Pocket].ImgBitmapSource as BitmapImage;
+            imgCap.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Cap].ImgBitmapSource as BitmapImage;
+            imgFace.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Face].ImgBitmapSource as BitmapImage;
+            imgEye.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Eye].ImgBitmapSource as BitmapImage;
             imgWeapon.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgBitmapSource as BitmapImage;
         }
 
