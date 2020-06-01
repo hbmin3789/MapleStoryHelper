@@ -1,0 +1,4 @@
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csprojAssemblyReference.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.AssemblyInfo.cs

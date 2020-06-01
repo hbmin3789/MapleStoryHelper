@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.csprojAssemblyReference.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.AssemblyInfo.cs
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.Common.deps.json
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.Common.dll
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.csproj.CopyComplete
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.dll
+C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.pdb

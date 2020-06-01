@@ -91,6 +91,56 @@ namespace WzComparerR2.WzLib
             }
         }
 
+        public void DetectEncryption(byte[] data)
+        {
+            byte[] bytes = data;
+
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                bytes[i] ^= (byte)(0xAA + i);
+            }
+
+            StringBuilder sb = new StringBuilder();
+            if (!this.encryption_detected)
+            {
+                //测试bms
+                sb.Clear();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    sb.Append((char)(keys_bms[i] ^ bytes[i]));
+                }
+                if (IsLegalNodeName(sb.ToString()))
+                {
+                    this.EncType = Wz_CryptoKeyType.BMS;
+                    this.encryption_detected = true;
+                }
+
+                //测试kms
+                sb.Clear();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    sb.Append((char)(keys_kms[i] ^ bytes[i]));
+                }
+                if (IsLegalNodeName(sb.ToString()))
+                {
+                    this.EncType = Wz_CryptoKeyType.KMS;
+                    this.encryption_detected = true;
+                }
+
+                //测试gms
+                sb.Clear();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    sb.Append((char)(keys_gms[i] ^ bytes[i]));
+                }
+                if (IsLegalNodeName(sb.ToString()))
+                {
+                    this.EncType = Wz_CryptoKeyType.GMS;
+                    this.encryption_detected = true;
+                }
+            }
+        }
+
         public void DetectEncryption(Wz_File f)
         {
             int old_off = (int)f.FileStream.Position;
