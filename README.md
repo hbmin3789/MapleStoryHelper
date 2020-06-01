@@ -1,5 +1,8 @@
 메이플스토리 유틸리티 프로그램
 =============
+WzComparerR2 라이브러리 사용 : https://github.com/tpdnd2651/WzComparerR2-KMS-
+----------------------------
+
 
 >지원 예정 기능
 >
