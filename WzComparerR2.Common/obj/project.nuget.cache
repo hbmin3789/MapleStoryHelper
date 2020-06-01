@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwXrCt8gb/VXWKCflGIRHMqwJyM3ZBi4YMNZJ3sQYI5vC5k2FkqTZh+08qtmoKihA6yWhRjKxnFgCUMzxhl7bg==",
+  "dgSpecHash": "C3800zh6zMYVCRO/CmFBynAIc4OLWZV+MrTzKkUrfpEc7sGW8xj2pIMuDQjIVpXBO6xJYECxAXNEzyfhTsTHbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

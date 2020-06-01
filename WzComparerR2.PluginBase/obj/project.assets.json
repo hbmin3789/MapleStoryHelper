@@ -272,11 +272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
       "projectName": "WzComparerR2.PluginBase",
-      "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -295,11 +295,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
             },
-            "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
             }
           }
         }
