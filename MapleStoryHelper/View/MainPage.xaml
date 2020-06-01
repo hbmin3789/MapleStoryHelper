@@ -6,16 +6,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:MapleStoryHelper.Control"
+    xmlns:control="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="150"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Center" 
+                       FontSize="25" 
+                       Text="메이플 설치 경로 : "/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Stretch"
+                     FontSize="30"
+                     Text="{Binding WzFilePath, Mode=TwoWay}"/>
+        </Grid>
         
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="1">
             <Button x:Name="btnUnionSetting" HorizontalAlignment="Left" VerticalAlignment="Center"
                     Width="200" Height="50" Margin="30,0,0,0"
                     Content="유니온 설정하기"/>
@@ -28,7 +43,7 @@
                     Click="btnAddCharacter_Click"/>
         </Grid>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="2">
             <controls:CharacterControl/>
         </Grid>
     </Grid>

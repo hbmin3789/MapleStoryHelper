@@ -69,6 +69,7 @@
     <RootPropertyPathName Name="PAttackPower" />
     <RootPropertyPathName Name="MaxStatusAttackBinding" />
     <RootPropertyPathName Name="MinStatusAttackBinding" />
+    <RootPropertyPathName Name="WzFilePath" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -177,6 +178,7 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="FontSize" />

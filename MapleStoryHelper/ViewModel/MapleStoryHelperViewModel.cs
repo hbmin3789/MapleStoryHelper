@@ -14,6 +14,12 @@ namespace MapleStoryHelper.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        private string _wzFilePath;
+        public string WzFilePath
+        {
+            get => _wzFilePath;
+            set => SetProperty(ref _wzFilePath, value);
+        }
 
         private Character _newCharacterItem;
         public Character NewCharacterItem
@@ -41,6 +47,7 @@ namespace MapleStoryHelper.ViewModel
         {
             _newCharacterItem = new Character();
             _characterItems = new ObservableCollection<Character>();
+            _wzFilePath = @"C:\Nexon\Maple";
         }
 
         private void InitCommands()
