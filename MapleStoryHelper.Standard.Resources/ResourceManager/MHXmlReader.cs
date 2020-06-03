@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Xml;
+using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Standard.Resources
 {
@@ -115,6 +116,59 @@ namespace MapleStoryHelper.Standard.Resources
                         break;
                     case "setItemID":
                         retval.RequiredLevel = Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);
+                        break;
+                }
+            }
+        }
+
+        public static void SetEquipInfo(ref EquipmentItem retval, Wz_Node item)
+        {
+            item = item.FindNodeByPath("info");
+            for (int i = 0; i < item?.Nodes?.Count; i++)
+            {
+                switch (item.Nodes[i].Text)
+                {
+                    case "reqJob":
+                        retval.CharacterCategory = (ECharacterJob)Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "islot":
+                        //retval.EquipmentCategory = (EEquipmentCategory)item.Nodes[i].ChildNodes[j].Value;
+                        break;
+                    case "reqLevel":
+                        retval.RequiredLevel = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incSTR":
+                        retval.Status.Str = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incDEX":
+                        retval.Status.Dex = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incINT":
+                        retval.Status.Int = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incLUK":
+                        retval.Status.Luk = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incPAD":
+                        retval.Status.AttackPower = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incMAD":
+                        retval.Status.MagicAttack = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incMHP":
+                        retval.Status.HP = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "incMMP":
+                        retval.Status.MP = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "tuc":
+                        retval.MaxScroll = Convert.ToInt32(item.Nodes[i].Value);
+                        break;
+                    case "bossReward":
+                        //retval. = Convert.ToInt32(item.Nodes[i].ChildNodes[j].Value);
+                        break;
+                    case "setitem.Nodes[i]ID":
+                        retval.RequiredLevel = Convert.ToInt32(item.Nodes[i].Value);
                         break;
                 }
             }

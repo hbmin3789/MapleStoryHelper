@@ -4,6 +4,11 @@ using System.Text;
 using System.IO;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using Windows.Foundation;
+using Windows.Storage;
+using Windows.Storage.Search;
+using Windows.Storage.FileProperties;
 
 namespace WzComparerR2.WzLib
 {
@@ -13,11 +18,23 @@ namespace WzComparerR2.WzLib
         {
             this.imageCount = 0;
             this.wzStructure = wz;
-            this.loaded = InitLoad(fileName);
+            this.loaded = InitLoadAsync(fileName).Result;
             this.stringTable = new Dictionary<int, string>();
         }
 
-        private FileStream fileStream;
+        public Wz_File(Wz_Structure wz)
+        {
+            this.imageCount = 0;
+            this.wzStructure = wz;
+            this.stringTable = new Dictionary<int, string>();
+        }
+
+        public async Task LoadFileAsync(string fileName)
+        {
+            this.loaded = await InitLoadAsync(fileName);
+        }
+
+        private Stream fileStream;
         private BinaryReader bReader;
         private Wz_Structure wzStructure;
         private Wz_Header header;
@@ -31,7 +48,7 @@ namespace WzComparerR2.WzLib
         internal Dictionary<int, string> stringTable;
         internal byte[] tempBuffer;
 
-        public FileStream FileStream
+        public Stream FileStream
         {
             get { return fileStream; }
         }
@@ -83,9 +100,11 @@ namespace WzComparerR2.WzLib
                 this.fileStream.Close();
         }
 
-        private bool InitLoad(string fileName)
+        private async Task<bool> InitLoadAsync(string fileName)
         {
-            this.fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            var temp = await StorageFile.GetFileFromPathAsync(fileName);
+            var stream = await temp.OpenStreamForReadAsync();
+            this.fileStream = stream;
             this.bReader = new BinaryReader(this.FileStream);
 
             return GetHeader(fileName);
@@ -142,7 +161,7 @@ namespace WzComparerR2.WzLib
                     break;
 
                 default:
-                    throw new Exception("读取字符串错误 在:" + this.FileStream.Name + " " + this.FileStream.Position);
+                    throw new Exception("读取字符串错误 在:" + this.FileStream + " " + this.FileStream.Position);
             }
             return string.Empty;
         }

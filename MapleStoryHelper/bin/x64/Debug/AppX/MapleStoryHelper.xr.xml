@@ -69,7 +69,6 @@
     <RootPropertyPathName Name="PAttackPower" />
     <RootPropertyPathName Name="MaxStatusAttackBinding" />
     <RootPropertyPathName Name="MinStatusAttackBinding" />
-    <RootPropertyPathName Name="WzFilePath" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -113,6 +112,8 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -178,7 +179,6 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="FontSize" />
@@ -238,6 +238,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="MapleStoryHelper.View.BossDamageCalcPage" />
@@ -246,6 +247,9 @@
     <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border" />
     <RootType FullName="MapleStoryHelper.View.ItemSettingPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="IsActive" />
+    </RootType>
     <RootType FullName="MapleStoryHelper.MainPage" />
   </Roots.RootTypes>
 </Roots>

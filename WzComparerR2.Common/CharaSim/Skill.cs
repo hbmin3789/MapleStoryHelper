@@ -84,15 +84,6 @@ namespace WzComparerR2.CharaSim
             {
                 switch (childNode.Text)
                 {
-                    case "icon":
-                        skill.Icon = BitmapOrigin.CreateFromNode(childNode, findNode);
-                        break;
-                    case "iconMouseOver":
-                        skill.IconMouseOver = BitmapOrigin.CreateFromNode(childNode, findNode);
-                        break;
-                    case "iconDisabled":
-                        skill.IconDisabled = BitmapOrigin.CreateFromNode(childNode, findNode);
-                        break;
                     case "common":
                         foreach (Wz_Node commonNode in childNode.Nodes)
                         {

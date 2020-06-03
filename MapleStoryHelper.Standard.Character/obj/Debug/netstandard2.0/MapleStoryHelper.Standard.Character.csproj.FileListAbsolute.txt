@@ -36,3 +36,8 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Charac
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.Common.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\Windows.winmd

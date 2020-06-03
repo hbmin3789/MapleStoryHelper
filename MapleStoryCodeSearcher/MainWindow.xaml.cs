@@ -124,5 +124,34 @@ namespace MapleStoryCodeSearcher
             tbItemType.Text = item.ItemType;
             tbItemCode.Text = item.ItemCode;
         }
+
+        private void btnExport_Click(object sender, RoutedEventArgs e)
+        {
+            var list = dgSearchResult.ItemsSource as List<SearchResult>;
+            StringBuilder str = new StringBuilder();
+            for(int i = 0; i < list.Count; i++)
+            {
+                str.Append(list[i].ItemCode);
+                str.Append("\n");
+            }
+
+            string path = @"c:\Maple.txt";
+
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            using (FileStream fs = File.Create(path))
+            {
+                AddText(fs, str.ToString());
+            }            
+        }
+
+        private static void AddText(FileStream fs, string value)
+        {
+            byte[] info = new UTF8Encoding(true).GetBytes(value);
+            fs.Write(info, 0, info.Length);
+        }
     }
 }

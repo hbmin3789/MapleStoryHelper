@@ -77,8 +77,6 @@ namespace WzComparerR2.CharaSim
         incAsrR,
         incEXPr,
         reduceCooltime,
-        //incCriticaldamageMax,
-        //incCriticaldamageMin,
         incCriticaldamage,
         @sealed,
         incSTRlv,

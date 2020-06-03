@@ -64,10 +64,6 @@ namespace WzComparerR2.CharaSim
                                     pngNode = uolNode;
                                 }
                             }
-                            if (pngNode.Value is Wz_Png)
-                            {
-                                item.Icon = BitmapOrigin.CreateFromNode(pngNode, null);
-                            }
                             break;
 
                         case "iconRaw":
@@ -83,14 +79,7 @@ namespace WzComparerR2.CharaSim
                             }
                             if (pngNode.Value is Wz_Png)
                             {
-                                item.IconRaw = BitmapOrigin.CreateFromNode(pngNode, null);
-                            }
-                            break;
 
-                        case "sample":
-                            if (subNode.Value is Wz_Png)
-                            {
-                                item.Sample = BitmapOrigin.CreateFromNode(subNode, null);
                             }
                             break;
 

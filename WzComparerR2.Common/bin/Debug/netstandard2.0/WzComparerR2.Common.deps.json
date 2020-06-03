@@ -31,12 +31,29 @@
           }
         }
       },
+      "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.14.0",
+            "fileVersion": "5.0.20.25106"
+          }
+        }
+      },
       "WzComparerR2.WzLib/1.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "4.7.0",
+          "System.Runtime.WindowsRuntime": "5.0.0-preview.4.20251.6"
         },
         "runtime": {
           "WzComparerR2.WzLib.dll": {}
+        }
+      },
+      "Windows/255.255.255.255": {
+        "runtime": {
+          "Windows.winmd": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "0.0.0.0"
+          }
         }
       }
     }
@@ -68,8 +85,20 @@
       "path": "system.drawing.common/4.7.0",
       "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
     },
+    "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jodcn53bG5DtO7bEiYo/q5iEmoCYPLbbIzkp0VkIaf0uL151yIBhxjyWdt8R/QxPxMLl+QE5C6K0fuQwCWunxg==",
+      "path": "system.runtime.windowsruntime/5.0.0-preview.4.20251.6",
+      "hashPath": "system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    },
     "WzComparerR2.WzLib/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Windows/255.255.255.255": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

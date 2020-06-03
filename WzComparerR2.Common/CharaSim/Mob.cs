@@ -155,11 +155,7 @@ namespace WzComparerR2.CharaSim
                     var actNode = linkNode.FindNodeByPath(action + @"\0");
                     if (actNode != null)
                     {
-                        imageFrame = BitmapOrigin.CreateFromNode(actNode, findNode);
-                        if (imageFrame.Bitmap != null)
-                        {
-                            break;
-                        }
+
                     }
                 }
 

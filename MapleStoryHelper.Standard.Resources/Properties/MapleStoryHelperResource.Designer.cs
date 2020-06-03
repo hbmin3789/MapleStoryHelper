@@ -512,5 +512,15 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         }
 
         #endregion
+
+        public static object Txt_ItemCodes
+        {
+            get => ResourceManager.GetObject("MapleStoryItemCodes", resourceCulture);
+        }
+
+        public static object Xml_EqpString
+        {
+            get => ResourceManager.GetObject("Eqp", resourceCulture);
+        }
     }
 }

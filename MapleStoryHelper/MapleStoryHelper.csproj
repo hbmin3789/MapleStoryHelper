@@ -154,6 +154,9 @@
     <Compile Include="View\CharacterAddPage.xaml.cs">
       <DependentUpon>CharacterAddPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\DPMCalcPage.xaml.cs">
+      <DependentUpon>DPMCalcPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\EquipmentAddPage.xaml.cs">
       <DependentUpon>EquipmentAddPage.xaml</DependentUpon>
     </Compile>
@@ -164,6 +167,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\OneKillCalc.xaml.cs">
+      <DependentUpon>OneKillCalc.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -176,6 +182,233 @@
     <Content Include="Assets\Items\Scroll\Magical.png" />
     <Content Include="Assets\Items\Scroll\Premium.png" />
     <Content Include="Assets\Items\Scroll\Trace.png" />
+    <Content Include="Assets\Mob\Mob.img.xml" />
+    <Content Include="Assets\Mob\Picture\빛의 집행자.png" />
+    <Content Include="Assets\Mob\Picture\어센시온.png" />
+    <Content Include="Assets\Skills\Xml\000.img.xml" />
+    <Content Include="Assets\Skills\Xml\100.img.xml" />
+    <Content Include="Assets\Skills\Xml\1000.img.xml" />
+    <Content Include="Assets\Skills\Xml\10000.img.xml" />
+    <Content Include="Assets\Skills\Xml\10100.img.xml" />
+    <Content Include="Assets\Skills\Xml\10110.img.xml" />
+    <Content Include="Assets\Skills\Xml\10111.img.xml" />
+    <Content Include="Assets\Skills\Xml\10112.img.xml" />
+    <Content Include="Assets\Skills\Xml\110.img.xml" />
+    <Content Include="Assets\Skills\Xml\1100.img.xml" />
+    <Content Include="Assets\Skills\Xml\111.img.xml" />
+    <Content Include="Assets\Skills\Xml\1110.img.xml" />
+    <Content Include="Assets\Skills\Xml\1111.img.xml" />
+    <Content Include="Assets\Skills\Xml\1112.img.xml" />
+    <Content Include="Assets\Skills\Xml\112.img.xml" />
+    <Content Include="Assets\Skills\Xml\120.img.xml" />
+    <Content Include="Assets\Skills\Xml\1200.img.xml" />
+    <Content Include="Assets\Skills\Xml\121.img.xml" />
+    <Content Include="Assets\Skills\Xml\1210.img.xml" />
+    <Content Include="Assets\Skills\Xml\1211.img.xml" />
+    <Content Include="Assets\Skills\Xml\1212.img.xml" />
+    <Content Include="Assets\Skills\Xml\122.img.xml" />
+    <Content Include="Assets\Skills\Xml\130.img.xml" />
+    <Content Include="Assets\Skills\Xml\1300.img.xml" />
+    <Content Include="Assets\Skills\Xml\13000.img.xml" />
+    <Content Include="Assets\Skills\Xml\131.img.xml" />
+    <Content Include="Assets\Skills\Xml\1310.img.xml" />
+    <Content Include="Assets\Skills\Xml\13100.img.xml" />
+    <Content Include="Assets\Skills\Xml\1311.img.xml" />
+    <Content Include="Assets\Skills\Xml\1312.img.xml" />
+    <Content Include="Assets\Skills\Xml\132.img.xml" />
+    <Content Include="Assets\Skills\Xml\1400.img.xml" />
+    <Content Include="Assets\Skills\Xml\14000.img.xml" />
+    <Content Include="Assets\Skills\Xml\1410.img.xml" />
+    <Content Include="Assets\Skills\Xml\1411.img.xml" />
+    <Content Include="Assets\Skills\Xml\1412.img.xml" />
+    <Content Include="Assets\Skills\Xml\14200.img.xml" />
+    <Content Include="Assets\Skills\Xml\14210.img.xml" />
+    <Content Include="Assets\Skills\Xml\14211.img.xml" />
+    <Content Include="Assets\Skills\Xml\14212.img.xml" />
+    <Content Include="Assets\Skills\Xml\1500.img.xml" />
+    <Content Include="Assets\Skills\Xml\15000.img.xml" />
+    <Content Include="Assets\Skills\Xml\15001.img.xml" />
+    <Content Include="Assets\Skills\Xml\15002.img.xml" />
+    <Content Include="Assets\Skills\Xml\1510.img.xml" />
+    <Content Include="Assets\Skills\Xml\15100.img.xml" />
+    <Content Include="Assets\Skills\Xml\1511.img.xml" />
+    <Content Include="Assets\Skills\Xml\15110.img.xml" />
+    <Content Include="Assets\Skills\Xml\15111.img.xml" />
+    <Content Include="Assets\Skills\Xml\15112.img.xml" />
+    <Content Include="Assets\Skills\Xml\1512.img.xml" />
+    <Content Include="Assets\Skills\Xml\15200.img.xml" />
+    <Content Include="Assets\Skills\Xml\15210.img.xml" />
+    <Content Include="Assets\Skills\Xml\15211.img.xml" />
+    <Content Include="Assets\Skills\Xml\15212.img.xml" />
+    <Content Include="Assets\Skills\Xml\15500.img.xml" />
+    <Content Include="Assets\Skills\Xml\15510.img.xml" />
+    <Content Include="Assets\Skills\Xml\15511.img.xml" />
+    <Content Include="Assets\Skills\Xml\15512.img.xml" />
+    <Content Include="Assets\Skills\Xml\16000.img.xml" />
+    <Content Include="Assets\Skills\Xml\16400.img.xml" />
+    <Content Include="Assets\Skills\Xml\16410.img.xml" />
+    <Content Include="Assets\Skills\Xml\16411.img.xml" />
+    <Content Include="Assets\Skills\Xml\16412.img.xml" />
+    <Content Include="Assets\Skills\Xml\200.img.xml" />
+    <Content Include="Assets\Skills\Xml\2000.img.xml" />
+    <Content Include="Assets\Skills\Xml\2001.img.xml" />
+    <Content Include="Assets\Skills\Xml\2002.img.xml" />
+    <Content Include="Assets\Skills\Xml\2003.img.xml" />
+    <Content Include="Assets\Skills\Xml\2004.img.xml" />
+    <Content Include="Assets\Skills\Xml\2005.img.xml" />
+    <Content Include="Assets\Skills\Xml\210.img.xml" />
+    <Content Include="Assets\Skills\Xml\2100.img.xml" />
+    <Content Include="Assets\Skills\Xml\211.img.xml" />
+    <Content Include="Assets\Skills\Xml\2110.img.xml" />
+    <Content Include="Assets\Skills\Xml\2111.img.xml" />
+    <Content Include="Assets\Skills\Xml\2112.img.xml" />
+    <Content Include="Assets\Skills\Xml\212.img.xml" />
+    <Content Include="Assets\Skills\Xml\220.img.xml" />
+    <Content Include="Assets\Skills\Xml\2200.img.xml" />
+    <Content Include="Assets\Skills\Xml\221.img.xml" />
+    <Content Include="Assets\Skills\Xml\2210.img.xml" />
+    <Content Include="Assets\Skills\Xml\2211.img.xml" />
+    <Content Include="Assets\Skills\Xml\2212.img.xml" />
+    <Content Include="Assets\Skills\Xml\2213.img.xml" />
+    <Content Include="Assets\Skills\Xml\2214.img.xml" />
+    <Content Include="Assets\Skills\Xml\2215.img.xml" />
+    <Content Include="Assets\Skills\Xml\2216.img.xml" />
+    <Content Include="Assets\Skills\Xml\2217.img.xml" />
+    <Content Include="Assets\Skills\Xml\2218.img.xml" />
+    <Content Include="Assets\Skills\Xml\222.img.xml" />
+    <Content Include="Assets\Skills\Xml\230.img.xml" />
+    <Content Include="Assets\Skills\Xml\2300.img.xml" />
+    <Content Include="Assets\Skills\Xml\231.img.xml" />
+    <Content Include="Assets\Skills\Xml\2310.img.xml" />
+    <Content Include="Assets\Skills\Xml\2311.img.xml" />
+    <Content Include="Assets\Skills\Xml\2312.img.xml" />
+    <Content Include="Assets\Skills\Xml\232.img.xml" />
+    <Content Include="Assets\Skills\Xml\2400.img.xml" />
+    <Content Include="Assets\Skills\Xml\2410.img.xml" />
+    <Content Include="Assets\Skills\Xml\2411.img.xml" />
+    <Content Include="Assets\Skills\Xml\2412.img.xml" />
+    <Content Include="Assets\Skills\Xml\2500.img.xml" />
+    <Content Include="Assets\Skills\Xml\2510.img.xml" />
+    <Content Include="Assets\Skills\Xml\2511.img.xml" />
+    <Content Include="Assets\Skills\Xml\2512.img.xml" />
+    <Content Include="Assets\Skills\Xml\2700.img.xml" />
+    <Content Include="Assets\Skills\Xml\2710.img.xml" />
+    <Content Include="Assets\Skills\Xml\2711.img.xml" />
+    <Content Include="Assets\Skills\Xml\2712.img.xml" />
+    <Content Include="Assets\Skills\Xml\300.img.xml" />
+    <Content Include="Assets\Skills\Xml\3000.img.xml" />
+    <Content Include="Assets\Skills\Xml\30000.img.xml" />
+    <Content Include="Assets\Skills\Xml\3001.img.xml" />
+    <Content Include="Assets\Skills\Xml\3002.img.xml" />
+    <Content Include="Assets\Skills\Xml\301.img.xml" />
+    <Content Include="Assets\Skills\Xml\310.img.xml" />
+    <Content Include="Assets\Skills\Xml\3100.img.xml" />
+    <Content Include="Assets\Skills\Xml\3101.img.xml" />
+    <Content Include="Assets\Skills\Xml\311.img.xml" />
+    <Content Include="Assets\Skills\Xml\3110.img.xml" />
+    <Content Include="Assets\Skills\Xml\3111.img.xml" />
+    <Content Include="Assets\Skills\Xml\3112.img.xml" />
+    <Content Include="Assets\Skills\Xml\312.img.xml" />
+    <Content Include="Assets\Skills\Xml\3120.img.xml" />
+    <Content Include="Assets\Skills\Xml\3121.img.xml" />
+    <Content Include="Assets\Skills\Xml\3122.img.xml" />
+    <Content Include="Assets\Skills\Xml\320.img.xml" />
+    <Content Include="Assets\Skills\Xml\3200.img.xml" />
+    <Content Include="Assets\Skills\Xml\321.img.xml" />
+    <Content Include="Assets\Skills\Xml\3210.img.xml" />
+    <Content Include="Assets\Skills\Xml\3211.img.xml" />
+    <Content Include="Assets\Skills\Xml\3212.img.xml" />
+    <Content Include="Assets\Skills\Xml\322.img.xml" />
+    <Content Include="Assets\Skills\Xml\330.img.xml" />
+    <Content Include="Assets\Skills\Xml\3300.img.xml" />
+    <Content Include="Assets\Skills\Xml\331.img.xml" />
+    <Content Include="Assets\Skills\Xml\3310.img.xml" />
+    <Content Include="Assets\Skills\Xml\3311.img.xml" />
+    <Content Include="Assets\Skills\Xml\3312.img.xml" />
+    <Content Include="Assets\Skills\Xml\332.img.xml" />
+    <Content Include="Assets\Skills\Xml\3500.img.xml" />
+    <Content Include="Assets\Skills\Xml\3510.img.xml" />
+    <Content Include="Assets\Skills\Xml\3511.img.xml" />
+    <Content Include="Assets\Skills\Xml\3512.img.xml" />
+    <Content Include="Assets\Skills\Xml\3600.img.xml" />
+    <Content Include="Assets\Skills\Xml\3610.img.xml" />
+    <Content Include="Assets\Skills\Xml\3611.img.xml" />
+    <Content Include="Assets\Skills\Xml\3612.img.xml" />
+    <Content Include="Assets\Skills\Xml\3700.img.xml" />
+    <Content Include="Assets\Skills\Xml\3710.img.xml" />
+    <Content Include="Assets\Skills\Xml\3711.img.xml" />
+    <Content Include="Assets\Skills\Xml\3712.img.xml" />
+    <Content Include="Assets\Skills\Xml\400.img.xml" />
+    <Content Include="Assets\Skills\Xml\40000.img.xml" />
+    <Content Include="Assets\Skills\Xml\40001.img.xml" />
+    <Content Include="Assets\Skills\Xml\40002.img.xml" />
+    <Content Include="Assets\Skills\Xml\410.img.xml" />
+    <Content Include="Assets\Skills\Xml\411.img.xml" />
+    <Content Include="Assets\Skills\Xml\412.img.xml" />
+    <Content Include="Assets\Skills\Xml\420.img.xml" />
+    <Content Include="Assets\Skills\Xml\421.img.xml" />
+    <Content Include="Assets\Skills\Xml\422.img.xml" />
+    <Content Include="Assets\Skills\Xml\430.img.xml" />
+    <Content Include="Assets\Skills\Xml\431.img.xml" />
+    <Content Include="Assets\Skills\Xml\432.img.xml" />
+    <Content Include="Assets\Skills\Xml\433.img.xml" />
+    <Content Include="Assets\Skills\Xml\434.img.xml" />
+    <Content Include="Assets\Skills\Xml\500.img.xml" />
+    <Content Include="Assets\Skills\Xml\5000.img.xml" />
+    <Content Include="Assets\Skills\Xml\501.img.xml" />
+    <Content Include="Assets\Skills\Xml\510.img.xml" />
+    <Content Include="Assets\Skills\Xml\5100.img.xml" />
+    <Content Include="Assets\Skills\Xml\511.img.xml" />
+    <Content Include="Assets\Skills\Xml\5110.img.xml" />
+    <Content Include="Assets\Skills\Xml\5111.img.xml" />
+    <Content Include="Assets\Skills\Xml\5112.img.xml" />
+    <Content Include="Assets\Skills\Xml\512.img.xml" />
+    <Content Include="Assets\Skills\Xml\520.img.xml" />
+    <Content Include="Assets\Skills\Xml\521.img.xml" />
+    <Content Include="Assets\Skills\Xml\522.img.xml" />
+    <Content Include="Assets\Skills\Xml\530.img.xml" />
+    <Content Include="Assets\Skills\Xml\531.img.xml" />
+    <Content Include="Assets\Skills\Xml\532.img.xml" />
+    <Content Include="Assets\Skills\Xml\6000.img.xml" />
+    <Content Include="Assets\Skills\Xml\6001.img.xml" />
+    <Content Include="Assets\Skills\Xml\6002.img.xml" />
+    <Content Include="Assets\Skills\Xml\6100.img.xml" />
+    <Content Include="Assets\Skills\Xml\6110.img.xml" />
+    <Content Include="Assets\Skills\Xml\6111.img.xml" />
+    <Content Include="Assets\Skills\Xml\6112.img.xml" />
+    <Content Include="Assets\Skills\Xml\6400.img.xml" />
+    <Content Include="Assets\Skills\Xml\6410.img.xml" />
+    <Content Include="Assets\Skills\Xml\6411.img.xml" />
+    <Content Include="Assets\Skills\Xml\6412.img.xml" />
+    <Content Include="Assets\Skills\Xml\6500.img.xml" />
+    <Content Include="Assets\Skills\Xml\6510.img.xml" />
+    <Content Include="Assets\Skills\Xml\6511.img.xml" />
+    <Content Include="Assets\Skills\Xml\6512.img.xml" />
+    <Content Include="Assets\Skills\Xml\7000.img.xml" />
+    <Content Include="Assets\Skills\Xml\7100.img.xml" />
+    <Content Include="Assets\Skills\Xml\7200.img.xml" />
+    <Content Include="Assets\Skills\Xml\800.img.xml" />
+    <Content Include="Assets\Skills\Xml\900.img.xml" />
+    <Content Include="Assets\Skills\Xml\9000.img.xml" />
+    <Content Include="Assets\Skills\Xml\9100.img.xml" />
+    <Content Include="Assets\Skills\Xml\9200.img.xml" />
+    <Content Include="Assets\Skills\Xml\9201.img.xml" />
+    <Content Include="Assets\Skills\Xml\9202.img.xml" />
+    <Content Include="Assets\Skills\Xml\9203.img.xml" />
+    <Content Include="Assets\Skills\Xml\9204.img.xml" />
+    <Content Include="Assets\Skills\Xml\9500.img.xml" />
+    <Content Include="Assets\Skills\Xml\Attacktype.img.xml" />
+    <Content Include="Assets\Skills\Xml\BFSkill.img.xml" />
+    <Content Include="Assets\Skills\Xml\EliteMobSkill.img.xml" />
+    <Content Include="Assets\Skills\Xml\HekatonFieldSkill.img.xml" />
+    <Content Include="Assets\Skills\Xml\ItemSkill.img.xml" />
+    <Content Include="Assets\Skills\Xml\MCGuardian.img.xml" />
+    <Content Include="Assets\Skills\Xml\MCSkill.img.xml" />
+    <Content Include="Assets\Skills\Xml\Recipe_9200.img.xml" />
+    <Content Include="Assets\Skills\Xml\Recipe_9201.img.xml" />
+    <Content Include="Assets\Skills\Xml\Recipe_9202.img.xml" />
+    <Content Include="Assets\Skills\Xml\Recipe_9203.img.xml" />
+    <Content Include="Assets\Skills\Xml\Recipe_9204.img.xml" />
     <Content Include="Assets\UI\StatusDetail.png" />
     <Content Include="Assets\UI\StatusMain.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -232,6 +465,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\DPMCalcPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\EquipmentAddPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -243,6 +480,10 @@
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OneKillCalc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -267,7 +508,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\JobIcons\" />
-    <Folder Include="Assets\Skills\" />
+    <Folder Include="Assets\Skills\Icon\" />
+    <Folder Include="Control\DPM\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj">

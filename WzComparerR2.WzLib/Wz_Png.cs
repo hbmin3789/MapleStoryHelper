@@ -5,6 +5,10 @@ using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Drawing.Imaging;
+using Windows.Storage.Streams;
+using System.Threading.Tasks;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.UI.Xaml.Media.Imaging;
 using System.Runtime.InteropServices;
 
 namespace WzComparerR2.WzLib
@@ -165,6 +169,19 @@ namespace WzComparerR2.WzLib
                 }
                 return plainData;
             }
+        }
+
+        public byte[] ExtractBitmapImage()
+        {
+            byte[] pixel = this.GetRawData();
+            if (pixel == null)
+            {
+                return null;
+            }
+
+            byte[] argb = GetPixelDataBgra4444(pixel, this.w, this.h);
+
+            return argb;
         }
 
         public Bitmap ExtractPng()

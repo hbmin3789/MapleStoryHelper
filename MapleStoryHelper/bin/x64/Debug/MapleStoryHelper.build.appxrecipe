@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-QTEQDACL</Machine>
+    <Machine>DGSW3120</Machine>
     <WindowsUser>user</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -112,6 +112,9 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\sqlite\3.13.0\runtimes\win10-x64\nativeassets\uap10.0\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.drawing.common\4.7.0\lib\netstandard2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.interactive.async\3.0.0\lib\netstandard1.0\System.Interactive.Async.dll">
       <PackagePath>System.Interactive.Async.dll</PackagePath>
     </AppxPackagedFile>
@@ -129,6 +132,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.dll">
       <PackagePath>MapleStoryHelper.Standard.Resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll">
+      <PackagePath>WzComparerR2.WzLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\WzComparerR2.Common.dll">
+      <PackagePath>WzComparerR2.Common.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\win2d.uwp\1.24.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -187,6 +196,678 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\000.img.xml">
+      <PackagePath>Assets\Skills\Xml\000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\100.img.xml">
+      <PackagePath>Assets\Skills\Xml\100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1000.img.xml">
+      <PackagePath>Assets\Skills\Xml\1000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10000.img.xml">
+      <PackagePath>Assets\Skills\Xml\10000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10100.img.xml">
+      <PackagePath>Assets\Skills\Xml\10100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10110.img.xml">
+      <PackagePath>Assets\Skills\Xml\10110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10111.img.xml">
+      <PackagePath>Assets\Skills\Xml\10111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10112.img.xml">
+      <PackagePath>Assets\Skills\Xml\10112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\110.img.xml">
+      <PackagePath>Assets\Skills\Xml\110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1100.img.xml">
+      <PackagePath>Assets\Skills\Xml\1100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\111.img.xml">
+      <PackagePath>Assets\Skills\Xml\111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1110.img.xml">
+      <PackagePath>Assets\Skills\Xml\1110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1111.img.xml">
+      <PackagePath>Assets\Skills\Xml\1111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1112.img.xml">
+      <PackagePath>Assets\Skills\Xml\1112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\112.img.xml">
+      <PackagePath>Assets\Skills\Xml\112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\120.img.xml">
+      <PackagePath>Assets\Skills\Xml\120.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1200.img.xml">
+      <PackagePath>Assets\Skills\Xml\1200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\121.img.xml">
+      <PackagePath>Assets\Skills\Xml\121.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1210.img.xml">
+      <PackagePath>Assets\Skills\Xml\1210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1211.img.xml">
+      <PackagePath>Assets\Skills\Xml\1211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1212.img.xml">
+      <PackagePath>Assets\Skills\Xml\1212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\122.img.xml">
+      <PackagePath>Assets\Skills\Xml\122.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\130.img.xml">
+      <PackagePath>Assets\Skills\Xml\130.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1300.img.xml">
+      <PackagePath>Assets\Skills\Xml\1300.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\13000.img.xml">
+      <PackagePath>Assets\Skills\Xml\13000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\131.img.xml">
+      <PackagePath>Assets\Skills\Xml\131.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1310.img.xml">
+      <PackagePath>Assets\Skills\Xml\1310.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\13100.img.xml">
+      <PackagePath>Assets\Skills\Xml\13100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1311.img.xml">
+      <PackagePath>Assets\Skills\Xml\1311.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1312.img.xml">
+      <PackagePath>Assets\Skills\Xml\1312.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\132.img.xml">
+      <PackagePath>Assets\Skills\Xml\132.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1400.img.xml">
+      <PackagePath>Assets\Skills\Xml\1400.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14000.img.xml">
+      <PackagePath>Assets\Skills\Xml\14000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1410.img.xml">
+      <PackagePath>Assets\Skills\Xml\1410.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1411.img.xml">
+      <PackagePath>Assets\Skills\Xml\1411.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1412.img.xml">
+      <PackagePath>Assets\Skills\Xml\1412.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14200.img.xml">
+      <PackagePath>Assets\Skills\Xml\14200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14210.img.xml">
+      <PackagePath>Assets\Skills\Xml\14210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14211.img.xml">
+      <PackagePath>Assets\Skills\Xml\14211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14212.img.xml">
+      <PackagePath>Assets\Skills\Xml\14212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1500.img.xml">
+      <PackagePath>Assets\Skills\Xml\1500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15000.img.xml">
+      <PackagePath>Assets\Skills\Xml\15000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15001.img.xml">
+      <PackagePath>Assets\Skills\Xml\15001.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15002.img.xml">
+      <PackagePath>Assets\Skills\Xml\15002.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1510.img.xml">
+      <PackagePath>Assets\Skills\Xml\1510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15100.img.xml">
+      <PackagePath>Assets\Skills\Xml\15100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1511.img.xml">
+      <PackagePath>Assets\Skills\Xml\1511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15110.img.xml">
+      <PackagePath>Assets\Skills\Xml\15110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15111.img.xml">
+      <PackagePath>Assets\Skills\Xml\15111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15112.img.xml">
+      <PackagePath>Assets\Skills\Xml\15112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1512.img.xml">
+      <PackagePath>Assets\Skills\Xml\1512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15200.img.xml">
+      <PackagePath>Assets\Skills\Xml\15200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15210.img.xml">
+      <PackagePath>Assets\Skills\Xml\15210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15211.img.xml">
+      <PackagePath>Assets\Skills\Xml\15211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15212.img.xml">
+      <PackagePath>Assets\Skills\Xml\15212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15500.img.xml">
+      <PackagePath>Assets\Skills\Xml\15500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15510.img.xml">
+      <PackagePath>Assets\Skills\Xml\15510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15511.img.xml">
+      <PackagePath>Assets\Skills\Xml\15511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15512.img.xml">
+      <PackagePath>Assets\Skills\Xml\15512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16000.img.xml">
+      <PackagePath>Assets\Skills\Xml\16000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16400.img.xml">
+      <PackagePath>Assets\Skills\Xml\16400.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16410.img.xml">
+      <PackagePath>Assets\Skills\Xml\16410.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16411.img.xml">
+      <PackagePath>Assets\Skills\Xml\16411.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16412.img.xml">
+      <PackagePath>Assets\Skills\Xml\16412.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\200.img.xml">
+      <PackagePath>Assets\Skills\Xml\200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2000.img.xml">
+      <PackagePath>Assets\Skills\Xml\2000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2001.img.xml">
+      <PackagePath>Assets\Skills\Xml\2001.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2002.img.xml">
+      <PackagePath>Assets\Skills\Xml\2002.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2003.img.xml">
+      <PackagePath>Assets\Skills\Xml\2003.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2004.img.xml">
+      <PackagePath>Assets\Skills\Xml\2004.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2005.img.xml">
+      <PackagePath>Assets\Skills\Xml\2005.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\210.img.xml">
+      <PackagePath>Assets\Skills\Xml\210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2100.img.xml">
+      <PackagePath>Assets\Skills\Xml\2100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\211.img.xml">
+      <PackagePath>Assets\Skills\Xml\211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2110.img.xml">
+      <PackagePath>Assets\Skills\Xml\2110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2111.img.xml">
+      <PackagePath>Assets\Skills\Xml\2111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2112.img.xml">
+      <PackagePath>Assets\Skills\Xml\2112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\212.img.xml">
+      <PackagePath>Assets\Skills\Xml\212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\220.img.xml">
+      <PackagePath>Assets\Skills\Xml\220.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2200.img.xml">
+      <PackagePath>Assets\Skills\Xml\2200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\221.img.xml">
+      <PackagePath>Assets\Skills\Xml\221.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2210.img.xml">
+      <PackagePath>Assets\Skills\Xml\2210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2211.img.xml">
+      <PackagePath>Assets\Skills\Xml\2211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2212.img.xml">
+      <PackagePath>Assets\Skills\Xml\2212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2213.img.xml">
+      <PackagePath>Assets\Skills\Xml\2213.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2214.img.xml">
+      <PackagePath>Assets\Skills\Xml\2214.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2215.img.xml">
+      <PackagePath>Assets\Skills\Xml\2215.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2216.img.xml">
+      <PackagePath>Assets\Skills\Xml\2216.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2217.img.xml">
+      <PackagePath>Assets\Skills\Xml\2217.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2218.img.xml">
+      <PackagePath>Assets\Skills\Xml\2218.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\222.img.xml">
+      <PackagePath>Assets\Skills\Xml\222.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\230.img.xml">
+      <PackagePath>Assets\Skills\Xml\230.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2300.img.xml">
+      <PackagePath>Assets\Skills\Xml\2300.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\231.img.xml">
+      <PackagePath>Assets\Skills\Xml\231.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2310.img.xml">
+      <PackagePath>Assets\Skills\Xml\2310.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2311.img.xml">
+      <PackagePath>Assets\Skills\Xml\2311.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2312.img.xml">
+      <PackagePath>Assets\Skills\Xml\2312.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\232.img.xml">
+      <PackagePath>Assets\Skills\Xml\232.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2400.img.xml">
+      <PackagePath>Assets\Skills\Xml\2400.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2410.img.xml">
+      <PackagePath>Assets\Skills\Xml\2410.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2411.img.xml">
+      <PackagePath>Assets\Skills\Xml\2411.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2412.img.xml">
+      <PackagePath>Assets\Skills\Xml\2412.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2500.img.xml">
+      <PackagePath>Assets\Skills\Xml\2500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2510.img.xml">
+      <PackagePath>Assets\Skills\Xml\2510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2511.img.xml">
+      <PackagePath>Assets\Skills\Xml\2511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2512.img.xml">
+      <PackagePath>Assets\Skills\Xml\2512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2700.img.xml">
+      <PackagePath>Assets\Skills\Xml\2700.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2710.img.xml">
+      <PackagePath>Assets\Skills\Xml\2710.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2711.img.xml">
+      <PackagePath>Assets\Skills\Xml\2711.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2712.img.xml">
+      <PackagePath>Assets\Skills\Xml\2712.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\300.img.xml">
+      <PackagePath>Assets\Skills\Xml\300.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3000.img.xml">
+      <PackagePath>Assets\Skills\Xml\3000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\30000.img.xml">
+      <PackagePath>Assets\Skills\Xml\30000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3001.img.xml">
+      <PackagePath>Assets\Skills\Xml\3001.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3002.img.xml">
+      <PackagePath>Assets\Skills\Xml\3002.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\301.img.xml">
+      <PackagePath>Assets\Skills\Xml\301.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\310.img.xml">
+      <PackagePath>Assets\Skills\Xml\310.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3100.img.xml">
+      <PackagePath>Assets\Skills\Xml\3100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3101.img.xml">
+      <PackagePath>Assets\Skills\Xml\3101.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\311.img.xml">
+      <PackagePath>Assets\Skills\Xml\311.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3110.img.xml">
+      <PackagePath>Assets\Skills\Xml\3110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3111.img.xml">
+      <PackagePath>Assets\Skills\Xml\3111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3112.img.xml">
+      <PackagePath>Assets\Skills\Xml\3112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\312.img.xml">
+      <PackagePath>Assets\Skills\Xml\312.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3120.img.xml">
+      <PackagePath>Assets\Skills\Xml\3120.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3121.img.xml">
+      <PackagePath>Assets\Skills\Xml\3121.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3122.img.xml">
+      <PackagePath>Assets\Skills\Xml\3122.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\320.img.xml">
+      <PackagePath>Assets\Skills\Xml\320.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3200.img.xml">
+      <PackagePath>Assets\Skills\Xml\3200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\321.img.xml">
+      <PackagePath>Assets\Skills\Xml\321.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3210.img.xml">
+      <PackagePath>Assets\Skills\Xml\3210.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3211.img.xml">
+      <PackagePath>Assets\Skills\Xml\3211.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3212.img.xml">
+      <PackagePath>Assets\Skills\Xml\3212.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\322.img.xml">
+      <PackagePath>Assets\Skills\Xml\322.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\330.img.xml">
+      <PackagePath>Assets\Skills\Xml\330.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3300.img.xml">
+      <PackagePath>Assets\Skills\Xml\3300.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\331.img.xml">
+      <PackagePath>Assets\Skills\Xml\331.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3310.img.xml">
+      <PackagePath>Assets\Skills\Xml\3310.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3311.img.xml">
+      <PackagePath>Assets\Skills\Xml\3311.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3312.img.xml">
+      <PackagePath>Assets\Skills\Xml\3312.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\332.img.xml">
+      <PackagePath>Assets\Skills\Xml\332.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3500.img.xml">
+      <PackagePath>Assets\Skills\Xml\3500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3510.img.xml">
+      <PackagePath>Assets\Skills\Xml\3510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3511.img.xml">
+      <PackagePath>Assets\Skills\Xml\3511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3512.img.xml">
+      <PackagePath>Assets\Skills\Xml\3512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3600.img.xml">
+      <PackagePath>Assets\Skills\Xml\3600.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3610.img.xml">
+      <PackagePath>Assets\Skills\Xml\3610.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3611.img.xml">
+      <PackagePath>Assets\Skills\Xml\3611.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3612.img.xml">
+      <PackagePath>Assets\Skills\Xml\3612.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3700.img.xml">
+      <PackagePath>Assets\Skills\Xml\3700.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3710.img.xml">
+      <PackagePath>Assets\Skills\Xml\3710.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3711.img.xml">
+      <PackagePath>Assets\Skills\Xml\3711.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3712.img.xml">
+      <PackagePath>Assets\Skills\Xml\3712.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\400.img.xml">
+      <PackagePath>Assets\Skills\Xml\400.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40000.img.xml">
+      <PackagePath>Assets\Skills\Xml\40000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40001.img.xml">
+      <PackagePath>Assets\Skills\Xml\40001.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40002.img.xml">
+      <PackagePath>Assets\Skills\Xml\40002.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\410.img.xml">
+      <PackagePath>Assets\Skills\Xml\410.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\411.img.xml">
+      <PackagePath>Assets\Skills\Xml\411.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\412.img.xml">
+      <PackagePath>Assets\Skills\Xml\412.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\420.img.xml">
+      <PackagePath>Assets\Skills\Xml\420.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\421.img.xml">
+      <PackagePath>Assets\Skills\Xml\421.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\422.img.xml">
+      <PackagePath>Assets\Skills\Xml\422.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\430.img.xml">
+      <PackagePath>Assets\Skills\Xml\430.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\431.img.xml">
+      <PackagePath>Assets\Skills\Xml\431.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\432.img.xml">
+      <PackagePath>Assets\Skills\Xml\432.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\433.img.xml">
+      <PackagePath>Assets\Skills\Xml\433.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\434.img.xml">
+      <PackagePath>Assets\Skills\Xml\434.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\500.img.xml">
+      <PackagePath>Assets\Skills\Xml\500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5000.img.xml">
+      <PackagePath>Assets\Skills\Xml\5000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\501.img.xml">
+      <PackagePath>Assets\Skills\Xml\501.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\510.img.xml">
+      <PackagePath>Assets\Skills\Xml\510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5100.img.xml">
+      <PackagePath>Assets\Skills\Xml\5100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\511.img.xml">
+      <PackagePath>Assets\Skills\Xml\511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5110.img.xml">
+      <PackagePath>Assets\Skills\Xml\5110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5111.img.xml">
+      <PackagePath>Assets\Skills\Xml\5111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5112.img.xml">
+      <PackagePath>Assets\Skills\Xml\5112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\512.img.xml">
+      <PackagePath>Assets\Skills\Xml\512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\520.img.xml">
+      <PackagePath>Assets\Skills\Xml\520.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\521.img.xml">
+      <PackagePath>Assets\Skills\Xml\521.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\522.img.xml">
+      <PackagePath>Assets\Skills\Xml\522.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\530.img.xml">
+      <PackagePath>Assets\Skills\Xml\530.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\531.img.xml">
+      <PackagePath>Assets\Skills\Xml\531.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\532.img.xml">
+      <PackagePath>Assets\Skills\Xml\532.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6000.img.xml">
+      <PackagePath>Assets\Skills\Xml\6000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6001.img.xml">
+      <PackagePath>Assets\Skills\Xml\6001.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6002.img.xml">
+      <PackagePath>Assets\Skills\Xml\6002.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6100.img.xml">
+      <PackagePath>Assets\Skills\Xml\6100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6110.img.xml">
+      <PackagePath>Assets\Skills\Xml\6110.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6111.img.xml">
+      <PackagePath>Assets\Skills\Xml\6111.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6112.img.xml">
+      <PackagePath>Assets\Skills\Xml\6112.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6400.img.xml">
+      <PackagePath>Assets\Skills\Xml\6400.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6410.img.xml">
+      <PackagePath>Assets\Skills\Xml\6410.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6411.img.xml">
+      <PackagePath>Assets\Skills\Xml\6411.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6412.img.xml">
+      <PackagePath>Assets\Skills\Xml\6412.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6500.img.xml">
+      <PackagePath>Assets\Skills\Xml\6500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6510.img.xml">
+      <PackagePath>Assets\Skills\Xml\6510.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6511.img.xml">
+      <PackagePath>Assets\Skills\Xml\6511.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6512.img.xml">
+      <PackagePath>Assets\Skills\Xml\6512.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7000.img.xml">
+      <PackagePath>Assets\Skills\Xml\7000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7100.img.xml">
+      <PackagePath>Assets\Skills\Xml\7100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7200.img.xml">
+      <PackagePath>Assets\Skills\Xml\7200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\800.img.xml">
+      <PackagePath>Assets\Skills\Xml\800.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\900.img.xml">
+      <PackagePath>Assets\Skills\Xml\900.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9000.img.xml">
+      <PackagePath>Assets\Skills\Xml\9000.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9100.img.xml">
+      <PackagePath>Assets\Skills\Xml\9100.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9200.img.xml">
+      <PackagePath>Assets\Skills\Xml\9200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9201.img.xml">
+      <PackagePath>Assets\Skills\Xml\9201.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9202.img.xml">
+      <PackagePath>Assets\Skills\Xml\9202.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9203.img.xml">
+      <PackagePath>Assets\Skills\Xml\9203.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9204.img.xml">
+      <PackagePath>Assets\Skills\Xml\9204.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9500.img.xml">
+      <PackagePath>Assets\Skills\Xml\9500.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Attacktype.img.xml">
+      <PackagePath>Assets\Skills\Xml\Attacktype.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\BFSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\BFSkill.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\EliteMobSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\EliteMobSkill.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\HekatonFieldSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\HekatonFieldSkill.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\ItemSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\ItemSkill.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\MCGuardian.img.xml">
+      <PackagePath>Assets\Skills\Xml\MCGuardian.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\MCSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\MCSkill.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9200.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9200.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9201.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9201.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9202.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9202.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9203.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9203.img.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9204.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9204.img.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -225,6 +906,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\CharacterAddPage.xbf">
       <PackagePath>View\CharacterAddPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\DPMCalcPage.xbf">
+      <PackagePath>View\DPMCalcPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\EquipmentAddPage.xbf">
       <PackagePath>View\EquipmentAddPage.xbf</PackagePath>

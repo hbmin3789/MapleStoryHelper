@@ -26,6 +26,7 @@ namespace MapleStoryHelper
         public MainPage()
         {
             this.InitializeComponent();
+            App.mapleStoryHelperViewModel.OnProgress += ActiveProgressRing;
             this.DataContext = App.mapleStoryHelperViewModel;
         }
 
@@ -33,6 +34,16 @@ namespace MapleStoryHelper
         {
             var ContentFrame = Window.Current.Content as Frame;
             ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
+        }
+
+        public void ActiveProgressRing(object sender, bool isActive)
+        {
+            progress.IsActive = isActive;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            App.mapleStoryHelperViewModel.WzFilePath = @"C:\Nexon\Maple\Character.wz";
         }
     }
 }

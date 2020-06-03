@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using WzComparerR2.WzLib;
 
 namespace WzComparerR2.CharaSim
@@ -317,21 +316,7 @@ namespace WzComparerR2.CharaSim
                         case "icon":
                             if (subNode.Value is Wz_Png)
                             {
-                                gear.Icon = BitmapOrigin.CreateFromNode(subNode, findNode);
-                            }
-                            break;
-
-                        case "iconRaw":
-                            if (subNode.Value is Wz_Png)
-                            {
-                                gear.IconRaw = BitmapOrigin.CreateFromNode(subNode, findNode);
-                            }
-                            break;
-
-                        case "sample":
-                            if (subNode.Value is Wz_Png)
-                            {
-                                gear.Sample = BitmapOrigin.CreateFromNode(subNode, findNode);
+                                gear.byteArr = BitmapOrigin.GetByteArr(subNode, findNode);
                             }
                             break;
 
