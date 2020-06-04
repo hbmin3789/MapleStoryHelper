@@ -409,6 +409,7 @@
     <Content Include="Assets\Skills\Xml\Recipe_9202.img.xml" />
     <Content Include="Assets\Skills\Xml\Recipe_9203.img.xml" />
     <Content Include="Assets\Skills\Xml\Recipe_9204.img.xml" />
+    <Content Include="Assets\Skills\Xml\Skill.img.xml" />
     <Content Include="Assets\UI\StatusDetail.png" />
     <Content Include="Assets\UI\StatusMain.png" />
     <Content Include="Properties\Default.rd.xml" />

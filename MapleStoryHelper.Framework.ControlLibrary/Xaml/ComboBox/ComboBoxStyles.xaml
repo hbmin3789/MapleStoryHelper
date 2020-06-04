@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MapleStoryHelper.Framework.ControlLibrary.Xaml.ComboBox">
+    <Style x:Key="MapleStoryHelperComboBoxStyle" TargetType="ListView">
+        <Setter Property="ItemTemplate" Value="{StaticResource MapleStoryHelperComboBoxItemStyle}"/>
+    </Style>
+
+    <Style x:Key="MapleStoryHelperComboBoxItemStyle" TargetType="ListBoxItem">
+        
+    </Style>
+    
+</ResourceDictionary>
