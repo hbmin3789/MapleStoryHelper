@@ -357,3 +357,8 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\V
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\DPMCalcPage.g.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\DPMCalcPage.xaml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\DPMCalcPage.xbf
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\OneKillCalc.xbf
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.g.i.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.xaml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.xbf

@@ -5,6 +5,9 @@ Assets\Items\Scroll\Magical.png
 Assets\Items\Scroll\Premium.png
 Assets\Items\Scroll\Trace.png
 Assets\LockScreenLogo.scale-200.png
+Assets\Mob\Mob.img.xml
+Assets\Mob\Picture\빛의 집행자.png
+Assets\Mob\Picture\어센시온.png
 Assets\Skills\Xml\000.img.xml
 Assets\Skills\Xml\100.img.xml
 Assets\Skills\Xml\1000.img.xml
@@ -229,6 +232,7 @@ Assets\Skills\Xml\Recipe_9201.img.xml
 Assets\Skills\Xml\Recipe_9202.img.xml
 Assets\Skills\Xml\Recipe_9203.img.xml
 Assets\Skills\Xml\Recipe_9204.img.xml
+Assets\Skills\Xml\Skill.img.xml
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -253,4 +257,5 @@ View\DPMCalcPage.xbf
 View\EquipmentAddPage.xbf
 View\ItemSettingPage.xbf
 View\MainPage.xbf
+View\OneKillCalc.xbf
 Properties\Default.rd.xml
