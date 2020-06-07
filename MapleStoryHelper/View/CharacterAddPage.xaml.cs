@@ -40,15 +40,8 @@ namespace MapleStoryHelper.View
 
         private void OnLoaded()
         {
-            InitControl();
             InitComboBox();
             
-        }
-
-        private void InitControl()
-        {
-            //캐릭터 수정때 DataContext를 설정해주기 위해 함수로 뺐음.
-            SetCharacter(App.mapleStoryHelperViewModel.NewCharacterItem);
         }
 
         private void InitComboBox()
@@ -58,7 +51,13 @@ namespace MapleStoryHelper.View
 
             for (int i = 0; i < items.Length; i++)
             {
+
                 ComboBoxItem newItem = new ComboBoxItem();
+
+                if((ECharacterJob)items.GetValue(i) == ECharacterJob.All)
+                {
+                    continue;
+                }
 
                 newItem.Content = converter.Convert(items.GetValue(i), null, null, null).ToString();
 
@@ -66,11 +65,14 @@ namespace MapleStoryHelper.View
             }
         }
 
-        public void SetCharacter(Character character)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            this.DataContext = character;
-            ctrlStatusDisplay.DataContextBinding = character;
+            if(e.Parameter != null)
+            {
+                this.DataContext = e.Parameter;
+            }
         }
+
 
         private async void btnSave_Click(object sender, RoutedEventArgs e)
         {
@@ -92,7 +94,7 @@ namespace MapleStoryHelper.View
 
             if (result == true)
             {
-                App.mapleStoryHelperViewModel.AddCharacter(result);
+                App.mapleStoryHelperViewModel.AddCharacter();
                 var ContentFrame = Window.Current.Content as Frame;
                 ContentFrame.Navigate(typeof(MainPage), null, new DrillInNavigationTransitionInfo());
             }
@@ -111,7 +113,7 @@ namespace MapleStoryHelper.View
             Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
             if (file != null)
             {
-                var character = App.mapleStoryHelperViewModel.NewCharacterItem;
+                var character = this.DataContext as Character;
 
                 character.ImageSrc = file.Path;
 
@@ -141,22 +143,25 @@ namespace MapleStoryHelper.View
 
         private void cbCharacterJob_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(cbCharacterJob.SelectedItem != null)
-            {
-                gdSpecSetting.Visibility = Visibility.Visible;
-            }
-            else
+
+            if(cbCharacterJob.SelectedItem == null)
             {
                 gdSpecSetting.Visibility = Visibility.Collapsed;
             }
-
-            if((ECharacterJob)(cbCharacterJob.SelectedIndex) == ECharacterJob.Xenon)
+            else
             {
-                App.mapleStoryHelperViewModel.NewCharacterItem = new Xenon();
-                App.mapleStoryHelperViewModel.NewCharacterItem.CharacterJob = (this.DataContext as Character).CharacterJob;
-
-                SetCharacter(App.mapleStoryHelperViewModel.NewCharacterItem);
+                gdSpecSetting.Visibility = Visibility.Visible;
             }
+
+            Character character = this.DataContext as Character;
+
+            var job = (ECharacterJob)(cbCharacterJob.SelectedIndex);
+            if (job == ECharacterJob.Xenon)
+            {
+                character = this.DataContext as Xenon;
+            }
+
+            character.CharacterJob = job;
         }
     }
 }

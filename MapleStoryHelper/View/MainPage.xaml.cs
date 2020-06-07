@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Control;
+using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.View;
 using System;
 using System.Collections.Generic;
@@ -33,17 +34,13 @@ namespace MapleStoryHelper
         private void btnAddCharacter_Click(object sender, RoutedEventArgs e)
         {
             var ContentFrame = Window.Current.Content as Frame;
-            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
+            var character = new Character();
+            ContentFrame.Navigate(typeof(CharacterAddPage), character, new DrillInNavigationTransitionInfo());
         }
 
         public void ActiveProgressRing(object sender, bool isActive)
         {
             progress.IsActive = isActive;
-        }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            App.mapleStoryHelperViewModel.WzFilePath = @"C:\Nexon\Maple\Character.wz";
         }
     }
 }

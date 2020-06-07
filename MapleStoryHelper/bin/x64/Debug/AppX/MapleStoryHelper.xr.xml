@@ -203,6 +203,7 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedIndex" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.Item.EquipmentInfoControl" />
@@ -238,12 +239,12 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
-      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="MapleStoryHelper.View.BossDamageCalcPage" />
     <RootType FullName="MapleStoryHelper.Converter.IntToECharacterJobConverter" />
     <RootType FullName="MapleStoryHelper.View.CharacterAddPage" />
+    <RootType FullName="MapleStoryHelper.View.DPMCalcPage" />
     <RootType FullName="MapleStoryHelper.View.EquipmentAddPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Border" />
     <RootType FullName="MapleStoryHelper.View.ItemSettingPage" />
@@ -251,5 +252,9 @@
       <RootProperty Name="IsActive" />
     </RootType>
     <RootType FullName="MapleStoryHelper.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="MapleStoryHelper.View.OneKillCalc" />
   </Roots.RootTypes>
 </Roots>

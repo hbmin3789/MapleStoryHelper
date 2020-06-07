@@ -239,7 +239,6 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
-      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="MapleStoryHelper.View.BossDamageCalcPage" />

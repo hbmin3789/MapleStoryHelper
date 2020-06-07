@@ -1,26 +1,11 @@
 ﻿using MapleStoryHelper.Control.Item;
 using MapleStoryHelper.Converter.Equipment;
 using MapleStoryHelper.Standard.Character;
-using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Commands;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Windows.Input;
-using Windows.ApplicationModel.Core;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Core;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
@@ -32,21 +17,7 @@ namespace MapleStoryHelper.View
     /// </summary>
     public sealed partial class ItemSettingPage : Page
     {
-
-        public object DataContextBinding
-        {
-            get
-            {
-                return this.DataContext;
-            }
-            set
-            {
-                this.DataContext = value;
-                UpdateView();
-                ctrlStatusDisplay.DataContextBinding = new Character();
-                ctrlStatusDisplay.DataContextBinding = value;
-            }
-        }
+        private Character Backup;
 
         public ItemSettingPage()
         {
@@ -63,7 +34,7 @@ namespace MapleStoryHelper.View
             var control = new EquipmentInfoControl();
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
 
-            await control.InitEquipComboBox(category, DataContextBinding as Character);
+            await control.InitEquipComboBox(category, this.DataContext as Character);
             control.Category = category;
 
             ContentDialog noWifiDialog = new ContentDialog
@@ -81,14 +52,23 @@ namespace MapleStoryHelper.View
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var datacontext = (Character)e.Parameter;
-            DataContextBinding = datacontext;
+            this.DataContext = e.Parameter;
+            if(e.Parameter is Xenon)
+            {
+                Backup = e.Parameter as Xenon;
+            }
+            else
+            {
+                Backup = e.Parameter as Character;
+            }
+            UpdateView();
         }
 
         private void OnItemSave(EquipmentInfoControl control)
         {
             control.OnSaved?.Invoke(this, null);
-            var character = (Character)DataContextBinding;
+
+            var character = this.DataContext as Character;
 
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
 
@@ -99,12 +79,12 @@ namespace MapleStoryHelper.View
             }
 
             UpdateView();
-            DataContextBinding = character;
+            
         }
 
         private void UpdateView()
         {
-            var character = (Character)DataContextBinding;
+            var character = this.DataContext as Character;
             imgRing1.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring1].ImgBitmapSource as BitmapImage;
             imgRing2.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring2].ImgBitmapSource as BitmapImage;
             imgRing3.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgBitmapSource as BitmapImage;
@@ -114,6 +94,13 @@ namespace MapleStoryHelper.View
             imgFace.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Face].ImgBitmapSource as BitmapImage;
             imgEye.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Eye].ImgBitmapSource as BitmapImage;
             imgWeapon.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgBitmapSource as BitmapImage;
+            UpdateStatusView();
+        }
+
+        private void UpdateStatusView()
+        {
+            ctrlStatusDisplay.DataContext = new Character();
+            ctrlStatusDisplay.DataContext = this.DataContext as Character;
         }
 
         private ECharacterEquipmentCategory GetCategory(string CommandParameter)
@@ -134,16 +121,16 @@ namespace MapleStoryHelper.View
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             var ContentFrame = Window.Current.Content as Frame;
-            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
+            ContentFrame.Navigate(typeof(CharacterAddPage), this.DataContext, new DrillInNavigationTransitionInfo());
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            var character = DataContextBinding as Character;
+            var character = this.DataContext as Character;
             character.InitEquipment();
 
             var ContentFrame = Window.Current.Content as Frame;
-            ContentFrame.Navigate(typeof(CharacterAddPage), null, new DrillInNavigationTransitionInfo());
+            ContentFrame.Navigate(typeof(CharacterAddPage), Backup, new DrillInNavigationTransitionInfo());
         }
     }
 }

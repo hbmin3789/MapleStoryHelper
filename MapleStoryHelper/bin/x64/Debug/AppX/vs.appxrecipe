@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T03:25:36.939</Modified>
+      <Modified>2020-06-07T06:51:34.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.exe">
       <PackagePath>entrypoint\MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-06-02T03:25:33.863</Modified>
+      <Modified>2020-06-07T06:51:31.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.exe.config">
       <PackagePath>MapleStoryHelper.exe.config</PackagePath>
@@ -164,19 +164,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll">
       <PackagePath>MapleStoryHelper.Standard.Character.dll</PackagePath>
-      <Modified>2020-06-02T03:25:19.574</Modified>
+      <Modified>2020-06-07T05:36:26.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll">
       <PackagePath>MapleStoryHelper.Standard.dll</PackagePath>
-      <Modified>2020-06-01T06:11:04.543</Modified>
+      <Modified>2020-06-07T05:36:22.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.dll">
       <PackagePath>MapleStoryHelper.Standard.Item.dll</PackagePath>
-      <Modified>2020-06-01T06:41:04.357</Modified>
+      <Modified>2020-06-07T05:36:23.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.dll">
       <PackagePath>MapleStoryHelper.Standard.Resources.dll</PackagePath>
-      <Modified>2020-06-02T03:25:19.138</Modified>
+      <Modified>2020-06-07T05:36:25.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll">
       <PackagePath>WzComparerR2.WzLib.dll</PackagePath>
@@ -217,6 +217,14 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Items\Scroll\Trace.png">
       <PackagePath>Assets\Items\Scroll\Trace.png</PackagePath>
       <Modified>2020-05-28T03:19:59.877</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Mob\Picture\빛의 집행자.png">
+      <PackagePath>Assets\Mob\Picture\빛의 집행자.png</PackagePath>
+      <Modified>2020-06-02T06:06:54.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Mob\Picture\어센시온.png">
+      <PackagePath>Assets\Mob\Picture\어센시온.png</PackagePath>
+      <Modified>2020-06-02T06:06:54.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\UI\StatusDetail.png">
       <PackagePath>Assets\UI\StatusDetail.png</PackagePath>
@@ -260,69 +268,981 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-05-28T03:19:59.893</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Mob\Mob.img.xml">
+      <PackagePath>Assets\Mob\Mob.img.xml</PackagePath>
+      <Modified>2020-06-02T05:52:48.465</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\000.img.xml">
+      <PackagePath>Assets\Skills\Xml\000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:27.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\100.img.xml">
+      <PackagePath>Assets\Skills\Xml\100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:46.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1000.img.xml">
+      <PackagePath>Assets\Skills\Xml\1000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:46.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10000.img.xml">
+      <PackagePath>Assets\Skills\Xml\10000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:54.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10100.img.xml">
+      <PackagePath>Assets\Skills\Xml\10100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:17.960</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10110.img.xml">
+      <PackagePath>Assets\Skills\Xml\10110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:11.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10111.img.xml">
+      <PackagePath>Assets\Skills\Xml\10111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.130</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\10112.img.xml">
+      <PackagePath>Assets\Skills\Xml\10112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\110.img.xml">
+      <PackagePath>Assets\Skills\Xml\110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:03.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1100.img.xml">
+      <PackagePath>Assets\Skills\Xml\1100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.598</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\111.img.xml">
+      <PackagePath>Assets\Skills\Xml\111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:10.670</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1110.img.xml">
+      <PackagePath>Assets\Skills\Xml\1110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.077</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1111.img.xml">
+      <PackagePath>Assets\Skills\Xml\1111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1112.img.xml">
+      <PackagePath>Assets\Skills\Xml\1112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:21.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\112.img.xml">
+      <PackagePath>Assets\Skills\Xml\112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.745</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\120.img.xml">
+      <PackagePath>Assets\Skills\Xml\120.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:07.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1200.img.xml">
+      <PackagePath>Assets\Skills\Xml\1200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.311</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\121.img.xml">
+      <PackagePath>Assets\Skills\Xml\121.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1210.img.xml">
+      <PackagePath>Assets\Skills\Xml\1210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:16.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1211.img.xml">
+      <PackagePath>Assets\Skills\Xml\1211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1212.img.xml">
+      <PackagePath>Assets\Skills\Xml\1212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:03.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\122.img.xml">
+      <PackagePath>Assets\Skills\Xml\122.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.745</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\130.img.xml">
+      <PackagePath>Assets\Skills\Xml\130.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1300.img.xml">
+      <PackagePath>Assets\Skills\Xml\1300.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\13000.img.xml">
+      <PackagePath>Assets\Skills\Xml\13000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:25.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\131.img.xml">
+      <PackagePath>Assets\Skills\Xml\131.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:18.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1310.img.xml">
+      <PackagePath>Assets\Skills\Xml\1310.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:18.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\13100.img.xml">
+      <PackagePath>Assets\Skills\Xml\13100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:29.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1311.img.xml">
+      <PackagePath>Assets\Skills\Xml\1311.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:50.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1312.img.xml">
+      <PackagePath>Assets\Skills\Xml\1312.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:53.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\132.img.xml">
+      <PackagePath>Assets\Skills\Xml\132.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1400.img.xml">
+      <PackagePath>Assets\Skills\Xml\1400.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14000.img.xml">
+      <PackagePath>Assets\Skills\Xml\14000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1410.img.xml">
+      <PackagePath>Assets\Skills\Xml\1410.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1411.img.xml">
+      <PackagePath>Assets\Skills\Xml\1411.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.226</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1412.img.xml">
+      <PackagePath>Assets\Skills\Xml\1412.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14200.img.xml">
+      <PackagePath>Assets\Skills\Xml\14200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14210.img.xml">
+      <PackagePath>Assets\Skills\Xml\14210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14211.img.xml">
+      <PackagePath>Assets\Skills\Xml\14211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.754</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\14212.img.xml">
+      <PackagePath>Assets\Skills\Xml\14212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:52.179</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1500.img.xml">
+      <PackagePath>Assets\Skills\Xml\1500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.063</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15000.img.xml">
+      <PackagePath>Assets\Skills\Xml\15000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:17.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15001.img.xml">
+      <PackagePath>Assets\Skills\Xml\15001.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:04.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15002.img.xml">
+      <PackagePath>Assets\Skills\Xml\15002.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:53.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1510.img.xml">
+      <PackagePath>Assets\Skills\Xml\1510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15100.img.xml">
+      <PackagePath>Assets\Skills\Xml\15100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:26.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1511.img.xml">
+      <PackagePath>Assets\Skills\Xml\1511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:00.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15110.img.xml">
+      <PackagePath>Assets\Skills\Xml\15110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:23.120</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15111.img.xml">
+      <PackagePath>Assets\Skills\Xml\15111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:03.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15112.img.xml">
+      <PackagePath>Assets\Skills\Xml\15112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\1512.img.xml">
+      <PackagePath>Assets\Skills\Xml\1512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15200.img.xml">
+      <PackagePath>Assets\Skills\Xml\15200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:08.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15210.img.xml">
+      <PackagePath>Assets\Skills\Xml\15210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15211.img.xml">
+      <PackagePath>Assets\Skills\Xml\15211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.243</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15212.img.xml">
+      <PackagePath>Assets\Skills\Xml\15212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15500.img.xml">
+      <PackagePath>Assets\Skills\Xml\15500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15510.img.xml">
+      <PackagePath>Assets\Skills\Xml\15510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:11.790</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15511.img.xml">
+      <PackagePath>Assets\Skills\Xml\15511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\15512.img.xml">
+      <PackagePath>Assets\Skills\Xml\15512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:01.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16000.img.xml">
+      <PackagePath>Assets\Skills\Xml\16000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16400.img.xml">
+      <PackagePath>Assets\Skills\Xml\16400.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.909</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16410.img.xml">
+      <PackagePath>Assets\Skills\Xml\16410.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16411.img.xml">
+      <PackagePath>Assets\Skills\Xml\16411.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:08.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\16412.img.xml">
+      <PackagePath>Assets\Skills\Xml\16412.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.337</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\200.img.xml">
+      <PackagePath>Assets\Skills\Xml\200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:54.005</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2000.img.xml">
+      <PackagePath>Assets\Skills\Xml\2000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.142</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2001.img.xml">
+      <PackagePath>Assets\Skills\Xml\2001.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2002.img.xml">
+      <PackagePath>Assets\Skills\Xml\2002.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:27.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2003.img.xml">
+      <PackagePath>Assets\Skills\Xml\2003.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:28.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2004.img.xml">
+      <PackagePath>Assets\Skills\Xml\2004.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:57.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2005.img.xml">
+      <PackagePath>Assets\Skills\Xml\2005.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:15.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\210.img.xml">
+      <PackagePath>Assets\Skills\Xml\210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:25.789</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2100.img.xml">
+      <PackagePath>Assets\Skills\Xml\2100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:59.905</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\211.img.xml">
+      <PackagePath>Assets\Skills\Xml\211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2110.img.xml">
+      <PackagePath>Assets\Skills\Xml\2110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.572</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2111.img.xml">
+      <PackagePath>Assets\Skills\Xml\2111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2112.img.xml">
+      <PackagePath>Assets\Skills\Xml\2112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:17.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\212.img.xml">
+      <PackagePath>Assets\Skills\Xml\212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:49.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\220.img.xml">
+      <PackagePath>Assets\Skills\Xml\220.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2200.img.xml">
+      <PackagePath>Assets\Skills\Xml\2200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:28.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\221.img.xml">
+      <PackagePath>Assets\Skills\Xml\221.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.082</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2210.img.xml">
+      <PackagePath>Assets\Skills\Xml\2210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2211.img.xml">
+      <PackagePath>Assets\Skills\Xml\2211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2212.img.xml">
+      <PackagePath>Assets\Skills\Xml\2212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.420</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2213.img.xml">
+      <PackagePath>Assets\Skills\Xml\2213.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.226</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2214.img.xml">
+      <PackagePath>Assets\Skills\Xml\2214.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:10.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2215.img.xml">
+      <PackagePath>Assets\Skills\Xml\2215.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:53.083</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2216.img.xml">
+      <PackagePath>Assets\Skills\Xml\2216.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2217.img.xml">
+      <PackagePath>Assets\Skills\Xml\2217.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2218.img.xml">
+      <PackagePath>Assets\Skills\Xml\2218.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:18.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\222.img.xml">
+      <PackagePath>Assets\Skills\Xml\222.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:13.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\230.img.xml">
+      <PackagePath>Assets\Skills\Xml\230.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2300.img.xml">
+      <PackagePath>Assets\Skills\Xml\2300.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.243</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\231.img.xml">
+      <PackagePath>Assets\Skills\Xml\231.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:23.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2310.img.xml">
+      <PackagePath>Assets\Skills\Xml\2310.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2311.img.xml">
+      <PackagePath>Assets\Skills\Xml\2311.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:59.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2312.img.xml">
+      <PackagePath>Assets\Skills\Xml\2312.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.705</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\232.img.xml">
+      <PackagePath>Assets\Skills\Xml\232.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:56.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2400.img.xml">
+      <PackagePath>Assets\Skills\Xml\2400.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:24.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2410.img.xml">
+      <PackagePath>Assets\Skills\Xml\2410.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:23.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2411.img.xml">
+      <PackagePath>Assets\Skills\Xml\2411.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:52.224</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2412.img.xml">
+      <PackagePath>Assets\Skills\Xml\2412.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:10.100</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2500.img.xml">
+      <PackagePath>Assets\Skills\Xml\2500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:57.273</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2510.img.xml">
+      <PackagePath>Assets\Skills\Xml\2510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:20.705</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2511.img.xml">
+      <PackagePath>Assets\Skills\Xml\2511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.554</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2512.img.xml">
+      <PackagePath>Assets\Skills\Xml\2512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:00.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2700.img.xml">
+      <PackagePath>Assets\Skills\Xml\2700.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:21.228</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2710.img.xml">
+      <PackagePath>Assets\Skills\Xml\2710.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:08.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2711.img.xml">
+      <PackagePath>Assets\Skills\Xml\2711.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.151</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\2712.img.xml">
+      <PackagePath>Assets\Skills\Xml\2712.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:25.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\300.img.xml">
+      <PackagePath>Assets\Skills\Xml\300.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3000.img.xml">
+      <PackagePath>Assets\Skills\Xml\3000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.161</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\30000.img.xml">
+      <PackagePath>Assets\Skills\Xml\30000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.368</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3001.img.xml">
+      <PackagePath>Assets\Skills\Xml\3001.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:59.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3002.img.xml">
+      <PackagePath>Assets\Skills\Xml\3002.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:52.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\301.img.xml">
+      <PackagePath>Assets\Skills\Xml\301.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.598</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\310.img.xml">
+      <PackagePath>Assets\Skills\Xml\310.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3100.img.xml">
+      <PackagePath>Assets\Skills\Xml\3100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:01.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3101.img.xml">
+      <PackagePath>Assets\Skills\Xml\3101.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:20.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\311.img.xml">
+      <PackagePath>Assets\Skills\Xml\311.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3110.img.xml">
+      <PackagePath>Assets\Skills\Xml\3110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:03.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3111.img.xml">
+      <PackagePath>Assets\Skills\Xml\3111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:04.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3112.img.xml">
+      <PackagePath>Assets\Skills\Xml\3112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\312.img.xml">
+      <PackagePath>Assets\Skills\Xml\312.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.700</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3120.img.xml">
+      <PackagePath>Assets\Skills\Xml\3120.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3121.img.xml">
+      <PackagePath>Assets\Skills\Xml\3121.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:50.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3122.img.xml">
+      <PackagePath>Assets\Skills\Xml\3122.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\320.img.xml">
+      <PackagePath>Assets\Skills\Xml\320.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3200.img.xml">
+      <PackagePath>Assets\Skills\Xml\3200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:17.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\321.img.xml">
+      <PackagePath>Assets\Skills\Xml\321.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3210.img.xml">
+      <PackagePath>Assets\Skills\Xml\3210.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3211.img.xml">
+      <PackagePath>Assets\Skills\Xml\3211.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.312</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3212.img.xml">
+      <PackagePath>Assets\Skills\Xml\3212.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:00.697</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\322.img.xml">
+      <PackagePath>Assets\Skills\Xml\322.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:59.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\330.img.xml">
+      <PackagePath>Assets\Skills\Xml\330.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:21.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3300.img.xml">
+      <PackagePath>Assets\Skills\Xml\3300.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:50.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\331.img.xml">
+      <PackagePath>Assets\Skills\Xml\331.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:24.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3310.img.xml">
+      <PackagePath>Assets\Skills\Xml\3310.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3311.img.xml">
+      <PackagePath>Assets\Skills\Xml\3311.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3312.img.xml">
+      <PackagePath>Assets\Skills\Xml\3312.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:56.104</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\332.img.xml">
+      <PackagePath>Assets\Skills\Xml\332.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:50.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3500.img.xml">
+      <PackagePath>Assets\Skills\Xml\3500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3510.img.xml">
+      <PackagePath>Assets\Skills\Xml\3510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3511.img.xml">
+      <PackagePath>Assets\Skills\Xml\3511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:49.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3512.img.xml">
+      <PackagePath>Assets\Skills\Xml\3512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3600.img.xml">
+      <PackagePath>Assets\Skills\Xml\3600.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:07.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3610.img.xml">
+      <PackagePath>Assets\Skills\Xml\3610.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3611.img.xml">
+      <PackagePath>Assets\Skills\Xml\3611.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:04.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3612.img.xml">
+      <PackagePath>Assets\Skills\Xml\3612.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:07.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3700.img.xml">
+      <PackagePath>Assets\Skills\Xml\3700.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:57.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3710.img.xml">
+      <PackagePath>Assets\Skills\Xml\3710.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:15.071</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3711.img.xml">
+      <PackagePath>Assets\Skills\Xml\3711.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:28.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\3712.img.xml">
+      <PackagePath>Assets\Skills\Xml\3712.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:15.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\400.img.xml">
+      <PackagePath>Assets\Skills\Xml\400.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:27.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40000.img.xml">
+      <PackagePath>Assets\Skills\Xml\40000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:58.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40001.img.xml">
+      <PackagePath>Assets\Skills\Xml\40001.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:31.972</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\40002.img.xml">
+      <PackagePath>Assets\Skills\Xml\40002.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:20.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\410.img.xml">
+      <PackagePath>Assets\Skills\Xml\410.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\411.img.xml">
+      <PackagePath>Assets\Skills\Xml\411.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\412.img.xml">
+      <PackagePath>Assets\Skills\Xml\412.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:11.449</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\420.img.xml">
+      <PackagePath>Assets\Skills\Xml\420.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\421.img.xml">
+      <PackagePath>Assets\Skills\Xml\421.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\422.img.xml">
+      <PackagePath>Assets\Skills\Xml\422.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:24.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\430.img.xml">
+      <PackagePath>Assets\Skills\Xml\430.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:10.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\431.img.xml">
+      <PackagePath>Assets\Skills\Xml\431.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:01.082</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\432.img.xml">
+      <PackagePath>Assets\Skills\Xml\432.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:01.016</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\433.img.xml">
+      <PackagePath>Assets\Skills\Xml\433.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\434.img.xml">
+      <PackagePath>Assets\Skills\Xml\434.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\500.img.xml">
+      <PackagePath>Assets\Skills\Xml\500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5000.img.xml">
+      <PackagePath>Assets\Skills\Xml\5000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\501.img.xml">
+      <PackagePath>Assets\Skills\Xml\501.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:59.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\510.img.xml">
+      <PackagePath>Assets\Skills\Xml\510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:21.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5100.img.xml">
+      <PackagePath>Assets\Skills\Xml\5100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:06.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\511.img.xml">
+      <PackagePath>Assets\Skills\Xml\511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:46.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5110.img.xml">
+      <PackagePath>Assets\Skills\Xml\5110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:07.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5111.img.xml">
+      <PackagePath>Assets\Skills\Xml\5111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\5112.img.xml">
+      <PackagePath>Assets\Skills\Xml\5112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.490</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\512.img.xml">
+      <PackagePath>Assets\Skills\Xml\512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:48.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\520.img.xml">
+      <PackagePath>Assets\Skills\Xml\520.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\521.img.xml">
+      <PackagePath>Assets\Skills\Xml\521.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:12.179</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\522.img.xml">
+      <PackagePath>Assets\Skills\Xml\522.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.932</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\530.img.xml">
+      <PackagePath>Assets\Skills\Xml\530.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:25.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\531.img.xml">
+      <PackagePath>Assets\Skills\Xml\531.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:00.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\532.img.xml">
+      <PackagePath>Assets\Skills\Xml\532.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:23.277</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6000.img.xml">
+      <PackagePath>Assets\Skills\Xml\6000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:05.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6001.img.xml">
+      <PackagePath>Assets\Skills\Xml\6001.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:49.570</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6002.img.xml">
+      <PackagePath>Assets\Skills\Xml\6002.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:17.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6100.img.xml">
+      <PackagePath>Assets\Skills\Xml\6100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:28.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6110.img.xml">
+      <PackagePath>Assets\Skills\Xml\6110.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:24.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6111.img.xml">
+      <PackagePath>Assets\Skills\Xml\6111.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.001</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6112.img.xml">
+      <PackagePath>Assets\Skills\Xml\6112.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.087</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6400.img.xml">
+      <PackagePath>Assets\Skills\Xml\6400.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6410.img.xml">
+      <PackagePath>Assets\Skills\Xml\6410.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:55.093</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6411.img.xml">
+      <PackagePath>Assets\Skills\Xml\6411.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:49.233</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6412.img.xml">
+      <PackagePath>Assets\Skills\Xml\6412.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:26.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6500.img.xml">
+      <PackagePath>Assets\Skills\Xml\6500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6510.img.xml">
+      <PackagePath>Assets\Skills\Xml\6510.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:25.155</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6511.img.xml">
+      <PackagePath>Assets\Skills\Xml\6511.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:27.588</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\6512.img.xml">
+      <PackagePath>Assets\Skills\Xml\6512.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:46.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7000.img.xml">
+      <PackagePath>Assets\Skills\Xml\7000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:32.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7100.img.xml">
+      <PackagePath>Assets\Skills\Xml\7100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:27.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\7200.img.xml">
+      <PackagePath>Assets\Skills\Xml\7200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.488</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\800.img.xml">
+      <PackagePath>Assets\Skills\Xml\800.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:11.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\900.img.xml">
+      <PackagePath>Assets\Skills\Xml\900.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:16.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9000.img.xml">
+      <PackagePath>Assets\Skills\Xml\9000.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9100.img.xml">
+      <PackagePath>Assets\Skills\Xml\9100.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.741</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9200.img.xml">
+      <PackagePath>Assets\Skills\Xml\9200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:49.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9201.img.xml">
+      <PackagePath>Assets\Skills\Xml\9201.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:02.764</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9202.img.xml">
+      <PackagePath>Assets\Skills\Xml\9202.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:54.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9203.img.xml">
+      <PackagePath>Assets\Skills\Xml\9203.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:47.010</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9204.img.xml">
+      <PackagePath>Assets\Skills\Xml\9204.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:11.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\9500.img.xml">
+      <PackagePath>Assets\Skills\Xml\9500.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:09.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Attacktype.img.xml">
+      <PackagePath>Assets\Skills\Xml\Attacktype.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:14.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\BFSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\BFSkill.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:18.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\EliteMobSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\EliteMobSkill.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:10.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\HekatonFieldSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\HekatonFieldSkill.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:56.661</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\ItemSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\ItemSkill.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:51.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\MCGuardian.img.xml">
+      <PackagePath>Assets\Skills\Xml\MCGuardian.img.xml</PackagePath>
+      <Modified>2020-06-02T04:43:50.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\MCSkill.img.xml">
+      <PackagePath>Assets\Skills\Xml\MCSkill.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.309</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9200.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9200.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:22.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9201.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9201.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.224</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9202.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9202.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9203.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9203.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:04.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Recipe_9204.img.xml">
+      <PackagePath>Assets\Skills\Xml\Recipe_9204.img.xml</PackagePath>
+      <Modified>2020-06-02T04:44:33.946</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Assets\Skills\Xml\Skill.img.xml">
+      <PackagePath>Assets\Skills\Xml\Skill.img.xml</PackagePath>
+      <Modified>2020-06-03T06:11:58.432</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-05-28T03:19:59.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\MapleStoryHelper.xr.xml">
       <PackagePath>MapleStoryHelper.xr.xml</PackagePath>
-      <Modified>2020-06-02T00:08:27.153</Modified>
+      <Modified>2020-06-07T04:14:52.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.433</Modified>
+      <Modified>2020-06-07T06:51:31.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Character\CharacterControl.xbf">
       <PackagePath>Control\Character\CharacterControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.433</Modified>
+      <Modified>2020-06-07T06:51:31.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Character\CharacterSettingControl.xbf">
       <PackagePath>Control\Character\CharacterSettingControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.433</Modified>
+      <Modified>2020-06-07T06:51:31.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\AdditionalOptionControl.xbf">
       <PackagePath>Control\Item\AdditionalOptionControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.434</Modified>
+      <Modified>2020-06-07T06:51:31.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\EquipmentInfoControl.xbf">
       <PackagePath>Control\Item\EquipmentInfoControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.399</Modified>
+      <Modified>2020-06-07T06:51:31.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\EquipmentReinforceControl.xbf">
       <PackagePath>Control\Item\EquipmentReinforceControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.434</Modified>
+      <Modified>2020-06-07T06:51:31.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Item\PotentialControl.xbf">
       <PackagePath>Control\Item\PotentialControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.434</Modified>
+      <Modified>2020-06-07T06:51:31.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Status\StatusDisplayControl.xbf">
       <PackagePath>Control\Status\StatusDisplayControl.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.435</Modified>
+      <Modified>2020-06-07T06:51:31.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Theme\FontSize.xbf">
       <PackagePath>Theme\FontSize.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.433</Modified>
+      <Modified>2020-06-07T06:51:31.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\BossDamageCalcPage.xbf">
       <PackagePath>View\BossDamageCalcPage.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.435</Modified>
+      <Modified>2020-06-07T06:51:31.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\CharacterAddPage.xbf">
       <PackagePath>View\CharacterAddPage.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.435</Modified>
+      <Modified>2020-06-07T06:51:31.469</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\DPMCalcPage.xbf">
+      <PackagePath>View\DPMCalcPage.xbf</PackagePath>
+      <Modified>2020-06-07T06:51:31.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\EquipmentAddPage.xbf">
       <PackagePath>View\EquipmentAddPage.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.435</Modified>
+      <Modified>2020-06-07T06:51:31.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\ItemSettingPage.xbf">
       <PackagePath>View\ItemSettingPage.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.430</Modified>
+      <Modified>2020-06-07T06:51:31.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2020-06-02T03:25:33.436</Modified>
+      <Modified>2020-06-07T06:51:31.470</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\View\OneKillCalc.xbf">
+      <PackagePath>View\OneKillCalc.xbf</PackagePath>
+      <Modified>2020-06-07T06:51:31.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -338,11 +1258,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-06-02T03:14:40.782</Modified>
+      <Modified>2020-06-06T02:29:08.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Core\MapleStoryHelper.exe">
       <PackagePath>MapleStoryHelper.exe</PackagePath>
-      <Modified>2020-06-02T03:25:36.927</Modified>
+      <Modified>2020-06-07T06:51:34.734</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -148,9 +148,6 @@
   <data name="01242124" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\01242124.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
-  <data name="Eqp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>eqp.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="MapleStoryItemCodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MapleStoryItemCodes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
