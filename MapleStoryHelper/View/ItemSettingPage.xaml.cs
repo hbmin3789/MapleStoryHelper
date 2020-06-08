@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Control.Item;
+﻿using MapleStoryHelper.Common;
+using MapleStoryHelper.Control.Item;
 using MapleStoryHelper.Converter.Equipment;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item.Equipment;
@@ -55,11 +56,11 @@ namespace MapleStoryHelper.View
             this.DataContext = e.Parameter;
             if(e.Parameter is Xenon)
             {
-                Backup = e.Parameter as Xenon;
+                Backup = (e.Parameter as Xenon).DeepCopy<Xenon>();
             }
             else
             {
-                Backup = e.Parameter as Character;
+                Backup = (e.Parameter as Character).DeepCopy<Character>();
             }
             UpdateView();
         }
@@ -82,18 +83,18 @@ namespace MapleStoryHelper.View
             
         }
 
-        private void UpdateView()
+        private async void UpdateView()
         {
             var character = this.DataContext as Character;
-            imgRing1.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring1].ImgBitmapSource as BitmapImage;
-            imgRing2.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring2].ImgBitmapSource as BitmapImage;
-            imgRing3.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgBitmapSource as BitmapImage;
-            imgRing4.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring4].ImgBitmapSource as BitmapImage;
-            imgPocket.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Pocket].ImgBitmapSource as BitmapImage;
-            imgCap.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Cap].ImgBitmapSource as BitmapImage;
-            imgFace.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Face].ImgBitmapSource as BitmapImage;
-            imgEye.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Eye].ImgBitmapSource as BitmapImage;
-            imgWeapon.Source = character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgBitmapSource as BitmapImage;
+            imgRing1.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring1].ImgByte.LoadImage() as BitmapImage;
+            imgRing2.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring2].ImgByte.LoadImage() as BitmapImage;
+            imgRing3.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgByte.LoadImage() as BitmapImage;
+            imgRing4.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring4].ImgByte.LoadImage() as BitmapImage;
+            imgPocket.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Pocket].ImgByte.LoadImage() as BitmapImage;
+            imgCap.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Cap].ImgByte.LoadImage() as BitmapImage;
+            imgFace.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Face].ImgByte.LoadImage() as BitmapImage;
+            imgEye.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Eye].ImgByte.LoadImage() as BitmapImage;
+            imgWeapon.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgByte.LoadImage() as BitmapImage;
             UpdateStatusView();
         }
 

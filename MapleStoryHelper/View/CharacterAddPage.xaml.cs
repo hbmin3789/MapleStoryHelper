@@ -1,26 +1,11 @@
 ﻿using MapleStoryHelper.Common;
 using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
-using MapleStoryHelper.Standard.Common;
-using Microsoft.Xaml.Interactions.Core;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.Storage.Streams;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
-using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // 빈 페이지 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=234238에 나와 있습니다.
@@ -155,13 +140,15 @@ namespace MapleStoryHelper.View
 
             Character character = this.DataContext as Character;
 
+
             var job = (ECharacterJob)(cbCharacterJob.SelectedIndex);
             if (job == ECharacterJob.Xenon)
             {
-                character = this.DataContext as Xenon;
+                character = this.DataContext.DeepCopy<Xenon>();
             }
 
             character.CharacterJob = job;
+            this.DataContext = character;
         }
     }
 }

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Query.ExpressionTranslators;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage.Streams;
@@ -34,6 +37,13 @@ namespace MapleStoryHelper.Common
             }
 
             return null;
+        }
+
+        public static T DeepCopy<T>(this object data)
+        {
+            var serialized = JsonConvert.SerializeObject(data);
+            T retval = JsonConvert.DeserializeObject<T>(serialized);
+            return retval;
         }
     }
 }

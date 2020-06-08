@@ -59,6 +59,7 @@ namespace MapleStoryHelper.Control.Item
         private void OnSavedItem(object sender, EventArgs e)
         {
             EquipmentItem.Status = EquipmentItem.Status + GetPotentialStatus();
+            EquipmentItem.CharacterEquipmentCategory = Category;
         }
 
         public async Task InitEquipComboBox(ECharacterEquipmentCategory category,CharacterBase character)
@@ -122,14 +123,15 @@ namespace MapleStoryHelper.Control.Item
 
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var item = cbItems.SelectedItem as EquipmentItem;
 
             if (Category == ECharacterEquipmentCategory.Weapon)
             {
-                item = cbItems.SelectedItem as Weapon;
+                this.DataContext = cbItems.SelectedItem.DeepCopy<Weapon>();
             }
-
-            this.DataContext = item;
+            else
+            {
+                this.DataContext = cbItems.SelectedItem.DeepCopy<EquipmentItem>();
+            }
         }
     }
 }
