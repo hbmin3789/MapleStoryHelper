@@ -9,7 +9,6 @@ C:\Users\user\source\repos\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstan
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\WzComparerR2.WzLib.deps.json
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
-C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csprojAssemblyReference.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.AssemblyInfoInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.dll

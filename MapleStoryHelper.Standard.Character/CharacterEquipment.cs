@@ -34,14 +34,7 @@ namespace MapleStoryHelper.Standard.Character
             for(int i = 0; i < CategoryItems.Length; i++)
             {
                 var category = (ECharacterEquipmentCategory)CategoryItems.GetValue(i);
-                if(category == ECharacterEquipmentCategory.Weapon)
-                {
-                    _equipList.Add(category, new Weapon());
-                }
-                else
-                {
-                    _equipList.Add(category, new EquipmentItem());
-                }
+                _equipList.Add(category, new EquipmentItem());
             }
         }
 
@@ -51,7 +44,7 @@ namespace MapleStoryHelper.Standard.Character
 
             for (int i = 0; i < EquipList.Count; i++)
             {
-                retval = retval + EquipList.ElementAt(i).Value.Status.GetStatus<StatusBase>();
+                retval = retval + (EquipList.ElementAt(i).Value as EquipmentItem).Status.GetStatus<StatusBase>();
             }
 
             return retval;
@@ -64,7 +57,7 @@ namespace MapleStoryHelper.Standard.Character
 
         public EquipmentItem GetEquipmentItem(ECharacterEquipmentCategory category)
         {
-            return EquipList[category];
+            return EquipList[category] as EquipmentItem;
         }
     }
 }

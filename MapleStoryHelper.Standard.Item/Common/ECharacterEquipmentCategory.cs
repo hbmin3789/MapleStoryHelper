@@ -6,7 +6,7 @@ namespace MapleStoryHelper.Standard.Character
 {
     public enum ECharacterEquipmentCategory
     {
-        Ring1,
+        Ring1 = 0,
         Ring2,
         Ring3,
         Ring4,

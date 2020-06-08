@@ -44,6 +44,13 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _maxScroll, value);
         }
 
+        private double _weaponConst;
+        public double WeaponConst
+        {
+            get => _weaponConst;
+            set => SetProperty(ref _weaponConst, value);
+        }
+
         private EEquipmentCategory _equipmentCategory;
         [Column("equipment_category")]
         public EEquipmentCategory EquipmentCategory
@@ -105,12 +112,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         #endregion
-
-        protected override void SetPriaryKey(string value)
-        {
-            base.SetPriaryKey(value);
-            Status.PrimaryKey = value;
-        }
 
         /// <summary>
         /// Status 객체의 Clone()메서드 미구현

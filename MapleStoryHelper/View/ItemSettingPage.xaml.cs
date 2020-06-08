@@ -2,6 +2,7 @@
 using MapleStoryHelper.Control.Item;
 using MapleStoryHelper.Converter.Equipment;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Commands;
 using System;
@@ -76,7 +77,7 @@ namespace MapleStoryHelper.View
             if (control.Category == ECharacterEquipmentCategory.Weapon)
             {
                 var temp = character.CharacterEquipment.EquipList[control.Category];
-                character.WeaponConst = (temp as Weapon).WeaponConst;
+                character.WeaponConst = temp.WeaponConst;
             }
 
             UpdateView();
@@ -86,15 +87,16 @@ namespace MapleStoryHelper.View
         private async void UpdateView()
         {
             var character = this.DataContext as Character;
-            imgRing1.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring1].ImgByte.LoadImage() as BitmapImage;
-            imgRing2.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring2].ImgByte.LoadImage() as BitmapImage;
-            imgRing3.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring3].ImgByte.LoadImage() as BitmapImage;
-            imgRing4.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Ring4].ImgByte.LoadImage() as BitmapImage;
-            imgPocket.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Pocket].ImgByte.LoadImage() as BitmapImage;
-            imgCap.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Cap].ImgByte.LoadImage() as BitmapImage;
-            imgFace.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Face].ImgByte.LoadImage() as BitmapImage;
-            imgEye.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Eye].ImgByte.LoadImage() as BitmapImage;
-            imgWeapon.Source = await character.CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].ImgByte.LoadImage() as BitmapImage;
+            var equipList = character.CharacterEquipment.EquipList;
+            imgRing1.Source = await equipList[ECharacterEquipmentCategory.Ring1].ImgByte.LoadImage() as BitmapImage;
+            imgRing2.Source = await equipList[ECharacterEquipmentCategory.Ring2].ImgByte.LoadImage() as BitmapImage;
+            imgRing3.Source = await equipList[ECharacterEquipmentCategory.Ring3].ImgByte.LoadImage() as BitmapImage;
+            imgRing4.Source = await equipList[ECharacterEquipmentCategory.Ring4].ImgByte.LoadImage() as BitmapImage;
+            imgPocket.Source = await equipList[ECharacterEquipmentCategory.Pocket].ImgByte.LoadImage() as BitmapImage;
+            imgCap.Source = await equipList[ECharacterEquipmentCategory.Cap].ImgByte.LoadImage() as BitmapImage;
+            imgFace.Source = await equipList[ECharacterEquipmentCategory.Face].ImgByte.LoadImage() as BitmapImage;
+            imgEye.Source = await equipList[ECharacterEquipmentCategory.Eye].ImgByte.LoadImage() as BitmapImage;
+            imgWeapon.Source = await equipList[ECharacterEquipmentCategory.Weapon].ImgByte.LoadImage() as BitmapImage;
             UpdateStatusView();
         }
 

@@ -20,36 +20,15 @@ namespace MapleStoryHelper.Standard.Resources
 
             retval = new EquipmentItem();
 
-            if (category == EEquipmentCategory.Weapon)
+            var resType = typeof(Properties.MapleStoryHelperResource);
+            var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+            for (int i = 0; i < properties.Count(); i++)
             {
-                retval = new Weapon();
-
-                var resType = typeof(Properties.MapleStoryHelperResource);
-                var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
-                for(int i = 0; i < properties.Count(); i++)
+                var attribute = GetResourceNameAttribute(properties[i]);
+                if (attribute is EquipmentResourceInfoAttribute &&
+                   attribute.ItemCode == Code)
                 {
-                    var attribute = GetResourceNameAttribute(properties[i]);
-                    if(attribute is WeaponResourceInfoAttribute &&
-                       attribute.ItemCode == Code)
-                    {
-                        (retval as Weapon).WeaponConst = (attribute as WeaponResourceInfoAttribute).WeaponConst;
-                    }
-                }
-            }
-            else
-            {
-                retval = new EquipmentItem();
-
-                var resType = typeof(Properties.MapleStoryHelperResource);
-                var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
-                for (int i = 0; i < properties.Count(); i++)
-                {
-                    var attribute = GetResourceNameAttribute(properties[i]);
-                    if (attribute is EquipmentResourceInfoAttribute &&
-                       attribute.ItemCode == Code)
-                    {
-                        (retval as EquipmentItem).JobCategory = (attribute as EquipmentResourceInfoAttribute).JobCategory;
-                    }
+                    (retval as EquipmentItem).JobCategory = (attribute as EquipmentResourceInfoAttribute).JobCategory;
                 }
             }
 

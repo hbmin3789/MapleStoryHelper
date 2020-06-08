@@ -9,15 +9,6 @@ namespace MapleStoryHelper.Standard.Item
 {
     public class ItemBase : BindableBase , ICloneable
     {
-        private string _primaryKey;
-        [Key]
-        [Column("key")]
-        public string PrimaryKey
-        {
-            get => _primaryKey;
-            set => SetPriaryKey(value);
-        }
-
         #region Property
 
         private EItemCategory _itemCategory = EItemCategory.Etc;
@@ -111,7 +102,6 @@ namespace MapleStoryHelper.Standard.Item
 
         public ItemBase(ItemBase item)
         {
-            PrimaryKey = item.PrimaryKey;
             ItemCategory = item.ItemCategory;
             Name = item.Name;
             ImgSrc = item.ImgSrc;
@@ -123,15 +113,7 @@ namespace MapleStoryHelper.Standard.Item
 
         #endregion
         
-        protected virtual void SetPriaryKey(string value)
-        {
-            SetProperty(ref _primaryKey, value);
-        }
 
-        /// <summary>
-        /// PrimaryKey가 새로 부여됩니다.
-        /// </summary>
-        /// <returns></returns>
         public virtual object Clone()
         {
             ItemBase retval = new ItemBase();
@@ -142,7 +124,6 @@ namespace MapleStoryHelper.Standard.Item
             retval.ItemCategory = this.ItemCategory;
             retval.ItemCode = this.ItemCode;
             retval.Name = this.Name;
-            retval.PrimaryKey = new Guid().ToString();
             retval.ImgByte = this.ImgByte;
 
             return retval;
