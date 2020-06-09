@@ -30,7 +30,7 @@
         </Grid>
 
         <Grid Grid.Row="1">
-            <controls:CharacterControl/>
+            <controls:CharacterControl x:Name="ctrlCharacterList"/>
         </Grid>
 
         <ProgressRing x:Name="progress" IsActive="False" Grid.RowSpan="3" />

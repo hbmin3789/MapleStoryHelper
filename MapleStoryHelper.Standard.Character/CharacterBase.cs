@@ -15,6 +15,8 @@ namespace MapleStoryHelper.Standard.Character
     public class CharacterBase : BindableBase
     {
 
+        public string PrimaryKey;
+
         #region Property
 
         public EStatus MainStatus { get; set; }
@@ -151,6 +153,12 @@ namespace MapleStoryHelper.Standard.Character
         public CharacterBase()
         {
             InitVariables();
+            SetPrimaryKey();
+        }
+
+        private void SetPrimaryKey()
+        {
+            PrimaryKey = Guid.NewGuid().ToString();
         }
 
         private void SetIsUseAttackPower()

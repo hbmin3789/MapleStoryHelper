@@ -27,7 +27,9 @@ namespace MapleStoryHelper
         public MainPage()
         {
             this.InitializeComponent();
+
             App.mapleStoryHelperViewModel.OnProgress += ActiveProgressRing;
+            ctrlCharacterList.OnCharacterEdit += OnCharacterEdit;
             this.DataContext = App.mapleStoryHelperViewModel;
         }
 
@@ -35,6 +37,12 @@ namespace MapleStoryHelper
         {
             var ContentFrame = Window.Current.Content as Frame;
             var character = new Character();
+            ContentFrame.Navigate(typeof(CharacterAddPage), character, new DrillInNavigationTransitionInfo());
+        }
+
+        private void OnCharacterEdit(object sender, CharacterBase character)
+        {
+            var ContentFrame = Window.Current.Content as Frame;
             ContentFrame.Navigate(typeof(CharacterAddPage), character, new DrillInNavigationTransitionInfo());
         }
 

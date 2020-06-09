@@ -2,6 +2,8 @@
 using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
 using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -17,6 +19,8 @@ namespace MapleStoryHelper.View
     /// </summary>
     public sealed partial class CharacterAddPage : Page
     {
+        Character Backup;
+
         public CharacterAddPage()
         {
             this.InitializeComponent();
@@ -26,7 +30,6 @@ namespace MapleStoryHelper.View
         private void OnLoaded()
         {
             InitComboBox();
-            
         }
 
         private void InitComboBox()
@@ -79,10 +82,36 @@ namespace MapleStoryHelper.View
 
             if (result == true)
             {
-                App.mapleStoryHelperViewModel.AddCharacter();
+                var character = this.DataContext as Character;
+                var temp = App.mapleStoryHelperViewModel.CharacterItems.Where(x => x.PrimaryKey == character.PrimaryKey).FirstOrDefault();
+                if (temp == null)
+                {
+                    App.mapleStoryHelperViewModel.AddCharacter(character);
+                }
+                else
+                {
+                    App.mapleStoryHelperViewModel.CharacterItems.Remove(temp);
+                    App.mapleStoryHelperViewModel.AddCharacter(character);
+                }
                 var ContentFrame = Window.Current.Content as Frame;
                 ContentFrame.Navigate(typeof(MainPage), null, new DrillInNavigationTransitionInfo());
             }
+        }
+
+        //캐릭터 저장 취소
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            if(Backup != null)
+            {
+                var character = this.DataContext as Character;
+                var temp = App.mapleStoryHelperViewModel.CharacterItems.Where(x => x.PrimaryKey == character.PrimaryKey).FirstOrDefault();
+
+                App.mapleStoryHelperViewModel.CharacterItems.Remove(temp);
+                App.mapleStoryHelperViewModel.AddCharacter(Backup);
+            }
+
+            var ContentFrame = Window.Current.Content as Frame;
+            ContentFrame.Navigate(typeof(MainPage), null, new DrillInNavigationTransitionInfo());
         }
 
         private async void btnSetImagePath_Click(object sender, RoutedEventArgs e)
@@ -121,11 +150,6 @@ namespace MapleStoryHelper.View
             ContentFrame.Navigate(typeof(ItemSettingPage), this.DataContext, new DrillInNavigationTransitionInfo());
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void cbCharacterJob_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -149,6 +173,18 @@ namespace MapleStoryHelper.View
 
             character.CharacterJob = job;
             this.DataContext = character;
+        }
+
+        private void BackupCharacter(Character character)
+        {
+            if(character is Xenon)
+            {
+                Backup = character.DeepCopy<Xenon>();
+            }
+            else
+            {
+                Backup = character.DeepCopy<Character>();
+            }
         }
     }
 }

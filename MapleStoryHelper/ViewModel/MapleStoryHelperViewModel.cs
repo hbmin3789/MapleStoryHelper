@@ -55,9 +55,9 @@ namespace MapleStoryHelper.ViewModel
 
         #region Command
 
-        public void AddCharacter()
+        public void AddCharacter(Character character)
         {
-
+            CharacterItems.Add(character);
         }
 
         #endregion

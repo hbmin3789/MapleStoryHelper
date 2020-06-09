@@ -62,7 +62,7 @@
                                    Text="캐릭터 이름"/>
                         <TextBox FontSize="{StaticResource TextBoxBigDescriptionFontSize}"
                                  MinWidth="200" Height="40"
-                                 Text="{Binding Name, Mode=TwoWay}"/>
+                                 Text="{Binding CharacterName, Mode=TwoWay}"/>
                     </StackPanel>
                     
                 </StackPanel>

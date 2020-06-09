@@ -25,7 +25,8 @@
                             </Grid.RowDefinitions>
 
                             <Button HorizontalAlignment="Right" VerticalAlignment="Top"
-                                    Background="Transparent" Margin="10">
+                                    Background="Transparent" Margin="10"
+                                    Click="Button_Click">
                                 <Button.Content>
                                     <SymbolIcon Symbol="Setting"/>
                                 </Button.Content>
@@ -52,7 +53,7 @@
     </UserControl.Resources>
     
     <Grid Background="White">
-        <ListView ItemsSource="{Binding CharacterItems}"
+        <ListView x:Name="lvCharacter" ItemsSource="{Binding CharacterItems}"
                   Style="{StaticResource CharacterListStyle}"
                   SelectionMode="None"
                   Margin="20">
