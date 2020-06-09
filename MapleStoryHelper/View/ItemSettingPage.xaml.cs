@@ -80,7 +80,7 @@ namespace MapleStoryHelper.View
 
         private async void UpdateView()
         {
-            var character = this.DataContext as Character;
+            Character character = this.DataContext as Character;
             var equipList = character.CharacterEquipment.EquipList;
             var children = ufgItems.Children.ToList();
             int idx = 0;

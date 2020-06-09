@@ -16,19 +16,21 @@ namespace MapleStoryHelper.Standard.Resources
     {
         public static EquipmentItem GetEquipmentInfo(string Code, EEquipmentCategory category)
         {
-            EquipmentItem retval;
-
-            retval = new EquipmentItem();
+            EquipmentItem retval = new EquipmentItem();
 
             var resType = typeof(Properties.MapleStoryHelperResource);
             var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
             for (int i = 0; i < properties.Count(); i++)
             {
                 var attribute = GetResourceNameAttribute(properties[i]);
-                if (attribute is EquipmentResourceInfoAttribute &&
-                   attribute.ItemCode == Code)
+                if (attribute is EquipmentResourceInfoAttribute && attribute.ItemCode == Code)
                 {
                     (retval as EquipmentItem).JobCategory = (attribute as EquipmentResourceInfoAttribute).JobCategory;
+                }
+                if (attribute is WeaponResourceInfoAttribute && attribute.ItemCode == Code)
+                {
+                    (retval as EquipmentItem).JobCategory = (attribute as WeaponResourceInfoAttribute).JobCategory;
+                    (retval as EquipmentItem).WeaponConst = (attribute as WeaponResourceInfoAttribute).WeaponConst;
                 }
             }
 

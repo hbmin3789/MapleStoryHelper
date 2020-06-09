@@ -267,7 +267,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Weapon
 
-        [ResourceInfo("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon)]
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0, 1.5)]
         public static byte[] Item_Absolabs_EnergySword_Thief
         {
             get
@@ -277,7 +277,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon)]
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0, 1.5)]
         public static byte[] Item_Absolabs_EnergySword_Pirate
         {
             get
@@ -287,13 +287,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, 0, 1.5)]
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0, 1.5)]
         public static object Xml_Absolabs_EnergySword_Thief
         {
             get => ResourceManager.GetObject("01242124", resourceCulture);
         }
 
-        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon, 0 ,1.5)]
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0 ,1.5)]
         public static object Xml_Absolabs_EnergySword_Pirate
         {
             get => ResourceManager.GetObject("01242123", resourceCulture);

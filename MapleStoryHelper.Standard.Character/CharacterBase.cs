@@ -53,7 +53,11 @@ namespace MapleStoryHelper.Standard.Character
         public ECharacterJob CharacterJob
         {
             get => _characterJob;
-            set => SetProperty(ref _characterJob, value);
+            set 
+            { 
+                SetProperty(ref _characterJob, value);
+                SetIsUseAttackPower();
+            }
         }
 
         private EJobCategory _jobCategory;
@@ -77,7 +81,7 @@ namespace MapleStoryHelper.Standard.Character
             }
         }
 
-        private bool _isUseAttackPower;
+        private bool _isUseAttackPower = true;
         public bool IsUseAttackPower
         {
             get => _isUseAttackPower;
@@ -119,26 +123,27 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _characterImage, value);
         }
 
-        private int _minStatusAttackBinding;
-        public int MinStatusAttackBinding
+        protected int _minStatusAttack;
+        public int MinStatusAttack
         {
             get
             {
-                _minStatusAttackBinding = GetMinStatusAttack();
-                return _minStatusAttackBinding;
+                _minStatusAttack = GetMinStatusAttack();
+                return _minStatusAttack;
             }
-            set => SetProperty(ref _minStatusAttackBinding, value);
+            set => SetProperty(ref _minStatusAttack, value);
         }
 
-        private int _maxStatusAttackBinding;
-        public int MaxStatusAttackBinding
+        protected int _maxStatusAttack;
+        public int MaxStatusAttack
         {
             get
             {
-                _maxStatusAttackBinding = GetMaxStatusAttack();
-                return _maxStatusAttackBinding;
+                _maxStatusAttack = GetMaxStatusAttack();
+                MinStatusAttack = GetMinStatusAttack();
+                return _maxStatusAttack;
             }
-            set => SetProperty(ref _maxStatusAttackBinding, value);
+            set => SetProperty(ref _maxStatusAttack, value);
         }
 
         #endregion
@@ -146,6 +151,28 @@ namespace MapleStoryHelper.Standard.Character
         public CharacterBase()
         {
             InitVariables();
+        }
+
+        private void SetIsUseAttackPower()
+        {
+            switch (CharacterJob)
+            {
+                case ECharacterJob.ArchMage_FirePoison:
+                case ECharacterJob.ArchMage_IceLightning:
+                case ECharacterJob.BattleMage:
+                case ECharacterJob.Luminous:
+                case ECharacterJob.Evan:
+                case ECharacterJob.BlazeWizard:
+                case ECharacterJob.Bishop:
+                case ECharacterJob.Kinesis:
+                case ECharacterJob.Illium:
+                    IsUseAttackPower = false;
+                    break;
+
+                default:
+                    IsUseAttackPower = true;
+                    break;
+            }
         }
 
         private void InitVariables()
@@ -163,8 +190,7 @@ namespace MapleStoryHelper.Standard.Character
 
         private void CharacterEquipment_OnEquipChanged()
         {
-            MaxStatusAttackBinding = 0;
-            MinStatusAttackBinding = 0;
+            MaxStatusAttack = 0;
         }
 
         public void SetCharacterJob(ECharacterJob characterJob)

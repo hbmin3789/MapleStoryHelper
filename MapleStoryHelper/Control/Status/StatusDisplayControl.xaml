@@ -25,9 +25,9 @@
                         <ColumnDefinition Width="0.4*"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0" Text="{Binding MinStatusAttackBinding}"/>
+                    <TextBox Grid.Column="0" Text="{Binding MinStatusAttack}"/>
                     <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
-                    <TextBox Grid.Column="2" Text="{Binding MaxStatusAttackBinding}"/>
+                    <TextBox Grid.Column="2" Text="{Binding MaxStatusAttack}"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>

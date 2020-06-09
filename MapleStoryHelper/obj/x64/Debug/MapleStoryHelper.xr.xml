@@ -67,8 +67,8 @@
     <RootPropertyPathName Name="StrBinding" />
     <RootPropertyPathName Name="PMagicAttack" />
     <RootPropertyPathName Name="PAttackPower" />
-    <RootPropertyPathName Name="MaxStatusAttackBinding" />
-    <RootPropertyPathName Name="MinStatusAttackBinding" />
+    <RootPropertyPathName Name="MaxStatusAttack" />
+    <RootPropertyPathName Name="MinStatusAttack" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
