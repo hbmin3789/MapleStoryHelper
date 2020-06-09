@@ -513,6 +513,154 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #endregion
 
+        #region Badge
+
+        [ResourceInfo("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfMano
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 마노", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfMano
+        {
+            get => ResourceManager.GetObject("01182193", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfChiu
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 치우", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfChiu
+        {
+            get => ResourceManager.GetObject("01182194", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfBotan
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 보탄", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfBotan
+        {
+            get => ResourceManager.GetObject("01182195", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfDonar
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 도나르", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfDonar
+        {
+            get => ResourceManager.GetObject("01182196", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfPruba
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 프루바", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfPruba
+        {
+            get => ResourceManager.GetObject("01182197", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfSaturnus
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 사투르누스", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfSaturnus
+        {
+            get => ResourceManager.GetObject("01182198", resourceCulture);
+        }
+
+        [ResourceInfo("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfJuna
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("뱃지 오브 준나", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfJuna
+        {
+            get => ResourceManager.GetObject("01182199", resourceCulture);
+        }
+
+        [ResourceInfo("칠요의 뱃지", "01182200", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfWeek
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("칠요의 뱃지", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("칠요의 뱃지", "01182200", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfWeek
+        {
+            get => ResourceManager.GetObject("01182200", resourceCulture);
+        }
+
+        [ResourceInfo("창세의 뱃지", "01182285", EEquipmentCategory.Badge)]
+        public static byte[] Item_BadgeOfGenesis
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("창세의 뱃지", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("창세의 뱃지", "01182285", EEquipmentCategory.Badge)]
+        public static object Xml_BadgeOfGenesis
+        {
+            get => ResourceManager.GetObject("01182285", resourceCulture);
+        }
+
+        #endregion
+
         public static object Txt_ItemCodes
         {
             get => ResourceManager.GetObject("MapleStoryItemCodes", resourceCulture);

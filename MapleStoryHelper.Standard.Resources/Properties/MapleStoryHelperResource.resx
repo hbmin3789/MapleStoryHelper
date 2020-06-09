@@ -142,6 +142,39 @@
   <data name="01132178" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01132178.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01182193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182193.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="011821931" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182193.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182194.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182195.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182196.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182197.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182198.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182199.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182200.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01182285" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182285.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="011822851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01182285.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="01242123" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\01242123.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
@@ -171,6 +204,27 @@
   </data>
   <data name="몽환의 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\몽환의 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 도나르" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지4.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 마노" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\뱃지1.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 보탄" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지3.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 사투르누스" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지6.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 준나" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지7.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 치우" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="뱃지 오브 프루바" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\몬파뱃지5.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="벤전스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\벤전스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -229,6 +283,12 @@
   <data name="저주받은 황의 마도서" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\저주받은 황의 마도서.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="창세의 뱃지" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\창세의 뱃지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="칠요의 뱃지" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\칠요의 뱃지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="카오스 혼테일의 목걸이" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\카오스 혼테일의 목걸이.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -237,6 +297,9 @@
   </data>
   <data name="코스모스링" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\코스모스링.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="크리스탈 웬투스 뱃지" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\매그뱃지.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="타일런트 벨트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\타일런트 벨트.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

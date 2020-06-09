@@ -9,3 +9,4 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.Contr
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache

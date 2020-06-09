@@ -98,7 +98,6 @@ namespace MapleStoryHelper.View
             }
         }
 
-        //캐릭터 저장 취소
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             if(Backup != null)
