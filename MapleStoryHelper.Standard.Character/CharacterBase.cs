@@ -14,12 +14,6 @@ namespace MapleStoryHelper.Standard.Character
 {
     public class CharacterBase : BindableBase
     {
-        private string _primaryKey;
-        public string PrimaryKey
-        {
-            get => _primaryKey;
-            set => SetProperty(ref _primaryKey, value);
-        }
 
         #region Property
 
@@ -90,18 +84,14 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _isUseAttackPower, value);
         }
 
-        private double _weaponConst;
         public double WeaponConst
         {
-            get => _weaponConst;
-            set => SetProperty(ref _weaponConst, value);
+            get => CharacterEquipment.EquipList[ECharacterEquipmentCategory.Weapon].WeaponConst;
         }
 
-        private double _jobConst;
         public double JobConst
         {
-            get => _jobConst;
-            set => SetProperty(ref _jobConst, value);
+            get => GetJobConst();
         }
 
         private EJobLevel _jobLevel;
@@ -160,45 +150,43 @@ namespace MapleStoryHelper.Standard.Character
 
         private void InitVariables()
         {
-            CharacterEquipment = new CharacterEquipment();
+            _characterEquipment = new CharacterEquipment();
             _characterImage = new MHResource();
             _characterStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
+            _characterJob = ECharacterJob.Hero;
+            _characterName = string.Empty;
+            MainStatus = EStatus.STR;
+            SubStatus = EStatus.STR;
         }
 
         private void CharacterEquipment_OnEquipChanged()
         {
-            MaxStatusAttackBinding = GetMaxStatusAttack();
-            MinStatusAttackBinding = GetMinStatusAttack();
+            MaxStatusAttackBinding = 0;
+            MinStatusAttackBinding = 0;
         }
 
         public void SetCharacterJob(ECharacterJob characterJob)
         {
             CharacterJob = characterJob;
-            SetJobConst(characterJob);
         }
 
-        private void SetJobConst(ECharacterJob characterJob)
+        private double GetJobConst()
         {
-            switch (characterJob)
+            switch (CharacterJob)
             {
                 case ECharacterJob.ArchMage_FirePoison:
                 case ECharacterJob.ArchMage_IceLightning:
                 case ECharacterJob.Bishop:
                 case ECharacterJob.BlazeWizard:
-                    JobConst = 1.2;
-                    break;
+                    return 1.2;
                 case ECharacterJob.Xenon:
-                    JobConst = 0.875;
-                    break;
+                    return 0.875;
                 default:
-                    JobConst = 1;
-                    break;
+                    return 1;
             }
         }
-
-
 
         #region StatusCalcMethod
 
@@ -273,7 +261,7 @@ namespace MapleStoryHelper.Standard.Character
         }
 
 
-        private double GetCharacterPercent(StatusBase status)
+        protected double GetCharacterPercent(StatusBase status)
         {
             double retval = 0;
 
@@ -294,7 +282,7 @@ namespace MapleStoryHelper.Standard.Character
             return retval;
         }
 
-        private double GetCharacterConstant()
+        protected double GetCharacterConstant()
         {
             double retval = 0;
 

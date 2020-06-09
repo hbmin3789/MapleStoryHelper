@@ -8,17 +8,11 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
 {
-    [Table("character")]
     public class Character : CharacterBase
     {
         public Character() : base()
         {
 
-        }
-
-        public void InitEquipment()
-        {
-            this.CharacterEquipment = new CharacterEquipment();
         }
     }
 }

@@ -33,8 +33,10 @@ namespace MapleStoryHelper.Standard.Character
             var CategoryItems = Enum.GetValues(typeof(ECharacterEquipmentCategory));
             for(int i = 0; i < CategoryItems.Length; i++)
             {
-                var category = (ECharacterEquipmentCategory)CategoryItems.GetValue(i);
-                _equipList.Add(category, new EquipmentItem());
+                var category = (ECharacterEquipmentCategory)i;
+                var newItem = new EquipmentItem();
+                newItem.CharacterEquipmentCategory = category;
+                _equipList.Add(category, newItem);
             }
         }
 

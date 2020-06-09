@@ -44,7 +44,7 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _maxScroll, value);
         }
 
-        private double _weaponConst;
+        private double _weaponConst = 0;
         public double WeaponConst
         {
             get => _weaponConst;

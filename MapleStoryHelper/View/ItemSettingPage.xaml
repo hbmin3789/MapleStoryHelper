@@ -26,7 +26,8 @@
 
         <!-- 아이템세팅이 완료된 장비는 색으로 표시하는 기능이 필요할듯 -->
         <Grid>
-            <controls:UniformGrid Margin="10" Columns="5" Rows="6"
+            <controls:UniformGrid x:Name="ufgItems"
+                                  Margin="10" Columns="5" Rows="6"
                                   Orientation="Vertical">
                 <Button CommandParameter="Ring1"
                         Click="ItemSetting_Button_Click">
@@ -119,50 +120,101 @@
                         <Image x:Name="imgEye"/>
                     </Grid>
                 </Button>
-                <Button Content="상의"
-                        CommandParameter="Clothes"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="하의"
-                        CommandParameter="Pants"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="신발"
-                        CommandParameter="Shoes"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Clothes"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="상의"/>
+                        <Image />
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Pants"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="하의"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Shoes"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="신발"/>
+                        <Image/>
+                    </Grid>
+                </Button>
 
                 <Border/>
-                
                 <Border/>
 
-                <Button Content="귀고리"
-                        CommandParameter="Ear"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Ear"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="귀고리"/>
+                        <Image/>
+                    </Grid>
+                </Button>
                 <Button CommandParameter="Shoulder"
                         Click="ItemSetting_Button_Click">
-                    <TextBlock TextWrapping="Wrap" Text="어깨&#x0a;장식"/>
+                    <Grid>
+                        <TextBlock TextWrapping="Wrap" Text="어깨&#x0a;장식"/>
+                        <Image/>
+                    </Grid>
                 </Button>
-                <Button Content="장갑"
-                        CommandParameter="Gloves"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="안드"
-                        CommandParameter="Android"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="엠블럼"
-                        CommandParameter="Emblem"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="뱃지"
-                        CommandParameter="Badge"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="칭호"
-                        CommandParameter="Medal"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Gloves"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="장갑"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Android"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="안드"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Emblem"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="엠블럼"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Badge"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="뱃지"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Medal"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="칭호"/>
+                        <Image/>
+                    </Grid>
+                </Button>
                 <Button CommandParameter="SubWeapon"
                         Click="ItemSetting_Button_Click">
-                    <TextBlock TextWrapping="Wrap" Text="보조&#x0a;무기"/>
+                    <Grid>
+                        <TextBlock TextWrapping="Wrap" Text="보조&#x0a;무기"/>
+                        <Image/>
+                    </Grid>
                 </Button>
-                <Button Content="망토" CommandParameter="Cape"
-                        Click="ItemSetting_Button_Click"/>
-                <Button Content="하트" CommandParameter="Heart"
-                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Cape"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="망토"/>
+                        <Image/>
+                    </Grid>
+                </Button>
+                <Button CommandParameter="Heart"
+                        Click="ItemSetting_Button_Click">
+                    <Grid>
+                        <TextBlock Text="기계&#x0a;심장"/>
+                        <Image/>
+                    </Grid>
+                </Button>
                 
             </controls:UniformGrid>
         </Grid>

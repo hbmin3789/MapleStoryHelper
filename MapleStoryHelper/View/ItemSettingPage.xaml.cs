@@ -6,6 +6,7 @@ using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Commands;
 using System;
+using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
@@ -71,14 +72,7 @@ namespace MapleStoryHelper.View
             control.OnSaved?.Invoke(this, null);
 
             var character = this.DataContext as Character;
-
             character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
-
-            if (control.Category == ECharacterEquipmentCategory.Weapon)
-            {
-                var temp = character.CharacterEquipment.EquipList[control.Category];
-                character.WeaponConst = temp.WeaponConst;
-            }
 
             UpdateView();
             
@@ -88,15 +82,23 @@ namespace MapleStoryHelper.View
         {
             var character = this.DataContext as Character;
             var equipList = character.CharacterEquipment.EquipList;
-            imgRing1.Source = await equipList[ECharacterEquipmentCategory.Ring1].ImgByte.LoadImage() as BitmapImage;
-            imgRing2.Source = await equipList[ECharacterEquipmentCategory.Ring2].ImgByte.LoadImage() as BitmapImage;
-            imgRing3.Source = await equipList[ECharacterEquipmentCategory.Ring3].ImgByte.LoadImage() as BitmapImage;
-            imgRing4.Source = await equipList[ECharacterEquipmentCategory.Ring4].ImgByte.LoadImage() as BitmapImage;
-            imgPocket.Source = await equipList[ECharacterEquipmentCategory.Pocket].ImgByte.LoadImage() as BitmapImage;
-            imgCap.Source = await equipList[ECharacterEquipmentCategory.Cap].ImgByte.LoadImage() as BitmapImage;
-            imgFace.Source = await equipList[ECharacterEquipmentCategory.Face].ImgByte.LoadImage() as BitmapImage;
-            imgEye.Source = await equipList[ECharacterEquipmentCategory.Eye].ImgByte.LoadImage() as BitmapImage;
-            imgWeapon.Source = await equipList[ECharacterEquipmentCategory.Weapon].ImgByte.LoadImage() as BitmapImage;
+            var children = ufgItems.Children.ToList();
+            int idx = 0;
+
+            for (int i = 0; i < ufgItems.Children.Count; i++)
+            {
+                if(children[i] is Button)
+                {
+                    var grid = (children[i] as Button).Content as Grid;
+                    var img = grid.Children.Last() as Image;
+
+                    if (img != null && equipList != null)
+                    {
+                        img.Source = await equipList[(ECharacterEquipmentCategory)idx].ImgByte.LoadImage() as BitmapImage;
+                        idx++;
+                    }
+                }
+            }
             UpdateStatusView();
         }
 
@@ -130,8 +132,6 @@ namespace MapleStoryHelper.View
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             var character = this.DataContext as Character;
-            character.InitEquipment();
-
             var ContentFrame = Window.Current.Content as Frame;
             ContentFrame.Navigate(typeof(CharacterAddPage), Backup, new DrillInNavigationTransitionInfo());
         }
