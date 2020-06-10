@@ -513,6 +513,76 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #endregion
 
+
+        #region Soulder
+
+        [ResourceInfo("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder)]
+        public static byte[] Item_RoyalBlackMetalShoulder
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("로얄 블랙메탈 숄더", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder)]
+        public static object Xml_RoyalBlackMetalShoulder
+        {
+            get => ResourceManager.GetObject("01152170", resourceCulture);
+        }
+
+        [ResourceInfo("스칼렛 숄더", "01182193", EEquipmentCategory.Shoulder)]
+        public static byte[] Item_ScaletShoulder
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("스칼렛 숄더", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder)]
+        public static object Xml_ScaletShoulder
+        {
+            get => ResourceManager.GetObject("01152155", resourceCulture);
+        }
+
+        [ResourceInfo("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder)]
+        public static byte[] Item_AbsolabsShoulder
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔랩스 숄더", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder)]
+        public static object Xml_AbsolabsShoulder
+        {
+            get => ResourceManager.GetObject("01152174", resourceCulture);
+        }
+
+        [ResourceInfo("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder)]
+        public static byte[] Item_ArcaneShadeShoulder
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 숄더", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder)]
+        public static object Xml_ArcaneShadeShoulder
+        {
+            get => ResourceManager.GetObject("01152196", resourceCulture);
+        }
+
+
+        #endregion
+
         #region Badge
 
         [ResourceInfo("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge)]
