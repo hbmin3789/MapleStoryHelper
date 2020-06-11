@@ -182,8 +182,24 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Pocket
 
+        [ResourceInfo("핑크빛 성배", "01162025", EEquipmentCategory.Pocket)]
+        public static byte[] Item_PinkChalice
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("핑크빛 성배", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
 
-        [ResourceInfo("저주받은 적의 마도서", "1162080", EEquipmentCategory.Pocket)]
+        [ResourceInfo("핑크빛 성배", "01162025", EEquipmentCategory.Pocket)]
+        public static object Xml_PinkChalice
+        {
+            get => ResourceManager.GetObject("01162025", resourceCulture);
+        }
+
+
+        [ResourceInfo("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket)]
         public static byte[] Item_RedMagicBook
         {
             get
@@ -193,7 +209,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 청의 마도서", "1162081", EEquipmentCategory.Pocket)]
+        [ResourceInfo("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket)]
+        public static object Xml_RedMagicBook
+        {
+            get => ResourceManager.GetObject("01162080", resourceCulture);
+        }
+
+        [ResourceInfo("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket)]
         public static byte[] Item_BlueMagicBook
         {
             get
@@ -203,7 +225,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 녹의 마도서", "1162082", EEquipmentCategory.Pocket)]
+        [ResourceInfo("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket)]
+        public static object Xml_BlueMagicBook
+        {
+            get => ResourceManager.GetObject("01162081", resourceCulture);
+        }
+
+        [ResourceInfo("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket)]
         public static byte[] Item_GreenMagicBook
         {
             get
@@ -213,7 +241,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 황의 마도서", "1162083", EEquipmentCategory.Pocket)]
+        [ResourceInfo("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket)]
+        public static object Xml_GreenMagicBook
+        {
+            get => ResourceManager.GetObject("01162082", resourceCulture);
+        }
+
+        [ResourceInfo("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket)]
         public static byte[] Item_YellowMagicBook
         {
             get
@@ -221,6 +255,12 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
                 object obj = ResourceManager.GetObject("저주받은 황의 마도서", resourceCulture);
                 return ((byte[])(obj));
             }
+        }
+
+        [ResourceInfo("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket)]
+        public static object Xml_YellowMagicBook
+        {
+            get => ResourceManager.GetObject("01162083", resourceCulture);
         }
 
         #endregion
@@ -277,7 +317,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(도적)", "01242124", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0, 1.5)]
+        [WeaponResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01242123", EEquipmentCategory.Weapon, EJobCategory.Xenon, 0, 1.5)]
         public static byte[] Item_Absolabs_EnergySword_Pirate
         {
             get
@@ -513,6 +553,125 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #endregion
 
+        #region Face
+
+        [ResourceInfo("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face)]
+        public static byte[] Item_LoseControlMark
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("루즈 컨트롤 머신 마크", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face)]
+        public static object Xml_LoseControlMark
+        {
+            get => ResourceManager.GetObject("01012632", resourceCulture);
+        }
+
+        [ResourceInfo("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face)]
+        public static byte[] Item_StrengthCrystal
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("응축된 힘의 결정석", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face)]
+        public static object Xml_StrengthCrystal
+        {
+            get => ResourceManager.GetObject("01012478", resourceCulture);
+        }
+
+        [ResourceInfo("마이스터 심볼", "01012410", EEquipmentCategory.Face)]
+        public static byte[] Item_MeisterSymbol
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("마이스터 심볼", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("마이스터 심볼", "01012410", EEquipmentCategory.Face)]
+        public static object Xml_MeisterSymbol
+        {
+            get => ResourceManager.GetObject("01012410", resourceCulture);
+        }
+
+        #endregion
+
+        #region Eye
+
+        [ResourceInfo("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye)]
+        public static byte[] Item_MagicEyePath
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("마력이 깃든 안대", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye)]
+        public static object Xml_MagicEyePath
+        {
+            get => ResourceManager.GetObject("01022278", resourceCulture);
+        }
+
+        [ResourceInfo("파풀라투스 마크", "01022277", EEquipmentCategory.Eye)]
+        public static byte[] Item_PapulatusMark
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("파풀라투스 마크", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("파풀라투스 마크", "01022277", EEquipmentCategory.Eye)]
+        public static object Xml_PapulatusMark
+        {
+            get => ResourceManager.GetObject("01022277", resourceCulture);
+        }
+
+        [ResourceInfo("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye)]
+        public static byte[] Item_AquaticLetterEye
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아쿠아틱 레터 눈장식", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye)]
+        public static object Xml_AquaticLetterEye
+        {
+            get => ResourceManager.GetObject("01022231", resourceCulture);
+        }
+
+        [ResourceInfo("블랙빈 마크", "01022232", EEquipmentCategory.Eye)]
+        public static byte[] Item_BlackBeanMark
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("블랙빈 마크", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("블랙빈 마크", "01022232", EEquipmentCategory.Eye)]
+        public static object Xml_BlackBeanMark
+        {
+            get => ResourceManager.GetObject("01022232", resourceCulture);
+        }
+
+        #endregion
 
         #region Soulder
 
@@ -532,7 +691,23 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             get => ResourceManager.GetObject("01152170", resourceCulture);
         }
 
-        [ResourceInfo("스칼렛 숄더", "01182193", EEquipmentCategory.Shoulder)]
+        [ResourceInfo("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder)]
+        public static byte[] Item_MeisterShoulder
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("마이스터 숄더", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [ResourceInfo("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder)]
+        public static object Xml_MeisterShoulder
+        {
+            get => ResourceManager.GetObject("01152154", resourceCulture);
+        }
+
+        [ResourceInfo("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder)]
         public static byte[] Item_ScaletShoulder
         {
             get
