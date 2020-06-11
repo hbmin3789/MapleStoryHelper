@@ -1,0 +1,25 @@
+<imgdir name="01053063">
+  <string name="islot" value="MaPn"/>
+  <string name="vslot" value="MaPn"/>
+  <int name="tuc" value="12"/>
+  <int name="reqJob" value="1"/>
+  <int name="reqLevel" value="200"/>
+  <int name="reqSTR" value="600"/>
+  <int name="reqDEX" value="0"/>
+  <int name="reqINT" value="0"/>
+  <int name="reqLUK" value="0"/>
+  <int name="incSTR" value="85"/>
+  <int name="incDEX" value="85"/>
+  <int name="incPDD" value="500"/>
+  <int name="incMDD" value="500"/>
+  <int name="price" value="1"/>
+  <int name="cash" value="0"/>
+  <int name="incPAD" value="9"/>
+  <int name="equipTradeBlock" value="1"/>
+  <int name="tradeAvailable" value="2"/>
+  <int name="charmEXP" value="200"/>
+  <int name="bossReward" value="1"/>
+  <int name="exItem" value="1"/>
+  <int name="imdR" value="10"/>
+  <int name="setItemID" value="617"/>
+</imgdir>

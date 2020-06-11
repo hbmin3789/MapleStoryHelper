@@ -148,6 +148,51 @@
   <data name="01022278" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\01022278.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01042392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01042392.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01042393" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01042393.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01042394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01042394.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01042395" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01042395.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01042396" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01042396.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01052882" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01052882.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01052887" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01052887.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01052888" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01052888.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01052889" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01052889.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01052890" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01052890.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01053063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01053063.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01053064" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01053064.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01053065" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01053065.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01053066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01053066.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01053067" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01053067.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="01113149" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01113149.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
