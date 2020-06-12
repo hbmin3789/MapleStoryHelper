@@ -193,6 +193,21 @@
   <data name="01053067" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\01053067.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>
+  <data name="01062253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01062253.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01062254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01062254.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01062255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01062255.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01062256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01062256.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
+  <data name="01062257" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\01062257.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
+  </data>
   <data name="01113149" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\01113149.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;ks_c_5601-1987</value>
   </data>

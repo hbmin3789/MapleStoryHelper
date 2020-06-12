@@ -919,6 +919,87 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Pants
 
+        [EquipmentResourceInfoAttribute("트릭스터 워리어팬츠", "01062253", EEquipmentCategory.Pants, EJobCategory.Worrior, 0)]
+        public static byte[] Item_TrixterWorriorPants
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("트릭스터 워리어팬츠", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 워리어팬츠", "01062253", EEquipmentCategory.Pants, EJobCategory.Worrior, 0)]
+        public static object Xml_TrixterWorriorPants
+        {
+            get => ResourceManager.GetObject("01062253", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 던위치팬츠", "01062254", EEquipmentCategory.Pants, EJobCategory.Magician, 0)]
+        public static byte[] Item_TrixterWitchPants
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("트릭스터 던위치팬츠", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 던위치팬츠", "01062254", EEquipmentCategory.Pants, EJobCategory.Magician, 0)]
+        public static object Xml_TrixterWitchPants
+        {
+            get => ResourceManager.GetObject("01062254", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 레인져팬츠", "01062255", EEquipmentCategory.Pants, EJobCategory.Archer, 0)]
+        public static byte[] Item_TrixterRangerPants
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("트릭스터 레인져팬츠", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 레인져팬츠", "01062255", EEquipmentCategory.Pants, EJobCategory.Archer, 0)]
+        public static object Xml_TrixterRangerPants
+        {
+            get => ResourceManager.GetObject("01062255", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 어새신팬츠", "01062256", EEquipmentCategory.Pants, EJobCategory.Thief
+            , 0)]
+        public static byte[] Item_TrixterAssassinPants
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("트릭스터 어새신팬츠", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 어새신팬츠", "01062256", EEquipmentCategory.Pants, EJobCategory.Thief, 0)]
+        public static object Xml_TrixterAssassinPants
+        {
+            get => ResourceManager.GetObject("01062256", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 원더러팬츠", "01062257", EEquipmentCategory.Pants, EJobCategory.Pirate, 0)]
+        public static byte[] Item_TrixterPiratePants
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("트릭스터 원더러팬츠", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("트릭스터 원더러팬츠", "01062257", EEquipmentCategory.Pants, EJobCategory.Pirate, 0)]
+        public static object Xml_TrixterPiratePants
+        {
+            get => ResourceManager.GetObject("01062257", resourceCulture);
+        }
+
         #endregion
 
         #region Soulder
