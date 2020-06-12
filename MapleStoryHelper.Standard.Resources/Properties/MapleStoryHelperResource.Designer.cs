@@ -1002,6 +1002,106 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #endregion
 
+        #region Shoes
+
+        [EquipmentResourceInfoAttribute("타일런트 신발", "01072747", EEquipmentCategory.Shoes, EJobCategory.All, 0)]
+        public static byte[] Item_TylentShoes
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("타일런트 신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("타일런트 신발", "01072747", EEquipmentCategory.Shoes, EJobCategory.All, 0)]
+        public static object Xml_TylentShoes
+        {
+            get => ResourceManager.GetObject("01072747", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 나이트슈즈", "01073030", EEquipmentCategory.Shoes, EJobCategory.Worrior, 0)]
+        public static byte[] Item_AbsolabsShoes_W
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 나이트슈즈", "01073030", EEquipmentCategory.Shoes, EJobCategory.Worrior, 0)]
+        public static object Xml_AbsolabsShoes_W
+        {
+            get => ResourceManager.GetObject("01073030", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 메이지슈즈", "01073032", EEquipmentCategory.Shoes, EJobCategory.Magician, 0)]
+        public static byte[] Item_AbsolabsShoes_M
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 메이지슈즈", "01073032", EEquipmentCategory.Shoes, EJobCategory.Magician, 0)]
+        public static object Xml_AbsolabsShoes_M
+        {
+            get => ResourceManager.GetObject("01073032", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 아처슈즈", "01073033", EEquipmentCategory.Shoes, EJobCategory.Archer, 0)]
+        public static byte[] Item_AbsolabsShoes_A
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 아처슈즈", "01073033", EEquipmentCategory.Shoes, EJobCategory.Archer, 0)]
+        public static object Xml_AbsolabsShoes_A
+        {
+            get => ResourceManager.GetObject("01073033", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 시프슈즈", "01073034", EEquipmentCategory.Shoes, EJobCategory.Thief, 0)]
+        public static byte[] Item_AbsolabsShoes_T
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 시프슈즈", "01073034", EEquipmentCategory.Shoes, EJobCategory.Thief, 0)]
+        public static object Xml_AbsolabsShoes_T
+        {
+            get => ResourceManager.GetObject("01073034", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈즈", "01073035", EEquipmentCategory.Shoes, EJobCategory.Pirate, 0)]
+        public static byte[] Item_AbsolabsShoes_P
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔신발", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈즈", "01073035", EEquipmentCategory.Shoes, EJobCategory.Pirate, 0)]
+        public static object Xml_AbsolabsShoes_P
+        {
+            get => ResourceManager.GetObject("01073035", resourceCulture);
+        }
+
+        #endregion
+
         #region Ear
 
         [EquipmentResourceInfoAttribute("커맨더 포스 이어링", "01032316", EEquipmentCategory.Ear, EJobCategory.All, 0)]
@@ -1315,6 +1415,58 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         public static object Xml_BadgeOfGenesis
         {
             get => ResourceManager.GetObject("01182285", resourceCulture);
+        }
+
+        #endregion
+
+        #region Cape
+
+        [EquipmentResourceInfoAttribute("타일런트 망토", "01102481", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static byte[] Item_TylentCape
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("탈망", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("타일런트 망토", "01102481", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static object Xml_TylentCape
+        {
+            get => ResourceManager.GetObject("01102481", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 망토", "01102775", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static byte[] Item_AbsolabsCape
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("앱솔망토", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("앱솔랩스 망토", "01102775", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static object Xml_AbsolabsCape
+        {
+            get => ResourceManager.GetObject("01102775", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 망토", "01102940", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static byte[] Item_ArcaneShade
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("아케인셰이드 망토", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("아케인셰이드 망토", "01102940", EEquipmentCategory.Cape, EJobCategory.All, 0)]
+        public static object Xml_ArcaneShade
+        {
+            get => ResourceManager.GetObject("01102940", resourceCulture);
         }
 
         #endregion
