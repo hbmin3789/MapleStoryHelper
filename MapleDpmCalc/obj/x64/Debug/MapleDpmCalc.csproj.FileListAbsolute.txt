@@ -42,3 +42,4 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleDpmCalc\obj\x64\Debug\quali
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleDpmCalc\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleDpmCalc\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleDpmCalc\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636884986160000000.json
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleDpmCalc\obj\x64\Debug\MapleDpmCalc.csprojAssemblyReference.cache

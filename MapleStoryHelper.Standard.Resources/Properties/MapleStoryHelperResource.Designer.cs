@@ -1002,6 +1002,90 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #endregion
 
+        #region Ear
+
+        [EquipmentResourceInfoAttribute("커맨더 포스 이어링", "01032316", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static byte[] Item_CommanderForceEar
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("커맨더 포스 이어링", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("커맨더 포스 이어링", "01032316", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static object Xml_CommanderForceEar
+        {
+            get => ResourceManager.GetObject("01032316", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("지옥의 불꽃", "01032136", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static byte[] Item_FlameOfHell
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("지옥의 불꽃", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("지옥의 불꽃", "01032136", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static object Xml_FlameOfHell
+        {
+            get => ResourceManager.GetObject("01032136", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("스칼렛 이어링", "01032216", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static byte[] Item_ScarletEar
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("스칼렛 이어링", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("스칼렛 이어링", "01032216", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static object Xml_ScarletEar
+        {
+            get => ResourceManager.GetObject("01032216", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("마이스터 이어링", "01032200", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static byte[] Item_MeisterEar
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("마이스터 이어링", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("마이스터 이어링", "01032200", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static object Xml_MeisterEar
+        {
+            get => ResourceManager.GetObject("01032200", resourceCulture);
+        }
+
+        [EquipmentResourceInfoAttribute("데아 시두스 이어링", "01032241", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static byte[] Item_DeaSidusEar
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("데아 시두스 이어링", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        [EquipmentResourceInfoAttribute("데아 시두스 이어링", "01032241", EEquipmentCategory.Ear, EJobCategory.All, 0)]
+        public static object Xml_DeaSidusEar
+        {
+            get => ResourceManager.GetObject("01032241", resourceCulture);
+        }
+
+        #endregion
+
         #region Soulder
 
         [ResourceInfo("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder)]
