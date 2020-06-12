@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Model;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
@@ -93,6 +94,18 @@ namespace MapleStoryHelper.Control
             PotentialItems.Add("보스 공격력%");
             PotentialItems.Add("방어력 무시%");
             PotentialItems.Add("크뎀%");
+        }
+
+        public void InitPotential(EquipmentItem item)
+        {
+            for (int i = 0; i < item.Potential.Count; i++)
+            {
+                var cb = ufgPotential.Children[i] as ComboBox;
+                var textbox = ufgPotentialTextBox.Children[i] as TextBox;
+
+                cb.SelectedIndex = (int)item.Potential[i].StatusKind;
+                textbox.Text = item.Potential[i].StatusValue.ToString();
+            }
         }
 
         #endregion

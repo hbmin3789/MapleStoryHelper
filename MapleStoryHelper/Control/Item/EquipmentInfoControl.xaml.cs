@@ -16,6 +16,8 @@ namespace MapleStoryHelper.Control.Item
     {
         public EventHandler OnSaved;
 
+        #region Property
+
         private ECharacterEquipmentCategory _category;
         public ECharacterEquipmentCategory Category 
         {
@@ -38,17 +40,15 @@ namespace MapleStoryHelper.Control.Item
             }
         }
 
+        #endregion
+
         public EquipmentInfoControl()
         {
             this.InitializeComponent();
-            OnSaved += OnSavedItem;
+            OnSaved += OnSavedItem;            
         }
 
-        private void OnSavedItem(object sender, EventArgs e)
-        {
-            EquipmentItem.Potential = GetPotentialStatus();
-            EquipmentItem.CharacterEquipmentCategory = Category;
-        }
+        #region Initialize
 
         public async Task InitEquipComboBox(ECharacterEquipmentCategory category,CharacterBase character)
         {
@@ -76,7 +76,16 @@ namespace MapleStoryHelper.Control.Item
             cbItems.ItemsSource = items;
 
             SetSelectedIndex(category, character);
+
+            InitPotential();
         }
+
+        private void InitPotential()
+        {
+            ctrlPotential.InitPotential(EquipmentItem);
+        }
+
+        #endregion
 
         private void SetSelectedIndex(ECharacterEquipmentCategory category, CharacterBase character)
         {
@@ -109,9 +118,19 @@ namespace MapleStoryHelper.Control.Item
             return ctrlPotential.GetStatus();
         }
 
+        #region Event
+
+        private void OnSavedItem(object sender, EventArgs e)
+        {
+            EquipmentItem.Potential = GetPotentialStatus();
+            EquipmentItem.CharacterEquipmentCategory = Category;
+        }
+
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.DataContext = cbItems.SelectedItem.DeepCopy<EquipmentItem>();
         }
+
+        #endregion
     }
 }
