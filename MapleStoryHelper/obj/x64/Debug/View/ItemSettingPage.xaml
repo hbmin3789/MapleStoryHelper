@@ -24,7 +24,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <!-- 아이템세팅이 완료된 장비는 색으로 표시하는 기능이 필요할듯 -->
         <Grid>
             <controls:UniformGrid x:ConnectionId='5' x:Name="ufgItems"
                                   Margin="10" Columns="5" Rows="6"

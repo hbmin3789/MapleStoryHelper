@@ -46,7 +46,7 @@ namespace MapleStoryHelper.Standard.Character
 
             for (int i = 0; i < EquipList.Count; i++)
             {
-                retval = retval + (EquipList.ElementAt(i).Value as EquipmentItem).Status.GetStatus<StatusBase>();
+                retval = retval + (EquipList.ElementAt(i).Value as EquipmentItem).GetStatus<StatusBase>();
             }
 
             return retval;

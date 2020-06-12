@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jiOVLg3I+zzp74pAmxTgt0aESMvWrOuvv6wWswFq018byxPnotVOqj48RV4v5mpjw3ioB+xLtHSHH5rPbLAhzg==",
+  "dgSpecHash": "nCyoKQVIcHXhJYZS1P9KsbCs+kKMvWGqvOg9pEPuYxF3obSMxrX82X4IHnyrsuka4lMSRLIkRMtQGMwXJINUFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
   ],
   "logs": []
 }

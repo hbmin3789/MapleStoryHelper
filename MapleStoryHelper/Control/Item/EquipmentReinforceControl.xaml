@@ -11,8 +11,6 @@
     mc:Ignorable="d">
     <UserControl.Resources>
 
-        <src:ListResources x:Key="ListResources"/>
-        
         <Style TargetType="CheckBox">
             <Setter Property="Margin" Value="0, 4.5, 0, 0"/>
         </Style>

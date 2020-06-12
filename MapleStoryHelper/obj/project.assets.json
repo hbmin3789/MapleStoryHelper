@@ -1466,7 +1466,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -3327,7 +3328,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -5219,7 +5221,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -7108,7 +7111,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -8969,7 +8973,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -10861,7 +10866,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -12722,7 +12728,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
@@ -14614,7 +14621,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}

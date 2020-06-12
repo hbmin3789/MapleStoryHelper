@@ -11,6 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0",
           "System.ComponentModel.Annotations": "4.2.1.0",
           "Windows.Foundation.UniversalApiContract": "8.0.0.0"
         },
@@ -32,6 +33,40 @@
           }
         }
       },
+      "System.Drawing.Common/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
+      "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.14.0",
+            "fileVersion": "5.0.20.25106"
+          }
+        }
+      },
+      "WzComparerR2.Common/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0",
+          "WzComparerR2.WzLib": "1.0.0"
+        },
+        "runtime": {
+          "WzComparerR2.Common.dll": {}
+        }
+      },
+      "WzComparerR2.WzLib/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0",
+          "System.Runtime.WindowsRuntime": "5.0.0-preview.4.20251.6"
+        },
+        "runtime": {
+          "WzComparerR2.WzLib.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.2.1.0": {
         "runtime": {
           "System.ComponentModel.Annotations.dll": {
@@ -45,6 +80,14 @@
           "Windows.Foundation.UniversalApiContract.winmd": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "10.0.18362.1"
+          }
+        }
+      },
+      "Windows/255.255.255.255": {
+        "runtime": {
+          "Windows.winmd": {
+            "assemblyVersion": "255.255.255.255",
+            "fileVersion": "0.0.0.0"
           }
         }
       }
@@ -77,12 +120,41 @@
       "path": "prism.core/7.2.0.1422",
       "hashPath": "prism.core.7.2.0.1422.nupkg.sha512"
     },
+    "System.Drawing.Common/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+    },
+    "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jodcn53bG5DtO7bEiYo/q5iEmoCYPLbbIzkp0VkIaf0uL151yIBhxjyWdt8R/QxPxMLl+QE5C6K0fuQwCWunxg==",
+      "path": "system.runtime.windowsruntime/5.0.0-preview.4.20251.6",
+      "hashPath": "system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    },
+    "WzComparerR2.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WzComparerR2.WzLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "System.ComponentModel.Annotations/4.2.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "Windows.Foundation.UniversalApiContract/8.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Windows/255.255.255.255": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

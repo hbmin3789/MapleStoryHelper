@@ -6,11 +6,29 @@ namespace MapleStoryHelper.Standard.Common
 {
     public enum EStatus
     {
-        STR,
+        STR = 0,
         DEX,
         INT,
         LUK,
+        AllStatus,
         HP,
-        MP
+        MP,
+        STRPer,
+        DEXPer,
+        INTPer,
+        LUKPer,
+        AllStatusPer,
+        HPPer,
+        MPPer,
+        
+        Attack,
+        Magic,
+        AttackPer,
+        MagicPer,
+
+        Damage,
+        BossDamage,
+        IgnoreDef,
+        CritDamage,
     }
 }

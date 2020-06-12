@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Model;
+using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
@@ -25,8 +26,8 @@ namespace MapleStoryHelper.Control
     {
         #region Proeprty
 
-        private ObservableCollection<PotentialPower> _potentialItems;
-        public ObservableCollection<PotentialPower> PotentialItems
+        private ObservableCollection<string> _potentialItems;
+        public ObservableCollection<string> PotentialItems
         {
             get => _potentialItems;
             set
@@ -56,7 +57,7 @@ namespace MapleStoryHelper.Control
 
         private void InitVariables()
         {
-            PotentialItems = new ObservableCollection<PotentialPower>();
+            PotentialItems = new ObservableCollection<string>();
         }
 
         private void InitPotentialListView()
@@ -66,112 +67,54 @@ namespace MapleStoryHelper.Control
 
         private void AddBasePotential()
         {
-            PotentialItems.Add(new PotentialPower("STR"));
-            PotentialItems.Add(new PotentialPower("DEX"));
-            PotentialItems.Add(new PotentialPower("INT"));
-            PotentialItems.Add(new PotentialPower("LUK"));
-            PotentialItems.Add(new PotentialPower("올스탯"));
-            PotentialItems.Add(new PotentialPower("HP"));
-            PotentialItems.Add(new PotentialPower("MP"));
+            PotentialItems.Add("STR");
+            PotentialItems.Add("DEX");
+            PotentialItems.Add("INT");
+            PotentialItems.Add("LUK");
+            PotentialItems.Add("올스탯");
+            PotentialItems.Add("HP");
+            PotentialItems.Add("MP");
 
-            PotentialItems.Add(new PotentialPower("STR%"));
-            PotentialItems.Add(new PotentialPower("DEX%"));
-            PotentialItems.Add(new PotentialPower("INT%"));
-            PotentialItems.Add(new PotentialPower("LUK%"));
-            PotentialItems.Add(new PotentialPower("올스탯%"));
-            PotentialItems.Add(new PotentialPower("HP%"));
-            PotentialItems.Add(new PotentialPower("MP%"));
+            PotentialItems.Add("STR%");
+            PotentialItems.Add("DEX%");
+            PotentialItems.Add("INT%");
+            PotentialItems.Add("LUK%");
+            PotentialItems.Add("올스탯%");
+            PotentialItems.Add("HP%");
+            PotentialItems.Add("MP%");
 
-            PotentialItems.Add(new PotentialPower("공격력"));
-            PotentialItems.Add(new PotentialPower("마력"));
+            PotentialItems.Add("공격력");
+            PotentialItems.Add("마력");
 
-            PotentialItems.Add(new PotentialPower("공격력%"));
-            PotentialItems.Add(new PotentialPower("마력%"));
+            PotentialItems.Add("공격력%");
+            PotentialItems.Add("마력%");
 
-            PotentialItems.Add(new PotentialPower("데미지%"));
-            PotentialItems.Add(new PotentialPower("보스 공격력%"));
-            PotentialItems.Add(new PotentialPower("방어력 무시%"));
-            PotentialItems.Add(new PotentialPower("크뎀%"));
+            PotentialItems.Add("데미지%");
+            PotentialItems.Add("보스 공격력%");
+            PotentialItems.Add("방어력 무시%");
+            PotentialItems.Add("크뎀%");
         }
 
         #endregion
 
-        public EquipmentStatus GetStatus()
+        public List<Potential> GetStatus()
         {
-            EquipmentStatus retval = new EquipmentStatus();
+            List<Potential> retval = new List<Potential>(6);
 
             for(int i = 0; i < ufgPotential.Children.Count; i++)
             {
-                var cb = ufgPotential.Children[i] as ComboBox;
-                switch (cb.SelectedIndex)
+                if(Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text.Length) == 0)
                 {
-                    case 0:
-                        retval.PoStr += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 1:
-                        retval.PoDex += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 2:
-                        retval.PoInt += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 3:
-                        retval.PoLuk += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 4:
-                        retval.PoAllStatus += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 5:
-                        retval.PoHP += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 6:
-                        retval.PoMP += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 7:
-                        retval.PoPStr += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 8:
-                        retval.PoPDex += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 9:
-                        retval.PoPInt += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 10:
-                        retval.PoPLuk += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 11:
-                        retval.PoPAllStatus += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 12:
-                        retval.PoPHP += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 13:
-                        retval.PoPMP += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 14:
-                        retval.PoAttack += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 15:
-                        retval.PoMagic += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 16:
-                        retval.PoPAttack += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 17:
-                        retval.PoPMagic += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 18:
-                        retval.PoDamage += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 19:
-                        retval.PoBossDamage += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
-                    case 20:
-                        retval.PoIgnoreDef.Add(Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text));
-                        break;
-                    case 21:
-                        retval.PoCritDamage += Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
-                        break;
+                    continue;
                 }
+
+                var cb = ufgPotential.Children[i] as ComboBox;
+                var newItem = new Potential();
+
+                newItem.StatusKind = (Standard.Common.EStatus)cb.SelectedIndex;
+                newItem.StatusValue = Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
+
+                retval.Add(newItem);
             }
 
             return retval;

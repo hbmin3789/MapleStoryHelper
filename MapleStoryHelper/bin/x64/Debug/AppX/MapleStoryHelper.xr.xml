@@ -50,7 +50,6 @@
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ImgBitmapSource" />
     <RootPropertyPathName Name="ImageSource" />
-    <RootPropertyPathName Name="Display" />
     <RootPropertyPathName Name="PotentialItems" />
     <RootPropertyPathName Name="CharacterStatus" />
     <RootPropertyPathName Name="PMPBinding" />
@@ -207,7 +206,6 @@
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="MapleStoryHelper.Control.Item.EquipmentInfoControl" />
-    <RootType FullName="MapleStoryHelper.Model.ListResources" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />

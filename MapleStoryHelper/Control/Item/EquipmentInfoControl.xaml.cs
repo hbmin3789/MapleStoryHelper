@@ -1,6 +1,7 @@
 ﻿using MapleStoryHelper.Common;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources;
 using System;
@@ -45,7 +46,7 @@ namespace MapleStoryHelper.Control.Item
 
         private void OnSavedItem(object sender, EventArgs e)
         {
-            EquipmentItem.Status = EquipmentItem.Status + GetPotentialStatus();
+            EquipmentItem.Potential = GetPotentialStatus();
             EquipmentItem.CharacterEquipmentCategory = Category;
         }
 
@@ -103,7 +104,7 @@ namespace MapleStoryHelper.Control.Item
             }
         }
 
-        public EquipmentStatus GetPotentialStatus()
+        public List<Potential> GetPotentialStatus()
         {
             return ctrlPotential.GetStatus();
         }

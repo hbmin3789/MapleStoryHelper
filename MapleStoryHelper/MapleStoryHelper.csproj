@@ -144,8 +144,6 @@
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="Converter\Equipment\StringToEEquipmentCategoryConverter.cs" />
     <Compile Include="Converter\IntToECharacterJobConverter.cs" />
-    <Compile Include="Model\ListResources.cs" />
-    <Compile Include="Model\Potential.cs" />
     <Compile Include="Model\Scroll.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
     <Compile Include="View\BossDamageCalcPage.xaml.cs">

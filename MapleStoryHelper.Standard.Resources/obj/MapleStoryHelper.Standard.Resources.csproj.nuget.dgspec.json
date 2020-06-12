@@ -167,7 +167,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

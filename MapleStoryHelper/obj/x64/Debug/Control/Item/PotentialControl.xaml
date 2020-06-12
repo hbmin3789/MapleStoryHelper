@@ -17,7 +17,7 @@
             <Setter Property="ItemTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Display}"/>
+                        <TextBlock Text="{Binding}"/>
                     </DataTemplate>
                 </Setter.Value>
             </Setter>

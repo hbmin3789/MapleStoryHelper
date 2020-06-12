@@ -22,3 +22,9 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\obj\De
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\WzComparerR2.Common.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\Windows.winmd
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csprojAssemblyReference.cache

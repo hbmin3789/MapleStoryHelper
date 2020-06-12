@@ -1,4 +1,6 @@
-﻿using MapleStoryHelper.Standard.Character;
+﻿using MapleStoryHelper.Converter;
+using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
@@ -90,8 +92,8 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _status, value);
         }
 
-        private Potential _potential;
-        public Potential Potential
+        private List<Potential> _potential = new List<Potential>();
+        public List<Potential> Potential
         {
             get => _potential;
             set => SetProperty(ref _potential, value);
@@ -112,6 +114,16 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         #endregion
+
+        public StatusBase GetStatus<T>() where T: StatusBase, new()
+        {
+            StatusBase retval = new T();
+
+            var potentialStatus = PotentialConverter.Convert(Potential);
+            retval = Status.GetStatus<StatusBase>() + potentialStatus;
+
+            return retval;
+        }
 
         /// <summary>
         /// Status 객체의 Clone()메서드 미구현
