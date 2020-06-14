@@ -18,7 +18,7 @@ namespace WzComparerR2.WzLib
         {
             this.imageCount = 0;
             this.wzStructure = wz;
-            this.loaded = InitLoadAsync(fileName).Result;
+            this.loaded = InitLoad(fileName);
             this.stringTable = new Dictionary<int, string>();
         }
 
@@ -105,6 +105,14 @@ namespace WzComparerR2.WzLib
             var temp = await StorageFile.GetFileFromPathAsync(fileName);
             var stream = await temp.OpenStreamForReadAsync();
             this.fileStream = stream;
+            this.bReader = new BinaryReader(this.FileStream);
+
+            return GetHeader(fileName);
+        }
+
+        private bool InitLoad(string fileName)
+        {
+            this.fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
             this.bReader = new BinaryReader(this.FileStream);
 
             return GetHeader(fileName);
