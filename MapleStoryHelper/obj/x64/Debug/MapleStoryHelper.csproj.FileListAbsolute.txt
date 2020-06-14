@@ -362,3 +362,8 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\V
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.g.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.xaml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\View\OneKillCalc.xbf
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.xbf
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.g.i.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.xaml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\obj\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.xbf

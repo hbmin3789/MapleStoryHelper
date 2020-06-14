@@ -889,6 +889,9 @@
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Arcane\ArcaneSymbolSettingControl.xbf">
+      <PackagePath>Control\Arcane\ArcaneSymbolSettingControl.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper\bin\x64\Debug\Control\Character\CharacterControl.xbf">
       <PackagePath>Control\Character\CharacterControl.xbf</PackagePath>
     </AppxPackagedFile>

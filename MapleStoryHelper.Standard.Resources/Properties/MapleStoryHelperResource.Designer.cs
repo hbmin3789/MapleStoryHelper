@@ -68,7 +68,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("결속의 반지", "", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("결속의 반지", "", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_SynergyRing {
             get {
                 object obj = ResourceManager.GetObject("결속의_반지", resourceCulture);
@@ -79,7 +79,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("마이스터링", "", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("마이스터링", "", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_MeisterRing {
             get {
                 object obj = ResourceManager.GetObject("마이스터링", resourceCulture);
@@ -90,7 +90,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("벤전스링", "01114301", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("벤전스링", "01114301", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_VengeanceRing {
             get {
                 object obj = ResourceManager.GetObject("벤전스링", resourceCulture);
@@ -101,7 +101,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        //[ResourceInfo("오닉스링", "", EEquipmentCategory.Ring)]
+        //[EquipmentResourceInfoAttribute("오닉스링", "", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         //public static byte[] Item_OnyxRing {
         //    get {
         //        object obj = ResourceManager.GetObject("오닉스링", resourceCulture);
@@ -112,7 +112,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("카오스링", "01114306", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("카오스링", "01114306", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_ChaosRing {
             get {
                 object obj = ResourceManager.GetObject("카오스링", resourceCulture);
@@ -123,7 +123,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("코스모스링", "01114304", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("코스모스링", "01114304", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_CosmosRing {
             get {
                 object obj = ResourceManager.GetObject("코스모스링", resourceCulture);
@@ -134,7 +134,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
         /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        [ResourceInfo("테네브리스 원정대 반지", "01114311", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("테네브리스 원정대 반지", "01114311", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_TenebrisRing 
         {
             get
@@ -144,7 +144,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("실버블라썸 링", "01113149", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("실버블라썸 링", "01113149", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static byte[] Item_SilverBlossomRing
         {
             get
@@ -154,25 +154,25 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("실버블라썸 링", "01113149", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("실버블라썸 링", "01113149", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static object Xml_SilverBlossomRing
         {
             get => ResourceManager.GetObject("01113149", resourceCulture);
         }
 
-        [ResourceInfo("테네브리스 원정대 반지", "01114311", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("테네브리스 원정대 반지", "01114311", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static object Xml_TenebrisRing
         {
             get => ResourceManager.GetObject("01114311", resourceCulture);
         }
 
-        [ResourceInfo("벤전스링", "01114301", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("벤전스링", "01114301", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static object Xml_VengeanceRing
         {
             get => ResourceManager.GetObject("01114301", resourceCulture);
         }
 
-        [ResourceInfo("카오스 링", "01114306", EEquipmentCategory.Ring)]
+        [EquipmentResourceInfoAttribute("카오스 링", "01114306", EEquipmentCategory.Ring, EJobCategory.All, 0)]
         public static object Xml_ChaosRing
         {
             get => ResourceManager.GetObject("01114306", resourceCulture);
@@ -182,7 +182,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Pocket
 
-        [ResourceInfo("핑크빛 성배", "01162025", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("핑크빛 성배", "01162025", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static byte[] Item_PinkChalice
         {
             get
@@ -192,14 +192,14 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("핑크빛 성배", "01162025", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("핑크빛 성배", "01162025", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static object Xml_PinkChalice
         {
             get => ResourceManager.GetObject("01162025", resourceCulture);
         }
 
 
-        [ResourceInfo("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static byte[] Item_RedMagicBook
         {
             get
@@ -209,13 +209,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 적의 마도서", "01162080", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static object Xml_RedMagicBook
         {
             get => ResourceManager.GetObject("01162080", resourceCulture);
         }
 
-        [ResourceInfo("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static byte[] Item_BlueMagicBook
         {
             get
@@ -225,13 +225,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 청의 마도서", "01162081", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static object Xml_BlueMagicBook
         {
             get => ResourceManager.GetObject("01162081", resourceCulture);
         }
 
-        [ResourceInfo("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static byte[] Item_GreenMagicBook
         {
             get
@@ -241,13 +241,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 녹의 마도서", "01162082", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static object Xml_GreenMagicBook
         {
             get => ResourceManager.GetObject("01162082", resourceCulture);
         }
 
-        [ResourceInfo("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static byte[] Item_YellowMagicBook
         {
             get
@@ -257,7 +257,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket)]
+        [EquipmentResourceInfoAttribute("저주받은 황의 마도서", "01162083", EEquipmentCategory.Pocket, EJobCategory.All, 0)]
         public static object Xml_YellowMagicBook
         {
             get => ResourceManager.GetObject("01162083", resourceCulture);
@@ -267,7 +267,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Pendant
 
-        [ResourceInfo("고통의 근원", "01122430", EEquipmentCategory.Pendant)]
+        [EquipmentResourceInfoAttribute("고통의 근원", "01122430", EEquipmentCategory.Pendant, EJobCategory.All, 0)]
         public static byte[] Item_SourceOfSuffering
         {
             get
@@ -277,7 +277,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("매커네이터 펜던트", "01122254", EEquipmentCategory.Pendant)]
+        [EquipmentResourceInfoAttribute("매커네이터 펜던트", "01122254", EEquipmentCategory.Pendant, EJobCategory.All, 0)]
         public static byte[] Item_MechanatorPendant
         {
             get
@@ -287,7 +287,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant)]
+        [EquipmentResourceInfoAttribute("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant, EJobCategory.All, 0)]
         public static byte[] Item_DominatorPendant
         {
             get
@@ -297,7 +297,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant)]
+        [EquipmentResourceInfoAttribute("도미네이터 펜던트", "01122377", EEquipmentCategory.Pendant, EJobCategory.All, 0)]
         public static object Xml_DominatorPendant
         {
             get => ResourceManager.GetObject("01122377", resourceCulture);
@@ -343,7 +343,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Belt
 
-        [ResourceInfo("타일런트 벨트", "01132178", EEquipmentCategory.Belt)]
+        [EquipmentResourceInfoAttribute("타일런트 벨트", "01132178", EEquipmentCategory.Belt, EJobCategory.All, 0)]
         public static byte[] Item_TylentBelt
         {
             get
@@ -353,13 +353,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("타일런트 벨트", "01132178", EEquipmentCategory.Belt)]
+        [EquipmentResourceInfoAttribute("타일런트 벨트", "01132178", EEquipmentCategory.Belt, EJobCategory.All, 0)]
         public static object Xml_TylentBelt
         {
             get => ResourceManager.GetObject("01132178", resourceCulture);
         }
 
-        [ResourceInfo("몽환의 벨트", "01242123", EEquipmentCategory.Belt)]
+        [EquipmentResourceInfoAttribute("몽환의 벨트", "01242123", EEquipmentCategory.Belt, EJobCategory.All, 0)]
         public static byte[] Item_DreamyBelt
         {
             get
@@ -369,7 +369,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("분노한 자쿰의 벨트", "01242123", EEquipmentCategory.Belt)]
+        [EquipmentResourceInfoAttribute("분노한 자쿰의 벨트", "01242123", EEquipmentCategory.Belt, EJobCategory.All, 0)]
         public static byte[] Item_EnragedZakumBelt
         {
             get
@@ -379,7 +379,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("골든 클로버 벨트", "01242123", EEquipmentCategory.Belt)]
+        [EquipmentResourceInfoAttribute("골든 클로버 벨트", "01242123", EEquipmentCategory.Belt, EJobCategory.All, 0)]
         public static byte[] Item_GoldenCloverBelt
         {
             get
@@ -539,23 +539,11 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 나이트햇", "01004808", EEquipmentCategory.Cap, (EJobCategory)1, 0)]
-        public static object Xml_ArcaneShadeCap_Worrior
-        {
-            get => ResourceManager.GetObject("01242124", resourceCulture);
-        }
-
-        [EquipmentResourceInfoAttribute("앱솔랩스 에너지소드(해적)", "01004809", EEquipmentCategory.Cap, (EJobCategory)2, 0)]
-        public static object Xml_ArcaneShadeCap_Magician
-        {
-            get => ResourceManager.GetObject("01242123", resourceCulture);
-        }
-
         #endregion
 
         #region Face
 
-        [ResourceInfo("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static byte[] Item_LoseControlMark
         {
             get
@@ -565,13 +553,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("루즈 컨트롤 머신 마크", "01012632", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static object Xml_LoseControlMark
         {
             get => ResourceManager.GetObject("01012632", resourceCulture);
         }
 
-        [ResourceInfo("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static byte[] Item_StrengthCrystal
         {
             get
@@ -581,13 +569,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("응축된 힘의 결정석", "01012478", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static object Xml_StrengthCrystal
         {
             get => ResourceManager.GetObject("01012478", resourceCulture);
         }
 
-        [ResourceInfo("마이스터 심볼", "01012410", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("마이스터 심볼", "01012410", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static byte[] Item_MeisterSymbol
         {
             get
@@ -597,7 +585,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("마이스터 심볼", "01012410", EEquipmentCategory.Face)]
+        [EquipmentResourceInfoAttribute("마이스터 심볼", "01012410", EEquipmentCategory.Face, EJobCategory.All, 0)]
         public static object Xml_MeisterSymbol
         {
             get => ResourceManager.GetObject("01012410", resourceCulture);
@@ -607,7 +595,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Eye
 
-        [ResourceInfo("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static byte[] Item_MagicEyePath
         {
             get
@@ -617,13 +605,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("마력이 깃든 안대", "01022278", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static object Xml_MagicEyePath
         {
             get => ResourceManager.GetObject("01022278", resourceCulture);
         }
 
-        [ResourceInfo("파풀라투스 마크", "01022277", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("파풀라투스 마크", "01022277", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static byte[] Item_PapulatusMark
         {
             get
@@ -633,13 +621,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("파풀라투스 마크", "01022277", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("파풀라투스 마크", "01022277", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static object Xml_PapulatusMark
         {
             get => ResourceManager.GetObject("01022277", resourceCulture);
         }
 
-        [ResourceInfo("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static byte[] Item_AquaticLetterEye
         {
             get
@@ -649,13 +637,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("아쿠아틱 레터 눈장식", "01022231", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static object Xml_AquaticLetterEye
         {
             get => ResourceManager.GetObject("01022231", resourceCulture);
         }
 
-        [ResourceInfo("블랙빈 마크", "01022232", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("블랙빈 마크", "01022232", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static byte[] Item_BlackBeanMark
         {
             get
@@ -665,7 +653,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("블랙빈 마크", "01022232", EEquipmentCategory.Eye)]
+        [EquipmentResourceInfoAttribute("블랙빈 마크", "01022232", EEquipmentCategory.Eye, EJobCategory.All, 0)]
         public static object Xml_BlackBeanMark
         {
             get => ResourceManager.GetObject("01022232", resourceCulture);
@@ -1188,7 +1176,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Soulder
 
-        [ResourceInfo("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static byte[] Item_RoyalBlackMetalShoulder
         {
             get
@@ -1198,13 +1186,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("로얄 블랙메탈 숄더", "01152170", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static object Xml_RoyalBlackMetalShoulder
         {
             get => ResourceManager.GetObject("01152170", resourceCulture);
         }
 
-        [ResourceInfo("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static byte[] Item_MeisterShoulder
         {
             get
@@ -1214,13 +1202,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("마이스터 숄더", "01152154", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static object Xml_MeisterShoulder
         {
             get => ResourceManager.GetObject("01152154", resourceCulture);
         }
 
-        [ResourceInfo("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static byte[] Item_ScaletShoulder
         {
             get
@@ -1230,13 +1218,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("스칼렛 숄더", "01152155", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static object Xml_ScaletShoulder
         {
             get => ResourceManager.GetObject("01152155", resourceCulture);
         }
 
-        [ResourceInfo("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static byte[] Item_AbsolabsShoulder
         {
             get
@@ -1246,13 +1234,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("앱솔랩스 숄더", "01152174", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static object Xml_AbsolabsShoulder
         {
             get => ResourceManager.GetObject("01152174", resourceCulture);
         }
 
-        [ResourceInfo("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static byte[] Item_ArcaneShadeShoulder
         {
             get
@@ -1262,7 +1250,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder)]
+        [EquipmentResourceInfoAttribute("아케인셰이드 숄더", "01152196", EEquipmentCategory.Shoulder, EJobCategory.All, 0)]
         public static object Xml_ArcaneShadeShoulder
         {
             get => ResourceManager.GetObject("01152196", resourceCulture);
@@ -1273,7 +1261,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Badge
 
-        [ResourceInfo("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfMano
         {
             get
@@ -1283,13 +1271,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 마노", "01182193", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfMano
         {
             get => ResourceManager.GetObject("01182193", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfChiu
         {
             get
@@ -1299,13 +1287,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 치우", "01182194", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfChiu
         {
             get => ResourceManager.GetObject("01182194", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfBotan
         {
             get
@@ -1315,13 +1303,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 보탄", "01182195", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfBotan
         {
             get => ResourceManager.GetObject("01182195", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfDonar
         {
             get
@@ -1331,13 +1319,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 도나르", "01182196", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfDonar
         {
             get => ResourceManager.GetObject("01182196", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfPruba
         {
             get
@@ -1347,13 +1335,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 프루바", "01182197", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfPruba
         {
             get => ResourceManager.GetObject("01182197", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfSaturnus
         {
             get
@@ -1363,13 +1351,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 사투르누스", "01182198", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfSaturnus
         {
             get => ResourceManager.GetObject("01182198", resourceCulture);
         }
 
-        [ResourceInfo("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfJuna
         {
             get
@@ -1379,13 +1367,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("뱃지 오브 준나", "01182199", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfJuna
         {
             get => ResourceManager.GetObject("01182199", resourceCulture);
         }
 
-        [ResourceInfo("칠요의 뱃지", "01182200", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("칠요의 뱃지", "01182200", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfWeek
         {
             get
@@ -1395,13 +1383,13 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("칠요의 뱃지", "01182200", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("칠요의 뱃지", "01182200", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfWeek
         {
             get => ResourceManager.GetObject("01182200", resourceCulture);
         }
 
-        [ResourceInfo("창세의 뱃지", "01182285", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("창세의 뱃지", "01182285", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static byte[] Item_BadgeOfGenesis
         {
             get
@@ -1411,7 +1399,7 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
             }
         }
 
-        [ResourceInfo("창세의 뱃지", "01182285", EEquipmentCategory.Badge)]
+        [EquipmentResourceInfoAttribute("창세의 뱃지", "01182285", EEquipmentCategory.Badge, EJobCategory.All, 0)]
         public static object Xml_BadgeOfGenesis
         {
             get => ResourceManager.GetObject("01182285", resourceCulture);

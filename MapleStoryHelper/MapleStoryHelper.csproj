@@ -120,6 +120,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\MHExMethods.cs" />
+    <Compile Include="Control\Arcane\ArcaneSymbolSettingControl.xaml.cs">
+      <DependentUpon>ArcaneSymbolSettingControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Character\CharacterControl.xaml.cs">
       <DependentUpon>CharacterControl.xaml</DependentUpon>
     </Compile>
@@ -424,6 +427,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Control\Arcane\ArcaneSymbolSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\Character\CharacterControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
