@@ -6,6 +6,7 @@ using MapleStoryHelper.Standard.Resources;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.Remoting.Messaging;
@@ -20,14 +21,18 @@ namespace MapleStoryHelper.Framework.ResourceManager
     {
         private string FilePath;
 
-        private Dictionary<EEquipmentCategory, List<EquipmentItem>> EquipItems;
-
         #region WzFile
 
-        private Wz_File wzFile;
-        private Wz_Structure wzStruct
+        private Wz_File CharacterWz;
+        private Wz_File StringWz;
+
+        private Wz_Structure CharacterWzStruct
         {
-            get => wzFile.WzStructure;
+            get => CharacterWz.WzStructure;
+        }
+        private Wz_Structure StringWzStruct
+        {
+            get => StringWz.WzStructure;
         }
 
         #endregion
@@ -54,7 +59,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         private void InitVariables()
         {
-            EquipItems = new Dictionary<EEquipmentCategory, List<EquipmentItem>>();
+            
         }
 
         #endregion
@@ -64,7 +69,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
         /// <summary>
         /// Load .wz File
         /// </summary>
-        /// <param name="filePath">The folder path where .wz file exists</param>
+        /// <param name="filePath">The folder where .wz file exists</param>
         public void LoadFile(string filePath)
         {
             SaveFilePath(filePath);
@@ -72,8 +77,15 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         private void LoadWzFile()
         {
-            wzFile = new Wz_File(FilePath, new Wz_Structure());
-            wzStruct.Load(FilePath);
+            if (FilePath.Last().ToString().Equals("\\"))
+            {
+                FilePath = FilePath.Remove(FilePath.LastIndexOf("\\"));
+            }
+            CharacterWz = new Wz_File(FilePath + "\\Character.wz", new Wz_Structure());
+            StringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
+
+            CharacterWzStruct.Load(FilePath + "\\Character.wz");
+            StringWzStruct.Load(FilePath + "\\String.wz");
         }
 
         #endregion

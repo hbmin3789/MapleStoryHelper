@@ -64,7 +64,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Control\Item\EquipmentInfoControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\Item\PotentialControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Theme\Font.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -73,7 +85,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Common\MHExMethods.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Control\Item\EquipmentInfoControl.xaml.cs">
+      <DependentUpon>EquipmentInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Item\PotentialControl.xaml.cs">
+      <DependentUpon>PotentialControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -110,9 +128,17 @@
       <Project>{8BCC287A-12A6-4986-A3A2-C21D48ACF80D}</Project>
       <Name>MapleStoryHelper.Framework.ResourceManager</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj">
+      <Project>{8746cb0e-6404-4595-af83-270d25a0f163}</Project>
+      <Name>MapleStoryHelper.Standard.Character</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj">
+      <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
+      <Name>MapleStoryHelper.Standard.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
       <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>
@@ -123,5 +149,6 @@
       <Name>WzComparerR2.WzLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

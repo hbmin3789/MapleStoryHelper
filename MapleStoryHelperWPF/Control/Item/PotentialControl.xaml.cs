@@ -1,0 +1,131 @@
+﻿using MapleStoryHelper.Standard.Common;
+using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Common;
+using MapleStoryHelper.Standard.Item.Equipment;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Windows.Controls;
+
+// 사용자 정의 컨트롤 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=234236에 나와 있습니다.
+
+namespace MapleStoryHelperWPF.Control
+{
+    public partial class PotentialControl : UserControl, INotifyPropertyChanged
+    {
+        #region Proeprty
+
+        private ObservableCollection<string> _potentialItems;
+        public ObservableCollection<string> PotentialItems
+        {
+            get => _potentialItems;
+            set
+            {
+                _potentialItems = value;
+                NotifyPropertyChanged(nameof(PotentialItems));
+            }
+        }
+
+
+        #endregion
+
+        public PotentialControl()
+        {
+            this.InitializeComponent();
+            InitView();
+        }
+
+        #region Initialize
+
+        private void InitView()
+        {
+            InitVariables();
+            InitPotentialListView();
+            this.DataContext = this;
+        }
+
+        private void InitVariables()
+        {
+            PotentialItems = new ObservableCollection<string>();
+        }
+
+        private void InitPotentialListView()
+        {
+            AddBasePotential();
+        }
+
+        private void AddBasePotential()
+        {
+            PotentialItems.Add("STR");
+            PotentialItems.Add("DEX");
+            PotentialItems.Add("INT");
+            PotentialItems.Add("LUK");
+            PotentialItems.Add("올스탯");
+            PotentialItems.Add("HP");
+            PotentialItems.Add("MP");
+
+            PotentialItems.Add("STR%");
+            PotentialItems.Add("DEX%");
+            PotentialItems.Add("INT%");
+            PotentialItems.Add("LUK%");
+            PotentialItems.Add("올스탯%");
+            PotentialItems.Add("HP%");
+            PotentialItems.Add("MP%");
+
+            PotentialItems.Add("공격력");
+            PotentialItems.Add("마력");
+
+            PotentialItems.Add("공격력%");
+            PotentialItems.Add("마력%");
+
+            PotentialItems.Add("데미지%");
+            PotentialItems.Add("보스 공격력%");
+            PotentialItems.Add("방어력 무시%");
+            PotentialItems.Add("크뎀%");
+        }
+
+        public void InitPotential(EquipmentItem item)
+        {
+            for (int i = 0; i < item.Potential.Count; i++)
+            {
+                var cb = ufgPotential.Children[i] as ComboBox;
+                var textbox = ufgPotentialTextBox.Children[i] as TextBox;
+
+                cb.SelectedIndex = (int)item.Potential[i].StatusKind;
+                textbox.Text = item.Potential[i].StatusValue.ToString();
+            }
+        }
+
+        #endregion
+
+        public List<Potential> GetStatus()
+        {
+            List<Potential> retval = new List<Potential>(6);
+
+            for(int i = 0; i < ufgPotential.Children.Count; i++)
+            {
+                if(Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text.Length) == 0)
+                {
+                    continue;
+                }
+
+                var cb = ufgPotential.Children[i] as ComboBox;
+                var newItem = new Potential();
+
+                newItem.StatusKind = (EStatus)cb.SelectedIndex;
+                newItem.StatusValue = Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
+
+                retval.Add(newItem);
+            }
+
+            return retval;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}

@@ -26,9 +26,8 @@ namespace MapleStoryHelperWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string PATH = @"C:\Nexon\Maple\Character.wz";
+        private const string PATH = @"C:\Nexon\Maple\";
         public List<EquipmentItem> EquipmentItems { get; set; }
-        Wz_File file = new Wz_File(PATH, new Wz_Structure());
 
         public MainWindow()
         {
@@ -36,7 +35,6 @@ namespace MapleStoryHelperWPF
             this.DataContext = this;
             MapleWz wz = new MapleWz();
             wz.LoadFile(PATH);
-            wz.GetEquipmentItems(EEquipmentCategory.Ring, EJobCategory.All);
         }
     }
 }
