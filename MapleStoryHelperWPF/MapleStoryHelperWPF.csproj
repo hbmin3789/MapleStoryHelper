@@ -106,9 +106,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Framework.ResourceManager\MapleStoryHelper.Framework.ResourceManager.csproj">
+      <Project>{8BCC287A-12A6-4986-A3A2-C21D48ACF80D}</Project>
+      <Name>MapleStoryHelper.Framework.ResourceManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
+      <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>
+      <Name>MapleStoryHelper.Standard</Name>
     </ProjectReference>
     <ProjectReference Include="..\WzComparerR2.WzLib\WzComparerR2.WzLib.csproj">
       <Project>{8FDCCD22-5CA2-497C-89CA-8EBB1155426C}</Project>

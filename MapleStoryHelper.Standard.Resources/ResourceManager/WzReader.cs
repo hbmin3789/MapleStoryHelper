@@ -17,7 +17,8 @@ namespace MapleStoryHelper.Standard.Resources.ResourceManager
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             Wz_Structure wzSt = new Wz_Structure();
-           await wzSt.LoadAsync(FilePath);
+
+            wzSt.Load(FilePath);
 
             var node = wzSt.WzNode;
 

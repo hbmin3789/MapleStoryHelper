@@ -102,15 +102,34 @@ namespace MapleStoryHelper.Standard.Resources
             }
         }
 
-        public static void SetEquipInfo(ref EquipmentItem retval, Wz_Node item)
+        public static bool SetEquipInfo(ref EquipmentItem retval, Wz_Node item)
         {
+            Wz_Image image;
+            if ((image = item.GetValue<Wz_Image>()) == null || image.TryExtract() == false)
+            {
+                return false;
+            }
+
+            item = image.Node;
             item = item.FindNodeByPath("info");
+
+            if (item == null)
+            {
+                return false;
+            }
             for (int i = 0; i < item?.Nodes?.Count; i++)
             {
                 int val = 0;
-                if (item?.Nodes[i]?.Value != null)
+                if (item.Nodes[i].Value != null)
                 {
-                    val = Convert.ToInt32(item.Nodes[i].Value);
+                    try
+                    {
+                        val = Convert.ToInt32(item.Nodes[i].Value);
+                    }
+                    catch
+                    {
+                        continue;
+                    }
                 }
                 switch (item.Nodes[i].Text)
                 {
@@ -158,6 +177,87 @@ namespace MapleStoryHelper.Standard.Resources
                         break;
                 }
             }
+
+            return true;
+        }
+
+        public static bool SetEquipInfo(ref EquipmentStruct retval, Wz_Node item)
+        {
+            Wz_Image image;
+            if ((image = item.GetValue<Wz_Image>()) == null || image.TryExtract() == false)
+            {
+                return false;
+            }
+
+            item = image.Node;
+            item = item.FindNodeByPath("info");
+
+            if (item == null)
+            {
+                return false;
+            }
+            for (int i = 0; i < item?.Nodes?.Count; i++)
+            {
+                int val = 0;
+                if (item.Nodes[i].Value != null)
+                {
+                    try
+                    {
+                        val = Convert.ToInt32(item.Nodes[i].Value);
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+                }
+                switch (item.Nodes[i].Text)
+                {
+                    case "reqJob":
+                        retval.CharacterCategory = val;
+                        break;
+                    case "islot":
+                        //retval.EquipmentCategory = (EEquipmentCategory)item.Nodes[i].ChildNodes[j].Value;
+                        break;
+                    case "reqLevel":
+                        retval.ReqLevel = val;
+                        break;
+                    case "incSTR":
+                        retval.Str = val;
+                        break;
+                    case "incDEX":
+                        retval.Dex = val;
+                        break;
+                    case "incINT":
+                        retval.Int = val;
+                        break;
+                    case "incLUK":
+                        retval.Luk = val;
+                        break;
+                    case "incPAD":
+                        retval.Attack = val;
+                        break;
+                    case "incMAD":
+                        retval.Magic = val;
+                        break;
+                    case "incMHP":
+                        retval.HP = val;
+                        break;
+                    case "incMMP":
+                        retval.MP = val;
+                        break;
+                    case "tuc":
+                        retval.MaxScroll = val;
+                        break;
+                    case "bossReward":
+                        //retval. = Convert.ToInt32(item.Nodes[i].ChildNodes[j].Value);
+                        break;
+                    case "imdR":
+                        retval.IgnoreDef = val;
+                        break;
+                }
+            }
+
+            return true;
         }
 
         protected static List<XmlDocument> GetEquipmentXmlList(EEquipmentCategory category)

@@ -29,11 +29,6 @@ namespace WzComparerR2.WzLib
             this.stringTable = new Dictionary<int, string>();
         }
 
-        public async Task LoadFileAsync(string fileName)
-        {
-            this.loaded = await InitLoadAsync(fileName);
-        }
-
         private Stream fileStream;
         private BinaryReader bReader;
         private Wz_Structure wzStructure;
@@ -112,7 +107,7 @@ namespace WzComparerR2.WzLib
 
         private bool InitLoad(string fileName)
         {
-            this.fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            this.fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read);
             this.bReader = new BinaryReader(this.FileStream);
 
             return GetHeader(fileName);

@@ -1,4 +1,6 @@
-﻿using MapleStoryHelper.Standard.Item;
+﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Mvvm;
 using System;
@@ -32,10 +34,9 @@ namespace MapleStoryHelperWPF
         {
             InitializeComponent();
             this.DataContext = this;
-            EquipmentItems = new List<EquipmentItem>();
-            file.WzStructure.Load(PATH);
-            var accNode = file.WzStructure.WzNode.FindNodeByPath("Accessory");
-            var accNodeChild = accNode.FindNodeByPath("01142052.img");
+            MapleWz wz = new MapleWz();
+            wz.LoadFile(PATH);
+            wz.GetEquipmentItems(EEquipmentCategory.Ring, EJobCategory.All);
         }
     }
 }

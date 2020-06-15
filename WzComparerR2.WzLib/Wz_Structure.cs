@@ -69,40 +69,6 @@ namespace WzComparerR2.WzLib
             calculate_img_count();
         }
 
-        public async Task LoadAsync(string fileName)
-        {
-            this.WzNode = new Wz_Node(Path.GetFileName(fileName));
-            await LoadFileAsync(fileName, WzNode);
-            calculate_img_count();
-        }
-
-        public async Task LoadFileAsync(string fileName, Wz_Node node)
-        {
-            Wz_File file;
-
-            try
-            {
-                file = new Wz_File(this);
-                await file.LoadFileAsync(fileName);
-
-                if (!this.encryption.encryption_detected)
-                {
-                    this.encryption.DetectEncryption(file);
-                }
-                this.wz_files.Add(file);
-                node.Value = file;
-                file.Node = node;
-                file.FileStream.Position = 62;
-                file.GetDirTree(node, true);
-                file.DetectWzType();
-                file.DetectWzVersion();
-            }
-            catch
-            {
-                throw;
-            }
-        }
-
         public void LoadFile(string fileName, Wz_Node node)
         {
             this.LoadFile(fileName, node, true);

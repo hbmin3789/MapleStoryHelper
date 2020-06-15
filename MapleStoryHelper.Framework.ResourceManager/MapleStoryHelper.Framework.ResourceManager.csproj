@@ -41,10 +41,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapleWz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CategoryManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
+      <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
+      <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj">
+      <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
+      <Name>MapleStoryHelper.Standard.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
+      <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>
+      <Name>MapleStoryHelper.Standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WzComparerR2.WzLib\WzComparerR2.WzLib.csproj">
+      <Project>{8FDCCD22-5CA2-497C-89CA-8EBB1155426C}</Project>
+      <Name>WzComparerR2.WzLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
