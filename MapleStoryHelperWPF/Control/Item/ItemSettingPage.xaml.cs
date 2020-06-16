@@ -16,7 +16,7 @@ namespace MapleStoryHelperWPF.Control
     /// </summary>
     public partial class ItemSettingPage : UserControl
     {
-        private Character Backup;
+        private MapleStoryHelper.Standard.Character.Character Backup;
 
         public ItemSettingPage()
         {
@@ -34,7 +34,7 @@ namespace MapleStoryHelperWPF.Control
 
         private async void UpdateView()
         {
-            Character character = this.DataContext as Character;
+            MapleStoryHelper.Standard.Character.Character character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
             var equipList = character.CharacterEquipment.EquipList;
             var children = wpItems.Children;
             int idx = 0;
@@ -86,7 +86,7 @@ namespace MapleStoryHelperWPF.Control
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Visibility = Visibility.Collapsed;
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
