@@ -4,26 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapleStoryHelperWPF"
+        xmlns:control="clr-namespace:MapleStoryHelperWPF.Control"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style TargetType="ComboBox">
-            <Setter Property="ItemTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{Binding ImgBitmapSource}"/>
-                            <TextBlock Text="{Binding Name}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
-    
+
     <Grid>
-        <ComboBox x:Name="cbitems" 
-                  VerticalAlignment="Top"
-                  ItemsSource="{Binding EquipmentItems}"/>
+        <control:EquipmentInfoControl/>
     </Grid>
 </Window>

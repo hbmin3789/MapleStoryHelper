@@ -16,6 +16,7 @@ namespace WzComparerR2.CharaSim
             AdditionalOptions = new Potential[3];
             Additions = new List<Addition>();
         }
+
         public GearGrade Grade { get; set; }
         public GearGrade AdditionGrade { get; set; }
         public GearType type;

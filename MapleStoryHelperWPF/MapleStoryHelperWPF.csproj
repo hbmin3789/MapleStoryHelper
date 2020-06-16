@@ -68,6 +68,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Control\Item\ItemSettingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Control\Item\PotentialControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,6 +91,9 @@
     <Compile Include="Common\MHExMethods.cs" />
     <Compile Include="Control\Item\EquipmentInfoControl.xaml.cs">
       <DependentUpon>EquipmentInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Item\ItemSettingPage.xaml.cs">
+      <DependentUpon>ItemSettingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\Item\PotentialControl.xaml.cs">
       <DependentUpon>PotentialControl.xaml</DependentUpon>

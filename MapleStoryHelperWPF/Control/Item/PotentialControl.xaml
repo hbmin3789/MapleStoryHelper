@@ -20,41 +20,31 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="VerticalAlignment" Value="Stretch"/>
-            <Setter Property="HorizontalAlignment" Value="Stretch"/>
-        </Style>
-        <Style TargetType="WrapPanel">
-            <Setter Property="ItemWidth" Value="200"/>
-            <Setter Property="ItemHeight" Value="50"/>
-        </Style>
     </UserControl.Resources>
     
-    <Grid Background="White">
+    <Grid x:Name="gdMain" Background="White">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <WrapPanel x:Name="ufgPotential" Orientation="Vertical"
-                   Grid.Column="0">
+        <Grid x:Name="gdPotential" Grid.Column="0">
+            <!--<ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
             <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-        </WrapPanel>
-        <WrapPanel x:Name="ufgPotentialTextBox" Orientation="Vertical"
-                    Grid.Column="1">
+            <ComboBox ItemsSource="{Binding PotentialItems}"/>-->
+        </Grid>
+        <Grid x:Name="gdPotentialTextBox" Grid.Column="1">
+            <!--<TextBox Text=""/>-->
+            <!--<TextBox Text=""/>
             <TextBox Text=""/>
             <TextBox Text=""/>
             <TextBox Text=""/>
-            <TextBox Text=""/>
-            <TextBox Text=""/>
-            <TextBox Text=""/>
-        </WrapPanel>
+            <TextBox Text=""/>-->
+        </Grid>
 
     </Grid>
 </UserControl>

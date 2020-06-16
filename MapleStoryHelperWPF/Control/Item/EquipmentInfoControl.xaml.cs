@@ -125,9 +125,11 @@ namespace MapleStoryHelperWPF.Control
             EquipmentItem.CharacterEquipmentCategory = Category;
         }
 
-        private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.DataContext = cbItems.SelectedItem.DeepCopy<EquipmentItem>();
+            var temp = cbItems.SelectedItem.DeepCopy<EquipmentItem>();
+            temp.ImgBitmapSource = await temp.ImgByte.LoadImage();
+            this.DataContext = temp;
         }
 
         #endregion

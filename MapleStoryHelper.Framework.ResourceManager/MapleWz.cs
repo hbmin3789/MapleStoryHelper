@@ -3,6 +3,7 @@ using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.Resources;
+using MapleStoryHelper.Standard.Resources.ResourceManager;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,16 +24,18 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         #region WzFile
 
-        private Wz_File CharacterWz;
-        private Wz_File StringWz;
+        private StringWzReader stringWzReader;
+
+        private Wz_File characterWz;
+        private Wz_File stringWz;
 
         private Wz_Structure CharacterWzStruct
         {
-            get => CharacterWz.WzStructure;
+            get => characterWz.WzStructure;
         }
         private Wz_Structure StringWzStruct
         {
-            get => StringWz.WzStructure;
+            get => stringWz.WzStructure;
         }
 
         #endregion
@@ -59,7 +62,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         private void InitVariables()
         {
-            
+            stringWzReader = new StringWzReader();
         }
 
         #endregion
@@ -81,16 +84,25 @@ namespace MapleStoryHelper.Framework.ResourceManager
             {
                 FilePath = FilePath.Remove(FilePath.LastIndexOf("\\"));
             }
-            CharacterWz = new Wz_File(FilePath + "\\Character.wz", new Wz_Structure());
-            StringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
+            characterWz = new Wz_File(FilePath + "\\Character.wz", new Wz_Structure());
+            stringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
 
             CharacterWzStruct.Load(FilePath + "\\Character.wz");
             StringWzStruct.Load(FilePath + "\\String.wz");
+            if(stringWz.Loaded == true)
+            {
+                stringWzReader.Load(StringWzStruct,CharacterWzStruct);
+            }
         }
 
         #endregion
 
         #region GetItems
+
+        public List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category, string keyWord)
+        {
+            return stringWzReader.GetEquipmentItems(category, keyWord);
+        }
 
         #endregion
 

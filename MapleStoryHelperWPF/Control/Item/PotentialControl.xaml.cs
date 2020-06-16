@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Controls;
+using System.Windows.Data;
 
 // 사용자 정의 컨트롤 항목 템플릿에 대한 설명은 https://go.microsoft.com/fwlink/?LinkId=234236에 나와 있습니다.
 
@@ -42,6 +43,7 @@ namespace MapleStoryHelperWPF.Control
         {
             InitVariables();
             InitPotentialListView();
+            InitGrid();
             this.DataContext = this;
         }
 
@@ -53,6 +55,30 @@ namespace MapleStoryHelperWPF.Control
         private void InitPotentialListView()
         {
             AddBasePotential();
+        }
+
+        private void InitGrid()
+        {
+            for(int i = 0; i < 6; i++)
+            {
+                RowDefinition row = new RowDefinition();
+                gdMain.RowDefinitions.Add(row);
+            }
+
+            for(int i = 0; i < 6; i++)
+            {
+                TextBox tb = new TextBox();
+                ComboBox cb = new ComboBox();
+
+                cb.ItemsSource = PotentialItems;
+                Grid.SetRow(cb, i);
+
+                Grid.SetRow(tb, i);
+                Grid.SetColumn(tb, 1);
+
+                gdMain.Children.Add(tb);
+                gdMain.Children.Add(cb);
+            }
         }
 
         private void AddBasePotential()
@@ -89,8 +115,8 @@ namespace MapleStoryHelperWPF.Control
         {
             for (int i = 0; i < item.Potential.Count; i++)
             {
-                var cb = ufgPotential.Children[i] as ComboBox;
-                var textbox = ufgPotentialTextBox.Children[i] as TextBox;
+                var cb = gdPotential.Children[i] as ComboBox;
+                var textbox = gdPotentialTextBox.Children[i] as TextBox;
 
                 cb.SelectedIndex = (int)item.Potential[i].StatusKind;
                 textbox.Text = item.Potential[i].StatusValue.ToString();
@@ -103,18 +129,18 @@ namespace MapleStoryHelperWPF.Control
         {
             List<Potential> retval = new List<Potential>(6);
 
-            for(int i = 0; i < ufgPotential.Children.Count; i++)
+            for(int i = 0; i < gdPotential.Children.Count; i++)
             {
-                if(Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text.Length) == 0)
+                if(Convert.ToInt32((gdPotentialTextBox.Children[i] as TextBox).Text.Length) == 0)
                 {
                     continue;
                 }
 
-                var cb = ufgPotential.Children[i] as ComboBox;
+                var cb = gdPotential.Children[i] as ComboBox;
                 var newItem = new Potential();
 
                 newItem.StatusKind = (EStatus)cb.SelectedIndex;
-                newItem.StatusValue = Convert.ToInt32((ufgPotentialTextBox.Children[i] as TextBox).Text);
+                newItem.StatusValue = Convert.ToInt32((gdPotentialTextBox.Children[i] as TextBox).Text);
 
                 retval.Add(newItem);
             }
