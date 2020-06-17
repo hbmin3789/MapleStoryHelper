@@ -4,9 +4,81 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control"
+             xmlns:converter="clr-namespace:MapleStoryHelperWPF.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <UserControl.Resources>
+
+        <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
+        
+        <Style TargetType="ListView">
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                                   AncestorType={x:Type ListView}},
+                                                   Path=ActualWidth}"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border x:Name="border" BorderThickness="2"
+                                CornerRadius="2" Margin="10"
+                                MaxWidth="70" MaxHeight="300">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="4*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Image Source="{Binding ImgBitmapSource}"/>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding CharacterJob,
+                                                          Converter={StaticResource ECharacterJobToStringConverter}}"
+                                                   TextAlignment="Center"/>
+                                        <TextBlock Text="{Binding Level}"
+                                                   TextAlignment="Center"/>
+                                        <TextBlock Text="{Binding CharacterName}"
+                                                   TextAlignment="Center"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                        <DataTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="Black"/>
+                            </Trigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LvItemStyle" TargetType="ListViewItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListViewItem">
+                        <Border x:Name="border" Background="Transparent">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="White">
+        
+
+        <ListView ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                  ItemsSource="{Binding CharacterList}"
+                  ItemContainerStyle="{StaticResource LvItemStyle}">
+        </ListView>
+
     </Grid>
 </UserControl>

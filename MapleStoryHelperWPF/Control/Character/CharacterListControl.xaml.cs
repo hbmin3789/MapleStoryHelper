@@ -23,6 +23,7 @@ namespace MapleStoryHelperWPF.Control
         public CharacterListControl()
         {
             InitializeComponent();
+            this.DataContext = App.viewModel;
         }
     }
 }

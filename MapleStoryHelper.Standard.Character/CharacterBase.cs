@@ -29,6 +29,13 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _imageSrc, value);
         }
 
+        private object _imgBitmapSource;
+        public object ImgBitmapSource
+        {
+            get => _imgBitmapSource;
+            set => SetProperty(ref _imgBitmapSource, value);
+        }
+
         private string _characterName;
         public string CharacterName
         {
@@ -118,13 +125,6 @@ namespace MapleStoryHelper.Standard.Character
             set => SetProperty(ref _characterEquipment, value);
         }
 
-        private MHResource _characterImage;
-        public MHResource CharacterImage
-        {
-            get => _characterImage;
-            set => SetProperty(ref _characterImage, value);
-        }
-
         protected int _minStatusAttack;
         public int MinStatusAttack
         {
@@ -186,7 +186,6 @@ namespace MapleStoryHelper.Standard.Character
         private void InitVariables()
         {
             _characterEquipment = new CharacterEquipment();
-            _characterImage = new MHResource();
             _characterStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;

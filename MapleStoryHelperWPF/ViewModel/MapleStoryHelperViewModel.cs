@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelperWPF.Common;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;

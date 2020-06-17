@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelperWPF.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,6 @@ namespace MapleStoryHelperWPF
     /// </summary>
     public partial class App : Application
     {
+        public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
     }
 }

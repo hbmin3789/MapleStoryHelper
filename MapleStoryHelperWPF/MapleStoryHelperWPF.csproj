@@ -112,6 +112,7 @@
     <Compile Include="Control\Item\PotentialControl.xaml.cs">
       <DependentUpon>PotentialControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -172,5 +173,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\PlusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Copyright.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

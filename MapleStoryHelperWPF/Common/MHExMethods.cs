@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
 namespace MapleStoryHelperWPF.Common
@@ -38,6 +39,11 @@ namespace MapleStoryHelperWPF.Common
             }
 
             return null;
+        }
+
+        public static BitmapImage LoadImage(this string data)
+        {
+            return new BitmapImage(new Uri(data, UriKind.Relative));
         }
 
         public static T DeepCopy<T>(this object data)
