@@ -68,6 +68,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Control\Character\CharacterAdd\CharacterItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Character\CharacterAdd\CharacterJobControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\Character\CharacterListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,15 +84,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Control\Item\ItemSettingPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Control\Item\PotentialControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Control\Status\StatusControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme\Font.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddItemWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,20 +112,29 @@
     <Compile Include="Control\Character\CharacterAddControl.xaml.cs">
       <DependentUpon>CharacterAddControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Character\CharacterAdd\CharacterItemControl.xaml.cs">
+      <DependentUpon>CharacterItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Character\CharacterAdd\CharacterJobControl.xaml.cs">
+      <DependentUpon>CharacterJobControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Character\CharacterListControl.xaml.cs">
       <DependentUpon>CharacterListControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\Item\EquipmentInfoControl.xaml.cs">
       <DependentUpon>EquipmentInfoControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Control\Item\ItemSettingPage.xaml.cs">
-      <DependentUpon>ItemSettingPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Control\Item\PotentialControl.xaml.cs">
       <DependentUpon>PotentialControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Status\StatusControl.xaml.cs">
+      <DependentUpon>StatusControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />
+    <Compile Include="View\AddItemWindow.xaml.cs">
+      <DependentUpon>AddItemWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -172,12 +193,14 @@
       <Name>WzComparerR2.WzLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Assets\PlusIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Copyright.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\StatusWindow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

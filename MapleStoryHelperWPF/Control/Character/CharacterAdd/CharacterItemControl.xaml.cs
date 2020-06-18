@@ -1,24 +1,31 @@
 ﻿using MapleStoryHelper.Standard.Character;
 using MapleStoryHelperWPF.Common;
-using Prism.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
-namespace MapleStoryHelperWPF.Control
+namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 {
     /// <summary>
-    /// 자체적으로 사용하거나 프레임 내에서 탐색할 수 있는 빈 페이지입니다.
+    /// CharacterItemControl.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class ItemSettingPage : UserControl
+    public partial class CharacterItemControl : UserControl
     {
         private MapleStoryHelper.Standard.Character.Character Backup;
 
-        public ItemSettingPage()
+        public CharacterItemControl()
         {
             this.InitializeComponent();
         }
@@ -30,6 +37,8 @@ namespace MapleStoryHelperWPF.Control
 
             var control = new EquipmentInfoControl();
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
+            var character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
+             character.CharacterEquipment.EquipList[category];
         }
 
         private async void UpdateView()
@@ -41,7 +50,7 @@ namespace MapleStoryHelperWPF.Control
 
             for (int i = 0; i < wpItems.Children.Count; i++)
             {
-                if(children[i] is Button)
+                if (children[i] is Button)
                 {
                     var grid = (children[i] as Button).Content as Grid;
                     var list = ChildrenToList(grid.Children);
@@ -61,7 +70,7 @@ namespace MapleStoryHelperWPF.Control
         {
             List<UIElement> retval = new List<UIElement>();
 
-            foreach(UIElement item in children)
+            foreach (UIElement item in children)
             {
                 retval.Add(item);
             }

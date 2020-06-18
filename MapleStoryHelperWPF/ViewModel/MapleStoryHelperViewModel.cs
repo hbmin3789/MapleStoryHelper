@@ -12,6 +12,13 @@ namespace MapleStoryHelperWPF.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        private Character _newCharacter;
+        public Character NewCharacter
+        {
+            get => _newCharacter;
+            set => SetProperty(ref _newCharacter, value);
+        }
+
         private ObservableCollection<Character> _characterList;
         public ObservableCollection<Character> CharacterList
         {
@@ -22,11 +29,18 @@ namespace MapleStoryHelperWPF.ViewModel
         public MapleStoryHelperViewModel()
         {
             InitVariables();
+            AddCharacter();
+        }
+
+        private void AddCharacter()
+        {
+
         }
 
         private void InitVariables()
         {
             _characterList = new ObservableCollection<Character>();
+            _newCharacter = new Character();
         }
     }
 }

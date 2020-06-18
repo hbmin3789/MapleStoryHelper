@@ -4,25 +4,74 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             xmlns:characterAdd="clr-namespace:MapleStoryHelperWPF.Control.Character.CharacterAdd"
+             xmlns:converter="clr-namespace:MapleStoryHelperWPF.Converter"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
+    </UserControl.Resources>
     <Grid Background="White">
-        <ListView x:Name="lstCharacter"
-                  ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="2" BorderBrush="Black">
-                        <TextBlock Width="160" Height="30" Margin="30"
-                               FontSize="20" TextAlignment="Center"
-                               Text="{Binding}"/>
-                    </Border>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel Orientation="Horizontal" Width="{Binding ElementName=lstCharacter,Path=ActualWidth}"/>
-                </ItemsPanelTemplate>
-            </ListView.ItemsPanel>
-        </ListView>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 스테이터스 창 사진 -->
+        <Grid Grid.Column="0"
+              HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="160"/>
+                    <Setter Property="IsReadOnly" Value="True"/>
+                </Style>
+            </Grid.Resources>
+            <Image Source="/Assets/StatusWindow.png"
+                   Width="272" Height="450"
+                   VerticalAlignment="Top"/>
+            <Canvas Margin="86,39,0,0">
+                <TextBox IsReadOnly="False"/>
+                <StackPanel Canvas.Top="25" Orientation="Horizontal">
+                    <TextBox Width="120" Text="{Binding CharacterJob,Converter={StaticResource ECharacterJobToStringConverter}}"/>
+                    <Button x:Name="btnEditJob" Margin="30,0,0,0"
+                            Content="수정"
+                            Click="btnEditJob_Click"/>
+                </StackPanel>
+                <TextBox Canvas.Top="49"/>
+                <TextBox Canvas.Top="74"/>
+                <!-- 스공 -->
+                <TextBlock Canvas.Top="98" Margin="5,0,0,0">
+                    <Run Text="{Binding MinStatusAttack}"/>
+                    <Run Text=" ~ "/>
+                    <Run Text="{Binding MaxStatusAttack}"/>
+                </TextBlock>
+                <TextBox Canvas.Top="123"/>
+                <TextBox Canvas.Top="147"/>
+
+                <TextBox Canvas.Top="266" Text="{Binding CharacterStatus.Str}"/>
+                <TextBox Canvas.Top="290" Text="{Binding CharacterStatus.Dex}"/>
+                <TextBox Canvas.Top="315" Text="{Binding CharacterStatus.Int}"/>
+                <TextBox Canvas.Top="339" Text="{Binding CharacterStatus.Luk}"/>
+            </Canvas>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <StackPanel Margin="10"
+                        HorizontalAlignment="Left">
+                <Button x:Name="btnItemSetting" FontSize="{StaticResource TitleFontSize}"                        
+                        Content="아이템 세팅"
+                        Click="btnItemSetting_Click"/>
+                <Button FontSize="{StaticResource TitleFontSize}"
+                        Margin="0,10,0,0"
+                        Content="스킬 세팅"/>
+            </StackPanel>
+        </Grid>
+        
+        <characterAdd:CharacterItemControl x:Name="ctrlCharacterItem" Grid.ColumnSpan="2"
+                                           Visibility="Collapsed"/>
+        <characterAdd:CharacterJobControl x:Name="ctrlCharacterJob" Grid.ColumnSpan="2"
+                                          Visibility="Collapsed"/>
     </Grid>
 </UserControl>

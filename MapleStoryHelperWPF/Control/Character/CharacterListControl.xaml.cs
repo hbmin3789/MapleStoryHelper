@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MapleStoryHelperWPF.Control
 {
@@ -24,6 +12,31 @@ namespace MapleStoryHelperWPF.Control
         {
             InitializeComponent();
             this.DataContext = App.viewModel;
+        }
+
+        private void lvCharacter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(lvCharacter.SelectedIndex == -1)
+            {
+                return;
+            }
+
+            NavigateToCharacterSetting(lvCharacter.SelectedItem as MapleStoryHelper.Standard.Character.Character);
+
+
+            lvCharacter.SelectedIndex = -1;
+        }
+
+        private void NavigateToCharacterSetting(object dataContext)
+        {
+            ctrlCharacterAdd.Visibility = Visibility.Visible;
+            ctrlCharacterAdd.DataContext = dataContext;
+        }
+
+        private void btnAddCharacter_Click(object sender, RoutedEventArgs e)
+        {
+            lvCharacter.SelectedIndex = -1;
+            NavigateToCharacterSetting(App.viewModel.NewCharacter);
         }
     }
 }

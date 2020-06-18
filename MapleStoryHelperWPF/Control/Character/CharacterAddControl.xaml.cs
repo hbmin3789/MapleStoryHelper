@@ -1,18 +1,4 @@
-﻿using MapleStoryHelper.Standard.Character;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
 
 namespace MapleStoryHelperWPF.Control
 {
@@ -21,29 +7,19 @@ namespace MapleStoryHelperWPF.Control
     /// </summary>
     public partial class CharacterAddControl : UserControl
     {
-        List<string> CharacterList { get; set; }
         public CharacterAddControl()
         {
             InitializeComponent();
-            InitCharacterList();
         }
 
-        private void InitCharacterList()
+        private void btnEditJob_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            CharacterList = new List<string>();
-            var characterValue = Enum.GetValues(typeof(ECharacterJob));
+            ctrlCharacterJob.Visibility = System.Windows.Visibility.Visible;
+        }
 
-            for (int i = 0; i < characterValue.Length; i++)
-            {
-                string str = ECharacterJobToStringConverter.Convert((ECharacterJob)characterValue.GetValue(i));
-                if(str.Length == 0)
-                {
-                    continue;
-                }
-                CharacterList.Add(str);
-            }
-
-            lstCharacter.ItemsSource = CharacterList;
+        private void btnItemSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ctrlCharacterItem.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }

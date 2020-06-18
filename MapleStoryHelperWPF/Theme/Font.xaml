@@ -2,5 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:MapleStoryHelperWPF.Theme"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-    <sys:Double x:Key="MiddleFontSize">22</sys:Double>
+    <sys:Double x:Key="SmallFontSize">18</sys:Double>
+    <sys:Double x:Key="MiddleFontSize">20</sys:Double>
+    <sys:Double x:Key="BigFontSize">24</sys:Double>
+    <sys:Double x:Key="TitleFontSize">36</sys:Double>
 </ResourceDictionary>
