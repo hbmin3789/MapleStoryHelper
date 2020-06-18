@@ -11,7 +11,6 @@ namespace WzComparerR2.Common.Extension
     {
         public static byte[] ToByteArray(this Bitmap bitmap)
         {
-
             BitmapData bmpdata = null;
 
             try

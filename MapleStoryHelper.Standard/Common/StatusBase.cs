@@ -76,101 +76,121 @@ namespace MapleStoryHelper.Standard
         public int AttackBinding
         {
             get => GetAttackPower();
+            set { }
         }
 
         public int PAttackBinding
         {
             get => GetAttackPower();
+            set { }
         }
 
         public int MagicBinding
         {
             get => GetMagicAttack();
+            set { }
         }
 
         public int PMagicBinding
         {
             get => GetMagicAttack();
+            set { }
         }
 
         public int StrBinding
         {
             get => GetSTR();
+            set { }
         }
 
         public int DexBinding
         {
             get => GetDEX();
+            set { }
         }
 
         public int IntBinding
         {
             get => GetINT();
+            set { }
         }
 
         public int LukBinding
         {
             get => GetLUK();
+            set { }
         }
 
         public int HPBinding
         {
             get => GetHP();
+            set { }
         }
 
         public int MPBinding
         {
             get => GetMP();
+            set { }
         }
 
         public int PStrBinding
         {
             get => GetPSTR();
+            set { }
         }
 
         public int PDexBinding
         {
             get => GetPDEX();
+            set { }
         }
 
         public int PIntBinding
         {
             get => GetPINT();
+            set { }
         }
 
         public int PLukBinding
         {
             get => GetPLUK();
+            set { }
         }
 
         public int PHPBinding
         {
             get => GetPHP();
+            set { }
         }
 
         public int PMPBinding
         {
             get => GetPMP();
+            set { }
         }
 
         public int CriticalBinding
         {
             get => Critical;
+            set { }
         }
 
         public double CriticalDamageBinding
         {
             get => CriticalDamage;
+            set { }
         }
 
         public double DamageBinding
         {
             get => Damage;
+            set { }
         }
 
         public double BossDamageBinding
         {
             get => BossDamage;
+            set { }
         }
 
         #endregion
@@ -470,6 +490,7 @@ namespace MapleStoryHelper.Standard
         public double IgnoreDefBinding
         {
             get => GetIgnoreDef();
+            set { }
         }
 
         #endregion

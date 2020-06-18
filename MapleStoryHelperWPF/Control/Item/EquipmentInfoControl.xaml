@@ -103,7 +103,7 @@
                                 <TextBox Text="{Binding Status.PAllStatus}"/>
                                 <TextBox Text="{Binding Status.Damage}"/>
                                 <TextBox Text="{Binding Status.BossDamage}"/>
-                                <TextBox Text="{Binding Status.IgnoreDefBinding}"/>
+                                <TextBox Text="{Binding Status.IgnoreDefBinding, Mode=OneWayToSource}"/>
                                 <TextBox Text="{Binding Status.Critical}"/>
                                 <TextBox Text="{Binding Status.CriticalDamage}"/>
                             </StackPanel>

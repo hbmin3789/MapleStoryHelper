@@ -27,14 +27,12 @@ namespace MapleStoryHelperWPF
     public partial class MainWindow : Window
     {
         private const string PATH = @"C:\Nexon\Maple\";
-        public List<EquipmentItem> EquipmentItems { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = this;
-            MapleWz wz = new MapleWz();
-            wz.LoadFile(PATH);
+            App.viewModel.LoadWz(PATH);
+
         }
     }
 }

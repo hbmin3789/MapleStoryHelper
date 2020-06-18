@@ -4,9 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapleStoryHelperWPF.View"
+        xmlns:control="clr-namespace:MapleStoryHelperWPF.Control"
         mc:Ignorable="d"
-        Title="AddItemWindow" Height="450" Width="800">
+        Title="AddItemWindow"
+        Width="500"
+        Height="700">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tbKeyWord"/>
+            <Button x:Name="btnSearch"
+                    Grid.Column="1"
+                    Content="검색"
+                    Click="btnSearch_Click"/>
+        </Grid>
         
+        <control:EquipmentInfoControl x:Name="ctrlEquipmentInfo" Grid.Row="1"/>
     </Grid>
 </Window>

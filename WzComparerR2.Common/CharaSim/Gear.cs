@@ -317,7 +317,7 @@ namespace WzComparerR2.CharaSim
                         case "icon":
                             if (subNode.Value is Wz_Png)
                             {
-                                gear.byteArr = BitmapOrigin.GetByteArr(subNode, findNode);
+                                gear.Icon = BitmapOrigin.CreateFromNode(subNode, findNode);
                             }
                             break;
 

@@ -1,19 +1,14 @@
-﻿using MapleStoryHelper.Standard.Item;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace MapleStoryHelperWPF.Common
+namespace MapleStoryHelper.Framework.ResourceManager
 {
     public static class MHExMethods
     {
-        public static async Task<BitmapImage> LoadImage(this object data)
+        public static BitmapImage LoadImage(this object data)
         {
             if (data is byte[])
             {

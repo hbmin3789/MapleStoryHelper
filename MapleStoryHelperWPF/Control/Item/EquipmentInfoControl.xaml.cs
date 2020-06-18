@@ -1,8 +1,8 @@
-﻿using MapleStoryHelper.Standard.Character;
+﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Resources;
-using MapleStoryHelperWPF.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,7 +67,7 @@ namespace MapleStoryHelperWPF.Control
 
             for (int i = 0; i < list.Count; i++)
             {
-                list[i].ImgBitmapSource = await list[i].ImgByte.LoadImage();
+                list[i].ImgBitmapSource = list[i].ImgByte.LoadImage();
 
                 items.Add(list[i]);
             }
@@ -112,6 +112,11 @@ namespace MapleStoryHelperWPF.Control
             }
         }
 
+        public void SetEquipmentList(List<EquipmentItem> items)
+        {
+            cbItems.ItemsSource = items;
+        }
+
         public List<Potential> GetPotentialStatus()
         {
             return ctrlPotential.GetStatus();
@@ -127,8 +132,8 @@ namespace MapleStoryHelperWPF.Control
 
         private async void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var temp = cbItems.SelectedItem.DeepCopy<EquipmentItem>();
-            temp.ImgBitmapSource = await temp.ImgByte.LoadImage();
+            var temp = (cbItems.SelectedItem as EquipmentItem).DeepCopy<EquipmentItem>();
+            temp.ImgBitmapSource = temp.ImgByte.LoadImage();
             this.DataContext = temp;
         }
 

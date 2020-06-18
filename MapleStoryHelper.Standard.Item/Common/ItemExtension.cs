@@ -1,9 +1,12 @@
 ﻿using MapleStoryHelper.Standard.Character;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 using WzComparerR2.CharaSim;
+using WzComparerR2.Common.Extension;
 
 namespace MapleStoryHelper.Standard.Item.Common
 {
@@ -12,7 +15,6 @@ namespace MapleStoryHelper.Standard.Item.Common
         public static EquipmentItem ToEquipmentItem(this Gear gear)
         {
             EquipmentItem retval = new EquipmentItem();
-
             var propNames = Enum.GetValues(typeof(GearPropType));
 
             for (int i = 0; i < propNames.Length; i++)
@@ -71,6 +73,9 @@ namespace MapleStoryHelper.Standard.Item.Common
                 }
                 
             }
+            MemoryStream ms = new MemoryStream();
+            gear.Icon.Bitmap.Save(ms, ImageFormat.Bmp);
+            retval.ImgByte = ms.ToArray();
 
             return retval;
         }

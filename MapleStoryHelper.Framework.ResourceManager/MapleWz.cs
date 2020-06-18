@@ -1,19 +1,8 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager.Utils;
-using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
-using MapleStoryHelper.Standard.Resources;
-using MapleStoryHelper.Standard.Resources.ResourceManager;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Framework.ResourceManager
@@ -101,7 +90,12 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         public List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category, string keyWord)
         {
-            return stringWzReader.GetEquipmentItems(category, keyWord);
+            var items = stringWzReader.GetEquipmentItems(category, keyWord);
+            for(int i = 0; i < items.Count; i++)
+            {
+                items[i].ImgBitmapSource = items[i].ImgByte.LoadImage();
+            }
+            return items;
         }
 
         #endregion

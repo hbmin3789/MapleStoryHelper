@@ -58,3 +58,6 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Co
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Character\CharacterAdd\CharacterJobControl.baml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusControl.g.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\AddItemWindow.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\AddItemWindow.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\System.Drawing.Common.dll

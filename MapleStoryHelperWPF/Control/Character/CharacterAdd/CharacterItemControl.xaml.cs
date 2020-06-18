@@ -1,20 +1,13 @@
-﻿using MapleStoryHelper.Standard.Character;
-using MapleStoryHelperWPF.Common;
+﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Item;
+using MapleStoryHelperWPF.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 {
@@ -33,15 +26,16 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
         private void ItemSetting_Button_Click(object sender, RoutedEventArgs e)
         {
             var btn = sender as Button;
-            //var result = converter.Convert(btn.Content, null, null, null);
-
-            var control = new EquipmentInfoControl();
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
+
+            AddItemWindow window = new AddItemWindow();
+            window.ShowDialog();
+
             var character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
-             character.CharacterEquipment.EquipList[category];
+            character.CharacterEquipment.EquipList[category] = window.DataContext as EquipmentItem;
         }
 
-        private async void UpdateView()
+        private void UpdateView()
         {
             MapleStoryHelper.Standard.Character.Character character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
             var equipList = character.CharacterEquipment.EquipList;
@@ -58,7 +52,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 
                     if (img != null && equipList != null)
                     {
-                        img.Source = await equipList[(ECharacterEquipmentCategory)idx].ImgByte.LoadImage() as BitmapImage;
+                        img.Source = equipList[(ECharacterEquipmentCategory)idx].ImgByte.LoadImage() as BitmapImage;
                         idx++;
                     }
                 }

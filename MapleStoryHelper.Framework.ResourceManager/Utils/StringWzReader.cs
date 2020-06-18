@@ -49,9 +49,22 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             var node = GetEquipCategoryNode(category);
-            var itemCodes = GetEquipmentItemCodes(node, keyWord);
+            List<string> itemCodes, itemNames;
+            (itemCodes, itemNames) = GetEquipmentItemCodes(node, keyWord);
 
             retval = GetEquipmentItems(category, itemCodes);
+
+            var deleteItems = retval.Where(x => x.ImgByte.Length < 60).ToList();
+
+            for(int i = 0; i < retval.Count; i++)
+            {
+                retval[i].Name = itemNames[i];
+            }
+
+            for(int i = 0; i < deleteItems.Count; i++)
+            {
+                retval.Remove(deleteItems[i]);
+            }
 
             return retval;
         }
@@ -69,23 +82,24 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             return CategoryNode;
         }
 
-        private List<string> GetEquipmentItemCodes(Wz_Node EquipNode,string keyWord)
+        private (List<string>,List<string>) GetEquipmentItemCodes(Wz_Node EquipNode,string keyWord)
         {
             List<string> retval = new List<string>();
+            List<string> retvalName = new List<string>();
 
             for(int i = 0; i < EquipNode.Nodes.Count; i++)
             {
                 var CurNode = EquipNode.Nodes[i];
                 string itemName = CurNode.FindNodeByPath("name").Value.ToString();
-                
                 if (itemName.Contains(keyWord))
                 {
                     string itemCode = "0" + CurNode.Text + ".img";
                     retval.Add(itemCode);
+                    retvalName.Add(itemName);
                 }
             }
 
-            return retval;
+            return (retval,retvalName);
         }
 
         private List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category, List<string> itemCodes)
