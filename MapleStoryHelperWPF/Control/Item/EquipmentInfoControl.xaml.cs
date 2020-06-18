@@ -14,6 +14,7 @@ namespace MapleStoryHelperWPF.Control
     public partial class EquipmentInfoControl : UserControl
     {
         public EventHandler OnSaved;
+        public EventHandler OnComboBoxSelectionChanged;
 
         #region Property
 
@@ -130,11 +131,10 @@ namespace MapleStoryHelperWPF.Control
             EquipmentItem.CharacterEquipmentCategory = Category;
         }
 
-        private async void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var temp = (cbItems.SelectedItem as EquipmentItem).DeepCopy<EquipmentItem>();
-            temp.ImgBitmapSource = temp.ImgByte.LoadImage();
-            this.DataContext = temp;
+            this.DataContext = cbItems.SelectedItem as EquipmentItem;
+            OnComboBoxSelectionChanged?.Invoke(sender, null);
         }
 
         #endregion

@@ -26,6 +26,12 @@ namespace MapleStoryHelperWPF.View
         public AddItemWindow()
         {
             InitializeComponent();
+            ctrlEquipmentInfo.OnComboBoxSelectionChanged += ItemChanged;
+        }
+
+        private void ItemChanged(object sender, EventArgs e)
+        {
+            this.DataContext = ctrlEquipmentInfo.DataContext;
         }
 
         public void SetItemCategory(ECharacterEquipmentCategory category)
@@ -50,6 +56,26 @@ namespace MapleStoryHelperWPF.View
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
             ctrlEquipmentInfo.SetEquipmentList(App.viewModel.FindItemByName(EquipCategory, tbKeyWord.Text));
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("저장하시겠습니까?", "", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                this.DialogResult = true;
+                this.Hide();
+            }
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("취소하시겠습니까?", "", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                this.DialogResult = false;
+                this.Hide();
+            }
         }
     }
 }

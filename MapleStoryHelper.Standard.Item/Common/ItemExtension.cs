@@ -74,7 +74,8 @@ namespace MapleStoryHelper.Standard.Item.Common
                 
             }
             MemoryStream ms = new MemoryStream();
-            gear.Icon.Bitmap.Save(ms, ImageFormat.Bmp);
+            gear.Icon.Bitmap.MakeTransparent();
+            gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
             retval.ImgByte = ms.ToArray();
 
             return retval;

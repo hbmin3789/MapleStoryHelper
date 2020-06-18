@@ -29,10 +29,15 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             ECharacterEquipmentCategory category = GetCategory(btn.CommandParameter.ToString());
 
             AddItemWindow window = new AddItemWindow();
+            window.SetItemCategory(category);
             window.ShowDialog();
 
-            var character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
-            character.CharacterEquipment.EquipList[category] = window.DataContext as EquipmentItem;
+            if(window.DialogResult == true)
+            {
+                var character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
+                character.CharacterEquipment.EquipList[category] = window.DataContext as EquipmentItem;
+                UpdateView();
+            }
         }
 
         private void UpdateView()

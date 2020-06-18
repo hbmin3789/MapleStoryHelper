@@ -7,12 +7,12 @@
         xmlns:control="clr-namespace:MapleStoryHelperWPF.Control"
         mc:Ignorable="d"
         Title="AddItemWindow"
-        Width="500"
-        Height="700">
+        Width="500" Height="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -28,5 +28,23 @@
         </Grid>
         
         <control:EquipmentInfoControl x:Name="ctrlEquipmentInfo" Grid.Row="1"/>
+
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right" Margin="0,0,10,0">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="80"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button x:Name="btnSave" Content="확인"
+                        Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="취소"
+                        Click="btnCancel_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

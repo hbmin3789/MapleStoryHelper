@@ -22,7 +22,6 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\b
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csprojAssemblyReference.cache
-C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.AssemblyInfoInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csproj.CopyComplete
@@ -33,3 +32,4 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\b
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\Windows.winmd
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Item\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Item.csproj.CoreCompileInputs.cache

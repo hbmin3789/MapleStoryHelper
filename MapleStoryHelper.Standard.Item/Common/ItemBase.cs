@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Newtonsoft.Json;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -45,7 +46,7 @@ namespace MapleStoryHelper.Standard.Item
 
         
         private object _imgBitmapSource;
-        [NotMapped]
+        [JsonIgnore]
         public object ImgBitmapSource
         {
             get => _imgBitmapSource;
@@ -53,7 +54,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private byte[] _imgByte;
-        [NotMapped]
         public byte[] ImgByte
         {
             get => _imgByte;

@@ -487,9 +487,9 @@ namespace MapleStoryHelper.Standard
                 OnPropertyChanged(new PropertyChangedEventArgs(nameof(IgnoreDefBinding)));
             }
         }
-        public double IgnoreDefBinding
+        public int IgnoreDefBinding
         {
-            get => GetIgnoreDef();
+            get => (int)GetIgnoreDef();
             set { }
         }
 
