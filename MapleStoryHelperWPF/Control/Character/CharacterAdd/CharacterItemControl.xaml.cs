@@ -62,7 +62,13 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
                     }
                 }
             }
-            //UpdateStatusView();
+            UpdateStatusView();
+        }
+
+        private void UpdateStatusView()
+        {
+            ctrlStatusDisplay.DataContext = null;
+            ctrlStatusDisplay.DataContext = this.DataContext as MapleStoryHelper.Standard.Character.Character;
         }
 
         private List<UIElement> ChildrenToList(UIElementCollection children)

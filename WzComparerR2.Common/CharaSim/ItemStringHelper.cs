@@ -94,39 +94,39 @@ namespace WzComparerR2.CharaSim
                 case GearPropType.incCr: return "크리티컬 확률 : " + sign + value + "%";
                 case GearPropType.knockback: return "직접 타격시 " + value + "%의 확률로 넉백";
                 case GearPropType.incPVPDamage: return "대난투 시 추가 공격력" + sign + " " + value;
-                case GearPropType.incPQEXPr: return "파티퀘스트 경험치 " + value + "% 증가";
+                //case GearPropType.incPQEXPr: return "파티퀘스트 경험치 " + value + "% 증가";
                 case GearPropType.incBDR:
                 case GearPropType.bdR: return "보스 공격시 데미지 +" + value + "%";
                 case GearPropType.incIMDR:
                 case GearPropType.imdR: return "몬스터 방어력 무시 : +" + value + "%";
                 //case GearPropType.limitBreak: return "최대 데미지 제한 증가 : +" + value;
-                case GearPropType.reduceReq: return "착용 레벨 감소 : - " + value;
+                //case GearPropType.reduceReq: return "착용 레벨 감소 : - " + value;
 
-                case GearPropType.only: return value == 0 ? null : "고유 아이템";
-                case GearPropType.tradeBlock: return value == 0 ? null : "교환 불가";
-                case GearPropType.equipTradeBlock: return value == 0 ? null : "장착시 교환 불가";
-                case GearPropType.accountSharable: return value == 0 ? null : "계정 내 이동만 가능";
-                case GearPropType.onlyEquip: return value == 0 ? null : "고유장착 아이템";
-                case GearPropType.notExtend: return value == 0 ? null : "유효기간 연장 불가";
-                case GearPropType.tradeAvailable:
-                    switch (value)
-                    {
-                        case 1: return " #c카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
-                        case 2: return " #c플래티넘 카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
-                        default: return null;
-                    }
-                case GearPropType.accountShareTag:
-                    switch (value)
-                    {
-                        case 1: return " #c쉐어 네임 텍을 사용하면 1회 같은 계정 내 캐릭터로 이동할 수 있습니다.#";
-                        default: return null;
-                    }
-                case GearPropType.noPotential: return value == 0 ? null : "잠재능력 설정 불가";
-                case GearPropType.fixedPotential: return value == 0 ? null : "잠재능력 재설정 불가";
-                case GearPropType.blockGoldHammer: return value == 0 ? null : "황금망치 사용 불가";
-                case GearPropType.superiorEqp: return value == 0 ? null : "아이템 강화 성공시 더욱 높은 효과를 받을 수 있습니다.";
-                case GearPropType.nActivatedSocket: return value == 0 ? null : "#c可以镶嵌星岩#";
-                case GearPropType.jokerToSetItem: return value == 0 ? null : " #c어떠한 셋트 아이템에도 포함되는 럭키 아이템!#";
+                //case GearPropType.only: return value == 0 ? null : "고유 아이템";
+                //case GearPropType.tradeBlock: return value == 0 ? null : "교환 불가";
+                //case GearPropType.equipTradeBlock: return value == 0 ? null : "장착시 교환 불가";
+                //case GearPropType.accountSharable: return value == 0 ? null : "계정 내 이동만 가능";
+                //case GearPropType.onlyEquip: return value == 0 ? null : "고유장착 아이템";
+                //case GearPropType.notExtend: return value == 0 ? null : "유효기간 연장 불가";
+                //case GearPropType.tradeAvailable:
+                //    switch (value)
+                //    {
+                //        case 1: return " #c카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
+                //        case 2: return " #c플래티넘 카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
+                //        default: return null;
+                //    }
+                //case GearPropType.accountShareTag:
+                //    switch (value)
+                //    {
+                //        case 1: return " #c쉐어 네임 텍을 사용하면 1회 같은 계정 내 캐릭터로 이동할 수 있습니다.#";
+                //        default: return null;
+                //    }
+                //case GearPropType.noPotential: return value == 0 ? null : "잠재능력 설정 불가";
+                //case GearPropType.fixedPotential: return value == 0 ? null : "잠재능력 재설정 불가";
+                //case GearPropType.blockGoldHammer: return value == 0 ? null : "황금망치 사용 불가";
+                //case GearPropType.superiorEqp: return value == 0 ? null : "아이템 강화 성공시 더욱 높은 효과를 받을 수 있습니다.";
+                //case GearPropType.nActivatedSocket: return value == 0 ? null : "#c可以镶嵌星岩#";
+                //case GearPropType.jokerToSetItem: return value == 0 ? null : " #c어떠한 셋트 아이템에도 포함되는 럭키 아이템!#";
 
                 case GearPropType.incMHP_incMMP: return "최대 HP / 최대 MP : " + sign + value;
                 case GearPropType.incMHPr_incMMPr: return "최대 HP / 최대 MP : " + sign + value + "%";
@@ -402,23 +402,24 @@ namespace WzComparerR2.CharaSim
 
         public static string GetItemPropString(ItemPropType propType, int value)
         {
-            switch (propType)
-            {
-                case ItemPropType.tradeBlock:
-                    return GetGearPropString(GearPropType.tradeBlock, value);
-                case ItemPropType.tradeAvailable:
-                    return GetGearPropString(GearPropType.tradeAvailable, value);
-                case ItemPropType.only:
-                    return GetGearPropString(GearPropType.only, value);
-                case ItemPropType.accountSharable:
-                    return GetGearPropString(GearPropType.accountSharable, value);
-                case ItemPropType.quest:
-                    return value == 0 ? null : "퀘스트 아이템";
-                case ItemPropType.pquest:
-                    return value == 0 ? null : "파티 퀘스트 아이템";
-                default:
-                    return null;
-            }
+            //switch (propType)
+            //{
+            //    case ItemPropType.tradeBlock:
+            //        return GetGearPropString(GearPropType.tradeBlock, value);
+            //    case ItemPropType.tradeAvailable:
+            //        return GetGearPropString(GearPropType.tradeAvailable, value);
+            //    case ItemPropType.only:
+            //        return GetGearPropString(GearPropType.only, value);
+            //    case ItemPropType.accountSharable:
+            //        return GetGearPropString(GearPropType.accountSharable, value);
+            //    case ItemPropType.quest:
+            //        return value == 0 ? null : "퀘스트 아이템";
+            //    case ItemPropType.pquest:
+            //        return value == 0 ? null : "파티 퀘스트 아이템";
+            //    default:
+            //        return null;
+            //}
+            return "";
         }
 
         public static string GetSkillReqAmount(int skillID, int reqAmount)

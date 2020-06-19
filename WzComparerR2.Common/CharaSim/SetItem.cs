@@ -98,7 +98,7 @@ namespace WzComparerR2.CharaSim
                                                     potens.Add(p);
                                                 }
                                             }
-                                            effect.Props.Add(GearPropType.Option, potens);
+                                            //effect.Props.Add(GearPropType.Option, potens);
                                         }
                                         break;
 
@@ -143,7 +143,7 @@ namespace WzComparerR2.CharaSim
 
                                             opToMobList.Add(option);
                                         }
-                                        effect.Props.Add(GearPropType.OptionToMob, opToMobList);
+                                        //effect.Props.Add(GearPropType.OptionToMob, opToMobList);
                                         break;
 
                                     case "activeSkill":
@@ -172,7 +172,7 @@ namespace WzComparerR2.CharaSim
                                             }
                                             activeSkillList.Add(activeSkill);
                                         }
-                                        effect.Props.Add(GearPropType.activeSkill, activeSkillList);
+                                        //effect.Props.Add(GearPropType.activeSkill, activeSkillList);
                                         break;
 
                                     default:

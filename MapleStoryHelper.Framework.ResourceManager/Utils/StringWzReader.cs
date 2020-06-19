@@ -54,16 +54,9 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
             retval = GetEquipmentItems(category, itemCodes);
 
-            var deleteItems = retval.Where(x => x.ImgByte.Length < 60).ToList();
-
             for(int i = 0; i < retval.Count; i++)
             {
                 retval[i].Name = itemNames[i];
-            }
-
-            for(int i = 0; i < deleteItems.Count; i++)
-            {
-                retval.Remove(deleteItems[i]);
             }
 
             return retval;
@@ -90,8 +83,9 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             for(int i = 0; i < EquipNode.Nodes.Count; i++)
             {
                 var CurNode = EquipNode.Nodes[i];
-                string itemName = CurNode.FindNodeByPath("name").Value.ToString();
-                if (itemName.Contains(keyWord))
+                string itemName = "";
+                itemName = CurNode.FindNodeByPath("name")?.Value.ToString();
+                if (itemName != null && itemName.Contains(keyWord))
                 {
                     string itemCode = "0" + CurNode.Text + ".img";
                     retval.Add(itemCode);
@@ -108,14 +102,21 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
             string categoryString = CategoryManager.GetEquipmentCategoryString(category);
             var CategoryNode = CharacterNode.FindNodeByPath(categoryString);
-
-            for (int i = 0; i < itemCodes.Count; i++) 
+            for (int i = 0; i < itemCodes.Count; i++)
             {
-                var image = GetImage(CategoryNode, itemCodes[i]);
-                var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-                EquipmentItem newItem = gear.ToEquipmentItem();
-                retval.Add(newItem);
+                try
+                {
+                    var image = GetImage(CategoryNode, itemCodes[i]);
+                    var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
+                    EquipmentItem newItem = gear.ToEquipmentItem();
+                    retval.Add(newItem);
+                }
+                catch (Exception e)
+                {
+
+                }
             }
+            
 
 
             return retval;

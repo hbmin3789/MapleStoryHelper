@@ -157,9 +157,9 @@ namespace WzComparerR2.CharaSim
                     return "직업이 " + string.Join(" 또는 ", reqJobs) + "일 때";
                 case GearPropType.reqLevel:
                     return "레벨 " + this.ConValue[0] + " 이상일 때";
-                case GearPropType.reqCraft:
-                    int lastExp;
-                    return "손재주 경험치가 " + this.ConValue[0] + "(" + getPersonalityLevel(this.ConValue[0], out lastExp) + "레벨 " + lastExp + "점) 이상일 때";
+                //case GearPropType.reqCraft:
+                //    int lastExp;
+                //    return "손재주 경험치가 " + this.ConValue[0] + "(" + getPersonalityLevel(this.ConValue[0], out lastExp) + "레벨 " + lastExp + "점) 이상일 때";
                 case GearPropType.reqWeekDay:
                     string[] weekdays = new string[this.ConValue.Count];
                     for (int i = 0; i < this.ConValue.Count; i++)
@@ -271,7 +271,7 @@ namespace WzComparerR2.CharaSim
                                         addition.ConType = GearPropType.reqLevel;
                                         break;
                                     case "craft":
-                                        addition.ConType = GearPropType.reqCraft;
+                                        //addition.ConType = GearPropType.reqCraft;
                                         break;
                                     case "weekDay":
                                         addition.ConType = GearPropType.reqWeekDay;

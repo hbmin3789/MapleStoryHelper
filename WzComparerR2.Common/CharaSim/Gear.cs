@@ -11,6 +11,7 @@ namespace WzComparerR2.CharaSim
         public Gear()
         {
             Props = new Dictionary<GearPropType, int>();
+            PropsString = new Dictionary<GearPropType, string>();
             VariableStat = new Dictionary<GearPropType, float>();
             Options = new Potential[3];
             AdditionalOptions = new Potential[3];
@@ -40,22 +41,35 @@ namespace WzComparerR2.CharaSim
 
         public List<Addition> Additions { get; private set; }
         public Dictionary<GearPropType, int> Props { get; private set; }
+        public Dictionary<GearPropType, string> PropsString { get; private set; }
         public Dictionary<GearPropType, float> VariableStat { get; private set; }
         
 
         public bool Epic
         {
-            get { return GetBooleanValue(GearPropType.epicItem); }
+            get 
+            {
+                //return GetBooleanValue(GearPropType.epicItem);
+                return true;
+            }
         }
 
         public bool TimeLimited
         {
-            get { return GetBooleanValue(GearPropType.timeLimited); }
+            get 
+            {
+                //return GetBooleanValue(GearPropType.timeLimited);
+                return true;
+            }
         }
 
         public bool Cash
         {
-            get { return GetBooleanValue(GearPropType.cash); }
+            get 
+            {
+                //return GetBooleanValue(GearPropType.cash); 
+                return true;
+            }
         }
 
         public bool GetBooleanValue(GearPropType type)
@@ -94,7 +108,8 @@ namespace WzComparerR2.CharaSim
                 return 0;
             }
 
-            return data[this.GetBooleanValue(GearPropType.superiorEqp) ? 2 : 1];
+            //return data[this.GetBooleanValue(GearPropType.superiorEqp) ? 2 : 1];
+            return data[1];
         }
 
         private static int[][] starData = new int[][] {
@@ -481,8 +496,13 @@ namespace WzComparerR2.CharaSim
                                     {
                                         gear.Props.Add(type, Convert.ToInt32(subNode.Value));
                                     }
+                                    catch
+                                    {
+
+                                    }
                                     finally
                                     {
+                                        gear.PropsString.Add(type, subNode.Value.ToString());
                                     }
                                 }
                             }
@@ -504,10 +524,10 @@ namespace WzComparerR2.CharaSim
             }
 
             //读取默认gearGrade
-            if (gear.Props.TryGetValue(GearPropType.fixedGrade, out value))
-            {
-                gear.Grade = (GearGrade)(value - 1);
-            }
+            //if (gear.Props.TryGetValue(GearPropType.fixedGrade, out value))
+            //{
+            //    gear.Grade = (GearGrade)(value - 1);
+            //}
 
             //添加默认装备要求
             GearPropType[] types = new GearPropType[]{
