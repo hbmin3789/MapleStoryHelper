@@ -44,6 +44,7 @@ namespace WzComparerR2.CharaSim
         incIMDR,
         damR,
         islot,
+        sfx,
 
         //潜能属性
         incPADr = 100,

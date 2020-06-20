@@ -28,7 +28,7 @@ namespace MapleStoryHelper.Standard.Item.Common
                             retval.CharacterCategory = (ECharacterJob)gear.Props[(GearPropType)propNames.GetValue(i)];
                             break;
                         case "islot":
-                            retval.EquipmentCategory = GetEquipmentCategory(gear.PropsString[(GearPropType)propNames.GetValue(i)]);
+                            retval.EquipmentCategory = GetEquipmentCategory(gear);
                             break;
                         case "reqLevel":
                             retval.RequiredLevel = gear.Props[(GearPropType)propNames.GetValue(i)];
@@ -75,6 +75,11 @@ namespace MapleStoryHelper.Standard.Item.Common
                 
             }
 
+            if(Gear.IsLeftWeapon(gear.type) == true)
+            {
+                retval.WeaponConst = GetWeaponConst(gear);
+            }
+
             MemoryStream ms = new MemoryStream();
             gear.Icon.Bitmap.MakeTransparent();
             gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
@@ -83,11 +88,63 @@ namespace MapleStoryHelper.Standard.Item.Common
             return retval;
         }
 
-        public static EEquipmentCategory GetEquipmentCategory(string keyWord)
+        private static double GetWeaponConst(Gear gear)
+        {
+            double retval = 0.0;
+            switch (gear.type)
+            {
+                case GearType.staff:
+                case GearType.wand:
+                    retval = 1.0;
+                    break;
+                case GearType.ohSword:
+                case GearType.ohAxe:
+                case GearType.ohBlunt:
+                case GearType.shiningRod:
+                case GearType.espLimiter:
+                case GearType.magicGuntlet:
+                    retval = 1.2;
+                    break;
+                case GearType.thSword:
+                case GearType.thAxe:
+                case GearType.thBlunt:
+                case GearType.swordZL:
+                    retval = 1.34;
+                    break;
+                case GearType.crossbow:
+                    retval = 1.35;
+                    break;
+                case GearType.spear:
+                case GearType.polearm:
+                case GearType.swordZB:
+                    retval = 1.49;
+                    break;
+                case GearType.energySword:
+                case GearType.gun:
+                case GearType.handCannon:
+                    retval = 1.5;
+                    break;
+                case GearType.soulShooter:
+                case GearType.GauntletBuster:
+                case GearType.knuckle:
+                    retval = 1.7;
+                    break;
+                case GearType.throwingGlove:
+                    retval = 1.75;
+                    break;
+                default:
+                    retval = 1.3;
+                    break;
+            }
+
+            return retval;
+        }
+
+        private static EEquipmentCategory GetEquipmentCategory(Gear gear)
         {
             EEquipmentCategory retval = EEquipmentCategory.Ring;
 
-            switch (keyWord)
+            switch (gear.PropsString[GearPropType.islot])
             {
                 case "Cp":
                     retval = EEquipmentCategory.Cap;
@@ -119,9 +176,24 @@ namespace MapleStoryHelper.Standard.Item.Common
                 case "So":
                     retval = EEquipmentCategory.Shoes;
                     break;
+                case "Si":
                 case "Wp":
-                    retval = EEquipmentCategory.Weapon;
+
+                    if(Gear.IsLeftWeapon(gear.type) == true)
+                    {
+                        retval = EEquipmentCategory.Weapon;
+                        break;
+                    }
+
+                    if(Gear.IsSubWeapon(gear.type) == true)
+                    {
+                        retval = EEquipmentCategory.SubWeapon;
+                        break;
+                    }
+
+                    retval = EEquipmentCategory.Emblem;
                     break;
+
                 case "Tm":
                     retval = EEquipmentCategory.Android;
                     break;
@@ -145,11 +217,6 @@ namespace MapleStoryHelper.Standard.Item.Common
                     break;
                 case "Gv":
                     retval = EEquipmentCategory.Gloves;
-                    break;
-                case "Si":
-#warning 나중에 고칠것
-                    //retval = EEquipmentCategory.SubWeapon;
-                    retval = EEquipmentCategory.Emblem;
                     break;
             }
 

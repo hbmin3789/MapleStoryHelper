@@ -164,6 +164,7 @@ namespace WzComparerR2.CharaSim
         /// ESP限制器
         /// </summary>
         espLimiter = 126,
+        magicGuntlet = 128,
         /// <summary>
         /// 单手剑 130
         /// </summary>
