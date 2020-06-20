@@ -1,13 +1,8 @@
-﻿using MapleStoryHelper.Standard.Item;
-using MapleStoryHelper.Standard.Item.Common;
+﻿using MapleStoryHelper.Framework.ResourceManager.Common;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using WzComparerR2.CharaSim;
 using WzComparerR2.PluginBase;
 using WzComparerR2.WzLib;
@@ -16,6 +11,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 {
     public class StringWzReader
     {
+        
+
         Wz_Structure StringWz;
         Wz_Structure CharacterWz;
 
@@ -33,6 +30,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             InitVariables();
         }
 
+        #region Initialize
+
         private void InitVariables()
         {
             StringWz = new Wz_Structure();
@@ -43,6 +42,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             StringWz = wz_String;
             CharacterWz = wz_Character;
         }
+
+        #endregion
 
         public List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category,string keyWord)
         {
@@ -64,7 +65,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
         private Wz_Node GetEquipCategoryNode(EEquipmentCategory category)
         {            
-            Wz_Image image = GetImage(StringNode, "Eqp.img");
+            Wz_Image image = StringNode.GetImage("Eqp.img");
 
             var EquipNode = image.Node.FindNodeByPath("Eqp");
 
@@ -106,9 +107,9 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             {
                 try
                 {
-                    var image = GetImage(CategoryNode, itemCodes[i]);
+                    var image = CategoryNode.GetImage(itemCodes[i]);
                     var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-                    EquipmentItem newItem = gear.ToEquipmentItem();
+                    EquipmentItem newItem = gear.ToEquipmentItem(image.Node);
                     retval.Add(newItem);
                 }
                 catch (Exception e)
@@ -120,19 +121,6 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
 
             return retval;
-        }
-
-        private Wz_Image GetImage(Wz_Node node, string keyWord)
-        {
-            var imgNode = node.FindNodeByPath(keyWord);
-            Wz_Image image;
-
-            if ((image = imgNode.GetValue<Wz_Image>()) == null || !image.TryExtract())
-            {
-                return null;
-            }
-
-            return image;
         }
     }
 }

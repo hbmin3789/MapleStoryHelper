@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WzComparerR2.Common\WzComparerR2.Common.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System.ComponentModel.Annotations">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.netcore.universalwindowsplatform\6.2.9\ref\uap10.0.15138\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>

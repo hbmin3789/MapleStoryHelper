@@ -23,10 +23,12 @@ namespace WzComparerR2
         {
             this.bitmap = bitmap;
             this.origin = origin;
+            outlink = "";
         }
 
         private Bitmap bitmap;
         private Point origin;
+        private string outlink;
 
         /// <summary>
         /// 获取图片。
@@ -52,6 +54,12 @@ namespace WzComparerR2
         public Point OpOrigin
         {
             get { return new Point(-origin.X, -origin.Y); }
+        }
+
+        public string OutLink
+        {
+            get { return outlink; }
+            set { outlink = value; }
         }
 
         /// <summary>
@@ -85,6 +93,11 @@ namespace WzComparerR2
             Wz_Node originNode = node.FindNodeByPath("origin");
             Wz_Vector vec = (originNode == null) ? null : originNode.GetValue<Wz_Vector>();
             bp.Origin = (vec == null) ? new Point() : new Point(vec.X, vec.Y);
+            Wz_Node outlinkNode = node.FindNodeByPath("_outlink");
+            if(outlinkNode != null)
+            {
+                bp.OutLink = outlinkNode.Value.ToString();
+            }
 
             return bp;
         }

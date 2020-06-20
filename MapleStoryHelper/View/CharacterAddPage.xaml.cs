@@ -1,5 +1,4 @@
 ﻿using MapleStoryHelper.Common;
-using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
 using System;
 using System.Linq;
@@ -35,7 +34,6 @@ namespace MapleStoryHelper.View
         private void InitComboBox()
         {
             var items = Enum.GetValues(typeof(ECharacterJob));
-            ECharacterJobToStringConverter converter = new ECharacterJobToStringConverter();
 
             for (int i = 0; i < items.Length; i++)
             {
@@ -47,7 +45,7 @@ namespace MapleStoryHelper.View
                     continue;
                 }
 
-                newItem.Content = converter.Convert(items.GetValue(i), null, null, null).ToString();
+                newItem.Content = ECharacterJobToStringConverter.Convert((ECharacterJob)items.GetValue(i));
 
                 cbCharacterJob.Items.Add(newItem);
             }
@@ -130,7 +128,7 @@ namespace MapleStoryHelper.View
 
                 character.ImageSrc = file.Path;
 
-                var imageData = await character.CharacterImage.ImageData.LoadImage();
+                var imageData = await character.ImageSrc.LoadImage();
                 imgCharacter.Source = imageData;
             }
             else

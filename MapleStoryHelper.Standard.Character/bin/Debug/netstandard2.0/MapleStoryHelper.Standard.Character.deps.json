@@ -59,8 +59,7 @@
       },
       "MapleStoryHelper.Standard/1.0.0": {
         "dependencies": {
-          "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0"
+          "Prism.Core": "7.2.0.1422"
         },
         "runtime": {
           "MapleStoryHelper.Standard.dll": {}

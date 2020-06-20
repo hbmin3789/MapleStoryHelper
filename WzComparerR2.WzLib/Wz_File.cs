@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Windows.Foundation;
 using Windows.Storage;
-using Windows.Storage.Search;
-using Windows.Storage.FileProperties;
 
 namespace WzComparerR2.WzLib
 {
