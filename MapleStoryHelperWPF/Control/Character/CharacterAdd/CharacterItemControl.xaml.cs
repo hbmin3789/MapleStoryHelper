@@ -16,7 +16,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
     /// </summary>
     public partial class CharacterItemControl : UserControl
     {
-        private MapleStoryHelper.Standard.Character.Character Backup;
+        private MapleStoryHelper.Standard.Character.Model.Character Backup;
 
         public CharacterItemControl()
         {
@@ -30,11 +30,12 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 
             AddItemWindow window = new AddItemWindow();
             window.SetItemCategory(category);
+            window.SetCharacter(this.DataContext as MapleStoryHelper.Standard.Character.Model.Character);
             window.ShowDialog();
 
             if(window.DialogResult == true)
             {
-                var character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
+                var character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
                 character.CharacterEquipment.EquipList[category] = window.DataContext as EquipmentItem;
                 UpdateView();
             }
@@ -42,7 +43,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 
         private void UpdateView()
         {
-            MapleStoryHelper.Standard.Character.Character character = this.DataContext as MapleStoryHelper.Standard.Character.Character;
+            MapleStoryHelper.Standard.Character.Model.Character character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
             var equipList = character.CharacterEquipment.EquipList;
             var children = wpItems.Children;
             int idx = 0;
@@ -68,7 +69,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
         private void UpdateStatusView()
         {
             ctrlStatusDisplay.DataContext = null;
-            ctrlStatusDisplay.DataContext = this.DataContext as MapleStoryHelper.Standard.Character.Character;
+            ctrlStatusDisplay.DataContext = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
         }
 
         private List<UIElement> ChildrenToList(UIElementCollection children)

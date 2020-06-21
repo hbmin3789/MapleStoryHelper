@@ -2,6 +2,7 @@
 using MapleStoryHelper.Control.Item;
 using MapleStoryHelper.Converter.Equipment;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Commands;

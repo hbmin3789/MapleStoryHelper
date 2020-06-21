@@ -65,6 +65,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Character\MapleStoryHelper.Standard.Character.csproj">
+      <Project>{8746CB0E-6404-4595-AF83-270D25A0F163}</Project>
+      <Name>MapleStoryHelper.Standard.Character</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>

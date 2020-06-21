@@ -272,7 +272,7 @@ namespace WzComparerR2.CharaSim
                         return (GearType)(code / 100 * 10);
                 }
             }
-            return (GearType)(code / 10000);
+            return (GearType)(code / 1000);
         }
 
         public static int GetGender(int code)

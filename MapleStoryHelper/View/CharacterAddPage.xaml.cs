@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Common;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Character.Model;
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;

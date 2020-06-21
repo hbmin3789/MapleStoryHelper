@@ -23,9 +23,14 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
         /// <param name="keyWord">image를 구할 노드 이름 ex) 01111.img</param>
         /// <returns></returns>
         public static Wz_Image GetImage(this Wz_Node parentNode, string keyWord)
-        {
+        {            
             var imgNode = parentNode.FindNodeByPath(keyWord);
             Wz_Image image;
+
+            if(imgNode == null)
+            {
+                return null;
+            }
 
             if ((image = imgNode.GetValue<Wz_Image>()) == null || !image.TryExtract())
             {
@@ -127,6 +132,11 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
             {
                 string itemCode = GetItemCodeByOutLink(gear.Icon.OutLink);
                 var image = node.ParentNode.GetImage(itemCode);
+                if(image == null)
+                {
+                    return null;
+                }
+
                 var newGear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
 
                 newGear.Icon.Bitmap.MakeTransparent();

@@ -10,7 +10,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace MapleStoryHelper.Standard.Character
+namespace MapleStoryHelper.Standard.Character.Model
 {
     public class CharacterBase : BindableBase
     {

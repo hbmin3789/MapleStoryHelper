@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace MapleStoryHelper.Standard.Character
+namespace MapleStoryHelper.Standard.Character.Model
 {
     public class Xenon : Character
     {

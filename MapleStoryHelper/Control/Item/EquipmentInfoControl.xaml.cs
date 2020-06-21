@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Common;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;

@@ -48,6 +48,7 @@ namespace MapleStoryHelper.Standard.Character
         Zero,
         Hoyoung,
         Kinesis,
+        Mikhail,
         All
     }
 }

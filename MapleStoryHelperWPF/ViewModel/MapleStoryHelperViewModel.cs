@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Mvvm;
@@ -57,9 +58,9 @@ namespace MapleStoryHelperWPF.ViewModel
         /// ex) 앱솔랩스 - 앱솔랩스 케이프, 앱솔랩스 슈즈...
         /// </summary>
         /// <param name="KeyWord">검색할 이름</param>
-        public List<EquipmentItem> FindItemByName(EEquipmentCategory category, string keyWord)
+        public List<EquipmentItem> FindItemByName(Character character,EEquipmentCategory category, string keyWord)
         {
-            return mapleWz.GetEquipmentItems(category, keyWord);
+            return mapleWz.GetEquipmentItems(character, category, keyWord);
         }
 
         #endregion

@@ -106,9 +106,17 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                 try
                 {
                     var image = CategoryNode.GetImage(itemCodes[i]);
+                    if(image == null)
+                    {
+                        continue;
+                    }
                     var imageNode = CategoryNode.FindNodeByPath(itemCodes[i]);
                     var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
                     EquipmentItem newItem = gear.ToEquipmentItem(imageNode);
+                    if(newItem == null)
+                    {
+                        continue;
+                    }
                     retval.Add(newItem);
                 }
                 catch (Exception e)

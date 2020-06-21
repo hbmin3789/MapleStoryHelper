@@ -21,7 +21,7 @@ namespace MapleStoryHelperWPF.Control
                 return;
             }
 
-            NavigateToCharacterSetting(lvCharacter.SelectedItem as MapleStoryHelper.Standard.Character.Character);
+            NavigateToCharacterSetting(lvCharacter.SelectedItem as MapleStoryHelper.Standard.Character.Model.Character);
 
 
             lvCharacter.SelectedIndex = -1;

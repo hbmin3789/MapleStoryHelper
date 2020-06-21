@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace MapleStoryHelperWPF.View
     /// </summary>
     public partial class AddItemWindow : Window
     {
+        private Character character;
         EEquipmentCategory EquipCategory;
 
         public AddItemWindow()
@@ -53,9 +55,14 @@ namespace MapleStoryHelperWPF.View
             EquipCategory = categoryTemp;
         }
 
+        public void SetCharacter(Character ch)
+        {
+            this.character = ch;
+        }
+
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            ctrlEquipmentInfo.SetEquipmentList(App.viewModel.FindItemByName(EquipCategory, tbKeyWord.Text));
+            ctrlEquipmentInfo.SetEquipmentList(App.viewModel.FindItemByName(this.character, EquipCategory, tbKeyWord.Text));
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)

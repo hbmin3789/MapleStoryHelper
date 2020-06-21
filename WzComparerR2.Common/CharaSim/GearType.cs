@@ -143,19 +143,20 @@ namespace WzComparerR2.CharaSim
         /// <summary>
         /// 双头杖 121
         /// </summary>
-        shiningRod = 121,
+        shiningRod = 1212,
+        tuner = 1213,
         /// <summary>
         /// 灵魂手铳 122
         /// </summary>
-        soulShooter = 122,
+        soulShooter = 1222,
         /// <summary>
         /// 亡命剑 123
         /// </summary>
-        desperado = 123,
+        desperado = 1232,
         /// <summary>
         /// 能量剑 124
         /// </summary>
-        energySword = 124,
+        energySword = 1242,
         /// <summary>
         /// 驯兽魔法棒 125
         /// </summary>
@@ -163,28 +164,29 @@ namespace WzComparerR2.CharaSim
         /// <summary>
         /// ESP限制器
         /// </summary>
-        espLimiter = 126,
-        magicGuntlet = 128,
+        espLimiter = 1262,
+        magicGuntlet = 1282,
+        CadenaChain = 1272,
         /// <summary>
         /// 单手剑 130
         /// </summary>
-        ohSword = 130,
+        ohSword = 1302,
         /// <summary>
         /// 单手斧 131
         /// </summary>
-        ohAxe = 131,
+        ohAxe = 1312,
         /// <summary>
         /// 单手钝器 132
         /// </summary>
-        ohBlunt = 132,
+        ohBlunt = 1322,
         /// <summary>
         /// 短刀 133
         /// </summary>
-        dagger = 133,
+        dagger = 1332,
         /// <summary>
         /// 刀 134
         /// </summary>
-        katara = 134,
+        katara = 1342,
         /// <summary>
         /// 魔法箭矢 135_00
         /// </summary>
@@ -320,96 +322,97 @@ namespace WzComparerR2.CharaSim
         /// <summary>
         /// 手杖
         /// </summary>
-        cane = 136,
+        cane = 1362,
         /// <summary>
         /// 短杖 137
         /// </summary>
-        wand = 137,
+        wand = 1372,
         /// <summary>
         /// 长杖 138
         /// </summary>
-        staff = 138,
+        staff = 1382,
         /// <summary>
         /// 空手 139
         /// </summary>
-        barehand = 139,
+        barehand = 1392,
         /// <summary>
         /// 双手剑 140
         /// </summary>
-        thSword = 140,
+        thSword = 1402,
         /// <summary>
         /// 双手斧 141
         /// </summary>
-        thAxe = 141,
+        thAxe = 1412,
         /// <summary>
         /// 双手钝器 142
         /// </summary>
-        thBlunt = 142,
+        thBlunt = 1422,
         /// <summary>
         /// 枪 143
         /// </summary>
-        spear = 143,
+        spear = 1432,
         /// <summary>
         /// 矛 144
         /// </summary>
-        polearm = 144,
+        polearm = 1442,
         /// <summary>
         /// 弓 145
         /// </summary>
-        bow = 145,
+        bow = 1452,
         /// <summary>
         /// 弩 146
         /// </summary>
-        crossbow = 146,
+        crossbow = 1462,
         /// <summary>
         /// 拳套 147
         /// </summary>
-        throwingGlove = 147,
+        throwingGlove = 1472,
         /// <summary>
         /// 指节 148
         /// </summary>
-        knuckle = 148,
+        knuckle = 1482,
         /// <summary>
         /// 短枪 149
         /// </summary>
-        gun = 149,
+        gun = 1492,
         /// <summary>
         /// 采药工具 150
         /// </summary>
-        shovel = 150,
+        shovel = 1502,
         /// <summary>
         /// 采矿工具 151
         /// </summary>
-        pickaxe = 151,
+        pickaxe = 1512,
         /// <summary>
         /// 双弓 152
         /// </summary>
-        dualBow = 152,
+        dualBow = 1522,
         /// <summary>
         /// 手持火炮 153
         /// </summary>
-        handCannon = 153,
+        handCannon = 1532,
         /// <summary>
         /// 太刀 154
         /// </summary>
-        katana = 154,
+        katana = 1542,
         /// <summary>
         /// 扇 155
         /// </summary>
-        fan = 155,
+        fan = 1292,
 
         /// <summary>
         /// 大剑 156
         /// </summary>
-        swordZB = 156,
+        swordZB = 1562,
         /// <summary>
         /// 太刀 157
         /// </summary>
-        swordZL = 157,
+        swordZL = 1572,
         /// <summary>
         /// 机甲手枪 158
         /// </summary>
-        GauntletBuster = 158,
+        GauntletBuster = 1582,
+        AncientBow = 1592,
         /// <summary>
         /// 拼图 168
         /// </summary>

@@ -60,6 +60,10 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             if(result == MessageBoxResult.Yes)
             {
                 this.Visibility = Visibility.Collapsed;
+                if((ECharacterJob)lvCharacterJob.SelectedIndex == ECharacterJob.Xenon)
+                {
+                    App.viewModel.NewCharacter = new MapleStoryHelper.Standard.Character.Model.Xenon();
+                }
             }
             else
             {
