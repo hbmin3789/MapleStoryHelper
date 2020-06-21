@@ -9,15 +9,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WzComparerR2.CharaSim;
+using WzComparerR2.PluginBase;
 using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Framework.ResourceManager.Common
 {
     public static class ItemExtension
     {
-        public static Wz_Image GetImage(this Wz_Node node, string keyWord)
+        /// <summary>
+        /// 해당 노드의 image를 구체화합니다.
+        /// </summary>
+        /// <param name="node">image를 구할 부모 노드 ex) Weapon.img, Cap.img, etc</param>
+        /// <param name="keyWord">image를 구할 노드 이름 ex) 01111.img</param>
+        /// <returns></returns>
+        public static Wz_Image GetImage(this Wz_Node parentNode, string keyWord)
         {
-            var imgNode = node.FindNodeByPath(keyWord);
+            var imgNode = parentNode.FindNodeByPath(keyWord);
             Wz_Image image;
 
             if ((image = imgNode.GetValue<Wz_Image>()) == null || !image.TryExtract())
@@ -32,7 +39,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
         {
             string retval = "";
 
-            OutLink.Replace(".img", "");
+            OutLink = OutLink.Replace(".img", "");
             var strArr = OutLink.Split(new char[] { '/' });
 
             for (int i = 0; i < strArr.Length; i++)
@@ -40,7 +47,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                 int result = 0;
                 if (int.TryParse(strArr[i], out result) == true)
                 {
-                    retval = string.Format("%d.img", result);
+                    retval = string.Format("0{0}.img", result);
                 }
             }
 
@@ -60,9 +67,6 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                     {
                         case "reqJob":
                             retval.CharacterCategory = (ECharacterJob)gear.Props[(GearPropType)propNames.GetValue(i)];
-                            break;
-                        case "islot":
-                            retval.EquipmentCategory = GetEquipmentCategory(gear);
                             break;
                         case "reqLevel":
                             retval.RequiredLevel = gear.Props[(GearPropType)propNames.GetValue(i)];
@@ -109,15 +113,32 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             }
 
+            retval.WeaponType = gear.type;
+            retval.EquipmentCategory = GetEquipmentCategory(gear);
+
             if (Gear.IsLeftWeapon(gear.type) == true)
             {
                 retval.WeaponConst = GetWeaponConst(gear);
             }
 
             MemoryStream ms = new MemoryStream();
-            gear.Icon.Bitmap.MakeTransparent();
-            gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
-            retval.ImgByte = ms.ToArray();
+
+            if (gear.Icon.OutLink.Length > 0)
+            {
+                string itemCode = GetItemCodeByOutLink(gear.Icon.OutLink);
+                var image = node.ParentNode.GetImage(itemCode);
+                var newGear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
+
+                newGear.Icon.Bitmap.MakeTransparent();
+                newGear.Icon.Bitmap.Save(ms, ImageFormat.Png);
+                retval.ImgByte = ms.ToArray();
+            }
+            else
+            {
+                gear.Icon.Bitmap.MakeTransparent();
+                gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
+                retval.ImgByte = ms.ToArray();
+            }
 
             return retval;
         }
@@ -178,79 +199,73 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
         {
             EEquipmentCategory retval = EEquipmentCategory.Ring;
 
-            switch (gear.PropsString[GearPropType.islot])
+            switch (gear.type)
             {
-                case "Cp":
+                case GearType.cap:
                     retval = EEquipmentCategory.Cap;
                     break;
-                case "Ri":
+                case GearType.ring:
                     retval = EEquipmentCategory.Ring;
                     break;
-                case "Po":
+                case GearType.pocket:
                     retval = EEquipmentCategory.Pocket;
                     break;
-                case "Pe":
+                case GearType.pendant:
                     retval = EEquipmentCategory.Pendant;
                     break;
-                case "Ay":
+                case GearType.eyeAccessory:
                     retval = EEquipmentCategory.Eye;
                     break;
-                case "Sr":
+                case GearType.cape:
                     retval = EEquipmentCategory.Cape;
                     break;
-                case "Ma":
+                case GearType.coat:
                     retval = EEquipmentCategory.Clothes;
                     break;
-                case "MaPn":
+                case GearType.longcoat:
                     retval = EEquipmentCategory.Clothes;
                     break;
-                case "Pn":
+                case GearType.pants:
                     retval = EEquipmentCategory.Pants;
                     break;
-                case "So":
+                case GearType.shoes:
                     retval = EEquipmentCategory.Shoes;
                     break;
-                case "Si":
-                case "Wp":
-
-                    if (Gear.IsLeftWeapon(gear.type) == true)
-                    {
-                        retval = EEquipmentCategory.Weapon;
-                        break;
-                    }
-
-                    if (Gear.IsSubWeapon(gear.type) == true)
-                    {
-                        retval = EEquipmentCategory.SubWeapon;
-                        break;
-                    }
-
+                case GearType.emblem:
                     retval = EEquipmentCategory.Emblem;
                     break;
-
-                case "Tm":
+                case GearType.weapon:
+                    retval = EEquipmentCategory.Weapon;
+                    break;
+                case GearType.subWeapon:
+                    retval = EEquipmentCategory.SubWeapon;
+                    break;
+                case GearType.android:
                     retval = EEquipmentCategory.Android;
                     break;
-                case "Af":
+                case GearType.faceAccessory:
                     retval = EEquipmentCategory.Face;
                     break;
-                case "Be":
+                case GearType.belt:
                     retval = EEquipmentCategory.Belt;
                     break;
-                case "Me":
+                case GearType.medal:
                     retval = EEquipmentCategory.Medal;
                     break;
-                case "Ba":
+                case GearType.badge:
                     retval = EEquipmentCategory.Badge;
                     break;
-                case "Ae":
+                case GearType.earrings:
                     retval = EEquipmentCategory.Ear;
                     break;
-                case "Sh":
+                case GearType.shoulderPad:
                     retval = EEquipmentCategory.Shoulder;
                     break;
-                case "Gv":
+                case GearType.glove:
                     retval = EEquipmentCategory.Gloves;
+                    break;
+                case GearType.machineHeart:
+                    retval = EEquipmentCategory.Heart;
                     break;
             }
 

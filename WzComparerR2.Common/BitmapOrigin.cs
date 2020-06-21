@@ -23,7 +23,7 @@ namespace WzComparerR2
         {
             this.bitmap = bitmap;
             this.origin = origin;
-            outlink = "";
+            this.outlink = "";
         }
 
         private Bitmap bitmap;
@@ -93,10 +93,15 @@ namespace WzComparerR2
             Wz_Node originNode = node.FindNodeByPath("origin");
             Wz_Vector vec = (originNode == null) ? null : originNode.GetValue<Wz_Vector>();
             bp.Origin = (vec == null) ? new Point() : new Point(vec.X, vec.Y);
+
             Wz_Node outlinkNode = node.FindNodeByPath("_outlink");
             if(outlinkNode != null)
             {
                 bp.OutLink = outlinkNode.Value.ToString();
+            }
+            else
+            {
+                bp.outlink = "";
             }
 
             return bp;

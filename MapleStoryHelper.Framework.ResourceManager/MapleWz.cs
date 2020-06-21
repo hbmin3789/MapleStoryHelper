@@ -1,6 +1,8 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager.Utils;
+using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using WzComparerR2.WzLib;
@@ -91,6 +93,10 @@ namespace MapleStoryHelper.Framework.ResourceManager
         public List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category, string keyWord)
         {
             var items = stringWzReader.GetEquipmentItems(category, keyWord);
+            if(category == EEquipmentCategory.Weapon || category == EEquipmentCategory.SubWeapon || category == EEquipmentCategory.Emblem)
+            {
+                
+            }
             for(int i = 0; i < items.Count; i++)
             {
                 items[i].ImgBitmapSource = items[i].ImgByte.LoadImage();

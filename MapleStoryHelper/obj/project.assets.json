@@ -1333,7 +1333,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -2973,7 +2974,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -4669,7 +4671,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -6362,7 +6365,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -8002,7 +8006,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -9698,7 +9703,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -11338,7 +11344,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
@@ -13034,7 +13041,8 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Prism.Core": "7.2.0.1422"
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}

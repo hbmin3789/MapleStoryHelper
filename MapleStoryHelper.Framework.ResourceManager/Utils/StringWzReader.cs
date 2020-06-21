@@ -11,8 +11,6 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 {
     public class StringWzReader
     {
-        
-
         Wz_Structure StringWz;
         Wz_Structure CharacterWz;
 
@@ -108,8 +106,9 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                 try
                 {
                     var image = CategoryNode.GetImage(itemCodes[i]);
+                    var imageNode = CategoryNode.FindNodeByPath(itemCodes[i]);
                     var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-                    EquipmentItem newItem = gear.ToEquipmentItem(image.Node);
+                    EquipmentItem newItem = gear.ToEquipmentItem(imageNode);
                     retval.Add(newItem);
                 }
                 catch (Exception e)

@@ -494,7 +494,11 @@ namespace WzComparerR2.CharaSim
                                 {
                                     try
                                     {
-                                        gear.Props.Add(type, Convert.ToInt32(subNode.Value));
+                                        if(subNode.Value != null)
+                                        {
+                                            gear.Props.Add(type, Convert.ToInt32(subNode.Value));
+                                            gear.PropsString.Add(type, subNode.Value.ToString());
+                                        }
                                     }
                                     catch
                                     {
@@ -502,7 +506,7 @@ namespace WzComparerR2.CharaSim
                                     }
                                     finally
                                     {
-                                        gear.PropsString.Add(type, subNode.Value.ToString());
+                                        
                                     }
                                 }
                             }

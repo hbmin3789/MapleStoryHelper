@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.CompilerServices;
 using System.Text;
+using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelper.Standard.Item
 {
@@ -61,6 +62,13 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _equipmentCategory, value);
         }
 
+        private GearType _weaponType;
+        public GearType WeaponType
+        {
+            get => _weaponType;
+            set => SetProperty(ref _weaponType, value);
+        }
+
         private EJobCategory _jobCategory;
         [Column("job_category")]
         public EJobCategory JobCategory
@@ -92,8 +100,8 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _status, value);
         }
 
-        private List<Potential> _potential = new List<Potential>();
-        public List<Potential> Potential
+        private List<Common.Potential> _potential = new List<Common.Potential>();
+        public List<Common.Potential> Potential
         {
             get => _potential;
             set => SetProperty(ref _potential, value);
