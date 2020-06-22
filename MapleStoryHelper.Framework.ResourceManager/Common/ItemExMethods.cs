@@ -121,7 +121,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
             retval.WeaponType = gear.type;
             retval.EquipmentCategory = GetEquipmentCategory(gear);
 
-            if (Gear.IsLeftWeapon(gear.type) == true)
+            if (Gear.IsWeapon(gear.type) == true)
             {
                 retval.WeaponConst = GetWeaponConst(gear);
             }
