@@ -63,15 +63,18 @@
                 <Button x:Name="btnItemSetting" FontSize="{StaticResource TitleFontSize}"                        
                         Content="아이템 세팅"
                         Click="btnItemSetting_Click"/>
-                <Button FontSize="{StaticResource TitleFontSize}"
+                <Button x:Name="btnSkillSetting" FontSize="{StaticResource TitleFontSize}"
                         Margin="0,10,0,0"
-                        Content="스킬 세팅"/>
+                        Content="패시브 세팅"
+                        Click="btnSkillSetting_Click"/>
             </StackPanel>
         </Grid>
         
         <characterAdd:CharacterItemControl x:Name="ctrlCharacterItem" Grid.ColumnSpan="2"
                                            Visibility="Collapsed"/>
         <characterAdd:CharacterJobControl x:Name="ctrlCharacterJob" Grid.ColumnSpan="2"
+                                          Visibility="Collapsed"/>
+        <characterAdd:SkillSettingControl x:Name="ctrlSkillSetting" Grid.ColumnSpan="2"
                                           Visibility="Collapsed"/>
     </Grid>
 </UserControl>

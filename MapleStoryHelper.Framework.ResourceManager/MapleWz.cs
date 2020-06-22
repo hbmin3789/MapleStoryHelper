@@ -7,6 +7,7 @@ using MapleStoryHelper.Standard.Item.Equipment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using WzComparerR2.CharaSim;
 using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Framework.ResourceManager
@@ -21,6 +22,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         private Wz_File characterWz;
         private Wz_File stringWz;
+        private Wz_File skillWz;
 
         private Wz_Structure CharacterWzStruct
         {
@@ -29,6 +31,10 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private Wz_Structure StringWzStruct
         {
             get => stringWz.WzStructure;
+        }
+        private Wz_Structure SkillWzStruct
+        {
+            get => skillWz.WzStructure;
         }
 
         #endregion
@@ -77,14 +83,18 @@ namespace MapleStoryHelper.Framework.ResourceManager
             {
                 FilePath = FilePath.Remove(FilePath.LastIndexOf("\\"));
             }
+
             characterWz = new Wz_File(FilePath + "\\Character.wz", new Wz_Structure());
             stringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
+            skillWz = new Wz_File(FilePath + "\\Skill.wz", new Wz_Structure());
 
             CharacterWzStruct.Load(FilePath + "\\Character.wz");
             StringWzStruct.Load(FilePath + "\\String.wz");
+            SkillWzStruct.Load(FilePath + "\\Skill.wz");
+
             if(stringWz.Loaded == true)
             {
-                stringWzReader.Load(StringWzStruct,CharacterWzStruct);
+                stringWzReader.Load(StringWzStruct, CharacterWzStruct);
             }
         }
 
@@ -108,6 +118,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
                     }
                 }
             }
+
             for(int i = 0; i < items.Count; i++)
             {
                 items[i].ImgBitmapSource = items[i].ImgByte.LoadImage();

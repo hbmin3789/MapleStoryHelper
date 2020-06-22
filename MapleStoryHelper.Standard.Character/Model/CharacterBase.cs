@@ -1,15 +1,18 @@
 ﻿using MapleStoryHelper.Standard.Character.Common;
 using MapleStoryHelper.Standard.Common;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Resources;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
+using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelper.Standard.Character.Model
 {
@@ -23,21 +26,21 @@ namespace MapleStoryHelper.Standard.Character.Model
         public EStatus MainStatus { get; set; }
         public EStatus SubStatus { get; set; }
 
-        private string _imageSrc;
+        protected string _imageSrc;
         public string ImageSrc
         {
             get=>_imageSrc;
             set => SetProperty(ref _imageSrc, value);
         }
 
-        private object _imgBitmapSource;
+        protected object _imgBitmapSource;
         public object ImgBitmapSource
         {
             get => _imgBitmapSource;
             set => SetProperty(ref _imgBitmapSource, value);
         }
 
-        private string _characterName;
+        protected string _characterName;
         public string CharacterName
         {
             get => _characterName;
@@ -45,21 +48,21 @@ namespace MapleStoryHelper.Standard.Character.Model
         }
 
         //숙련도
-        private int _ripenPoint;
+        protected int _ripenPoint;
         public int RipenPoint
         {
             get => _ripenPoint;
             set => SetProperty(ref _ripenPoint, value);
         }
 
-        private int _level;
+        protected int _level;
         public int Level
         {
             get => _level;
             set => SetProperty(ref _level, value);
         }
 
-        private ECharacterJob _characterJob;
+        protected ECharacterJob _characterJob;
         public ECharacterJob CharacterJob
         {
             get => _characterJob;
@@ -72,28 +75,28 @@ namespace MapleStoryHelper.Standard.Character.Model
             }
         }
 
-        private EJobCategory _jobCategory;
+        protected EJobCategory _jobCategory;
         public EJobCategory JobCategory
         {
             get => _jobCategory;
             set => SetProperty(ref _jobCategory, value);
         }
 
-        private StatusBase _characterStatus;
+        protected StatusBase _characterStatus;
         public StatusBase CharacterStatus
         {
-            get
-            {
-                _characterStatus = GetCharacterStatus();
-                return _characterStatus;
-            }
-            set
-            {
-                SetProperty(ref _characterStatus, value);
-            }
+            get => _characterStatus;
+            set=> SetProperty(ref _characterStatus, value);
         }
 
-        private bool _isUseAttackPower = true;
+        protected StatusBase _skillStatus;
+        public StatusBase SkillStatus
+        {
+            get => _skillStatus;
+            set => SetProperty(ref _skillStatus, value);
+        }
+
+        protected bool _isUseAttackPower = true;
         public bool IsUseAttackPower
         {
             get => _isUseAttackPower;
@@ -110,21 +113,17 @@ namespace MapleStoryHelper.Standard.Character.Model
             get => GetJobConst();
         }
 
-        private EJobLevel _jobLevel;
+        protected EJobLevel _jobLevel;
         public EJobLevel JobLevel
         {
             get => _jobLevel;
             set => SetProperty(ref _jobLevel, value);
         }
 
-        private CharacterEquipment _characterEquipment;
+        protected CharacterEquipment _characterEquipment;
         public CharacterEquipment CharacterEquipment
         {
-            get
-            {
-                CharacterEquipment_OnEquipChanged();
-                return _characterEquipment;
-            }
+            get => _characterEquipment;
             set => SetProperty(ref _characterEquipment, value);
         }
 
@@ -299,11 +298,6 @@ namespace MapleStoryHelper.Standard.Character.Model
             SubStatus = EStatus.STR;
         }
 
-        private void CharacterEquipment_OnEquipChanged()
-        {
-            MaxStatusAttack = 0;
-        }
-
         public void SetCharacterJob(ECharacterJob characterJob)
         {
             CharacterJob = characterJob;
@@ -367,22 +361,22 @@ namespace MapleStoryHelper.Standard.Character.Model
             switch (main)
             {
                 case EStatus.STR:
-                    MainStatus = CharacterStatus.GetSTR();
+                    MainStatus = _characterStatus.GetSTR();
                     break;
                 case EStatus.DEX:
-                    MainStatus = CharacterStatus.GetDEX();
+                    MainStatus = _characterStatus.GetDEX();
                     break;
                 case EStatus.INT:
-                    MainStatus = CharacterStatus.GetINT();
+                    MainStatus = _characterStatus.GetINT();
                     break;
                 case EStatus.LUK:
-                    MainStatus = CharacterStatus.GetLUK();
+                    MainStatus = _characterStatus.GetLUK();
                     break;
                 case EStatus.HP:
-                    MainStatus = CharacterStatus.GetHP();
+                    MainStatus = _characterStatus.GetHP();
                     break;
                 case EStatus.MP:
-                    MainStatus = CharacterStatus.GetMP();
+                    MainStatus = _characterStatus.GetMP();
                     break;
             }
         }
@@ -441,5 +435,12 @@ namespace MapleStoryHelper.Standard.Character.Model
         }
 
         #endregion
+
+        public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
+        {
+            CharacterEquipment.EquipList[category] = equipmentItem;
+            CharacterStatus = GetCharacterStatus();
+            MaxStatusAttack = 0;
+        }
     }
 }

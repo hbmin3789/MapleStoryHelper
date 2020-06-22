@@ -36,7 +36,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             if(window.DialogResult == true)
             {
                 var character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
-                character.CharacterEquipment.EquipList[category] = window.DataContext as EquipmentItem;
+                character.SetEquipment(category, window.DataContext as EquipmentItem);
                 UpdateView();
             }
         }

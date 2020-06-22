@@ -21,5 +21,10 @@ namespace MapleStoryHelperWPF.Control
         {
             ctrlCharacterItem.Visibility = System.Windows.Visibility.Visible;
         }
+
+        private void btnSkillSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ctrlSkillSetting.Visibility = System.Windows.Visibility.Visible;
+        }
     }
 }

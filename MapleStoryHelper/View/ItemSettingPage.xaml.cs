@@ -73,7 +73,7 @@ namespace MapleStoryHelper.View
             control.OnSaved?.Invoke(this, null);
 
             var character = this.DataContext as Character;
-            character.CharacterEquipment.EquipList[control.Category] = control.EquipmentItem;
+            character.SetEquipment(control.Category, control.EquipmentItem);
 
             UpdateView();
             

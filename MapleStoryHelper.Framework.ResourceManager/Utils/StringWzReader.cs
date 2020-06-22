@@ -101,6 +101,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
             string categoryString = CategoryManager.GetEquipmentCategoryString(category);
             var CategoryNode = CharacterNode.FindNodeByPath(categoryString);
+
             for (int i = 0; i < itemCodes.Count; i++)
             {
                 try
@@ -110,9 +111,11 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                     {
                         continue;
                     }
+
                     var imageNode = CategoryNode.FindNodeByPath(itemCodes[i]);
                     var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
                     EquipmentItem newItem = gear.ToEquipmentItem(imageNode);
+
                     if(newItem == null)
                     {
                         continue;

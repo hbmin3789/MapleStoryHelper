@@ -80,6 +80,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Control\Character\CharacterAdd\SkillSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\Character\CharacterListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +124,9 @@
     </Compile>
     <Compile Include="Control\Character\CharacterAdd\CharacterJobControl.xaml.cs">
       <DependentUpon>CharacterJobControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Character\CharacterAdd\SkillSettingControl.xaml.cs">
+      <DependentUpon>SkillSettingControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\Character\CharacterListControl.xaml.cs">
       <DependentUpon>CharacterListControl.xaml</DependentUpon>

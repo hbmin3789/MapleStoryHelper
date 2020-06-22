@@ -15,7 +15,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             double Constant = GetCharacterConstant();
             double Percent = GetCharacterPercent(CharacterStatus);
 
-            var temp = ((CharacterStatus.GetSTR() + CharacterStatus.GetDEX() + CharacterStatus.GetLUK()) * 4) * Constant * Percent;
+            var temp = ((_characterStatus.GetSTR() + _characterStatus.GetDEX() + _characterStatus.GetLUK()) * 4) * Constant * Percent;
             retval = (int)temp;
 
             return retval;

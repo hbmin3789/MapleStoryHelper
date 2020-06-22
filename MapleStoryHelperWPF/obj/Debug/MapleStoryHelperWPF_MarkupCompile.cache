@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml
-101666562183
+11-2092499067
 
-151176177604
+161740634888
 127694457757
-Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterListControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Status\StatusControl.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;
+Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Status\StatusControl.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;
 
 False
 

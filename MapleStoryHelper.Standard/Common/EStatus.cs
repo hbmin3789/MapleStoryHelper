@@ -13,6 +13,7 @@ namespace MapleStoryHelper.Standard.Common
         AllStatus,
         HP,
         MP,
+
         STRPer,
         DEXPer,
         INTPer,
