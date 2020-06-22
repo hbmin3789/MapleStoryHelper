@@ -31,16 +31,16 @@ WzComparerR2 라이브러리 사용 : https://github.com/KENNYSOFT/WzComparerR2
 >-보스 클리어가 가능한지 시뮬레이션하는 기능
 
 ### .Net Standard Library
->MapleStoryHelper.Standard
->MapleStoryHelper.Standard.Boss
->MapleStoryHelper.Standard.Character
->MapleStoryHelper.Standard.Item
->MapleStoryHelper.Standard.Resources
+> MapleStoryHelper.Standard
+> MapleStoryHelper.Standard.Boss
+> MapleStoryHelper.Standard.Character
+> MapleStoryHelper.Standard.Item
+> MapleStoryHelper.Standard.Resources
 
 ### .Net Framework Library
->MapleStoryHelper.Framework.ResourceManager
+> MapleStoryHelper.Framework.ResourceManager
 
 ### 기타 프로젝트
->MapleStoryHelper(UWP)
->MapleStoryHelperWPF(WPF)
->MapleStoryCodeSearcher(WPF)
+> MapleStoryHelper(UWP)
+> MapleStoryHelperWPF(WPF)
+> MapleStoryCodeSearcher(WPF)
