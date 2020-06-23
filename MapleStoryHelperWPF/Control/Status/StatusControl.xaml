@@ -50,7 +50,7 @@
                         <TextBox Text="{Binding PMagicAttack}"/>
                         <TextBox Text="{Binding Damage}"/>
                         <TextBox Text="{Binding BossDamage}"/>
-                        <TextBox Text="{Binding IgnoreDefBinding}"/>
+                        <TextBox Text="{Binding IgnoreDef}"/>
                         <TextBox Text="{Binding Critical}"/>
                         <TextBox Text="{Binding CriticalDamage}"/>
                     </StackPanel>

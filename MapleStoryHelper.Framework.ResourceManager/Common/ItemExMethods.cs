@@ -100,9 +100,12 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                         case "incMMP":
                             retval.Status.MP = gear.Props[(GearPropType)propNames.GetValue(i)];
                             break;
-                            //case "tuc":
-                            //    retval.MaxScroll = gear.Props[(GearPropType)propNames.GetValue(i)];
-                            //    break;
+                        case "imdR":
+                            retval.Status.IgnoreDef = gear.Props[(GearPropType)propNames.GetValue(i)];
+                            break;
+                        case "bdR":
+                            retval.Status.BossDamage = gear.Props[(GearPropType)propNames.GetValue(i)];
+                            break;
                             //case "bossReward":
                             //    retval. = Convert.ToInt32(item.ChildNodes[j].Value);
                             //    break;

@@ -67,3 +67,5 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Co
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusAttackControl.g.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Character\CharacterAdd\CharacterStatusSettingControl.baml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusAttackControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Union\UnionControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Union\UnionControl.baml

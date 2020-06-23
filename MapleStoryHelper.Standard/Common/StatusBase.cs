@@ -51,11 +51,9 @@ namespace MapleStoryHelper.Standard
                 LastDamage = a.LastDamage + b.LastDamage,
             };
 
-            retval.IgnoreDef = new List<double>(a.IgnoreDef);
-
-            for(int i = 0; i < b.IgnoreDef.Count; i++)
+            if (a.IgnoreDef != 0 || b.IgnoreDef != 0)
             {
-                retval.IgnoreDef.Add(b.IgnoreDef[i]);
+                retval.IgnoreDef = (1 - ((1 - a.IgnoreDef / 100) * (1 - b.IgnoreDef / 100))) * 100;
             }
 
             return retval;
@@ -461,7 +459,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _critical;
-        [Column("critical")]
         public int Critical
         {
             get => _critical;
@@ -469,28 +466,17 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _criticalDamage;
-        [Column("critical_damage")]
         public double CriticalDamage
         {
             get => _criticalDamage;
             set => SetProperty(ref _criticalDamage, value);
         }
 
-        private List<double> _ignoreDef = new List<double>();
-        [NotMapped]
-        public List<double> IgnoreDef
+        private double _ignoreDef = 0;
+        public double IgnoreDef
         {
             get => _ignoreDef;
-            set
-            {
-                SetProperty(ref _ignoreDef, value);
-                OnPropertyChanged(new PropertyChangedEventArgs(nameof(IgnoreDefBinding)));
-            }
-        }
-        public int IgnoreDefBinding
-        {
-            get => (int)GetIgnoreDef();
-            set { }
+            set => SetProperty(ref _ignoreDef, value);
         }
 
         #endregion
@@ -585,30 +571,6 @@ namespace MapleStoryHelper.Standard
 
         #endregion
 
-        private double GetIgnoreDef()
-        {
-            //1 - (1 - %) - (1 - %) ...
-            double retval = 1.0;
-
-            if(IgnoreDef.Count == 0)
-            {
-                return 0;
-            }
-
-            double temp = 1;
-
-            for(int i = 0; i < IgnoreDef.Count; i++)
-            {
-                temp *= ((100.0 - IgnoreDef[i]) / 100.0);
-            }
-
-            temp *= 100;
-            retval *= 100;
-
-            retval -= temp;
-
-            return retval;
-        }
 
         #endregion
 

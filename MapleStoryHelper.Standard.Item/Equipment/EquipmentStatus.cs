@@ -107,14 +107,9 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 ScStr = a.ScStr + b.ScStr,
             };
 
-            retval.IgnoreDef = new List<double>(a.IgnoreDef);
-            retval.PoIgnoreDef = new List<int>(a.PoIgnoreDef);
-            retval.AdPoIgnoreDef = new List<int>(a.AdPoIgnoreDef);
-
-            for (int i = 0; i < b.IgnoreDef.Count; i++)
-            {
-                retval.IgnoreDef.Add(b.IgnoreDef[i]);
-            }
+            retval.IgnoreDef = 1 - ((1 - a.IgnoreDef / 100) * (1 - b.IgnoreDef / 100));
+            retval.PoIgnoreDef = a.PoIgnoreDef;
+            retval.AdPoIgnoreDef = a.AdPoIgnoreDef;
 
             for (int i = 0; i < b.PoIgnoreDef.Count; i++)
             {
@@ -658,17 +653,16 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 Damage = this.Damage + this.PoDamage + this.AdPoDamage,
                 CriticalDamage = this.CriticalDamage + this.PoCritDamage + this.AdPoCritDamage,
                 LastDamage = this.LastDamage,
+                IgnoreDef = this.IgnoreDef,
             };
 
-            retval.IgnoreDef = new List<double>(this.IgnoreDef);
-
-            for(int i = 0; i < this.PoIgnoreDef.Count; i++)
+            for (int i = 0; i < this.PoIgnoreDef.Count; i++)
             {
-                retval.IgnoreDef.Add(PoIgnoreDef[i]);
+                retval.IgnoreDef *= (1 - PoIgnoreDef[i] / 100);
             }
             for (int i = 0; i < this.AdPoIgnoreDef.Count; i++)
             {
-                retval.IgnoreDef.Add(AdPoIgnoreDef[i]);
+                retval.IgnoreDef *= (1 - AdPoIgnoreDef[i] / 100);
             }
 
 

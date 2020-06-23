@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="MapleStoryHelperWPF.Control.Union.UnionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Union"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="tbReadOnlyStyle" TargetType="TextBox">
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크확"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크뎀"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="보공"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방무"/>
+            </StackPanel>
+            <StackPanel x:Name="spStatus1" Grid.Column="1">
+                <TextBox Text="{Binding Str}"/>
+                <TextBox Text="{Binding Dex}"/>
+                <TextBox Text="{Binding Int}"/>
+                <TextBox Text="{Binding Luk}"/>
+                <TextBox Text="{Binding HP}"/>
+                <TextBox Text="{Binding MP}"/>
+                <TextBox Text="{Binding AttackPower}"/>
+                <TextBox Text="{Binding MagicAttack}"/>
+                <TextBox Text="{Binding Critical}"/>
+                <TextBox Text="{Binding CriticalDamage}"/>
+                <TextBox Text="{Binding BossDamage}"/>
+                <TextBox Text="{Binding IgnoreDef}"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크확"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크뎀"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="보공"/>
+                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방무"/>
+            </StackPanel>
+            <StackPanel x:Name="spStatus2" Grid.Column="3">
+                <TextBox Text="{Binding Str}"/>
+                <TextBox Text="{Binding Dex}"/>
+                <TextBox Text="{Binding Int}"/>
+                <TextBox Text="{Binding Luk}"/>
+                <TextBox Text="{Binding HP}"/>
+                <TextBox Text="{Binding MP}"/>
+                <TextBox Text="{Binding AttackPower}"/>
+                <TextBox Text="{Binding MagicAttack}"/>
+                <TextBox Text="{Binding Critical}"/>
+                <TextBox Text="{Binding CriticalDamage}"/>
+                <TextBox Text="{Binding BossDamage}"/>
+                <TextBox Text="{Binding IgnoreDef}"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Margin" Value="10"/>
+                    <Setter Property="FontSize" Value="20"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="btnSave" Content="확인"
+                    Click="btnSave_Click"/>
+            <Button x:Name="btnCancel" Content="취소"
+                    Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

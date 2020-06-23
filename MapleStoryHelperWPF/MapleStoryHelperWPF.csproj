@@ -108,6 +108,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Control\Union\UnionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme\Font.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,6 +157,9 @@
     </Compile>
     <Compile Include="Control\Status\StatusControl.xaml.cs">
       <DependentUpon>StatusControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Union\UnionControl.xaml.cs">
+      <DependentUpon>UnionControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\ECharacterJobToStringConverter.cs" />
     <Compile Include="ViewModel\MapleStoryHelperViewModel.cs" />

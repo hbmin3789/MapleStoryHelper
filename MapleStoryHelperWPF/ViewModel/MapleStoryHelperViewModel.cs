@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelper.Standard;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
@@ -27,6 +28,20 @@ namespace MapleStoryHelperWPF.ViewModel
             set => SetProperty(ref _characterList, value);
         }
 
+        private StatusBase _unionCharacterStatus;
+        public StatusBase UnionCharacterStatus
+        {
+            get => _unionCharacterStatus;
+            set => SetProperty(ref _unionCharacterStatus, value);
+        }
+
+        private StatusBase _unionMapStatus;
+        public StatusBase UnionMapStatus
+        {
+            get => _unionMapStatus;
+            set => SetProperty(ref _unionMapStatus, value);
+        }
+
         public MapleStoryHelperViewModel()
         {
             InitVariables();
@@ -41,7 +56,8 @@ namespace MapleStoryHelperWPF.ViewModel
         private void InitVariables()
         {
             mapleWz = new MapleWz();
-
+            _unionMapStatus = new StatusBase();
+            _unionCharacterStatus = new StatusBase();
             _characterList = new ObservableCollection<Character>();
             _newCharacter = new Character();
         }

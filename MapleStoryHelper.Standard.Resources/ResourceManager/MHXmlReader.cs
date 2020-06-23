@@ -173,7 +173,10 @@ namespace MapleStoryHelper.Standard.Resources
                         //retval. = Convert.ToInt32(item.Nodes[i].ChildNodes[j].Value);
                         break;
                     case "imdR":
-                        retval.Status.IgnoreDef.Add(val);
+                        retval.Status.IgnoreDef = val;
+                        break;
+                    case "bdR":
+                        retval.Status.BossDamage = val;
                         break;
                 }
             }

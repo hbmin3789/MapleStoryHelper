@@ -38,5 +38,10 @@ namespace MapleStoryHelperWPF.Control
             lvCharacter.SelectedIndex = -1;
             NavigateToCharacterSetting(App.viewModel.NewCharacter);
         }
+
+        private void btnSetUnion_Click(object sender, RoutedEventArgs e)
+        {
+            ctrlUnion.Visibility = Visibility.Visible;
+        }
     }
 }
