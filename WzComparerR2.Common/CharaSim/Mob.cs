@@ -16,7 +16,7 @@ namespace WzComparerR2.CharaSim
             //this.Animates = new LifeAnimateCollection();
 
             this.FirstAttack = false;
-            this.BodyAttack = true;
+            this.BodyAttack = false;
             this.DamagedByMob = false;
         }
 
@@ -26,8 +26,8 @@ namespace WzComparerR2.CharaSim
         public string DefaultMP { get; set; }
         public string FinalMaxHP { get; set; }
         public string FinalMaxMP { get; set; }
-        public int MaxHP { get; set; }
-        public int MaxMP { get; set; }
+        public long MaxHP { get; set; }
+        public long MaxMP { get; set; }
         public int HPRecovery { get; set; }
         public int MPRecovery { get; set; }
         public int? Speed { get; set; }
@@ -86,8 +86,8 @@ namespace WzComparerR2.CharaSim
                         case "defaultMP": mobInfo.DefaultMP = propNode.GetValueEx<string>(null); break;
                         case "finalmaxHP": mobInfo.FinalMaxHP = propNode.GetValueEx<string>(null); break;
                         case "finalmaxMP": mobInfo.FinalMaxMP = propNode.GetValueEx<string>(null); break;
-                        case "maxHP": mobInfo.MaxHP = propNode.GetValueEx<int>(0); break;
-                        case "maxMP": mobInfo.MaxMP = propNode.GetValueEx<int>(0); break;
+                        case "maxHP": mobInfo.MaxHP = propNode.GetValueEx<long>(0); break;
+                        case "maxMP": mobInfo.MaxMP = propNode.GetValueEx<long>(0); break;
                         case "hpRecovery": mobInfo.HPRecovery = propNode.GetValueEx<int>(0); break;
                         case "mpRecovery": mobInfo.MPRecovery = propNode.GetValueEx<int>(0); break;
                         case "speed": mobInfo.Speed = propNode.GetValueEx<int>(0); break;
@@ -155,7 +155,11 @@ namespace WzComparerR2.CharaSim
                     var actNode = linkNode.FindNodeByPath(action + @"\0");
                     if (actNode != null)
                     {
-
+                        imageFrame = BitmapOrigin.CreateFromNode(actNode, findNode);
+                        if (imageFrame.Bitmap != null)
+                        {
+                            break;
+                        }
                     }
                 }
 

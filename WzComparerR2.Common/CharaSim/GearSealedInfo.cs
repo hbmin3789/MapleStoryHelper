@@ -31,6 +31,16 @@ namespace WzComparerR2.CharaSim
                         info.Exp = child.GetValue(0);
                         break;
 
+                    case "icon":
+                        info.Icon = BitmapOrigin.CreateFromNode(child, findNode);
+                        info.HasIcon = true;
+                        break;
+
+                    case "iconRaw":
+                        info.IconRaw = BitmapOrigin.CreateFromNode(child, findNode);
+                        info.HasIcon = true;
+                        break;
+
                     default:
                         try
                         {

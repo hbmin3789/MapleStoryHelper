@@ -128,7 +128,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             MemoryStream ms = new MemoryStream();
 
-            if (gear.Icon.OutLink.Length > 0)
+            if (gear.Icon.OutLink?.Length > 0)
             {
                 string itemCode = GetItemCodeByOutLink(gear.Icon.OutLink);
                 var image = node.ParentNode.GetImage(itemCode);
@@ -136,19 +136,12 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                 {
                     return null;
                 }
-
-                var newGear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-
-                newGear.Icon.Bitmap.MakeTransparent();
-                newGear.Icon.Bitmap.Save(ms, ImageFormat.Png);
-                retval.ImgByte = ms.ToArray();
+                gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
             }
-            else
-            {
-                gear.Icon.Bitmap.MakeTransparent();
-                gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
-                retval.ImgByte = ms.ToArray();
-            }
+
+            gear.Icon.Bitmap.MakeTransparent();
+            gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
+            retval.ImgByte = ms.ToArray();
 
             return retval;
         }
@@ -167,7 +160,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                 case GearType.ohBlunt:
                 case GearType.shiningRod:
                 case GearType.espLimiter:
-                case GearType.magicGuntlet:
+                case GearType.magicGauntlet:
                     retval = 1.2;
                     break;
                 case GearType.thSword:
@@ -205,7 +198,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
             return retval;
         }
 
-        private static EEquipmentCategory GetEquipmentCategory(Gear gear)
+        public static EEquipmentCategory GetEquipmentCategory(Gear gear)
         {
             EEquipmentCategory retval = EEquipmentCategory.Ring;
 
@@ -230,10 +223,10 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                     retval = EEquipmentCategory.Cape;
                     break;
                 case GearType.coat:
-                    retval = EEquipmentCategory.Clothes;
+                    retval = EEquipmentCategory.Coat;
                     break;
                 case GearType.longcoat:
-                    retval = EEquipmentCategory.Clothes;
+                    retval = EEquipmentCategory.Longcoat;
                     break;
                 case GearType.pants:
                     retval = EEquipmentCategory.Pants;
@@ -272,7 +265,84 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                     retval = EEquipmentCategory.Shoulder;
                     break;
                 case GearType.glove:
-                    retval = EEquipmentCategory.Gloves;
+                    retval = EEquipmentCategory.Glove;
+                    break;
+                case GearType.machineHeart:
+                    retval = EEquipmentCategory.Heart;
+                    break;
+            }
+
+            return retval;
+        }
+
+        public static EEquipmentCategory ToEquipmentCategory(this GearType type)
+        {
+            EEquipmentCategory retval = EEquipmentCategory.Ring;
+
+            switch (type)
+            {
+                case GearType.cap:
+                    retval = EEquipmentCategory.Cap;
+                    break;
+                case GearType.ring:
+                    retval = EEquipmentCategory.Ring;
+                    break;
+                case GearType.pocket:
+                    retval = EEquipmentCategory.Pocket;
+                    break;
+                case GearType.pendant:
+                    retval = EEquipmentCategory.Pendant;
+                    break;
+                case GearType.eyeAccessory:
+                    retval = EEquipmentCategory.Eye;
+                    break;
+                case GearType.cape:
+                    retval = EEquipmentCategory.Cape;
+                    break;
+                case GearType.coat:
+                    retval = EEquipmentCategory.Coat;
+                    break;
+                case GearType.longcoat:
+                    retval = EEquipmentCategory.Longcoat;
+                    break;
+                case GearType.pants:
+                    retval = EEquipmentCategory.Pants;
+                    break;
+                case GearType.shoes:
+                    retval = EEquipmentCategory.Shoes;
+                    break;
+                case GearType.emblem:
+                    retval = EEquipmentCategory.Emblem;
+                    break;
+                case GearType.weapon:
+                    retval = EEquipmentCategory.Weapon;
+                    break;
+                case GearType.subWeapon:
+                    retval = EEquipmentCategory.SubWeapon;
+                    break;
+                case GearType.android:
+                    retval = EEquipmentCategory.Android;
+                    break;
+                case GearType.faceAccessory:
+                    retval = EEquipmentCategory.Face;
+                    break;
+                case GearType.belt:
+                    retval = EEquipmentCategory.Belt;
+                    break;
+                case GearType.medal:
+                    retval = EEquipmentCategory.Medal;
+                    break;
+                case GearType.badge:
+                    retval = EEquipmentCategory.Badge;
+                    break;
+                case GearType.earrings:
+                    retval = EEquipmentCategory.Ear;
+                    break;
+                case GearType.shoulderPad:
+                    retval = EEquipmentCategory.Shoulder;
+                    break;
+                case GearType.glove:
+                    retval = EEquipmentCategory.Glove;
                     break;
                 case GearType.machineHeart:
                     retval = EEquipmentCategory.Heart;

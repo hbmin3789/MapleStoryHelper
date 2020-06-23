@@ -35,7 +35,7 @@ namespace MapleStoryHelper.Standard.Character.Common
                 case GearType.espLimiter:
                     retval.Add(ECharacterJob.Kinesis);
                     break;
-                case GearType.magicGuntlet:
+                case GearType.magicGauntlet:
                     retval.Add(ECharacterJob.Illium);
                     break;
                 case GearType.thSword:
@@ -89,7 +89,7 @@ namespace MapleStoryHelper.Standard.Character.Common
                 case GearType.dualBow:
                     retval.Add(ECharacterJob.Mercedes);
                     break;
-                case GearType.AncientBow:
+                case GearType.ancientBow:
                     retval.Add(ECharacterJob.Pathfinder);
                     break;
                 case GearType.tuner:
@@ -98,7 +98,7 @@ namespace MapleStoryHelper.Standard.Character.Common
                 case GearType.fan:
                     retval.Add(ECharacterJob.Hoyoung);
                     break;
-                case GearType.CadenaChain:
+                case GearType.chain2:
                     retval.Add(ECharacterJob.Cadena);
                     break;
                 case GearType.desperado:

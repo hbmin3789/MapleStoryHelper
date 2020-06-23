@@ -22,7 +22,14 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                 case EEquipmentCategory.Medal:
                 case EEquipmentCategory.Pocket:
                 case EEquipmentCategory.Shoulder:
+                case EEquipmentCategory.Face:
                     return "Accessory";
+                case EEquipmentCategory.Heart:
+                case EEquipmentCategory.Android:
+                    return "Android";
+                case EEquipmentCategory.SubWeapon:
+                case EEquipmentCategory.Weapon:
+                    return "Weapon";
             }
 
             return category.ToString();

@@ -28,10 +28,10 @@ namespace WzComparerR2.CharaSim
                     int end = idx, len = 0;
                     while ((++end) < H.Length)
                     {
-                        if ((H[end] >= 'a' && H[end] <= 'z') ||
-                            (H[end] >= 'A' && H[end] <= 'Z') ||
-                            (H[end] >= '0' && H[end] <= '9') ||
-                            H[end] == '_')
+                        if (H[end] == '_' ||
+                            ('a' <= H[end] && H[end] <= 'z') ||
+                            ('A' <= H[end] && H[end] <= 'Z') ||
+                            (end - idx > 1 && '0' <= H[end] && H[end] <= '9')) //^[_A-Za-z][_A-Za-z0-9]*$
                         {
                             len++;
                         }
@@ -56,7 +56,7 @@ namespace WzComparerR2.CharaSim
                     }
                     if (prop != null)
                     {
-                        var val = Calculator.Parse(prop, Level);
+                        var val = Calculator.Parse(prop.ToLower(), Level);
                         sb.Append(val);
                         idx += len + 1;
                         continue;
@@ -76,7 +76,7 @@ namespace WzComparerR2.CharaSim
                         {
                             if (prop != "" && GetValueIgnoreCase(CommonProps, prop, out prop))
                             {
-                                var val = Calculator.Parse(prop, Level);
+                                var val = Calculator.Parse(prop.ToLower(), Level);
                                 sb.Append(val);
                             }
                             else
@@ -115,7 +115,7 @@ namespace WzComparerR2.CharaSim
                         }
                         else
                         {
-                            sb.Append(0);//默认值
+                            //sb.Append(0);//默认值
                         }
                         idx += len + 1;
                     }
@@ -144,7 +144,7 @@ namespace WzComparerR2.CharaSim
                     sb.Append(H[idx++]);
                 }
             }
-            return sb.ToString();
+            return sb.ToString().Replace("\t", "");
         }
 
         private static bool GetValueIgnoreCase(Dictionary<string,string> dict, string key, out string value)
@@ -152,7 +152,7 @@ namespace WzComparerR2.CharaSim
             //bool find = false;
             foreach (var kv in dict)
             {
-                if (kv.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase))
+                if (kv.Key.Equals(key, StringComparison.OrdinalIgnoreCase))
                 {
                     value = kv.Value;
                     return true;

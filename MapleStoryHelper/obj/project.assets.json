@@ -1349,7 +1349,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -2990,7 +2989,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -4687,7 +4685,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -6381,7 +6378,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -8022,7 +8018,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -9719,7 +9714,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -11360,7 +11354,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -13057,7 +13050,6 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "Prism.Core": "7.2.0.1422",
-          "WzComparerR2.Common": "1.0.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {

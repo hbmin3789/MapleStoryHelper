@@ -105,19 +105,19 @@ namespace MapleStoryHelper.Framework.ResourceManager
         public List<EquipmentItem> GetEquipmentItems(Character character, EEquipmentCategory category, string keyWord)
         {
             var items = stringWzReader.GetEquipmentItems(category, keyWord);
-            if(category == EEquipmentCategory.Weapon || category == EEquipmentCategory.SubWeapon || category == EEquipmentCategory.Emblem)
-            {
-                for(int i = 0; i < items.Count; i++)
-                {
-                    var categories = items[i].GetWeaponJob();
-                    var list = categories.Where(x => x == character.CharacterJob).ToList();
-                    if(list.Count == 0) 
-                    {
-                        items.RemoveAt(i);
-                        i--;
-                    }
-                }
-            }
+            //if(category == EEquipmentCategory.Weapon || category == EEquipmentCategory.SubWeapon)
+            //{
+            //    for(int i = 0; i < items.Count; i++)
+            //    {
+            //        var categories = items[i].GetWeaponJob();
+            //        var list = categories.Where(x => x == character.CharacterJob).ToList();
+            //        if(list.Count == 0) 
+            //        {
+            //            items.RemoveAt(i);
+            //            i--;
+            //        }
+            //    }
+            //}
 
             for(int i = 0; i < items.Count; i++)
             {

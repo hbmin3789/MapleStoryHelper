@@ -69,6 +69,7 @@ namespace WzComparerR2.CharaSim
                 case GearPropType.incLUK: return "LUK : " + sign + value;
                 case GearPropType.incLUKr: return "LUK : " + sign + value + "%";
                 case GearPropType.incAllStat: return "올스탯: " + sign + value;
+                case GearPropType.statR: return "올스탯: " + sign + value + "%";
                 case GearPropType.incMHP: return "최대 HP : " + sign + value;
                 case GearPropType.incMHPr: return "최대 HP : " + sign + value + "%";
                 case GearPropType.incMMP: return "최대 MP : " + sign + value;
@@ -93,50 +94,96 @@ namespace WzComparerR2.CharaSim
                 case GearPropType.incDAMr: return "데미지 : " + sign + value + "%";
                 case GearPropType.incCr: return "크리티컬 확률 : " + sign + value + "%";
                 case GearPropType.knockback: return "직접 타격시 " + value + "%의 확률로 넉백";
-                case GearPropType.incPVPDamage: return "대난투 시 추가 공격력" + sign + " " + value;
-                //case GearPropType.incPQEXPr: return "파티퀘스트 경험치 " + value + "% 증가";
+                case GearPropType.incPVPDamage: return "대난투 시 추가 공격력 " + sign + " " + value;
+                case GearPropType.incPQEXPr: return "파티퀘스트 경험치 " + value + "% 증가";
+                case GearPropType.incEXPr: return "经验值增加" + value + "%";
                 case GearPropType.incBDR:
-                case GearPropType.bdR: return "보스 공격시 데미지 +" + value + "%";
+                case GearPropType.bdR: return "보스 몬스터 공격 시 데미지 +" + value + "%";
                 case GearPropType.incIMDR:
                 case GearPropType.imdR: return "몬스터 방어력 무시 : +" + value + "%";
                 //case GearPropType.limitBreak: return "최대 데미지 제한 증가 : +" + value;
-                //case GearPropType.reduceReq: return "착용 레벨 감소 : - " + value;
+                case GearPropType.reduceReq: return "착용 레벨 감소 : - " + value;
+                case GearPropType.nbdR: return "일반 몬스터 공격 시 데미지 : +" + value + "%";
 
-                //case GearPropType.only: return value == 0 ? null : "고유 아이템";
-                //case GearPropType.tradeBlock: return value == 0 ? null : "교환 불가";
-                //case GearPropType.equipTradeBlock: return value == 0 ? null : "장착시 교환 불가";
-                //case GearPropType.accountSharable: return value == 0 ? null : "계정 내 이동만 가능";
-                //case GearPropType.onlyEquip: return value == 0 ? null : "고유장착 아이템";
-                //case GearPropType.notExtend: return value == 0 ? null : "유효기간 연장 불가";
-                //case GearPropType.tradeAvailable:
-                //    switch (value)
-                //    {
-                //        case 1: return " #c카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
-                //        case 2: return " #c플래티넘 카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
-                //        default: return null;
-                //    }
-                //case GearPropType.accountShareTag:
-                //    switch (value)
-                //    {
-                //        case 1: return " #c쉐어 네임 텍을 사용하면 1회 같은 계정 내 캐릭터로 이동할 수 있습니다.#";
-                //        default: return null;
-                //    }
-                //case GearPropType.noPotential: return value == 0 ? null : "잠재능력 설정 불가";
-                //case GearPropType.fixedPotential: return value == 0 ? null : "잠재능력 재설정 불가";
-                //case GearPropType.blockGoldHammer: return value == 0 ? null : "황금망치 사용 불가";
-                //case GearPropType.superiorEqp: return value == 0 ? null : "아이템 강화 성공시 더욱 높은 효과를 받을 수 있습니다.";
-                //case GearPropType.nActivatedSocket: return value == 0 ? null : "#c可以镶嵌星岩#";
-                //case GearPropType.jokerToSetItem: return value == 0 ? null : " #c어떠한 셋트 아이템에도 포함되는 럭키 아이템!#";
+                case GearPropType.only: return value == 0 ? null : "고유 아이템";
+                case GearPropType.tradeBlock: return value == 0 ? null : "교환 불가";
+                case GearPropType.equipTradeBlock: return value == 0 ? null : "장착시 교환 불가";
+                case GearPropType.accountSharable: return value == 0 ? null : "월드 내 나의 캐릭터간 이동만 가능";
+                case GearPropType.sharableOnce: return value == 0 ? null : "계정 내 1회 이동 가능(이동 후 교환불가)";
+                case GearPropType.onlyEquip: return value == 0 ? null : "고유장착 아이템";
+                case GearPropType.notExtend: return value == 0 ? null : "유효기간 연장 불가";
+                case GearPropType.tradeAvailable:
+                    switch (value)
+                    {
+                        case 1: return "#c카르마의 가위 또는 실버 카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
+                        case 2: return "#c플래티넘 카르마의 가위를 사용하면 1회 교환이 가능하게 할 수 있습니다.#";
+                        default: return null;
+                    }
+                case GearPropType.accountShareTag:
+                    switch (value)
+                    {
+                        case 1: return "#c쉐어 네임 텍을 사용하면 1회 같은 계정 내 캐릭터로 이동할 수 있습니다.#";
+                        default: return null;
+                    }
+                case GearPropType.noPotential: return value == 0 ? null : "잠재능력 설정 불가";
+                case GearPropType.fixedPotential: return value == 0 ? null : "잠재능력 재설정 불가";
+                case GearPropType.superiorEqp: return value == 0 ? null : "아이템 강화 성공시 더욱 높은 효과를 받을 수 있습니다.";
+                case GearPropType.nActivatedSocket: return value == 0 ? null : "#c可以镶嵌星岩#";
+                case GearPropType.jokerToSetItem: return value == 0 ? null : "#c3개 이상 착용하고 있는 모든 세트 아이템에 포함되는 럭키 아이템!#";
+                case GearPropType.abilityTimeLimited: return value == 0 ? null : "기간 한정 능력치";
+                case GearPropType.blockGoldHammer: return value == 0 ? null : "황금망치 사용 불가";
+                case GearPropType.cantRepair: return value == 0 ? null : "수리 불가";
+                case GearPropType.colorvar: return value == 0 ? null : "#c该装备可通过染色颜料来变更颜色.#";
 
                 case GearPropType.incMHP_incMMP: return "최대 HP / 최대 MP : " + sign + value;
                 case GearPropType.incMHPr_incMMPr: return "최대 HP / 최대 MP : " + sign + value + "%";
-                case GearPropType.incPAD_incMAD: return "공격력 / 마력 : " + sign + value;
+                case GearPropType.incPAD_incMAD:
+                case GearPropType.incAD: return "공격력 / 마력 : " + sign + value;
                 case GearPropType.incPDD_incMDD: return "방어력 : " + sign + value;
                 //case GearPropType.incACC_incEVA: return "명중치 / 회피치：" + sign + value;
 
                 case GearPropType.incARC: return "ARC : " + sign + value;
                 default: return null;
             }
+        }
+
+
+        public static string GetGearPropDiffString(GearPropType propType, int value, int standardValue)
+        {
+            var propStr = GetGearPropString(propType, value);
+            if (value > standardValue)
+            {
+                string subfix = null;
+                switch (propType)
+                {
+                    case GearPropType.incSTR:
+                    case GearPropType.incDEX:
+                    case GearPropType.incINT:
+                    case GearPropType.incLUK:
+                    case GearPropType.incMHP:
+                    case GearPropType.incMMP:
+                    case GearPropType.incMDF:
+                    case GearPropType.incPAD:
+                    case GearPropType.incMAD:
+                    case GearPropType.incPDD:
+                    case GearPropType.incMDD:
+                    case GearPropType.incSpeed:
+                    case GearPropType.incJump:
+                    case GearPropType.incARC:
+                        subfix = $"({standardValue} #$+{value - standardValue}#)"; break;
+
+                    case GearPropType.bdR:
+                    case GearPropType.incBDR:
+                    case GearPropType.imdR:
+                    case GearPropType.incIMDR:
+                    case GearPropType.damR:
+                    case GearPropType.incDAMr:
+                    case GearPropType.statR:
+                        subfix = $"({standardValue}% #$+{value - standardValue}%#)"; break;
+                }
+                propStr = "#$" + propStr + "# " + subfix;
+            }
+            return propStr;
         }
 
         /// <summary>
@@ -174,7 +221,7 @@ namespace WzComparerR2.CharaSim
                 //case GearType.hair2: return "纸娃娃(发型)";
                 case GearType.faceAccessory: return "얼굴장식";
                 case GearType.eyeAccessory: return "눈장식";
-                case GearType.earrings: return "귀걸이";
+                case GearType.earrings: return "귀고리";
                 case GearType.pendant: return "펜던트";
                 case GearType.belt: return "벨트";
                 case GearType.medal: return "훈장";
@@ -197,8 +244,8 @@ namespace WzComparerR2.CharaSim
                 case GearType.ring: return "반지";
                 case GearType.shield: return "방패";
                 case GearType.shoes: return "신발";
-                case GearType.shiningRod: return "샤이닝로드";
-                case GearType.soulShooter: return "소울슈터";
+                case GearType.shiningRod: return "샤이닝 로드";
+                case GearType.soulShooter: return "소울 슈터";
                 case GearType.ohSword: return "한손검";
                 case GearType.ohAxe: return "한손도끼";
                 case GearType.ohBlunt: return "한손둔기";
@@ -210,7 +257,7 @@ namespace WzComparerR2.CharaSim
                 case GearType.orb: return "오브";
                 case GearType.novaMarrow: return "용의 정수";
                 case GearType.soulBangle: return "소울링";
-                case GearType.mailin: return "麦林";
+                case GearType.mailin: return "매그넘";
                 case GearType.cane: return "케인";
                 case GearType.wand: return "완드";
                 case GearType.staff: return "스태프";
@@ -223,9 +270,9 @@ namespace WzComparerR2.CharaSim
                 case GearType.crossbow: return "석궁";
                 case GearType.throwingGlove: return "아대";
                 case GearType.knuckle: return "너클";
-                case GearType.gun: return "총";
+                case GearType.gun: return "건";
                 case GearType.android: return "안드로이드";
-                case GearType.machineHeart: return "기계심장";
+                case GearType.machineHeart: return "기계 심장";
                 case GearType.pickaxe: return "채광 도구";
                 case GearType.shovel: return "약초채집 도구";
                 case GearType.pocket: return "포켓 아이템";
@@ -236,7 +283,7 @@ namespace WzComparerR2.CharaSim
                 case GearType.soulShield: return "소울실드";
                 case GearType.demonShield: return "포스실드";
                 case GearType.totem: return "图腾";
-                case GearType.petEquip: return "펫장비";
+                //case GearType.petEquip: return "펫장비";
                 case GearType.taming:
                 case GearType.taming2:
                 case GearType.taming3: 
@@ -260,16 +307,17 @@ namespace WzComparerR2.CharaSim
                 case GearType.nightLordPoutch: return "부적";
                 case GearType.viperWristband: return "리스트밴드";
                 case GearType.captainSight: return "조준기";
-                case GearType.connonGunPowder: 
-                case GearType.connonGunPowder2: return "화약통";
+                case GearType.cannonGunPowder: 
+                case GearType.cannonGunPowder2: return "화약통";
                 case GearType.aranPendulum: return "무게추";
                 case GearType.evanPaper: return "문서";
                 case GearType.battlemageBall: return "마법구슬";
                 case GearType.wildHunterArrowHead: return "화살촉";
                 case GearType.cygnusGem: return "보석";
-                case GearType.powerSource: return "파워소스";
+                case GearType.controller: return "컨트롤러";
                 case GearType.foxPearl: return "여우 구슬";
                 case GearType.chess: return "체스피스";
+                case GearType.powerSource: return "파워소스";
 
                 case GearType.energySword: return "에너지소드";
                 case GearType.desperado: return "데스페라도";
@@ -281,6 +329,22 @@ namespace WzComparerR2.CharaSim
 
                 case GearType.GauntletBuster: return "건틀렛 리볼버";
                 case GearType.ExplosivePill: return "장약";
+
+                case GearType.chain2: return "체인";
+                case GearType.magicGauntlet: return "매직 건틀렛";
+                case GearType.transmitter: return "무기 전송장치";
+                case GearType.magicWing: return "매직윙";
+                case GearType.pathOfAbyss: return "패스 오브 어비스";
+
+                case GearType.relic: return "렐릭";
+                case GearType.ancientBow: return "에인션트 보우";
+
+                case GearType.handFan: return "扇子";
+                case GearType.fanTassel: return "扇坠";
+
+                case GearType.tuner: return "튜너";
+                case GearType.bracelet: return "브레이슬릿";
+
                 default: return null;
             }
         }
@@ -326,19 +390,7 @@ namespace WzComparerR2.CharaSim
         {
             switch (type)
             {
-                case GearType.katara: return "듀얼블레이드 직업군 착용 가능";
-                case GearType.demonShield: return "데몬 직업군 착용 가능";
-                case GearType.magicArrow: return "메르세데스 착용가능";
-                case GearType.card: return "팬텀 착용 가능";
-                case GearType.box: return "龙的传人可以装备";
-                case GearType.orb:
-                case GearType.shiningRod: return "루미너스 착용 가능";
-                case GearType.novaMarrow: return "카이저 착용 가능";
-                case GearType.soulBangle:
-                case GearType.soulShooter: return "엔젤릭 버스터 착용 가능";
-                case GearType.soulShield: return "미하일 착용 가능";
-                case GearType.mailin: return "机械师可以装备";
-
+                //0xxx
                 case GearType.heroMedal: return "히어로 직업군 착용 가능";
                 case GearType.rosario: return "팔라딘 직업군 착용 가능";
                 case GearType.chain: return "다크나이트 직업군 착용 가능";
@@ -349,37 +401,71 @@ namespace WzComparerR2.CharaSim
                 case GearType.crossBowThimble: return "신궁 직업군 착용 가능";
                 case GearType.shadowerSheath: return "섀도어 직업군 착용 가능";
                 case GearType.nightLordPoutch: return "나이트로드 직업군 착용 가능";
-
+                case GearType.katara: return "듀얼블레이드 직업군 착용 가능";
                 case GearType.viperWristband: return "바이퍼 직업군 착용 가능";
                 case GearType.captainSight: return "캡틴 직업군 착용 가능";
-                case GearType.connonGunPowder: 
-                case GearType.connonGunPowder2: return "캐논 슈터 직업군 착용 가능";
-                case GearType.aranPendulum: return "아란 직업군 착용 가능";
-                case GearType.evanPaper: return "에반 직업군 착용 가능";
+                case GearType.cannonGunPowder: 
+                case GearType.cannonGunPowder2: return "캐논 슈터 직업군 착용 가능";
+                case GearType.box:
+                case GearType.boxingClaw: return "龙的传人可以装备";
+                case GearType.relic: return "패스파인더 직업군 착용 가능";
+
+                //1xxx
+                case GearType.cygnusGem: return "시그너스 기사단 착용 가능";
+
+                //2xxx
+                case GearType.aranPendulum: return GetExtraJobReqString(21);
+                case GearType.evanPaper: return GetExtraJobReqString(22);
+                case GearType.magicArrow: return GetExtraJobReqString(23);
+                case GearType.card: return GetExtraJobReqString(24);
+                case GearType.foxPearl: return GetExtraJobReqString(25);
+                case GearType.orb:
+                case GearType.shiningRod: return GetExtraJobReqString(27);
+
+                //3xxx
+                case GearType.demonShield: return GetExtraJobReqString(31);
+                case GearType.desperado: return "데몬 어벤져 착용 가능";
                 case GearType.battlemageBall: return "배틀메이지 직업군 착용 가능";
                 case GearType.wildHunterArrowHead: return "와일드헌터 직업군 착용 가능";
-                case GearType.cygnusGem: return "시그너스 기사단 착용 가능";
+                case GearType.mailin: return "메카닉 착용 가능";
+                case GearType.controller:
                 case GearType.powerSource:
-                case GearType.energySword: return "제논 착용 가능";
-                case GearType.desperado: return "데몬 어벤져 착용 가능";
-                case GearType.swordZB:
-                case GearType.swordZL: return "제로 착용 가능";
-                case GearType.whistle:
-                case GearType.magicStick: return "林之灵可以装备";
+                case GearType.energySword: return GetExtraJobReqString(36);
+                case GearType.GauntletBuster:
+                case GearType.ExplosivePill: return GetExtraJobReqString(37);
 
-                case GearType.foxPearl: return "은월 착용 가능";
-                case GearType.boxingClaw: return "龙的传人可以装备";
-
+                //4xxx
                 case GearType.katana:
                 case GearType.katana2: return "剑豪可以装备";
                 case GearType.fan: return "阴阳师可以装备";
 
+                //5xxx
+                case GearType.soulShield: return "미하일 착용 가능";
+
+                //6xxx
+                case GearType.novaMarrow: return GetExtraJobReqString(61);
+                //case GearType.chain2:
+                case GearType.transmitter: return GetExtraJobReqString(64);
+                case GearType.soulBangle:
+                case GearType.soulShooter: return GetExtraJobReqString(65);
+
+                //10xxx
+                case GearType.swordZB:
+                case GearType.swordZL: return GetExtraJobReqString(101);
+
+                case GearType.whistle:
+                case GearType.magicStick: return GetExtraJobReqString(112);
+
                 case GearType.espLimiter:
-                case GearType.chess: return "키네시스 착용 가능";
+                case GearType.chess: return GetExtraJobReqString(142);
 
-                case GearType.GauntletBuster:
-                case GearType.ExplosivePill: return "블래스터 착용 가능";
+                case GearType.tuner:
+                case GearType.bracelet: return GetExtraJobReqString(151);
+                case GearType.magicGauntlet:
+                case GearType.magicWing: return GetExtraJobReqString(152);
 
+                case GearType.pathOfAbyss: return GetExtraJobReqString(155);
+                case GearType.fanTassel: return GetExtraJobReqString(164);
                 default: return null;
             }
         }
@@ -393,33 +479,57 @@ namespace WzComparerR2.CharaSim
         {
             switch (specJob)
             {
-                case 61: return "카이저 착용 가능";
-                case 65: return "엔젤릭 버스터 착용 가능";
+                case 21: return "아란 직업군 착용 가능";
+                case 22: return "에반 직업군 착용 가능";
+                case 23: return "메르세데스 착용가능";
+                case 24: return "팬텀 착용 가능";
+                case 25: return "은월 착용 가능";
+                case 27: return "루미너스 착용 가능";
+                case 31: return "데몬 직업군 착용 가능";
                 case 36: return "제논 착용 가능";
+                case 37: return "블래스터 착용 가능";
+                case 41: return "剑豪可以装备";
+                case 42: return "阴阳师可以装备";
+                case 51: return "米哈尔可以装备";
+                case 61: return "카이저 착용 가능";
+                case 64: return "카데나 직업군 착용 가능";
+                case 65: return "엔젤릭 버스터 착용 가능";
+                case 101: return "제로 착용 가능";
+                case 112: return "林之灵可以装备";
+                case 142: return "키네시스 착용 가능";
+                case 151: return "아델 직업군 착용 가능";
+                case 152: return "일리움 착용 가능";
+                case 155: return "아크 착용 가능";
+                case 164: return "호영 직업군 착용 가능";
                 default: return null;
             }
         }
 
         public static string GetItemPropString(ItemPropType propType, int value)
         {
-            //switch (propType)
-            //{
-            //    case ItemPropType.tradeBlock:
-            //        return GetGearPropString(GearPropType.tradeBlock, value);
-            //    case ItemPropType.tradeAvailable:
-            //        return GetGearPropString(GearPropType.tradeAvailable, value);
-            //    case ItemPropType.only:
-            //        return GetGearPropString(GearPropType.only, value);
-            //    case ItemPropType.accountSharable:
-            //        return GetGearPropString(GearPropType.accountSharable, value);
-            //    case ItemPropType.quest:
-            //        return value == 0 ? null : "퀘스트 아이템";
-            //    case ItemPropType.pquest:
-            //        return value == 0 ? null : "파티 퀘스트 아이템";
-            //    default:
-            //        return null;
-            //}
-            return "";
+            switch (propType)
+            {
+                case ItemPropType.tradeBlock:
+                    return GetGearPropString(GearPropType.tradeBlock, value);
+                case ItemPropType.useTradeBlock:
+                    return value == 0 ? null : "사용시 교환 불가";
+                case ItemPropType.tradeAvailable:
+                    return GetGearPropString(GearPropType.tradeAvailable, value);
+                case ItemPropType.only:
+                    return GetGearPropString(GearPropType.only, value);
+                case ItemPropType.accountSharable:
+                    return GetGearPropString(GearPropType.accountSharable, value);
+                case ItemPropType.quest:
+                    return value == 0 ? null : "퀘스트 아이템";
+                case ItemPropType.pquest:
+                    return value == 0 ? null : "파티 퀘스트 아이템";
+                case ItemPropType.multiPet:
+                    return value == 0 ? "일반펫 (다른 일반펫과 중복 사용불가)" : "멀티펫 (다른 펫과 최대 3개 중복 사용가능)";
+                case ItemPropType.permanent:
+                    return value == 0 ? null : "마법의 시간이 끝나지 않는 미라클 펫입니다.";
+                default:
+                    return null;
+            }
         }
 
         public static string GetSkillReqAmount(int skillID, int reqAmount)
@@ -459,13 +569,17 @@ namespace WzComparerR2.CharaSim
                 case 230: return "클레릭";
                 case 231: return "프리스트";
                 case 232: return "비숍";
-                case 300: return "아쳐";
+                case 300: return "아처";
+                case 301: return "아처";
                 case 310: return "헌터";
                 case 311: return "레인저";
                 case 312: return "보우마스터";
                 case 320: return "사수";
                 case 321: return "저격수";
                 case 322: return "신궁";
+                case 330: return "에인션트 아처";
+                case 331: return "체이서";
+                case 332: return "패스파인더";
                 case 400: return "로그";
                 case 410: return "어쌔신";
                 case 411: return "허밋";
@@ -515,6 +629,9 @@ namespace WzComparerR2.CharaSim
                 case 2000: return "레전드";
                 case 2001: return "에반";
                 case 2002: return "메르세데스";
+                case 2003: return "팬텀";
+                case 2004: return "루미너스";
+                case 2005: return "은월";
                 case 2100: return "아란(1차)";
                 case 2110: return "아란(2차)";
                 case 2111: return "아란(3차)";
@@ -599,11 +716,16 @@ namespace WzComparerR2.CharaSim
 
 
                 case 6000: return "카이저";
+                case 6001: return "엔젤릭버스터";
+                case 6002: return "카데나";
                 case 6100: return "카이저(1차)";
                 case 6110: return "카이저(2차)";
                 case 6111: return "카이저(3차)";
                 case 6112: return "카이저(4차)";
-                case 6001: return "엔젤릭버스터";
+                case 6400: return "카데나(1차)";
+                case 6410: return "카데나(2차)";
+                case 6411: return "카데나(3차)";
+                case 6412: return "카데나(4차)";
                 case 6500: return "엔젤릭버스터(1차)";
                 case 6510: return "엔젤릭버스터(2차)";
                 case 6511: return "엔젤릭버스터(3차)";
@@ -621,11 +743,36 @@ namespace WzComparerR2.CharaSim
                 case 11211: return "林之灵(3次)";
                 case 11212: return "林之灵(4次)";
 
+                case 13000: return "핑크빈";
+                case 13100: return "핑크빈";
+
                 case 14000: return "키네시스";
                 case 14200: return "키네시스(1차)";
                 case 14210: return "키네시스(2차)";
                 case 14211: return "키네시스(3차)";
                 case 14212: return "키네시스(4차)";
+
+                case 15000: return "일리움";
+                case 15001: return "아크";
+                case 15002: return "아델";
+                case 15100: return "아델(1차)";
+                case 15110: return "아델(2차)";
+                case 15111: return "아델(3차)";
+                case 15112: return "아델(4차)";
+                case 15200: return "일리움(1차)";
+                case 15210: return "일리움(2차)";
+                case 15211: return "일리움(3차)";
+                case 15212: return "일리움(4차)";
+                case 15500: return "아크(1차)";
+                case 15510: return "아크(2차)";
+                case 15511: return "아크(3차)";
+                case 15512: return "아크(4차)";
+
+                case 16000: return "호영";
+                case 16400: return "호영(1차)";
+                case 16410: return "호영(2차)";
+                case 16411: return "호영(3차)";
+                case 16412: return "호영(4차)";
             }
             return null;
         }

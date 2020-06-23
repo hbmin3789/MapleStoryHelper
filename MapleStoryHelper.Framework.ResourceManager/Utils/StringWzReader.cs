@@ -51,6 +51,38 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             List<string> itemCodes, itemNames;
             (itemCodes, itemNames) = GetEquipmentItemCodes(node, keyWord);
 
+            EventHandler<int> DeleteItemAt = (o, i) => 
+            {
+                itemCodes.RemoveAt(i);
+                itemNames.RemoveAt(i);
+            };
+
+            for(int i = 0; i < itemCodes.Count; i++)
+            {
+                GearType type = GetGearTypeByCode(itemCodes[i]);
+                if(category == EEquipmentCategory.Weapon)
+                {
+                    if((int)type < 100 || (int)type > 100000)
+                    {
+                        DeleteItemAt(this, i);
+                        i--;
+                    }
+                }
+                else if(category == EEquipmentCategory.SubWeapon)
+                {
+                    if((int)type < 100000)
+                    {
+                        DeleteItemAt(this, i);
+                        i--;
+                    }
+                }
+                else if(type.ToEquipmentCategory() != category)
+                {
+                    DeleteItemAt(this, i);
+                    i--;
+                }
+            }
+
             retval = GetEquipmentItems(category, itemCodes);
 
             for(int i = 0; i < retval.Count; i++)
@@ -59,6 +91,12 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             }
 
             return retval;
+        }
+
+        private GearType GetGearTypeByCode(string code)
+        {
+            int Code = Convert.ToInt32(code.Replace(".img", ""));
+            return Gear.GetGearType(Code);
         }
 
         private Wz_Node GetEquipCategoryNode(EEquipmentCategory category)
@@ -78,6 +116,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
         {
             List<string> retval = new List<string>();
             List<string> retvalName = new List<string>();
+            string additionalCode = "0";
+            
 
             for(int i = 0; i < EquipNode.Nodes.Count; i++)
             {
@@ -86,7 +126,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                 itemName = CurNode.FindNodeByPath("name")?.Value.ToString();
                 if (itemName != null && itemName.Contains(keyWord))
                 {
-                    string itemCode = "0" + CurNode.Text + ".img";
+                    string itemCode = additionalCode + CurNode.Text + ".img";
                     retval.Add(itemCode);
                     retvalName.Add(itemName);
                 }
@@ -112,9 +152,9 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
                         continue;
                     }
 
-                    var imageNode = CategoryNode.FindNodeByPath(itemCodes[i]);
+                    var node = CategoryNode.FindNodeByPath(itemCodes[i]);
                     var gear = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-                    EquipmentItem newItem = gear.ToEquipmentItem(imageNode);
+                    EquipmentItem newItem = gear.ToEquipmentItem(node);
 
                     if(newItem == null)
                     {
@@ -127,8 +167,6 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
                 }
             }
-            
-
 
             return retval;
         }

@@ -20,6 +20,7 @@ namespace WzComparerR2.CharaSim
 
         public GearGrade Grade { get; set; }
         public GearGrade AdditionGrade { get; set; }
+
         public GearType type;
         public GearState State { get; set; }
 
@@ -43,11 +44,11 @@ namespace WzComparerR2.CharaSim
         public Dictionary<GearPropType, int> Props { get; private set; }
         public Dictionary<GearPropType, string> PropsString { get; private set; }
         public Dictionary<GearPropType, float> VariableStat { get; private set; }
-        
+
 
         public bool Epic
         {
-            get 
+            get
             {
                 //return GetBooleanValue(GearPropType.epicItem);
                 return true;
@@ -56,7 +57,7 @@ namespace WzComparerR2.CharaSim
 
         public bool TimeLimited
         {
-            get 
+            get
             {
                 //return GetBooleanValue(GearPropType.timeLimited);
                 return true;
@@ -65,7 +66,7 @@ namespace WzComparerR2.CharaSim
 
         public bool Cash
         {
-            get 
+            get
             {
                 //return GetBooleanValue(GearPropType.cash); 
                 return true;
@@ -92,7 +93,7 @@ namespace WzComparerR2.CharaSim
             int reqLevel;
             this.Props.TryGetValue(GearPropType.reqLevel, out reqLevel);
             int[] data = null;
-            foreach(int[] item in starData)
+            foreach (int[] item in starData)
             {
                 if (reqLevel >= item[0])
                 {
@@ -113,9 +114,9 @@ namespace WzComparerR2.CharaSim
         }
 
         private static int[][] starData = new int[][] {
-            new[]{ 0, 5, 3 }, 
-            new[]{ 95, 8, 5 }, 
-            new[]{ 110, 10, 8 }, 
+            new[]{ 0, 5, 3 },
+            new[]{ 95, 8, 5 },
+            new[]{ 110, 10, 8 },
             new[]{ 120, 15, 10 },
             new[]{ 130, 20, 12 },
             new[]{ 140, 25, 15 },
@@ -166,6 +167,22 @@ namespace WzComparerR2.CharaSim
                         return true;
                     }
                     return false;
+            }
+        }
+
+        public static bool IsV5SupportPropType(GearPropType type)
+        {
+            switch (type)
+            {
+                case GearPropType.incMDD:
+                case GearPropType.incMDDr:
+                case GearPropType.incACC:
+                case GearPropType.incACCr:
+                case GearPropType.incEVA:
+                case GearPropType.incEVAr:
+                    return false;
+                default:
+                    return true;
             }
         }
 
@@ -272,7 +289,7 @@ namespace WzComparerR2.CharaSim
                         return (GearType)(code / 100 * 10);
                 }
             }
-            return (GearType)(code / 1000);
+            return (GearType)(code / 10000);
         }
 
         public static int GetGender(int code)
@@ -347,7 +364,7 @@ namespace WzComparerR2.CharaSim
                             break;
 
                         case "option": //附加潜能信息
-                            Wz_Node itemWz = findNode !=null? findNode("Item\\ItemOption.img"):null;
+                            Wz_Node itemWz = findNode != null ? findNode("Item\\ItemOption.img") : null;
                             if (itemWz == null)
                                 break;
                             int optIdx = 0;
@@ -494,7 +511,7 @@ namespace WzComparerR2.CharaSim
                                 {
                                     try
                                     {
-                                        if(subNode.Value != null)
+                                        if (subNode.Value != null)
                                         {
                                             gear.Props.Add(type, Convert.ToInt32(subNode.Value));
                                             gear.PropsString.Add(type, subNode.Value.ToString());
@@ -506,7 +523,7 @@ namespace WzComparerR2.CharaSim
                                     }
                                     finally
                                     {
-                                        
+
                                     }
                                 }
                             }

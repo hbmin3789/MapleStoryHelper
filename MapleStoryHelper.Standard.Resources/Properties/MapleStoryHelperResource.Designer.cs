@@ -663,245 +663,245 @@ namespace MapleStoryHelper.Standard.Resources.Properties {
 
         #region Clothes
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 나이트슈트", "01053063", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static byte[] Item_ArcaneShadeKnightSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 나이트슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 나이트슈트", "01053063", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static byte[] Item_ArcaneShadeKnightSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("아케인셰이드 나이트슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 나이트슈트", "01053063", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static object Xml_ArcaneShadeKnightSuit
-        {
-            get => ResourceManager.GetObject("01053063", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 나이트슈트", "01053063", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static object Xml_ArcaneShadeKnightSuit
+        //{
+        //    get => ResourceManager.GetObject("01053063", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 메이지슈트", "01053064", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static byte[] Item_ArcaneShadeMagicianSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 메이지슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 메이지슈트", "01053064", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static byte[] Item_ArcaneShadeMagicianSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("아케인셰이드 메이지슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 메이지슈트", "01053064", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static object Xml_ArcaneShadeMagicianSuit
-        {
-            get => ResourceManager.GetObject("01053064", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 메이지슈트", "01053064", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static object Xml_ArcaneShadeMagicianSuit
+        //{
+        //    get => ResourceManager.GetObject("01053064", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 아처슈트", "01053065", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static byte[] Item_ArcaneShadeArcherSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 아처슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 아처슈트", "01053065", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static byte[] Item_ArcaneShadeArcherSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("아케인셰이드 아처슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 아처슈트", "01053065", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static object Xml_ArcaneShadeArcherSuit
-        {
-            get => ResourceManager.GetObject("01053065", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 아처슈트", "01053065", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static object Xml_ArcaneShadeArcherSuit
+        //{
+        //    get => ResourceManager.GetObject("01053065", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 시프슈트", "01053066", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static byte[] Item_ArcaneShadeThiefSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 시프슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 시프슈트", "01053066", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static byte[] Item_ArcaneShadeThiefSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("아케인셰이드 시프슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 시프슈트", "01053066", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static object Xml_ArcaneShadeThiefSuit
-        {
-            get => ResourceManager.GetObject("01053066", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 시프슈트", "01053066", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static object Xml_ArcaneShadeThiefSuit
+        //{
+        //    get => ResourceManager.GetObject("01053066", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 파이렛슈트", "01053067", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static byte[] Item_ArcaneShadePirateSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("아케인셰이드 파이렛슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 파이렛슈트", "01053067", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static byte[] Item_ArcaneShadePirateSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("아케인셰이드 파이렛슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("아케인셰이드 파이렛슈트", "01053067", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static object Xml_ArcaneShadePirateSuit
-        {
-            get => ResourceManager.GetObject("01053067", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("아케인셰이드 파이렛슈트", "01053067", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static object Xml_ArcaneShadePirateSuit
+        //{
+        //    get => ResourceManager.GetObject("01053067", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 나이트슈트", "01052882", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static byte[] Item_AbsolabsKnightSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("앱솔랩스 나이트슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 나이트슈트", "01052882", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static byte[] Item_AbsolabsKnightSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("앱솔랩스 나이트슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 나이트슈트", "01052882", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static object Xml_AbsolabsKnightSuit
-        {
-            get => ResourceManager.GetObject("01052882", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 나이트슈트", "01052882", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static object Xml_AbsolabsKnightSuit
+        //{
+        //    get => ResourceManager.GetObject("01052882", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 메이지슈트", "01052887", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static byte[] Item_AbsolabsMagicianSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("앱솔랩스 메이지슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 메이지슈트", "01052887", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static byte[] Item_AbsolabsMagicianSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("앱솔랩스 메이지슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 메이지슈트", "01052887", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static object Xml_AbsolabsMagicianSuit
-        {
-            get => ResourceManager.GetObject("01052887", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 메이지슈트", "01052887", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static object Xml_AbsolabsMagicianSuit
+        //{
+        //    get => ResourceManager.GetObject("01052887", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 아처슈트", "01052888", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static byte[] Item_AbsolabsArcherSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("앱솔랩스 아처슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 아처슈트", "01052888", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static byte[] Item_AbsolabsArcherSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("앱솔랩스 아처슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 아처슈트", "01052888", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static object Xml_AbsolabsArcherSuit
-        {
-            get => ResourceManager.GetObject("01052888", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 아처슈트", "01052888", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static object Xml_AbsolabsArcherSuit
+        //{
+        //    get => ResourceManager.GetObject("01052888", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 시프슈트", "01052889", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static byte[] Item_AbsolabsThiefSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("앱솔랩스 시프슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 시프슈트", "01052889", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static byte[] Item_AbsolabsThiefSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("앱솔랩스 시프슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 시프슈트", "01052889", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static object Xml_AbsolabsThiefSuit
-        {
-            get => ResourceManager.GetObject("01052889", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 시프슈트", "01052889", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static object Xml_AbsolabsThiefSuit
+        //{
+        //    get => ResourceManager.GetObject("01052889", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈트", "01052890", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static byte[] Item_AbsolabsPirateSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("앱솔랩스 파이렛슈트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈트", "01052890", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static byte[] Item_AbsolabsPirateSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("앱솔랩스 파이렛슈트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈트", "01052890", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static object Xml_AbsolabsPirateSuit
-        {
-            get => ResourceManager.GetObject("01052890", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("앱솔랩스 파이렛슈트", "01052890", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static object Xml_AbsolabsPirateSuit
+        //{
+        //    get => ResourceManager.GetObject("01052890", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 워리어아머", "01042392", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static byte[] Item_EagleEyeKnightSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("이글아이 워리어아머", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 워리어아머", "01042392", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static byte[] Item_EagleEyeKnightSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("이글아이 워리어아머", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 워리어아머", "01042392", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
-        public static object Xml_EagleEyeKnightSuit
-        {
-            get => ResourceManager.GetObject("01042392", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 워리어아머", "01042392", EEquipmentCategory.Clothes, EJobCategory.Worrior, 0)]
+        //public static object Xml_EagleEyeKnightSuit
+        //{
+        //    get => ResourceManager.GetObject("01042392", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 던위치로브", "01042393", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static byte[] Item_EagleEyeMagicianSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("이글아이 던위치로브", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 던위치로브", "01042393", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static byte[] Item_EagleEyeMagicianSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("이글아이 던위치로브", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 던위치로브", "01042393", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
-        public static object Xml_EagleEyeMagicianSuit
-        {
-            get => ResourceManager.GetObject("01042393", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 던위치로브", "01042393", EEquipmentCategory.Clothes, EJobCategory.Magician, 0)]
+        //public static object Xml_EagleEyeMagicianSuit
+        //{
+        //    get => ResourceManager.GetObject("01042393", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 레인저후드", "01042394", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static byte[] Item_EagleEyeArcherSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("이글아이 레인저후드", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 레인저후드", "01042394", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static byte[] Item_EagleEyeArcherSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("이글아이 레인저후드", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 레인저후드", "01042394", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
-        public static object Xml_EagleEyeArcherSuit
-        {
-            get => ResourceManager.GetObject("01042394", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 레인저후드", "01042394", EEquipmentCategory.Clothes, EJobCategory.Archer, 0)]
+        //public static object Xml_EagleEyeArcherSuit
+        //{
+        //    get => ResourceManager.GetObject("01042394", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 어새신셔츠", "01042395", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static byte[] Item_EagleEyeThiefSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("이글아이 어새신셔츠", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 어새신셔츠", "01042395", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static byte[] Item_EagleEyeThiefSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("이글아이 어새신셔츠", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 어새신셔츠", "01042395", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
-        public static object Xml_EagleEyeThiefSuit
-        {
-            get => ResourceManager.GetObject("01042395", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 어새신셔츠", "01042395", EEquipmentCategory.Clothes, EJobCategory.Thief, 0)]
+        //public static object Xml_EagleEyeThiefSuit
+        //{
+        //    get => ResourceManager.GetObject("01042395", resourceCulture);
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 원더러코트", "01042396", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static byte[] Item_EagleEyePirateSuit
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("이글아이 원더러코트", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 원더러코트", "01042396", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static byte[] Item_EagleEyePirateSuit
+        //{
+        //    get
+        //    {
+        //        object obj = ResourceManager.GetObject("이글아이 원더러코트", resourceCulture);
+        //        return ((byte[])(obj));
+        //    }
+        //}
 
-        [EquipmentResourceInfoAttribute("이글아이 원더러코트", "01042396", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
-        public static object Xml_EagleEyePirateSuit
-        {
-            get => ResourceManager.GetObject("01042396", resourceCulture);
-        }
+        //[EquipmentResourceInfoAttribute("이글아이 원더러코트", "01042396", EEquipmentCategory.Clothes, EJobCategory.Pirate, 0)]
+        //public static object Xml_EagleEyePirateSuit
+        //{
+        //    get => ResourceManager.GetObject("01042396", resourceCulture);
+        //}
 
         #endregion
 

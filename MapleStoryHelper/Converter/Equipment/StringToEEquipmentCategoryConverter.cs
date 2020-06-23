@@ -40,7 +40,7 @@ namespace MapleStoryHelper.Converter.Equipment
                     return EEquipmentCategory.Eye;
                     
                 case "상의":
-                    return EEquipmentCategory.Clothes;
+                    return EEquipmentCategory.Coat;
                     
                 case "하의":
                     return EEquipmentCategory.Pants;
@@ -55,7 +55,7 @@ namespace MapleStoryHelper.Converter.Equipment
                     return EEquipmentCategory.Shoulder;
                     
                 case "장갑":
-                    return EEquipmentCategory.Gloves;
+                    return EEquipmentCategory.Glove;
                 case "안드":
                     return EEquipmentCategory.Android;
                 case "엠블럼":

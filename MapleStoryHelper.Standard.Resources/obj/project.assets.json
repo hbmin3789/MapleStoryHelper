@@ -459,7 +459,6 @@
       "MapleStoryHelper.Standard.Item >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Prism.Core >= 7.2.0.1422",
-      "WzComparerR2.Common >= 1.0.0",
       "WzComparerR2.WzLib >= 1.0.0"
     ]
   },
@@ -495,9 +494,6 @@
           "projectReferences": {
             "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
               "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
-            },
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
             },
             "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
               "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"

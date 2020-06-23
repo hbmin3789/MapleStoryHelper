@@ -82,7 +82,7 @@
       <Name>MapleStoryHelper.Standard</Name>
     </ProjectReference>
     <ProjectReference Include="..\WzComparerR2.Common\WzComparerR2.Common.csproj">
-      <Project>{3F93E5E8-79DC-45BD-B762-D5CA6314B9A4}</Project>
+      <Project>{C5191A75-EB54-4B02-8D04-966E8D33D8F0}</Project>
       <Name>WzComparerR2.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\WzComparerR2.WzLib\WzComparerR2.WzLib.csproj">

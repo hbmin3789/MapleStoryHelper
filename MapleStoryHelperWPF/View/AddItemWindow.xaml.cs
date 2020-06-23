@@ -24,6 +24,7 @@ namespace MapleStoryHelperWPF.View
     {
         private Character character;
         EEquipmentCategory EquipCategory;
+        ECharacterEquipmentCategory CharacterEquipCategory;
 
         public AddItemWindow()
         {
@@ -38,6 +39,7 @@ namespace MapleStoryHelperWPF.View
 
         public void SetItemCategory(ECharacterEquipmentCategory category)
         {
+            CharacterEquipCategory = category;
             string StringTemp = category.ToString().Replace("1", "").Replace("2", "").Replace("3", "").Replace("4", "");
 
             var values = Enum.GetValues(typeof(EEquipmentCategory));
@@ -52,17 +54,36 @@ namespace MapleStoryHelperWPF.View
                 }
             }
 
+            if (category == ECharacterEquipmentCategory.Clothes)
+            {
+                categoryTemp = EEquipmentCategory.Coat;
+            }
+
             EquipCategory = categoryTemp;
         }
 
         public void SetCharacter(Character ch)
         {
             this.character = ch;
+            if(ch.CharacterEquipment.EquipList[CharacterEquipCategory] != null)
+            {
+                ctrlEquipmentInfo.DataContext = ch.CharacterEquipment.EquipList[CharacterEquipCategory];
+                this.DataContext = ch.CharacterEquipment.EquipList[CharacterEquipCategory];
+            }
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            ctrlEquipmentInfo.SetEquipmentList(App.viewModel.FindItemByName(this.character, EquipCategory, tbKeyWord.Text));
+            var list = App.viewModel.FindItemByName(this.character, EquipCategory, tbKeyWord.Text);
+            if(EquipCategory == EEquipmentCategory.Coat)
+            {
+                var list2 = App.viewModel.FindItemByName(this.character, EEquipmentCategory.Longcoat, tbKeyWord.Text);
+                for(int i = 0; i < list2.Count; i++)
+                {
+                    list.Add(list2[i]);
+                }
+            }
+            ctrlEquipmentInfo.SetEquipmentList(list);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)

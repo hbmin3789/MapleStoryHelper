@@ -23,7 +23,7 @@ namespace MapleStoryHelper.Standard.Character
         Shoes,
         Ear,
         Shoulder,
-        Gloves,
+        Glove,
         Android,
         Emblem,
         Badge,

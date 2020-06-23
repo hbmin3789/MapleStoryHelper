@@ -10,14 +10,18 @@ namespace WzComparerR2.CharaSim
     {
         public SetItem()
         {
-            itemIDs = new SetItemIDList();
-            effects = new Dictionary<int, SetItemEffect>();
+            ItemIDs = new SetItemIDList();
+            Effects = new Dictionary<int, SetItemEffect>();
         }
-        public int completeCount;
+
+        public int SetItemID { get; set; }
+        public int CompleteCount { get; set; }
         public int currentCount;
-        public SetItemIDList itemIDs;
-        public string setItemName;
-        public Dictionary<int, SetItemEffect> effects;
+        public bool Parts { get; set; }
+        public bool ExpandToolTip { get; set; }
+        public SetItemIDList ItemIDs { get; private set; }
+        public string SetItemName { get; set; }
+        public Dictionary<int, SetItemEffect> Effects { get; private set; }
 
         public static SetItem CreateFromNode(Wz_Node setItemNode, Wz_Node optionNode)
         {
@@ -25,6 +29,11 @@ namespace WzComparerR2.CharaSim
                 return null;
 
             SetItem setItem = new SetItem();
+            int setItemID;
+            if (int.TryParse(setItemNode.Text, out setItemID))
+            {
+                setItem.SetItemID = setItemID;
+            }
 
             Dictionary<string, string> desc = new Dictionary<string, string>();
 
@@ -33,10 +42,16 @@ namespace WzComparerR2.CharaSim
                 switch (subNode.Text)
                 {
                     case "setItemName":
-                        setItem.setItemName = Convert.ToString(subNode.Value);
+                        setItem.SetItemName = Convert.ToString(subNode.Value);
                         break;
                     case "completeCount":
-                        setItem.completeCount = Convert.ToInt32(subNode.Value);
+                        setItem.CompleteCount = Convert.ToInt32(subNode.Value);
+                        break;
+                    case "parts":
+                        setItem.Parts = subNode.GetValue<int>() != 0;
+                        break;
+                    case "expandToolTip":
+                        setItem.ExpandToolTip = subNode.GetValue<int>() != 0;
                         break;
                     case "ItemID":
                         foreach (Wz_Node itemNode in subNode.Nodes)
@@ -45,7 +60,7 @@ namespace WzComparerR2.CharaSim
                             if (itemNode.Nodes.Count == 0)
                             {
                                 int itemID = Convert.ToInt32(itemNode.Value);
-                                setItem.itemIDs.Add(idx, new SetItemIDPart(itemID));
+                                setItem.ItemIDs.Add(idx, new SetItemIDPart(itemID));
                             }
                             else
                             {
@@ -61,6 +76,9 @@ namespace WzComparerR2.CharaSim
                                         case "typeName":
                                             part.TypeName = Convert.ToString(itemNode2.Value);
                                             break;
+                                        case "byGender":
+                                            part.ByGender = Convert.ToInt32(itemNode2.Value) != 0;
+                                            break;
                                         default:
                                             if (Int32.TryParse(itemNode2.Text, out num) && num > 0)
                                             {
@@ -69,7 +87,7 @@ namespace WzComparerR2.CharaSim
                                             break;
                                     }
                                 }
-                                setItem.itemIDs.Add(idx, part);
+                                setItem.ItemIDs.Add(idx, part);
                             }
                         }
                         break;
@@ -98,7 +116,7 @@ namespace WzComparerR2.CharaSim
                                                     potens.Add(p);
                                                 }
                                             }
-                                            //effect.Props.Add(GearPropType.Option, potens);
+                                            effect.Props.Add(GearPropType.Option, potens);
                                         }
                                         break;
 
@@ -143,7 +161,7 @@ namespace WzComparerR2.CharaSim
 
                                             opToMobList.Add(option);
                                         }
-                                        //effect.Props.Add(GearPropType.OptionToMob, opToMobList);
+                                        effect.Props.Add(GearPropType.OptionToMob, opToMobList);
                                         break;
 
                                     case "activeSkill":
@@ -172,7 +190,42 @@ namespace WzComparerR2.CharaSim
                                             }
                                             activeSkillList.Add(activeSkill);
                                         }
-                                        //effect.Props.Add(GearPropType.activeSkill, activeSkillList);
+                                        effect.Props.Add(GearPropType.activeSkill, activeSkillList);
+                                        break;
+
+                                    case "bonusByTime":
+                                        var bonusByTimeList = new List<SetItemBonusByTime>();
+                                        for (int i = 0; ; i++)
+                                        {
+                                            Wz_Node optNode = propNode.FindNodeByPath(i.ToString());
+                                            if (optNode == null)
+                                            {
+                                                break;
+                                            }
+
+                                            var bonusByTime = new SetItemBonusByTime();
+                                            foreach (Wz_Node pNode in optNode.Nodes)
+                                            {
+                                                switch (pNode.Text)
+                                                {
+                                                    case "termStart":
+                                                        bonusByTime.TermStart = pNode.GetValue<int>();
+                                                        break;
+
+                                                    default:
+                                                        {
+                                                            GearPropType type;
+                                                            if (Enum.TryParse(pNode.Text, out type))
+                                                            {
+                                                                bonusByTime.Props.Add(type, pNode.GetValue<int>());
+                                                            }
+                                                        }
+                                                        break;
+                                                }
+                                            }
+                                            bonusByTimeList.Add(bonusByTime);
+                                        }
+                                        effect.Props.Add(GearPropType.bonusByTime, bonusByTimeList);
                                         break;
 
                                     default:
@@ -186,7 +239,7 @@ namespace WzComparerR2.CharaSim
                                         break;
                                 }
                             }
-                            setItem.effects.Add(count, effect);
+                            setItem.Effects.Add(count, effect);
                         }
                         break;
                     case "Desc":
@@ -216,6 +269,11 @@ namespace WzComparerR2.CharaSim
                             combinePart = CombinePart(setItem, gearID => Gear.IsSubWeapon(Gear.GetGearType(gearID)));
                             combineTypeName = ItemStringHelper.GetSetItemGearTypeString(GearType.subWeapon);
                             break;
+
+                        case "pocket":
+                            combinePart = CombinePart(setItem, gearID => Gear.GetGearType(gearID) == GearType.pocket);
+                            combineTypeName = ItemStringHelper.GetSetItemGearTypeString(GearType.pocket);
+                            break;
                     }
 
                     if (combinePart != null)
@@ -240,7 +298,7 @@ namespace WzComparerR2.CharaSim
             List<int> itemIDList = new List<int>();
             List<int> preRemovedPartIdx = new List<int>();
             int? idx = null;
-            foreach (var part in setItem.itemIDs.Parts)
+            foreach (var part in setItem.ItemIDs.Parts)
             {
                 bool add = false;
                 foreach (var itemID in part.Value.ItemIDs.Keys)
@@ -266,9 +324,9 @@ namespace WzComparerR2.CharaSim
                 SetItemIDPart part = new SetItemIDPart(itemIDList);
                 foreach (int i in preRemovedPartIdx)
                 {
-                    setItem.itemIDs.Remove(i);
+                    setItem.ItemIDs.Remove(i);
                 }
-                setItem.itemIDs.Add(idx.Value + 1, part);
+                setItem.ItemIDs.Add(idx.Value + 1, part);
                 return part;
             }
             return null;

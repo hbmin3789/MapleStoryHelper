@@ -122,16 +122,22 @@ namespace WzComparerR2.CharaSim
                 case AdditionType.statinc:
                     sb = new StringBuilder();
                     {
+                        List<GearPropType> props = new List<GearPropType>();
                         foreach (var kv in Props)
                         {
                             try
                             {
                                 GearPropType propType = (GearPropType)Enum.Parse(typeof(GearPropType), kv.Key);
-                                sb.AppendLine(ItemStringHelper.GetGearPropString(propType, Convert.ToInt32(kv.Value)));
+                                props.Add(propType);
                             }
                             catch
                             {
                             }
+                        }
+                        props.Sort();
+                        foreach (GearPropType type in props)
+                        {
+                            sb.AppendLine(ItemStringHelper.GetGearPropString(type, Convert.ToInt32(Props[Enum.GetName(typeof(GearPropType), type)])));
                         }
                     }
                     if (sb.Length > 0)
@@ -157,9 +163,9 @@ namespace WzComparerR2.CharaSim
                     return "직업이 " + string.Join(" 또는 ", reqJobs) + "일 때";
                 case GearPropType.reqLevel:
                     return "레벨 " + this.ConValue[0] + " 이상일 때";
-                //case GearPropType.reqCraft:
-                //    int lastExp;
-                //    return "손재주 경험치가 " + this.ConValue[0] + "(" + getPersonalityLevel(this.ConValue[0], out lastExp) + "레벨 " + lastExp + "점) 이상일 때";
+                case GearPropType.reqCraft:
+                    int lastExp;
+                    return "손재주 경험치가 " + this.ConValue[0] + "(" + getPersonalityLevel(this.ConValue[0], out lastExp) + "레벨 " + lastExp + "점) 이상일 때";
                 case GearPropType.reqWeekDay:
                     string[] weekdays = new string[this.ConValue.Count];
                     for (int i = 0; i < this.ConValue.Count; i++)
@@ -271,7 +277,7 @@ namespace WzComparerR2.CharaSim
                                         addition.ConType = GearPropType.reqLevel;
                                         break;
                                     case "craft":
-                                        //addition.ConType = GearPropType.reqCraft;
+                                        addition.ConType = GearPropType.reqCraft;
                                         break;
                                     case "weekDay":
                                         addition.ConType = GearPropType.reqWeekDay;

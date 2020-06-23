@@ -161,7 +161,7 @@
                         <Image/>
                     </Grid>
                 </Button>
-                <Button CommandParameter="Gloves"
+                <Button CommandParameter="Glove"
                         Click="ItemSetting_Button_Click">
                     <Grid>
                         <TextBlock Text="장갑"/>

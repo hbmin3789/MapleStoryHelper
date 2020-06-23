@@ -2,6 +2,7 @@
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelperWPF.View;
+using Prism.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
