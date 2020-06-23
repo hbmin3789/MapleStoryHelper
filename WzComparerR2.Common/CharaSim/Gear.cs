@@ -148,7 +148,7 @@ namespace WzComparerR2.CharaSim
         /// <returns></returns>
         public static bool IsLeftWeapon(GearType type)
         {
-            return (int)type >= 1212 && (int)type <= 1392 && type != GearType.katara;
+            return (int)type >= 121 && (int)type <= 139 && type != GearType.katara;
         }
 
         public static bool IsSubWeapon(GearType type)
@@ -194,8 +194,8 @@ namespace WzComparerR2.CharaSim
         public static bool IsDoubleHandWeapon(GearType type)
         {
             int _type = (int)type;
-            return (_type >= 1402 && _type <= 1492)
-                || (_type >= 1522 && _type <= 1582);
+            return (_type >= 140 && _type <= 149)
+                || (_type >= 152 && _type <= 158);
         }
 
         public static bool IsMechanicGear(GearType type)

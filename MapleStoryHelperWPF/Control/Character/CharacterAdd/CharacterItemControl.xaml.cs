@@ -69,8 +69,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
 
         private void UpdateStatusView()
         {
-            ctrlStatusDisplay.DataContext = null;
-            ctrlStatusDisplay.DataContext = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
+            ctrlStatusDisplay.SetCharacterStatusDataContext(this.DataContext);
         }
 
         private List<UIElement> ChildrenToList(UIElementCollection children)
@@ -108,6 +107,12 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Collapsed;
+        }
+
+        public void SetDataContext(object dataContext)
+        {
+            this.DataContext = dataContext;
+            ctrlStatusDisplay.SetCharacterStatusDataContext(dataContext);
         }
     }
 }

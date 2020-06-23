@@ -85,7 +85,10 @@ namespace MapleStoryHelper.Standard.Character.Model
         protected StatusBase _characterStatus;
         public StatusBase CharacterStatus
         {
-            get => _characterStatus;
+            get
+            {
+                return _characterStatus + _baseStatus;
+            }
             set=> SetProperty(ref _characterStatus, value);
         }
 
@@ -94,6 +97,13 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get => _skillStatus;
             set => SetProperty(ref _skillStatus, value);
+        }
+
+        protected StatusBase _baseStatus;
+        public StatusBase BaseStatus
+        {
+            get => _baseStatus;
+            set => SetProperty(ref _baseStatus, value);
         }
 
         protected bool _isUseAttackPower = true;
@@ -290,6 +300,8 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             _characterEquipment = new CharacterEquipment();
             _characterStatus = new StatusBase();
+            _baseStatus = new StatusBase();
+            _skillStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
             _characterJob = ECharacterJob.Hero;

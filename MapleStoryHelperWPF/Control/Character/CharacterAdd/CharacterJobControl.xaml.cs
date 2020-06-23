@@ -70,5 +70,10 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
                 lvCharacterJob.SelectedIndex = -1;
             }
         }
+
+        internal void SetDataContext(object dataContext)
+        {
+            this.DataContext = dataContext;
+        }
     }
 }

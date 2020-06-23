@@ -226,7 +226,8 @@
                 <RowDefinition/>
                 <RowDefinition Height="120"/>
             </Grid.RowDefinitions>
-            <status:StatusControl x:Name="ctrlStatusDisplay"/>
+            <status:StatusControl x:Name="ctrlStatusDisplay"
+                                  ReadOnly="True"/>
 
             <Grid Grid.Row="1">
                 <StackPanel Orientation="Horizontal"

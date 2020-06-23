@@ -80,6 +80,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Control\Character\CharacterAdd\SkillSettingControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -95,6 +99,10 @@
     <Page Include="Control\Item\PotentialControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\Status\StatusAttackControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Status\StatusControl.xaml">
       <SubType>Designer</SubType>
@@ -125,6 +133,9 @@
     <Compile Include="Control\Character\CharacterAdd\CharacterJobControl.xaml.cs">
       <DependentUpon>CharacterJobControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml.cs">
+      <DependentUpon>CharacterStatusSettingControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Character\CharacterAdd\SkillSettingControl.xaml.cs">
       <DependentUpon>SkillSettingControl.xaml</DependentUpon>
     </Compile>
@@ -136,6 +147,9 @@
     </Compile>
     <Compile Include="Control\Item\PotentialControl.xaml.cs">
       <DependentUpon>PotentialControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Status\StatusAttackControl.xaml.cs">
+      <DependentUpon>StatusAttackControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Control\Status\StatusControl.xaml.cs">
       <DependentUpon>StatusControl.xaml</DependentUpon>

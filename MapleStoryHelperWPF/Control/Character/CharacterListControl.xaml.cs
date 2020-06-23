@@ -30,7 +30,7 @@ namespace MapleStoryHelperWPF.Control
         private void NavigateToCharacterSetting(object dataContext)
         {
             ctrlCharacterAdd.Visibility = Visibility.Visible;
-            ctrlCharacterAdd.DataContext = dataContext;
+            ctrlCharacterAdd.SetDataContext(dataContext);
         }
 
         private void btnAddCharacter_Click(object sender, RoutedEventArgs e)

@@ -63,3 +63,7 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Ma
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.exe
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Character\CharacterAdd\CharacterStatusSettingControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusAttackControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Character\CharacterAdd\CharacterStatusSettingControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Status\StatusAttackControl.baml

@@ -7,9 +7,18 @@ namespace MapleStoryHelperWPF.Control
     /// </summary>
     public partial class CharacterAddControl : UserControl
     {
+
         public CharacterAddControl()
         {
             InitializeComponent();
+        }
+
+        public void SetDataContext(object dataContext)
+        {
+            this.DataContext = dataContext;
+            ctrlCharacterItem.SetDataContext(dataContext);
+            ctrlCharacterJob.SetDataContext(dataContext);
+            ctrlCharacterStatusSetting.SetDataContext(dataContext);
         }
 
         private void btnEditJob_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -24,7 +33,12 @@ namespace MapleStoryHelperWPF.Control
 
         private void btnSkillSetting_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            ctrlSkillSetting.Visibility = System.Windows.Visibility.Visible;
+            //ctrlSkillSetting.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void btnBaseStatusSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ctrlCharacterStatusSetting.Visibility = System.Windows.Visibility.Visible;
         }
     }
 }

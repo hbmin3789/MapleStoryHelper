@@ -67,6 +67,10 @@
                         Margin="0,10,0,0"
                         Content="패시브 세팅"
                         Click="btnSkillSetting_Click"/>
+                <Button x:Name="btnBaseStatusSetting" FontSize="{StaticResource TitleFontSize}"
+                        Margin="0,10,0,0"
+                        Content="캐릭터 스텟 세팅"
+                        Click="btnBaseStatusSetting_Click"/>
             </StackPanel>
         </Grid>
         
@@ -74,7 +78,10 @@
                                            Visibility="Collapsed"/>
         <characterAdd:CharacterJobControl x:Name="ctrlCharacterJob" Grid.ColumnSpan="2"
                                           Visibility="Collapsed"/>
-        <characterAdd:SkillSettingControl x:Name="ctrlSkillSetting" Grid.ColumnSpan="2"
-                                          Visibility="Collapsed"/>
+        <!--<characterAdd:SkillSettingControl x:Name="ctrlSkillSetting" Grid.ColumnSpan="2"
+                                          Visibility="Collapsed"/>-->
+        <characterAdd:CharacterStatusSettingControl x:Name="ctrlCharacterStatusSetting" Grid.ColumnSpan="2"
+                                                    Visibility="Collapsed"/>
+
     </Grid>
 </UserControl>

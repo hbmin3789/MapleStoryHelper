@@ -7,25 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
-        <Style TargetType="TextBox">
+        <Style x:Uid="tbDefaultStyle" TargetType="TextBox">
             <Setter Property="FontSize" Value="{StaticResource MiddleFontSize}"/>
-            <Setter Property="IsReadOnly" Value="True"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="MinWidth" Value="100"/>
+        </Style>
+        <Style x:Key="tbReadOnlyStyle" TargetType="TextBox">
+            <Setter Property="FontSize" Value="{StaticResource MiddleFontSize}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="MinWidth" Value="100"/>
+            <Setter Property="IsReadOnly" Value="True"/>
         </Style>
     </UserControl.Resources>
     <Grid>
         <Viewbox>
             <StackPanel>
                 <Grid Margin="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition Width="0.4*"/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0" Text="{Binding MinStatusAttack}"/>
-                    <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
-                    <TextBox Grid.Column="2" Text="{Binding MaxStatusAttack}"/>
+                    <local:StatusAttackControl x:Name="ctrlStatusAttack"/>
                 </Grid>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -35,56 +33,56 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0">
-                        <TextBox Text="공격력"/>
-                        <TextBox Text="마력"/>
-                        <TextBox Text="공격력%"/>
-                        <TextBox Text="마력%"/>
-                        <TextBox Text="데미지"/>
-                        <TextBox Text="보스 공격력"/>
-                        <TextBox Text="방어율 무시"/>
-                        <TextBox Text="크리티컬 확률"/>
-                        <TextBox Text="크리티컬 데미지"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="공격력%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="마력%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="데미지"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="보스 공격력"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방어율 무시"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 확률"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 데미지"/>
                     </StackPanel>
                     <StackPanel x:Name="spStatus1" Grid.Column="1">
-                        <TextBox Text="{Binding CharacterStatus.AttackPower}"/>
-                        <TextBox Text="{Binding CharacterStatus.MagicAttack}"/>
-                        <TextBox Text="{Binding CharacterStatus.PAttackPower}"/>
-                        <TextBox Text="{Binding CharacterStatus.PMagicAttack}"/>
-                        <TextBox Text="{Binding CharacterStatus.Damage}"/>
-                        <TextBox Text="{Binding CharacterStatus.BossDamage}"/>
-                        <TextBox Text="{Binding CharacterStatus.IgnoreDefBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.Critical}"/>
-                        <TextBox Text="{Binding CharacterStatus.CriticalDamage}"/>
+                        <TextBox Text="{Binding AttackPower}"/>
+                        <TextBox Text="{Binding MagicAttack}"/>
+                        <TextBox Text="{Binding PAttackPower}"/>
+                        <TextBox Text="{Binding PMagicAttack}"/>
+                        <TextBox Text="{Binding Damage}"/>
+                        <TextBox Text="{Binding BossDamage}"/>
+                        <TextBox Text="{Binding IgnoreDefBinding}"/>
+                        <TextBox Text="{Binding Critical}"/>
+                        <TextBox Text="{Binding CriticalDamage}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Column="2">
-                        <TextBox Text="STR"/>
-                        <TextBox Text="DEX"/>
-                        <TextBox Text="INT"/>
-                        <TextBox Text="LUK"/>
-                        <TextBox Text="HP"/>
-                        <TextBox Text="MP"/>
-                        <TextBox Text="STR%"/>
-                        <TextBox Text="DEX%"/>
-                        <TextBox Text="INT%"/>
-                        <TextBox Text="LUK%"/>
-                        <TextBox Text="HP%"/>
-                        <TextBox Text="MP%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="LUK%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="HP%"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="MP%"/>
 
                     </StackPanel>
                     <StackPanel x:Name="spStatus2" Grid.Column="3">
-                        <TextBox Text="{Binding CharacterStatus.StrBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.DexBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.IntBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.LukBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.HPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.MPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PStrBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PDexBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PIntBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PLukBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PHPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PMPBinding}"/>
+                        <TextBox Text="{Binding StrBinding}"/>
+                        <TextBox Text="{Binding DexBinding}"/>
+                        <TextBox Text="{Binding IntBinding}"/>
+                        <TextBox Text="{Binding LukBinding}"/>
+                        <TextBox Text="{Binding HPBinding}"/>
+                        <TextBox Text="{Binding MPBinding}"/>
+                        <TextBox Text="{Binding PStrBinding}"/>
+                        <TextBox Text="{Binding PDexBinding}"/>
+                        <TextBox Text="{Binding PIntBinding}"/>
+                        <TextBox Text="{Binding PLukBinding}"/>
+                        <TextBox Text="{Binding PHPBinding}"/>
+                        <TextBox Text="{Binding PMPBinding}"/>
 
                     </StackPanel>
 
