@@ -13,6 +13,7 @@
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
@@ -58,6 +59,48 @@
         </Grid>
 
         <Grid Grid.Column="1">
+            <Image Source="/Assets/StatusDetail.png"
+                   VerticalAlignment="Top" Width="250"/>
+            <Canvas>
+                <Canvas.Resources>
+                    <Style x:Key="tbBaseStyle" TargetType="TextBox">
+                        <Setter Property="BorderThickness" Value="0"/>
+                    </Style>
+                    <Style x:Key="tbBigSizeStyle" TargetType="TextBox" BasedOn="{StaticResource tbBaseStyle}">
+                        <Setter Property="Width" Value="167"/>
+                    </Style>
+                    <Style x:Key="tbSmallSizeStyle" TargetType="TextBox"  BasedOn="{StaticResource tbBaseStyle}">
+                        <Setter Property="Width" Value="40"/>
+                    </Style>
+                </Canvas.Resources>
+                <TextBlock Canvas.Top="50" Canvas.Left="80">
+                    <Run Text="{Binding MinStatusAttack}"/>
+                    <Run Text="~"/>
+                    <Run Text="{Binding MaxStatusAttack}"/>
+                </TextBlock>
+
+                <TextBox Canvas.Top="73" Canvas.Left="80" Style="{StaticResource tbSmallSizeStyle}"
+                         Text="{Binding CharacterStatus.Damage}"/>
+                <TextBox Canvas.Top="96" Canvas.Left="80" Style="{StaticResource tbSmallSizeStyle}"
+                         Text="{Binding CharacterStatus.LastDamage}"/>
+                
+                <TextBox Canvas.Top="73" Canvas.Left="203" Style="{StaticResource tbSmallSizeStyle}"
+                         Text="{Binding CharacterStatus.BossDamage}"/>
+                <TextBox Canvas.Top="96" Canvas.Left="203" Style="{StaticResource tbSmallSizeStyle}"
+                         Text="{Binding CharacterStatus.IgnoreDef}"/>
+                
+                <TextBox Canvas.Top="119" Canvas.Left="80" Style="{StaticResource tbBigSizeStyle}"
+                         Text="{Binding CharacterStatus.Critical}"/>
+                <TextBox Canvas.Top="142" Canvas.Left="80" Style="{StaticResource tbBigSizeStyle}"
+                         Text="{Binding CharacterStatus.CriticalDamage}"/>
+                
+                <!-- 스타포스, 아케인포스 등은 나중에 추가할예정이라 지금은 필요없을듯 -->
+                <!--<TextBox Canvas.Top="166" Canvas.Left="80" Style="{StaticResource tbSmallSizeStyle}" Background="Red"/>
+                <TextBox Canvas.Top="166" Canvas.Left="203" Style="{StaticResource tbSmallSizeStyle}" Background="Red"/>-->
+            </Canvas>
+        </Grid>
+        
+        <Grid Grid.Column="2">
             <StackPanel Margin="10"
                         HorizontalAlignment="Left">
                 <Button x:Name="btnItemSetting" FontSize="{StaticResource TitleFontSize}"                        
@@ -74,13 +117,13 @@
             </StackPanel>
         </Grid>
         
-        <characterAdd:CharacterItemControl x:Name="ctrlCharacterItem" Grid.ColumnSpan="2"
+        <characterAdd:CharacterItemControl x:Name="ctrlCharacterItem" Grid.ColumnSpan="3"
                                            Visibility="Collapsed"/>
-        <characterAdd:CharacterJobControl x:Name="ctrlCharacterJob" Grid.ColumnSpan="2"
+        <characterAdd:CharacterJobControl x:Name="ctrlCharacterJob" Grid.ColumnSpan="3"
                                           Visibility="Collapsed"/>
         <!--<characterAdd:SkillSettingControl x:Name="ctrlSkillSetting" Grid.ColumnSpan="2"
                                           Visibility="Collapsed"/>-->
-        <characterAdd:CharacterStatusSettingControl x:Name="ctrlCharacterStatusSetting" Grid.ColumnSpan="2"
+        <characterAdd:CharacterStatusSettingControl x:Name="ctrlCharacterStatusSetting" Grid.ColumnSpan="3"
                                                     Visibility="Collapsed"/>
 
     </Grid>

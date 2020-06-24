@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 
 namespace MapleStoryHelperWPF.Control
 {
@@ -6,11 +7,17 @@ namespace MapleStoryHelperWPF.Control
     /// CharacterAddControl.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class CharacterAddControl : UserControl
-    {
+    {        
 
         public CharacterAddControl()
         {
             InitializeComponent();
+            ctrlCharacterJob.OnCharacterChanged += OnCharacterChanged;
+        }
+
+        private void OnCharacterChanged(object sender, MapleStoryHelper.Standard.Character.Model.Character e)
+        {
+            SetDataContext(e);
         }
 
         public void SetDataContext(object dataContext)

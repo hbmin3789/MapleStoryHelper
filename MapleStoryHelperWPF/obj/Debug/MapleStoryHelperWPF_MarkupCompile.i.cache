@@ -16,5 +16,5 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml
 25-214798450
 Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;
 
-True
+False
 

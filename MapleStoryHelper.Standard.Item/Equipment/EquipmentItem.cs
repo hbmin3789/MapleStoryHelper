@@ -16,6 +16,13 @@ namespace MapleStoryHelper.Standard.Item
     {
         #region Property
 
+        private int _setItemID;
+        public int SetItemID 
+        {
+            get => _setItemID;
+            set => SetProperty(ref _setItemID, value);
+        }
+
         private int _requiredLevel = 10;
         [Column("required_level")]
         public int RequiredLevel

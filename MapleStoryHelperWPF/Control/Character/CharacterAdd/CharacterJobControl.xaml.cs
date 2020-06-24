@@ -21,6 +21,8 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
     /// </summary>
     public partial class CharacterJobControl : UserControl
     {
+        public EventHandler<MapleStoryHelper.Standard.Character.Model.Character> OnCharacterChanged;
+
         List<string> CharacterList { get; set; }
 
         public CharacterJobControl()
@@ -64,6 +66,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
                 {
                     App.viewModel.NewCharacter = new MapleStoryHelper.Standard.Character.Model.Xenon();
                 }
+                OnCharacterChanged?.Invoke(this, App.viewModel.NewCharacter);
             }
             else
             {

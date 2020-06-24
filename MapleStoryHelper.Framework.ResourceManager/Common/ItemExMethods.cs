@@ -106,12 +106,12 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                         case "bdR":
                             retval.Status.BossDamage = gear.Props[(GearPropType)propNames.GetValue(i)];
                             break;
-                            //case "bossReward":
-                            //    retval. = Convert.ToInt32(item.ChildNodes[j].Value);
-                            //    break;
-                            //case "setItemID":
-                            //    retval.RequiredLevel = gear.Props[(GearPropType)propNames.GetValue(i)];
-                            //    break;
+                        //case "bossReward":
+                        //    retval. = Convert.ToInt32(item.ChildNodes[j].Value);
+                        //    break;
+                        case "setItemID":
+                            retval.SetItemID = gear.Props[(GearPropType)propNames.GetValue(i)];
+                            break;
                     }
                 }
                 catch

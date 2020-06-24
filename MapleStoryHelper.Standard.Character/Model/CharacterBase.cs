@@ -48,7 +48,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         }
 
         //숙련도
-        protected int _ripenPoint;
+        protected int _ripenPoint = 90;
         public int RipenPoint
         {
             get => _ripenPoint;
