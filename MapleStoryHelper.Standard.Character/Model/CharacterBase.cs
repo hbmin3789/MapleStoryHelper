@@ -405,7 +405,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             int retval = 0;
             int MaxStatus = _maxStatusAttack;
-            double temp = MaxStatus * ((double)RipenPoint / 100);
+            double temp = MaxStatus * GetPercent(RipenPoint);
             retval = (int)temp;
 
             return retval;
@@ -419,16 +419,25 @@ namespace MapleStoryHelper.Standard.Character.Model
             if(IsUseAttackPower == true)
             {
                 retval += status.GetAttackPower();
-                retval *= (1 + (status.PAttackPower) / 100);
+                retval *= (1 + GetPercent(status.PAttackPower));
             }
             else
             {
                 retval += status.GetMagicAttack();
-                retval *= (1 + (status.PMagicAttack) / 100);
+                retval *= (1 + GetPercent(status.PMagicAttack));
             }
 
             retval *= (1 + (status.Damage / 100));
             retval *= (1 + (status.LastDamage / 100));
+
+            return retval;
+        }
+
+        protected double GetPercent(int val)
+        {
+            double retval = 0.0;
+
+            retval = (double)val / 100;
 
             return retval;
         }

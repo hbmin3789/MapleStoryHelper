@@ -21,30 +21,11 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    
-    <Grid x:Name="gdMain" Background="White">
 
+    <Grid x:Name="gdMain" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
-        <Grid x:Name="gdPotential" Grid.Column="0">
-            <!--<ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>
-            <ComboBox ItemsSource="{Binding PotentialItems}"/>-->
-        </Grid>
-        <Grid x:Name="gdPotentialTextBox" Grid.Column="1">
-            <!--<TextBox Text=""/>-->
-            <!--<TextBox Text=""/>
-            <TextBox Text=""/>
-            <TextBox Text=""/>
-            <TextBox Text=""/>
-            <TextBox Text=""/>-->
-        </Grid>
-
     </Grid>
 </UserControl>

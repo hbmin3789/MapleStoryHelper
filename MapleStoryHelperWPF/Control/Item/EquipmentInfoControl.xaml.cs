@@ -14,7 +14,6 @@ namespace MapleStoryHelperWPF.Control
 {
     public partial class EquipmentInfoControl : UserControl
     {
-        public EventHandler OnSaved;
         public EventHandler OnComboBoxSelectionChanged;
 
         #region Property
@@ -46,7 +45,6 @@ namespace MapleStoryHelperWPF.Control
         public EquipmentInfoControl()
         {
             InitializeComponent();
-            OnSaved += OnSavedItem;            
         }
 
         #region Initialize
@@ -77,13 +75,6 @@ namespace MapleStoryHelperWPF.Control
             cbItems.ItemsSource = items;
 
             SetSelectedIndex(category, character);
-
-            InitPotential();
-        }
-
-        private void InitPotential()
-        {
-            ctrlPotential.InitPotential(EquipmentItem);
         }
 
         #endregion
@@ -101,7 +92,7 @@ namespace MapleStoryHelperWPF.Control
                     int idx = items.IndexOf(items.Where(x => x.ItemCode == (item as EquipmentItem).ItemCode).FirstOrDefault());
                     cbItems.SelectedIndex = idx;
 
-                    this.DataContext = item;
+                    EquipmentItem = item;
                 }
                 else
                 {
@@ -126,7 +117,7 @@ namespace MapleStoryHelperWPF.Control
 
         #region Event
 
-        private void OnSavedItem(object sender, EventArgs e)
+        public void OnSavedItem()
         {
             EquipmentItem.Potential = GetPotentialStatus();
             EquipmentItem.CharacterEquipmentCategory = Category;
@@ -134,7 +125,7 @@ namespace MapleStoryHelperWPF.Control
 
         private void cbItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.DataContext = cbItems.SelectedItem as EquipmentItem;
+            EquipmentItem = cbItems.SelectedItem as EquipmentItem;
             OnComboBoxSelectionChanged?.Invoke(sender, null);
         }
 

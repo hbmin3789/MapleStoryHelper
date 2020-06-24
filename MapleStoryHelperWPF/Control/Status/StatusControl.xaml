@@ -42,6 +42,7 @@
                         <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방어율 무시"/>
                         <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 확률"/>
                         <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="크리티컬 데미지"/>
+                        <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="최종 데미지"/>
                     </StackPanel>
                     <StackPanel x:Name="spStatus1" Grid.Column="1">
                         <TextBox Text="{Binding AttackPower}"/>
@@ -53,6 +54,7 @@
                         <TextBox Text="{Binding IgnoreDef}"/>
                         <TextBox Text="{Binding Critical}"/>
                         <TextBox Text="{Binding CriticalDamage}"/>
+                        <TextBox Text="{Binding LastDamage}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Column="2">

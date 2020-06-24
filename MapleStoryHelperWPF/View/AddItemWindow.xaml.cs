@@ -91,6 +91,7 @@ namespace MapleStoryHelperWPF.View
             var result = MessageBox.Show("저장하시겠습니까?", "", MessageBoxButton.YesNo);
             if(result == MessageBoxResult.Yes)
             {
+                ctrlEquipmentInfo.OnSavedItem();
                 this.DialogResult = true;
                 this.Hide();
             }

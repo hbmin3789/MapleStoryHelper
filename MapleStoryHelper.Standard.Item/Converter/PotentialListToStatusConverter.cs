@@ -78,7 +78,7 @@ namespace MapleStoryHelper.Converter
                         retval.BossDamage += PoValue;
                         break;
                     case 20:
-                        retval.IgnoreDef = PoValue;
+                        retval.IgnoreDef *= (1 - PoValue / 100);
                         break;
                     case 21:
                         retval.CriticalDamage += PoValue;

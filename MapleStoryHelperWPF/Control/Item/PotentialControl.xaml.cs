@@ -76,8 +76,8 @@ namespace MapleStoryHelperWPF.Control
                 Grid.SetRow(tb, i);
                 Grid.SetColumn(tb, 1);
 
-                gdMain.Children.Add(tb);
                 gdMain.Children.Add(cb);
+                gdMain.Children.Add(tb);
             }
         }
 
@@ -111,38 +111,29 @@ namespace MapleStoryHelperWPF.Control
             PotentialItems.Add("크뎀%");
         }
 
-        public void InitPotential(EquipmentItem item)
-        {
-            for (int i = 0; i < item.Potential.Count; i++)
-            {
-                var cb = gdPotential.Children[i] as ComboBox;
-                var textbox = gdPotentialTextBox.Children[i] as TextBox;
-
-                cb.SelectedIndex = (int)item.Potential[i].StatusKind;
-                textbox.Text = item.Potential[i].StatusValue.ToString();
-            }
-        }
-
         #endregion
 
         public List<Potential> GetStatus()
         {
             List<Potential> retval = new List<Potential>(6);
 
-            for(int i = 0; i < gdPotential.Children.Count; i++)
+            for(int i = 0; i < gdMain.Children.Count; i++)
             {
-                if(Convert.ToInt32((gdPotentialTextBox.Children[i] as TextBox).Text.Length) == 0)
+                if(gdMain.Children[i] is ComboBox)
                 {
-                    continue;
+                    if (Convert.ToInt32((gdMain.Children[i+1] as TextBox).Text.Length) == 0)
+                    {
+                        continue;
+                    }
+
+                    var cb = gdMain.Children[i] as ComboBox;
+                    var newItem = new Potential();
+
+                    newItem.StatusKind = (EStatus)cb.SelectedIndex;
+                    newItem.StatusValue = Convert.ToInt32((gdMain.Children[i+1] as TextBox).Text);
+
+                    retval.Add(newItem);
                 }
-
-                var cb = gdPotential.Children[i] as ComboBox;
-                var newItem = new Potential();
-
-                newItem.StatusKind = (EStatus)cb.SelectedIndex;
-                newItem.StatusValue = Convert.ToInt32((gdPotentialTextBox.Children[i] as TextBox).Text);
-
-                retval.Add(newItem);
             }
 
             return retval;
