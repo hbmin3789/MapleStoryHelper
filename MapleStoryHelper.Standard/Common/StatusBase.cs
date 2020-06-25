@@ -49,6 +49,7 @@ namespace MapleStoryHelper.Standard
                 Damage = a.Damage + b.Damage,
                 CriticalDamage = a.CriticalDamage + b.CriticalDamage,
                 LastDamage = a.LastDamage + b.LastDamage,
+                AdPAllStatus = a.AdPAllStatus + b.AdPAllStatus
             };
 
             if (a.IgnoreDef != 0 || b.IgnoreDef != 0)
@@ -479,6 +480,13 @@ namespace MapleStoryHelper.Standard
             set => SetProperty(ref _ignoreDef, value);
         }
 
+        private int _adPAllStatus;
+        public int AdPAllStatus
+        {
+            get => _adPAllStatus;
+            set => SetProperty(ref _adPAllStatus, value);
+        }
+
         #endregion
 
         #endregion
@@ -489,22 +497,22 @@ namespace MapleStoryHelper.Standard
 
         public int GetSTR()
         {
-            return (int)((Str + AllStatus) * (1 + ((double)(PStr + PAllStatus) / 100))) + CStr + CAllStatus;
+            return (int)((Str + AllStatus) * (1 + ((double)PStr / 100)) * (1 + (double)AdPAllStatus / 100)) + CStr + CAllStatus;
         }
 
         public int GetDEX()
         {
-            return (int)((_dex + AllStatus) * (1 + ((double)(PDex + PAllStatus) / 100))) + CDex + CAllStatus;
+            return (int)((_dex + AllStatus) * (1 + ((double)PDex / 100)) * (1 + (double)AdPAllStatus / 100)) + CDex + CAllStatus;
         }
 
         public int GetINT()
         {
-            return (int)(_int + AllStatus * (1 + ((double)(PInt + PAllStatus) / 100))) + CInt + CAllStatus;
+            return (int)(_int + AllStatus * (1 + ((double)PInt / 100)) * (1 + (double)AdPAllStatus / 100)) + CInt + CAllStatus;
         }
 
         public int GetLUK()
         {
-            return (int)(_luk + AllStatus * (1 + ((double)(PLuk + PAllStatus) / 100))) + CLuk + CAllStatus;
+            return (int)(_luk + AllStatus * (1 + ((double)PLuk / 100)) * (1 + (double)AdPAllStatus / 100)) + CLuk + CAllStatus;
         }
 
         public int GetHP()

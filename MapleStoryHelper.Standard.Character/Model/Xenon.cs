@@ -12,6 +12,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             this.JobCategory = EJobCategory.Xenon;
             this.CharacterJob = ECharacterJob.Xenon;
+            
         }
         //뒷스공(제논) (STR + DEX + LUK) × 4 × 0.01 × 총 공격력 × 무기상수(1.5) × 직업상수(0.875) × (1 + 공격력%) × 1 + 데미지%) × (1 + 최종데미지%)
         protected override int GetMaxStatusAttack()

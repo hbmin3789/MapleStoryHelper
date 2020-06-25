@@ -29,7 +29,9 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            
             <StackPanel>
+                <TextBox Text="유니온 점령 효과"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
@@ -44,6 +46,7 @@
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방무"/>
             </StackPanel>
             <StackPanel x:Name="spStatus1" Grid.Column="1">
+                <Border Height="30"/>
                 <TextBox Text="{Binding Str}"/>
                 <TextBox Text="{Binding Dex}"/>
                 <TextBox Text="{Binding Int}"/>
@@ -58,6 +61,7 @@
                 <TextBox Text="{Binding IgnoreDef}"/>
             </StackPanel>
             <StackPanel Grid.Column="2">
+                <TextBox Text="유니온 캐릭터 효과"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="STR"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="DEX"/>
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="INT"/>
@@ -72,14 +76,15 @@
                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="방무"/>
             </StackPanel>
             <StackPanel x:Name="spStatus2" Grid.Column="3">
-                <TextBox Text="{Binding Str}"/>
-                <TextBox Text="{Binding Dex}"/>
-                <TextBox Text="{Binding Int}"/>
-                <TextBox Text="{Binding Luk}"/>
-                <TextBox Text="{Binding HP}"/>
-                <TextBox Text="{Binding MP}"/>
-                <TextBox Text="{Binding AttackPower}"/>
-                <TextBox Text="{Binding MagicAttack}"/>
+                <Border Height="30"/>
+                <TextBox Text="{Binding CStr}"/>
+                <TextBox Text="{Binding CDex}"/>
+                <TextBox Text="{Binding CInt}"/>
+                <TextBox Text="{Binding CLuk}"/>
+                <TextBox Text="{Binding CHP}"/>
+                <TextBox Text="{Binding CMP}"/>
+                <TextBox Text="{Binding CAttackPower}"/>
+                <TextBox Text="{Binding CMagicAttack}"/>
                 <TextBox Text="{Binding Critical}"/>
                 <TextBox Text="{Binding CriticalDamage}"/>
                 <TextBox Text="{Binding BossDamage}"/>

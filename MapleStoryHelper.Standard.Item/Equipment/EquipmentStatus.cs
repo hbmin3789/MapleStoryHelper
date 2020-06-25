@@ -172,13 +172,6 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adMP, value);
         }
 
-        private int _adPAllStatus;
-        public int AdPAllStatus
-        {
-            get => _adPAllStatus;
-            set => SetProperty(ref _adPAllStatus, value);
-        }
-
         private int _adAttack;
         public int AdAttack
         {
@@ -622,7 +615,7 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             StatusBase retval = new T()
             {
                 AllStatus = this.AllStatus + this.PoAllStatus + this.AdPoAllStatus,
-                CAllStatus = this.CAllStatus + this.PoAllStatus + this.AdPoAllStatus,
+                CAllStatus = this.CAllStatus,
                 PAllStatus = this.PAllStatus + this.PoPAllStatus + this.AdPoPAllStatus,
                 AttackPower = this.AttackPower + this.PoAttack + this.AdPoAttack + this.ScAttack,
                 PAttackPower = this.PAttackPower + this.PoPAttack + this.AdPoPAttack,
@@ -642,7 +635,7 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 PDex = this.PDex + this.PoPDex + this.AdPoDex,
                 PInt = this.PInt + this.PoPInt + this.AdPoInt,
                 PLuk = this.PLuk + this.PoPLuk + this.AdPoLuk,
-                HP = this.HP + this.PoPHP + this.AdPoHP + this.ScHP,
+                HP = this.HP + this.PoHP + this.AdPoHP + this.ScHP,
                 CHP = this.CHP,
                 PHP = this.PHP + this.PoPHP + this.AdPoPHP,
                 MP = this.MP + this.PoMP + this.AdPoMP + this.ScMP,
@@ -654,6 +647,7 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 CriticalDamage = this.CriticalDamage + this.PoCritDamage + this.AdPoCritDamage,
                 LastDamage = this.LastDamage,
                 IgnoreDef = this.IgnoreDef,
+                AdPAllStatus = this.AdPAllStatus
             };
 
             for (int i = 0; i < this.PoIgnoreDef.Count; i++)

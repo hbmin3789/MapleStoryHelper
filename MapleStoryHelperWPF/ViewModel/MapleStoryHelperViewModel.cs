@@ -18,7 +18,12 @@ namespace MapleStoryHelperWPF.ViewModel
         public Character NewCharacter
         {
             get => _newCharacter;
-            set => SetProperty(ref _newCharacter, value);
+            set
+            {
+                SetProperty(ref _newCharacter, value);
+                _newCharacter.UnionCharacterStatus = UnionCharacterStatus;
+                _newCharacter.UnionMapStatus = UnionMapStatus;
+            }
         }
 
         private ObservableCollection<Character> _characterList;
@@ -42,15 +47,20 @@ namespace MapleStoryHelperWPF.ViewModel
             set => SetProperty(ref _unionMapStatus, value);
         }
 
+        public StatusBase UnionStatus
+        {
+            get => _unionMapStatus + _unionCharacterStatus;
+        }
+
         public MapleStoryHelperViewModel()
         {
             InitVariables();
-            AddCharacter();
+            SetCharacter();
         }
 
-        private void AddCharacter()
+        private void SetCharacter()
         {
-
+            
         }
 
         private void InitVariables()
