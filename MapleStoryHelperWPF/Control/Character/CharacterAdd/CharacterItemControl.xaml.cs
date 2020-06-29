@@ -114,5 +114,13 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             this.DataContext = dataContext;
             ctrlStatusDisplay.SetCharacterStatusDataContext(dataContext);
         }
+
+        private void btnSetItemDisplay_Click(object sender, RoutedEventArgs e)
+        {
+            SetItemDisplayWindow window = new SetItemDisplayWindow();
+            var character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
+            window.SetItemStatus(character);
+            window.ShowDialog();
+        }
     }
 }

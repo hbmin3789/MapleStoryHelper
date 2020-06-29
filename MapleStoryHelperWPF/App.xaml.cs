@@ -1,4 +1,5 @@
-﻿using MapleStoryHelperWPF.ViewModel;
+﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelperWPF.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -15,5 +16,9 @@ namespace MapleStoryHelperWPF
     public partial class App : Application
     {
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
+        public static MapleWz Wz
+        {
+            get => viewModel.MapleWz;
+        }
     }
 }

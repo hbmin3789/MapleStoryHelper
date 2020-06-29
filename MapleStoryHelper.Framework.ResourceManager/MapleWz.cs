@@ -26,19 +26,19 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private Wz_File skillWz;
         private Wz_File etcWz;
 
-        private Wz_Structure CharacterWzStruct
+        public Wz_Structure CharacterWzStruct
         {
             get => characterWz.WzStructure;
         }
-        private Wz_Structure StringWzStruct
+        public Wz_Structure StringWzStruct
         {
             get => stringWz.WzStructure;
         }
-        private Wz_Structure SkillWzStruct
+        public Wz_Structure SkillWzStruct
         {
             get => skillWz.WzStructure;
         }
-        private Wz_Structure EtcWzStruct
+        public Wz_Structure EtcWzStruct
         {
             get => etcWz.WzStructure;
         }

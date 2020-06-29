@@ -13,7 +13,11 @@ namespace MapleStoryHelperWPF.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
-        private MapleWz mapleWz;
+        private MapleWz _mapleWz;
+        public MapleWz MapleWz
+        {
+            get => _mapleWz;
+        }
 
         private Character _newCharacter;
         public Character NewCharacter
@@ -66,7 +70,7 @@ namespace MapleStoryHelperWPF.ViewModel
 
         private void InitVariables()
         {
-            mapleWz = new MapleWz();
+            _mapleWz = new MapleWz();
             _unionMapStatus = new StatusBase();
             _unionCharacterStatus = new StatusBase();
             _characterList = new ObservableCollection<Character>();
@@ -77,14 +81,14 @@ namespace MapleStoryHelperWPF.ViewModel
 
         public void LoadWz(string Path)
         {
-            mapleWz.LoadFile(Path);
+            _mapleWz.LoadFile(Path);
             InitSetItem();
         }
 
         private void InitSetItem()
         {
-            mapleWz.SetItemList();
-            NewCharacter.SetItemList = mapleWz.GetSetItemList();
+            _mapleWz.SetItemList();
+            NewCharacter.SetItemList = _mapleWz.GetSetItemList();
         }
 
         /// <summary>
@@ -94,7 +98,7 @@ namespace MapleStoryHelperWPF.ViewModel
         /// <param name="KeyWord">검색할 이름</param>
         public List<EquipmentItem> FindItemByName(Character character,EEquipmentCategory category, string keyWord)
         {
-            return mapleWz.GetEquipmentItems(character, category, keyWord);
+            return _mapleWz.GetEquipmentItems(character, category, keyWord);
         }
 
         #endregion

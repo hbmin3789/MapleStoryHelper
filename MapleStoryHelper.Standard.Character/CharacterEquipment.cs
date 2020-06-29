@@ -14,7 +14,11 @@ namespace MapleStoryHelper.Standard.Character
         //만약 아케인셰이드 5셋, 파프니르 3셋이라면
         //SetItemDict[아케인셰이드] == 5
         //SetItemDict[파프니르] == 3
-        private Dictionary<SetItem, int> SetItemDict;
+        private Dictionary<SetItem, int> _setItemDict;
+        public Dictionary<SetItem,int> SetItemDict
+        {
+            get => _setItemDict;
+        }
 
         private Dictionary<ECharacterEquipmentCategory, EquipmentItem> _equipList;
         public Dictionary<ECharacterEquipmentCategory, EquipmentItem> EquipList
@@ -40,7 +44,7 @@ namespace MapleStoryHelper.Standard.Character
         {
             _equipList = new Dictionary<ECharacterEquipmentCategory, EquipmentItem>();
             _setItemList = new List<SetItem>();
-            SetItemDict = new Dictionary<SetItem, int>();
+            _setItemDict = new Dictionary<SetItem, int>();
         }
 
         private void InitEquipList()
