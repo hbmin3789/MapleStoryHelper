@@ -16,6 +16,14 @@ namespace MapleStoryHelper.Standard.Item
     {
         #region Property
 
+        //럭키 아이템인지
+        private bool _isJoker;
+        public bool IsJoker
+        {
+            get => _isJoker;
+            set => SetProperty(ref _isJoker, value);
+        }
+
         private int _setItemID;
         public int SetItemID 
         {

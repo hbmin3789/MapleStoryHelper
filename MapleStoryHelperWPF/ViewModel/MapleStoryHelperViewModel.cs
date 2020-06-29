@@ -5,6 +5,7 @@ using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
@@ -77,6 +78,13 @@ namespace MapleStoryHelperWPF.ViewModel
         public void LoadWz(string Path)
         {
             mapleWz.LoadFile(Path);
+            InitSetItem();
+        }
+
+        private void InitSetItem()
+        {
+            mapleWz.SetItemList();
+            NewCharacter.SetItemList = mapleWz.GetSetItemList();
         }
 
         /// <summary>

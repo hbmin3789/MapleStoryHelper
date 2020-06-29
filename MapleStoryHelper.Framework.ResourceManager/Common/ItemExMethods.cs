@@ -112,6 +112,16 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                         case "setItemID":
                             retval.SetItemID = gear.Props[(GearPropType)propNames.GetValue(i)];
                             break;
+                        case "jokerToSetItem":
+                            if(gear.Props[(GearPropType)propNames.GetValue(i)] == 1)
+                            {
+                                retval.IsJoker = true;
+                            }
+                            else
+                            {
+                                retval.IsJoker = false;
+                            }
+                            break;
                     }
                 }
                 catch
@@ -123,6 +133,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             retval.WeaponType = gear.type;
             retval.EquipmentCategory = GetEquipmentCategory(gear);
+            retval.ItemCode = node.Text.Replace(".img", "");
 
             if (Gear.IsWeapon(gear.type) == true)
             {

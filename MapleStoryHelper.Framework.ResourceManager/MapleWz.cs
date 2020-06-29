@@ -19,10 +19,12 @@ namespace MapleStoryHelper.Framework.ResourceManager
         #region WzFile
 
         private StringWzReader stringWzReader;
+        private SetItemManager setItemManager;
 
         private Wz_File characterWz;
         private Wz_File stringWz;
         private Wz_File skillWz;
+        private Wz_File etcWz;
 
         private Wz_Structure CharacterWzStruct
         {
@@ -35,6 +37,10 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private Wz_Structure SkillWzStruct
         {
             get => skillWz.WzStructure;
+        }
+        private Wz_Structure EtcWzStruct
+        {
+            get => etcWz.WzStructure;
         }
 
         #endregion
@@ -62,6 +68,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private void InitVariables()
         {
             stringWzReader = new StringWzReader();
+            setItemManager = new SetItemManager();
         }
 
         #endregion
@@ -87,10 +94,12 @@ namespace MapleStoryHelper.Framework.ResourceManager
             characterWz = new Wz_File(FilePath + "\\Character.wz", new Wz_Structure());
             stringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
             skillWz = new Wz_File(FilePath + "\\Skill.wz", new Wz_Structure());
+            etcWz = new Wz_File(FilePath + "\\Etc.wz", new Wz_Structure());
 
             CharacterWzStruct.Load(FilePath + "\\Character.wz");
             StringWzStruct.Load(FilePath + "\\String.wz");
             SkillWzStruct.Load(FilePath + "\\Skill.wz");
+            EtcWzStruct.Load(FilePath + "\\Etc.wz");
 
             if(stringWz.Loaded == true)
             {
@@ -124,6 +133,20 @@ namespace MapleStoryHelper.Framework.ResourceManager
                 items[i].ImgBitmapSource = items[i].ImgByte.LoadImage();
             }
             return items;
+        }
+
+        #endregion
+
+        #region SetItem
+
+        public void SetItemList()
+        {
+            setItemManager.SetItemList(EtcWzStruct.WzNode);
+        }
+
+        public List<SetItem> GetSetItemList()
+        {
+            return setItemManager.SetItemOptions;
         }
 
         #endregion

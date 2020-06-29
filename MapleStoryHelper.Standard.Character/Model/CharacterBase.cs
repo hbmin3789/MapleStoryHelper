@@ -26,6 +26,12 @@ namespace MapleStoryHelper.Standard.Character.Model
         public EStatus MainStatus { get; set; }
         public EStatus SubStatus { get; set; }
 
+        public List<SetItem> SetItemList 
+        {
+            get => _characterEquipment.SetItemList;
+            set => _characterEquipment.SetItemList = value;
+        }
+
         protected string _imageSrc;
         public string ImageSrc
         {
