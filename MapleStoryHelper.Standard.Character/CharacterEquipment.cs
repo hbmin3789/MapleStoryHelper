@@ -72,6 +72,11 @@ namespace MapleStoryHelper.Standard.Character
 
         private StatusBase GetSetItemStatus()
         {
+            foreach(var item in SetItemDict)
+            {
+                SetItemDict[item.Key] = 0;
+            }
+
             for(int i = 0; i < EquipList.Count; i++)
             {
                 try
@@ -128,11 +133,8 @@ namespace MapleStoryHelper.Standard.Character
             {
                 try
                 {
-                    var parts = SetItemList[i].ItemIDs[code];
-                    if(parts == true)
-                    {
-                        return SetItemList[i];
-                    }
+                    SetItemList[i].ItemIDs[code] = true;
+                    return SetItemList[i];
                 }
                 catch
                 {
