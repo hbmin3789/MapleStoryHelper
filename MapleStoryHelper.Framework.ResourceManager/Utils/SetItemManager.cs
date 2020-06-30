@@ -30,7 +30,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
         {
             var SetItemImage = EtcNode.GetImage(SetItemImagePath);
             var SetItemNode = SetItemImage.Node;
-            for(int i = 0; i < EtcNode.Nodes.Count; i++)
+            for(int i = 0; i < SetItemNode.Nodes.Count; i++)
             {
                 SetItem setList = SetItem.CreateFromNode(SetItemNode.Nodes[i], SetItemNode.Nodes[i].FindNodeByPath("Effect"));
                 SetItemOptions.Add(setList);

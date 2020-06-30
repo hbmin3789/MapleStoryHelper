@@ -138,6 +138,12 @@ namespace MapleStoryHelper.Standard.Character
             {
                 try
                 {
+                    if (SetItemList[i].SetItemName.Contains("아케인셰이드 세트") ||
+                        SetItemList[i].SetItemName.Contains("칠흑의") ||
+                        SetItemList[i].SetItemName.Contains("보스 장신구"))
+                    {
+
+                    }
                     foreach(var kv in SetItemList[i].ItemIDs.Parts)
                     {
                         if (kv.Value.ItemIDs.ContainsKey(code) == true)
