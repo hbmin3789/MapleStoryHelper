@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using MapleStoryHelper.Standard.Utils.ExMethods;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -11,13 +12,11 @@ namespace MapleStoryHelper.Standard.Character
 {
     public class CharacterEquipment : BindableBase
     {
-        //만약 아케인셰이드 5셋, 파프니르 3셋이라면
-        //SetItemDict[아케인셰이드] == 5
-        //SetItemDict[파프니르] == 3
-        private Dictionary<SetItem, int> _setItemDict;
-        public Dictionary<SetItem,int> SetItemDict
+        private List<SetItem> _curSetItems;
+        public List<SetItem> CurSetItems
         {
-            get => _setItemDict;
+            get => _curSetItems;
+            set => SetProperty(ref _curSetItems, value);
         }
 
         private Dictionary<ECharacterEquipmentCategory, EquipmentItem> _equipList;
@@ -44,7 +43,12 @@ namespace MapleStoryHelper.Standard.Character
         {
             _equipList = new Dictionary<ECharacterEquipmentCategory, EquipmentItem>();
             _setItemList = new List<SetItem>();
-            _setItemDict = new Dictionary<SetItem, int>();
+            _curSetItems = new List<SetItem>();
+        }
+
+        private void InitCurSetItem()
+        {
+            _curSetItems = new List<SetItem>();
         }
 
         private void InitEquipList()
@@ -76,16 +80,13 @@ namespace MapleStoryHelper.Standard.Character
 
         private StatusBase GetSetItemStatus()
         {
-            foreach(var item in SetItemDict)
-            {
-                SetItemDict[item.Key] = 0;
-            }
+            InitCurSetItem();
 
-            for(int i = 0; i < EquipList.Count; i++)
+            for (int i = 0; i < EquipList.Count; i++)
             {
                 try
                 {
-                    int code = GetSetItemCode(EquipList[(ECharacterEquipmentCategory)i]);
+                    int code = GetItemCode(EquipList[(ECharacterEquipmentCategory)i]);
                     if (code == 0)
                     {
                         continue;
@@ -94,13 +95,17 @@ namespace MapleStoryHelper.Standard.Character
                     SetItem setitem = GetSetItem(code);
                     if (setitem != null)
                     {
-                        try
+                        var temp = CurSetItems.Where(x => x.SetItemID == setitem.SetItemID).FirstOrDefault();
+                        if(temp == null)
                         {
-                            SetItemDict[setitem]++;
+                            var newItem = setitem.Clone() as SetItem;
+                            newItem.ItemIDs[code] = true;
+                            CurSetItems.Add(newItem);
                         }
-                        catch
+                        else
                         {
-                            SetItemDict.Add(setitem, 1);
+                            int idx = CurSetItems.IndexOf(temp);
+                            CurSetItems[idx].ItemIDs[code] = true;
                         }
                     }
                 }
@@ -124,11 +129,7 @@ namespace MapleStoryHelper.Standard.Character
 
         private void SetJoker()
         {
-            for(int i = 0; i < SetItemDict.Count; i++)
-            {
-                var key = SetItemDict.ElementAt(i).Key;
-                SetItemDict[key]++;
-            }
+            
         }
 
         private SetItem GetSetItem(int code)
@@ -137,8 +138,13 @@ namespace MapleStoryHelper.Standard.Character
             {
                 try
                 {
-                    SetItemList[i].ItemIDs[code] = true;
-                    return SetItemList[i];
+                    foreach(var kv in SetItemList[i].ItemIDs.Parts)
+                    {
+                        if (kv.Value.ItemIDs.ContainsKey(code) == true)
+                        {
+                            return SetItemList[i];
+                        }
+                    }
                 }
                 catch
                 {
@@ -149,7 +155,7 @@ namespace MapleStoryHelper.Standard.Character
             return null;
         }
 
-        private int GetSetItemCode(EquipmentItem equip)
+        private int GetItemCode(EquipmentItem equip)
         {
             if(equip == null)
             {

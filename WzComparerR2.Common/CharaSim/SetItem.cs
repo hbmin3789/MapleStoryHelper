@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.Utils.ExMethods;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,7 +7,7 @@ using WzComparerR2.WzLib;
 
 namespace WzComparerR2.CharaSim
 {
-    public class SetItem
+    public class SetItem : ICloneable
     {
         public SetItem()
         {
@@ -22,6 +23,8 @@ namespace WzComparerR2.CharaSim
         public SetItemIDList ItemIDs { get; private set; }
         public string SetItemName { get; set; }
         public Dictionary<int, SetItemEffect> Effects { get; private set; }
+
+        #region Wz
 
         public static SetItem CreateFromNode(Wz_Node setItemNode, Wz_Node optionNode)
         {
@@ -330,6 +333,33 @@ namespace WzComparerR2.CharaSim
                 return part;
             }
             return null;
+        }
+
+        #endregion
+
+        public object Clone()
+        {
+            SetItem retval = new SetItem()
+            {
+                SetItemID = this.SetItemID,
+                CompleteCount = this.CompleteCount,
+                currentCount = this.currentCount,
+                Parts = this.Parts,
+                ExpandToolTip = this.ExpandToolTip,
+                SetItemName = this.SetItemName,
+            };
+
+            foreach(var item in Effects)
+            {
+                retval.Effects.Add(item.Key, item.Value);
+            }
+
+            foreach(var item in ItemIDs.Parts)
+            {
+                retval.ItemIDs.Add(item.Key, item.Value);
+            }
+
+            return retval;
         }
     }
 }

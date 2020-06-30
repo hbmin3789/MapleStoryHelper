@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "WzComparerR2.Common/1.0.0": {
         "dependencies": {
+          "MapleStoryHelper.Standard.Utils": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
@@ -21,6 +22,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
         }
       },
       "System.Drawing.Common/4.7.0": {
@@ -37,6 +46,14 @@
             "assemblyVersion": "4.0.14.0",
             "fileVersion": "5.0.20.25106"
           }
+        }
+      },
+      "MapleStoryHelper.Standard.Utils/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.Utils.dll": {}
         }
       },
       "WzComparerR2.WzLib/1.0.0": {
@@ -78,6 +95,13 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "System.Drawing.Common/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -91,6 +115,11 @@
       "sha512": "sha512-jodcn53bG5DtO7bEiYo/q5iEmoCYPLbbIzkp0VkIaf0uL151yIBhxjyWdt8R/QxPxMLl+QE5C6K0fuQwCWunxg==",
       "path": "system.runtime.windowsruntime/5.0.0-preview.4.20251.6",
       "hashPath": "system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    },
+    "MapleStoryHelper.Standard.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "WzComparerR2.WzLib/1.0.0": {
       "type": "project",

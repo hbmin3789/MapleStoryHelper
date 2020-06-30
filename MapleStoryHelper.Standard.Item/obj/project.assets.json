@@ -75,10 +75,24 @@
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Utils.dll": {}
+        }
+      },
       "WzComparerR2.Common/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Utils": "1.0.0",
           "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
@@ -421,6 +435,11 @@
       "type": "project",
       "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
+    },
+    "MapleStoryHelper.Standard.Utils/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Utils/MapleStoryHelper.Standard.Utils.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Utils/MapleStoryHelper.Standard.Utils.csproj"
     },
     "WzComparerR2.Common/1.0.0": {
       "type": "project",

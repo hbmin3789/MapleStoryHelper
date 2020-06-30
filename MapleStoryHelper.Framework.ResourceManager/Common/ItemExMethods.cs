@@ -40,6 +40,17 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
             return image;
         }
 
+        public static Wz_Image GetImage(this Wz_Node node)
+        {
+            Wz_Image image;
+            if ((image = node.GetValue<Wz_Image>()) == null || !image.TryExtract())
+            {
+                return null;
+            }
+
+            return image;
+        }
+
         public static string GetItemCodeByOutLink(this string OutLink)
         {
             string retval = "";

@@ -66,8 +66,17 @@
           "MapleStoryHelper.Standard.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.Utils/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.Utils.dll": {}
+        }
+      },
       "WzComparerR2.Common/1.0.0": {
         "dependencies": {
+          "MapleStoryHelper.Standard.Utils": "1.0.0",
           "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
@@ -159,6 +168,11 @@
       "hashPath": "system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
     },
     "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MapleStoryHelper.Standard.Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

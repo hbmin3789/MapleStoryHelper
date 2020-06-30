@@ -29,14 +29,17 @@ namespace MapleStoryHelperWPF.View
 
         public void SetItemStatus(Character character)
         {
-            List<SetItem> lstSetItem = character.CharacterEquipment.SetItemList;
+            List<SetItem> lstSetItem = character.CharacterEquipment.CurSetItems;
+            List<string> setItemString = new List<string>();
             for (int i = 0; i < lstSetItem.Count; i++)
             {
                 StringBuilder sb = new StringBuilder();
                 sb.Append(lstSetItem[i].SetItemName);
-                sb.Append("&#x0a;");
+                sb.Append("\n");
                 sb.Append(lstSetItem[i].GetItemParts(App.Wz.StringWzStruct.WzNode));
+                setItemString.Add(sb.ToString());
             }
+            lvSetItem.ItemsSource = setItemString;
         }
     }
 }

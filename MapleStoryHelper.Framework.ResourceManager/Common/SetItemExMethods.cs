@@ -14,28 +14,33 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
     {
         public static string GetItemParts(this SetItem setItem, Wz_Node stringWzNode)
         {
+            StringBuilder sb = new StringBuilder();
             var parts = setItem.ItemIDs.Parts;
             for (int i = 0; i < parts.Count; i++)
             {
                 var itemIds = parts[i].Value.ItemIDs;
                 foreach(var code in itemIds)
                 {
-                    
+                    if(code.Value == true)
+                    {
+                        sb.Append(code.Key.GetItemName(stringWzNode));
+                        sb.Append("\n");
+                    }
                 }
             }
 
-            return null;
+            return sb.ToString();
         }
 
         public static string GetItemName(this int itemCode, Wz_Node stringWzNode)
         {
-            Wz_Node node = stringWzNode.FindNodeByPath("Eqp.img").FindNodeByPath("Eqp");
+            Wz_Node node = stringWzNode.FindNodeByPath("Eqp.img").GetImage().Node.FindNodeByPath("Eqp");
 
             for(int i = 0; i < node.Nodes.Count; i++) 
             {
                 if (GetItemCategory(itemCode) == node.Nodes[i].Text)
                 {
-                    for (int j = 0; j < node.Nodes[i].Nodes.Count; i++)
+                    for (int j = 0; j < node.Nodes[i].Nodes.Count; j++)
                     {
                         if(node.Nodes[i].Nodes[j].Text == itemCode.ToString())
                         {

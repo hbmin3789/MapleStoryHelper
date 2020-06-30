@@ -4,6 +4,7 @@ using System.Text;
 
 namespace WzComparerR2.CharaSim
 {
+    [Serializable]
     public class SetItemIDPart
     {
         public SetItemIDPart()

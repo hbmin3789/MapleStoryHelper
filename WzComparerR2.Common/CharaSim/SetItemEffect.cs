@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace WzComparerR2.CharaSim
 {
+    [Serializable]
     public class SetItemEffect
     {
         public SetItemEffect()
