@@ -13,8 +13,7 @@
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.Resources": "1.0.0",
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "NETStandard.Library": "2.0.3",
-          "System.ComponentModel.Annotations": "4.2.1.0"
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "MapleStoryHelper.Standard.Character.dll": {}

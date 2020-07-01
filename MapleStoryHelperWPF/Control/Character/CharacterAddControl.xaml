@@ -114,6 +114,21 @@
                         Content="캐릭터 스텟 세팅"
                         Click="btnBaseStatusSetting_Click"/>
             </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="100"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="Margin" Value="5"/>
+                        <Setter Property="FontSize" Value="20"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button x:Name="btnSave" Content="확인"
+                        Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="취소"
+                        Click="btnCancel_Click"/>
+            </StackPanel>
         </Grid>
         
         <characterAdd:CharacterItemControl x:Name="ctrlCharacterItem" Grid.ColumnSpan="3"

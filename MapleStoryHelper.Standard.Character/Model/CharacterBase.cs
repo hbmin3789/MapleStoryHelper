@@ -1,17 +1,8 @@
-﻿using MapleStoryHelper.Standard.Character.Common;
-using MapleStoryHelper.Standard.Common;
+﻿using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Item;
-using MapleStoryHelper.Standard.Resources;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
 using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelper.Standard.Character.Model

@@ -1,12 +1,4 @@
-﻿using MapleStoryHelper.Standard.Common;
-using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Net.NetworkInformation;
-using System.Text;
+﻿using Prism.Mvvm;
 
 namespace MapleStoryHelper.Standard
 {
@@ -217,7 +209,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _dex;
-        [Column("dex")]
         public double Dex
         {
             get => _dex;
@@ -225,7 +216,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _int;
-        [Column("int")]
         public double Int
         {
             get => _int;
@@ -233,7 +223,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _luk;
-        [Column("luk")]
         public double Luk
         {
             get => _luk;
@@ -241,7 +230,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private long _hp;
-        [Column("hp")]
         public long HP
         {
             get => _hp;
@@ -249,7 +237,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _mp;
-        [Column("mp")]
         public int MP
         {
             get => _mp;
@@ -257,7 +244,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _attackPower;
-        [Column("attackpower")]
         public double AttackPower
         {
             get => _attackPower;
@@ -265,7 +251,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _magicAttack;
-        [Column("magicattack")]
         public double MagicAttack
         {
             get => _magicAttack;
@@ -277,7 +262,6 @@ namespace MapleStoryHelper.Standard
         #region UnPercentable Status
 
         private int _cAllStatus;
-        [Column("callstatus")]
         public int CAllStatus
         {
             get => _cAllStatus;
@@ -285,7 +269,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cStr;
-        [Column("cstr")]
         public int CStr
         {
             get => _cStr;
@@ -293,7 +276,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cDex;
-        [Column("cdex")]
         public int CDex
         {
             get => _cDex;
@@ -301,7 +283,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cInt;
-        [Column("cint")]
         public int CInt
         {
             get => _cInt;
@@ -309,7 +290,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cLuk;
-        [Column("cluk")]
         public int CLuk
         {
             get => _cLuk;
@@ -317,7 +297,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cHP;
-        [Column("chp")]
         public int CHP
         {
             get => _cHP;
@@ -325,7 +304,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cMP;
-        [Column("cmp")]
         public int CMP
         {
             get => _cMP;
@@ -333,7 +311,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cAttackPower;
-        [Column("cattackpower")]
         public int CAttackPower
         {
             get => _cAttackPower;
@@ -341,7 +318,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _cMagicAttack;
-        [Column("cmagicattack")]
         public int CMagicAttack
         {
             get => _cMagicAttack;
@@ -353,7 +329,6 @@ namespace MapleStoryHelper.Standard
         #region Status Percent
 
         private int _pAllStatus;
-        [Column("pallstatus")]
         public int PAllStatus
         {
             get => _pAllStatus;
@@ -361,7 +336,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pStr;
-        [Column("pstr")]
         public int PStr
         {
             get => _pStr;
@@ -369,7 +343,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pDex;
-        [Column("pdex")]
         public int PDex
         {
             get => _pDex;
@@ -377,7 +350,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pInt;
-        [Column("pint")]
         public int PInt
         {
             get => _pInt;
@@ -385,7 +357,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pLuk;
-        [Column("pluk")]
         public int PLuk
         {
             get => _pLuk;
@@ -393,7 +364,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pHP;
-        [Column("php")]
         public int PHP
         {
             get => _pHP;
@@ -401,7 +371,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pMP;
-        [Column("pmp")]
         public int PMP
         {
             get => _pMP;
@@ -409,7 +378,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pAttackPower;
-        [Column("pattackpower")]
         public int PAttackPower
         {
             get => _pAttackPower;
@@ -417,7 +385,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private int _pMagicAttack;
-        [Column("pmagicattack")]
         public int PMagicAttack
         {
             get => _pMagicAttack;
@@ -436,7 +403,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _damage;
-        [Column("damage")]
         public double Damage
         {
             get => _damage;
@@ -444,7 +410,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _lastDamage;
-        [Column("last_damage")]
         public double LastDamage
         {
             get => _lastDamage;
@@ -452,7 +417,6 @@ namespace MapleStoryHelper.Standard
         }
 
         private double _bossDamage;
-        [Column("boss_damage")]
         public double BossDamage
         {
             get => _bossDamage;

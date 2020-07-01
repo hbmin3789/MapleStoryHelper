@@ -1,17 +1,11 @@
 ﻿using MapleStoryHelper.Converter;
 using MapleStoryHelper.Standard.Character;
-using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.CompilerServices;
-using System.Text;
 using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelper.Standard.Item
 {
-    [Table("mh_equipment")]
     public class EquipmentItem : ItemBase
     {
         #region Property
@@ -32,7 +26,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private int _requiredLevel = 10;
-        [Column("required_level")]
         public int RequiredLevel
         {
             get => _requiredLevel;
@@ -40,7 +33,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private int _maxStarForce;
-        [Column("max_starforce")]
         public int MaxStarForce
         {
             get => _maxStarForce;
@@ -55,7 +47,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private int _maxScroll;
-        [Column("max_scroll")]
         public int MaxScroll
         {
             get => _maxScroll;
@@ -70,7 +61,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private EEquipmentCategory _equipmentCategory;
-        [Column("equipment_category")]
         public EEquipmentCategory EquipmentCategory
         {
             get => _equipmentCategory;
@@ -85,7 +75,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private EJobCategory _jobCategory;
-        [Column("job_category")]
         public EJobCategory JobCategory
         {
             get => _jobCategory;
@@ -93,7 +82,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private ECharacterJob _characterCategory;
-        [Column("character_category")]
         public ECharacterJob CharacterCategory
         {
             get => _characterCategory;
@@ -108,7 +96,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private EquipmentStatus _status = new EquipmentStatus();
-        [Column("status")]
         public EquipmentStatus Status
         {
             get => _status;

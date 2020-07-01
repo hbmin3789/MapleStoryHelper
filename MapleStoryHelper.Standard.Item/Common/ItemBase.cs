@@ -1,10 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace MapleStoryHelper.Standard.Item
 {
@@ -13,7 +9,6 @@ namespace MapleStoryHelper.Standard.Item
         #region Property
 
         private EItemCategory _itemCategory = EItemCategory.Etc;
-        [Column("item_category")]
         public EItemCategory ItemCategory 
         {
             get => _itemCategory;
@@ -21,7 +16,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _name = "";
-        [Column("name")]
         public string Name
         {
             get => _name;
@@ -29,7 +23,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _imgSrc = "";
-        [Column("image_source")]
         public string ImgSrc
         {
             get => _imgSrc;
@@ -37,7 +30,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private string _itemCode = "";
-        [Column("item_code")]
         public string ItemCode
         {
             get => _itemCode;
@@ -61,7 +53,6 @@ namespace MapleStoryHelper.Standard.Item
         }
 
         private bool _isCash = false;
-        [Column("is_cash")]
         public bool IsCash
         {
             get => _isCash;
