@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using MapleStoryHelper.Framework.ResourceManager;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace MapleStoryHelperWPF.Control
@@ -10,7 +12,8 @@ namespace MapleStoryHelperWPF.Control
     /// CharacterAddControl.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class CharacterAddControl : UserControl
-    {        
+    {
+        MapleStoryHelper.Standard.Character.Model.Character Backup;
 
         public CharacterAddControl()
         {
@@ -25,34 +28,35 @@ namespace MapleStoryHelperWPF.Control
 
         public void SetDataContext(object dataContext)
         {
+            Backup = dataContext.DeepCopy<MapleStoryHelper.Standard.Character.Model.Character>();
             this.DataContext = dataContext;
             ctrlCharacterItem.SetDataContext(dataContext);
             ctrlCharacterJob.SetDataContext(dataContext);
             ctrlCharacterStatusSetting.SetDataContext(dataContext);
         }
 
-        private void btnEditJob_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnEditJob_Click(object sender, RoutedEventArgs e)
         {
-            ctrlCharacterJob.Visibility = System.Windows.Visibility.Visible;
+            ctrlCharacterJob.Visibility = Visibility.Visible;
         }
 
-        private void btnItemSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnItemSetting_Click(object sender, RoutedEventArgs e)
         {
-            ctrlCharacterItem.Visibility = System.Windows.Visibility.Visible;
+            ctrlCharacterItem.Visibility = Visibility.Visible;
             ctrlCharacterItem.UpdateView();
         }
 
-        private void btnSkillSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnSkillSetting_Click(object sender, RoutedEventArgs e)
         {
-            //ctrlSkillSetting.Visibility = System.Windows.Visibility.Visible;
+            //ctrlSkillSetting.Visibility = Visibility.Visible;
         }
 
-        private void btnBaseStatusSetting_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnBaseStatusSetting_Click(object sender, RoutedEventArgs e)
         {
-            ctrlCharacterStatusSetting.Visibility = System.Windows.Visibility.Visible;
+            ctrlCharacterStatusSetting.Visibility = Visibility.Visible;
         }
 
-        private void btnSave_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             var character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
             var characterData = App.viewModel.CharacterList.Where(x => x.PrimaryKey.Equals(character.PrimaryKey)).FirstOrDefault();
@@ -66,14 +70,30 @@ namespace MapleStoryHelperWPF.Control
             {
                 int idx = App.viewModel.CharacterList.IndexOf(characterData);
                 App.viewModel.CharacterList[idx] = character;
-                App.UpdateCharacterDatas();
             }
-            this.Visibility = System.Windows.Visibility.Collapsed;
+            this.Visibility = Visibility.Collapsed;
+            App.UpdateCharacterDatas();
         }
 
-        private void btnCancel_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
+            var result = MessageBox.Show("캐릭터가 저장되지 않습니다. 정말 종료할까요?", "", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                var temp = App.viewModel.CharacterList.Where(x => x.PrimaryKey.Equals(Backup.PrimaryKey)).FirstOrDefault();
+                if (temp != null)
+                {
+                    int idx = App.viewModel.CharacterList.IndexOf(temp);
+                    App.viewModel.CharacterList[idx] = Backup;
+                }
+                else
+                {
+                    App.viewModel.NewCharacter = Backup;
+                }
+                this.Visibility = Visibility.Collapsed;
 
+                App.UpdateCharacterDatas();
+            }
         }
     }
 }

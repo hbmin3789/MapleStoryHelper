@@ -127,6 +127,17 @@ namespace MapleStoryHelper.Standard.Character
             return null;
         }
 
+        public void LoadEquipImages()
+        {
+            for(int i = 0; i < EquipList.Count; i++)
+            {
+                if(EquipList[(ECharacterEquipmentCategory)i]?.ImgByte != null)
+                {
+                    
+                }
+            }
+        }
+
         private void SetJoker()
         {
             

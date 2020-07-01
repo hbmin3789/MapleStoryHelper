@@ -114,6 +114,18 @@ namespace MapleStoryHelperWPF.ViewModel
             for(int i = 0; i < list.Count; i++)
             {
                 var character = JsonConvert.DeserializeObject<Character>(list[i]);
+                if(character != null)
+                {
+                    var equipList = character.CharacterEquipment.EquipList;
+                    for (int j = 0; j < equipList.Count; j++)
+                    {
+                        var category = (ECharacterEquipmentCategory)j;
+                        if (equipList[category].ImgByte != null)
+                        {
+                            equipList[category].ImgBitmapSource = equipList[category].ImgByte.LoadImage();
+                        }
+                    }
+                }
                 CharacterList.Add(character);
             }
         }
