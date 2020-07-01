@@ -8,11 +8,14 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelperWPF.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        public List<SetItem> SetItemList { get; private set; }
+
         private MapleWz _mapleWz;
         public MapleWz MapleWz
         {
@@ -28,6 +31,7 @@ namespace MapleStoryHelperWPF.ViewModel
                 SetProperty(ref _newCharacter, value);
                 _newCharacter.UnionCharacterStatus = UnionCharacterStatus;
                 _newCharacter.UnionMapStatus = UnionMapStatus;
+                _newCharacter.CharacterEquipment.SetItemList = SetItemList;
             }
         }
 
@@ -88,7 +92,7 @@ namespace MapleStoryHelperWPF.ViewModel
         private void InitSetItem()
         {
             _mapleWz.SetItemList();
-            NewCharacter.SetItemList = _mapleWz.GetSetItemList();
+            SetItemList = _mapleWz.GetSetItemList();
         }
 
         /// <summary>

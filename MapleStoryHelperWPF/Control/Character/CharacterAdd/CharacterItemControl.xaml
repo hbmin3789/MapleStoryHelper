@@ -8,215 +8,304 @@
              mc:Ignorable="d">
     <UserControl.Resources>
         <Style TargetType="Button">
-            <Setter Property="Width" Value="100"/>
-            <Setter Property="Height" Value="100"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="VerticalAlignment" Value="Stretch"/>
             <Setter Property="Margin" Value="5"/>
-            <Setter Property="FontSize" Value="30"/>
         </Style>
         <Style x:Key="bdBlankStyle" TargetType="Border">
             <Setter Property="Width" Value="100"/>
             <Setter Property="Height" Value="100"/>
             <Setter Property="Margin" Value="5"/>
         </Style>
+
+        <Style x:Key="btnBaseStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <Border.Background>
+                                <SolidColorBrush x:Name="bdBrush"/>
+                            </Border.Background>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#979797"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#77979797"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter x:Name="buttonContent"
+                                              Content="{TemplateBinding Content}"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnRingStyle" TargetType="Button" BasedOn="{StaticResource btnBaseStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <Border.Background>
+                                <SolidColorBrush x:Name="bdBrush"/>
+                            </Border.Background>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#A39B8D"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#77A39B8D"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnWeaponStyle" TargetType="Button" BasedOn="{StaticResource btnBaseStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <Border.Background>
+                                <SolidColorBrush x:Name="bdBrush"/>
+                            </Border.Background>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#666666"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#77666666"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnAndroidStyle" TargetType="Button" BasedOn="{StaticResource btnBaseStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <Border.Background>
+                                <SolidColorBrush x:Name="bdBrush"/>
+                            </Border.Background>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#7C8690"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#777C8690"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnPendantStyle" TargetType="Button" BasedOn="{StaticResource btnBaseStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border">
+                            <Border.Background>
+                                <SolidColorBrush x:Name="bdBrush"/>
+                            </Border.Background>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#86a1a8"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames
+                                                        Storyboard.TargetName="Border"
+                                                        Storyboard.TargetProperty="(Panel.Background)
+                                                        .(SolidColorBrush.Color)">
+
+                                                <EasingColorKeyFrame KeyTime="0" Value="#7786a1a8"/>
+
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </UserControl.Resources>
 
     <Grid Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="570"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0" VerticalAlignment="Top">
             <WrapPanel x:Name="wpItems" Margin="10" Orientation="Vertical"
                        Height="700">
-                <Button CommandParameter="Ring1"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="반지"/>
-                        <Image x:Name="imgRing1"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Ring2"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="반지"/>
-                        <Image x:Name="imgRing2"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Ring3"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="반지"/>
-                        <Image x:Name="imgRing3"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Ring4"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="반지"/>
-                        <Image x:Name="imgRing4"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Pocket"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="포켓"/>
-                        <Image x:Name="imgPocket"/>
-                    </Grid>
-                </Button>
+                <Button CommandParameter="Ring1" Style="{StaticResource btnRingStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Ring2" Style="{StaticResource btnRingStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Ring3" Style="{StaticResource btnRingStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Ring4" Style="{StaticResource btnRingStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Pocket" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
 
                 <Border Style="{StaticResource bdBlankStyle}"/>
                 <Border Style="{StaticResource bdBlankStyle}"/>
 
-                <Button CommandParameter="Pendant1"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="펜던트"/>
-                        <Image x:Name="imgPendant1"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Pendant2"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="펜던트"/>
-                        <Image x:Name="imgPendant2"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Weapon"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="무기"/>
-                        <Image x:Name="imgWeapon"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Belt"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="벨트"/>
-                        <Image x:Name="imgBelt"/>
-                    </Grid>
-                </Button>
+                <Button CommandParameter="Pendant1" Style="{StaticResource btnPendantStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Pendant2" Style="{StaticResource btnPendantStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Weapon" Style="{StaticResource btnWeaponStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Belt" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
 
                 <Border Style="{StaticResource bdBlankStyle}"/>
 
-                <Button CommandParameter="Cap"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="모자"/>
-                        <Image x:Name="imgCap"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Face"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="얼장"/>
-                        <Image x:Name="imgFace"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Eye"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="눈장"/>
-                        <Image x:Name="imgEye"/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Clothes"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="상의"/>
-                        <Image />
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Pants"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="하의"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Shoes"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="신발"/>
-                        <Image/>
-                    </Grid>
-                </Button>
+                <Button CommandParameter="Cap" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Face" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Eye" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Clothes" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Pants" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Shoes" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
 
                 <Border Style="{StaticResource bdBlankStyle}"/>
                 <Border Style="{StaticResource bdBlankStyle}"/>
 
-                <Button CommandParameter="Ear"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="귀고리"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Shoulder"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock TextWrapping="Wrap" Text="어깨&#x0a;장식"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Glove"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="장갑"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Android"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="안드"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Emblem"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="엠블럼"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Badge"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="뱃지"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Medal"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="칭호"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="SubWeapon"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock TextWrapping="Wrap" Text="보조&#x0a;무기"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Cape"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="망토"/>
-                        <Image/>
-                    </Grid>
-                </Button>
-                <Button CommandParameter="Heart"
-                        Click="ItemSetting_Button_Click">
-                    <Grid>
-                        <TextBlock Text="기계&#x0a;심장"/>
-                        <Image/>
-                    </Grid>
-                </Button>
+                <Button CommandParameter="Ear" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Shoulder" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Glove" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Android" Style="{StaticResource btnAndroidStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Emblem" Style="{StaticResource btnPendantStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Badge" Style="{StaticResource btnPendantStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Medal" Style="{StaticResource btnPendantStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="SubWeapon" Style="{StaticResource btnWeaponStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Cape" Style="{StaticResource btnBaseStyle}"
+                        Click="ItemSetting_Button_Click"/>
+                <Button CommandParameter="Heart" Style="{StaticResource btnAndroidStyle}"
+                        Click="ItemSetting_Button_Click"/>
 
             </WrapPanel>
         </Grid>

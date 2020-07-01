@@ -18,7 +18,6 @@ namespace MapleStoryHelper.Standard.Character.Model
 {
     public class CharacterBase : BindableBase
     {
-
         public string PrimaryKey;
 
         #region Property
@@ -184,10 +183,32 @@ namespace MapleStoryHelper.Standard.Character.Model
             SetPrimaryKey();
         }
 
+        #region Initialize
+
+        private void InitVariables()
+        {
+            _characterEquipment = new CharacterEquipment();
+            _characterStatus = new StatusBase();
+            _baseStatus = new StatusBase();
+            _skillStatus = new StatusBase();
+            _unionMapStatus = new StatusBase();
+            _unionCharacterStatus = new StatusBase();
+            _jobLevel = EJobLevel.First;
+            _level = 1;
+            _characterJob = ECharacterJob.Hero;
+            _characterName = string.Empty;
+            MainStatus = EStatus.STR;
+            SubStatus = EStatus.STR;
+        }
+
+        #endregion
+
         private void SetPrimaryKey()
         {
             PrimaryKey = Guid.NewGuid().ToString();
         }
+
+        #region Status
 
         private void SetIsUseAttackPower()
         {
@@ -316,20 +337,13 @@ namespace MapleStoryHelper.Standard.Character.Model
             }
         }
 
-        private void InitVariables()
+        #endregion
+
+        public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
         {
-            _characterEquipment = new CharacterEquipment();
-            _characterStatus = new StatusBase();
-            _baseStatus = new StatusBase();
-            _skillStatus = new StatusBase();
-            _unionMapStatus = new StatusBase();
-            _unionCharacterStatus = new StatusBase();
-            _jobLevel = EJobLevel.First;
-            _level = 1;
-            _characterJob = ECharacterJob.Hero;
-            _characterName = string.Empty;
-            MainStatus = EStatus.STR;
-            SubStatus = EStatus.STR;
+            CharacterEquipment.EquipList[category] = equipmentItem;
+            CharacterStatus = GetCharacterStatus();
+            MaxStatusAttack = 0;
         }
 
         public void SetCharacterJob(ECharacterJob characterJob)
@@ -478,12 +492,5 @@ namespace MapleStoryHelper.Standard.Character.Model
         }
 
         #endregion
-
-        public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
-        {
-            CharacterEquipment.EquipList[category] = equipmentItem;
-            CharacterStatus = GetCharacterStatus();
-            MaxStatusAttack = 0;
-        }
     }
 }

@@ -22,6 +22,39 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
         public CharacterItemControl()
         {
             this.InitializeComponent();
+            InitEquipButtons();
+        }
+
+        private void InitEquipButtons()
+        {
+            int idx = 0;
+            var children = wpItems.Children;
+            for (int i = 0; i < wpItems.Children.Count; i++)
+            {
+                if (children[i] is Button)
+                {
+                    var grid = new Grid();
+                    var textBlock = NewButtonTextBlock();
+                    textBlock.Text = ((ECharacterEquipmentCategory)idx).ToString();
+                    var img = new Image();
+
+                    grid.Children.Add(textBlock);
+                    grid.Children.Add(img);
+                    (children[i] as Button).Content = grid;
+                    idx++;
+                }
+            }
+        }
+
+        private TextBlock NewButtonTextBlock()
+        {
+            TextBlock retval = new TextBlock();
+
+            retval.HorizontalAlignment = HorizontalAlignment.Left;
+            retval.VerticalAlignment = VerticalAlignment.Top;
+            retval.FontSize = 12;
+
+            return retval;
         }
 
         private void ItemSetting_Button_Click(object sender, RoutedEventArgs e)
