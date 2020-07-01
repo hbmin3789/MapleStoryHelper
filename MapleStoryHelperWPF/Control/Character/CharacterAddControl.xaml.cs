@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
+using System.Linq;
 using System.Windows.Controls;
 
 namespace MapleStoryHelperWPF.Control
@@ -38,6 +39,7 @@ namespace MapleStoryHelperWPF.Control
         private void btnItemSetting_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             ctrlCharacterItem.Visibility = System.Windows.Visibility.Visible;
+            ctrlCharacterItem.UpdateView();
         }
 
         private void btnSkillSetting_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -53,7 +55,20 @@ namespace MapleStoryHelperWPF.Control
         private void btnSave_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             var character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
-            string json = JsonConvert.SerializeObject(character,Formatting.None);
+            var characterData = App.viewModel.CharacterList.Where(x => x.PrimaryKey.Equals(character.PrimaryKey)).FirstOrDefault();
+            if (characterData == null)
+            {
+                string json = JsonConvert.SerializeObject(character, Formatting.None);
+                App.viewModel.CharacterList.Add(character);
+                App.CharacterJsonDatas.Add(json);
+            }
+            else
+            {
+                int idx = App.viewModel.CharacterList.IndexOf(characterData);
+                App.viewModel.CharacterList[idx] = character;
+                App.UpdateCharacterDatas();
+            }
+            this.Visibility = System.Windows.Visibility.Collapsed;
         }
 
         private void btnCancel_Click(object sender, System.Windows.RoutedEventArgs e)

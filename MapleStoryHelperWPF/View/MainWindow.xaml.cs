@@ -32,7 +32,7 @@ namespace MapleStoryHelperWPF
         {
             InitializeComponent();
             App.viewModel.LoadWz(PATH);
-
+            App.LoadCharacterDatas();
         }
     }
 }

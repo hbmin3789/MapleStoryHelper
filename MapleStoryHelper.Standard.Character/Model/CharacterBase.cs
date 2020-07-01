@@ -83,7 +83,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get
             {
-                return _characterStatus + _baseStatus + _unionCharacterStatus + _unionMapStatus;
+                return _characterStatus + _baseStatus + _unionCharacterStatus + _unionMapStatus + _characterEquipment.GetEquipStatus();
             }
             set=> SetProperty(ref _characterStatus, value);
         }
@@ -333,7 +333,6 @@ namespace MapleStoryHelper.Standard.Character.Model
         public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
         {
             CharacterEquipment.EquipList[category] = equipmentItem;
-            CharacterStatus = GetCharacterStatus();
             MaxStatusAttack = 0;
         }
 
@@ -470,17 +469,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             retval *= 0.01;
 
             return retval;
-        }
-
-        public StatusBase GetCharacterStatus()
-        {
-            StatusBase retval = new StatusBase();
-            StatusBase equipStatus = _characterEquipment.GetEquipStatus();
-
-            retval = retval + equipStatus;
-
-            return retval;
-        }
+        }       
 
         #endregion
     }

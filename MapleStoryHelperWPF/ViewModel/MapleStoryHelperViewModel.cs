@@ -4,6 +4,7 @@ using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using Newtonsoft.Json;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -106,5 +107,15 @@ namespace MapleStoryHelperWPF.ViewModel
         }
 
         #endregion
+
+
+        public void LoadCharacterJson(List<string> list)
+        {
+            for(int i = 0; i < list.Count; i++)
+            {
+                var character = JsonConvert.DeserializeObject<Character>(list[i]);
+                CharacterList.Add(character);
+            }
+        }
     }
 }

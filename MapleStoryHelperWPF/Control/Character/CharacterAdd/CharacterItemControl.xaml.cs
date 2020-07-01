@@ -76,7 +76,7 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             }
         }
 
-        private void UpdateView()
+        public void UpdateView()
         {
             MapleStoryHelper.Standard.Character.Model.Character character = this.DataContext as MapleStoryHelper.Standard.Character.Model.Character;
             var equipList = character.CharacterEquipment.EquipList;
