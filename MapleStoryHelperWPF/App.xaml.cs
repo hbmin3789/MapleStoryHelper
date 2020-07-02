@@ -38,7 +38,14 @@ namespace MapleStoryHelperWPF
             {
                 string jarr = File.ReadAllText(BASE_PATH);
                 var list = JsonConvert.DeserializeObject<List<string>>(jarr);
-                App.viewModel.LoadCharacterJson(list);
+                try
+                {
+                    App.viewModel.LoadCharacterJson(list);
+                }
+                catch(Exception e)
+                {
+                    File.Delete(BASE_PATH);
+                }
             }
         }
 

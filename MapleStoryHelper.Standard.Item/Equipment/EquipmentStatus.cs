@@ -111,15 +111,9 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             retval.PoIgnoreDef = a.PoIgnoreDef;
             retval.AdPoIgnoreDef = a.AdPoIgnoreDef;
 
-            for (int i = 0; i < b.PoIgnoreDef.Count; i++)
-            {
-                retval.PoIgnoreDef.Add(b.PoIgnoreDef[i]);
-            }
+            retval.PoIgnoreDef = 1 - ((1 - a.PoIgnoreDef / 100) * (1 - b.PoIgnoreDef / 100));
 
-            for (int i = 0; i < b.AdPoIgnoreDef.Count; i++)
-            {
-                retval.AdPoIgnoreDef.Add(b.AdPoIgnoreDef[i]);
-            }
+            retval.AdPoIgnoreDef = 1 - ((1 - a.AdPoIgnoreDef / 100) * (1 - b.AdPoIgnoreDef / 100));
 
             return retval;
         }
@@ -406,8 +400,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _poDamage, value);
         }
 
-        private List<int> _poIgnoreDef;
-        public List<int> PoIgnoreDef
+        private double _poIgnoreDef;
+        public double PoIgnoreDef
         {
             get => _poIgnoreDef;
             set => SetProperty(ref _poIgnoreDef, value);
@@ -571,8 +565,8 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adPoDamage, value);
         }
 
-        private List<int> _adPoIgnoreDef;
-        public List<int> AdPoIgnoreDef
+        private double _adPoIgnoreDef;
+        public double AdPoIgnoreDef
         {
             get => _adPoIgnoreDef;
             set => SetProperty(ref _adPoIgnoreDef, value);
@@ -601,13 +595,7 @@ namespace MapleStoryHelper.Standard.Item.Equipment
 
         public EquipmentStatus() : base()
         {
-            InitVariables();
-        }
 
-        private void InitVariables()
-        {
-            PoIgnoreDef = new List<int>();
-            AdPoIgnoreDef = new List<int>();
         }
 
         public StatusBase GetStatus<T>() where T : StatusBase , new()
@@ -650,14 +638,9 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 AdPAllStatus = this.AdPAllStatus
             };
 
-            for (int i = 0; i < this.PoIgnoreDef.Count; i++)
-            {
-                retval.IgnoreDef *= (1 - PoIgnoreDef[i] / 100);
-            }
-            for (int i = 0; i < this.AdPoIgnoreDef.Count; i++)
-            {
-                retval.IgnoreDef *= (1 - AdPoIgnoreDef[i] / 100);
-            }
+            retval.IgnoreDef *= (1 - PoIgnoreDef / 100);
+
+            retval.IgnoreDef *= (1 - AdPoIgnoreDef / 100);
 
 
             return retval;

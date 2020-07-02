@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Standard.Common;
 using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Common;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -83,7 +84,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get
             {
-                return _characterStatus + _baseStatus + _unionCharacterStatus + _unionMapStatus + _characterEquipment.GetEquipStatus();
+                return _characterStatus + _baseStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
             }
             set=> SetProperty(ref _characterStatus, value);
         }
@@ -100,20 +101,6 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get => _baseStatus;
             set => SetProperty(ref _baseStatus, value);
-        }
-
-        protected StatusBase _unionMapStatus;
-        public StatusBase UnionMapStatus
-        {
-            get => _unionMapStatus;
-            set => SetProperty(ref _unionMapStatus, value);
-        }
-
-        protected StatusBase _unionCharacterStatus;
-        public StatusBase UnionCharacterStatus
-        {
-            get => _unionCharacterStatus;
-            set => SetProperty(ref _unionCharacterStatus, value);
         }
 
         protected bool _isUseAttackPower = true;
@@ -182,8 +169,6 @@ namespace MapleStoryHelper.Standard.Character.Model
             _characterStatus = new StatusBase();
             _baseStatus = new StatusBase();
             _skillStatus = new StatusBase();
-            _unionMapStatus = new StatusBase();
-            _unionCharacterStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
             _characterJob = ECharacterJob.Hero;

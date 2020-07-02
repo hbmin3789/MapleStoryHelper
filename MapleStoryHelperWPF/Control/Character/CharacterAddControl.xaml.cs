@@ -72,7 +72,6 @@ namespace MapleStoryHelperWPF.Control
                 App.viewModel.CharacterList[idx] = character;
             }
             this.Visibility = Visibility.Collapsed;
-            App.UpdateCharacterDatas();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
@@ -92,7 +91,6 @@ namespace MapleStoryHelperWPF.Control
                 }
                 this.Visibility = Visibility.Collapsed;
 
-                App.UpdateCharacterDatas();
             }
         }
     }

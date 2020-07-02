@@ -85,10 +85,10 @@
                 <TextBox Text="{Binding CMP}"/>
                 <TextBox Text="{Binding CAttackPower}"/>
                 <TextBox Text="{Binding CMagicAttack}"/>
-                <TextBox Text="{Binding Critical}"/>
-                <TextBox Text="{Binding CriticalDamage}"/>
-                <TextBox Text="{Binding BossDamage}"/>
-                <TextBox Text="{Binding IgnoreDef}"/>
+                <TextBox Text="{Binding PoCritical}"/>
+                <TextBox Text="{Binding PoCritDamage}"/>
+                <TextBox Text="{Binding PoBossDamage}"/>
+                <TextBox Text="{Binding PoIgnoreDef}"/>
             </StackPanel>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal"

@@ -34,5 +34,10 @@ namespace MapleStoryHelperWPF
             App.viewModel.LoadWz(PATH);
             App.LoadCharacterDatas();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            App.UpdateCharacterDatas();
+        }
     }
 }

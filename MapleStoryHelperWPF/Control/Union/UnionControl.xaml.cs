@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.Item.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,13 +24,7 @@ namespace MapleStoryHelperWPF.Control.Union
         public UnionControl()
         {
             InitializeComponent();
-            Loaded += UnionControl_Loaded;
-        }
-
-        private void UnionControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            spStatus1.DataContext = App.viewModel.UnionCharacterStatus;
-            spStatus2.DataContext = App.viewModel.UnionMapStatus;
+            this.DataContext = Setting.UnionStatus;
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)

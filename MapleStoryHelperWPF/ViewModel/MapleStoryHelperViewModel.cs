@@ -3,6 +3,7 @@ using MapleStoryHelper.Standard;
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
+using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
 using Newtonsoft.Json;
 using Prism.Mvvm;
@@ -30,8 +31,6 @@ namespace MapleStoryHelperWPF.ViewModel
             set
             {
                 SetProperty(ref _newCharacter, value);
-                _newCharacter.UnionCharacterStatus = UnionCharacterStatus;
-                _newCharacter.UnionMapStatus = UnionMapStatus;
                 _newCharacter.CharacterEquipment.SetItemList = SetItemList;
             }
         }
@@ -43,41 +42,28 @@ namespace MapleStoryHelperWPF.ViewModel
             set => SetProperty(ref _characterList, value);
         }
 
-        private StatusBase _unionCharacterStatus;
-        public StatusBase UnionCharacterStatus
+        private EquipmentStatus _unionStatus;
+        public EquipmentStatus UnionStatus
         {
-            get => _unionCharacterStatus;
-            set => SetProperty(ref _unionCharacterStatus, value);
-        }
-
-        private StatusBase _unionMapStatus;
-        public StatusBase UnionMapStatus
-        {
-            get => _unionMapStatus;
-            set => SetProperty(ref _unionMapStatus, value);
-        }
-
-        public StatusBase UnionStatus
-        {
-            get => _unionMapStatus + _unionCharacterStatus;
+            get => _unionStatus;
+            set => SetProperty(ref _unionStatus, value);
         }
 
         public MapleStoryHelperViewModel()
         {
             InitVariables();
-            SetCharacter();
+            SetUnionStatus();
         }
 
-        private void SetCharacter()
+        private void SetUnionStatus()
         {
-            
+            Setting.UnionStatus = UnionStatus;
         }
 
         private void InitVariables()
         {
             _mapleWz = new MapleWz();
-            _unionMapStatus = new StatusBase();
-            _unionCharacterStatus = new StatusBase();
+            _unionStatus = new EquipmentStatus();
             _characterList = new ObservableCollection<Character>();
             _newCharacter = new Character();
         }
