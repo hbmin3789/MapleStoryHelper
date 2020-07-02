@@ -37,6 +37,7 @@ namespace MapleStoryHelperWPF.Control
             set
             {
                 this.DataContext = value;
+                SetPotentialStatus(value.Potential);
             }
         }
 
@@ -113,6 +114,11 @@ namespace MapleStoryHelperWPF.Control
         public List<Potential> GetPotentialStatus()
         {
             return ctrlPotential.GetStatus();
+        }
+
+        public void SetPotentialStatus(List<Potential> potential)
+        {
+            ctrlPotential.SetPotentialStatus(potential);
         }
 
         #region Event

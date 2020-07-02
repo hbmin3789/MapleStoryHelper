@@ -67,7 +67,7 @@ namespace MapleStoryHelperWPF.View
             this.character = ch;
             if(ch.CharacterEquipment.EquipList[CharacterEquipCategory] != null)
             {
-                ctrlEquipmentInfo.DataContext = ch.CharacterEquipment.EquipList[CharacterEquipCategory];
+                ctrlEquipmentInfo.EquipmentItem = ch.CharacterEquipment.EquipList[CharacterEquipCategory];
                 this.DataContext = ch.CharacterEquipment.EquipList[CharacterEquipCategory];
             }
         }

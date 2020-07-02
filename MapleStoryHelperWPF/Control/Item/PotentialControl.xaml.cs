@@ -17,6 +17,9 @@ namespace MapleStoryHelperWPF.Control
     {
         #region Proeprty
 
+        private List<ComboBox> cbList { get; set; }
+        private List<TextBox> tbList { get; set; }
+
         private ObservableCollection<string> _potentialItems;
         public ObservableCollection<string> PotentialItems
         {
@@ -34,6 +37,7 @@ namespace MapleStoryHelperWPF.Control
         public PotentialControl()
         {
             this.InitializeComponent();
+            InitVariables();
             InitView();
         }
 
@@ -41,7 +45,6 @@ namespace MapleStoryHelperWPF.Control
 
         private void InitView()
         {
-            InitVariables();
             InitPotentialListView();
             InitGrid();
             this.DataContext = this;
@@ -50,6 +53,8 @@ namespace MapleStoryHelperWPF.Control
         private void InitVariables()
         {
             PotentialItems = new ObservableCollection<string>();
+            cbList = new List<ComboBox>();
+            tbList = new List<TextBox>();
         }
 
         private void InitPotentialListView()
@@ -77,7 +82,9 @@ namespace MapleStoryHelperWPF.Control
                 Grid.SetColumn(tb, 1);
 
                 gdMain.Children.Add(cb);
+                cbList.Add(cb);
                 gdMain.Children.Add(tb);
+                tbList.Add(tb);
             }
         }
 
@@ -137,6 +144,15 @@ namespace MapleStoryHelperWPF.Control
             }
 
             return retval;
+        }
+
+        public void SetPotentialStatus(List<Potential> potential)
+        {
+            for(int i = 0; i < potential.Count; i++)
+            {
+                cbList[i].SelectedIndex = (int)potential[i].StatusKind;
+                tbList[i].Text = potential[i].StatusValue.ToString();
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
