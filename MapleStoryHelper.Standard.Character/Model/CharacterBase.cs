@@ -189,7 +189,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             _characterJob = ECharacterJob.Hero;
             _characterName = string.Empty;
             MainStatus = EStatus.STR;
-            SubStatus = EStatus.STR;
+            SubStatus = EStatus.DEX;
         }
 
         #endregion
@@ -399,22 +399,22 @@ namespace MapleStoryHelper.Standard.Character.Model
             switch (main)
             {
                 case EStatus.STR:
-                    MainStatus = _characterStatus.GetSTR();
+                    MainStatus = CharacterStatus.GetSTR();
                     break;
                 case EStatus.DEX:
-                    MainStatus = _characterStatus.GetDEX();
+                    MainStatus = CharacterStatus.GetDEX();
                     break;
                 case EStatus.INT:
-                    MainStatus = _characterStatus.GetINT();
+                    MainStatus = CharacterStatus.GetINT();
                     break;
                 case EStatus.LUK:
-                    MainStatus = _characterStatus.GetLUK();
+                    MainStatus = CharacterStatus.GetLUK();
                     break;
                 case EStatus.HP:
-                    MainStatus = _characterStatus.GetHP();
+                    MainStatus = CharacterStatus.GetHP();
                     break;
                 case EStatus.MP:
-                    MainStatus = _characterStatus.GetMP();
+                    MainStatus = CharacterStatus.GetMP();
                     break;
             }
         }
