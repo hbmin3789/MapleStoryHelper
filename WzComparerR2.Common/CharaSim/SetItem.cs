@@ -1,6 +1,7 @@
 ﻿using MapleStoryHelper.Standard.Utils.ExMethods;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 using WzComparerR2.WzLib;
@@ -17,12 +18,33 @@ namespace WzComparerR2.CharaSim
 
         public int SetItemID { get; set; }
         public int CompleteCount { get; set; }
-        public int currentCount;
+        public int CurrentCount 
+        {
+            get
+            {
+                int retval = 0;
+
+                for(int i = 0; i < ItemIDs.Parts.Count; i++)
+                {
+                    var itemIds = ItemIDs.Parts.ElementAt(i).Value.ItemIDs;
+                    for (int j = 0; j < itemIds.Count; j++)
+                    {
+                        if(itemIds.ElementAt(j).Value == true)
+                        {
+                            retval++;
+                        }
+                    }
+                }
+
+                return retval;
+            }
+        }
         public bool Parts { get; set; }
         public bool ExpandToolTip { get; set; }
         public SetItemIDList ItemIDs { get; private set; }
         public string SetItemName { get; set; }
         public Dictionary<int, SetItemEffect> Effects { get; private set; }
+        public bool jokerPossible;
 
         #region Wz
 
@@ -44,6 +66,16 @@ namespace WzComparerR2.CharaSim
             {
                 switch (subNode.Text)
                 {
+                    case "jokerPossible":
+                        if(Convert.ToInt32(subNode.Value) == 1)
+                        {
+                            setItem.jokerPossible = true;
+                        }
+                        else
+                        {
+                            setItem.jokerPossible = false;
+                        }
+                        break;
                     case "setItemName":
                         setItem.SetItemName = Convert.ToString(subNode.Value);
                         break;
@@ -343,10 +375,10 @@ namespace WzComparerR2.CharaSim
             {
                 SetItemID = this.SetItemID,
                 CompleteCount = this.CompleteCount,
-                currentCount = this.currentCount,
                 Parts = this.Parts,
                 ExpandToolTip = this.ExpandToolTip,
                 SetItemName = this.SetItemName,
+                jokerPossible = this.jokerPossible,
             };
 
             foreach(var item in Effects)

@@ -112,6 +112,7 @@ namespace MapleStoryHelperWPF.ViewModel
                         }
                     }
                 }
+                character.CharacterEquipment.SetItemList = SetItemList;
                 CharacterList.Add(character);
             }
         }

@@ -119,7 +119,7 @@ namespace MapleStoryHelper.Standard.Character
             {
                 if(EquipList[(ECharacterEquipmentCategory)i].IsJoker == true)
                 {
-                    SetJoker();
+                    SetJoker(EquipList[(ECharacterEquipmentCategory)i].ItemCode);
                     break;
                 }
             }
@@ -127,20 +127,22 @@ namespace MapleStoryHelper.Standard.Character
             return null;
         }
 
-        public void LoadEquipImages()
+        private void SetJoker(string ItemCode)
         {
-            for(int i = 0; i < EquipList.Count; i++)
+            for(int i = 0; i < CurSetItems.Count; i++)
             {
-                if(EquipList[(ECharacterEquipmentCategory)i]?.ImgByte != null)
+                if(CurSetItems[i].jokerPossible == true)
                 {
-                    
+                    var Parts = CurSetItems[i].ItemIDs.Parts;
+
+                    int itemCode = Convert.ToInt32(ItemCode);
+                    var itemPart = new SetItemIDPart();
+                    itemPart.ItemIDs.Add(itemCode, true);
+
+                    var newItem = new KeyValuePair<int, SetItemIDPart>(Parts.Count, itemPart);
+                    Parts.Add(newItem);
                 }
             }
-        }
-
-        private void SetJoker()
-        {
-            
         }
 
         private SetItem GetSetItem(int code)
@@ -149,12 +151,6 @@ namespace MapleStoryHelper.Standard.Character
             {
                 try
                 {
-                    if (SetItemList[i].SetItemName.Contains("아케인셰이드 세트") ||
-                        SetItemList[i].SetItemName.Contains("칠흑의") ||
-                        SetItemList[i].SetItemName.Contains("보스 장신구"))
-                    {
-
-                    }
                     foreach(var kv in SetItemList[i].ItemIDs.Parts)
                     {
                         if (kv.Value.ItemIDs.ContainsKey(code) == true)
