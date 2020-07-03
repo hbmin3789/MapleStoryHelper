@@ -30,6 +30,7 @@ namespace MapleStoryHelperWPF.View
         public void SetItemStatus(Character character)
         {
             List<SetItem> lstSetItem = character.CharacterEquipment.CurSetItems;
+
             List<string> setItemString = new List<string>();
             for (int i = 0; i < lstSetItem.Count; i++)
             {

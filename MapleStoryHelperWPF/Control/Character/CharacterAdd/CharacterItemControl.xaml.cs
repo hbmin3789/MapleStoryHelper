@@ -136,11 +136,13 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Collapsed;
+            App.UpdateBinding();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Collapsed;
+            App.UpdateBinding();
         }
 
         public void SetDataContext(object dataContext)

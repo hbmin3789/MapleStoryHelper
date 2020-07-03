@@ -19,6 +19,7 @@ namespace MapleStoryHelperWPF.Control
         {
             InitializeComponent();
             ctrlCharacterJob.OnCharacterChanged += OnCharacterChanged;
+            App.UpdateBindingEvent += UpdateBinding;
         }
 
         private void OnCharacterChanged(object sender, MapleStoryHelper.Standard.Character.Model.Character e)
@@ -74,6 +75,13 @@ namespace MapleStoryHelperWPF.Control
             this.Visibility = Visibility.Collapsed;
         }
 
+        private void UpdateBinding(object sender, EventArgs e)
+        {
+            var temp = this.DataContext;
+            this.DataContext = null;
+            this.DataContext = temp;
+        }
+
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show("캐릭터가 저장되지 않습니다. 정말 종료할까요?", "", MessageBoxButton.YesNo);
@@ -90,7 +98,7 @@ namespace MapleStoryHelperWPF.Control
                     App.viewModel.NewCharacter = Backup;
                 }
                 this.Visibility = Visibility.Collapsed;
-
+                
             }
         }
     }

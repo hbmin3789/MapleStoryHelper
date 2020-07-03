@@ -10,6 +10,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -20,6 +21,7 @@ namespace MapleStoryHelperWPF
     /// </summary>
     public partial class App : Application
     {
+        public static EventHandler UpdateBindingEvent;
         public static string BASE_PATH = AppDomain.CurrentDomain.BaseDirectory + "Data.dat";
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
         public static MapleWz Wz
@@ -30,6 +32,16 @@ namespace MapleStoryHelperWPF
         public static List<string> CharacterJsonDatas
         {
             get => GetCharacterJsonDatas();
+        }
+
+        public static void AddBindingUpdateEvent(EventHandler e)
+        {
+            UpdateBindingEvent += e;
+        }
+
+        public static void UpdateBinding()
+        {
+            UpdateBindingEvent?.Invoke(null, null);
         }
 
         public static void LoadCharacterDatas()
