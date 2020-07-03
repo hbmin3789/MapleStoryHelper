@@ -1363,6 +1363,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -3018,6 +3019,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -4729,6 +4731,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -6437,6 +6440,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -8092,6 +8096,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -9803,6 +9808,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -11458,6 +11464,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -13169,6 +13176,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {

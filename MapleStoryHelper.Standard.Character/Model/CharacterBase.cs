@@ -82,11 +82,13 @@ namespace MapleStoryHelper.Standard.Character.Model
         protected StatusBase _characterStatus;
         public StatusBase CharacterStatus
         {
-            get
-            {
-                return _characterStatus + _baseStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
-            }
+            get => _characterStatus;
             set=> SetProperty(ref _characterStatus, value);
+        }
+
+        public void UpdateCharacterStatus()
+        {
+            CharacterStatus = _baseStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
         }
 
         protected StatusBase _skillStatus;
@@ -146,6 +148,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get
             {
+                UpdateCharacterStatus();
                 _maxStatusAttack = GetMaxStatusAttack();
                 MinStatusAttack = GetMinStatusAttack();
                 return _maxStatusAttack;

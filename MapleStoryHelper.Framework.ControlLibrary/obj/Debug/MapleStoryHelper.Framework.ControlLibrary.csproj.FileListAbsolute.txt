@@ -1,0 +1,12 @@
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.lref
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\Xaml\ComboBox\ComboBoxStyles.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.g.resources
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb

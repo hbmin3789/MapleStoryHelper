@@ -1,0 +1,68 @@
+﻿<UserControl
+    x:Class="MapleStoryHelper.Control.CharacterControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapleStoryHelper.Control"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:control="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:converter="using:MapleStoryHelper.Converter"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <UserControl.Resources>
+        <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
+        
+        <Style x:Key="CharacterListStyle" TargetType="ListView">
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Grid MinHeight="200" MinWidth="150"
+                              Background="#fafafa">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Button x:ConnectionId='3' HorizontalAlignment="Right" VerticalAlignment="Top"
+                                    Background="Transparent" Margin="10"
+                                                        >
+                                <Button.Content>
+                                    <SymbolIcon Symbol="Setting"/>
+                                </Button.Content>
+                            </Button>
+
+                            <Grid Grid.Row="0">
+                                <Image Source="{Binding ImageSrc}"/>
+                            </Grid>
+
+                            <StackPanel Grid.Row="1"
+                                        Orientation="Vertical">
+                                <TextBlock Text="{Binding CharacterJob,Converter={StaticResource ECharacterJobToStringConverter}}"
+                                           HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding CharacterName}"
+                                           HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding Level}"
+                                           HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Background="White">
+        <ListView x:ConnectionId='4' x:Name="lvCharacter" ItemsSource="{Binding CharacterItems}"
+                  Style="{StaticResource CharacterListStyle}"
+                  SelectionMode="None"
+                  Margin="20">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <control:WrapPanel HorizontalSpacing="100" VerticalSpacing="20"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+        </ListView>
+    </Grid>
+</UserControl>
+
