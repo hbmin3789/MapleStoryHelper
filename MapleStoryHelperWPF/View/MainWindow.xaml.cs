@@ -2,9 +2,11 @@
 using MapleStoryHelper.Standard.Character;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using Microsoft.Win32;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,13 +28,30 @@ namespace MapleStoryHelperWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string PATH = @"C:\Nexon\Maple\";
-
         public MainWindow()
         {
             InitializeComponent();
-            App.viewModel.LoadWz(PATH);
+            LoadWz();
             App.LoadCharacterDatas();
+        }
+
+        private void LoadWz()
+        {
+            try
+            {
+                App.viewModel.LoadWz(Properties.Settings.MapleStoryPath);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("메이플스토리 폴더를 지정해주세요.");
+                System.Windows.Forms.FolderBrowserDialog folder = new System.Windows.Forms.FolderBrowserDialog();
+                if (folder.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    Properties.Settings.MapleStoryPath = folder.SelectedPath;
+                }
+
+                LoadWz();
+            }
         }
 
         private void Window_Closed(object sender, EventArgs e)

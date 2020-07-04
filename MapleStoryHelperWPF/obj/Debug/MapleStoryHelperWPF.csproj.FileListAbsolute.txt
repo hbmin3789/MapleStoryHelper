@@ -65,8 +65,6 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Vi
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\MainWindow.baml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\SetItemDisplayWindow.baml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.g.resources
-C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.Properties.Resources.resources
-C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.csproj.GenerateResource.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.exe

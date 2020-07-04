@@ -26,5 +26,14 @@ namespace MapleStoryHelperWPF.Properties
                 return defaultInstance;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"C:\Nexon\Maple")]
+        public static string MapleStoryPath
+        {
+            get;
+            set;
+        }
     }
 }
