@@ -71,3 +71,5 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Ma
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\MapleStoryHelperWPF.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.Utils.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.Utils.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\SymbolSettingWindow.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\View\SymbolSettingWindow.baml

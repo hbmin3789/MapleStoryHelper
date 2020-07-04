@@ -109,6 +109,23 @@
                             </StackPanel>
                             <StackPanel Grid.Column="2">
                                 <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="추옵"/>
+                                <TextBox Text="{Binding Status.AdStr}"/>
+                                <TextBox Text="{Binding Status.AdDex}"/>
+                                <TextBox Text="{Binding Status.AdInt}"/>
+                                <TextBox Text="{Binding Status.AdLuk}"/>
+                                <TextBox Text="{Binding Status.AdHP}"/>
+                                <TextBox Text="{Binding Status.AdMP}"/>
+                                <TextBox Text="{Binding Status.AdAttack}"/>
+                                <TextBox Text="{Binding Status.AdMagic}"/>
+                                <TextBox Text="{Binding Status.AdPAllStatus}"/>
+                                <TextBox Text="{Binding Status.AdDamage}"/>
+                                <TextBox Text="{Binding Status.AdBossDamage}"/>
+                                <TextBox IsEnabled="False"/>
+                                <TextBox IsEnabled="False"/>
+                                <TextBox IsEnabled="False"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="3">
+                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기타"/>
                                 <TextBox Text="{Binding Status.ScStr}"/>
                                 <TextBox Text="{Binding Status.ScDex}"/>
                                 <TextBox Text="{Binding Status.ScInt}"/>
@@ -123,23 +140,6 @@
                                 <TextBox IsEnabled="False"/>
                                 <TextBox IsEnabled="False"/>
                                 <TextBox IsEnabled="False"/>
-                            </StackPanel>
-                            <StackPanel Grid.Column="3">
-                                <TextBox Style="{StaticResource tbReadOnlyStyle}" Text="기타"/>
-                                <TextBox Text="{Binding Status.AdStr}"/>
-                                <TextBox Text="{Binding Status.AdDex}"/>
-                                <TextBox Text="{Binding Status.AdInt}"/>
-                                <TextBox Text="{Binding Status.AdLuk}"/>
-                                <TextBox Text="{Binding Status.AdHP}"/>
-                                <TextBox Text="{Binding Status.AdMP}"/>
-                                <TextBox Text="{Binding Status.AdAttack}"/>
-                                <TextBox Text="{Binding Status.AdMagic}"/>
-                                <TextBox Text="{Binding Status.AdPAllStatus}"/>
-                                <TextBox Text="{Binding Status.AdDamage}"/>
-                                <TextBox Text="{Binding Status.AdBossDamage}"/>
-                                <TextBox Text="{Binding Status.AdIgnoreDefBinding}"/>
-                                <TextBox Text="{Binding Status.AdCritical}"/>
-                                <TextBox Text="{Binding Status.AdCriticalDamage}"/>
                             </StackPanel>
                         </Grid>
                     </StackPanel>

@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
+using MapleStoryHelperWPF.View;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
@@ -97,9 +98,17 @@ namespace MapleStoryHelperWPF.Control
                 {
                     App.viewModel.NewCharacter = Backup;
                 }
+
                 this.Visibility = Visibility.Collapsed;
-                
             }
+        }
+
+        private void btnSymbolSetting_Click(object sender, RoutedEventArgs e)
+        {
+            SymbolSettingWindow window = new SymbolSettingWindow();
+            window.SetDataContext(this.DataContext);
+            window.ShowDialog();
+            App.UpdateBinding();
         }
     }
 }

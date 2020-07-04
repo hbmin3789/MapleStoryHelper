@@ -86,9 +86,23 @@ namespace MapleStoryHelper.Standard.Character.Model
             set=> SetProperty(ref _characterStatus, value);
         }
 
+        protected int _arcaneForce;
+        public int ArcaneForce
+        {
+            get => _arcaneForce;
+            set => SetProperty(ref _arcaneForce, value);
+        }
+
+        protected StatusBase _arcaneForceStatus;
+        public StatusBase ArcaneForceStatus
+        {
+            get => _arcaneForceStatus;
+            set => SetProperty(ref _arcaneForceStatus, value);
+        }
+
         public void UpdateCharacterStatus()
         {
-            CharacterStatus = _baseStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
+            CharacterStatus = _baseStatus + _arcaneForceStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
         }
 
         protected StatusBase _skillStatus;
@@ -172,6 +186,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             _characterStatus = new StatusBase();
             _baseStatus = new StatusBase();
             _skillStatus = new StatusBase();
+            _arcaneForceStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
             _characterJob = ECharacterJob.Hero;

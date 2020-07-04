@@ -3,5 +3,9 @@
   <Profiles>
     <Profile Name="(Default)" />
   </Profiles>
-  <Settings />
+  <Settings>
+    <Setting Name="MapleStoryPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Nexon\Maple</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

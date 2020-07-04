@@ -39,7 +39,7 @@ namespace MapleStoryHelperWPF
         {
             try
             {
-                App.viewModel.LoadWz(Properties.Settings.MapleStoryPath);
+                App.viewModel.LoadWz(Properties.Settings.Default.MapleStoryPath);
             }
             catch (Exception e)
             {
@@ -47,7 +47,13 @@ namespace MapleStoryHelperWPF
                 System.Windows.Forms.FolderBrowserDialog folder = new System.Windows.Forms.FolderBrowserDialog();
                 if (folder.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    Properties.Settings.MapleStoryPath = folder.SelectedPath;
+                    Properties.Settings.Default.MapleStoryPath = folder.SelectedPath;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Application.Current.MainWindow.Close();
+                    return;
                 }
 
                 LoadWz();

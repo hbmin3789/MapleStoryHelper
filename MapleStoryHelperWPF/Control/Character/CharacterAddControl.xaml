@@ -93,9 +93,11 @@
                 <TextBox Canvas.Top="142" Canvas.Left="80" Style="{StaticResource tbBigSizeStyle}"
                          Text="{Binding CharacterStatus.CriticalDamage}"/>
                 
-                <!-- 스타포스, 아케인포스 등은 나중에 추가할예정이라 지금은 필요없을듯 -->
+                <!-- 스타포스는 나중에 추가할예정이라 지금은 필요없을듯 -->
                 <!--<TextBox Canvas.Top="166" Canvas.Left="80" Style="{StaticResource tbSmallSizeStyle}" Background="Red"/>
                 <TextBox Canvas.Top="166" Canvas.Left="203" Style="{StaticResource tbSmallSizeStyle}" Background="Red"/>-->
+                <TextBox Canvas.Top="235" Canvas.Left="203" Style="{StaticResource tbSmallSizeStyle}"
+                         Text="{Binding ArcaneForce}"/>
             </Canvas>
         </Grid>
         
@@ -105,14 +107,18 @@
                 <Button x:Name="btnItemSetting" FontSize="{StaticResource TitleFontSize}"                        
                         Content="아이템 세팅"
                         Click="btnItemSetting_Click"/>
-                <Button x:Name="btnSkillSetting" FontSize="{StaticResource TitleFontSize}"
+                <!--<Button x:Name="btnSkillSetting" FontSize="{StaticResource TitleFontSize}"
                         Margin="0,10,0,0"
                         Content="패시브 세팅"
-                        Click="btnSkillSetting_Click"/>
+                        Click="btnSkillSetting_Click"/>-->
                 <Button x:Name="btnBaseStatusSetting" FontSize="{StaticResource TitleFontSize}"
                         Margin="0,10,0,0"
                         Content="캐릭터 스텟 세팅"
                         Click="btnBaseStatusSetting_Click"/>
+                <Button x:Name="btnSymbolSetting" FontSize="{StaticResource TitleFontSize}"
+                        Margin="0,10,0,0"
+                        Content="아케인 심볼 세팅"
+                        Click="btnSymbolSetting_Click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right" VerticalAlignment="Bottom">

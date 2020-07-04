@@ -187,6 +187,12 @@ namespace MapleStoryHelper.Standard.Item.Equipment
             set => SetProperty(ref _adBossDamage, value);
         }
 
+        private int _adDamage;
+        public int AdDamage
+        {
+            get => _adDamage;
+            set => SetProperty(ref _adDamage, value);
+        }
 
 
         #endregion
@@ -602,19 +608,19 @@ namespace MapleStoryHelper.Standard.Item.Equipment
         {
             StatusBase retval = new T()
             {
-                AllStatus = this.AllStatus + this.PoAllStatus + this.AdPoAllStatus,
+                AllStatus = this.AllStatus + this.PoAllStatus + this.AdPoAllStatus + this.ScAllStatus,
                 CAllStatus = this.CAllStatus,
-                PAllStatus = this.PAllStatus + this.PoPAllStatus + this.AdPoPAllStatus,
-                AttackPower = this.AttackPower + this.PoAttack + this.AdPoAttack + this.ScAttack,
+                PAllStatus = this.PAllStatus + this.PoPAllStatus + this.AdPoPAllStatus + this.PAllStatus,
+                AttackPower = this.AttackPower + this.PoAttack + this.AdPoAttack + this.ScAttack + this.AdAttack,
                 PAttackPower = this.PAttackPower + this.PoPAttack + this.AdPoPAttack,
                 CAttackPower = this.CAttackPower,
-                MagicAttack = this.MagicAttack + this.PoMagic + this.AdPoMagic + this.ScMagic,
+                MagicAttack = this.MagicAttack + this.PoMagic + this.AdPoMagic + this.ScMagic + this.AdMagic,
                 CMagicAttack = this.CMagicAttack,
                 PMagicAttack = this.PMagicAttack + this.PoPMagic + this.AdPoPMagic,
-                Str = this.Str + this.PoStr + this.AdPoStr + this.ScStr,
-                Dex = this.Dex + this.PoDex + this.AdPoDex + this.ScDex,
-                Int = this.Int + this.PoInt + this.AdPoInt + this.ScInt,
-                Luk = this.Luk + this.PoLuk + this.AdPoLuk + this.ScLuk,
+                Str = this.Str + this.PoStr + this.AdPoStr + this.ScStr + this.AdStr,
+                Dex = this.Dex + this.PoDex + this.AdPoDex + this.ScDex + this.AdDex,
+                Int = this.Int + this.PoInt + this.AdPoInt + this.ScInt + this.AdInt,
+                Luk = this.Luk + this.PoLuk + this.AdPoLuk + this.ScLuk + this.AdLuk,
                 CStr = this.CStr,
                 CDex = this.CDex,
                 CInt = this.CInt,
@@ -623,19 +629,18 @@ namespace MapleStoryHelper.Standard.Item.Equipment
                 PDex = this.PDex + this.PoPDex + this.AdPoDex,
                 PInt = this.PInt + this.PoPInt + this.AdPoInt,
                 PLuk = this.PLuk + this.PoPLuk + this.AdPoLuk,
-                HP = this.HP + this.PoHP + this.AdPoHP + this.ScHP,
+                HP = this.HP + this.PoHP + this.AdPoHP + this.ScHP + this.AdHP,
                 CHP = this.CHP,
                 PHP = this.PHP + this.PoPHP + this.AdPoPHP,
-                MP = this.MP + this.PoMP + this.AdPoMP + this.ScMP,
+                MP = this.MP + this.PoMP + this.AdPoMP + this.ScMP + this.AdMP,
                 CMP = this.CMP,
                 PMP = this.PMP + this.PoPMP + this.AdPoPMP,
-                BossDamage = this.BossDamage + this.PoBossDamage + this.AdPoBossDamage,
+                BossDamage = this.BossDamage + this.PoBossDamage + this.AdPoBossDamage + this.AdBossDamage,
                 Critical = this.Critical + this.PoCritical + this.AdPoCritical,
-                Damage = this.Damage + this.PoDamage + this.AdPoDamage,
+                Damage = this.Damage + this.PoDamage + this.AdPoDamage + this.AdDamage,
                 CriticalDamage = this.CriticalDamage + this.PoCritDamage + this.AdPoCritDamage,
                 LastDamage = this.LastDamage,
                 IgnoreDef = this.IgnoreDef,
-                AdPAllStatus = this.AdPAllStatus
             };
 
             retval.IgnoreDef *= (1 - PoIgnoreDef / 100);
