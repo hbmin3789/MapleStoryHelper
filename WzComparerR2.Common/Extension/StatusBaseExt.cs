@@ -97,5 +97,17 @@ namespace WzComparerR2.Common.Extension
 
             return retval;
         }
+
+        public static StatusBase ToStatusBase(this List<SetItemEffect> effects)
+        {
+            StatusBase retval = new StatusBase();
+
+            for (int i = 0; i < effects.Count; i++)
+            {
+                retval += effects[i].Props.ToStatusBase();
+            }
+
+            return retval;
+        }
     }
 }

@@ -304,6 +304,11 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
         {
             EEquipmentCategory retval = EEquipmentCategory.Ring;
 
+            if(Gear.IsLeftWeapon(type) == true)
+            {
+                return EEquipmentCategory.Weapon;
+            }
+
             switch (type)
             {
                 case GearType.cap:

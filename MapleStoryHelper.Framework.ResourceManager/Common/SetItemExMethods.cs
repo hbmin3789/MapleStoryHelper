@@ -23,7 +23,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                 {
                     if(code.Value == true)
                     {
-                        sb.Append(code.Key.GetItemName(stringWzNode));
+                        string name = code.Key.GetItemName(stringWzNode);
+                        sb.Append(name);
                         sb.Append("\n");
                     }
                 }
@@ -36,9 +37,11 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
         {
             Wz_Node node = stringWzNode.FindNodeByPath("Eqp.img").GetImage().Node.FindNodeByPath("Eqp");
 
-            for(int i = 0; i < node.Nodes.Count; i++) 
+            string itemCategory = GetItemCategory(itemCode);
+
+            for (int i = 0; i < node.Nodes.Count; i++) 
             {
-                if (GetItemCategory(itemCode) == node.Nodes[i].Text)
+                if (itemCategory == node.Nodes[i].Text)
                 {
                     for (int j = 0; j < node.Nodes[i].Nodes.Count; j++)
                     {

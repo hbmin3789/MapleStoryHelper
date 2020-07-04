@@ -14,6 +14,13 @@ namespace MapleStoryHelper.Standard.Character
 {
     public class CharacterEquipment : BindableBase
     {
+        private Dictionary<string, StatusBase> _curSetItemEffect;
+        public Dictionary<string, StatusBase> CurSetItemEffect
+        {
+            get => _curSetItemEffect;
+            set => SetProperty(ref _curSetItemEffect, value);
+        }
+
         private ObservableCollection<SetItemEffect> _setItemEffects;
         public ObservableCollection<SetItemEffect> SetItemEffects
         {
@@ -54,12 +61,14 @@ namespace MapleStoryHelper.Standard.Character
             _setItemEffects = new ObservableCollection<SetItemEffect>();
             _setItemList = new List<SetItem>();
             _curSetItems = new List<SetItem>();
+            _curSetItemEffect = new Dictionary<string, StatusBase>();
         }
 
         private void InitCurSetItem()
         {
             _curSetItems = new List<SetItem>();
             _setItemEffects = new ObservableCollection<SetItemEffect>();
+            _curSetItemEffect = new Dictionary<string, StatusBase>();
         }
 
         private void InitEquipList()
@@ -72,6 +81,12 @@ namespace MapleStoryHelper.Standard.Character
                 newItem.CharacterEquipmentCategory = category;
                 _equipList.Add(category, newItem);
             }
+        }
+
+        public void InitSetItem()
+        {
+            CurSetItemEffect = new Dictionary<string, StatusBase>();
+            CurSetItems = new List<SetItem>();
         }
 
         public StatusBase GetEquipStatus()
@@ -128,9 +143,9 @@ namespace MapleStoryHelper.Standard.Character
                 }
             }
 
-            for(int i=0;i< EquipList.Count; i++)
+            for (int i = 0; i < EquipList.Count; i++)
             {
-                if(EquipList[(ECharacterEquipmentCategory)i].IsJoker == true)
+                if (EquipList[(ECharacterEquipmentCategory)i].IsJoker == true)
                 {
                     SetJoker(EquipList[(ECharacterEquipmentCategory)i].ItemCode);
                     break;
@@ -153,7 +168,7 @@ namespace MapleStoryHelper.Standard.Character
                 List<SetItemEffect> effects = new List<SetItemEffect>();
                 for(int j = 0; j < CurSetItems[i].Effects.Count; j++)
                 {
-                    if(CurSetItems[i].Effects.ElementAt(j).Key < count)
+                    if(CurSetItems[i].Effects.ElementAt(j).Key <= count)
                     {
                         cur = CurSetItems[i].Effects.ElementAt(j).Value;
                         effects.Add(cur);
@@ -163,6 +178,12 @@ namespace MapleStoryHelper.Standard.Character
                 for(int j = 0; j < effects.Count; j++)
                 {
                     SetItemEffects.Add(effects[j]);
+                }
+
+                if (CurSetItemEffect.ContainsKey(CurSetItems[i].SetItemName) == false &&
+                    effects.Count > 0)
+                {
+                    CurSetItemEffect.Add(CurSetItems[i].SetItemName, effects.ToStatusBase());
                 }
 
             }
@@ -199,7 +220,7 @@ namespace MapleStoryHelper.Standard.Character
         {
             for(int i = 0; i < CurSetItems.Count; i++)
             {
-                if(CurSetItems[i].jokerPossible == true)
+                if(CurSetItems[i].jokerPossible == true && GetSetItemCount(i) >= 3)
                 {
                     var Parts = CurSetItems[i].ItemIDs.Parts;
 

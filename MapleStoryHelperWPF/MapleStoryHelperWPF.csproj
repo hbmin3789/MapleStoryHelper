@@ -222,6 +222,10 @@
       <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
       <Name>MapleStoryHelper.Standard.Resources</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Utils\MapleStoryHelper.Standard.Utils.csproj">
+      <Project>{5ff8aa52-dbf5-4d81-8be1-6c9bd307b1fe}</Project>
+      <Name>MapleStoryHelper.Standard.Utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
       <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>
       <Name>MapleStoryHelper.Standard</Name>
