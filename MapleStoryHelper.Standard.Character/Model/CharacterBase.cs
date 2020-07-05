@@ -335,9 +335,9 @@ namespace MapleStoryHelper.Standard.Character.Model
 
         public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
         {
-            //CharacterEquipment.InitSetItem();
             CharacterEquipment.EquipList[category] = equipmentItem;
             MaxStatusAttack = 0;
+            UpdateCharacterStatus();
         }
 
         public void SetCharacterJob(ECharacterJob characterJob)
