@@ -1,0 +1,5 @@
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.deps.json
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.AssemblyInfo.cs

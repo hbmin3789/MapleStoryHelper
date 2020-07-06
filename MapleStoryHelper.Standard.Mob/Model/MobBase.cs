@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MapleStoryHelper.Standard.Mob.Model
+namespace MapleStoryHelper.Standard.MobLib.Model
 {
     public class MobBase : StatusBase
     {
@@ -13,6 +13,11 @@ namespace MapleStoryHelper.Standard.Mob.Model
             set => SetProperty(ref _mobName, value);
         }
 
-
+        private int _defense;
+        public int Defense
+        {
+            get => _defense;
+            set => SetProperty(ref _defense, value);
+        }
     }
 }
