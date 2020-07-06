@@ -78,6 +78,10 @@
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Mob\MapleStoryHelper.Standard.MobLib.csproj">
+      <Project>{CFE4E575-4B9C-407A-A13E-0BA948743D17}</Project>
+      <Name>MapleStoryHelper.Standard.MobLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj">
       <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
       <Name>MapleStoryHelper.Standard.Resources</Name>
