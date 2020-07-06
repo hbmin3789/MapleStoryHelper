@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace MapleStoryHelperWPF.Control.Damage
 {
     /// <summary>
-    /// DamageControl.xaml에 대한 상호 작용 논리
+    /// OneKillCalcControl.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class DamageControl : UserControl
+    public partial class OneKillCalcControl : UserControl
     {
-        public DamageControl()
+        public OneKillCalcControl()
         {
             InitializeComponent();
-        }
-
-        private void btnOneKill_Click(object sender, RoutedEventArgs e)
-        {
-            ctrlOneKill.Visibility = Visibility.Visible;
         }
     }
 }

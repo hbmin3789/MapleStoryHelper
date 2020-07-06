@@ -5,13 +5,46 @@
                     >
     <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
 
+    <DataTemplate x:Key="lvItemTemplate" DataType="{x:Type ListViewItem}">
+        <Border x:Name="border">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Image Source="{Binding ImgBitmapSource}"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <StackPanel>
+                        <TextBlock Text="{Binding CharacterJob, Converter={StaticResource ECharacterJobToStringConverter}}"
+                                   TextAlignment="Center"/>
+                        <TextBlock Text="{Binding Level}" TextAlignment="Center"/>
+                        <TextBlock Text="{Binding CharacterName}" TextAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
     <Style x:Key="LvItemStyle" TargetType="ListViewItem">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ListViewItem">
-                    <Border x:Name="border" Background="Transparent">
+                    <Border x:Name="border" Margin="10"
+                            MaxWidth="70" MaxHeight="300"
+                            BorderThickness="2" CornerRadius="2">
                         <ContentPresenter/>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter TargetName="border" Property="BorderBrush" Value="Black"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="true">
+                            <Setter TargetName="border" Property="BorderBrush" Value="Black"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -22,48 +55,12 @@
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <WrapPanel Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
-                                                   AncestorType={x:Type ListView}},
-                                                   Path=ActualWidth}"/>
+                    <WrapPanel Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListView}},
+                                               Path=ActualWidth}"/>
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="ItemTemplate">
-            <Setter.Value>
-                <DataTemplate>
-                    <Border x:Name="border" BorderThickness="2"
-                                CornerRadius="2" Margin="10"
-                                MaxWidth="70" MaxHeight="300">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="4*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0">
-                                <Image Source="{Binding ImgBitmapSource}"/>
-                            </Grid>
-                            <Grid Grid.Row="1">
-                                <StackPanel>
-                                    <TextBlock Text="{Binding CharacterJob,
-                                                      Converter={StaticResource ECharacterJobToStringConverter}}"
-                                                   TextAlignment="Center"/>
-                                    <TextBlock Text="{Binding Level}"
-                                                   TextAlignment="Center"/>
-                                    <TextBlock Text="{Binding CharacterName}"
-                                                   TextAlignment="Center"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-                    <DataTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Cursor" Value="Hand"/>
-                            <Setter TargetName="border" Property="BorderBrush" Value="Black"/>
-                        </Trigger>
-                    </DataTemplate.Triggers>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>
+        <Setter Property="ItemTemplate" Value="{StaticResource lvItemTemplate}"/>
         <Setter Property="ItemContainerStyle" Value="{StaticResource LvItemStyle}"/>
     </Style>
     

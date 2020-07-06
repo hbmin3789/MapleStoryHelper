@@ -72,6 +72,9 @@
     <Compile Include="Control\Damage\DamageControl.xaml.cs">
       <DependentUpon>DamageControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Damage\OneKillCalcControl.xaml.cs">
+      <DependentUpon>OneKillCalcControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\StatusAttackToStringConverter.cs" />
     <Compile Include="View\SetItemDisplayWindow.xaml.cs">
       <DependentUpon>SetItemDisplayWindow.xaml</DependentUpon>
@@ -104,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Damage\DamageControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Damage\OneKillCalcControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

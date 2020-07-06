@@ -4,13 +4,37 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Damage"
+             xmlns:status="clr-namespace:MapleStoryHelperWPF.Control.Status"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
-        <ListView x:Name="lvCharacter"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="lvCharacter" Grid.Column="0"
                   Style="{StaticResource lvCharacterStyle}"
                   ItemsSource="{Binding CharacterList}">
             
         </ListView>
+
+        <Grid Grid.Column="1">
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="130"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button Content="DPM계산" IsEnabled="False"/>
+                <Button x:Name="btnOneKill" Content="원킬 계산"
+                        Click="btnOneKill_Click"/>
+                <Button Content="보스컷" IsEnabled="False"/>
+            </StackPanel>
+        </Grid>
+
+        <local:OneKillCalcControl x:Name="ctrlOneKill" Grid.ColumnSpan="2"
+                                  Visibility="Collapsed"/>
     </Grid>
 </UserControl>

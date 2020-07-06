@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "leYmeDsBFRpuuTxCLo0+YO+vq9vvCdKPIqabwtHn692YaR90N8zV1LnT1+sM8T6sfqozOM9wOZTOf6VZrkWXEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Mob\\MapleStoryHelper.Standard.Mob.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512"
+  ],
+  "logs": []
+}
