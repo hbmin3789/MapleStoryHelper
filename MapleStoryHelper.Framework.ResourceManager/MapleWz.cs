@@ -12,7 +12,7 @@ using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Framework.ResourceManager
 {
-    public class MapleWz
+    public partial class MapleWz
     {
         private string FilePath;
 
@@ -25,6 +25,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private Wz_File stringWz;
         private Wz_File skillWz;
         private Wz_File etcWz;
+        private Wz_File mobWz;
 
         public Wz_Structure CharacterWzStruct
         {
@@ -41,6 +42,10 @@ namespace MapleStoryHelper.Framework.ResourceManager
         public Wz_Structure EtcWzStruct
         {
             get => etcWz.WzStructure;
+        }
+        public Wz_Structure MobWzStruct
+        {
+            get => mobWz.WzStructure;
         }
 
         #endregion
@@ -95,58 +100,18 @@ namespace MapleStoryHelper.Framework.ResourceManager
             stringWz = new Wz_File(FilePath + "\\String.wz", new Wz_Structure());
             skillWz = new Wz_File(FilePath + "\\Skill.wz", new Wz_Structure());
             etcWz = new Wz_File(FilePath + "\\Etc.wz", new Wz_Structure());
+            mobWz = new Wz_File(FilePath + "\\Mob.wz", new Wz_Structure());
 
             CharacterWzStruct.Load(FilePath + "\\Character.wz");
             StringWzStruct.Load(FilePath + "\\String.wz");
             SkillWzStruct.Load(FilePath + "\\Skill.wz");
             EtcWzStruct.Load(FilePath + "\\Etc.wz");
+            MobWzStruct.Load(FilePath + "\\Mob.wz");
 
             if(stringWz.Loaded == true)
             {
                 stringWzReader.Load(StringWzStruct, CharacterWzStruct);
             }
-        }
-
-        #endregion
-
-        #region GetItems
-
-        public List<EquipmentItem> GetEquipmentItems(Character character, EEquipmentCategory category, string keyWord)
-        {
-            var items = stringWzReader.GetEquipmentItems(category, keyWord);
-            //if(category == EEquipmentCategory.Weapon || category == EEquipmentCategory.SubWeapon)
-            //{
-            //    for(int i = 0; i < items.Count; i++)
-            //    {
-            //        var categories = items[i].GetWeaponJob();
-            //        var list = categories.Where(x => x == character.CharacterJob).ToList();
-            //        if(list.Count == 0) 
-            //        {
-            //            items.RemoveAt(i);
-            //            i--;
-            //        }
-            //    }
-            //}
-
-            for(int i = 0; i < items.Count; i++)
-            {
-                items[i].ImgBitmapSource = items[i].ImgByte.LoadImage();
-            }
-            return items;
-        }
-
-        #endregion
-
-        #region SetItem
-
-        public void SetItemList()
-        {
-            setItemManager.SetItemList(EtcWzStruct.WzNode);
-        }
-
-        public List<SetItem> GetSetItemList()
-        {
-            return setItemManager.SetItemOptions;
         }
 
         #endregion

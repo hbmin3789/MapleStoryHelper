@@ -60,6 +60,9 @@
     <Compile Include="Common\MHExMethods.cs" />
     <Compile Include="Common\SetItemExMethods.cs" />
     <Compile Include="MapleWz.cs" />
+    <Compile Include="MapleWz\EtcWz.cs" />
+    <Compile Include="MapleWz\ItemWz.cs" />
+    <Compile Include="MapleWz\MobWz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\CategoryManager.cs" />
     <Compile Include="Utils\SetItemManager.cs" />
