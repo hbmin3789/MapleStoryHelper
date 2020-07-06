@@ -6,70 +6,15 @@
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control"
              xmlns:converter="clr-namespace:MapleStoryHelperWPF.Converter"
              xmlns:union="clr-namespace:MapleStoryHelperWPF.Control.Union"
+             xmlns:damage="clr-namespace:MapleStoryHelperWPF.Control.Damage"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
-
-        <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
         
-        <Style TargetType="ListView">
-            <Setter Property="ItemsPanel">
-                <Setter.Value>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Width="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
-                                                   AncestorType={x:Type ListView}},
-                                                   Path=ActualWidth}"/>
-                    </ItemsPanelTemplate>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="ItemTemplate">
-                <Setter.Value>
-                    <DataTemplate>
-                        <Border x:Name="border" BorderThickness="2"
-                                CornerRadius="2" Margin="10"
-                                MaxWidth="70" MaxHeight="300">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="4*"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Grid Grid.Row="0">
-                                    <Image Source="{Binding ImgBitmapSource}"/>
-                                </Grid>
-                                <Grid Grid.Row="1">
-                                    <StackPanel>
-                                        <TextBlock Text="{Binding CharacterJob,
-                                                          Converter={StaticResource ECharacterJobToStringConverter}}"
-                                                   TextAlignment="Center"/>
-                                        <TextBlock Text="{Binding Level}"
-                                                   TextAlignment="Center"/>
-                                        <TextBlock Text="{Binding CharacterName}"
-                                                   TextAlignment="Center"/>
-                                    </StackPanel>
-                                </Grid>
-                            </Grid>
-                        </Border>
-                        <DataTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Cursor" Value="Hand"/>
-                                <Setter TargetName="border" Property="BorderBrush" Value="Black"/>
-                            </Trigger>
-                        </DataTemplate.Triggers>
-                    </DataTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="LvItemStyle" TargetType="ListViewItem">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="ListViewItem">
-                        <Border x:Name="border" Background="Transparent">
-                            <ContentPresenter/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
+        <Style TargetType="Button">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="150"/>
         </Style>
     </UserControl.Resources>
 
@@ -81,30 +26,33 @@
         
         <Grid Grid.Row="0">
             <Button x:Name="btnAddCharacter" Margin="20,0,0,0"
-                    HorizontalAlignment="Left" VerticalAlignment="Center"
-                    Width="150" Height="30"
+                    HorizontalAlignment="Left"
                     Content="캐릭터 추가"
                     Click="btnAddCharacter_Click"/>
             <Button x:Name="btnSetUnion"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Width="150" Height="30"
+                    HorizontalAlignment="Center"
                     Content="유니온 설정"
                     Click="btnSetUnion_Click"/>
+            <Button x:Name="btnDamageCalc" Margin="0,0,20,0"
+                    HorizontalAlignment="Right"
+                    Content="데미지 계산"
+                    Click="btnDamageCalc_Click"/>
         </Grid>
 
         <Grid Grid.Row="1">
             <ListView x:Name="lvCharacter"
-                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                  ItemsSource="{Binding CharacterList}"
-                  ItemContainerStyle="{StaticResource LvItemStyle}"
-                  SelectionChanged="lvCharacter_SelectionChanged">
+                      Style="{StaticResource lvCharacterStyle}"
+                      ItemsSource="{Binding CharacterList}"
+                      SelectionChanged="lvCharacter_SelectionChanged">
             </ListView>
         </Grid>
-        <local:CharacterAddControl x:Name="ctrlCharacterAdd"
-                                   Grid.RowSpan="2"
+        <local:CharacterAddControl x:Name="ctrlCharacterAdd" Grid.RowSpan="2"
                                    Visibility="Collapsed"/>
-        <union:UnionControl x:Name="ctrlUnion"
-                            Grid.RowSpan="2"
+        
+        <union:UnionControl x:Name="ctrlUnion" Grid.RowSpan="2"
                             Visibility="Collapsed"/>
+        
+        <damage:DamageControl x:Name="ctrlDamage" Grid.RowSpan="2"
+                              Visibility="Collapsed"/>
     </Grid>
 </UserControl>

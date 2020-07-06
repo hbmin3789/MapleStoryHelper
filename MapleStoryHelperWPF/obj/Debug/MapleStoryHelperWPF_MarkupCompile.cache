@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml
-16-557707143
+181585076595
 
-21-1387017200
+22926402770
 1301916452462
-Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;View\SetItemDisplayWindow.xaml;View\SymbolSettingWindow.xaml;
+Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Damage\DamageControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\CharacterListview.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;View\SetItemDisplayWindow.xaml;View\SymbolSettingWindow.xaml;
 
 False
 

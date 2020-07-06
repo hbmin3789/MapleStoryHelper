@@ -43,5 +43,10 @@ namespace MapleStoryHelperWPF.Control
         {
             ctrlUnion.Visibility = Visibility.Visible;
         }
+
+        private void btnDamageCalc_Click(object sender, RoutedEventArgs e)
+        {
+            ctrlDamage.Visibility = Visibility.Visible;
+        }
     }
 }
