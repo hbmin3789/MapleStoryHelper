@@ -1,8 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using WzComparerR2.Common.Extension;
 
 namespace MapleStoryHelper.Framework.ResourceManager
 {
@@ -10,6 +12,11 @@ namespace MapleStoryHelper.Framework.ResourceManager
     {
         public static BitmapImage LoadImage(this object data)
         {
+            if(data is Bitmap)
+            {
+                data = (data as Bitmap).ToByteArray();
+            }
+
             if (data is byte[])
             {
                 if (data == null || (data as byte[]).Length == 0) return null;

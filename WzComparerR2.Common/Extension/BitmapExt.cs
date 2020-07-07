@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -15,14 +16,11 @@ namespace WzComparerR2.Common.Extension
 
             try
             {
-                bmpdata = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height), ImageLockMode.ReadOnly, bitmap.PixelFormat);
-                int numbytes = bmpdata.Stride * bitmap.Height;
-                byte[] bytedata = new byte[numbytes];
-                IntPtr ptr = bmpdata.Scan0;
+                MemoryStream stream = new MemoryStream();
+                bitmap.Save(stream, ImageFormat.Png);
+                byte[] bytes = stream.ToArray();
 
-                Marshal.Copy(ptr, bytedata, 0, numbytes);
-
-                return bytedata;
+                return bytes;
             }
             finally
             {

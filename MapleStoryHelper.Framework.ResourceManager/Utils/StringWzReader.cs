@@ -43,6 +43,8 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
         #endregion
 
+        #region EquipmentItems
+
         public List<EquipmentItem> GetEquipmentItems(EEquipmentCategory category,string keyWord)
         {
             List<EquipmentItem> retval = new List<EquipmentItem>();
@@ -167,6 +169,17 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
 
                 }
             }
+
+            return retval;
+        }
+
+        #endregion
+
+        public string GetMobName(int code)
+        {
+            string retval = "";
+
+            retval = code.GetMobName(StringWz.WzNode);
 
             return retval;
         }

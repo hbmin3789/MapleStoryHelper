@@ -7,23 +7,45 @@
              mc:Ignorable="d" 
              d:DesignWidth="300"
              d:DesignHeight="450" >
+    <UserControl.Resources>
+        <Style x:Key="cbMobStyle" TargetType="ComboBox">
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="{Binding ImgBitmapSource}"/>
+                            <TextBlock Grid.Column="1" Text="{Binding MobName}"/>
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel>
             <TextBlock Text="월드를 골라주세요."/>
-            <ComboBox x:Name="cbWorld"/>
+            <ComboBox x:Name="cbWorld"
+                      SelectionChanged="cbWorld_SelectionChanged"/>
             <TextBlock Margin="0,20,0,0"
                        Text="몬스터를 골라주세요."/>
-            <ComboBox x:Name="cbMonster" IsEnabled="False"/>
+            <ComboBox x:Name="cbMonster" IsEnabled="False"
+                      Style="{StaticResource cbMobStyle}"
+                      SelectionChanged="cbMonster_SelectionChanged"/>
         </StackPanel>
         <Grid Grid.Row="1">
             <StackPanel>
                 <Image Source="{Binding ImgBitmapSource}"/>
-                <TextBlock Text="{Binding Name}"/>
-                <TextBlock Text="{Binding HP}"/>
+                <TextBlock Text="{Binding MobName}"/>
+                <TextBlock Text="{Binding MaxHP,StringFormat={}HP : {0}}"/>
             </StackPanel>
         </Grid>
     </Grid>

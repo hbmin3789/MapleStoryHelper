@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.MapLib.Common;
+using MapleStoryHelper.Standard.MobLib.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,30 @@ namespace MapleStoryHelperWPF.Control.Damage
             }
 
             cbWorld.ItemsSource = source;
+        }
+
+        private void cbWorld_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(cbWorld.SelectedIndex != -1)
+            {
+                cbMonster.IsEnabled = true;
+
+                var categories = Enum.GetValues(typeof(EMobMapCategory));
+                EMobMapCategory category = (EMobMapCategory)categories.GetValue(cbWorld.SelectedIndex);
+                cbMonster.ItemsSource = App.mapleWz.GetMobs(category);
+            }
+            else
+            {
+                cbMonster.IsEnabled = false;
+            }
+        }
+
+        private void cbMonster_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(cbMonster.SelectedItem != null)
+            {
+                this.DataContext = cbMonster.SelectedItem;
+            }
         }
     }
 }

@@ -28,5 +28,12 @@ namespace MapleStoryHelper.Standard.MobLib.Model
             get => _defense;
             set => SetProperty(ref _defense, value);
         }
+
+        private object _imgBitmapSource;
+        public object ImgBitmapSource
+        {
+            get => _imgBitmapSource;
+            set => SetProperty(ref _imgBitmapSource, value);
+        }
     }
 }

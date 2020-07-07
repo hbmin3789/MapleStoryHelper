@@ -62,7 +62,6 @@ namespace WzComparerR2.CharaSim
         public BitmapOrigin Default { get; set; }
         //public LifeAnimateCollection Animates { get; private set; }
 
-
         public static Mob CreateFromNode(Wz_Node node, GlobalFindNodeFunction findNode)
         {
             int mobID;

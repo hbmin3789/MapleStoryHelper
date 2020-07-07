@@ -1,4 +1,7 @@
-﻿using MapleStoryHelper.Standard.MobLib.Common;
+﻿using MapleStoryHelper.Framework.ResourceManager.Common;
+using MapleStoryHelper.Standard.MobLib.Common;
+using MapleStoryHelper.Standard.MobLib.Model;
+using Prism.Modularity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +16,9 @@ namespace MapleStoryHelper.Framework.ResourceManager
 {
     public partial class MapleWz
     {
-        public List<Mob> GetMobs(EMobMapCategory category)
+        public List<MobBase> GetMobs(EMobMapCategory category)
         {
-            List<Mob> retval = new List<Mob>();
+            List<MobBase> retval = new List<MobBase>();
 
             List<Wz_Node> nodes = GetMobNodes(category);
             retval = GetMobsFromNodes(nodes);
@@ -32,28 +35,55 @@ namespace MapleStoryHelper.Framework.ResourceManager
             for(int i = 0; i < nodes.Count; i++)
             {
                 var MobName = nodes[i].Text.Replace(".img", "");
-                int MobCode = Convert.ToInt32(MobName);
-                if(MobCode / 100 == CategoryCode)
+                try
                 {
-                    retval.Add(nodes[i]);
+                    int MobCode = Convert.ToInt32(MobName);
+                    if (MobCode / 100 == CategoryCode)
+                    {
+                        retval.Add(nodes[i]);
+                    }
+                }
+                catch (Exception e)
+                {
+
                 }
             }
 
             return retval;
         }
 
-        private List<Mob> GetMobsFromNodes(List<Wz_Node> nodes)
+        private List<MobBase> GetMobsFromNodes(List<Wz_Node> nodes)
         {
-            List<Mob> retval = new List<Mob>();
+            List<MobBase> retval = new List<MobBase>();
 
             for(int i = 0; i < nodes.Count; i++)
             {
-                Mob newItem = Mob.CreateFromNode(nodes[i], PluginManager.FindWz);
-                if(newItem != null)
+                var image = nodes[i].GetImage();
+                Mob mob = Mob.CreateFromNode(image.Node, PluginManager.FindWz);
+                if(mob != null)
                 {
+                    int code = Convert.ToInt32(image.Node.Text.Replace(".img",""));
+                    MobBase newItem = MobToMobBase(mob);
+
+                    newItem.ImgBitmapSource = newItem.Default.Bitmap.LoadImage();
+                    newItem.MobName = stringWzReader.GetMobName(code);
+
                     retval.Add(newItem);
                 }
             }
+
+            return retval;
+        }
+
+        private MobBase MobToMobBase(Mob mob)
+        {
+            MobBase retval = new MobBase();
+
+            retval.FinalMaxHP = mob.FinalMaxHP;
+            retval.MaxHP = mob.MaxHP;
+            retval.Boss = mob.Boss;
+            retval.Default = mob.Default;
+            retval.Defense = 10;
 
             return retval;
         }
