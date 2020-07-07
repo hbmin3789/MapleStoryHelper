@@ -1,0 +1,9 @@
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.deps.json
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb

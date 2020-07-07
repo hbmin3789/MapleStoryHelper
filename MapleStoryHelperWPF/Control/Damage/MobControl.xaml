@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="MapleStoryHelperWPF.Control.Damage.MobControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Damage"
+             mc:Ignorable="d" 
+             d:DesignWidth="300"
+             d:DesignHeight="450" >
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="월드를 골라주세요."/>
+            <ComboBox x:Name="cbWorld"/>
+            <TextBlock Margin="0,20,0,0"
+                       Text="몬스터를 골라주세요."/>
+            <ComboBox x:Name="cbMonster" IsEnabled="False"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <Image Source="{Binding ImgBitmapSource}"/>
+                <TextBlock Text="{Binding Name}"/>
+                <TextBlock Text="{Binding HP}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

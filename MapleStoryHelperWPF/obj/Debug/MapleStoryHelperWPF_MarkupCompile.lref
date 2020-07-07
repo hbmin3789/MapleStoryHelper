@@ -1,4 +1,4 @@
-﻿C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAddControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAdd\CharacterItemControl.xaml;;
@@ -7,6 +7,7 @@ FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Cha
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAdd\SkillSettingControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterListControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Damage\DamageControl.xaml;;
+FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Damage\MobControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Damage\OneKillCalcControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Item\EquipmentInfoControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Status\StatusAttackControl.xaml;;

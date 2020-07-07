@@ -31,7 +31,7 @@ namespace MapleStoryHelperWPF.View
                 StringBuilder sb = new StringBuilder();
                 sb.Append(lstSetItem[i].SetItemName);
                 sb.Append("\n");
-                sb.Append(lstSetItem[i].GetItemParts(App.Wz.StringWzStruct.WzNode));
+                sb.Append(lstSetItem[i].GetItemParts(App.mapleWz.StringWzStruct.WzNode));
                 try
                 {
                     sb.Append(character.CharacterEquipment.CurSetItemEffect[lstSetItem[i].SetItemName].ToStatusString());

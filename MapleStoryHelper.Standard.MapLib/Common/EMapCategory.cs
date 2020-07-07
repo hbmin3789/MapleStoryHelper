@@ -25,10 +25,10 @@ namespace MapleStoryHelper.Standard.MapLib.Common
         Esfera = 0826,
 
         //테네브리스
-        Tenebris = 0827,
+        //Tenebris = 0827,
 
-        Moonbridge = 08271,
-        LabyrinthOfSuffering = 08272,
-        Limen = 08273,
+        //Moonbridge = 08271,
+        //LabyrinthOfSuffering = 08272,
+        //Limen = 08273,
     }
 }

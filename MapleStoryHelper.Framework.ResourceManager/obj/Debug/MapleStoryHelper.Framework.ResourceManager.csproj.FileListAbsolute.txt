@@ -30,3 +30,5 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.Resou
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\MapleStoryHelper.Standard.MobLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\MapleStoryHelper.Standard.MobLib.pdb

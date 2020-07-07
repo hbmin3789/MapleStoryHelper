@@ -12,13 +12,9 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid Grid.Column="0">
-            <StackPanel>
-                <Image/>
-                <TextBlock/>
-                <TextBlock/>
-            </StackPanel>
+            <local:MobControl/>
         </Grid>
 
         <Grid Grid.Column="1">

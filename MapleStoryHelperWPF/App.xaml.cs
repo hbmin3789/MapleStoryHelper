@@ -13,6 +13,7 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
+using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelperWPF
 {
@@ -24,14 +25,14 @@ namespace MapleStoryHelperWPF
         public static EventHandler UpdateBindingEvent;
         public static string BASE_PATH = AppDomain.CurrentDomain.BaseDirectory + "Data.dat";
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
-        public static MapleWz Wz
-        {
-            get => viewModel.MapleWz;
-        }
 
         public static List<string> CharacterJsonDatas
         {
             get => GetCharacterJsonDatas();
+        }
+        public static MapleWz mapleWz 
+        { 
+            get => viewModel.MapleWz;
         }
 
         public static void AddBindingUpdateEvent(EventHandler e)

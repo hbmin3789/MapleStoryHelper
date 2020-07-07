@@ -78,3 +78,9 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Co
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Theme\CharacterListview.baml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Damage\OneKillCalcControl.g.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Damage\OneKillCalcControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Damage\MobControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MobLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MobLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Damage\MobControl.baml
