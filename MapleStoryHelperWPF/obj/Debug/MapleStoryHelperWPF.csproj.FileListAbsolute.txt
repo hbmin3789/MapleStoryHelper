@@ -84,3 +84,7 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\Ma
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MapLib.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\bin\Debug\MapleStoryHelper.Standard.MobLib.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Damage\MobControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Skill\SkillControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Skill\SkillListControl.g.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Skill\SkillControl.baml
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\Control\Skill\SkillListControl.baml

@@ -78,6 +78,12 @@
     <Compile Include="Control\Damage\OneKillCalcControl.xaml.cs">
       <DependentUpon>OneKillCalcControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Skill\SkillControl.xaml.cs">
+      <DependentUpon>SkillControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Skill\SkillListControl.xaml.cs">
+      <DependentUpon>SkillListControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\StatusAttackToStringConverter.cs" />
     <Compile Include="View\SetItemDisplayWindow.xaml.cs">
       <DependentUpon>SetItemDisplayWindow.xaml</DependentUpon>
@@ -128,6 +134,14 @@
     <Page Include="Control\Item\PotentialControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\Skill\SkillControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Skill\SkillListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Status\StatusAttackControl.xaml">
       <SubType>Designer</SubType>

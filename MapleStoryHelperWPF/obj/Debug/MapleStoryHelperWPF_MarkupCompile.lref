@@ -1,4 +1,4 @@
-﻿
+﻿C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAddControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAdd\CharacterItemControl.xaml;;
@@ -10,6 +10,8 @@ FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Dam
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Damage\MobControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Damage\OneKillCalcControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Item\EquipmentInfoControl.xaml;;
+FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Skill\SkillControl.xaml;;
+FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Skill\SkillListControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Status\StatusAttackControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Status\StatusControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Union\UnionControl.xaml;;
