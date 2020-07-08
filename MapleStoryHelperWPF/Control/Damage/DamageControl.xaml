@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Damage"
              xmlns:status="clr-namespace:MapleStoryHelperWPF.Control.Status"
              xmlns:loading="clr-namespace:MapleStoryHelperWPF.Control.Loading"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
         <Grid.ColumnDefinitions>
@@ -15,12 +15,20 @@
         </Grid.ColumnDefinitions>
         <ListView x:Name="lvCharacter" Grid.Column="0"
                   Style="{StaticResource lvCharacterStyle}"
-                  ItemsSource="{Binding CharacterList}">
-            
-        </ListView>
+                  ItemsSource="{Binding CharacterList}"
+                  SelectionChanged="lvCharacter_SelectionChanged"/>
 
         <Grid Grid.Column="1">
-            <StackPanel HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock x:Name="tbDescription" 
+                           Text="캐릭터를 선택해주세요." FontSize="30"/>
+            </Grid>
+            <StackPanel x:Name="spButtons" HorizontalAlignment="Left" Grid.Row="1"
+                        IsEnabled="False">
                 <StackPanel.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Width" Value="130"/>
@@ -33,8 +41,8 @@
                         IsEnabled="False"
                         Click="btnOneKill_Click"/>
                 <Button Content="보스컷" IsEnabled="False"/>
-                <Button Content="무릉 층수" IsEnabled="True"
-                        Click="Button_Click"/>
+                <Button x:Name="btnMulung" Content="무릉 층수" IsEnabled="True"
+                        Click="btnMulung_Click"/>
             </StackPanel>
         </Grid>
 

@@ -8,16 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <TextBlock FontSize="30"
-                       Text="주력기를 선택해주세요."/>
-        </Grid>
-        <Grid Grid.Row="1">
-            <control:SkillListControl/>
-        </Grid>
+        
     </Grid>
 </UserControl>

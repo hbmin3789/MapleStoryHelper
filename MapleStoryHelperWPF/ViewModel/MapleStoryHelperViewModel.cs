@@ -121,7 +121,10 @@ namespace MapleStoryHelperWPF.ViewModel
                     }
                 }
                 character.CharacterEquipment.SetItemList = SetItemList;
-                CharacterList.Add(character);
+                App.Current.Dispatcher.Invoke(() => 
+                {
+                    CharacterList.Add(character);
+                });
             }
         }
     }

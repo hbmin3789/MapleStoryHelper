@@ -1,4 +1,5 @@
 ﻿using MapleStoryHelper.Standard.SkillLib.Model;
+using MapleStoryHelperWPF.Properties;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading;
@@ -31,6 +32,7 @@ namespace MapleStoryHelperWPF.Control.Damage
             App.Current.Dispatcher.Invoke(() => 
             {
                 ctrlLoading.ProgressEnabled = true;
+                ctrlLoading.SetDesc(Settings.Default.LoadingDesc + "(시간이 오래걸릴 수 있습니다.)");
             });
 
             var skills = App.mapleWz.GetSkills();
@@ -49,11 +51,21 @@ namespace MapleStoryHelperWPF.Control.Damage
             ctrlOneKill.Visibility = Visibility.Visible;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnMulung_Click(object sender, RoutedEventArgs e)
         {
-            ctrlMulung.Visibility = Visibility.Collapsed;
+            ctrlMulung.Visibility = Visibility.Visible;
         }
 
-        
+        private void lvCharacter_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(lvCharacter.SelectedItem == null)
+            {
+                spButtons.IsEnabled = false;
+            }
+            else
+            {
+                spButtons.IsEnabled = true;
+            }
+        }
     }
 }

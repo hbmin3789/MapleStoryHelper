@@ -40,6 +40,11 @@ namespace MapleStoryHelperWPF.Control.Loading
             }
         }
 
+        public void SetDesc(string text)
+        {
+            tbDescription.Text = text;
+        }
+
         public bool ProgressEnabled
         {
             get => (bool)GetValue(ProgressEnabledProperty);

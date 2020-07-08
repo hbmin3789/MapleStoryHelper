@@ -9,6 +9,17 @@
              mc:Ignorable="d">
     <UserControl.Resources>
         <converter:ECharacterJobToStringConverter x:Key="ECharacterJobToStringConverter"/>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="300"/>
+        </Style>
+        <Style x:Key="btnSetVisibilityStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        
     </UserControl.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
@@ -23,7 +34,6 @@
             <Grid.Resources>
                 <Style TargetType="TextBox">
                     <Setter Property="BorderBrush" Value="Transparent"/>
-                    
                     <Setter Property="Height" Value="20"/>
                     <Setter Property="Width" Value="160"/>
                     <Setter Property="IsReadOnly" Value="True"/>
@@ -37,6 +47,7 @@
                 <StackPanel Canvas.Top="25" Orientation="Horizontal">
                     <TextBox Width="120" Text="{Binding CharacterJob,Converter={StaticResource ECharacterJobToStringConverter}}"/>
                     <Button x:Name="btnEditJob" Margin="30,0,0,0"
+                            Width="30" Height="20"
                             Content="수정"
                             Click="btnEditJob_Click"/>
                 </StackPanel>
@@ -59,7 +70,7 @@
 
         <Grid Grid.Column="1">
             <Image Source="/Assets/StatusDetail.png"
-                   VerticalAlignment="Top" Width="250"/>
+                   VerticalAlignment="Top" Width="250" Height="256"/>
             <Canvas>
                 <Canvas.Resources>
                     <Style x:Key="tbBaseStyle" TargetType="TextBox">
@@ -122,17 +133,11 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                <StackPanel.Resources>
-                    <Style TargetType="Button">
-                        <Setter Property="Width" Value="100"/>
-                        <Setter Property="Height" Value="30"/>
-                        <Setter Property="Margin" Value="5"/>
-                        <Setter Property="FontSize" Value="20"/>
-                    </Style>
-                </StackPanel.Resources>
                 <Button x:Name="btnSave" Content="확인"
+                        Style="{StaticResource btnSetVisibilityStyle}"
                         Click="btnSave_Click"/>
                 <Button x:Name="btnCancel" Content="취소"
+                        Style="{StaticResource btnSetVisibilityStyle}"
                         Click="btnCancel_Click"/>
             </StackPanel>
         </Grid>
