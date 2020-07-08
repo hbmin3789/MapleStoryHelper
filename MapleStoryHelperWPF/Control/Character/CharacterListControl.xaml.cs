@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace MapleStoryHelperWPF.Control
@@ -11,6 +12,10 @@ namespace MapleStoryHelperWPF.Control
         public CharacterListControl()
         {
             InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
             this.DataContext = App.viewModel;
         }
 

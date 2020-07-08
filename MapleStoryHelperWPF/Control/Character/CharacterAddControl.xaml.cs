@@ -66,7 +66,6 @@ namespace MapleStoryHelperWPF.Control
             {
                 string json = JsonConvert.SerializeObject(character, Formatting.None);
                 App.viewModel.CharacterList.Add(character);
-                App.CharacterJsonDatas.Add(json);
             }
             else
             {

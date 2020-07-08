@@ -1,25 +1,9 @@
-﻿using MapleStoryHelper.Framework.ResourceManager;
-using MapleStoryHelper.Standard.Character;
-using MapleStoryHelper.Standard.Item;
-using MapleStoryHelper.Standard.Item.Equipment;
-using Microsoft.Win32;
-using Prism.Mvvm;
+﻿using MapleStoryHelper.Standard.Item.Common;
+using MapleStoryHelperWPF.Properties;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using WzComparerR2.WzLib;
 
 namespace MapleStoryHelperWPF
 {
@@ -30,16 +14,36 @@ namespace MapleStoryHelperWPF
     {
         public MainWindow()
         {
+            App.OnLoaded += ApplicationLoaded;
             InitializeComponent();
-            LoadWz();
-            App.LoadCharacterDatas();
+        }
+
+        private void ApplicationLoaded(object sender, EventArgs e)
+        {
+            ProgressEnabled(false);
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ProgressEnabled(true);
+            App.Load();
+        }
+
+        public void SetLoadingText(string text)
+        {
+            ctrlLoading.SetText(text);
+        }
+
+        public void ProgressEnabled(bool isEnabled)
+        {
+            ctrlLoading.ProgressEnabled = isEnabled;
         }
 
         private void LoadWz()
         {
             try
             {
-                App.viewModel.LoadWz(Properties.Settings.Default.MapleStoryPath);
+                App.viewModel.LoadWz(Settings.Default.MapleStoryPath);
             }
             catch (Exception e)
             {
@@ -47,8 +51,8 @@ namespace MapleStoryHelperWPF
                 System.Windows.Forms.FolderBrowserDialog folder = new System.Windows.Forms.FolderBrowserDialog();
                 if (folder.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    Properties.Settings.Default.MapleStoryPath = folder.SelectedPath;
-                    Properties.Settings.Default.Save();
+                    Settings.Default.MapleStoryPath = folder.SelectedPath;
+                    Settings.Default.Save();
                 }
                 else
                 {

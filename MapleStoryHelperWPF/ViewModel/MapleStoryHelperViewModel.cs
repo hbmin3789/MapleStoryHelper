@@ -95,7 +95,7 @@ namespace MapleStoryHelperWPF.ViewModel
         #endregion
 
 
-        public void LoadCharacterJson(List<string> list)
+        public void LoadCharacterFromJson(List<string> list)
         {
             for(int i = 0; i < list.Count; i++)
             {

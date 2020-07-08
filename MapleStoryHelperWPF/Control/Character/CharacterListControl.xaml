@@ -8,7 +8,8 @@
              xmlns:union="clr-namespace:MapleStoryHelperWPF.Control.Union"
              xmlns:damage="clr-namespace:MapleStoryHelperWPF.Control.Damage"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="UserControl_Loaded">
     <UserControl.Resources>
         
         <Style TargetType="Button">
@@ -51,8 +52,9 @@
         
         <union:UnionControl x:Name="ctrlUnion" Grid.RowSpan="2"
                             Visibility="Collapsed"/>
-        
+
         <damage:DamageControl x:Name="ctrlDamage" Grid.RowSpan="2"
                               Visibility="Collapsed"/>
+        
     </Grid>
 </UserControl>

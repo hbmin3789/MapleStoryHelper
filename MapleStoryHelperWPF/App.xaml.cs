@@ -1,6 +1,7 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
 using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.SkillLib.Model;
+using MapleStoryHelperWPF.Properties;
 using MapleStoryHelperWPF.ViewModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -12,6 +13,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using WzComparerR2.CharaSim;
@@ -23,20 +25,21 @@ namespace MapleStoryHelperWPF
     /// </summary>
     public partial class App : Application
     {
+        private static Thread LoadThread = new Thread(LoadData);
+
         public static EventHandler UpdateBindingEvent;
+        public static EventHandler OnLoaded;
         public static string BASE_PATH = AppDomain.CurrentDomain.BaseDirectory + "Data.dat";
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
 
-        public static List<string> CharacterJsonDatas
-        {
-            get => GetCharacterJsonDatas();
-        }
         public static MapleWz mapleWz 
         { 
             get => viewModel.MapleWz;
         }
 
         public static List<SkillBase> Skills { get; internal set; }
+
+        #region Binding
 
         public static void AddBindingUpdateEvent(EventHandler e)
         {
@@ -48,6 +51,10 @@ namespace MapleStoryHelperWPF
             UpdateBindingEvent?.Invoke(null, null);
         }
 
+        #endregion
+
+        #region CharacterDatas
+
         public static void LoadCharacterDatas()
         {
             if (File.Exists(BASE_PATH))
@@ -56,9 +63,9 @@ namespace MapleStoryHelperWPF
                 var list = JsonConvert.DeserializeObject<List<string>>(jarr);
                 try
                 {
-                    App.viewModel.LoadCharacterJson(list);
+                    viewModel.LoadCharacterFromJson(list);
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     File.Delete(BASE_PATH);
                 }
@@ -80,6 +87,8 @@ namespace MapleStoryHelperWPF
 
         public static void UpdateCharacterDatas()
         {
+            var CharacterJsonDatas = GetCharacterJsonDatas();
+
             JArray jarr = new JArray();
             for(int i = 0; i < CharacterJsonDatas.Count; i++)
             {
@@ -93,5 +102,29 @@ namespace MapleStoryHelperWPF
 
             File.WriteAllText(BASE_PATH, jarr.ToString());
         }
+
+        #endregion
+
+        #region Thread
+
+        public static void Load()
+        {
+            LoadThread.Start();
+        }
+
+        private static void LoadData()
+        {
+            viewModel.LoadWz(Settings.Default.MapleStoryPath);
+            LoadCharacterDatas();
+
+            App.Current.Dispatcher.Invoke(() => 
+            {
+                OnLoaded?.Invoke(null, null);
+            });
+
+            LoadThread.Join();
+        }
+
+        #endregion
     }
 }

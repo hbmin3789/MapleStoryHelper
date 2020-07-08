@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="MapleStoryHelperWPF.Control.Loading.LoadingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Loading"
+             xmlns:loading="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#50FFFFFF">
+        <TextBlock x:Name="tbDescription"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <loading:LoadingIndicator x:Name="progressRing" Grid.Row="1"
+                                  SpeedRatio="2"
+                                  Foreground="RoyalBlue"
+                                  Style="{DynamicResource LoadingIndicatorArcsStyle}"
+                                  IsActive="{Binding ProgressEnabled}"/>
+    </Grid>
+</UserControl>

@@ -7,5 +7,8 @@
     <Setting Name="MapleStoryPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Nexon\Maple</Value>
     </Setting>
+    <Setting Name="LoadingDesc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">로딩중입니다.</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

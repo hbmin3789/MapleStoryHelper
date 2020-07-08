@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapleStoryHelperWPF"
         xmlns:control="clr-namespace:MapleStoryHelperWPF.Control"
+        xmlns:loading="clr-namespace:MapleStoryHelperWPF.Control.Loading"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        Closed="Window_Closed">
+        Closed="Window_Closed"
+        Loaded="MainWindow_Loaded">
 
     <Grid>
-        <control:CharacterListControl/>
+        <control:CharacterListControl x:Name="ctrlCharacterList"/>
+        <loading:LoadingControl x:Name="ctrlLoading" ProgressEnabled="True"/>
     </Grid>
 </Window>

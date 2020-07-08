@@ -25,13 +25,25 @@ namespace MapleStoryHelperWPF.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Nexon\\Mapl")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Nexon\\Maple")]
         public string MapleStoryPath {
             get {
                 return ((string)(this["MapleStoryPath"]));
             }
             set {
                 this["MapleStoryPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("로딩중입니다.")]
+        public string LoadingDesc {
+            get {
+                return ((string)(this["LoadingDesc"]));
+            }
+            set {
+                this["LoadingDesc"] = value;
             }
         }
     }

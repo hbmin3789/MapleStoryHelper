@@ -29,5 +29,10 @@ namespace MapleStoryHelperWPF.Control.Damage
         {
             ctrlOneKill.Visibility = Visibility.Visible;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ctrlMulung.Visibility = Visibility.Collapsed;
+        }
     }
 }
