@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager.Common;
 using MapleStoryHelper.Standard.Character;
+using MapleStoryHelper.Standard.SkillLib.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using WzComparerR2.CharaSim;
+using WzComparerR2.Common.Extension;
 using WzComparerR2.PluginBase;
 using WzComparerR2.WzLib;
 
@@ -14,13 +16,13 @@ namespace MapleStoryHelper.Framework.ResourceManager
 {
     public partial class MapleWz
     {
-        public List<Skill> GetSkills()
+        public List<SkillBase> GetSkills()
         {
-            List<Skill> retval = new List<Skill>();
+            List<SkillBase> retval = new List<SkillBase>();
 
-            List<Skill> skills1 = GetDefaultSkills();
-            List<Skill> skills2 = GetVSkills1();
-            List<Skill> skills3 = GetVSkills2();
+            List<SkillBase> skills1 = GetDefaultSkills();
+            List<SkillBase> skills2 = GetVSkills1();
+            List<SkillBase> skills3 = GetVSkills2();
 
             retval = skills1;
 
@@ -34,12 +36,22 @@ namespace MapleStoryHelper.Framework.ResourceManager
                 retval.Add(skills3[i]);
             }
 
+            LoadImage(ref retval);
+
             return retval;
         }
 
-        private List<Skill> GetDefaultSkills()
+        private void LoadImage(ref List<SkillBase> retval)
         {
-            List<Skill> retval = new List<Skill>();
+            for(int i = 0; i < retval.Count; i++)
+            {
+                retval[i].ImgBitmapSource = retval[i].Icon.Bitmap.LoadImage();
+            }
+        }
+
+        private List<SkillBase> GetDefaultSkills()
+        {
+            List<SkillBase> retval = new List<SkillBase>();
 
             var nodes = SkillWzStruct.WzNode.Nodes;
 
@@ -49,7 +61,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
                 {
                     int code = Convert.ToInt32(nodes[i].Text.Replace(".img", ""));
 
-                    List<Skill> temp = GetSkillsFromJobNode(nodes[i].GetImage().Node);
+                    List<SkillBase> temp = GetSkillsFromJobNode(nodes[i].GetImage().Node);
 
                     for (int j = 0; j < temp.Count; j++)
                     {
@@ -65,33 +77,33 @@ namespace MapleStoryHelper.Framework.ResourceManager
             return retval;
         }
 
-        private List<Skill> GetSkillsFromJobNode(Wz_Node node)
+        private List<SkillBase> GetSkillsFromJobNode(Wz_Node node)
         {
-            List<Skill> retval = new List<Skill>();
+            List<SkillBase> retval = new List<SkillBase>();
 
             var skills = node.FindNodeByPath("skill").Nodes;
 
             for(int i = 0; i < skills.Count; i++)
             {
-                var newItem = Skill.CreateFromNode(skills[i], PluginManager.FindWz);
+                SkillBase newItem = SkillBase.CreateFromNode(skills[i], PluginManager.FindWz);
                 retval.Add(newItem);
             }
 
             return retval;
         }
 
-        private List<Skill> GetVSkills1()
+        private List<SkillBase> GetVSkills1()
         {
-            List<Skill> retval = new List<Skill>();
+            List<SkillBase> retval = new List<SkillBase>();
 
 
 
             return retval;
         }
 
-        private List<Skill> GetVSkills2()
+        private List<SkillBase> GetVSkills2()
         {
-            List<Skill> retval = new List<Skill>();
+            List<SkillBase> retval = new List<SkillBase>();
 
 
 

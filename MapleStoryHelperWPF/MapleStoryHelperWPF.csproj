@@ -75,6 +75,9 @@
     <Compile Include="Control\Damage\MobControl.xaml.cs">
       <DependentUpon>MobControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Control\Damage\MulungControl.xaml.cs">
+      <DependentUpon>MulungControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Control\Damage\OneKillCalcControl.xaml.cs">
       <DependentUpon>OneKillCalcControl.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Control\Damage\MobControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Control\Damage\MulungControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -268,6 +275,10 @@
     <ProjectReference Include="..\MapleStoryHelper.Standard.Resources\MapleStoryHelper.Standard.Resources.csproj">
       <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
       <Name>MapleStoryHelper.Standard.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.SkillLib\MapleStoryHelper.Standard.SkillLib.csproj">
+      <Project>{BB6CAF66-A746-4349-8A8E-7AE29B1360EF}</Project>
+      <Name>MapleStoryHelper.Standard.SkillLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Utils\MapleStoryHelper.Standard.Utils.csproj">
       <Project>{5ff8aa52-dbf5-4d81-8be1-6c9bd307b1fe}</Project>

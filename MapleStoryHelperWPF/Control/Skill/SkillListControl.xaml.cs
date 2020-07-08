@@ -28,7 +28,14 @@ namespace MapleStoryHelperWPF.Control
 
         private void SkillListControl_Loaded(object sender, RoutedEventArgs e)
         {
-            App.mapleWz.GetSkills();
+            App.Skills = App.mapleWz.GetSkills();
+            lvSkill.ItemsSource = App.Skills;
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            var skills = App.Skills.Where(x=>x.SkillName.Contains(tbKeyWord.Text));
+            lvSkill.ItemsSource = skills;
         }
     }
 }

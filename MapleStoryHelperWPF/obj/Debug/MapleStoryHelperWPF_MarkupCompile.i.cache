@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml
-22200237841
+23563414302
 
-27451188256
-30-746697126
-Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Damage\DamageControl.xaml;Control\Damage\MobControl.xaml;Control\Damage\OneKillCalcControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Skill\SkillControl.xaml;Control\Skill\SkillListControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\CharacterListview.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;View\SetItemDisplayWindow.xaml;View\SymbolSettingWindow.xaml;
+281854970631
+31-243718722
+Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Damage\DamageControl.xaml;Control\Damage\MobControl.xaml;Control\Damage\MulungControl.xaml;Control\Damage\OneKillCalcControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Skill\SkillControl.xaml;Control\Skill\SkillListControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\CharacterListview.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;View\SetItemDisplayWindow.xaml;View\SymbolSettingWindow.xaml;
 
 True
 

@@ -88,6 +88,10 @@
       <Project>{1647D18B-8ADA-4DAE-A66F-A3931CE0783E}</Project>
       <Name>MapleStoryHelper.Standard.Resources</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.SkillLib\MapleStoryHelper.Standard.SkillLib.csproj">
+      <Project>{BB6CAF66-A746-4349-8A8E-7AE29B1360EF}</Project>
+      <Name>MapleStoryHelper.Standard.SkillLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
       <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>
       <Name>MapleStoryHelper.Standard</Name>

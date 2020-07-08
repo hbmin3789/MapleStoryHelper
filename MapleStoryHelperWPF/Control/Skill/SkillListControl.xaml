@@ -28,9 +28,23 @@
         </Style>
     </UserControl.Resources>
     <Grid Background="White">
-        <ListView x:Name="lvSkill"
-                  Style="{StaticResource lvSkillStyle}">
-            
-        </ListView>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="tbKeyWord" MinWidth="100"/>
+            <Button x:Name="btnSearch"
+                    Content="검색"
+                    Click="btnSearch_Click"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="1">
+            <ListView x:Name="lvSkill" Style="{StaticResource lvSkillStyle}">
+            </ListView>
+        </Grid>
+        
     </Grid>
 </UserControl>

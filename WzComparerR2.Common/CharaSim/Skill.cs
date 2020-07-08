@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -6,7 +7,7 @@ using WzComparerR2.WzLib;
 
 namespace WzComparerR2.CharaSim
 {
-    public class Skill
+    public class Skill : BindableBase
     {
         public Skill()
         {
@@ -19,8 +20,8 @@ namespace WzComparerR2.CharaSim
         }
 
         private int level;
-        internal List<Dictionary<string, string>> levelCommon;
-        internal Dictionary<string, string> common;
+        public List<Dictionary<string, string>> levelCommon;
+        public Dictionary<string, string> common;
 
         public Dictionary<string, string> Common
         {

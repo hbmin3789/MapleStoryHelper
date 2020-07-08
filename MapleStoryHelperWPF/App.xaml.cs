@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
 using MapleStoryHelper.Standard.Character.Model;
+using MapleStoryHelper.Standard.SkillLib.Model;
 using MapleStoryHelperWPF.ViewModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -34,6 +35,8 @@ namespace MapleStoryHelperWPF
         { 
             get => viewModel.MapleWz;
         }
+
+        public static List<SkillBase> Skills { get; internal set; }
 
         public static void AddBindingUpdateEvent(EventHandler e)
         {
