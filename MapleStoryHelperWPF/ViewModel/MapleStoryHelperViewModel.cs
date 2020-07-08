@@ -5,6 +5,7 @@ using MapleStoryHelper.Standard.Character.Model;
 using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelper.Standard.Item.Equipment;
+using MapleStoryHelper.Standard.SkillLib.Model;
 using Newtonsoft.Json;
 using Prism.Mvvm;
 using System;
@@ -17,6 +18,13 @@ namespace MapleStoryHelperWPF.ViewModel
     public class MapleStoryHelperViewModel : BindableBase
     {
         public List<SetItem> SetItemList { get; private set; }
+
+        protected ObservableCollection<SkillBase> _skills;
+        public ObservableCollection<SkillBase> Skills 
+        {
+            get => _skills;
+            set => SetProperty(ref _skills, value);
+        }
 
         private MapleWz _mapleWz;
         public MapleWz MapleWz

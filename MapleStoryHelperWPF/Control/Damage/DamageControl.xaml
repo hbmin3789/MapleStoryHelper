@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MapleStoryHelperWPF.Control.Damage"
              xmlns:status="clr-namespace:MapleStoryHelperWPF.Control.Status"
+             xmlns:loading="clr-namespace:MapleStoryHelperWPF.Control.Loading"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
@@ -41,5 +42,9 @@
                                   Visibility="Collapsed"/>
         <local:MulungControl x:Name="ctrlMulung" Grid.ColumnSpan="2"
                              Visibility="Collapsed"/>
+
+        <loading:LoadingControl x:Name="ctrlLoading"
+                                Grid.ColumnSpan="2"
+                                ProgressEnabled="False"/>
     </Grid>
 </UserControl>

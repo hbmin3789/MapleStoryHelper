@@ -14,7 +14,7 @@ namespace MapleStoryHelperWPF
     {
         public MainWindow()
         {
-            App.OnLoaded += ApplicationLoaded;
+            App.OnWzLoaded += ApplicationLoaded;
             InitializeComponent();
         }
 
@@ -67,6 +67,7 @@ namespace MapleStoryHelperWPF
         private void Window_Closed(object sender, EventArgs e)
         {
             App.UpdateCharacterDatas();
+            Application.Current.MainWindow.Close();
         }
     }
 }

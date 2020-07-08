@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Data;
 using System.IO;
@@ -28,7 +29,7 @@ namespace MapleStoryHelperWPF
         private static Thread LoadThread = new Thread(LoadData);
 
         public static EventHandler UpdateBindingEvent;
-        public static EventHandler OnLoaded;
+        public static EventHandler OnWzLoaded;
         public static string BASE_PATH = AppDomain.CurrentDomain.BaseDirectory + "Data.dat";
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
 
@@ -37,7 +38,11 @@ namespace MapleStoryHelperWPF
             get => viewModel.MapleWz;
         }
 
-        public static List<SkillBase> Skills { get; internal set; }
+        public static ObservableCollection<SkillBase> Skills
+        {
+            get => viewModel.Skills;
+            private set => viewModel.Skills = value;
+        }
 
         #region Binding
 
@@ -119,7 +124,7 @@ namespace MapleStoryHelperWPF
 
             App.Current.Dispatcher.Invoke(() => 
             {
-                OnLoaded?.Invoke(null, null);
+                OnWzLoaded?.Invoke(null, null);
             });
 
             LoadThread.Join();

@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MapleStoryHelper.Standard.SkillLib.Model;
+using System;
+using System.Collections.ObjectModel;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MapleStoryHelperWPF.Control.Damage
 {
@@ -20,9 +12,36 @@ namespace MapleStoryHelperWPF.Control.Damage
     /// </summary>
     public partial class DamageControl : UserControl
     {
+        Thread thread;
+
         public DamageControl()
         {
             InitializeComponent();
+            thread = new Thread(LoadData);
+            App.OnWzLoaded += OnWzLoaded;
+        }
+
+        private void OnWzLoaded(object sender, EventArgs e)
+        {
+            thread.Start();
+        }
+
+        private void LoadData()
+        {
+            App.Current.Dispatcher.Invoke(() => 
+            {
+                ctrlLoading.ProgressEnabled = true;
+            });
+
+            var skills = App.mapleWz.GetSkills();
+
+            App.Current.Dispatcher.Invoke(() => 
+            {
+                App.viewModel.Skills = new ObservableCollection<SkillBase>(skills);
+                ctrlLoading.ProgressEnabled = false;
+            });
+
+            thread.Join();
         }
 
         private void btnOneKill_Click(object sender, RoutedEventArgs e)
@@ -34,5 +53,7 @@ namespace MapleStoryHelperWPF.Control.Damage
         {
             ctrlMulung.Visibility = Visibility.Collapsed;
         }
+
+        
     }
 }

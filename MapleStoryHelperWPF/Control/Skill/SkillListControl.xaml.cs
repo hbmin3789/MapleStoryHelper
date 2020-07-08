@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.SkillLib.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -21,6 +23,7 @@ namespace MapleStoryHelperWPF.Control
     /// </summary>
     public partial class SkillListControl : UserControl
     {
+
         public SkillListControl()
         {
             InitializeComponent();
