@@ -26,13 +26,21 @@ namespace MapleStoryHelperWPF.Control.Damage
         public MulungControl()
         {
             InitializeComponent();
+            InitWindow();
+            this.DataContext = App.viewModel;
+        }
+
+        private void InitWindow()
+        {
+            window = new Window();
+            var control = new SkillListControl();
+            window.Content = control;
+            control.lvSkill.SelectionChanged += LvSkill_SelectionChanged;
         }
 
         private void btnMainSkill_Click(object sender, RoutedEventArgs e)
         {
-            var control = new SkillListControl();
-            window.Content = control;
-            control.lvSkill.SelectionChanged += LvSkill_SelectionChanged;
+            InitWindow();
             window.ShowDialog();
         }
 
@@ -49,10 +57,7 @@ namespace MapleStoryHelperWPF.Control.Damage
                 window.Close();
                 gdSkillInfo.DataContext = skill;
             }
-            else
-            {
-                listview.SelectedIndex = -1;
-            }
+            listview.SelectedIndex = -1;
         }
     }
 }

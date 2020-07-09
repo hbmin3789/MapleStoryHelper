@@ -17,10 +17,12 @@ namespace WzComparerR2.CharaSim
             this.PVPcommon = new Dictionary<string, string>();
             this.ReqSkill = new Dictionary<int, int>();
             this.Action = new List<string>();
+            this.effectDelay = new Dictionary<int, int>();
         }
 
         private int level;
         public List<Dictionary<string, string>> levelCommon;
+        public Dictionary<int, int> effectDelay;
         public Dictionary<string, string> common;
 
         public Dictionary<string, string> Common
@@ -111,6 +113,12 @@ namespace WzComparerR2.CharaSim
                         break;
                     case "iconDisabled":
                         skill.IconDisabled = BitmapOrigin.CreateFromNode(childNode, findNode);
+                        break;
+                    case "effect":
+                        for(int i = 0; i < childNode.Nodes.Count; i++)
+                        {
+                            skill.effectDelay.Add(i, Convert.ToInt32(childNode.Nodes[i].Nodes["delay"]));
+                        }
                         break;
                     case "common":
                         foreach (Wz_Node commonNode in childNode.Nodes)

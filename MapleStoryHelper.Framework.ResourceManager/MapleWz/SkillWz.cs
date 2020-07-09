@@ -78,6 +78,10 @@ namespace MapleStoryHelper.Framework.ResourceManager
                 try
                 {
                     List<SkillBase> temp = GetSkillsFromJobNode(nodes[i].GetImage().Node);
+                    if(temp == null)
+                    {
+                        continue;
+                    }
 
                     for (int j = 0; j < temp.Count; j++)
                     {
@@ -97,9 +101,13 @@ namespace MapleStoryHelper.Framework.ResourceManager
         {
             List<SkillBase> retval = new List<SkillBase>();
 
-            var skills = node.FindNodeByPath("skill").Nodes;
+            var skills = node.FindNodeByPath("skill")?.Nodes;
+            if(skills == null)
+            {
+                return null;
+            }
 
-            for(int i = 0; i < skills.Count; i++)
+            for (int i = 0; i < skills.Count; i++)
             {
                 SkillBase newItem = SkillBase.CreateFromNode(skills[i], PluginManager.FindWz);
                 newItem.SkillCode = skills[i].Text;

@@ -10,7 +10,7 @@
     <UserControl.Resources>
         <converter:StatusAttackToStringConverter x:Key="StatusAttackToStringConverter"/>
     </UserControl.Resources>
-    <Grid>
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0.4*"/>
@@ -18,7 +18,9 @@
         </Grid.ColumnDefinitions>
         <TextBox Grid.Column="0" Text="{Binding MinStatusAttack, 
                                         Converter={StaticResource StatusAttackToStringConverter}}"/>
-        <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
+        <TextBlock Grid.Column="1"
+                   VerticalAlignment="Top"
+                   FontSize="40" Text=" ~ " />
         <TextBox Grid.Column="2" Text="{Binding MaxStatusAttack,
                                         Converter={StaticResource StatusAttackToStringConverter}}"/>
     </Grid>

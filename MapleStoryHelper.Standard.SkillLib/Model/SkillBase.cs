@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Text;
 using WzComparerR2;
@@ -12,6 +13,55 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
 {
     public class SkillBase : Skill
     {
+        public int PercentDamage
+        {
+            get
+            {
+                int retval = 0;
+
+                DataTable dt = new DataTable();
+
+                int count = 0;
+                try
+                {
+                    count = Convert.ToInt32(common["attackCount"]);
+                    string expression = common["damage"];
+                    expression = expression.Replace("x", "30");
+
+                    retval = (int)dt.Compute(expression, null);
+                    retval *= count;
+                }
+                catch
+                {
+
+                }
+
+                
+
+                return retval;
+            }
+        }
+
+        public int SkillDelay
+        {
+            get 
+            {
+                int retval = 0;
+
+                for (int i = 0; i < effectDelay.Count; i++)
+                {
+                    retval += effectDelay[i];
+                }
+
+                double temp = (double)retval * 0.75;
+                temp /= 30;
+                temp = temp + 0.5;
+                retval = ((int)temp)*30;
+
+                return retval;
+            }
+        }
+
         private string _skillCode;
         public string SkillCode
         {
@@ -53,6 +103,13 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
             {
                 switch (childNode.Text)
                 {
+                    case "info":
+                        var temp = childNode.GetNodeWzImage().Node.FindNodeByPath("type");
+                        if (temp != null)
+                        {
+                            skill.type = Convert.ToInt32(temp.Value);
+                        }
+                        break;
                     case "icon":
                         skill.Icon = BitmapOrigin.CreateFromNode(childNode, findNode);
                         break;
@@ -69,6 +126,17 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
                             {
                                 skill.common[commonNode.Text] = commonNode.Value.ToString();
                             }
+                        }
+                        break;
+                    case "effect":
+                        for (int i = 0; i < childNode.Nodes.Count; i++)
+                        {
+                            string val = childNode?.Nodes[i]?.Nodes["delay"]?.Value?.ToString();
+                            if (val == null)
+                            {
+                                continue;
+                            }
+                            skill.effectDelay.Add(i, Convert.ToInt32(val));
                         }
                         break;
                     case "PVPcommon":
