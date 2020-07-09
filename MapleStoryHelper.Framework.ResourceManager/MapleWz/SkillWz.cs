@@ -37,8 +37,26 @@ namespace MapleStoryHelper.Framework.ResourceManager
             }
 
             LoadImage(ref retval);
+            LoadText(ref retval);
 
             return retval;
+        }
+
+        private void LoadText(ref List<SkillBase> retval)
+        {
+            var img = StringWzStruct.WzNode.Nodes["Skill.img"].GetImage();
+
+            for (int i=0; i < retval.Count; i++)
+            {
+                try
+                {
+                    retval[i].SkillName = retval[i].SkillCode.ToSkillName(img.Node);
+                }
+                catch(Exception e)
+                {
+                    //retval.Remove(retval[i]);
+                }
+            }
         }
 
         private void LoadImage(ref List<SkillBase> retval)
@@ -59,8 +77,6 @@ namespace MapleStoryHelper.Framework.ResourceManager
             {
                 try
                 {
-                    int code = Convert.ToInt32(nodes[i].Text.Replace(".img", ""));
-
                     List<SkillBase> temp = GetSkillsFromJobNode(nodes[i].GetImage().Node);
 
                     for (int j = 0; j < temp.Count; j++)
@@ -86,6 +102,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
             for(int i = 0; i < skills.Count; i++)
             {
                 SkillBase newItem = SkillBase.CreateFromNode(skills[i], PluginManager.FindWz);
+                newItem.SkillCode = skills[i].Text;
                 retval.Add(newItem);
             }
 

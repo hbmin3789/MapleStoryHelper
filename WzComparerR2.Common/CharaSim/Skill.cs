@@ -69,6 +69,7 @@ namespace WzComparerR2.CharaSim
         public List<string> Action { get; private set; }
         public int AddAttackToolTipDescSkill { get; set; }
         public int AssistSkillLink { get; set; }
+        public int type { get; set; }
 
         public int MaxLevel
         {
@@ -95,6 +96,13 @@ namespace WzComparerR2.CharaSim
             {
                 switch (childNode.Text)
                 {
+                    case "info":
+                        var temp = childNode.GetNodeWzImage().Node.FindNodeByPath("type");
+                        if(temp != null)
+                        {
+                            skill.type = Convert.ToInt32(temp.Value);
+                        }
+                        break;
                     case "icon":
                         skill.Icon = BitmapOrigin.CreateFromNode(childNode, findNode);
                         break;

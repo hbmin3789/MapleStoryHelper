@@ -66,7 +66,10 @@ namespace MapleStoryHelperWPF
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            App.UpdateCharacterDatas();
+            if(App.viewModel.CharacterList.Count > 0)
+            {
+                App.UpdateCharacterDatas();
+            }
             Application.Current.MainWindow.Close();
         }
     }

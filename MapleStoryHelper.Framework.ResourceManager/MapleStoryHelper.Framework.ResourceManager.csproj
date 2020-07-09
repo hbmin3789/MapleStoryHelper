@@ -60,6 +60,7 @@
     <Compile Include="Common\MHExMethods.cs" />
     <Compile Include="Common\MobExMethods.cs" />
     <Compile Include="Common\SetItemExMethods.cs" />
+    <Compile Include="Common\SkillExMethods.cs" />
     <Compile Include="MapleWz.cs" />
     <Compile Include="MapleWz\EtcWz.cs" />
     <Compile Include="MapleWz\ItemWz.cs" />

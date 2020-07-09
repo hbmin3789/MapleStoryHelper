@@ -12,7 +12,14 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
 {
     public class SkillBase : Skill
     {
-        private string _skillName;
+        private string _skillCode;
+        public string SkillCode
+        {
+            get => _skillCode;
+            set => SetProperty(ref _skillCode, value);
+        }
+
+        private string _skillName = string.Empty;
         public string SkillName
         {
             get => _skillName;

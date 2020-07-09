@@ -24,5 +24,13 @@ namespace MapleStoryHelperWPF.Control.Damage
         {
             InitializeComponent();
         }
+
+        private void btnMainSkill_Click(object sender, RoutedEventArgs e)
+        {
+            var control = new SkillListControl();
+            Window window = new Window();
+            window.Content = control;
+            window.ShowDialog();
+        }
     }
 }
