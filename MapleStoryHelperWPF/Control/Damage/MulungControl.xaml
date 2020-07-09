@@ -8,18 +8,38 @@
              xmlns:status="clr-namespace:MapleStoryHelperWPF.Control.Status"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+    </UserControl.Resources>
     <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <status:StatusControl VerticalAlignment="Top"/>
-        <Button x:Name="btnMainSkill" Margin="0,0,0,50"
+        <Grid>
+            <status:StatusControl VerticalAlignment="Top"/>
+            <Button x:Name="btnMainSkill" Margin="0,0,0,50"
                 FontSize="30"
                 VerticalAlignment="Bottom"
                 Width="200" Height="50"
                 Content="주력기 설정"
                 Click="btnMainSkill_Click"/>
+        </Grid>
+        <Grid x:Name="gdSkillInfo" Grid.Column="1">
+            <Image x:Name="imgSkill" Margin="10"
+                   HorizontalAlignment="Left" VerticalAlignment="Top"
+                   Width="100" Height="100"
+                   Source="{Binding ImgBitmapSource}"/>
+            <StackPanel Margin="120,10,0,0"
+                        VerticalAlignment="Top"
+                        Height="100">
+                <TextBlock Text="{Binding SkillName}"/>
+                <TextBlock Text="{Binding PercentDamage}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>

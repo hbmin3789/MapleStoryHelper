@@ -23,7 +23,6 @@ namespace MapleStoryHelperWPF.Control
     /// </summary>
     public partial class SkillListControl : UserControl
     {
-
         public SkillListControl()
         {
             InitializeComponent();

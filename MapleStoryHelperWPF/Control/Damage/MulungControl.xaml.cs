@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.SkillLib.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,8 @@ namespace MapleStoryHelperWPF.Control.Damage
     /// </summary>
     public partial class MulungControl : UserControl
     {
+        Window window = new Window();
+
         public MulungControl()
         {
             InitializeComponent();
@@ -28,9 +31,28 @@ namespace MapleStoryHelperWPF.Control.Damage
         private void btnMainSkill_Click(object sender, RoutedEventArgs e)
         {
             var control = new SkillListControl();
-            Window window = new Window();
             window.Content = control;
+            control.lvSkill.SelectionChanged += LvSkill_SelectionChanged;
             window.ShowDialog();
+        }
+
+        private void LvSkill_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listview = (sender as ListView);
+            if (listview.SelectedIndex == -1)
+            {
+                return;
+            }
+            var skill = e.AddedItems[0] as SkillBase;
+            if(MessageBox.Show("\"" + skill.SkillName + "\"선택됨", "", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                window.Close();
+                gdSkillInfo.DataContext = skill;
+            }
+            else
+            {
+                listview.SelectedIndex = -1;
+            }
         }
     }
 }
