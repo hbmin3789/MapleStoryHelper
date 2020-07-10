@@ -54,5 +54,9 @@
         <loading:LoadingControl x:Name="ctrlLoading"
                                 Grid.ColumnSpan="2"
                                 ProgressEnabled="False"/>
+
+        <Button x:Name="btnClose" Grid.Column="3"
+                Style="{StaticResource btnCloseStyle}"
+                Click="btnClose_Click"/>
     </Grid>
 </UserControl>

@@ -50,9 +50,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.SkillLib", "MapleStoryHelper.Standard.SkillLib\MapleStoryHelper.Standard.SkillLib.csproj", "{BB6CAF66-A746-4349-8A8E-7AE29B1360EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.MapLib", "MapleStoryHelper.Standard.MapLib\MapleStoryHelper.Standard.MapLib.csproj", "{9A28062E-8083-4E88-8693-43AC86815486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.MapLib", "MapleStoryHelper.Standard.MapLib\MapleStoryHelper.Standard.MapLib.csproj", "{9A28062E-8083-4E88-8693-43AC86815486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobDisplayApp", "MobDisplayApp\MobDisplayApp.csproj", "{D03817B3-A047-499D-880E-21CA492C4A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryHelper.Standard.DamageLib", "MapleStoryHelper.Standard.DamageLib\MapleStoryHelper.Standard.DamageLib.csproj", "{68BF4BE8-BE61-400F-8159-CD9A82E7E110}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -462,6 +464,26 @@ Global
 		{D03817B3-A047-499D-880E-21CA492C4A74}.Release|x64.Build.0 = Release|Any CPU
 		{D03817B3-A047-499D-880E-21CA492C4A74}.Release|x86.ActiveCfg = Release|Any CPU
 		{D03817B3-A047-499D-880E-21CA492C4A74}.Release|x86.Build.0 = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|ARM.Build.0 = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|x64.Build.0 = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Debug|x86.Build.0 = Debug|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|ARM.ActiveCfg = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|ARM.Build.0 = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|ARM64.Build.0 = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|x64.ActiveCfg = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|x64.Build.0 = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|x86.ActiveCfg = Release|Any CPU
+		{68BF4BE8-BE61-400F-8159-CD9A82E7E110}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

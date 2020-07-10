@@ -59,5 +59,47 @@ namespace MapleStoryHelperWPF.Control.Damage
             }
             listview.SelectedIndex = -1;
         }
+
+        public void SetCharacter(object character)
+        {
+            this.DataContext = character;
+            ctrlStatus.SetCharacterStatusDataContext(character);
+        }
+
+        private void tbSkill_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            if(tb == null)
+            {
+                return;
+            }
+
+            int percent = 0;
+
+            try
+            {
+                percent = Convert.ToInt32(tb.Text);
+            }
+            catch
+            {
+                MessageBox.Show("숫자만 입력해주세요.");
+                tb.Text = "0";
+            }
+            if (tb.Name.Contains("Main"))
+            {
+
+            }
+            else
+            {
+
+            }
+
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
+        }
     }
 }

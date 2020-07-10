@@ -53,6 +53,7 @@ namespace MapleStoryHelperWPF.Control.Damage
 
         private void btnMulung_Click(object sender, RoutedEventArgs e)
         {
+            ctrlMulung.SetCharacter(lvCharacter.SelectedItem);
             ctrlMulung.Visibility = Visibility.Visible;
         }
 
@@ -66,6 +67,11 @@ namespace MapleStoryHelperWPF.Control.Damage
             {
                 spButtons.IsEnabled = true;
             }
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
         }
     }
 }

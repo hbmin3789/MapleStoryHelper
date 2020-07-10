@@ -1,4 +1,4 @@
-﻿C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAddControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Character\CharacterAdd\CharacterItemControl.xaml;;
@@ -18,6 +18,7 @@ FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Sta
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Status\StatusControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Control\Union\UnionControl.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Theme\CharacterListview.xaml;;
+FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Theme\CloseButton.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\Theme\Font.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\View\AddItemWindow.xaml;;
 FC:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\View\MainWindow.xaml;;
