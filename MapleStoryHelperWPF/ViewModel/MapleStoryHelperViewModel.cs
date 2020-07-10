@@ -54,18 +54,19 @@ namespace MapleStoryHelperWPF.ViewModel
         public EquipmentStatus UnionStatus
         {
             get => _unionStatus;
-            set => SetProperty(ref _unionStatus, value);
+            set
+            {
+                SetProperty(ref _unionStatus, value);
+                if(value != null)
+                {
+                    Setting.UnionStatus = value;
+                }
+            }
         }
 
         public MapleStoryHelperViewModel()
         {
             InitVariables();
-            SetUnionStatus();
-        }
-
-        private void SetUnionStatus()
-        {
-            Setting.UnionStatus = UnionStatus;
         }
 
         private void InitVariables()

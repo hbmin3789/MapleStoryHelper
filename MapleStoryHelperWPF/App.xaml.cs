@@ -1,5 +1,7 @@
 ﻿using MapleStoryHelper.Framework.ResourceManager;
 using MapleStoryHelper.Standard.Character.Model;
+using MapleStoryHelper.Standard.Item.Common;
+using MapleStoryHelper.Standard.Item.Equipment;
 using MapleStoryHelper.Standard.SkillLib.Model;
 using MapleStoryHelperWPF.Properties;
 using MapleStoryHelperWPF.ViewModel;
@@ -31,6 +33,7 @@ namespace MapleStoryHelperWPF
         public static EventHandler UpdateBindingEvent;
         public static EventHandler OnWzLoaded;
         public static string BASE_PATH = AppDomain.CurrentDomain.BaseDirectory + "Data.dat";
+        public static string BASE_PATH_UNION = AppDomain.CurrentDomain.BaseDirectory + "Union.dat";
         public static MapleStoryHelperViewModel viewModel = new MapleStoryHelperViewModel();
 
         public static MapleWz mapleWz 
@@ -77,6 +80,41 @@ namespace MapleStoryHelperWPF
             }
         }
 
+        public static void LoadUnionDatas()
+        {
+            if (File.Exists(BASE_PATH_UNION))
+            {
+                string jarr = File.ReadAllText(BASE_PATH_UNION);
+                var unionStatus = JsonConvert.DeserializeObject<EquipmentStatus>(jarr);
+                viewModel.UnionStatus = unionStatus;
+            }
+        }
+
+
+        public static void UpdateCharacterDatas()
+        {
+            SaveCharacterData();
+            SaveUnionData();
+        }
+
+        private static void SaveCharacterData()
+        {
+            var CharacterJsonDatas = GetCharacterJsonDatas();
+
+            JArray jarr = new JArray();
+            for (int i = 0; i < CharacterJsonDatas.Count; i++)
+            {
+                jarr.Add(CharacterJsonDatas[i]);
+            }
+
+            if (File.Exists(BASE_PATH))
+            {
+                File.Delete(BASE_PATH);
+            }
+
+            File.WriteAllText(BASE_PATH, jarr.ToString());
+        }
+
         public static List<string> GetCharacterJsonDatas()
         {
             List<string> retval = new List<string>();
@@ -90,22 +128,16 @@ namespace MapleStoryHelperWPF
             return retval;
         }
 
-        public static void UpdateCharacterDatas()
+        private static void SaveUnionData()
         {
-            var CharacterJsonDatas = GetCharacterJsonDatas();
+            string json = JsonConvert.SerializeObject(Setting.UnionStatus);
 
-            JArray jarr = new JArray();
-            for(int i = 0; i < CharacterJsonDatas.Count; i++)
+            if (File.Exists(BASE_PATH_UNION))
             {
-                jarr.Add(CharacterJsonDatas[i]);
+                File.Delete(BASE_PATH_UNION);
             }
 
-            if (File.Exists(BASE_PATH))
-            {
-                File.Delete(BASE_PATH);
-            }
-
-            File.WriteAllText(BASE_PATH, jarr.ToString());
+            File.WriteAllText(BASE_PATH_UNION, json);
         }
 
         #endregion
@@ -121,6 +153,7 @@ namespace MapleStoryHelperWPF
         {
             viewModel.LoadWz(Settings.Default.MapleStoryPath);
             LoadCharacterDatas();
+            LoadUnionDatas();
 
             App.Current.Dispatcher.Invoke(() => 
             {

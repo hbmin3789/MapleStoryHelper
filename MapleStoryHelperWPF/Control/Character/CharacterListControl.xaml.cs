@@ -47,6 +47,7 @@ namespace MapleStoryHelperWPF.Control
         private void btnSetUnion_Click(object sender, RoutedEventArgs e)
         {
             ctrlUnion.Visibility = Visibility.Visible;
+            App.UpdateBinding();
         }
 
         private void btnDamageCalc_Click(object sender, RoutedEventArgs e)

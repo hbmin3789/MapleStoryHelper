@@ -46,6 +46,10 @@
             </StackPanel>
         </Grid>
 
+        <Button x:Name="btnClose" Grid.Column="3"
+                Style="{StaticResource btnCloseStyle}"
+                Click="btnClose_Click"/>
+
         <local:OneKillCalcControl x:Name="ctrlOneKill" Grid.ColumnSpan="2"
                                   Visibility="Collapsed"/>
         <local:MulungControl x:Name="ctrlMulung" Grid.ColumnSpan="2"
@@ -54,9 +58,5 @@
         <loading:LoadingControl x:Name="ctrlLoading"
                                 Grid.ColumnSpan="2"
                                 ProgressEnabled="False"/>
-
-        <Button x:Name="btnClose" Grid.Column="3"
-                Style="{StaticResource btnCloseStyle}"
-                Click="btnClose_Click"/>
     </Grid>
 </UserControl>

@@ -1,0 +1,13 @@
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.deps.json
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.csproj.CopyComplete
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.dll
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.pdb

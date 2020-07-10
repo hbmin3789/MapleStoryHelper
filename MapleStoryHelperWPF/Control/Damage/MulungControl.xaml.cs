@@ -62,6 +62,7 @@ namespace MapleStoryHelperWPF.Control.Damage
 
         public void SetCharacter(object character)
         {
+            this.DataContext = null;
             this.DataContext = character;
             ctrlStatus.SetCharacterStatusDataContext(character);
         }
