@@ -18,33 +18,33 @@ namespace MapleStoryHelper.Standard.Resources
         {
             EquipmentItem retval = new EquipmentItem();
 
-            var resType = typeof(Properties.MapleStoryHelperResource);
-            var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
-            for (int i = 0; i < properties.Count(); i++)
-            {
-                var attribute = GetResourceNameAttribute(properties[i]);
-                if (attribute is EquipmentResourceInfoAttribute && attribute.ItemCode == Code)
-                {
-                    (retval as EquipmentItem).JobCategory = (attribute as EquipmentResourceInfoAttribute).JobCategory;
-                }
-                if (attribute is WeaponResourceInfoAttribute && attribute.ItemCode == Code)
-                {
-                    (retval as EquipmentItem).JobCategory = (attribute as WeaponResourceInfoAttribute).JobCategory;
-                    (retval as EquipmentItem).WeaponConst = (attribute as WeaponResourceInfoAttribute).WeaponConst;
-                }
-            }
+            //var resType = typeof(Properties.MapleStoryHelperResource);
+            //var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+            //for (int i = 0; i < properties.Count(); i++)
+            //{
+            //    var attribute = GetResourceNameAttribute(properties[i]);
+            //    if (attribute is EquipmentResourceInfoAttribute && attribute.ItemCode == Code)
+            //    {
+            //        (retval as EquipmentItem).JobCategory = (attribute as EquipmentResourceInfoAttribute).JobCategory;
+            //    }
+            //    if (attribute is WeaponResourceInfoAttribute && attribute.ItemCode == Code)
+            //    {
+            //        (retval as EquipmentItem).JobCategory = (attribute as WeaponResourceInfoAttribute).JobCategory;
+            //        (retval as EquipmentItem).WeaponConst = (attribute as WeaponResourceInfoAttribute).WeaponConst;
+            //    }
+            //}
 
-            var xmlList = GetEquipmentXmlList(category);
+            //var xmlList = GetEquipmentXmlList(category);
 
 
-            for (int i = 0; i < xmlList.Count; i++)
-            {
-                if (xmlList[i]?.LastChild?.Attributes["name"].Value?.Equals(Code) == true)
-                {
-                    SetEquipInfo(ref retval, xmlList[i].ChildNodes.Item(0));
-                }
+            //for (int i = 0; i < xmlList.Count; i++)
+            //{
+            //    if (xmlList[i]?.LastChild?.Attributes["name"].Value?.Equals(Code) == true)
+            //    {
+            //        SetEquipInfo(ref retval, xmlList[i].ChildNodes.Item(0));
+            //    }
                 
-            }
+            //}
 
             return retval;
         }
@@ -267,21 +267,21 @@ namespace MapleStoryHelper.Standard.Resources
         {
             List<XmlDocument> retval = new List<XmlDocument>();
 
-            var resType = typeof(Properties.MapleStoryHelperResource);
-            var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+            //var resType = typeof(Properties.MapleStoryHelperResource);
+            //var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
 
-            for (int i = 0; i < properties.Length; i++)
-            {
-                var attribute = GetResourceNameAttribute(properties[i]);
+            //for (int i = 0; i < properties.Length; i++)
+            //{
+            //    var attribute = GetResourceNameAttribute(properties[i]);
 
-                if (properties[i].Name.Contains("Xml_") == true &&
-                    attribute?.Category == category)
-                {
-                    XmlDocument newItem = new XmlDocument();
-                    newItem.LoadXml(properties[i].GetValue(properties[i]).ToString());
-                    retval.Add(newItem);
-                }
-            }
+            //    if (properties[i].Name.Contains("Xml_") == true &&
+            //        attribute?.Category == category)
+            //    {
+            //        XmlDocument newItem = new XmlDocument();
+            //        newItem.LoadXml(properties[i].GetValue(properties[i]).ToString());
+            //        retval.Add(newItem);
+            //    }
+            //}
 
             return retval;
         }

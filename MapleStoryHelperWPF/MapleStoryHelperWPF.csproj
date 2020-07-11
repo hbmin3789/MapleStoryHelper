@@ -274,6 +274,10 @@
       <Project>{8746cb0e-6404-4595-af83-270d25a0f163}</Project>
       <Name>MapleStoryHelper.Standard.Character</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.DamageLib\MapleStoryHelper.Standard.DamageLib.csproj">
+      <Project>{68BF4BE8-BE61-400F-8159-CD9A82E7E110}</Project>
+      <Name>MapleStoryHelper.Standard.DamageLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>

@@ -62,6 +62,25 @@
           "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll": {}
         }
       },
+      "MapleStoryHelper.Framework.ResourceManager/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Character": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
+          "MapleStoryHelper.Standard.Resources": "1.0.0",
+          "MapleStoryHelper.Standard.SkillLib": "1.0.0",
+          "WzComparerR2.Common": "1.0.0",
+          "WzComparerR2.WzLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Framework.ResourceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Framework.ResourceManager.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -79,6 +98,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Framework.ResourceManager": "1.0.0",
           "MapleStoryHelper.Standard": "1.0.0",
           "WzComparerR2.Common": "1.0.0"
         },
@@ -87,6 +107,22 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Boss.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Character/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "MapleStoryHelper.Standard.Resources": "1.0.0",
+          "MapleStoryHelper.Standard.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Character.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Item/1.0.0": {
@@ -103,6 +139,20 @@
         },
         "runtime": {
           "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Resources/1.0.0": {
@@ -492,6 +542,11 @@
         "version.txt"
       ]
     },
+    "MapleStoryHelper.Framework.ResourceManager/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Framework.ResourceManager/MapleStoryHelper.Framework.ResourceManager.csproj",
+      "msbuildProject": "../MapleStoryHelper.Framework.ResourceManager/MapleStoryHelper.Framework.ResourceManager.csproj"
+    },
     "MapleStoryHelper.Standard/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
@@ -502,10 +557,20 @@
       "path": "../MapleStoryHelper.Standard.Boss/MapleStoryHelper.Standard.Boss.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard.Boss/MapleStoryHelper.Standard.Boss.csproj"
     },
+    "MapleStoryHelper.Standard.Character/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Character/MapleStoryHelper.Standard.Character.csproj"
+    },
     "MapleStoryHelper.Standard.Item/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj"
+    },
+    "MapleStoryHelper.Standard.MobLib/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Mob/MapleStoryHelper.Standard.MobLib.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Mob/MapleStoryHelper.Standard.MobLib.csproj"
     },
     "MapleStoryHelper.Standard.Resources/1.0.0": {
       "type": "project",

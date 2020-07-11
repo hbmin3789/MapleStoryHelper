@@ -1,11 +1,9 @@
 ﻿using MapleStoryHelper.Standard.Boss.Common;
 using MapleStoryHelper.Standard.Resources;
 using MapleStoryHelper.Standard.SkillLib.Model;
+using MapleStoryHelper.Framework.ResourceManager;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Net.Http.Headers;
-using System.Reflection;
 using WzComparerR2.WzLib;
 
 namespace MapleStoryHelper.Standard.DamageLib.Common
@@ -25,16 +23,17 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             int retval = 0;
 
             skill = mainSkill;
-            List<BossBase> MulungBossList = GetMulungBossList();
+            List<BossBase> MulungBossList = GetMulungBossList(StringWzNode);
 
             return retval;
         }
 
-        private List<BossBase> GetMulungBossList()
+        private List<BossBase> GetMulungBossList(Wz_Node StringWzNode)
         {
             List<BossBase> retval = new List<BossBase>();
 
             string BossStr = MHResourceManager.GetMulungBossText();
+            BossStr.Replace("\r", "");
             string[] BossList = BossStr.Split(new char[] { '\n' });
 
             for(int i = 0; i < BossList.Length; i++)
@@ -44,7 +43,7 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
             for(int i = 0; i < BossList.Length; i++)
             {
-                retval[i].BossName = retval[i]
+                retval[i].BossName = retval[i].ID.GetNameByCode(StringWzNode,"Mob");
             }
 
             return retval;

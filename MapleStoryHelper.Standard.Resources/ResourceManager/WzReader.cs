@@ -16,59 +16,59 @@ namespace MapleStoryHelper.Standard.Resources.ResourceManager
         {
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
-            Wz_Structure wzSt = new Wz_Structure();
+            //Wz_Structure wzSt = new Wz_Structure();
 
-            wzSt.Load(FilePath);
+            //wzSt.Load(FilePath);
 
-            var node = wzSt.WzNode;
+            //var node = wzSt.WzNode;
 
-            int temp = 0;
+            //int temp = 0;
 
-            string itemCodes = Properties.MapleStoryHelperResource.Txt_ItemCodes.ToString();
+            //string itemCodes = Properties.MapleStoryHelperResource.Txt_ItemCodes.ToString();
 
-            for (int i = 0; i < node.Nodes.Count; i++)
-            {
+            //for (int i = 0; i < node.Nodes.Count; i++)
+            //{
 
-                if (int.TryParse((node.Nodes[i].Text.Split(new char[] { '.' })[0]), out temp) == true)
-                {
-                    continue;
-                }
+            //    if (int.TryParse((node.Nodes[i].Text.Split(new char[] { '.' })[0]), out temp) == true)
+            //    {
+            //        continue;
+            //    }
 
-                for (int j = 0; j < node.Nodes[i].Nodes.Count; j++)
-                {
-                    var equipNode = node.Nodes[i];
-                    EquipmentItem newItem = new EquipmentItem();
+            //    for (int j = 0; j < node.Nodes[i].Nodes.Count; j++)
+            //    {
+            //        var equipNode = node.Nodes[i];
+            //        EquipmentItem newItem = new EquipmentItem();
 
-                    string itemCode = equipNode.Nodes[j].Text.Split(new char[] { '.' })[0].Remove(0,1);
+            //        string itemCode = equipNode.Nodes[j].Text.Split(new char[] { '.' })[0].Remove(0,1);
 
-                    if (itemCodes.Contains(itemCode) == false)
-                    {
-                        continue;
-                    }
+            //        if (itemCodes.Contains(itemCode) == false)
+            //        {
+            //            continue;
+            //        }
 
-                    var imgNode = equipNode.FindNodeByPath(equipNode.Nodes[j].Text);
-                    Wz_Image image;
+            //        var imgNode = equipNode.FindNodeByPath(equipNode.Nodes[j].Text);
+            //        Wz_Image image;
 
-                    if ((image = imgNode.GetValue<Wz_Image>()) == null || !image.TryExtract())
-                    {
-                        continue;
-                    }                        
+            //        if ((image = imgNode.GetValue<Wz_Image>()) == null || !image.TryExtract())
+            //        {
+            //            continue;
+            //        }                        
 
-                    MHXmlReader.SetEquipInfo(ref newItem, imgNode);
-                    newItem.ItemCode = imgNode.Text.Split(new char[] { '.' })[0];
-                    try
-                    {
-                        newItem.ImgBitmapSource = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
-                    }
-                    catch
-                    {
-                        continue;
-                    }
+            //        MHXmlReader.SetEquipInfo(ref newItem, imgNode);
+            //        newItem.ItemCode = imgNode.Text.Split(new char[] { '.' })[0];
+            //        try
+            //        {
+            //            newItem.ImgBitmapSource = Gear.CreateFromNode(image.Node, PluginManager.FindWz);
+            //        }
+            //        catch
+            //        {
+            //            continue;
+            //        }
 
-                    retval.Add(newItem);
-                }
+            //        retval.Add(newItem);
+            //    }
 
-            }
+            //}
 
 
 

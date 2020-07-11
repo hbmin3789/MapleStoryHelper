@@ -1,4 +1,5 @@
-﻿using MapleStoryHelper.Standard.SkillLib.Model;
+﻿using MapleStoryHelper.Standard.DamageLib.Common;
+using MapleStoryHelper.Standard.SkillLib.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,8 @@ namespace MapleStoryHelperWPF.Control.Damage
     /// </summary>
     public partial class MulungControl : UserControl
     {
-        Window window = new Window();
+        private Window window = new Window();
+        private MulungDpm dpm { get; set; }
 
         public MulungControl()
         {
@@ -58,13 +60,16 @@ namespace MapleStoryHelperWPF.Control.Damage
                 gdSkillInfo.DataContext = skill;
             }
             listview.SelectedIndex = -1;
+            dpm.GetMulungFloor(skill, App.mapleWz.StringWzStruct.WzNode);
         }
 
         public void SetCharacter(object character)
         {
+            var ch = character as MapleStoryHelper.Standard.Character.Model.Character;
             this.DataContext = null;
             this.DataContext = character;
             ctrlStatus.SetCharacterStatusDataContext(character);
+            dpm = new MulungDpm(ch.CharacterStatus, ch.MaxStatusAttack, ch.MinStatusAttack);
         }
 
         private void tbSkill_TextChanged(object sender, TextChangedEventArgs e)

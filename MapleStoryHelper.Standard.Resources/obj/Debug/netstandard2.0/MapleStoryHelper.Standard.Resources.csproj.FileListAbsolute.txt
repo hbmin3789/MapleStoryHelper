@@ -35,7 +35,6 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resour
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.csprojAssemblyReference.cache
-C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.Properties.MapleStoryHelperResource.resources
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.csproj.GenerateResource.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.AssemblyInfoInputs.cache
