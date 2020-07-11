@@ -12,9 +12,9 @@ DEBUG;TRACE
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelperWPF\App.xaml
 25-1869965938
 
-281558380542
-1341688002792
+29-1412804878
+32778746585
 Control\Character\CharacterAddControl.xaml;Control\Character\CharacterAdd\CharacterItemControl.xaml;Control\Character\CharacterAdd\CharacterJobControl.xaml;Control\Character\CharacterAdd\CharacterStatusSettingControl.xaml;Control\Character\CharacterAdd\SkillSettingControl.xaml;Control\Character\CharacterListControl.xaml;Control\Damage\DamageControl.xaml;Control\Damage\MobControl.xaml;Control\Damage\MulungControl.xaml;Control\Damage\OneKillCalcControl.xaml;Control\Item\EquipmentInfoControl.xaml;Control\Item\PotentialControl.xaml;Control\Loading\LoadingControl.xaml;Control\Skill\SkillControl.xaml;Control\Skill\SkillListControl.xaml;Control\Status\StatusAttackControl.xaml;Control\Status\StatusControl.xaml;Control\Union\UnionControl.xaml;Theme\CharacterListview.xaml;Theme\CloseButton.xaml;Theme\Font.xaml;View\AddItemWindow.xaml;View\MainWindow.xaml;View\SetItemDisplayWindow.xaml;View\SymbolSettingWindow.xaml;
 
-False
+True
 

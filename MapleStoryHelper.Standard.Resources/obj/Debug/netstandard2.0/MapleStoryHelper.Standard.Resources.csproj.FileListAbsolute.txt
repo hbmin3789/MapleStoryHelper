@@ -43,3 +43,4 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resour
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.pdb
+C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Resources\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Resources.Properties.Resources.resources

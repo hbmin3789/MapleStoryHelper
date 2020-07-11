@@ -162,7 +162,14 @@ namespace MapleStoryHelper.Standard
 
         public int CriticalBinding
         {
-            get => Critical;
+            get 
+            { 
+                if(Critical > 100)
+                {
+                    return 100;
+                }
+                return Critical; 
+            }
             set { }
         }
 

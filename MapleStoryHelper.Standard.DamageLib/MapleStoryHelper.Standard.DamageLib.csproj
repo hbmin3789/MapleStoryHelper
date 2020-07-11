@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.SkillLib\MapleStoryHelper.Standard.SkillLib.csproj" />
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj" />
   </ItemGroup>
 

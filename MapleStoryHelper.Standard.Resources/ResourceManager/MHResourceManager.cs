@@ -13,6 +13,12 @@ namespace MapleStoryHelper.Standard.Resources
 {
     public class MHResourceManager
     {
+        public static string GetMulungBossText()
+        {
+            return Properties.Resources.MulungBoss;
+        }
+
+        #region Not Use
         /// <summary>
         /// 장비 아이템의 정보를 불러옵니다.(이름, 이미지, 스테이터스 등)
         /// </summary>
@@ -90,51 +96,51 @@ namespace MapleStoryHelper.Standard.Resources
 
         private static void AddInfoToList(ref List<EquipmentItem> retval, EEquipmentCategory category)
         {
-            var imgList = GetEquipmentImageList(category);
+            //var imgList = GetEquipmentImageList(category);
 
-            var resType = typeof(Properties.MapleStoryHelperResource);
-            var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
-            var attributes = GetResourceInfoAttributes(properties);
+            //var resType = typeof(Properties.MapleStoryHelperResource);
+            //var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+            //var attributes = GetResourceInfoAttributes(properties);
 
-            int idx = 0;
+            //int idx = 0;
 
-            for (int i = 0; i < properties.Length; i++)
-            {
-                if (properties[i].Name.Contains("Item_") == true &&
-                    attributes?[i]?.Category == category)
-                {
-                    EquipmentItem newItem = new EquipmentItem();
+            //for (int i = 0; i < properties.Length; i++)
+            //{
+            //    if (properties[i].Name.Contains("Item_") == true &&
+            //        attributes?[i]?.Category == category)
+            //    {
+            //        EquipmentItem newItem = new EquipmentItem();
 
-                    newItem = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
+            //        newItem = MHXmlReader.GetEquipmentInfo(attributes[i].ItemCode, category);
 
-                    newItem.ImgByte = imgList[idx];
-                    newItem.EquipmentCategory = category;
-                    newItem.Name = attributes[i].ResourceName;
-                    newItem.ItemCode = attributes[i].ItemCode;
+            //        newItem.ImgByte = imgList[idx];
+            //        newItem.EquipmentCategory = category;
+            //        newItem.Name = attributes[i].ResourceName;
+            //        newItem.ItemCode = attributes[i].ItemCode;
 
-                    retval.Add(newItem);
-                    idx++;
-                }
-            }
+            //        retval.Add(newItem);
+            //        idx++;
+            //    }
+            //}
         }
 
         private static List<byte[]> GetEquipmentImageList(EEquipmentCategory category)
         {
             List<byte[]> retval = new List<byte[]>();
 
-            var resType = typeof(Properties.MapleStoryHelperResource);
-            var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
+            //var resType = typeof(Properties.MapleStoryHelperResource);
+            //var properties = resType.GetProperties(BindingFlags.Public | BindingFlags.Static);
 
-            for (int i = 0; i < properties.Length; i++)
-            {
-                var attribute = GetResourceNameAttribute(properties[i]);
+            //for (int i = 0; i < properties.Length; i++)
+            //{
+            //    var attribute = GetResourceNameAttribute(properties[i]);
 
-                if (properties[i].Name.Contains("Item_") == true &&
-                    attribute?.Category == category)
-                {
-                    retval.Add(properties[i].GetValue(null) as byte[]);
-                }
-            }
+            //    if (properties[i].Name.Contains("Item_") == true &&
+            //        attribute?.Category == category)
+            //    {
+            //        retval.Add(properties[i].GetValue(null) as byte[]);
+            //    }
+            //}
 
             return retval;
         }
@@ -168,6 +174,8 @@ namespace MapleStoryHelper.Standard.Resources
 
             return null;
         }
+
+        #endregion
 
         #endregion
     }
