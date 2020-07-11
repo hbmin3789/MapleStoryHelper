@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj" />
+    <ProjectReference Include="..\WzComparerR2.Common\WzComparerR2.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

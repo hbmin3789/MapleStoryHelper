@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MapleStoryHelper.Standard.Boss.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MapleStoryHelper.Standard.Boss.ChaosRootAbyss
 {
-    public class ChaosBloodQueen : StatusBase
+    public class ChaosBloodQueen : BossBase
     {
         private int _tolerance;
         public int Tolerance
@@ -27,7 +28,7 @@ namespace MapleStoryHelper.Standard.Boss.ChaosRootAbyss
 
         private void InitChaosBloodQueen()
         {
-            HP = 140000000000;
+            FinalMaxHP = "140000000000";
             Tolerance = 50;
             Defense = 120;
         }

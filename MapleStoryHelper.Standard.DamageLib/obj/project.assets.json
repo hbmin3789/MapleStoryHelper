@@ -75,6 +75,51 @@
           "bin/placeholder/MapleStoryHelper.Standard.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.Boss/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Boss.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Boss.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.WzLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Resources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Resources.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -452,6 +497,21 @@
       "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
       "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
     },
+    "MapleStoryHelper.Standard.Boss/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Boss/MapleStoryHelper.Standard.Boss.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Boss/MapleStoryHelper.Standard.Boss.csproj"
+    },
+    "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj"
+    },
+    "MapleStoryHelper.Standard.Resources/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Resources/MapleStoryHelper.Standard.Resources.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Resources/MapleStoryHelper.Standard.Resources.csproj"
+    },
     "MapleStoryHelper.Standard.SkillLib/1.0.0": {
       "type": "project",
       "path": "../MapleStoryHelper.Standard.SkillLib/MapleStoryHelper.Standard.SkillLib.csproj",
@@ -476,6 +536,8 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "MapleStoryHelper.Standard >= 1.0.0",
+      "MapleStoryHelper.Standard.Boss >= 1.0.0",
+      "MapleStoryHelper.Standard.Resources >= 1.0.0",
       "MapleStoryHelper.Standard.SkillLib >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -510,6 +572,12 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj"
+            },
+            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
+              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
+            },
             "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj": {
               "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj"
             },
