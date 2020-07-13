@@ -6,13 +6,11 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 {
     public class MapleDpm
     {
-        protected StatusBase Status;
-        protected int StatusAttackAvg;
+        protected Character.Model.Character character;
 
-        public MapleDpm(StatusBase characterStatus, int MaxStatusAttack,int MinStatusAttack)
+        public MapleDpm(Character.Model.Character ch)
         {
-            Status = characterStatus;
-            StatusAttackAvg = (MaxStatusAttack + MinStatusAttack) / 2;
+            this.character = ch;
         }
 
 

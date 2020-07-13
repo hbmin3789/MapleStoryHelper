@@ -372,14 +372,19 @@ namespace MapleStoryHelper.Standard.Character.Model
         데벤져                HP(AP투자) 14당 주스탯 환산값 1, 아이템HP 17.5당 주스탯 환산값 1, 힘이 부스탯
         */
 
-        protected virtual int GetMinStatusAttack()
+        public virtual int GetMinStatusAttack()
         {
             return GetMinStatusAttack(MainStatus, SubStatus);
         }
 
-        protected virtual int GetMaxStatusAttack()
+        public virtual int GetMaxStatusAttack()
         {
             return GetMaxStatusAttack(MainStatus, SubStatus);
+        }
+
+        public virtual int GetMaxStatusAttackBoss()
+        {
+            return GetMaxStatusAttackBoss(MainStatus, SubStatus);
         }
 
         public int GetMaxStatusAttack(EStatus main, EStatus sub)
@@ -388,7 +393,23 @@ namespace MapleStoryHelper.Standard.Character.Model
             int MainStatus = 0;
             int SubStatus = 0;
             double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(CharacterStatus);
+            double Percent = GetCharacterPercent(CharacterStatus, true);
+
+            GetCharacterMainStatus(ref MainStatus, main);
+            GetCharacterMainStatus(ref SubStatus, sub);
+
+            retval = (int)(((MainStatus * 4) + SubStatus) * Constant * Percent);
+
+            return retval;
+        }
+
+        public int GetMaxStatusAttackBoss(EStatus main, EStatus sub)
+        {
+            int retval = 0;
+            int MainStatus = 0;
+            int SubStatus = 0;
+            double Constant = GetCharacterConstant();
+            double Percent = GetCharacterPercent(CharacterStatus, false);
 
             GetCharacterMainStatus(ref MainStatus, main);
             GetCharacterMainStatus(ref SubStatus, sub);
@@ -434,7 +455,7 @@ namespace MapleStoryHelper.Standard.Character.Model
         }
 
 
-        protected double GetCharacterPercent(StatusBase status)
+        protected double GetCharacterPercent(StatusBase status, bool boss)
         {
             double retval = 0;
 
@@ -451,6 +472,10 @@ namespace MapleStoryHelper.Standard.Character.Model
 
             retval *= (1 + (status.Damage / 100));
             retval *= (1 + (status.LastDamage / 100));
+            if(boss == true)
+            {
+                retval *= (1 + (status.BossDamage / 100));
+            }
 
             return retval;
         }

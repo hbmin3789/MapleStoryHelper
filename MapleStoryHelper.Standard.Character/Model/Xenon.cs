@@ -15,11 +15,11 @@ namespace MapleStoryHelper.Standard.Character.Model
             
         }
         //뒷스공(제논) (STR + DEX + LUK) × 4 × 0.01 × 총 공격력 × 무기상수(1.5) × 직업상수(0.875) × (1 + 공격력%) × 1 + 데미지%) × (1 + 최종데미지%)
-        protected override int GetMaxStatusAttack()
+        public override int GetMaxStatusAttack()
         {
             int retval = 0;
             double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(CharacterStatus);
+            double Percent = GetCharacterPercent(CharacterStatus, false);
 
             var temp = ((_characterStatus.GetSTR() + _characterStatus.GetDEX() + _characterStatus.GetLUK()) * 4) * Constant * Percent;
             retval = (int)temp;
@@ -27,7 +27,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             return retval;
         }
 
-        protected override int GetMinStatusAttack()
+        public override int GetMinStatusAttack()
         {
             int retval = 0;
             //숙련도

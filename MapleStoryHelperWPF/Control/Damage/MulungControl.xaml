@@ -36,7 +36,7 @@
         <Grid x:Name="gdSkillInfo" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
@@ -70,6 +70,13 @@
                         <TextBox x:Name="tbMainSkill" 
                                  Text="40"
                                  TextChanged="tbSkill_TextChanged"/>
+                        <TextBlock Text="%"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="코어 강화 : "/>
+                        <TextBox x:Name="tbCoreReinforce" 
+                                 Text="120"
+                                 TextChanged="tbCoreReinforce_TextChanged"/>
                         <TextBlock Text="%"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">

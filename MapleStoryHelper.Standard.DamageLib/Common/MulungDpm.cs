@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using WzComparerR2.WzLib;
 using System.Text;
 using MapleStoryHelper.Standard.Boss.Mulung;
+using MapleStoryHelper.Standard.DamageLib.ExMethods;
 
 namespace MapleStoryHelper.Standard.DamageLib.Common
 {
@@ -16,10 +17,12 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
         private SkillBase skill = new SkillBase();
         private TimeSpan UltCoolTime;
         private TimeSpan UltCoolTimeBackUp;
+        private int CoreReinforce = 0;
+
 
         private List<int> MagnificationList;
 
-        public MulungDpm(StatusBase characterStatus, int MaxStatusAttack, int MinStatusAttack) : base(characterStatus, MaxStatusAttack, MinStatusAttack)
+        public MulungDpm(Character.Model.Character character) : base(character)
         {
             InitMagnificationList();
         }
@@ -62,7 +65,7 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             }
         }
 
-        public int GetMulungFloor(SkillBase mainSkill, Wz_Node StringWzNode, int ultSkillDelay, int MainPercent)
+        public int GetMulungFloor(SkillBase mainSkill, Wz_Node StringWzNode, int ultSkillDelay, int MainPercent, int coreReinforce)
         {
             int retval = 0;
 
@@ -72,8 +75,9 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             UltCoolTime = TimeSpan.FromSeconds(-1);
             UltCoolTimeBackUp = TimeSpan.FromSeconds(ultSkillDelay);
             skill = mainSkill;
+            CoreReinforce = coreReinforce;
 
-            for(int i = 0; i < MulungBossList.Count; i++)
+            for (int i = 0; i < MulungBossList.Count; i++)
             {
                 if (IsClearBoss(MulungBossList[i], mainSkill, MainPercent, i) == true)
                 {
@@ -94,6 +98,11 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             GetBossHP(ref boss);
 
             long Damage = GetOnceDamage(boss);
+
+            if(Damage == 0)
+            {
+                return false;
+            }
 
             if (floor > 40)
             {
@@ -132,8 +141,6 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
                     }
                     continue;
                 }
-
-                
 
                 //MilliSeconds
                 int DealTime = (AttackCount * skill.SkillDelay);
@@ -188,33 +195,14 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
         private long GetOnceDamage(MulungBoss boss)
         {
-            long retval = (long)(((double)skill.PercentOnceDamage / 100) * StatusAttackAvg);
-
-            retval /= (long)((1 + (Status.Damage / 100)) * 2);
-
-            //스킬
-            retval *= skill.HitCount;
+            long retval = character.GetDamage(skill, CoreReinforce, true, true);
 
             //무릉 데미지 감소
             retval /= 10;
 
             //몬스터 방어율
-            var bossArmor = (1 - ((boss.Armor / 100) * (1 - ((100.0 - Status.IgnoreDef) / 100.0))));
+            var bossArmor = (1 - ((boss.Armor / 100) * (1 - ((100.0 - character.CharacterStatus.IgnoreDef) / 100.0))));
             retval = (long)(retval * bossArmor);
-
-            //속성내성
-            if (boss.IsElementResistance == true)
-            {
-                retval /= 2;
-            }
-
-            //보공
-            retval = (long)(retval * (double)Status.BossDamage / 100);
-
-            if (retval >= 10000000000)
-            {
-                retval = 10000000000;
-            }           
 
             return (long)retval;
         }

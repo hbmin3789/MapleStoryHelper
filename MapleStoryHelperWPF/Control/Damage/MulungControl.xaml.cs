@@ -29,6 +29,7 @@ namespace MapleStoryHelperWPF.Control.Damage
 
         private int MainPercent = 40;
         private int UltSkillDelay = 180;
+        private int CoreReinforce = 120;
 
         public MulungControl()
         {
@@ -75,7 +76,7 @@ namespace MapleStoryHelperWPF.Control.Damage
             this.DataContext = null;
             this.DataContext = character;
             ctrlStatus.SetCharacterStatusDataContext(character);
-            dpm = new MulungDpm(ch.CharacterStatus, ch.MaxStatusAttack, ch.MinStatusAttack);
+            dpm = new MulungDpm(ch);
         }
 
         private void tbSkill_TextChanged(object sender, TextChangedEventArgs e)
@@ -94,6 +95,25 @@ namespace MapleStoryHelperWPF.Control.Damage
             {
                 MessageBox.Show("숫자만 입력해주세요.");
                 tb.Text = "40";
+            }
+        }
+
+        private void tbCoreReinforce_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            if (tb == null)
+            {
+                return;
+            }
+
+            try
+            {
+                CoreReinforce = Convert.ToInt32(tb.Text);
+            }
+            catch
+            {
+                MessageBox.Show("숫자만 입력해주세요.");
+                tb.Text = "120";
             }
         }
 
@@ -123,7 +143,7 @@ namespace MapleStoryHelperWPF.Control.Damage
 
         private void btnCalcMulung_Click(object sender, RoutedEventArgs e)
         {
-            int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay, MainPercent);
+            int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay, MainPercent, CoreReinforce);
             MessageBox.Show(floor.ToString());
         }
     }

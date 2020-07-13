@@ -1,4 +1,6 @@
-﻿namespace MapleStoryHelper.Standard.Character.Model
+﻿using System;
+
+namespace MapleStoryHelper.Standard.Character.Model
 {
     public class Character : CharacterBase
     {
