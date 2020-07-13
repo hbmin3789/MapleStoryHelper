@@ -15,6 +15,7 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
         private TimeSpan remaining = TimeSpan.FromMinutes(15);
         private SkillBase skill = new SkillBase();
         private TimeSpan UltCoolTime;
+        private TimeSpan UltCoolTimeBackUp;
 
         private List<int> MagnificationList;
 
@@ -61,19 +62,20 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             }
         }
 
-        public int GetMulungFloor(SkillBase mainSkill, Wz_Node StringWzNode, int ultSkillDelay)
+        public int GetMulungFloor(SkillBase mainSkill, Wz_Node StringWzNode, int ultSkillDelay, int MainPercent)
         {
             int retval = 0;
 
             List<MulungBoss> MulungBossList = GetMulungBossList(StringWzNode);
 
             remaining = TimeSpan.FromMinutes(15);
-            UltCoolTime = TimeSpan.FromSeconds(ultSkillDelay);
+            UltCoolTime = TimeSpan.FromSeconds(-1);
+            UltCoolTimeBackUp = TimeSpan.FromSeconds(ultSkillDelay);
             skill = mainSkill;
 
             for(int i = 0; i < MulungBossList.Count; i++)
             {
-                if (IsClearBoss(MulungBossList[i], mainSkill, i) == true)
+                if (IsClearBoss(MulungBossList[i], mainSkill, MainPercent, i) == true)
                 {
                     retval++;
                 }
@@ -86,18 +88,12 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             return retval;
         }
 
-        private bool IsClearBoss(MulungBoss boss, SkillBase mainSkill, int floor)
+        private bool IsClearBoss(MulungBoss boss, SkillBase mainSkill, int MainPercent, int floor)
         {
             SubRemaining(4000);
             GetBossHP(ref boss);
 
-            long Damage = GetOnceDamage();
-            //무릉 데미지 감소
-            Damage /= 10;
-            //몬스터 방어율
-            var bossArmor = ((boss.Armor / 100) * (1 - ((100.0 - Status.IgnoreDef) / 100.0)));
-            bossArmor = 1 - bossArmor;
-            Damage = (long)(Damage * bossArmor);
+            long Damage = GetOnceDamage(boss);
 
             if (floor > 40)
             {
@@ -111,6 +107,20 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             for(int i = -1; i < boss.Revive; i++)
             {
                 int AttackCount = (int)(boss.HP / Damage);
+
+                if (AttackCount > 10 && UltCoolTime.TotalMilliseconds < 0)
+                {
+                    UltCoolTime = TimeSpan.FromMilliseconds(UltCoolTimeBackUp.TotalMilliseconds);
+
+                    int SubPercent = 100 - MainPercent;
+                    long SubDamage = (long)(((double)SubPercent / 100) * (double)Damage) + Damage;
+                    SubDamage = (long)(10000 / skill.SkillDelay) * SubDamage;
+                    boss.HP -= SubDamage;
+                    SubRemaining(10000);
+                }
+
+                AttackCount = (int)(boss.HP / Damage);
+
                 if (AttackCount == 0)
                 {
                     if(boss.Revive != 0)
@@ -122,6 +132,8 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
                     }
                     continue;
                 }
+
+                
 
                 //MilliSeconds
                 int DealTime = (AttackCount * skill.SkillDelay);
@@ -136,8 +148,12 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
         private bool SubRemaining(int milliSec)
         {
-            remaining = remaining.Subtract(TimeSpan.FromMilliseconds(milliSec));
-            if(remaining.TotalMilliseconds <= 0)
+            var subTime = TimeSpan.FromMilliseconds(milliSec);
+
+            remaining = remaining.Subtract(subTime);
+            UltCoolTime = UltCoolTime.Subtract(subTime);
+
+            if (remaining.TotalMilliseconds <= 0)
             {
                 return false;
             }
@@ -147,8 +163,6 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
         private void GetBossHP(ref MulungBoss boss)
         {
-            long retval = 0;
-
             if (boss.FinalMaxHP.Contains("x"))
             {
                 string[] temp = boss.FinalMaxHP.Split(new char[] { 'x' });
@@ -172,19 +186,37 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             }
         }
 
-        private long GetOnceDamage()
+        private long GetOnceDamage(MulungBoss boss)
         {
-            long retval = skill.PercentOnceDamage * StatusAttackAvg;
+            long retval = (long)(((double)skill.PercentOnceDamage / 100) * StatusAttackAvg);
+
             retval /= (long)((1 + (Status.Damage / 100)) * 2);
 
-            if(retval >= 10000000000)
-            {
-                retval = 10000000000;
-            }
-
+            //스킬
             retval *= skill.HitCount;
 
-            return retval;
+            //무릉 데미지 감소
+            retval /= 10;
+
+            //몬스터 방어율
+            var bossArmor = (1 - ((boss.Armor / 100) * (1 - ((100.0 - Status.IgnoreDef) / 100.0))));
+            retval = (long)(retval * bossArmor);
+
+            //속성내성
+            if (boss.IsElementResistance == true)
+            {
+                retval /= 2;
+            }
+
+            //보공
+            retval = (long)(retval * (double)Status.BossDamage / 100);
+
+            if (retval >= 10000000000)
+            {
+                retval = 10000000000;
+            }           
+
+            return (long)retval;
         }
 
         private List<MulungBoss> GetMulungBossList(Wz_Node StringWzNode)

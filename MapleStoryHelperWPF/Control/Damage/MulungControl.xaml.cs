@@ -123,7 +123,7 @@ namespace MapleStoryHelperWPF.Control.Damage
 
         private void btnCalcMulung_Click(object sender, RoutedEventArgs e)
         {
-            int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay);
+            int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay, MainPercent);
             MessageBox.Show(floor.ToString());
         }
     }
