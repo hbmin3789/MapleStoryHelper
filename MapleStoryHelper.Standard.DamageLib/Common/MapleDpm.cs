@@ -6,8 +6,8 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 {
     public class MapleDpm
     {
-        private StatusBase Status;
-        private int StatusAttackAvg;
+        protected StatusBase Status;
+        protected int StatusAttackAvg;
 
         public MapleDpm(StatusBase characterStatus, int MaxStatusAttack,int MinStatusAttack)
         {

@@ -42,6 +42,45 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
             }
         }
 
+        public int PercentOnceDamage
+        {
+            get
+            {
+                try
+                {
+                    DataTable dt = new DataTable();
+                    string expression = common["damage"];
+                    expression = expression.Replace("x", "30");
+
+                    return (int)dt.Compute(expression, null);
+                }
+                catch
+                {
+
+                }
+
+                return 0;
+            }
+        }
+
+        public int HitCount
+        {
+            get
+            {
+                int retval = 0;
+                try
+                {
+                    retval = Convert.ToInt32(common["attackCount"]);
+                }
+                catch
+                {
+
+                }
+
+                return retval;
+            }
+        }
+
         public int SkillDelay
         {
             get 

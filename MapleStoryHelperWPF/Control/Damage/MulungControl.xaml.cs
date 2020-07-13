@@ -25,6 +25,11 @@ namespace MapleStoryHelperWPF.Control.Damage
         private Window window = new Window();
         private MulungDpm dpm { get; set; }
 
+        private SkillBase MainSkill;
+
+        private int MainPercent = 40;
+        private int UltSkillDelay = 180;
+
         public MulungControl()
         {
             InitializeComponent();
@@ -57,10 +62,11 @@ namespace MapleStoryHelperWPF.Control.Damage
             if(MessageBox.Show("\"" + skill.SkillName + "\"선택됨", "", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
                 window.Close();
-                gdSkillInfo.DataContext = skill;
             }
             listview.SelectedIndex = -1;
-            dpm.GetMulungFloor(skill, App.mapleWz.StringWzStruct.WzNode);
+
+            MainSkill = skill;
+            gdSkillInfo.DataContext = MainSkill;
         }
 
         public void SetCharacter(object character)
@@ -80,32 +86,45 @@ namespace MapleStoryHelperWPF.Control.Damage
                 return;
             }
 
-            int percent = 0;
-
             try
             {
-                percent = Convert.ToInt32(tb.Text);
+                MainPercent = Convert.ToInt32(tb.Text);
             }
             catch
             {
                 MessageBox.Show("숫자만 입력해주세요.");
-                tb.Text = "0";
+                tb.Text = "40";
             }
-            if (tb.Name.Contains("Main"))
+        }
+
+        private void tbDelay_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            if (tb == null)
             {
-
+                return;
             }
-            else
+
+            try
             {
-
+                UltSkillDelay = Convert.ToInt32(tb.Text);
             }
-
-
+            catch
+            {
+                MessageBox.Show("숫자만 입력해주세요.");
+                tb.Text = "180";
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnCalcMulung_Click(object sender, RoutedEventArgs e)
+        {
+            int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay);
+            MessageBox.Show(floor.ToString());
         }
     }
 }

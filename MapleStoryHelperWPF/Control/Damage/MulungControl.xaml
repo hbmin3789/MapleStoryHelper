@@ -55,24 +55,29 @@
 
             <Grid Grid.Row="1" VerticalAlignment="Top">
                 <StackPanel>
-                    <TextBlock FontSize="12"
+                    <TextBlock FontSize="12" Margin="0,0,0,5"
                                Text="각 점유율은 한 사이클 기준으로 입력해주세요."/>
-                    <TextBlock Margin="0,0,0,10"
-                               FontSize="11"
+                    <TextBlock FontSize="11" Margin="0,0,0,5"
                                Text="(극딜을 쓰고난 후 다시 사용하기 직전까지를 기준)"/>
+                    <TextBlock Margin="0,0,0,5"
+                               FontSize="11"
+                               Text="주력기는 사출기와 설치기까지 포함시켜주세요."/>
+                    <TextBlock Margin="0,0,0,5"
+                               FontSize="11"
+                               Text="허수아비를 기준으로 해주세요."/>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="주력기 점유율 : "/>
                         <TextBox x:Name="tbMainSkill" 
-                                 Text="0"
+                                 Text="40"
                                  TextChanged="tbSkill_TextChanged"/>
                         <TextBlock Text="%"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="극딜기 점유율 : "/>
-                        <TextBox x:Name="tbSubSkill"
-                                 Text="0"
-                                 TextChanged="tbSkill_TextChanged"/>
-                        <TextBlock Text="%"/>
+                        <TextBlock Text="극딜 사이클 : "/>
+                        <TextBox x:Name="tbDelay"
+                                 Text="180"
+                                 TextChanged="tbDelay_TextChanged"/>
+                        <TextBlock Text="초마다"/>
                     </StackPanel>
                 </StackPanel>
                 <!--<StackPanel>
@@ -96,7 +101,12 @@
                     </StackPanel>
                 </StackPanel>-->
             </Grid>
-            
+
+            <Grid Grid.Row="2">
+                <Button x:Name="btnCalcMulung" Style="{StaticResource btnCloseStyle}"
+                        Content="확인"
+                        Click="btnCalcMulung_Click"/>
+            </Grid>
         </Grid>
         <Button x:Name="btnClose" Grid.Column="3"
                 Style="{StaticResource btnCloseStyle}"
