@@ -10,6 +10,8 @@ namespace MapleStoryHelper.Converter
     {
         public static StatusBase Convert(List<Potential> value)
         {
+            bool first = true;
+
             StatusBase retval = new StatusBase();
             
             for (int i = 0; i < value.Count; i++)
@@ -78,7 +80,15 @@ namespace MapleStoryHelper.Converter
                         retval.BossDamage += PoValue;
                         break;
                     case 20:
-                        retval.IgnoreDef *= (1 - PoValue / 100);
+                        if (first == true)
+                        {
+                            retval.IgnoreDef = ((1 - (1 - (double)PoValue / 100)) * 100);
+                            first = false;
+                        }
+                        else
+                        {
+                            retval.IgnoreDef = (1 - ((1 - retval.IgnoreDef / 100) * (1 - (double)PoValue / 100))) * 100;
+                        }
                         break;
                     case 21:
                         retval.CriticalDamage += PoValue;

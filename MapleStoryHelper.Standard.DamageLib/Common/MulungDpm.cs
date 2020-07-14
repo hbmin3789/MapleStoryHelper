@@ -79,11 +79,9 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
             for (int i = 0; i < MulungBossList.Count; i++)
             {
-                long Damage = character.GetDamage(mainSkill, CoreReinforce, true, MulungBossList[i].IsElementResistance);
+                long Damage = character.GetMulungDamage(mainSkill, CoreReinforce, (int)MulungBossList[i].Armor, true, MulungBossList[i].IsElementResistance, character.CharacterStatus);
                 int SubPercent = 100 - MainPercent;
-                //m : n = m':n'
                 long SubDamage = (SubPercent * Damage) / MainPercent;
-
 
                 if (IsClearBoss(MulungBossList[i], SubDamage, i) == true)
                 {
@@ -181,20 +179,6 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             {
                 boss.HP = Convert.ToInt64(boss.MaxHP);
             }
-        }
-
-        private long GetOnceDamage(MulungBoss boss)
-        {
-            long retval = character.GetDamage(skill, CoreReinforce, true, true);
-
-            //무릉 데미지 감소
-            retval /= 10;
-
-            //몬스터 방어율
-            var bossArmor = (1 - ((boss.Armor / 100) * (1 - ((100.0 - character.CharacterStatus.IgnoreDef) / 100.0))));
-            retval = (long)(retval * bossArmor);
-
-            return (long)retval;
         }
 
         private List<MulungBoss> GetMulungBossList(Wz_Node StringWzNode)
