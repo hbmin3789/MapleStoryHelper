@@ -7,23 +7,15 @@
              xmlns:status="clr-namespace:MapleStoryHelperWPF.Control.Status"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Resources>
-        <Style TargetType="Button">
-            <Setter Property="MinWidth" Value="100"/>
-            <Setter Property="MinHeight" Value="50"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="10"/>
-        </Style>
-    </UserControl.Resources>
     <Grid Background="White">
         <status:StatusControl x:Name="ctrlStatus" ReadOnly="False"
                               HorizontalAlignment="Left"/>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <Button x:Name="btnSave" Content="확인"
+            <Button x:Name="btnSave" 
+                    Style="{StaticResource btnCloseStyle}"
+                    Content="닫기"
                     Click="btnSave_Click"/>
-            <Button x:Name="btnCancel" Content="취소"
-                    Click="btnCancel_Click"/>
         </StackPanel>
     </Grid>
 </UserControl>

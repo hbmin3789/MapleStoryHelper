@@ -332,12 +332,10 @@
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right">
-                    <Button x:Name="btnSave" Width="200"
-                            Content="저장"
+                    <Button x:Name="btnSave"
+                            Style="{StaticResource btnCloseStyle}"
+                            Content="닫기"
                             Click="btnSave_Click"/>
-                    <Button x:Name="btnCancel" Width="200"
-                            Content="취소"
-                            Click="btnCancel_Click"/>
                 </StackPanel>
             </Grid>
 

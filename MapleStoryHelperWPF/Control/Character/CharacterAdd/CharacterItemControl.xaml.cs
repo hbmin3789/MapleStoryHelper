@@ -139,12 +139,6 @@ namespace MapleStoryHelperWPF.Control.Character.CharacterAdd
             App.UpdateBinding();
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
-        {
-            this.Visibility = Visibility.Collapsed;
-            App.UpdateBinding();
-        }
-
         public void SetDataContext(object dataContext)
         {
             this.DataContext = dataContext;
