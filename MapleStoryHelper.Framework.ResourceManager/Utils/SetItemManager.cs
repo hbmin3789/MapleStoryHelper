@@ -26,13 +26,16 @@ namespace MapleStoryHelper.Framework.ResourceManager.Utils
             SetItemOptions = new List<SetItem>();
         }
 
-        public void SetItemList(Wz_Node EtcNode)
+        public void SetItemList(Wz_Node EtcNode, Wz_Node ItemNode)
         {
             var SetItemImage = EtcNode.GetImage(SetItemImagePath);
             var SetItemNode = SetItemImage.Node;
-            for(int i = 0; i < SetItemNode.Nodes.Count; i++)
+
+            var ItemImage = ItemNode.Nodes["ItemOption.img"].GetImage();
+
+            for (int i = 0; i < SetItemNode.Nodes.Count; i++)
             {
-                SetItem setList = SetItem.CreateFromNode(SetItemNode.Nodes[i], SetItemNode.Nodes[i].FindNodeByPath("Effect"));
+                SetItem setList = SetItem.CreateFromNode(SetItemNode.Nodes[i], ItemImage.Node);
                 SetItemOptions.Add(setList);
             }
         }

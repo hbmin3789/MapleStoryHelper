@@ -13,7 +13,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
 
         public void SetItemList()
         {
-            setItemManager.SetItemList(EtcWzStruct.WzNode);
+            setItemManager.SetItemList(EtcWzStruct.WzNode, ItemWzStruct.WzNode);
         }
 
         public List<SetItem> GetSetItemList()

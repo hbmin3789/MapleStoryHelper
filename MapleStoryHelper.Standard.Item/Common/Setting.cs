@@ -7,6 +7,6 @@ namespace MapleStoryHelper.Standard.Item.Common
 {
     public class Setting
     {
-        public static EquipmentStatus UnionStatus { get; set; }
+        public static EquipmentStatus UnionStatus { get; set; } = new EquipmentStatus();
     }
 }

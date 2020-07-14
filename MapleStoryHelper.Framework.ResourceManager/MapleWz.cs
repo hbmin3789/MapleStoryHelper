@@ -27,6 +27,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
         private Wz_File skill001Wz;
         private Wz_File skill002Wz;
         private Wz_File etcWz;
+        private Wz_File itemWz;
         private Wz_File mobWz;
 
         public Wz_Structure CharacterWzStruct
@@ -56,6 +57,11 @@ namespace MapleStoryHelper.Framework.ResourceManager
         public Wz_Structure MobWzStruct
         {
             get => mobWz.WzStructure;
+        }
+
+        public Wz_Structure ItemWzStruct
+        {
+            get => itemWz.WzStructure;
         }
 
         #endregion
@@ -113,6 +119,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
             skill002Wz = new Wz_File(FilePath + "\\Skill002.Wz", new Wz_Structure());
             etcWz = new Wz_File(FilePath + "\\Etc.wz", new Wz_Structure());
             mobWz = new Wz_File(FilePath + "\\Mob.wz", new Wz_Structure());
+            itemWz = new Wz_File(FilePath + "\\Item.wz", new Wz_Structure());
 
             CharacterWzStruct.Load(FilePath + "\\Character.wz");
             StringWzStruct.Load(FilePath + "\\String.wz");
@@ -121,6 +128,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
             Skill002WzStruct.Load(FilePath + "\\Skill002.Wz");
             EtcWzStruct.Load(FilePath + "\\Etc.wz");
             MobWzStruct.Load(FilePath + "\\Mob.wz");
+            ItemWzStruct.Load(FilePath + "\\Item.wz");
 
             if (stringWz.Loaded == true)
             {
