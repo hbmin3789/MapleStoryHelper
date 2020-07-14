@@ -79,7 +79,13 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
 
             for (int i = 0; i < MulungBossList.Count; i++)
             {
-                if (IsClearBoss(MulungBossList[i], mainSkill, MainPercent, i) == true)
+                long Damage = character.GetDamage(mainSkill, CoreReinforce, true, MulungBossList[i].IsElementResistance);
+                int SubPercent = 100 - MainPercent;
+                //m : n = m':n'
+                long SubDamage = (SubPercent * Damage) / MainPercent;
+
+
+                if (IsClearBoss(MulungBossList[i], SubDamage, i) == true)
                 {
                     retval++;
                 }
@@ -92,12 +98,10 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             return retval;
         }
 
-        private bool IsClearBoss(MulungBoss boss, SkillBase mainSkill, int MainPercent, int floor)
+        private bool IsClearBoss(MulungBoss boss, long Damage, int floor)
         {
             SubRemaining(4000);
             GetBossHP(ref boss);
-
-            long Damage = GetOnceDamage(boss);
 
             if(Damage == 0)
             {
@@ -116,20 +120,6 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             for(int i = -1; i < boss.Revive; i++)
             {
                 int AttackCount = (int)(boss.HP / Damage);
-
-                if (AttackCount > 10 && UltCoolTime.TotalMilliseconds < 0)
-                {
-                    UltCoolTime = TimeSpan.FromMilliseconds(UltCoolTimeBackUp.TotalMilliseconds);
-
-                    int SubPercent = 100 - MainPercent;
-                    long SubDamage = (long)(((double)SubPercent / 100) * (double)Damage) + Damage;
-                    SubDamage = (long)(10000 / skill.SkillDelay) * SubDamage;
-                    boss.HP -= SubDamage;
-                    SubRemaining(10000);
-                }
-
-                AttackCount = (int)(boss.HP / Damage);
-
                 if (AttackCount == 0)
                 {
                     if(boss.Revive != 0)

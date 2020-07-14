@@ -115,6 +115,9 @@
                         Click="btnCalcMulung_Click"/>
             </Grid>
         </Grid>
+        <Grid Grid.Column="2">
+            <TextBlock x:Name="tbFloor"/>
+        </Grid>
         <Button x:Name="btnClose" Grid.Column="3"
                 Style="{StaticResource btnCloseStyle}"
                 Click="btnClose_Click"/>

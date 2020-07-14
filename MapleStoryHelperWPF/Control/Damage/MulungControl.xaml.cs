@@ -144,7 +144,7 @@ namespace MapleStoryHelperWPF.Control.Damage
         private void btnCalcMulung_Click(object sender, RoutedEventArgs e)
         {
             int floor = dpm.GetMulungFloor(MainSkill, App.mapleWz.StringWzStruct.WzNode, UltSkillDelay, MainPercent, CoreReinforce);
-            MessageBox.Show(floor.ToString());
+            tbFloor.Text = floor.ToString() + "층";
         }
     }
 }
