@@ -78,10 +78,6 @@ namespace WzComparerR2.CharaSim
                         break;
                     case "setItemName":
                         setItem.SetItemName = Convert.ToString(subNode.Value);
-                        if (setItem.SetItemName.Contains("칠흑"))
-                        {
-
-                        }
                         break;
                     case "completeCount":
                         setItem.CompleteCount = Convert.ToInt32(subNode.Value);
