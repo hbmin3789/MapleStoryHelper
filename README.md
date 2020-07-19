@@ -37,3 +37,11 @@ WzComparerR2 라이브러리 사용 : https://github.com/KENNYSOFT/WzComparerR2
 * MapleStoryHelper(UWP)
 * MapleStoryHelperWPF(WPF)
 * MapleStoryCodeSearcher(WPF)
+
+### Load .Wz Files
+<pre>
+<code>
+MapleWz mapleWz = new MapleWz();
+mapleWz.LoadFile("C:\Nexon\Maple");
+</code>
+</pre>
