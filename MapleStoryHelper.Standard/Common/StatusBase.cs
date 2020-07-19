@@ -64,103 +64,91 @@ namespace MapleStoryHelper.Standard
 
         #region Binding
 
-        public int AttackBinding
+        public int FinalAttack
         {
             get => GetAttackPower();
             set { }
         }
 
-        public int PAttackBinding
-        {
-            get => GetAttackPower();
-            set { }
-        }
-
-        public int MagicBinding
+        public int FinalMagic
         {
             get => GetMagicAttack();
             set { }
         }
 
-        public int PMagicBinding
-        {
-            get => GetMagicAttack();
-            set { }
-        }
-
-        public int StrBinding
+        public int FinalStr
         {
             get => GetSTR();
             set { }
         }
 
-        public int DexBinding
+        public int FinalDex
         {
             get => GetDEX();
             set { }
         }
 
-        public int IntBinding
+        public int FinalInt
         {
             get => GetINT();
             set { }
         }
 
-        public int LukBinding
+        public int FinalLuk
         {
             get => GetLUK();
             set { }
         }
 
-        public int HPBinding
+        public int FinalHP
         {
             get => GetHP();
             set { }
         }
 
-        public int MPBinding
+        public int FinalMP
         {
             get => GetMP();
             set { }
         }
 
-        public int PStrBinding
+        public int FinalPStr
         {
             get => GetPSTR();
             set { }
         }
 
-        public int PDexBinding
+        public int FinalPDex
         {
             get => GetPDEX();
             set { }
         }
 
-        public int PIntBinding
+        public int FinalPInt
         {
             get => GetPINT();
             set { }
         }
 
-        public int PLukBinding
+        public int FinalPLuk
         {
             get => GetPLUK();
             set { }
         }
 
-        public int PHPBinding
+        public int FinalPHP
         {
             get => GetPHP();
             set { }
         }
 
-        public int PMPBinding
+        public int FinalPMP
         {
             get => GetPMP();
             set { }
         }
 
-        public int CriticalBinding
+        public int FinalCritical
         {
             get 
             { 
@@ -173,19 +161,19 @@ namespace MapleStoryHelper.Standard
             set { }
         }
 
-        public double CriticalDamageBinding
+        public double FinalCriticalDamage
         {
             get => CriticalDamage;
             set { }
         }
 
-        public double DamageBinding
+        public double FinalDamage
         {
             get => Damage;
             set { }
         }
 
-        public double BossDamageBinding
+        public double FinalBossDamage
         {
             get => BossDamage;
             set { }

@@ -75,18 +75,18 @@
 
                     </StackPanel>
                     <StackPanel x:Name="spStatus2" Grid.Column="3">
-                        <TextBox Text="{Binding CharacterStatus.StrBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.DexBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.IntBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.LukBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.HPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.MPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PStrBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PDexBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PIntBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PLukBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PHPBinding}"/>
-                        <TextBox Text="{Binding CharacterStatus.PMPBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalStr}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalDex}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalInt}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalLuk}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalHP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalMP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPStr}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPDex}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPInt}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPLuk}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPHP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPMP}"/>
 
                     </StackPanel>
 

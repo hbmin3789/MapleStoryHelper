@@ -61,10 +61,10 @@
                 </TextBlock>
                 <TextBox Canvas.Top="123"/>
                 <TextBox Canvas.Top="147"/>
-                <TextBox Canvas.Top="266" Text="{Binding CharacterStatus.StrBinding}"/>
-                <TextBox Canvas.Top="290" Text="{Binding CharacterStatus.DexBinding}"/>
-                <TextBox Canvas.Top="315" Text="{Binding CharacterStatus.IntBinding}"/>
-                <TextBox Canvas.Top="339" Text="{Binding CharacterStatus.LukBinding}"/>
+                <TextBox Canvas.Top="266" Text="{Binding CharacterStatus.FinalStr}"/>
+                <TextBox Canvas.Top="290" Text="{Binding CharacterStatus.FinalDex}"/>
+                <TextBox Canvas.Top="315" Text="{Binding CharacterStatus.FinalInt}"/>
+                <TextBox Canvas.Top="339" Text="{Binding CharacterStatus.FinalLuk}"/>
             </Canvas>
         </Grid>
 

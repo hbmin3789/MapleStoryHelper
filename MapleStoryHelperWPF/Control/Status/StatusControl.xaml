@@ -73,18 +73,18 @@
 
                     </StackPanel>
                     <StackPanel x:Name="spStatus2" Grid.Column="3">
-                        <TextBox Text="{Binding StrBinding}"/>
-                        <TextBox Text="{Binding DexBinding}"/>
-                        <TextBox Text="{Binding IntBinding}"/>
-                        <TextBox Text="{Binding LukBinding}"/>
-                        <TextBox Text="{Binding HPBinding}"/>
-                        <TextBox Text="{Binding MPBinding}"/>
-                        <TextBox Text="{Binding PStrBinding}"/>
-                        <TextBox Text="{Binding PDexBinding}"/>
-                        <TextBox Text="{Binding PIntBinding}"/>
-                        <TextBox Text="{Binding PLukBinding}"/>
-                        <TextBox Text="{Binding PHPBinding}"/>
-                        <TextBox Text="{Binding PMPBinding}"/>
+                        <TextBox Text="{Binding FinalStr}"/>
+                        <TextBox Text="{Binding FinalDex}"/>
+                        <TextBox Text="{Binding FinalInt}"/>
+                        <TextBox Text="{Binding FinalLuk}"/>
+                        <TextBox Text="{Binding FinalHP}"/>
+                        <TextBox Text="{Binding FinalMP}"/>
+                        <TextBox Text="{Binding FinalPStr}"/>
+                        <TextBox Text="{Binding FinalPDex}"/>
+                        <TextBox Text="{Binding FinalPInt}"/>
+                        <TextBox Text="{Binding FinalPLuk}"/>
+                        <TextBox Text="{Binding FinalPHP}"/>
+                        <TextBox Text="{Binding FinalPMP}"/>
 
                     </StackPanel>
 
