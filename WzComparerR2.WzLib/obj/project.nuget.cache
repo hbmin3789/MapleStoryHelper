@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0ai3x/9OuTJ5zJlA+fLPvUJId+9F3G4OT8MGl7uuPicW9Lo1+Wj6wInj1p8h+ASFfyodRd/3k7Er+N+5pto8Hw==",
+  "dgSpecHash": "XmhKYs62/67+9bvK5s03hGOVrXBmoM4FSs4vYh+3h/+0rSqWECoPu1qZxxF+Fz2jKQO3Ai49+h7x/hKuxCTC0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+  "projectFilePath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
   ],
   "logs": []
 }

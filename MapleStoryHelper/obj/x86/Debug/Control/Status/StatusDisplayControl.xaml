@@ -9,49 +9,91 @@
     d:DesignHeight="420"
     d:DesignWidth="400">
     <UserControl.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="{StaticResource TextBoxBigDescriptionFontSize}"/>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="{StaticResource TextBoxMiddleDescriptionFontSize}"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="BorderThickness" Value="1"/>
         </Style>
     </UserControl.Resources>
 
     <Grid Background="White">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+        <Viewbox>
             <StackPanel>
-                <TextBlock Text="STR"/>
-                <TextBlock Text="DEX"/>
-                <TextBlock Text="INT"/>
-                <TextBlock Text="LUK"/>
-                <TextBlock Text="HP"/>
-                <TextBlock Text="MP"/>
-                <TextBlock Text="공격력"/>
-                <TextBlock Text="마력"/>
-                <TextBlock Text="데미지"/>
-                <TextBlock Text="보스 공격력"/>
-                <TextBlock Text="방어율 무시"/>
-                <TextBlock Text="크리티컬 확률"/>
-                <TextBlock Text="크리티컬 데미지"/>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Text="{Binding MinStatusAttack}"/>
+                    <TextBlock Grid.Column="1" Text=" ~ " FontSize="40"/>
+                    <TextBox Grid.Column="2" Text="{Binding MaxStatusAttack}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBox Text="공격력"/>
+                        <TextBox Text="마력"/>
+                        <TextBox Text="공격력%"/>
+                        <TextBox Text="마력%"/>
+                        <TextBox Text="데미지"/>
+                        <TextBox Text="보스 공격력"/>
+                        <TextBox Text="방어율 무시"/>
+                        <TextBox Text="크리티컬 확률"/>
+                        <TextBox Text="크리티컬 데미지"/>
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='2' x:Name="spStatus1" Grid.Column="1">
+                        <TextBox Text="{Binding CharacterStatus.AttackPower}"/>
+                        <TextBox Text="{Binding CharacterStatus.MagicAttack}"/>
+                        <TextBox Text="{Binding CharacterStatus.PAttackPower}"/>
+                        <TextBox Text="{Binding CharacterStatus.PMagicAttack}"/>
+                        <TextBox Text="{Binding CharacterStatus.Damage}"/>
+                        <TextBox Text="{Binding CharacterStatus.BossDamage}"/>
+                        <TextBox Text="{Binding CharacterStatus.IgnoreDefBinding}"/>
+                        <TextBox Text="{Binding CharacterStatus.Critical}"/>
+                        <TextBox Text="{Binding CharacterStatus.CriticalDamage}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <TextBox Text="STR"/>
+                        <TextBox Text="DEX"/>
+                        <TextBox Text="INT"/>
+                        <TextBox Text="LUK"/>
+                        <TextBox Text="HP"/>
+                        <TextBox Text="MP"/>
+                        <TextBox Text="STR%"/>
+                        <TextBox Text="DEX%"/>
+                        <TextBox Text="INT%"/>
+                        <TextBox Text="LUK%"/>
+                        <TextBox Text="HP%"/>
+                        <TextBox Text="MP%"/>
+
+                    </StackPanel>
+                    <StackPanel x:ConnectionId='3' x:Name="spStatus2" Grid.Column="3">
+                        <TextBox Text="{Binding CharacterStatus.FinalStr}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalDex}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalInt}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalLuk}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalHP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalMP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPStr}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPDex}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPInt}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPLuk}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPHP}"/>
+                        <TextBox Text="{Binding CharacterStatus.FinalPMP}"/>
+
+                    </StackPanel>
+
+                </Grid>
             </StackPanel>
-            <StackPanel Grid.Column="1">
-                <TextBlock Text="{Binding Str}"/>
-                <TextBlock Text="{Binding Dex}"/>
-                <TextBlock Text="{Binding Int}"/>
-                <TextBlock Text="{Binding Luk}"/>
-                <TextBlock Text="{Binding HP}"/>
-                <TextBlock Text="{Binding MP}"/>
-                <TextBlock Text="{Binding AttackPower}"/>
-                <TextBlock Text="{Binding MagicAttack}"/>
-                <TextBlock Text="{Binding Damage}"/>
-                <TextBlock Text="{Binding BossDamage}"/>
-                <TextBlock Text="{Binding IgnoreDef}"/>
-                <TextBlock Text="{Binding Critical}"/>
-                <TextBlock Text="{Binding CriticalDamage}"/>
-            </StackPanel>
-        </Grid>
-        
+            
+        </Viewbox>
     </Grid>
 </UserControl>
 

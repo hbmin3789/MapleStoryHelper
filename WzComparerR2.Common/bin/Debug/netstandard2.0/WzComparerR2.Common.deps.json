@@ -82,14 +82,6 @@
           "WzComparerR2.WzLib.dll": {}
         }
       },
-      "Windows/255.255.255.255": {
-        "runtime": {
-          "Windows.winmd": {
-            "assemblyVersion": "255.255.255.255",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
       "Windows.Foundation.UniversalApiContract/8.0.0.0": {
         "runtime": {
           "Windows.Foundation.UniversalApiContract.winmd": {
@@ -160,11 +152,6 @@
     },
     "WzComparerR2.WzLib/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Windows/255.255.255.255": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

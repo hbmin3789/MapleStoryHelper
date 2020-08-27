@@ -46,14 +46,6 @@
         "runtime": {
           "WzComparerR2.WzLib.dll": {}
         }
-      },
-      "Windows/255.255.255.255": {
-        "runtime": {
-          "Windows.winmd": {
-            "assemblyVersion": "255.255.255.255",
-            "fileVersion": "0.0.0.0"
-          }
-        }
       }
     }
   },
@@ -93,11 +85,6 @@
     },
     "WzComparerR2.WzLib/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Windows/255.255.255.255": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

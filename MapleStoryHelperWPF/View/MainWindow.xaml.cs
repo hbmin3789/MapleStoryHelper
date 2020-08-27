@@ -1,6 +1,7 @@
 ﻿using MapleStoryHelper.Standard.Item.Common;
 using MapleStoryHelperWPF.Properties;
 using System;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
@@ -43,6 +44,7 @@ namespace MapleStoryHelperWPF
         {
             try
             {
+                var stream = new FileStream(Settings.Default.MapleStoryPath, FileMode.Open, FileAccess.Read, FileShare.Read);
                 App.viewModel.LoadWz(Settings.Default.MapleStoryPath);
             }
             catch (Exception e)

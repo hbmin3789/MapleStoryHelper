@@ -179,23 +179,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
+      "projectUniqueName": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
       "projectName": "MapleStoryHelper.Standard.MapLib",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\obj\\",
+      "projectPath": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
+      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -236,7 +232,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

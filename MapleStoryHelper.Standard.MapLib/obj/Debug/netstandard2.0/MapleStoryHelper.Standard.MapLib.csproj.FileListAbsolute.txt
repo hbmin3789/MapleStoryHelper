@@ -6,3 +6,11 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.deps.json
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.AssemblyInfoInputs.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.AssemblyInfo.cs
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csproj.CoreCompileInputs.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb

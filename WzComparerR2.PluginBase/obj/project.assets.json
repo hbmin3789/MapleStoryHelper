@@ -334,23 +334,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+      "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
       "projectName": "WzComparerR2.PluginBase",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
+      "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -363,8 +359,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
             }
           }
         }
@@ -395,7 +391,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

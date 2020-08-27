@@ -11,3 +11,16 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Utils\
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csproj.CopyComplete
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.deps.json
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csprojAssemblyReference.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.AssemblyInfoInputs.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.AssemblyInfo.cs
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csproj.CoreCompileInputs.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csproj.CopyComplete
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb

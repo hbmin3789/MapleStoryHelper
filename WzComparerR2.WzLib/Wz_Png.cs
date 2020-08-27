@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
 using System.Drawing.Imaging;
-using Windows.Storage.Streams;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.UI.Xaml.Media.Imaging;
 using System.Runtime.InteropServices;
 
 namespace WzComparerR2.WzLib

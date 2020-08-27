@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {}
+    "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
+    "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
         "projectName": "MapleStoryHelper.Standard.Utils",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
+        "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+        "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -66,24 +63,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+    "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
         "projectName": "MapleStoryHelper.Standard",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
+        "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,24 +122,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+    "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+        "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
         "projectName": "WzComparerR2.Common",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.Common\\obj\\",
+        "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+        "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,11 +149,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
+              "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
+                "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
               },
-              "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+              "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+                "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
               }
             }
           }
@@ -197,24 +188,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+    "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
         "projectName": "WzComparerR2.WzLib",
-        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
+        "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -263,7 +251,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,12 +11,14 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using WzComparerR2.CharaSim;
 
 namespace MapleStoryHelperWPF.ViewModel
 {
     public class MapleStoryHelperViewModel : BindableBase
     {
+        private string MaplePath = string.Empty;
         public List<SetItem> SetItemList { get; private set; }
 
         protected ObservableCollection<SkillBase> _skills;

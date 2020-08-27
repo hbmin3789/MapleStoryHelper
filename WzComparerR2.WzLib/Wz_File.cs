@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Windows.Storage;
 
 namespace WzComparerR2.WzLib
 {
@@ -88,16 +87,6 @@ namespace WzComparerR2.WzLib
                 this.bReader.Close();
             if (this.fileStream != null)
                 this.fileStream.Close();
-        }
-
-        private async Task<bool> InitLoadAsync(string fileName)
-        {
-            var temp = await StorageFile.GetFileFromPathAsync(fileName);
-            var stream = await temp.OpenStreamForReadAsync();
-            this.fileStream = stream;
-            this.bReader = new BinaryReader(this.FileStream);
-
-            return GetHeader(fileName);
         }
 
         private bool InitLoad(string fileName)

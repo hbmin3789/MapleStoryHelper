@@ -10,3 +10,14 @@ C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.Contr
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
 C:\Users\user\Documents\GitHub\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.lref
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\Xaml\ComboBox\ComboBoxStyles.baml
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.g.resources
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.Properties.Resources.resources
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.GenerateResource.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
+C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb

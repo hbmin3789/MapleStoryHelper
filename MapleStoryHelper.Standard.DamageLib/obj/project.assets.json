@@ -608,23 +608,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
+      "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
       "projectName": "MapleStoryHelper.Standard.DamageLib",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\obj\\",
+      "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
+      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -637,17 +633,17 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj"
+            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj": {
+              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj"
             },
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
+            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
+              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
             },
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj"
+            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj": {
+              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj"
             },
-            "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-              "projectPath": "C:\\Users\\user\\Documents\\GitHub\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
             }
           }
         }
@@ -678,7 +674,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
