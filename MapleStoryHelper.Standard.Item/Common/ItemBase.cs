@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
 using System;
+using System.IO;
 
 namespace MapleStoryHelper.Standard.Item
 {
-    public class ItemBase : BindableBase , ICloneable
+    public class ItemBase : BindableBase
     {
         #region Property
 
@@ -22,11 +23,11 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _name, value);
         }
 
-        private string _imgSrc = "";
-        public string ImgSrc
+        private Stream _image;
+        public Stream Image
         {
-            get => _imgSrc;
-            set => SetProperty(ref _imgSrc, value);
+            get => _image;
+            set => SetProperty(ref _image, value);
         }
 
         private string _itemCode = "";
@@ -34,22 +35,6 @@ namespace MapleStoryHelper.Standard.Item
         {
             get => _itemCode;
             set => SetProperty(ref _itemCode, value);
-        }
-
-        
-        private object _imgBitmapSource;
-        [JsonIgnore]
-        public object ImgBitmapSource
-        {
-            get => _imgBitmapSource;
-            set => SetProperty(ref _imgBitmapSource, value);
-        }
-
-        private byte[] _imgByte;
-        public byte[] ImgByte
-        {
-            get => _imgByte;
-            set => SetProperty(ref _imgByte, value);
         }
 
         private bool _isCash = false;
@@ -68,56 +53,6 @@ namespace MapleStoryHelper.Standard.Item
                         
         }
 
-        public ItemBase(string itemname)
-        {
-            Name = itemname;
-        }
-
-        public ItemBase(EItemCategory category)
-        {
-            ItemCategory = category;
-        }
-
-        public ItemBase(string itemname, EItemCategory category)
-        {
-            Name = itemname;
-            ItemCategory = category;
-        }
-
-        public ItemBase(string itemname, EItemCategory category, string imgSrc)
-        {
-            Name = itemname;
-            ItemCategory = category;
-            ImgSrc = imgSrc;
-        }
-
-        public ItemBase(ItemBase item)
-        {
-            ItemCategory = item.ItemCategory;
-            Name = item.Name;
-            ImgSrc = item.ImgSrc;
-            ItemCode = item.ItemCode;
-            IsCash = item.IsCash;
-            ImgBitmapSource = item.ImgBitmapSource;
-            ImgByte = item.ImgByte;
-        }
-
         #endregion
-        
-
-        public virtual object Clone()
-        {
-            ItemBase retval = new ItemBase();
-
-            retval.ImgBitmapSource = this.ImgBitmapSource;
-            retval.ImgSrc = this.ImgSrc;
-            retval.IsCash = this.IsCash;
-            retval.ItemCategory = this.ItemCategory;
-            retval.ItemCode = this.ItemCode;
-            retval.Name = this.Name;
-            retval.ImgByte = this.ImgByte;
-
-            return retval;
-        }
     }
 }

@@ -268,19 +268,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
+    "C:\\Users\\황보민\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+      "projectUniqueName": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
       "projectName": "MapleStoryHelper.Standard.Utils",
-      "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
-      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
+      "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+      "packagesPath": "C:\\Users\\황보민\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\황보민\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -293,8 +293,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+            "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
             }
           }
         }
@@ -329,7 +329,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
 {
-    public enum EJobCategory
+    public enum ECharacterClass
     {
         All = 0,
         Worrior,

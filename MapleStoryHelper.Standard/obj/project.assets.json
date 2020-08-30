@@ -209,19 +209,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
+    "C:\\Users\\황보민\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+      "projectUniqueName": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
       "projectName": "MapleStoryHelper.Standard",
-      "projectPath": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
-      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SUNTECH\\Source\\Repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
+      "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+      "packagesPath": "C:\\Users\\황보민\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\황보민\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -266,7 +266,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

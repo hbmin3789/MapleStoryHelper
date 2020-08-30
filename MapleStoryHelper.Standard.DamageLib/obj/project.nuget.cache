@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "EnoIyBHTVRD7wIdloAvfY8Uq7g88kCkbCV4nP9Zz16BPbuuVp8ajI7muz5zgUoA99L/fB7CT1SHtguuloa629w==",
+  "dgSpecHash": "45HLkAL97u/TO5XV7HEqhKJKr+PNnBp/ouyFtcBD0LVTZOrjtqF2dsX7PvM/BRimTJXtrXqK64WWWDyuBkd8rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
+  "projectFilePath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\황보민\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
   ],
   "logs": []
 }

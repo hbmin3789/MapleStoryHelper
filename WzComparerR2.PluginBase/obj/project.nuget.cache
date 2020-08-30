@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DLwy8CJ+Qv6nwlGDpqeheBZJAOeR4dc9EmSppG11ruU5JKBTtN7Aypiz1+LdQbDaWkohlVg1qz+1qLH0aK6Wbw==",
+  "dgSpecHash": "NTqTHcgdvK0medNWxNsr9jU5BcwPtvD6mxNWNOmvKxDUkkzg0tQfKT4LurtgsqCEuDbS/oT/Jv3d5kpzpruGUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+  "projectFilePath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\황보민\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
   ],
   "logs": []
 }

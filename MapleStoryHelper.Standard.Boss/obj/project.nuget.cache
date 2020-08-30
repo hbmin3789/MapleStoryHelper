@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "G7blmC5O42mWXvsX597nP71PcqlQjr/Qa+WudYs5N6SXq5mmtdDE+159+jdr0JLiifLkBpbnh0dgayvKvqc1vQ==",
+  "dgSpecHash": "ywbjyMwqDjbkxzmFkVWz/5VMwP2ETsBj/4l3dhm2cWtTfs8lP1GDXEouADhsW/8U9NFvTPNPO+3nEq3qJb+ynw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
+  "projectFilePath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\황보민\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\황보민\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -32,3 +32,14 @@ C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Deb
 C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CopyComplete
 C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
 C:\Users\SUNTECH\source\repos\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.deps.json
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csprojAssemblyReference.cache
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.AssemblyInfoInputs.cache
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.AssemblyInfo.cs
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CoreCompileInputs.cache
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CopyComplete
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb

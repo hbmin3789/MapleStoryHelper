@@ -587,19 +587,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SUNTECH\\.nuget\\packages\\": {}
+    "C:\\Users\\황보민\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
+      "projectUniqueName": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
       "projectName": "MapleStoryHelper.Standard.Boss",
-      "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
-      "packagesPath": "C:\\Users\\SUNTECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\obj\\",
+      "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj",
+      "packagesPath": "C:\\Users\\황보민\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SUNTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\황보민\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -612,14 +612,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Framework.ResourceManager\\MapleStoryHelper.Framework.ResourceManager.csproj": {
-              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Framework.ResourceManager\\MapleStoryHelper.Framework.ResourceManager.csproj"
+            "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Framework.ResourceManager\\MapleStoryHelper.Framework.ResourceManager.csproj": {
+              "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Framework.ResourceManager\\MapleStoryHelper.Framework.ResourceManager.csproj"
             },
-            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+            "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
             },
-            "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
-              "projectPath": "C:\\Users\\SUNTECH\\source\\repos\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
+            "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+              "projectPath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
             }
           }
         }
@@ -650,7 +650,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

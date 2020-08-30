@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MapleStoryHelper.Standard.Character
 {
-    public enum ECharacterJob
+    public enum EAdvancement
     {
         Hero = 0,
         Paladin,

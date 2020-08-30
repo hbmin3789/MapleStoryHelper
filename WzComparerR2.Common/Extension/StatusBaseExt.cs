@@ -19,7 +19,7 @@ namespace WzComparerR2.Common.Extension
                 if(propType == GearPropType.Option)
                 {
                     var potens = Props[propType] as List<Potential>;
-                    for (int j = 0; j < potens.Count; j++)
+                    for (int j = 0; j < potens?.Count; j++)
                     {
                         var props = potens[j].props;
                         for (int k = 0; k < props.Count; k++)
