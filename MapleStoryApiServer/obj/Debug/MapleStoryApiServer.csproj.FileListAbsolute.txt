@@ -9,7 +9,6 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Deb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\System.ValueTuple.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\WzComparerR2.WzLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\WzComparerR2.Common.dll
-C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.Character.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.MobLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.SkillLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\Newtonsoft.Json.dll
@@ -23,7 +22,6 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Deb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\System.ValueTuple.xml
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\WzComparerR2.WzLib.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\WzComparerR2.Common.pdb
-C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.Character.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.MobLib.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.SkillLib.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\Newtonsoft.Json.xml
@@ -40,3 +38,5 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\obj\Deb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\obj\Debug\MapleStoryApiServer.csproj.CopyComplete
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\obj\Debug\MapleStoryApiServer.exe
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\obj\Debug\MapleStoryApiServer.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.Server.Model.dll
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryApiServer\bin\Debug\MapleStoryHelper.Standard.Server.Model.pdb

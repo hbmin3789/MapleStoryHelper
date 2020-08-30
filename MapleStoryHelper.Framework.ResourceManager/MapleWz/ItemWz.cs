@@ -13,7 +13,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
     {
         #region GetItems
 
-        public List<EquipmentItem> GetEquipmentItems(Character character, EEquipmentCategory category, string keyWord)
+        public List<EquipmentItem> GetEquipmentItems(string keyWord, EEquipmentCategory category)
         {
             return stringWzReader.GetEquipmentItems(category, keyWord);
         }

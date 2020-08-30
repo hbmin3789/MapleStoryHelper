@@ -71,6 +71,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controller\ItemSearchController.cs" />
     <Compile Include="Interfaces\Services\IItemService.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -116,6 +117,10 @@
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Server.Model\MapleStoryHelper.Standard.Server.Model.csproj">
+      <Project>{A1904B81-DBF6-4770-8ABF-C01864D75CA2}</Project>
+      <Name>MapleStoryHelper.Standard.Server.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
       <Project>{CB0C667C-9461-46F3-AB27-73FDF15AEA57}</Project>

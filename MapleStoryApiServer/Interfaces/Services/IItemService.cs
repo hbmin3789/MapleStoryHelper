@@ -1,8 +1,11 @@
 ﻿using MapleStoryHelper.Standard;
+using MapleStoryHelper.Standard.Item;
 using MapleStoryHelper.Standard.Item.Equipment;
+using MapleStoryHelper.Standard.Server.Model.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
@@ -14,12 +17,7 @@ namespace MapleStoryApiServer.Interfaces.Services
     public interface IItemSearchService
     {
         [WebGet]
-
-        [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json,
-                   ResponseFormat = WebMessageFormat.Json,
-                   BodyStyle = WebMessageBodyStyle.WrappedRequest)]
-
-        void ItemSearch(EItemCategory itemCategory, string keyWord, EEquipmentCategory equipCategory);
+        MResponse<List<EquipmentItem>> EquipItem(string keyWord, EEquipmentCategory equipCategory);
 
 
     }
