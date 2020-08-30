@@ -26,6 +26,7 @@ namespace MapleStoryApiServer.Model.Services
             retval.Data = controller.GetEquipmentItems(keyWord, equipCategory);
             retval.Status = 200;
             retval.Message = "Good!";
+            WebOperationContext.Current.OutgoingResponse.ContentType = "application/json; charset=utf-8";
             string temp = JsonConvert.SerializeObject(retval,Formatting.Indented);
             return temp;
         }
