@@ -8,11 +8,11 @@ namespace MapleStoryHelper.Standard.Character.Common
 {
     public static class CharacterExMethods
     {
-        public static List<ECharacterJob> GetWeaponJob(this EquipmentItem weapon)
+        public static List<EAdvancement> GetWeaponJob(this EquipmentItem weapon)
         {
-            List<ECharacterJob> retval = new List<ECharacterJob>();
+            List<EAdvancement> retval = new List<EAdvancement>();
 
-            switch (weapon.WeaponType)
+            switch (weapon.GearType)
             {
                 case GearType.staff:
                     retval = Staff();
@@ -30,52 +30,52 @@ namespace MapleStoryHelper.Standard.Character.Common
                     retval = OneHandedBlunt();
                     break;
                 case GearType.shiningRod:
-                    retval.Add(ECharacterJob.Luminous);
+                    retval.Add(EAdvancement.Luminous);
                     break;
                 case GearType.espLimiter:
-                    retval.Add(ECharacterJob.Kinesis);
+                    retval.Add(EAdvancement.Kinesis);
                     break;
                 case GearType.magicGauntlet:
-                    retval.Add(ECharacterJob.Illium);
+                    retval.Add(EAdvancement.Illium);
                     break;
                 case GearType.thSword:
                     retval = TwoHandedSword();
                     break;
                 case GearType.thAxe:
-                    retval.Add(ECharacterJob.Hero);
+                    retval.Add(EAdvancement.Hero);
                     break;
                 case GearType.thBlunt:
-                    retval.Add(ECharacterJob.Paladin);
+                    retval.Add(EAdvancement.Paladin);
                     break;
                 case GearType.swordZL:
-                    retval.Add(ECharacterJob.Zero);
+                    retval.Add(EAdvancement.Zero);
                     break;
                 case GearType.crossbow:
                     retval = CrossBow();
                     break;
                 case GearType.spear:
-                    retval.Add(ECharacterJob.DarkKnight);
+                    retval.Add(EAdvancement.DarkKnight);
                     break;
                 case GearType.polearm:
                     retval = PoleArm();
                     break;
                 case GearType.swordZB:
-                    retval.Add(ECharacterJob.Zero);
+                    retval.Add(EAdvancement.Zero);
                     break;
                 case GearType.energySword:
-                    retval.Add(ECharacterJob.Xenon);
+                    retval.Add(EAdvancement.Xenon);
                     break;
                 case GearType.gun:
                     retval = Gun();
                     break;
                 case GearType.handCannon:
-                    retval.Add(ECharacterJob.Cannoneer);
+                    retval.Add(EAdvancement.Cannoneer);
                     break;
                 case GearType.soulShooter:
-                    retval.Add(ECharacterJob.AngelicBuster);
+                    retval.Add(EAdvancement.AngelicBuster);
                     break;
                 case GearType.GauntletBuster:
-                    retval.Add(ECharacterJob.Blaster);
+                    retval.Add(EAdvancement.Blaster);
                     break;
                 case GearType.knuckle:
                     retval = Knuckle();
@@ -84,98 +84,98 @@ namespace MapleStoryHelper.Standard.Character.Common
                     retval = ThrowingGlove();
                     break;
                 case GearType.cane:
-                    retval.Add(ECharacterJob.Phantom);
+                    retval.Add(EAdvancement.Phantom);
                     break;
                 case GearType.dualBow:
-                    retval.Add(ECharacterJob.Mercedes);
+                    retval.Add(EAdvancement.Mercedes);
                     break;
                 case GearType.ancientBow:
-                    retval.Add(ECharacterJob.Pathfinder);
+                    retval.Add(EAdvancement.Pathfinder);
                     break;
                 case GearType.tuner:
-                    retval.Add(ECharacterJob.Adele);
+                    retval.Add(EAdvancement.Adele);
                     break;
                 case GearType.fan:
-                    retval.Add(ECharacterJob.Hoyoung);
+                    retval.Add(EAdvancement.Hoyoung);
                     break;
                 case GearType.chain2:
-                    retval.Add(ECharacterJob.Cadena);
+                    retval.Add(EAdvancement.Cadena);
                     break;
                 case GearType.desperado:
-                    retval.Add(ECharacterJob.DemonAvenger);
+                    retval.Add(EAdvancement.DemonAvenger);
                     break;
             }
 
             return retval;
         }
 
-        private static List<ECharacterJob> Gun()
+        private static List<EAdvancement> Gun()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Mechanic, ECharacterJob.Corsair };
+            return new List<EAdvancement>() { EAdvancement.Mechanic, EAdvancement.Corsair };
         }
 
-        private static List<ECharacterJob> PoleArm()
+        private static List<EAdvancement> PoleArm()
         {
-            return new List<ECharacterJob>() { ECharacterJob.DarkKnight, ECharacterJob.Aran };
+            return new List<EAdvancement>() { EAdvancement.DarkKnight, EAdvancement.Aran };
         }
 
-        public static List<ECharacterJob> OneHandedSword()
+        public static List<EAdvancement> OneHandedSword()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Hero, ECharacterJob.Paladin, ECharacterJob.DawnWarrior, ECharacterJob.Mikhail };
+            return new List<EAdvancement>() { EAdvancement.Hero, EAdvancement.Paladin, EAdvancement.DawnWarrior, EAdvancement.Mikhail };
         }
 
-        public static List<ECharacterJob> OneHandedAxe()
+        public static List<EAdvancement> OneHandedAxe()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Hero, ECharacterJob.DemonSlayer };
+            return new List<EAdvancement>() { EAdvancement.Hero, EAdvancement.DemonSlayer };
         }
-        public static List<ECharacterJob> OneHandedBlunt()
+        public static List<EAdvancement> OneHandedBlunt()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Paladin, ECharacterJob.DemonSlayer };
-        }
-
-        public static List<ECharacterJob> Staff()
-        {
-            return new List<ECharacterJob>() { ECharacterJob.ArchMage_FirePoison, ECharacterJob.ArchMage_IceLightning, ECharacterJob.Bishop, ECharacterJob.BlazeWizard, ECharacterJob.BattleMage, ECharacterJob.Evan };
+            return new List<EAdvancement>() { EAdvancement.Paladin, EAdvancement.DemonSlayer };
         }
 
-        public static List<ECharacterJob> Wand()
+        public static List<EAdvancement> Staff()
         {
-            return new List<ECharacterJob>() { ECharacterJob.ArchMage_FirePoison, ECharacterJob.ArchMage_IceLightning, ECharacterJob.Bishop, ECharacterJob.BlazeWizard, ECharacterJob.Evan };
+            return new List<EAdvancement>() { EAdvancement.ArchMage_FirePoison, EAdvancement.ArchMage_IceLightning, EAdvancement.Bishop, EAdvancement.BlazeWizard, EAdvancement.BattleMage, EAdvancement.Evan };
         }
 
-        public static List<ECharacterJob> ThrowingGlove()
+        public static List<EAdvancement> Wand()
         {
-            return new List<ECharacterJob>() { ECharacterJob.NightLord, ECharacterJob.NightWalker };
+            return new List<EAdvancement>() { EAdvancement.ArchMage_FirePoison, EAdvancement.ArchMage_IceLightning, EAdvancement.Bishop, EAdvancement.BlazeWizard, EAdvancement.Evan };
         }
 
-        public static List<ECharacterJob> TwoHandedSword()
+        public static List<EAdvancement> ThrowingGlove()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Hero, ECharacterJob.Paladin, ECharacterJob.Kaiser, ECharacterJob.DawnWarrior };
+            return new List<EAdvancement>() { EAdvancement.NightLord, EAdvancement.NightWalker };
         }
 
-        public static List<ECharacterJob> TwoHandedAxe()
+        public static List<EAdvancement> TwoHandedSword()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Hero };
+            return new List<EAdvancement>() { EAdvancement.Hero, EAdvancement.Paladin, EAdvancement.Kaiser, EAdvancement.DawnWarrior };
         }
 
-        public static List<ECharacterJob> TwoHandedBlunt()
+        public static List<EAdvancement> TwoHandedAxe()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Paladin };
+            return new List<EAdvancement>() { EAdvancement.Hero };
         }
 
-        public static List<ECharacterJob> Bow()
+        public static List<EAdvancement> TwoHandedBlunt()
         {
-            return new List<ECharacterJob>() { ECharacterJob.BowMaster, ECharacterJob.WindArcher };
+            return new List<EAdvancement>() { EAdvancement.Paladin };
         }
 
-        public static List<ECharacterJob> CrossBow()
+        public static List<EAdvancement> Bow()
         {
-            return new List<ECharacterJob>() { ECharacterJob.WildHunter, ECharacterJob.Marksman };
+            return new List<EAdvancement>() { EAdvancement.BowMaster, EAdvancement.WindArcher };
         }
 
-        public static List<ECharacterJob> Knuckle()
+        public static List<EAdvancement> CrossBow()
         {
-            return new List<ECharacterJob>() { ECharacterJob.Shade, ECharacterJob.Ark, ECharacterJob.Buccaneer, ECharacterJob.ThunderBreaker };
+            return new List<EAdvancement>() { EAdvancement.WildHunter, EAdvancement.Marksman };
+        }
+
+        public static List<EAdvancement> Knuckle()
+        {
+            return new List<EAdvancement>() { EAdvancement.Shade, EAdvancement.Ark, EAdvancement.Buccaneer, EAdvancement.ThunderBreaker };
         }
 
     }

@@ -10,7 +10,7 @@ namespace MapleStoryHelper.Standard.Resources.Attributes
     {
         public double WeaponConst = 1.0;
 
-        public WeaponResourceInfoAttribute(string name, string itemCode, EEquipmentCategory category, EJobCategory jobCategory, int setItemID, double wpConst)
+        public WeaponResourceInfoAttribute(string name, string itemCode, EEquipmentCategory category, ECharacterClass jobCategory, int setItemID, double wpConst)
                                          : base(name, itemCode, category, jobCategory, setItemID)
         {
             ResourceName = name;

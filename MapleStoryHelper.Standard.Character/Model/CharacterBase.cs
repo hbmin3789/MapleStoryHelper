@@ -59,8 +59,8 @@ namespace MapleStoryHelper.Standard.Character.Model
             set => SetProperty(ref _level, value);
         }
 
-        protected ECharacterJob _characterJob;
-        public ECharacterJob CharacterJob
+        protected EAdvancement _characterJob;
+        public EAdvancement CharacterJob
         {
             get => _characterJob;
             set 
@@ -72,8 +72,8 @@ namespace MapleStoryHelper.Standard.Character.Model
             }
         }
 
-        protected EJobCategory _jobCategory;
-        public EJobCategory JobCategory
+        protected ECharacterClass _jobCategory;
+        public ECharacterClass JobCategory
         {
             get => _jobCategory;
             set => SetProperty(ref _jobCategory, value);
@@ -98,11 +98,6 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             get => _arcaneForceStatus;
             set => SetProperty(ref _arcaneForceStatus, value);
-        }
-
-        public void UpdateCharacterStatus()
-        {
-            CharacterStatus = _baseStatus + _arcaneForceStatus + Setting.UnionStatus + _characterEquipment.GetEquipStatus();
         }
 
         protected StatusBase _skillStatus;
@@ -150,26 +145,6 @@ namespace MapleStoryHelper.Standard.Character.Model
             set => SetProperty(ref _characterEquipment, value);
         }
 
-        protected int _minStatusAttack;
-        public int MinStatusAttack
-        {
-            get => _minStatusAttack;
-            set => SetProperty(ref _minStatusAttack, value);
-        }
-
-        protected int _maxStatusAttack;
-        public int MaxStatusAttack
-        {
-            get
-            {
-                UpdateCharacterStatus();
-                _maxStatusAttack = GetMaxStatusAttack();
-                MinStatusAttack = GetMinStatusAttack();
-                return _maxStatusAttack;
-            }
-            set => SetProperty(ref _maxStatusAttack, value);
-        }
-
         #endregion
 
         public CharacterBase()
@@ -189,7 +164,7 @@ namespace MapleStoryHelper.Standard.Character.Model
             _arcaneForceStatus = new StatusBase();
             _jobLevel = EJobLevel.First;
             _level = 1;
-            _characterJob = ECharacterJob.Hero;
+            _characterJob = EAdvancement.Hero;
             _characterName = string.Empty;
             MainStatus = EStatus.STR;
             SubStatus = EStatus.DEX;
@@ -208,15 +183,15 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             switch (CharacterJob)
             {
-                case ECharacterJob.ArchMage_FirePoison:
-                case ECharacterJob.ArchMage_IceLightning:
-                case ECharacterJob.BattleMage:
-                case ECharacterJob.Luminous:
-                case ECharacterJob.Evan:
-                case ECharacterJob.BlazeWizard:
-                case ECharacterJob.Bishop:
-                case ECharacterJob.Kinesis:
-                case ECharacterJob.Illium:
+                case EAdvancement.ArchMage_FirePoison:
+                case EAdvancement.ArchMage_IceLightning:
+                case EAdvancement.BattleMage:
+                case EAdvancement.Luminous:
+                case EAdvancement.Evan:
+                case EAdvancement.BlazeWizard:
+                case EAdvancement.Bishop:
+                case EAdvancement.Kinesis:
+                case EAdvancement.Illium:
                     IsUseAttackPower = false;
                     break;
 
@@ -230,46 +205,46 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             switch (CharacterJob)
             {
-                case ECharacterJob.Hero:
-                case ECharacterJob.DarkKnight:
-                case ECharacterJob.Paladin:
-                case ECharacterJob.Adele:
-                case ECharacterJob.Cannoneer:
-                case ECharacterJob.DawnWarrior:
-                case ECharacterJob.Ark:
-                case ECharacterJob.Kaiser:
-                case ECharacterJob.Aran:
-                case ECharacterJob.Shade:
-                case ECharacterJob.Blaster:
-                case ECharacterJob.Zero:
-                case ECharacterJob.ThunderBreaker:
-                case ECharacterJob.Buccaneer:
-                case ECharacterJob.Mikhail:
+                case EAdvancement.Hero:
+                case EAdvancement.DarkKnight:
+                case EAdvancement.Paladin:
+                case EAdvancement.Adele:
+                case EAdvancement.Cannoneer:
+                case EAdvancement.DawnWarrior:
+                case EAdvancement.Ark:
+                case EAdvancement.Kaiser:
+                case EAdvancement.Aran:
+                case EAdvancement.Shade:
+                case EAdvancement.Blaster:
+                case EAdvancement.Zero:
+                case EAdvancement.ThunderBreaker:
+                case EAdvancement.Buccaneer:
+                case EAdvancement.Mikhail:
                     MainStatus = EStatus.STR;
                     break;
-                case ECharacterJob.DemonAvenger:
+                case EAdvancement.DemonAvenger:
                     MainStatus = EStatus.HP;
                     break;
-                case ECharacterJob.BattleMage:
-                case ECharacterJob.Illium:
-                case ECharacterJob.Bishop:
-                case ECharacterJob.ArchMage_IceLightning:
-                case ECharacterJob.BlazeWizard:
-                case ECharacterJob.Kinesis:
-                case ECharacterJob.Luminous:
-                case ECharacterJob.Evan:
-                case ECharacterJob.ArchMage_FirePoison:
+                case EAdvancement.BattleMage:
+                case EAdvancement.Illium:
+                case EAdvancement.Bishop:
+                case EAdvancement.ArchMage_IceLightning:
+                case EAdvancement.BlazeWizard:
+                case EAdvancement.Kinesis:
+                case EAdvancement.Luminous:
+                case EAdvancement.Evan:
+                case EAdvancement.ArchMage_FirePoison:
                     MainStatus = EStatus.INT;
                     break;
-                case ECharacterJob.WindArcher:
-                case ECharacterJob.Corsair:
-                case ECharacterJob.Mercedes:
-                case ECharacterJob.Pathfinder:
-                case ECharacterJob.BowMaster:
-                case ECharacterJob.Marksman:
-                case ECharacterJob.WildHunter:
-                case ECharacterJob.AngelicBuster:
-                case ECharacterJob.Mechanic:
+                case EAdvancement.WindArcher:
+                case EAdvancement.Corsair:
+                case EAdvancement.Mercedes:
+                case EAdvancement.Pathfinder:
+                case EAdvancement.BowMaster:
+                case EAdvancement.Marksman:
+                case EAdvancement.WildHunter:
+                case EAdvancement.AngelicBuster:
+                case EAdvancement.Mechanic:
                     MainStatus = EStatus.DEX;
                     break;
                 default:
@@ -282,46 +257,46 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             switch (CharacterJob)
             {
-                case ECharacterJob.Hero:
-                case ECharacterJob.DarkKnight:
-                case ECharacterJob.Paladin:
-                case ECharacterJob.Adele:
-                case ECharacterJob.Cannoneer:
-                case ECharacterJob.DawnWarrior:
-                case ECharacterJob.Ark:
-                case ECharacterJob.Kaiser:
-                case ECharacterJob.Aran:
-                case ECharacterJob.Shade:
-                case ECharacterJob.Blaster:
-                case ECharacterJob.Zero:
-                case ECharacterJob.ThunderBreaker:
-                case ECharacterJob.Buccaneer:
-                case ECharacterJob.Mikhail:
+                case EAdvancement.Hero:
+                case EAdvancement.DarkKnight:
+                case EAdvancement.Paladin:
+                case EAdvancement.Adele:
+                case EAdvancement.Cannoneer:
+                case EAdvancement.DawnWarrior:
+                case EAdvancement.Ark:
+                case EAdvancement.Kaiser:
+                case EAdvancement.Aran:
+                case EAdvancement.Shade:
+                case EAdvancement.Blaster:
+                case EAdvancement.Zero:
+                case EAdvancement.ThunderBreaker:
+                case EAdvancement.Buccaneer:
+                case EAdvancement.Mikhail:
                     SubStatus = EStatus.DEX;
                     break;
                 
-                case ECharacterJob.BattleMage:
-                case ECharacterJob.Illium:
-                case ECharacterJob.Bishop:
-                case ECharacterJob.ArchMage_IceLightning:
-                case ECharacterJob.BlazeWizard:
-                case ECharacterJob.Kinesis:
-                case ECharacterJob.Luminous:
-                case ECharacterJob.Evan:
-                case ECharacterJob.ArchMage_FirePoison:
+                case EAdvancement.BattleMage:
+                case EAdvancement.Illium:
+                case EAdvancement.Bishop:
+                case EAdvancement.ArchMage_IceLightning:
+                case EAdvancement.BlazeWizard:
+                case EAdvancement.Kinesis:
+                case EAdvancement.Luminous:
+                case EAdvancement.Evan:
+                case EAdvancement.ArchMage_FirePoison:
                     SubStatus = EStatus.LUK;
                     break;
 
-                case ECharacterJob.DemonAvenger:
-                case ECharacterJob.WindArcher:
-                case ECharacterJob.Corsair:
-                case ECharacterJob.Mercedes:
-                case ECharacterJob.Pathfinder:
-                case ECharacterJob.BowMaster:
-                case ECharacterJob.Marksman:
-                case ECharacterJob.WildHunter:
-                case ECharacterJob.AngelicBuster:
-                case ECharacterJob.Mechanic:
+                case EAdvancement.DemonAvenger:
+                case EAdvancement.WindArcher:
+                case EAdvancement.Corsair:
+                case EAdvancement.Mercedes:
+                case EAdvancement.Pathfinder:
+                case EAdvancement.BowMaster:
+                case EAdvancement.Marksman:
+                case EAdvancement.WildHunter:
+                case EAdvancement.AngelicBuster:
+                case EAdvancement.Mechanic:
                     SubStatus = EStatus.STR;
                     break;
 
@@ -336,11 +311,9 @@ namespace MapleStoryHelper.Standard.Character.Model
         public void SetEquipment(ECharacterEquipmentCategory category, EquipmentItem equipmentItem)
         {
             CharacterEquipment.EquipList[category] = equipmentItem;
-            MaxStatusAttack = 0;
-            UpdateCharacterStatus();
         }
 
-        public void SetCharacterJob(ECharacterJob characterJob)
+        public void SetCharacterJob(EAdvancement characterJob)
         {
             CharacterJob = characterJob;
         }
@@ -349,157 +322,16 @@ namespace MapleStoryHelper.Standard.Character.Model
         {
             switch (CharacterJob)
             {
-                case ECharacterJob.ArchMage_FirePoison:
-                case ECharacterJob.ArchMage_IceLightning:
-                case ECharacterJob.Bishop:
-                case ECharacterJob.BlazeWizard:
+                case EAdvancement.ArchMage_FirePoison:
+                case EAdvancement.ArchMage_IceLightning:
+                case EAdvancement.Bishop:
+                case EAdvancement.BlazeWizard:
                     return 1.2;
-                case ECharacterJob.Xenon:
+                case EAdvancement.Xenon:
                     return 0.875;
                 default:
                     return 1;
             }
         }
-
-        #region StatusCalcMethod
-
-        /*
-        앞스공	숙련도% × 뒷스공
-
-                물리 공격력 : (주스탯 × 4 + 부스탯) × 총공격력 × 무기상수 × 직업상수 × (1 + 공격력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
-        뒷스공
-                마법 공격력 : (주스탯 × 4 + 부스탯) × 총  마력 × 무기상수 × 직업상수 × (1 + 마력%) × (1 + 데미지%) × (1 + 최종데미지%) × 0.01
-        데벤져                HP(AP투자) 14당 주스탯 환산값 1, 아이템HP 17.5당 주스탯 환산값 1, 힘이 부스탯
-        */
-
-        public virtual int GetMinStatusAttack()
-        {
-            return GetMinStatusAttack(MainStatus, SubStatus);
-        }
-
-        public virtual int GetMaxStatusAttack()
-        {
-            return GetMaxStatusAttack(MainStatus, SubStatus);
-        }
-
-        public virtual int GetMaxStatusAttackBoss()
-        {
-            return GetMaxStatusAttackBoss(MainStatus, SubStatus);
-        }
-
-        public int GetMaxStatusAttack(EStatus main, EStatus sub)
-        {
-            int retval = 0;
-            int MainStatus = 0;
-            int SubStatus = 0;
-            double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(CharacterStatus, true);
-
-            GetCharacterMainStatus(ref MainStatus, main);
-            GetCharacterMainStatus(ref SubStatus, sub);
-
-            retval = (int)(((MainStatus * 4) + SubStatus) * Constant * Percent);
-
-            return retval;
-        }
-
-        public int GetMaxStatusAttackBoss(EStatus main, EStatus sub)
-        {
-            int retval = 0;
-            int MainStatus = 0;
-            int SubStatus = 0;
-            double Constant = GetCharacterConstant();
-            double Percent = GetCharacterPercent(CharacterStatus, false);
-
-            GetCharacterMainStatus(ref MainStatus, main);
-            GetCharacterMainStatus(ref SubStatus, sub);
-
-            retval = (int)(((MainStatus * 4) + SubStatus) * Constant * Percent);
-
-            return retval;
-        }
-
-        private void GetCharacterMainStatus(ref int MainStatus, EStatus main)
-        {
-            switch (main)
-            {
-                case EStatus.STR:
-                    MainStatus = CharacterStatus.GetSTR();
-                    break;
-                case EStatus.DEX:
-                    MainStatus = CharacterStatus.GetDEX();
-                    break;
-                case EStatus.INT:
-                    MainStatus = CharacterStatus.GetINT();
-                    break;
-                case EStatus.LUK:
-                    MainStatus = CharacterStatus.GetLUK();
-                    break;
-                case EStatus.HP:
-                    MainStatus = CharacterStatus.GetHP();
-                    break;
-                case EStatus.MP:
-                    MainStatus = CharacterStatus.GetMP();
-                    break;
-            }
-        }
-
-        public int GetMinStatusAttack(EStatus main, EStatus sub)
-        {
-            int retval = 0;
-            int MaxStatus = _maxStatusAttack;
-            double temp = MaxStatus * GetPercent(RipenPoint);
-            retval = (int)temp;
-
-            return retval;
-        }
-
-
-        protected double GetCharacterPercent(StatusBase status, bool boss)
-        {
-            double retval = 0;
-
-            if(IsUseAttackPower == true)
-            {
-                retval += status.GetAttackPower();
-                retval *= (1 + GetPercent(status.PAttackPower));
-            }
-            else
-            {
-                retval += status.GetMagicAttack();
-                retval *= (1 + GetPercent(status.PMagicAttack));
-            }
-
-            retval *= (1 + (status.Damage / 100));
-            retval *= (1 + (status.LastDamage / 100));
-            if(boss == true)
-            {
-                retval *= (1 + (status.BossDamage / 100));
-            }
-
-            return retval;
-        }
-
-        protected double GetPercent(int val)
-        {
-            double retval = 0.0;
-
-            retval = (double)val / 100;
-
-            return retval;
-        }
-
-        protected double GetCharacterConstant()
-        {
-            double retval = 0;
-
-            retval += WeaponConst;
-            retval *= JobConst;
-            retval *= 0.01;
-
-            return retval;
-        }       
-
-        #endregion
     }
 }

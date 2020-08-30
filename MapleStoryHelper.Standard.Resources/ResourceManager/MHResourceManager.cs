@@ -57,13 +57,13 @@ namespace MapleStoryHelper.Standard.Resources
             return retval;
         }
 
-        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, ECharacterJob characterJob)
+        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, EAdvancement characterJob)
         {
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             retval = GetEquipmentList(category);
 
-            var temp = retval.Where(x => x.CharacterCategory != characterJob).ToList();
+            var temp = retval.Where(x => x.Advancement != characterJob).ToList();
 
 
             for(int i = 0; i < temp.Count; i++)
@@ -74,21 +74,21 @@ namespace MapleStoryHelper.Standard.Resources
             return retval;
         }
 
-        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, EJobCategory jobCategory)
+        public static List<EquipmentItem> GetEquipmentList(ECharacterEquipmentCategory category, ECharacterClass jobCategory)
         {
 
             List<EquipmentItem> retval = new List<EquipmentItem>();
 
             retval = GetEquipmentList(category);
 
-            if (jobCategory == EJobCategory.Xenon)
+            if (jobCategory == ECharacterClass.Xenon)
             {
-                retval = retval.Where(x => x.JobCategory == EJobCategory.Pirate || x.JobCategory == EJobCategory.All ||
-                                                     x.JobCategory == EJobCategory.Thief).ToList();
+                retval = retval.Where(x => x.CharacterClass == ECharacterClass.Pirate || x.CharacterClass == ECharacterClass.All ||
+                                                     x.CharacterClass == ECharacterClass.Thief).ToList();
             }
             else
             {
-                retval = retval.Where(x => x.JobCategory == jobCategory || x.JobCategory == EJobCategory.All).ToList();
+                retval = retval.Where(x => x.CharacterClass == jobCategory || x.CharacterClass == ECharacterClass.All).ToList();
             }
 
             return retval;

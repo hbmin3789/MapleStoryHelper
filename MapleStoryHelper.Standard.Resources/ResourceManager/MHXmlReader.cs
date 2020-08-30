@@ -57,7 +57,7 @@ namespace MapleStoryHelper.Standard.Resources
                 switch (item?.ChildNodes[j]?.Attributes["name"]?.Value?.ToString())
                 {
                     case "reqJob":
-                        retval.CharacterCategory = (ECharacterJob)Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);
+                        retval.Advancement = (EAdvancement)Convert.ToInt32(item.ChildNodes[j].Attributes["value"].Value);
                         break;
                     case "islot":
                         //retval.EquipmentCategory = (EEquipmentCategory)item.ChildNodes[j].Value;
@@ -134,7 +134,7 @@ namespace MapleStoryHelper.Standard.Resources
                 switch (item.Nodes[i].Text)
                 {
                     case "reqJob":
-                        retval.CharacterCategory = (ECharacterJob)val;
+                        retval.Advancement = (EAdvancement)val;
                         break;
                     case "islot":
                         //retval.EquipmentCategory = (EEquipmentCategory)item.Nodes[i].ChildNodes[j].Value;

@@ -78,7 +78,6 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\bin\Debu
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\System.Security.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\System.Windows.Forms.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
-C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csprojAssemblyReference.cache
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.AssemblyInfoInputs.cache
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.AssemblyInfo.cs
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csproj.CoreCompileInputs.cache

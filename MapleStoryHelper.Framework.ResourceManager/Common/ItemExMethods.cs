@@ -82,7 +82,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
                     switch (propNames.GetValue(i).ToString())
                     {
                         case "reqJob":
-                            retval.CharacterCategory = (ECharacterJob)gear.Props[(GearPropType)propNames.GetValue(i)];
+                            retval.Advancement = (EAdvancement)gear.Props[(GearPropType)propNames.GetValue(i)];
                             break;
                         case "reqLevel":
                             retval.RequiredLevel = gear.Props[(GearPropType)propNames.GetValue(i)];
@@ -142,7 +142,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             }
 
-            retval.WeaponType = gear.type;
+            retval.GearType = gear.type;
             retval.EquipmentCategory = GetEquipmentCategory(gear);
             retval.ItemCode = node.Text.Replace(".img", "");
 
@@ -166,7 +166,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             gear.Icon.Bitmap.MakeTransparent();
             gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
-            retval.ImgByte = ms.ToArray();
+            retval.Image = ms;
 
             return retval;
         }

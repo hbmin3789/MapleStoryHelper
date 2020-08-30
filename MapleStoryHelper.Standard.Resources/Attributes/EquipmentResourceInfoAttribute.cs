@@ -8,9 +8,9 @@ namespace MapleStoryHelper.Standard.Resources.Attributes
 {
     public class EquipmentResourceInfoAttribute : ResourceInfoAttribute
     {
-        public EJobCategory JobCategory { get; set; }
+        public ECharacterClass JobCategory { get; set; }
 
-        public EquipmentResourceInfoAttribute(string name, string itemCode, EEquipmentCategory category, EJobCategory jobCategory, int setItemID)
+        public EquipmentResourceInfoAttribute(string name, string itemCode, EEquipmentCategory category, ECharacterClass jobCategory, int setItemID)
                                          : base(name, itemCode, category, setItemID)
         {
             ResourceName = name;

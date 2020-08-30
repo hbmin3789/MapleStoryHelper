@@ -2,139 +2,139 @@
 
 namespace MapleStoryHelper.Standard.Character
 {
-    public class ECharacterJobToStringConverter
+    public class EAdvancementToStringConverter
     {
-        public static string Convert(ECharacterJob value)
+        public static string Convert(EAdvancement value)
         {
             string retval = string.Empty;
-            var job = (ECharacterJob)value;
+            var job = (EAdvancement)value;
 
             switch (job)
             {
-                case ECharacterJob.Hero:
+                case EAdvancement.Hero:
                     retval = "히어로";
                     break;
-                case ECharacterJob.Paladin:
+                case EAdvancement.Paladin:
                     retval = "팔라딘";
                     break;
-                case ECharacterJob.DarkKnight:
+                case EAdvancement.DarkKnight:
                     retval = "다크나이트";
                     break;
-                case ECharacterJob.Bishop:
+                case EAdvancement.Bishop:
                     retval = "비숍";
                     break;
-                case ECharacterJob.ArchMage_FirePoison:
+                case EAdvancement.ArchMage_FirePoison:
                     retval = "아크메이지(불,독)";
                     break;
-                case ECharacterJob.ArchMage_IceLightning:
+                case EAdvancement.ArchMage_IceLightning:
                     retval = "아크메이지(썬,콜)";
                     break;
-                case ECharacterJob.BowMaster:
+                case EAdvancement.BowMaster:
                     retval = "보우마스터";
                     break;
-                case ECharacterJob.Marksman:
+                case EAdvancement.Marksman:
                     retval = "신궁";
                     break;
-                case ECharacterJob.Pathfinder:
+                case EAdvancement.Pathfinder:
                     retval = "패스파인더";
                     break;
-                case ECharacterJob.NightLord:
+                case EAdvancement.NightLord:
                     retval = "나이트로드";
                     break;
-                case ECharacterJob.Shadower:
+                case EAdvancement.Shadower:
                     retval = "섀도어";
                     break;
-                case ECharacterJob.DualBlade:
+                case EAdvancement.DualBlade:
                     retval = "듀얼블레이드";
                     break;
-                case ECharacterJob.Corsair:
+                case EAdvancement.Corsair:
                     retval = "캡틴";
                     break;
-                case ECharacterJob.Buccaneer:
+                case EAdvancement.Buccaneer:
                     retval = "바이퍼";
                     break;
-                case ECharacterJob.Cannoneer:
+                case EAdvancement.Cannoneer:
                     retval = "캐논슈터";
                     break;
-                case ECharacterJob.Mercedes:
+                case EAdvancement.Mercedes:
                     retval = "메르세데스";
                     break;
-                case ECharacterJob.Aran:
+                case EAdvancement.Aran:
                     retval = "아란";
                     break;
-                case ECharacterJob.Phantom:
+                case EAdvancement.Phantom:
                     retval = "팬텀";
                     break;
-                case ECharacterJob.Luminous:
+                case EAdvancement.Luminous:
                     retval = "루미너스";
                     break;
-                case ECharacterJob.Evan:
+                case EAdvancement.Evan:
                     retval = "에반";
                     break;
-                case ECharacterJob.Shade:
+                case EAdvancement.Shade:
                     retval = "은월";
                     break;
-                case ECharacterJob.DawnWarrior:
+                case EAdvancement.DawnWarrior:
                     retval = "소울마스터";
                     break;
-                case ECharacterJob.BlazeWizard:
+                case EAdvancement.BlazeWizard:
                     retval = "플레임위자드";
                     break;
-                case ECharacterJob.WindArcher:
+                case EAdvancement.WindArcher:
                     retval = "윈드브레이커";
                     break;
-                case ECharacterJob.NightWalker:
+                case EAdvancement.NightWalker:
                     retval = "나이트워커";
                     break;
-                case ECharacterJob.ThunderBreaker:
+                case EAdvancement.ThunderBreaker:
                     retval = "스트라이커";
                     break;
-                case ECharacterJob.Blaster:
+                case EAdvancement.Blaster:
                     retval = "블래스터";
                     break;
-                case ECharacterJob.BattleMage:
+                case EAdvancement.BattleMage:
                     retval = "배틀메이지";
                     break;
-                case ECharacterJob.WildHunter:
+                case EAdvancement.WildHunter:
                     retval = "와일드헌터";
                     break;
-                case ECharacterJob.Mechanic:
+                case EAdvancement.Mechanic:
                     retval = "메카닉";
                     break;
-                case ECharacterJob.Xenon:
+                case EAdvancement.Xenon:
                     retval = "제논";
                     break;
-                case ECharacterJob.DemonSlayer:
+                case EAdvancement.DemonSlayer:
                     retval = "데몬슬레이어";
                     break;
-                case ECharacterJob.DemonAvenger:
+                case EAdvancement.DemonAvenger:
                     retval = "데몬어벤져";
                     break;
-                case ECharacterJob.Kaiser:
+                case EAdvancement.Kaiser:
                     retval = "카이저";
                     break;
-                case ECharacterJob.Cadena:
+                case EAdvancement.Cadena:
                     retval = "카데나";
                     break;
-                case ECharacterJob.AngelicBuster:
+                case EAdvancement.AngelicBuster:
                     retval = "엔젤릭버스터";
                     break;
-                case ECharacterJob.Adele:
+                case EAdvancement.Adele:
                     retval = "아델";
                     break;
-                case ECharacterJob.Illium:
+                case EAdvancement.Illium:
                     retval = "일리움";
                     break;
-                case ECharacterJob.Ark:
+                case EAdvancement.Ark:
                     retval = "아크";
                     break;
-                case ECharacterJob.Zero:
+                case EAdvancement.Zero:
                     retval = "제로";
                     break;
-                case ECharacterJob.Hoyoung:
+                case EAdvancement.Hoyoung:
                     retval = "호영";
                     break;
-                case ECharacterJob.Kinesis:
+                case EAdvancement.Kinesis:
                     retval = "키네시스";
                     break;
 

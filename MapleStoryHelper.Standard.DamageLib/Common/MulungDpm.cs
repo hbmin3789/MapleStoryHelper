@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using WzComparerR2.WzLib;
 using System.Text;
 using MapleStoryHelper.Standard.Boss.Mulung;
-using MapleStoryHelper.Standard.DamageLib.ExMethods;
 
 namespace MapleStoryHelper.Standard.DamageLib.Common
 {
@@ -65,36 +64,6 @@ namespace MapleStoryHelper.Standard.DamageLib.Common
             }
         }
 
-        public int GetMulungFloor(SkillBase mainSkill, Wz_Node StringWzNode, int ultSkillDelay, int MainPercent, int coreReinforce)
-        {
-            int retval = 0;
-
-            List<MulungBoss> MulungBossList = GetMulungBossList(StringWzNode);
-
-            remaining = TimeSpan.FromMinutes(15);
-            UltCoolTime = TimeSpan.FromSeconds(-1);
-            UltCoolTimeBackUp = TimeSpan.FromSeconds(ultSkillDelay);
-            skill = mainSkill;
-            CoreReinforce = coreReinforce;
-
-            for (int i = 0; i < MulungBossList.Count; i++)
-            {
-                long Damage = character.GetMulungDamage(mainSkill, CoreReinforce, (int)MulungBossList[i].Armor, true, MulungBossList[i].IsElementResistance, character.CharacterStatus);
-                int SubPercent = 100 - MainPercent;
-                long SubDamage = (SubPercent * Damage) / MainPercent;
-
-                if (IsClearBoss(MulungBossList[i], SubDamage, i) == true)
-                {
-                    retval++;
-                }
-                else
-                {
-                    return retval;
-                }
-            }
-
-            return retval;
-        }
 
         private bool IsClearBoss(MulungBoss boss, long Damage, int floor)
         {
