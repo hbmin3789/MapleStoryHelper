@@ -31,7 +31,7 @@ namespace MapleStoryApiServer
         {
             InitializeComponent();
 
-            App.wzManager.LoadFile("");
+            App.wzManager.LoadFile(@"C:\Nexon\Maple");
 
             string baseAddress = "http://" + Environment.MachineName + ":8000/";
             host = new ServiceHost(typeof(ItemSearchService), new Uri(baseAddress));

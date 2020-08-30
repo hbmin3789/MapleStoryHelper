@@ -166,7 +166,7 @@ namespace MapleStoryHelper.Framework.ResourceManager.Common
 
             gear.Icon.Bitmap.MakeTransparent();
             gear.Icon.Bitmap.Save(ms, ImageFormat.Png);
-            retval.Image = ms;
+            retval.Image = ms.ToArray();
 
             return retval;
         }

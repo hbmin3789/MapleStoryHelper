@@ -22,3 +22,4 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.M
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csproj.CoreCompileInputs.cache
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csprojAssemblyReference.cache

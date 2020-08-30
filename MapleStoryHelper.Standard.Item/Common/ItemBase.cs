@@ -23,8 +23,8 @@ namespace MapleStoryHelper.Standard.Item
             set => SetProperty(ref _name, value);
         }
 
-        private Stream _image;
-        public Stream Image
+        private byte[] _image;
+        public byte[] Image
         {
             get => _image;
             set => SetProperty(ref _image, value);

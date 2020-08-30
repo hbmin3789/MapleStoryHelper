@@ -96,7 +96,6 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\Sys
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\WzComparerR2.Common.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\WzComparerR2.WzLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.Item.dll
-C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.Character.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.SkillLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.dll
@@ -109,7 +108,6 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\Pri
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\Prism.xml
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\System.ValueTuple.xml
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.Item.pdb
-C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.Character.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.SkillLib.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MobDisplayApp\bin\Debug\MapleStoryHelper.Standard.pdb
