@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XFby8muHlKJ/W3cpAW43CVmalRo5uizJlBbkYAtuxoCr/vs66O8KccEYrU+p4r3JFK1ZMdhXI/tobWQbBg8KoQ==",
+  "dgSpecHash": "tghKmo79ogRkrIhMvjLkCC6/hN321ip44WA1AdS2LjjyCob72syqPrtU7UsFRuqKPJa1gnDGKveDIORQYwKlmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+  "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\황보민\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\황보민\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\황보민\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512"
   ],
   "logs": []
 }

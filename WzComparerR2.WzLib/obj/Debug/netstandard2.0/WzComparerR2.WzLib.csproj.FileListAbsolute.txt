@@ -84,3 +84,4 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debu
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csproj.CopyComplete
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csprojAssemblyReference.cache

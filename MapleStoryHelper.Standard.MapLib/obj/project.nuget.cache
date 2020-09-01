@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xKzVhomz2NkB7bmU804igDpSrEHz1VF4L9A+Cm3f4TiUp+1DoSH6GPK79sugCypDmOqQ419c/C0T1g3JWVSBwQ==",
+  "dgSpecHash": "zWSulstmjTCVrB2TYKY4FcQwVc8tJMNIuvc1hQf3zgCo9pwmJTYQNJz1gpfD9cYnDXDkusYGdhz33UWlByEqAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\황보민\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
+  "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\황보민\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\황보민\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\
 MapleStoryHelper.Framework.ControlLibrary
 none
 false
@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-1505183044
 Xaml\ComboBox\ComboBoxStyles.xaml;
 
-False
+True
 

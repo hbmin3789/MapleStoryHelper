@@ -77,3 +77,4 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryCodeSearcher\obj\
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryCodeSearcher\obj\Debug\MapleStoryCodeSearcher.csproj.CoreCompileInputs.cache
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryCodeSearcher\obj\Debug\MapleStoryCodeSearcher.exe
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryCodeSearcher\obj\Debug\MapleStoryCodeSearcher.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryCodeSearcher\obj\Debug\MapleStoryCodeSearcher.csprojAssemblyReference.cache

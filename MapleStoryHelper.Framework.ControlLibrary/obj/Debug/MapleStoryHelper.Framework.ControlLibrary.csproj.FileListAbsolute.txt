@@ -32,3 +32,4 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.CoreCompileInputs.cache
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
+C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache
