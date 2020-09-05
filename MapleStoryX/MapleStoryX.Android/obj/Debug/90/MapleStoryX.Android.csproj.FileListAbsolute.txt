@@ -463,3 +463,5 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.An
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.Android\obj\Debug\90\android\assets\Prism.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryX\MapleStoryX.Android\obj\Debug\90\android\assets\Prism.dll.mdb

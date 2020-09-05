@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapleStorySearchApp.Views.ItemSearchPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Frame BackgroundColor="{StaticResource PrimaryThemeColor}">
+            <StackLayout HorizontalOptions="Start" VerticalOptions="Start"
+                         Orientation="Horizontal">
+                <Picker WidthRequest="50" Margin="10,0,0,0"
+                        SelectedIndex="0" FontSize="Small">
+                    <Picker.Items>
+                        <x:String>장비 아이템</x:String>
+                        <x:String>소비 아이템</x:String>
+                        <x:String>캐시 아이템</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry
+                       Text="asddd"/>
+                <Button Text="검색" Padding="0" WidthRequest="50" HeightRequest="50"/>
+            </StackLayout>
+        </Frame>
+            
+    </Grid>
+</ContentPage>

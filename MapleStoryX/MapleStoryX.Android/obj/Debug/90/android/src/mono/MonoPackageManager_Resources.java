@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"MapleStoryX.Android.dll",
 		"FormsViewGroup.dll",
 		"MapleStoryX.dll",
+		"Prism.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

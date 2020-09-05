@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sQBumjix57hWgCkHK4SRRnoOm4xMGXBunjMGRMtGSK85Ni9r7dSL2RdSmLUd2wGI5HRF1Oz+P1kmkcmE34CVGw==",
+  "dgSpecHash": "29I0HtvJkufUIJt9DY7vaKiCjt5/SfFn3JbWl2pNWXFLG+d+CNk+IhSpE6NbS/cFyV1buD07E2y6G/5EjEPw+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryX\\MapleStoryX.iOS\\MapleStoryX.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
