@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MapleStorySearchApp.Extensions;
+using MapleStorySearchApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +17,7 @@ namespace MapleStorySearchApp.Views
         public ItemSearchPage()
         {
             InitializeComponent();
+            this.Binding<ItemSearchViewModel>();
         }
     }
 }

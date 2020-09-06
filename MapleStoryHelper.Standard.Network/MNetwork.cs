@@ -17,8 +17,9 @@ namespace MapleStoryHelper.Standard.MNetwork
             client = new RestClient(address);
         }
 
-        public async Task<T> GetResponse<T>(string resource, Method method,string parameter=null)
+        public async Task<MResponse<T>> GetResponse<T>(string resource, Method method,string parameter=null)
         {
+            MResponse<T> retval = new MResponse<T>();
             RestRequest request = new RestRequest(resource, method);
 
             if (parameter != null)
@@ -27,7 +28,10 @@ namespace MapleStoryHelper.Standard.MNetwork
             }
             var resp = await client.ExecuteAsync(request);
 
-            return JsonConvert.DeserializeObject<T>(resp.Content);
+            retval.Data = JsonConvert.DeserializeObject<T>(resp.Content);
+            retval.Status = (int)resp.StatusCode;
+
+            return retval;
         }
     }
 }

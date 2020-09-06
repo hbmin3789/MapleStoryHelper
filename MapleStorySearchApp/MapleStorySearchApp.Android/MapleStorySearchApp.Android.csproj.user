@@ -2,6 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
-    <SelectedDevice>Android Emulator</SelectedDevice>
+    <SelectedDevice>Samsung SM-G950N</SelectedDevice>
   </PropertyGroup>
 </Project>

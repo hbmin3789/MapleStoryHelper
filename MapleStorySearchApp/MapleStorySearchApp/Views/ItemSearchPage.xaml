@@ -4,24 +4,28 @@
              x:Class="MapleStorySearchApp.Views.ItemSearchPage">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
         <Frame BackgroundColor="{StaticResource PrimaryThemeColor}">
-            <StackLayout HorizontalOptions="Start" VerticalOptions="Start"
-                         Orientation="Horizontal">
-                <Picker WidthRequest="50" Margin="10,0,0,0"
-                        SelectedIndex="0" FontSize="Small">
+            <Grid HorizontalOptions="Fill" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="0.8*"/>
+                </Grid.ColumnDefinitions>
+                <Picker Grid.Column="0" SelectedIndex="0" 
+                        FontSize="12">
                     <Picker.Items>
                         <x:String>장비 아이템</x:String>
                         <x:String>소비 아이템</x:String>
                         <x:String>캐시 아이템</x:String>
                     </Picker.Items>
                 </Picker>
-                <Entry
-                       Text="asddd"/>
-                <Button Text="검색" Padding="0" WidthRequest="50" HeightRequest="50"/>
-            </StackLayout>
+                <Entry Grid.Column="1" FontSize="12"/>
+                <Button  Grid.Column="2" Text="검색" Padding="0" FontSize="20"
+                        WidthRequest="50"/>
+            </Grid>
         </Frame>
             
     </Grid>

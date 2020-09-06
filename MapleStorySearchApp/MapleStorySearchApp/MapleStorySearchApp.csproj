@@ -34,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj" />
     <ProjectReference Include="..\..\MapleStoryHelper.Standard.Network\MapleStoryHelper.Standard.MNetwork.csproj" />
   </ItemGroup>
 </Project>
