@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "E/+PPTZ2y2y4/3QG2oXvMIJHcIW0xnuirfe3MKc4LVTQEiIRJplKJwMCGmjzZZdnqn/xTDI9jeXDqDE++PnCgA==",
+  "dgSpecHash": "qgUnbfwi7t46t4k2FEE0nDYn85Auz97hnmuAQRyCnrOp0RRqgLMUuFzufGpWAP4CerRW11lk7khvOlJEgnFN7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Network\\MapleStoryHelper.Standard.MNetwork.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -46,14 +46,6 @@
         "runtime": {
           "MapleStoryHelper.Standard.dll": {}
         }
-      },
-      "Windows.Foundation.UniversalApiContract/8.0.0.0": {
-        "runtime": {
-          "Windows.Foundation.UniversalApiContract.winmd": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "10.0.18362.1"
-          }
-        }
       }
     }
   },
@@ -93,11 +85,6 @@
     },
     "MapleStoryHelper.Standard/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Windows.Foundation.UniversalApiContract/8.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

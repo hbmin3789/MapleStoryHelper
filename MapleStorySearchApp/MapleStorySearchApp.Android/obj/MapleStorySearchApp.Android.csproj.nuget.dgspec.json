@@ -104,7 +104,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -524,10 +528,6 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[4.7.0, )"
-            },
-            "System.Runtime.WindowsRuntime": {
-              "target": "Package",
-              "version": "[5.0.0-preview.4.20251.6, )"
             }
           },
           "imports": [

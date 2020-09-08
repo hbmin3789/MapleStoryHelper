@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
+    <Folder Include="Model\Request\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Framework.ResourceManager\MapleStoryHelper.Framework.ResourceManager.csproj">
@@ -120,6 +121,10 @@
     <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
       <Project>{33BC35E0-B1C4-4A35-8A32-EE4439EE3E44}</Project>
       <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Network\MapleStoryHelper.Standard.MNetwork.csproj">
+      <Project>{115A0701-D8DE-431E-8F4F-CF0A77C16A5C}</Project>
+      <Name>MapleStoryHelper.Standard.MNetwork</Name>
     </ProjectReference>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Server.Model\MapleStoryHelper.Standard.Server.Model.csproj">
       <Project>{A1904B81-DBF6-4770-8ABF-C01864D75CA2}</Project>

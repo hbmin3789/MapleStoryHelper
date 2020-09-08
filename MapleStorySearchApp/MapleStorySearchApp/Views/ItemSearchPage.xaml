@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converter="clr-namespace:MapleStorySearchApp.Converter"
              x:Class="MapleStorySearchApp.Views.ItemSearchPage">
+    <ContentPage.Resources>
+        <converter:StreamToImageConverter x:Key="StreamToImageConverter"/>
+    </ContentPage.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
@@ -22,11 +26,29 @@
                         <x:String>캐시 아이템</x:String>
                     </Picker.Items>
                 </Picker>
-                <Entry Grid.Column="1" FontSize="12"/>
+                <Entry Grid.Column="1" FontSize="12" Text="{Binding KeyWord}"/>
                 <Button  Grid.Column="2" Text="검색" Padding="0" FontSize="20"
-                        WidthRequest="50"/>
+                        WidthRequest="50"
+                         Command="{Binding SearchCommand}"/>
             </Grid>
         </Frame>
-            
+
+        <Grid Grid.Row="1">
+            <ListView ItemsSource="{Binding EquipmentItems}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Image,Converter={StaticResource StreamToImageConverter}}"/>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Name}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Grid>
 </ContentPage>

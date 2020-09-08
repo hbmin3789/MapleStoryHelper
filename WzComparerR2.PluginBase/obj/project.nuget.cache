@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "asfljMuLv8GtkfGd/npkFOML45g+kcfItVr3cVXs5S3GthQ99hiidkGOZzHwccxC61p8VxVMCt7xSr8zcpgX4A==",
+  "dgSpecHash": "FCAuY1onKs6PCbJfVvELQ+Poj1FgtD3SapYlpQNYc8p8U81mga4rodENZv/JYnSKn2Ojs8L7VEZjMPP71fQnFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

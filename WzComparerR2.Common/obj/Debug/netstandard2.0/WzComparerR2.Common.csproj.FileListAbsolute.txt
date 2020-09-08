@@ -68,7 +68,6 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\De
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb

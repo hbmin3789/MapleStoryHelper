@@ -35,6 +35,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Prism.Core/7.2.0.1422": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prism.dll": {}
+        }
+      },
       "RestSharp/106.11.4": {
         "type": "package",
         "compile": {
@@ -42,6 +51,86 @@
         },
         "runtime": {
           "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Prism.Core": "7.2.0.1422"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Item/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.Utils.dll": {}
+        }
+      },
+      "WzComparerR2.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard.Utils": "1.0.0",
+          "System.Drawing.Common": "4.7.0",
+          "WzComparerR2.WzLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WzComparerR2.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WzComparerR2.Common.dll": {}
+        }
+      },
+      "WzComparerR2.WzLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/WzComparerR2.WzLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WzComparerR2.WzLib.dll": {}
         }
       }
     }
@@ -222,6 +311,27 @@
         "packageIcon.png"
       ]
     },
+    "Prism.Core/7.2.0.1422": {
+      "sha512": "U6tZ4Iq+ELyK5PedRC6E20caZXXTmTYiw5evpv0M3WcfKgih9H5G5LDBlDl+65eC5Vb4lnOaUCAtckdEl2MRxA==",
+      "type": "package",
+      "path": "prism.core/7.2.0.1422",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netcoreapp3.0/Prism.dll",
+        "lib/netcoreapp3.0/Prism.pdb",
+        "lib/netcoreapp3.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.dll.mdb",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "prism.core.7.2.0.1422.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
     "RestSharp/106.11.4": {
       "sha512": "vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
       "type": "package",
@@ -237,10 +347,75 @@
         "restsharp.nuspec",
         "restsharp.png"
       ]
+    },
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "type": "package",
+      "path": "system.drawing.common/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "MapleStoryHelper.Standard/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard/MapleStoryHelper.Standard.csproj"
+    },
+    "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Item/MapleStoryHelper.Standard.Item.csproj"
+    },
+    "MapleStoryHelper.Standard.Utils/1.0.0": {
+      "type": "project",
+      "path": "../MapleStoryHelper.Standard.Utils/MapleStoryHelper.Standard.Utils.csproj",
+      "msbuildProject": "../MapleStoryHelper.Standard.Utils/MapleStoryHelper.Standard.Utils.csproj"
+    },
+    "WzComparerR2.Common/1.0.0": {
+      "type": "project",
+      "path": "../WzComparerR2.Common/WzComparerR2.Common.csproj",
+      "msbuildProject": "../WzComparerR2.Common/WzComparerR2.Common.csproj"
+    },
+    "WzComparerR2.WzLib/1.0.0": {
+      "type": "project",
+      "path": "../WzComparerR2.WzLib/WzComparerR2.WzLib.csproj",
+      "msbuildProject": "../WzComparerR2.WzLib/WzComparerR2.WzLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "MapleStoryHelper.Standard.Item >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
       "RestSharp >= 106.11.4"
@@ -276,7 +451,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+              "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

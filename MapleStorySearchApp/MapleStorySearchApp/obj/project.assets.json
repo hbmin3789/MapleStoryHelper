@@ -84,15 +84,6 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
-      "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.WindowsRuntime.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
@@ -155,6 +146,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "RestSharp": "106.11.4"
         },
@@ -198,8 +190,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Drawing.Common": "4.7.0",
-          "System.Runtime.WindowsRuntime": "5.0.0-preview.4.20251.6"
+          "System.Drawing.Common": "4.7.0"
         },
         "compile": {
           "bin/placeholder/WzComparerR2.WzLib.dll": {}
@@ -522,84 +513,6 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Runtime.WindowsRuntime/5.0.0-preview.4.20251.6": {
-      "sha512": "jodcn53bG5DtO7bEiYo/q5iEmoCYPLbbIzkp0VkIaf0uL151yIBhxjyWdt8R/QxPxMLl+QE5C6K0fuQwCWunxg==",
-      "type": "package",
-      "path": "system.runtime.windowsruntime/5.0.0-preview.4.20251.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "build/net45/System.Runtime.WindowsRuntime.targets",
-        "build/net451/System.Runtime.WindowsRuntime.targets",
-        "build/net461/System.Runtime.WindowsRuntime.targets",
-        "buildTransitive/net45/System.Runtime.WindowsRuntime.targets",
-        "buildTransitive/net451/System.Runtime.WindowsRuntime.targets",
-        "buildTransitive/net461/System.Runtime.WindowsRuntime.targets",
-        "lib/net45/_._",
-        "lib/netstandard1.0/System.Runtime.WindowsRuntime.dll",
-        "lib/netstandard1.0/System.Runtime.WindowsRuntime.xml",
-        "lib/netstandard1.2/System.Runtime.WindowsRuntime.dll",
-        "lib/netstandard1.2/System.Runtime.WindowsRuntime.xml",
-        "lib/netstandard2.0/System.Runtime.WindowsRuntime.dll",
-        "lib/netstandard2.0/System.Runtime.WindowsRuntime.xml",
-        "lib/portable-win8+wp8+wpa81/_._",
-        "lib/uap10.0.16299/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Runtime.WindowsRuntime.dll",
-        "ref/netcore50/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/de/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/es/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/fr/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/it/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/ja/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/ko/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/ru/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/zh-hans/System.Runtime.WindowsRuntime.xml",
-        "ref/netcore50/zh-hant/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/System.Runtime.WindowsRuntime.dll",
-        "ref/netstandard1.0/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/de/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/es/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/fr/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/it/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/ja/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/ko/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/ru/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/System.Runtime.WindowsRuntime.dll",
-        "ref/netstandard1.2/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/de/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/es/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/fr/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/it/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/ja/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/ko/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/ru/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/zh-hans/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard1.2/zh-hant/System.Runtime.WindowsRuntime.xml",
-        "ref/netstandard2.0/System.Runtime.WindowsRuntime.dll",
-        "ref/portable-win8+wp8+wpa81/_._",
-        "ref/uap10.0.16299/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "runtimes/win-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll",
-        "runtimes/win-aot/lib/uap10.0.16299/_._",
-        "runtimes/win/lib/netcore50/System.Runtime.WindowsRuntime.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512",
-        "system.runtime.windowsruntime.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jXmj2J8u5QaDWI4K4NKiPIoS3Hrx5RFHBI+5HA/nVL1OAm+hfw5wRBOowx8XWW42lRoLh//sYBdW2MpzLfqz3Q==",
+  "dgSpecHash": "OeqAOSENI5fp9dZVjianpGIjxM1SRi0MnYZLxAAHQQv/sg7+szbAJQBt9WZcBSNQdAAs0C2WGz63/MH5wRlRAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.Android\\MapleStorySearchApp.Android.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,6 @@
     "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.forms\\7.2.0.1422\\prism.forms.7.2.0.1422.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.lifecycle.common\\1.1.1.3\\xamarin.android.arch.lifecycle.common.1.1.1.3.nupkg.sha512",

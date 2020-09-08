@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BNNlmWvc5Gkp+NqnO0PthfQNTZUpdx5LrAIOBl6oePs4LY39vLXdYHI9Uu5Rft/0rW2daiXlA+EDji/W977TAw==",
+  "dgSpecHash": "EkzhsA8E8N0Kk0JiUrRhnFpFg404Vr9Qk/2YUPZxe+saHal1sH9D/kbTyMoURydsm8fl8bOoCmmeteFOjE0HXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,7 @@
     "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.4.20251.6\\system.runtime.windowsruntime.5.0.0-preview.4.20251.6.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

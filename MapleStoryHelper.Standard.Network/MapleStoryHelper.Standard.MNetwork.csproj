@@ -11,4 +11,8 @@
     <PackageReference Include="RestSharp" Version="106.11.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj" />
+  </ItemGroup>
+
 </Project>

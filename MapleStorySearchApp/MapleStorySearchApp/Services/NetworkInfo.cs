@@ -6,6 +6,6 @@ namespace MapleStorySearchApp.Services
 {
     public class NetworkInfo
     {
-        public static string IP = "http://localhost:8080/";
+        public static string IP = "http://localhost:8000/";
     }
 }

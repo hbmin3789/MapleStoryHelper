@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
-    <PackageReference Include="System.Runtime.WindowsRuntime" Version="5.0.0-preview.4.20251.6" />
   </ItemGroup>
 
   <ItemGroup>

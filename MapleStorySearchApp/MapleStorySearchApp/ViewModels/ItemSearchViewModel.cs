@@ -40,6 +40,7 @@ namespace MapleStorySearchApp.ViewModels
         private void InitVariables()
         {
             itemSearch = new ItemSearchService();
+            _equipmentItems = new ObservableCollection<EquipmentItem>();
         }
 
         private void InitCommands()
