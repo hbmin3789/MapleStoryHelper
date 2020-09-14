@@ -1,12 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\</OutputPath>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Standard.Utils\MapleStoryHelper.Standard.Utils.csproj" />

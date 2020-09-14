@@ -136,3 +136,7 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.DamageLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.DamageLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\Assets\Eqp.img.xml
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.DamageLib.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.DamageLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.DamageLib.pdb

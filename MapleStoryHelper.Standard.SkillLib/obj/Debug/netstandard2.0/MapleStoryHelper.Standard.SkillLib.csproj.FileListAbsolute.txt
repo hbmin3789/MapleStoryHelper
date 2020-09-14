@@ -74,3 +74,6 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.SkillLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.SkillLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.SkillLib.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.SkillLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.SkillLib.pdb

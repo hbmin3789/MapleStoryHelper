@@ -36,38 +36,38 @@ namespace MapleStoryHelper.Framework.ResourceManager
             return "";
         }
 
-        public static BitmapImage LoadImage(this object data)
-        {
-            if(data is Bitmap)
-            {
-                data = (data as Bitmap).ToByteArray();
-            }
+        //public static BitmapImage LoadImage(this object data)
+        //{
+        //    if(data is Bitmap)
+        //    {
+        //        data = (data as Bitmap).ToByteArray();
+        //    }
 
-            if (data is byte[])
-            {
-                if (data == null || (data as byte[]).Length == 0) return null;
-                var image = new BitmapImage();
-                using (var mem = new MemoryStream(data as byte[]))
-                {
-                    mem.Position = 0;
-                    image.BeginInit();
-                    image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
-                    image.CacheOption = BitmapCacheOption.OnLoad;
-                    image.UriSource = null;
-                    image.StreamSource = mem;
-                    image.EndInit();
-                }
-                image.Freeze();
-                return image;
-            }
+        //    if (data is byte[])
+        //    {
+        //        if (data == null || (data as byte[]).Length == 0) return null;
+        //        var image = new BitmapImage();
+        //        using (var mem = new MemoryStream(data as byte[]))
+        //        {
+        //            mem.Position = 0;
+        //            image.BeginInit();
+        //            image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+        //            image.CacheOption = BitmapCacheOption.OnLoad;
+        //            image.UriSource = null;
+        //            image.StreamSource = mem;
+        //            image.EndInit();
+        //        }
+        //        image.Freeze();
+        //        return image;
+        //    }
 
-            if (data is BitmapImage)
-            {
-                return data as BitmapImage;
-            }
+        //    if (data is BitmapImage)
+        //    {
+        //        return data as BitmapImage;
+        //    }
 
-            return null;
-        }
+        //    return null;
+        //}
 
         public static BitmapImage LoadImage(this string data)
         {

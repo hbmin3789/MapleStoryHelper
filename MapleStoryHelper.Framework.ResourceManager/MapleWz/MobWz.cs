@@ -65,7 +65,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
                     int code = Convert.ToInt32(image.Node.Text.Replace(".img",""));
                     MobBase newItem = MobToMobBase(mob);
 
-                    newItem.ImgBitmapSource = newItem.Default.Bitmap.LoadImage();
+                    //newItem.ImgBitmapSource = newItem.Default.Bitmap.LoadImage();
                     newItem.MobName = stringWzReader.GetMobName(code);
 
                     retval.Add(newItem);

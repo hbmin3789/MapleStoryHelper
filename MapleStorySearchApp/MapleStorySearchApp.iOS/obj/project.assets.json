@@ -266,7 +266,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -555,7 +554,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -844,7 +842,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {
@@ -1133,7 +1130,6 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "compile": {

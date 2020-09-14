@@ -63,7 +63,7 @@ namespace MapleStoryHelper.Framework.ResourceManager
         {
             for(int i = 0; i < retval.Count; i++)
             {
-                retval[i].ImgBitmapSource = retval[i].Icon.Bitmap.LoadImage();
+                //retval[i].ImgBitmapSource = retval[i].Icon.Bitmap.LoadImage();
             }
         }
 

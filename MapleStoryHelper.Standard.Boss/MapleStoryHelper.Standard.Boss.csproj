@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\MapleStoryHelper.Framework.ResourceManager\MapleStoryHelper.Framework.ResourceManager.csproj" />
     <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj" />

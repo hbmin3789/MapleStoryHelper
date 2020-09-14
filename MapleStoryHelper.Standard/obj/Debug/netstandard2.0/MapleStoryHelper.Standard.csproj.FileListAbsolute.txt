@@ -51,3 +51,7 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csproj.CoreCompileInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.csprojAssemblyReference.cache

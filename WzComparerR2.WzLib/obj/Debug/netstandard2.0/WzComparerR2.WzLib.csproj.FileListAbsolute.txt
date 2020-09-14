@@ -109,3 +109,6 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Deb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.WzLib\obj\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.WzLib.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.WzLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.WzLib.pdb

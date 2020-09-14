@@ -349,7 +349,6 @@
     ".NETStandard,Version=v2.0": [
       "MapleStoryHelper.Standard.Utils >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
-      "System.Drawing.Common >= 4.7.0",
       "WzComparerR2.WzLib >= 1.0.0"
     ]
   },
@@ -407,10 +406,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "System.Drawing.Common": {
-            "target": "Package",
-            "version": "[4.7.0, )"
           }
         },
         "imports": [

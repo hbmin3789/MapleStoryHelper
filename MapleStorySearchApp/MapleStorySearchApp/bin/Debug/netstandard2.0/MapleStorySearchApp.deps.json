@@ -127,6 +127,7 @@
       },
       "MapleStoryHelper.Standard.MNetwork/1.0.0": {
         "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "RestSharp": "106.11.4"
         },
@@ -146,7 +147,6 @@
       "WzComparerR2.Common/1.0.0": {
         "dependencies": {
           "MapleStoryHelper.Standard.Utils": "1.0.0",
-          "System.Drawing.Common": "4.7.0",
           "WzComparerR2.WzLib": "1.0.0"
         },
         "runtime": {

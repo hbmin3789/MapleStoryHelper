@@ -30,3 +30,7 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csproj.CoreCompileInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MapLib.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MapLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MapLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.MapLib\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MapLib.csprojAssemblyReference.cache

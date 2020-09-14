@@ -51,3 +51,6 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\ob
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.pdb
