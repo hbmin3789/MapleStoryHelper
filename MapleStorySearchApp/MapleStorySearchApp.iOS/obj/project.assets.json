@@ -229,6 +229,21 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.SkillLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -249,6 +264,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
           "Xamarin.Essentials": "1.5.3.2",
@@ -517,6 +533,21 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.SkillLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -537,6 +568,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
           "Xamarin.Essentials": "1.5.3.2",
@@ -805,6 +837,21 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.SkillLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -825,6 +872,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
           "Xamarin.Essentials": "1.5.3.2",
@@ -1093,6 +1141,21 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.SkillLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.SkillLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.Utils/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1113,6 +1176,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
           "Xamarin.Essentials": "1.5.3.2",
@@ -1654,6 +1718,11 @@
       "type": "project",
       "path": "../../MapleStoryHelper.Standard.Network/MapleStoryHelper.Standard.MNetwork.csproj",
       "msbuildProject": "../../MapleStoryHelper.Standard.Network/MapleStoryHelper.Standard.MNetwork.csproj"
+    },
+    "MapleStoryHelper.Standard.SkillLib/1.0.0": {
+      "type": "project",
+      "path": "../../MapleStoryHelper.Standard.SkillLib/MapleStoryHelper.Standard.SkillLib.csproj",
+      "msbuildProject": "../../MapleStoryHelper.Standard.SkillLib/MapleStoryHelper.Standard.SkillLib.csproj"
     },
     "MapleStoryHelper.Standard.Utils/1.0.0": {
       "type": "project",
