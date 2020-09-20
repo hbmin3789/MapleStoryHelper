@@ -56,6 +56,7 @@ public class MonoPackageManager_Resources {
 		"WzComparerR2.Common.dll",
 		"WzComparerR2.WzLib.dll",
 		"MapleStoryHelper.Standard.MNetwork.dll",
+		"MapleStoryHelper.Standard.SkillLib.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

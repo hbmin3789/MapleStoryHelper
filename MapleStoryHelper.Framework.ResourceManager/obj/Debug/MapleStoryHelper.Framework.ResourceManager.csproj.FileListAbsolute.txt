@@ -100,6 +100,8 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csproj.CopyComplete
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csprojAssemblyReference.cache
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csproj.CoreCompileInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\Assets\Eqp.img.xml
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\MapleStoryHelper.Framework.ResourceManager.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\MapleStoryHelper.Framework.ResourceManager.pdb
@@ -127,8 +129,6 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\Prism.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\Prism.xml
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\bin\Debug\System.ValueTuple.xml
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csproj.CoreCompileInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ResourceManager\obj\Debug\MapleStoryHelper.Framework.ResourceManager.pdb

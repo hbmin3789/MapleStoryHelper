@@ -11,6 +11,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard": "1.0.0",
           "MapleStoryHelper.Standard.Item": "1.0.0",
+          "MapleStoryHelper.Standard.Resources": "1.0.0",
           "MapleStoryHelper.Standard.Utils": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
@@ -65,6 +66,16 @@
         },
         "runtime": {
           "MapleStoryHelper.Standard.Item.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.Resources/1.0.0": {
+        "dependencies": {
+          "MapleStoryHelper.Standard.Item": "1.0.0",
+          "Prism.Core": "7.2.0.1422",
+          "WzComparerR2.WzLib": "1.0.0"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.Resources.dll": {}
         }
       },
       "MapleStoryHelper.Standard.Utils/1.0.0": {
@@ -142,6 +153,11 @@
       "sha512": ""
     },
     "MapleStoryHelper.Standard.Item/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MapleStoryHelper.Standard.Resources/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

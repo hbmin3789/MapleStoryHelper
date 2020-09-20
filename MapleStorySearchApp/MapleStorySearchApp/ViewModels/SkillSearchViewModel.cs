@@ -13,7 +13,7 @@ namespace MapleStorySearchApp.ViewModels
 {
     public class SkillSearchViewModel : BindableBase
     {
-        private const string IP = "https://localhost:44865";
+        private const string IP = "https://localhost:44328";
         private MNetwork networkManager = new MNetwork(IP);
 
         private ObservableCollection<SkillBase> _skillItems;

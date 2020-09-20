@@ -8,12 +8,14 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleS
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStorySearchApp.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.Item.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.MNetwork.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.SkillLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\WzComparerR2.Common.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\WzComparerR2.WzLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStorySearchApp.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.Item.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.MNetwork.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.SkillLib.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\WzComparerR2.Common.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\WzComparerR2.WzLib.pdb
@@ -65,6 +67,8 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleS
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.MNetwork.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.MNetwork.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.SkillLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.SkillLib.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStorySearchApp.Android.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStorySearchApp.Android.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStorySearchApp.dll

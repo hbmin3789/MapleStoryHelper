@@ -71,6 +71,9 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\De
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.csprojAssemblyReference.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.AssemblyInfoInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.AssemblyInfo.cs
@@ -78,6 +81,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\De
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.Common\obj\Debug\netstandard2.0\WzComparerR2.Common.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.Common.pdb

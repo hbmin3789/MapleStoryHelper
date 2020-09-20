@@ -42,6 +42,9 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.deps.json
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csprojAssemblyReference.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.AssemblyInfoInputs.cache
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.AssemblyInfo.cs
@@ -49,6 +52,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.csproj.CopyComplete
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Utils\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb

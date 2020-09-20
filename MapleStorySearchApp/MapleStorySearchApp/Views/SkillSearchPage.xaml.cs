@@ -15,6 +15,7 @@ namespace MapleStorySearchApp.Views
         public SkillSearchPage()
         {
             InitializeComponent();
+            BindingContext = App.skillSearchViewModel;
         }
     }
 }

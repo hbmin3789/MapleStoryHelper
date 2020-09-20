@@ -9,7 +9,7 @@
         <Tab Title="아이템 검색"    
              Icon="tab_feed.png">
             <ShellContent Icon="tab_feed.png">
-                <local:ItemSearchPage/>
+                <local:SkillSearchPage/>
             </ShellContent>
 
         </Tab>
