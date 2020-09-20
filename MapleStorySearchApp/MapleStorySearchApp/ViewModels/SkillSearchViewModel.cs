@@ -1,5 +1,6 @@
 ﻿using MapleStoryHelper.Standard.MNetwork;
 using MapleStoryHelper.Standard.SkillLib.Model;
+using MapleStorySearchApp.Services;
 using Newtonsoft.Json.Linq;
 using Prism.Commands;
 using Prism.Mvvm;
@@ -13,8 +14,7 @@ namespace MapleStorySearchApp.ViewModels
 {
     public class SkillSearchViewModel : BindableBase
     {
-        private const string IP = "https://localhost:44328";
-        private MNetwork networkManager = new MNetwork(IP);
+        private MNetwork networkManager = new MNetwork(NetworkInfo.IP);
 
         private ObservableCollection<SkillBase> _skillItems;
         public ObservableCollection<SkillBase> SkillItems
@@ -52,7 +52,7 @@ namespace MapleStorySearchApp.ViewModels
         {
             JObject job = new JObject();
             job.Add("keyWord", KeyWord);
-            var resp = await networkManager.GetResponse<List<SkillBase>>("/SkillSearch", Method.GET, job.ToString());
+            var resp = await networkManager.GetResponse<List<SkillBase>>("/SkillSearch", Method.POST, job.ToString());
         }
     }
 }

@@ -33,15 +33,3 @@ C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
 C:\Users\황보민\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\bin\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary_MarkupCompile.lref
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\Xaml\ComboBox\ComboBoxStyles.baml
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.g.resources
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.Properties.Resources.resources
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.GenerateResource.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.csproj.CoreCompileInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Framework.ControlLibrary\obj\Debug\MapleStoryHelper.Framework.ControlLibrary.pdb

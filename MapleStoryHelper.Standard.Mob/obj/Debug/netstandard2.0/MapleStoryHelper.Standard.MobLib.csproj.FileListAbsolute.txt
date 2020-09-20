@@ -67,13 +67,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MobLib.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MobLib.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.MobLib.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.AssemblyInfoInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.AssemblyInfo.cs
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.csproj.CoreCompileInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.csproj.CopyComplete
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Mob\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.pdb

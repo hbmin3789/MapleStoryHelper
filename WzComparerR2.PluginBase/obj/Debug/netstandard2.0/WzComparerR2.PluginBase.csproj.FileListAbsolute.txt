@@ -44,13 +44,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\bi
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\bin\Debug\netstandard2.0\WzComparerR2.PluginBase.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\bin\Debug\netstandard2.0\WzComparerR2.WzLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\WzComparerR2.PluginBase.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.AssemblyInfoInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.AssemblyInfo.cs
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csproj.CoreCompileInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.csproj.CopyComplete
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\WzComparerR2.PluginBase\obj\Debug\netstandard2.0\WzComparerR2.PluginBase.pdb

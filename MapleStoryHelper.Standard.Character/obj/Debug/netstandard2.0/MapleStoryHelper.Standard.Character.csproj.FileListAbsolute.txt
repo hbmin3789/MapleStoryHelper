@@ -104,13 +104,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Character.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Character.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Character.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.AssemblyInfoInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.AssemblyInfo.cs
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csproj.CoreCompileInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.csproj.CopyComplete
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Character\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Character.pdb

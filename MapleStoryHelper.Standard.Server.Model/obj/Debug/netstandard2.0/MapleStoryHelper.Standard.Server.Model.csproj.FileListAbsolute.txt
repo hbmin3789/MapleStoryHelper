@@ -32,13 +32,3 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.Utils.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\bin\Debug\netstandard2.0\WzComparerR2.Common.pdb
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\bin\Debug\netstandard2.0\WzComparerR2.WzLib.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Server.Model.deps.json
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Server.Model.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\DLL\netstandard2.0\MapleStoryHelper.Standard.Server.Model.pdb
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.csprojAssemblyReference.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.AssemblyInfoInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.AssemblyInfo.cs
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.csproj.CoreCompileInputs.cache
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.csproj.CopyComplete
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.dll
-C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStoryHelper.Standard.Server.Model\obj\Debug\netstandard2.0\MapleStoryHelper.Standard.Server.Model.pdb
