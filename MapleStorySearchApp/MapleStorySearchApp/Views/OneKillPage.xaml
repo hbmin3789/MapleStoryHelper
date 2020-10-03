@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapleStorySearchApp.Views.OneKillPage">
-    <StackLayout>
+    <StackLayout BindingContext="{StaticResource OneKillViewModel}">
         <!-- 스공 설정 -->
         <Grid>
             <Grid.ColumnDefinitions>
@@ -19,15 +19,17 @@
         </Grid>
 
         <!-- 스킬 설정 -->
-        <Grid HeightRequest="100">
+        <Grid HeightRequest="100"
+              BindingContext="{Binding Source={StaticResource SkillSearchViewModel}
+                               ,Path=SelectedSkill}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.RowSpan="2"/>
-            <Label Grid.Column="1"/>
-            <Label Grid.Column="1" Grid.Row="1"/>
+            <Image Grid.RowSpan="2" Source="{Binding ImgBitmapSource}"/>
+            <Label Grid.Column="1" Text="{Binding SkillName}"/>
+            <Label Grid.Column="1" Grid.Row="1" Text="{Binding PercentDamage}"/>
             <Button Grid.RowSpan="2" Grid.Column="2"
                     Text="스킬 설정"
                     Clicked="Button_Clicked"/>

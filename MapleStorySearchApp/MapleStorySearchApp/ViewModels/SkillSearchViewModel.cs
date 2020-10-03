@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using Xamarin.Forms;
 
@@ -17,6 +18,13 @@ namespace MapleStorySearchApp.ViewModels
     public class SkillSearchViewModel : BindableBase
     {
         private MNetwork networkManager = new MNetwork(NetworkInfo.IP);
+
+        private SkillBase _selectedSkill;
+        public SkillBase SelectedSkill
+        {
+            get => _selectedSkill;
+            set => SetProperty(ref _selectedSkill, value);
+        }
 
         private ObservableCollection<SkillBase> _skillItems;
         public ObservableCollection<SkillBase> SkillItems

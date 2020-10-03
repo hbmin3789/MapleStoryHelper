@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapleStorySearchApp.Views.SkillSearchPage">
     <ContentPage.Content>
-        <Grid>
+        <Grid BindingContext="{StaticResource SkillSearchViewModel}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="60"/>
                 <RowDefinition Height="*"/>
@@ -15,7 +15,8 @@
             </StackLayout>
             <Grid Grid.Row="1">
                 <ListView ItemsSource="{Binding SkillItems}"
-                          ItemSelected="ListView_ItemSelected">
+                          ItemSelected="ListView_ItemSelected"
+                          SelectedItem="{Binding SelectedSkill}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ImageCell Text="{Binding SkillName}"

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MapleStorySearchApp.ViewModels"
              x:Class="MapleStorySearchApp.App"
              NavigationPage.HasNavigationBar="False">
     <Application.Resources>
@@ -28,6 +29,8 @@
             <Style TargetType="{x:Type Picker}">
                 <Setter Property="TextColor" Value="{StaticResource DarkForegroundColor}"/>
             </Style>
-        </ResourceDictionary>        
+            <vm:SkillSearchViewModel x:Key="SkillSearchViewModel"/>
+            <vm:OneKillViewModel x:Key="OneKillViewModel"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -15,7 +15,6 @@ namespace MapleStorySearchApp.Views
         public SkillSearchPage()
         {
             InitializeComponent();
-            BindingContext = App.skillSearchViewModel;
         }
 
         private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
