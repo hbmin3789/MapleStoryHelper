@@ -33,3 +33,4 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleS
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp\obj\Debug\netstandard2.0\Views\OneKillPage.xaml.g.cs
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.dll
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp\bin\Debug\netstandard2.0\MapleStoryHelper.Standard.MobLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp\obj\Debug\netstandard2.0\Views\MobSearchPage.xaml.g.cs

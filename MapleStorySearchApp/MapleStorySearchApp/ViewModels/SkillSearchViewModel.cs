@@ -15,10 +15,8 @@ using Xamarin.Forms;
 
 namespace MapleStorySearchApp.ViewModels
 {
-    public class SkillSearchViewModel : BindableBase
+    public class SkillSearchViewModel : ViewModelBase
     {
-        private MNetwork networkManager = new MNetwork(NetworkInfo.IP);
-
         private SkillBase _selectedSkill;
         public SkillBase SelectedSkill
         {

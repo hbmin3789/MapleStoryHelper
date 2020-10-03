@@ -1,10 +1,29 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MapleStorySearchApp.Views.MobSearchPage">
-  <ContentView.Content>
-      <StackLayout>
-          
-      </StackLayout>
-  </ContentView.Content>
-</ContentView>
+    <ContentPage.Content>
+        <Grid BindingContext="{StaticResource MobSearchViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal">
+                <Entry WidthRequest="200" Text="{Binding KeyWord}"/>
+                <Button Command="{Binding MobSearchCommand}"/>
+            </StackLayout>
+            <Grid Grid.Row="1">
+                <ListView ItemsSource="{Binding MobItems}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding MobName}"
+                                       ImageSource="{Binding ImgBitmapSource}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

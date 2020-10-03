@@ -30,13 +30,14 @@
             <Image Grid.RowSpan="2" Source="{Binding ImgBitmapSource}"/>
             <Label Grid.Column="1" Text="{Binding SkillName}"/>
             <Label Grid.Column="1" Grid.Row="1" Text="{Binding PercentDamage}"/>
-            <Button Grid.RowSpan="2" Grid.Column="2"
+            <Button x:Name="btnSkillSet" Grid.RowSpan="2" Grid.Column="2"
                     Text="스킬 설정"
-                    Clicked="Button_Clicked"/>
+                    Clicked="btnSkillSet_Clicked"/>
         </Grid>
 
         <!-- 몬스터 설정 -->
-        <Button HorizontalOptions="End" Text="몬스터 추가"/>
+        <Button x:Name="btnAddMob" HorizontalOptions="End" Text="몬스터 추가"
+                Clicked="btnAddMob_Clicked"/>
         <Grid>
             <ListView ItemsSource="{Binding MobList}">
                 <ListView.ItemTemplate>

@@ -51,13 +51,13 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"MapleStoryHelper.Standard.MNetwork.dll",
 		"MapleStoryHelper.Standard.Item.dll",
 		"MapleStoryHelper.Standard.dll",
 		"WzComparerR2.Common.dll",
 		"WzComparerR2.WzLib.dll",
-		"MapleStoryHelper.Standard.SkillLib.dll",
 		"MapleStoryHelper.Standard.MobLib.dll",
-		"MapleStoryHelper.Standard.MNetwork.dll",
+		"MapleStoryHelper.Standard.SkillLib.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

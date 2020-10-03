@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace MapleStorySearchApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MobSearchPage : ContentView
+    public partial class MobSearchPage : ContentPage
     {
         public MobSearchPage()
         {

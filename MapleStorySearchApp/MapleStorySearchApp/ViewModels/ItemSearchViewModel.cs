@@ -11,7 +11,7 @@ using System.Text;
 
 namespace MapleStorySearchApp.ViewModels
 {
-    public class ItemSearchViewModel : BindableBase
+    public class ItemSearchViewModel : ViewModelBase
     {
         ItemSearchService itemSearch;
 

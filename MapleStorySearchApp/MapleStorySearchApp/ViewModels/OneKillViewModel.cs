@@ -10,7 +10,7 @@ using System.Text;
 
 namespace MapleStorySearchApp.ViewModels
 {
-    public class OneKillViewModel : BindableBase
+    public class OneKillViewModel : ViewModelBase
     {
         #region Property
 
