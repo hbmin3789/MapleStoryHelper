@@ -229,6 +229,20 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -264,6 +278,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
           "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
@@ -533,6 +548,20 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -568,6 +597,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
           "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
@@ -837,6 +867,20 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -872,6 +916,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
           "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
@@ -1141,6 +1186,20 @@
           "bin/placeholder/MapleStoryHelper.Standard.MNetwork.dll": {}
         }
       },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MapleStoryHelper.Standard.MobLib.dll": {}
+        }
+      },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1176,6 +1235,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
           "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Prism.Forms": "7.2.0.1422",
@@ -1718,6 +1778,11 @@
       "type": "project",
       "path": "../../MapleStoryHelper.Standard.Network/MapleStoryHelper.Standard.MNetwork.csproj",
       "msbuildProject": "../../MapleStoryHelper.Standard.Network/MapleStoryHelper.Standard.MNetwork.csproj"
+    },
+    "MapleStoryHelper.Standard.MobLib/1.0.0": {
+      "type": "project",
+      "path": "../../MapleStoryHelper.Standard.Mob/MapleStoryHelper.Standard.MobLib.csproj",
+      "msbuildProject": "../../MapleStoryHelper.Standard.Mob/MapleStoryHelper.Standard.MobLib.csproj"
     },
     "MapleStoryHelper.Standard.SkillLib/1.0.0": {
       "type": "project",

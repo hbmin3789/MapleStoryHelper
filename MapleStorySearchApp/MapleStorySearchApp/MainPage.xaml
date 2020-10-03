@@ -13,11 +13,11 @@
             </ShellContent>
 
         </Tab>
-        <!--<Tab Title="정보"    
+        <Tab Title="정보"    
              Icon="tab_about.png">
             <ShellContent>
                 <local:ItemSearchPage/>
             </ShellContent>
-        </Tab>-->
+        </Tab>
     </TabBar>
 </Shell>

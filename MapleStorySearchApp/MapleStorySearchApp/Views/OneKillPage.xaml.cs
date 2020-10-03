@@ -15,6 +15,12 @@ namespace MapleStorySearchApp.Views
         public OneKillPage()
         {
             InitializeComponent();
+            this.BindingContext = App.oneKillViewModel;
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SkillSearchPage());
         }
     }
 }

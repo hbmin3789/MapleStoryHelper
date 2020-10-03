@@ -12,33 +12,44 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
             <Label Text="스탯 공격력"/>
-            <Entry Grid.Column="1"/>
+            <Entry Grid.Column="1" Text="123"/>
             <Label Grid.Column="2" Text="~"/>
-            <Entry Grid.Column="3"/>
+            <Entry Grid.Column="3" Text="123"
+                   HeightRequest="70"/>
         </Grid>
 
         <!-- 스킬 설정 -->
-        <Grid>
+        <Grid HeightRequest="100">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
             <Image Grid.RowSpan="2"/>
             <Label Grid.Column="1"/>
             <Label Grid.Column="1" Grid.Row="1"/>
+            <Button Grid.RowSpan="2" Grid.Column="2"
+                    Text="스킬 설정"
+                    Clicked="Button_Clicked"/>
         </Grid>
 
-        <!-- 몬스터 설정(리스트로 만들면 좋을듯) -->
+        <!-- 몬스터 설정 -->
+        <Button HorizontalOptions="End" Text="몬스터 추가"/>
         <Grid>
-            <ListView>
+            <ListView ItemsSource="{Binding MobList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding ImgBitmapSource}"/>
+                            <Label Grid.Column="1" Text="{Binding MobName}"/>
+                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding FinalMaxHP}"/>
+                            <Button Grid.RowSpan="2" Grid.Column="2" Text="제거"/>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

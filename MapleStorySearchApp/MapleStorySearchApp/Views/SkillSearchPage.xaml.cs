@@ -17,5 +17,10 @@ namespace MapleStorySearchApp.Views
             InitializeComponent();
             BindingContext = App.skillSearchViewModel;
         }
+
+        private async void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

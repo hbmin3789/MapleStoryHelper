@@ -10,6 +10,8 @@ namespace MapleStorySearchApp
     public partial class App : Application
     {
         public static SkillSearchViewModel skillSearchViewModel = new SkillSearchViewModel();
+        public static OneKillViewModel oneKillViewModel = new OneKillViewModel();
+
         public App()
         {
             InitializeComponent();

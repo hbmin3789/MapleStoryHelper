@@ -496,3 +496,7 @@ C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleS
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.MobLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\bin\Debug\MapleStoryHelper.Standard.MobLib.pdb
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.MobLib.dll
+C:\Users\jangdarnam\Documents\Github\MapleStoryHelper\MapleStorySearchApp\MapleStorySearchApp.Android\obj\Debug\90\android\assets\MapleStoryHelper.Standard.MobLib.pdb

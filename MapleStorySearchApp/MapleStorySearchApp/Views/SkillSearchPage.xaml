@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
+                <RowDefinition Height="60"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -14,12 +14,12 @@
                 <Button Command="{Binding ItemSearchCommand}"/>
             </StackLayout>
             <Grid Grid.Row="1">
-                <ListView ItemsSource="{Binding SkillItems}">
+                <ListView ItemsSource="{Binding SkillItems}"
+                          ItemSelected="ListView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell
-                                Text="{Binding SkillName}"
-                                ImageSource="{Binding ImgBitmapSource}">
+                            <ImageCell Text="{Binding SkillName}"
+                                       ImageSource="{Binding ImgBitmapSource}">
                             </ImageCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

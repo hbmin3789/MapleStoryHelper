@@ -11,6 +11,7 @@
         "dependencies": {
           "MapleStoryHelper.Standard.Item": "1.0.0",
           "MapleStoryHelper.Standard.MNetwork": "1.0.0",
+          "MapleStoryHelper.Standard.MobLib": "1.0.0",
           "MapleStoryHelper.Standard.SkillLib": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
@@ -134,6 +135,15 @@
         },
         "runtime": {
           "MapleStoryHelper.Standard.MNetwork.dll": {}
+        }
+      },
+      "MapleStoryHelper.Standard.MobLib/1.0.0": {
+        "dependencies": {
+          "MapleStoryHelper.Standard": "1.0.0",
+          "WzComparerR2.Common": "1.0.0"
+        },
+        "runtime": {
+          "MapleStoryHelper.Standard.MobLib.dll": {}
         }
       },
       "MapleStoryHelper.Standard.SkillLib/1.0.0": {
@@ -261,6 +271,11 @@
       "sha512": ""
     },
     "MapleStoryHelper.Standard.MNetwork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MapleStoryHelper.Standard.MobLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
