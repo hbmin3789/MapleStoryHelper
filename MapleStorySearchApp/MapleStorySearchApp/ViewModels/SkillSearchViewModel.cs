@@ -8,7 +8,9 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Text;
+using Xamarin.Forms;
 
 namespace MapleStorySearchApp.ViewModels
 {
@@ -53,6 +55,15 @@ namespace MapleStorySearchApp.ViewModels
             JObject job = new JObject();
             job.Add("keyWord", KeyWord);
             var resp = await networkManager.GetResponse<List<SkillBase>>("/SkillSearch", Method.POST, job.ToString());
+            if(resp.Data != null)
+            {
+                for(int i = 0; i < resp.Data.Count; i++)
+                {
+                    Stream stream = new MemoryStream(resp.Data[i].ImgByte);
+                    resp.Data[i].ImgBitmapSource = ImageSource.FromStream(()=>stream);
+                }
+                SkillItems = new ObservableCollection<SkillBase>(resp.Data);
+            }
         }
     }
 }

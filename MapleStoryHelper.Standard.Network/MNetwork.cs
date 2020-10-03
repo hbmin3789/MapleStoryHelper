@@ -40,8 +40,8 @@ namespace MapleStoryHelper.Standard.MNetwork
                 var resp = await client.ExecuteAsync(request);
 
                 string json = JToken.Parse(resp.Content).ToString();
-                retval.Data = JsonConvert.DeserializeObject<T>(json);
-                retval.Status = (int)resp.StatusCode;
+                var data = JsonConvert.DeserializeObject<MResponse<T>>(json);
+                return data;
             }
             catch(Exception e)
             {

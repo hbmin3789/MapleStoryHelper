@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Newtonsoft.Json;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -38,8 +39,11 @@ namespace WzComparerR2.CharaSim
 
         public Dictionary<string, string> PVPcommon { get; private set; }
         public int SkillID { get; set; }
+        [JsonIgnore]
         public BitmapOrigin Icon { get; set; }
+        [JsonIgnore]
         public BitmapOrigin IconMouseOver { get; set; }
+        [JsonIgnore]
         public BitmapOrigin IconDisabled { get; set; }
 
         public HyperSkillType Hyper { get; set; }
@@ -73,6 +77,7 @@ namespace WzComparerR2.CharaSim
         public int AssistSkillLink { get; set; }
         public int type { get; set; }
 
+        [JsonIgnore]
         public int MaxLevel
         {
             get

@@ -10,17 +10,17 @@
             </Grid.RowDefinitions>
 
             <StackLayout Grid.Row="0" Orientation="Horizontal">
-                <Entry Text="{Binding KeyWord}"/>
+                <Entry WidthRequest="200" Text="{Binding KeyWord}"/>
                 <Button Command="{Binding ItemSearchCommand}"/>
             </StackLayout>
             <Grid Grid.Row="1">
                 <ListView ItemsSource="{Binding SkillItems}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding ImgBitmapSource}"/>
-                                <Label Text="{Binding Name}"/>
-                            </StackLayout>
+                            <ImageCell
+                                Text="{Binding SkillName}"
+                                ImageSource="{Binding ImgBitmapSource}">
+                            </ImageCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

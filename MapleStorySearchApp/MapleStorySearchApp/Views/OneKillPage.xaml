@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapleStorySearchApp.Views.OneKillPage">
+    <StackLayout>
+        <!-- 스공 설정 -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="스탯 공격력"/>
+            <Entry Grid.Column="1"/>
+            <Label Grid.Column="2" Text="~"/>
+            <Entry Grid.Column="3"/>
+        </Grid>
+
+        <!-- 스킬 설정 -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.RowSpan="2"/>
+            <Label Grid.Column="1"/>
+            <Label Grid.Column="1" Grid.Row="1"/>
+        </Grid>
+
+        <!-- 몬스터 설정(리스트로 만들면 좋을듯) -->
+        <Grid>
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </StackLayout>
+</ContentPage>

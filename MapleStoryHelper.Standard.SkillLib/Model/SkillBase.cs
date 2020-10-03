@@ -13,6 +13,7 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
 {
     public class SkillBase : Skill
     {
+        [JsonIgnore]
         public int PercentDamage
         {
             get
@@ -42,6 +43,7 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
             }
         }
 
+        [JsonIgnore]
         public int PercentOnceDamage
         {
             get
@@ -63,6 +65,7 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
             }
         }
 
+        [JsonIgnore]
         public int HitCount
         {
             get
@@ -81,6 +84,7 @@ namespace MapleStoryHelper.Standard.SkillLib.Model
             }
         }
 
+        [JsonIgnore]
         public int SkillDelay
         {
             get 

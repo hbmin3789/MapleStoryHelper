@@ -6,18 +6,18 @@
        x:Class="MapleStorySearchApp.MainPage"
        NavigationPage.HasNavigationBar="False">
     <TabBar>
-        <Tab Title="아이템 검색"    
+        <Tab Title="원킬 계산"    
              Icon="tab_feed.png">
             <ShellContent Icon="tab_feed.png">
-                <local:SkillSearchPage/>
+                <local:OneKillPage/>
             </ShellContent>
 
         </Tab>
-        <Tab Title="정보"    
+        <!--<Tab Title="정보"    
              Icon="tab_about.png">
             <ShellContent>
                 <local:ItemSearchPage/>
             </ShellContent>
-        </Tab>
+        </Tab>-->
     </TabBar>
 </Shell>
