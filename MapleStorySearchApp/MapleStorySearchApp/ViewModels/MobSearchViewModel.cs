@@ -12,6 +12,7 @@ namespace MapleStorySearchApp.ViewModels
 {
     public class MobSearchViewModel : ViewModelBase
     {
+
         private MobSearchService service;
 
         #region Property
@@ -57,6 +58,7 @@ namespace MapleStorySearchApp.ViewModels
         private void InitVariables()
         {
             service = new MobSearchService(networkManager);
+            MapCategory = EMobMapCategory.RoadofVanishing;
 
             _mobItems = new ObservableCollection<MobBase>();
         }
@@ -73,7 +75,7 @@ namespace MapleStorySearchApp.ViewModels
             }
             catch(Exception e)
             {
-
+                SendMessage?.Invoke(e.Message);
             }
         }
     }

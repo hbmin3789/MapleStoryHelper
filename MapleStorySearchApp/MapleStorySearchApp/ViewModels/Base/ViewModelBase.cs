@@ -7,8 +7,10 @@ using System.Text;
 
 namespace MapleStorySearchApp.ViewModels
 {
+    public delegate void SendMessageHandler(string message);
     public class ViewModelBase : BindableBase
     {
         protected static MNetwork networkManager = new MNetwork(NetworkInfo.IP);
+        public static SendMessageHandler SendMessage;
     }
 }

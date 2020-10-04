@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Newtonsoft.Json;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -59,6 +60,7 @@ namespace WzComparerR2.CharaSim
 
         public List<int> Revive { get; private set; }
 
+        [JsonIgnore]
         public BitmapOrigin Default { get; set; }
         //public LifeAnimateCollection Animates { get; private set; }
 
