@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {}
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
         "projectName": "MapleStoryHelper.Standard.Character",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\MapleStoryHelper.Standard.Character.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Character\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,18 +30,19 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -54,6 +55,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -72,24 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
         "projectName": "MapleStoryHelper.Standard.Item",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -102,12 +104,13 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj"
               }
             }
           }
@@ -120,6 +123,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -146,24 +150,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj",
         "projectName": "MapleStoryHelper.Standard.Resources",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -176,12 +180,13 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
               }
             }
           }
@@ -194,6 +199,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -216,24 +222,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
         "projectName": "MapleStoryHelper.Standard.Utils",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -246,9 +252,10 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
               }
             }
           }
@@ -261,6 +268,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -283,24 +291,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
         "projectName": "MapleStoryHelper.Standard",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -313,6 +321,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -324,6 +333,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -346,24 +356,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
         "projectName": "WzComparerR2.Common",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -376,12 +386,13 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Utils\\MapleStoryHelper.Standard.Utils.csproj"
               },
-              "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-                "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
               }
             }
           }
@@ -394,6 +405,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -412,24 +424,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
         "projectName": "WzComparerR2.WzLib",
-        "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
-        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
+        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -442,6 +454,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -453,6 +466,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -475,7 +489,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

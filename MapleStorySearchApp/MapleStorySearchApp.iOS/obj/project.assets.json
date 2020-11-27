@@ -1818,24 +1818,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jangdarnam\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Windows10\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\MapleStorySearchApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\MapleStorySearchApp.iOS.csproj",
       "projectName": "MapleStorySearchApp.iOS",
-      "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\MapleStorySearchApp.iOS.csproj",
-      "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\MapleStorySearchApp.iOS.csproj",
+      "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1849,8 +1849,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp\\MapleStorySearchApp.csproj": {
-              "projectPath": "C:\\Users\\jangdarnam\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp\\MapleStorySearchApp.csproj"
+            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp\\MapleStorySearchApp.csproj": {
+              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStorySearchApp\\MapleStorySearchApp\\MapleStorySearchApp.csproj"
             }
           }
         }
