@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj": {}
+    "D:\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj": {
+    "D:\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+        "projectUniqueName": "D:\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
         "projectName": "WzComparerR2.PluginBase",
-        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
-        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
+        "projectPath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\WzComparerR2.PluginBase.csproj",
+        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.PluginBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
-                "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
+              "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+                "projectPath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj"
               }
             }
           }
@@ -69,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
+    "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "projectUniqueName": "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
         "projectName": "WzComparerR2.WzLib",
-        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
-        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
+        "projectPath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lqQIll6MZSGnWy0PGwxdBtIoahlMOSBq5t2Kw2C7hA+z/FAx5cVQ5vSYJim8wzMxtznFSipwX1geRGeFs9hgAw==",
+  "dgSpecHash": "tgjlE8GicOqRlaeljlCkNqJv9dmZHzS3Mo77W/fKdfSrE6e0lhf8u+EVklt44TbKSCY1MB3mtLa8SuJqxIGn3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
+  "projectFilePath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.WzLib\\WzComparerR2.WzLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

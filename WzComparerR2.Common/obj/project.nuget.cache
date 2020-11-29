@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+69ouRcpoPDgvPA0PBn61ERtwaXAE8I/i06T/45BILj1i4rWe8RW13NMAGHYlwymE9CHd6eprFRUcQo1JBcAew==",
+  "dgSpecHash": "mJFX5gd6J80ffN78LSyYNbHf7wU9RwELq/ZwIClDRkdEirLb05OXS3Xz/lmWb0u/PL8sx4xzBda7OK+SYA7mVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
+  "projectFilePath": "D:\\Github\\MapleStoryHelper\\WzComparerR2.Common\\WzComparerR2.Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

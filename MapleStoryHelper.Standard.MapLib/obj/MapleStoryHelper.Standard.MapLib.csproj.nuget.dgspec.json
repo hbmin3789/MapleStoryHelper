@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj": {}
+    "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj": {
+    "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
+        "projectUniqueName": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
         "projectName": "MapleStoryHelper.Standard.MapLib",
-        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
-        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\obj\\",
+        "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\MapleStoryHelper.Standard.MapLib.csproj",
+        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.MapLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {}
+    "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+    "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "projectUniqueName": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
         "projectName": "MapleStoryHelper.Standard",
-        "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
-        "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
+        "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj",
+        "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

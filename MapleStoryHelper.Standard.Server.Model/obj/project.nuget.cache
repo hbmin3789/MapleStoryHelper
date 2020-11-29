@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jcRfz+wgm7WtqLJT8Yado5iP9O67l/8RXSW0p+Mus7WIibvOjBBiN0NVKXGm+GjA5HnDbHyRQNlcPwiQrHhMyA==",
+  "dgSpecHash": "JQYoAohZlFSFTFxp+o8wyTRwj2MrmMjLijC7w0GrMFMmssD7XhpDClauWow67Q1QJLkUaSfEaqpQcetGnIC3yA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Server.Model\\MapleStoryHelper.Standard.Server.Model.csproj",
+  "projectFilePath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Server.Model\\MapleStoryHelper.Standard.Server.Model.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
-    "C:\\Users\\Windows10\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

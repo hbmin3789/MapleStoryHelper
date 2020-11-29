@@ -519,23 +519,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Windows10\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\jangdarnam\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
+      "projectUniqueName": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
       "projectName": "MapleStoryHelper.Standard.DamageLib",
-      "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
-      "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\obj\\",
+      "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\MapleStoryHelper.Standard.DamageLib.csproj",
+      "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.DamageLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Windows10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jangdarnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -550,17 +550,17 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj": {
-              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj"
+            "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj": {
+              "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Boss\\MapleStoryHelper.Standard.Boss.csproj"
             },
-            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
-              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
+            "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj": {
+              "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Resources\\MapleStoryHelper.Standard.Resources.csproj"
             },
-            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj": {
-              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj"
+            "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj": {
+              "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.SkillLib\\MapleStoryHelper.Standard.SkillLib.csproj"
             },
-            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
-              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+            "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
             }
           }
         }
