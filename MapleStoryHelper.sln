@@ -50,7 +50,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStorySearchApp", "Mapl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapleStoryHelper.Standard.MNetwork", "MapleStoryHelper.Standard.Network\MapleStoryHelper.Standard.MNetwork.csproj", "{115A0701-D8DE-431E-8F4F-CF0A77C16A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryUWP", "MapleStoryUWP\MapleStoryUWP.csproj", "{12596DCB-22CA-46C3-8391-4CED7FD074C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapleStoryUWPPriceCalc", "MapleStoryUWP\MapleStoryUWPPriceCalc.csproj", "{12596DCB-22CA-46C3-8391-4CED7FD074C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

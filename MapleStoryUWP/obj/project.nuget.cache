@@ -1,14 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "rllMLAyOqE8y/wIur5t7NFy4ERWXuDH/0JXuhnpBDh+F41g9L0SvY4MggbxM/5ZpvnYaRh5clpRcNpuT2Z8CfQ==",
+  "dgSpecHash": "yTrh+pMUV01V4MZD5kg6PeuBQufo8Rh4IPoV3ExSnZPY6X73t4zgnmfx394AdNWkQ6mgiqO9XRrCSZQ2BVv8gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWP.csproj",
+  "projectFilePath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWPPriceCalc.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Windows10\\.nuget\\packages\\colorcode.core\\2.0.6\\colorcode.core.2.0.6.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\colorcode.uwp\\2.0.6\\colorcode.uwp.2.0.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.10\\microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit\\6.1.1\\microsoft.toolkit.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit.parsers\\6.1.1\\microsoft.toolkit.parsers.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit.uwp\\6.1.1\\microsoft.toolkit.uwp.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit.uwp.ui\\6.1.1\\microsoft.toolkit.uwp.ui.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit.uwp.ui.animations\\6.1.1\\microsoft.toolkit.uwp.ui.animations.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.toolkit.uwp.ui.controls\\6.1.1\\microsoft.toolkit.uwp.ui.controls.6.1.1.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\2.0.1\\microsoft.xaml.behaviors.uwp.managed.2.0.1.nupkg.sha512",
     "C:\\Users\\Windows10\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
@@ -26,7 +37,12 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\Windows10\\.nuget\\packages\\win2d.uwp\\1.25.0\\win2d.uwp.1.25.0.nupkg.sha512"
   ],
   "logs": []
 }

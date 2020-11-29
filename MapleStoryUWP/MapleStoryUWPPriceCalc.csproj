@@ -7,8 +7,8 @@
     <ProjectGuid>{12596DCB-22CA-46C3-8391-4CED7FD074C5}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MapleStoryUWP</RootNamespace>
-    <AssemblyName>MapleStoryUWP</AssemblyName>
+    <RootNamespace>MapleStoryUWPPriceCalc</RootNamespace>
+    <AssemblyName>MapleStoryUWPPriceCalc</AssemblyName>
     <DefaultLanguage>ko-KR</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
@@ -25,7 +25,7 @@
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
@@ -119,10 +119,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\INavigateService.cs" />
+    <Compile Include="Converter\TemplateSelector\PageTemplateSelector.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ItemPriceViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="View\PriceCalcPage.xaml.cs">
+      <DependentUpon>PriceCalcPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -148,11 +156,44 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Theme\PageTemplateTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PriceCalcPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp">
+      <Version>6.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI">
+      <Version>6.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>6.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Core">
+      <Version>8.0.0.1909</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MapleStoryHelper.Standard.Item\MapleStoryHelper.Standard.Item.csproj">
+      <Project>{33bc35e0-b1c4-4a35-8a32-ee4439ee3e44}</Project>
+      <Name>MapleStoryHelper.Standard.Item</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapleStoryHelper.Standard\MapleStoryHelper.Standard.csproj">
+      <Project>{cb0c667c-9461-46f3-ab27-73fdf15aea57}</Project>
+      <Name>MapleStoryHelper.Standard</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

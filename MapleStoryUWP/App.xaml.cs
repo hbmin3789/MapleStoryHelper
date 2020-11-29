@@ -1,27 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+﻿using MapleStoryUWPPriceCalc.ViewModel;
+using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace MapleStoryUWP
+namespace MapleStoryUWPPriceCalc
 {
     /// <summary>
     /// 기본 애플리케이션 클래스를 보완하는 애플리케이션별 동작을 제공합니다.
     /// </summary>
     sealed partial class App : Application
     {
+
         /// <summary>
         /// Singleton 애플리케이션 개체를 초기화합니다. 이것은 실행되는 작성 코드의 첫 번째
         /// 줄이며 따라서 main() 또는 WinMain()과 논리적으로 동일합니다.
