@@ -10715,11 +10715,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWPPriceCalc.csproj",
       "projectName": "MapleStoryUWPPriceCalc",
       "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWPPriceCalc.csproj",
       "packagesPath": "C:\\Users\\jangdarnam\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\MapleStoryHelper\\MapleStoryUWP\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWPPriceCalc.csproj",
+      "projectName": "MapleStoryUWPPriceCalc",
+      "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryUWP\\MapleStoryUWPPriceCalc.csproj",
+      "packagesPath": "C:\\Users\\Windows10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryUWP\\obj\\",
+>>>>>>> c11cacbfa21582dcdb488e75fb7f0bdc5cd7e2ab
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10741,11 +10749,19 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
               "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
             },
             "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
               "projectPath": "D:\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+=======
+            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj": {
+              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard.Item\\MapleStoryHelper.Standard.Item.csproj"
+            },
+            "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj": {
+              "projectPath": "C:\\Users\\Windows10\\Documents\\Github\\MapleStoryHelper\\MapleStoryHelper.Standard\\MapleStoryHelper.Standard.csproj"
+>>>>>>> c11cacbfa21582dcdb488e75fb7f0bdc5cd7e2ab
             }
           }
         }
